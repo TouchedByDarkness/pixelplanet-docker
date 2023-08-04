@@ -52,7 +52,7 @@ export type CanvasState = {
 function getViewFromURL(canvases) {
   const { hash } = window.location;
   try {
-    const almost = hash.substring(1)
+    const almost = decodeURIComponent(hash).substring(1)
       .split(',');
 
     const canvasIdent = almost[0];
