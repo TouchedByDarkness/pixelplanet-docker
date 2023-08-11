@@ -310,7 +310,7 @@ export class ChatProvider {
           if (ret) {
             this.broadcastChatMessage(
               'info',
-              `Country ${cc} has been muted from en by ${initiator}`,
+              `Country ${cc} has been muted from this channel by ${initiator}`,
               channelId,
               this.infoUserId,
             );
@@ -332,7 +332,7 @@ export class ChatProvider {
           }
           this.broadcastChatMessage(
             'info',
-            `Country ${cc} has been unmuted from en by ${initiator}`,
+            `Country ${cc} has been unmuted from this channel by ${initiator}`,
             channelId,
             this.infoUserId,
           );
