@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #: src/controls/keypress.js:41
 #, javascript-format
@@ -664,7 +664,7 @@ msgstr "Статистика"
 
 #: src/components/windows/UserArea.jsx:64
 msgid "Converter"
-msgstr "Преобразователь"
+msgstr "Пикселизатор"
 
 #: src/components/windows/UserArea.jsx:70
 msgid "Modtools"
