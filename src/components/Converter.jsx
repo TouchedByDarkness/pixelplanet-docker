@@ -223,7 +223,10 @@ function Converter() {
           onClick={() => {
             const canvas = canvases[selectedCanvas];
             const {
-              title, desc, colors, cli,
+              title,
+              desc,
+              colors,
+              cli = 0,
             } = canvas;
             fileDownload(
               printGIMPPalette(title, desc, colors.slice(cli)),
