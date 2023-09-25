@@ -4,56 +4,30 @@ import PIL.Image
 import sys, os, io
 import asyncio
 import aiohttp
+import requests
+import math
+
+apime = requests.get('https://pixelplanet.fun/api/me').json()
 
 class Color(object):
-    def __init__(self, index, name, rgb):
-        self.name = name
+    def __init__(self, index, rgb):
         self.rgb = rgb
         self.index = index
 
 class EnumColorPixelplanet:
 
-    ENUM = [
-        #Color 0 and 1 are unset colors.
-        #Bot adds +2 to color number. So subtract 2 from the browser inspector to match.
-        Color(0, 'aryan white', 	(255, 255, 255, 255)),	#HEX FFFFFF
-        Color(1, 'light gray', 		(228, 228, 228, 255)),	#HEX E4E4E4
-        Color(2, 'mid gray', 		(196, 196, 196, 255)),	#HEX C4C4C4
-        Color(3, 'dark gray', 		(136, 136, 136, 255)),	#HEX 888888
-        Color(4, 'darker gray', 	(78, 78, 78, 255)),		#HEX 4E4E4E
-        Color(5, 'black', 			(0, 0, 0, 255)),		#HEX 000000
-        Color(6, 'light peach',		(244, 179, 174, 255)),	#HEX F4B3AE
-        Color(7, 'light pink', 		(255, 167, 209, 255)),	#HEX FFA7D1
-        Color(8, 'pink', 			(255, 84, 178, 255)),	#HEX FF54B2
-        Color(9, 'peach', 			(255, 101, 101, 255)),	#HEX FF6565
-        Color(10, 'windmill red',	(229, 0, 0, 255)),		#HEX E50000
-        Color(11, 'blood red',		(154, 0, 0, 255)),		#HEX 9A0000
-        Color(12, 'orange',			(254, 164, 96, 255)),	#HEX FEA460
-        Color(13, 'light brown',	(229, 149, 0, 255)),	#HEX E59500
-        Color(14, 'brazil skin',	(160, 106, 66, 255)),	#HEX A06A42
-        Color(15, 'nig skin', 		(96, 64, 40, 255)),		#HEX 604028
-        Color(16, 'normal skin', 	(245, 223, 176, 255)),	#HEX FEDFB0
-        Color(17, 'yellow', 		(255, 248, 137, 255)),	#HEX FFF889
-        Color(18, 'dark yellow', 	(229, 217, 0, 255)),	#HEX E5D900
-        Color(19, 'light green', 	(148, 224, 68, 255)),	#HEX 94E044
-        Color(20, 'green', 			(2, 190, 1, 255)),		#HEX 02BE01
-        Color(21, 'dark green',		(104, 131, 56, 255)),	#HEX 688338
-        Color(22, 'darker green', 	(0, 101, 19, 255)),		#HEX 006513
-        Color(23, 'sky blew', 		(202, 227, 255, 255)),	#HEX CAE3FF
-        Color(24, 'lite blew', 		(0, 211, 221, 255)),	#HEX 00D3DD
-        Color(25, 'dark blew', 		(0, 131, 199, 255)),	#HEX 0083C7
-        Color(26, 'blew', 			(0, 0, 234, 255)),		#HEX 0000EA
-        Color(27, 'darker blew', 	(25, 25, 115, 255)),	#HEX 191973
-        Color(28, 'light violette', (207, 110, 228, 255)),	#HEX CF6EE4
-        Color(29, 'violette', 		(130, 0, 128, 255))		#HEX 820080
-    ]
+    ENUM = []
 
+    def getColors(canvasid):
+        colors = apime['canvases'][canvasid]['colors']
+        for i, color in enumerate(colors):
+            EnumColorPixelplanet.ENUM.append(Color(i, tuple(color)))
+    
     @staticmethod
     def index(i):
         for color in EnumColorPixelplanet.ENUM:
             if i == color.index:
                 return color
-        # White is default color
         return EnumColorPixelplanet.ENUM[0]
 
 class Matrix:
@@ -108,38 +82,31 @@ class Matrix:
                 self.matrix[x] = {}
             self.matrix[x][y] = color
 
-async def fetch(session, ix, iy, target_matrix):
-    url = 'https://pixelplanet.fun/chunks/0/%s/%s.bmp' % (ix, iy)
+async def fetch(session, canvasID, canvasoffset, ix, iy, target_matrix):
+    url = f'https://pixelplanet.fun/chunks/{canvasID}/{ix}/{iy}.bmp'
     attempts = 0
     while True:
         try:
             async with session.get(url) as resp:
                 data = await resp.read()
-                offset = int(-256 * 256 / 2)
+                offset = int(-canvasoffset * canvasoffset / 2)
                 off_x = ix * 256 + offset
                 off_y = iy * 256 + offset
                 if len(data) == 0:
-                    clr = EnumColorPixelplanet.index(23)
+                    clr = EnumColorPixelplanet.index(0)
                     for i in range(256*256):
                         tx = off_x + i % 256 
                         ty = off_y + i // 256
                         target_matrix.set_pixel(tx, ty, clr)
                 else:
-                    c = 0
                     i = 0
                     for b in data:
-                        tx = off_x + i % 256 
+                        tx = off_x + i % 256
                         ty = off_y + i // 256
                         bcl = b & 0x7F
-                        if bcl == 0:
-                            c = 23
-                        elif bcl == 1:
-                            c = 0
-                        else:
-                            c = bcl - 2;
-                        target_matrix.set_pixel(tx, ty, EnumColorPixelplanet.index(c))
+                        target_matrix.set_pixel(tx, ty, EnumColorPixelplanet.index(bcl))
                         i += 1
-                print("Loaded %s  with %s pixels" %  (url, i))
+                print(f"Loaded {url} with {i} pixels")
                 break
         except:
             if attempts > 3:
@@ -147,38 +114,96 @@ async def fetch(session, ix, iy, target_matrix):
             attempts += 1
             pass
 
-async def get_area(x, y, w, h):
+async def get_area(canvasID, x, y, w, h):
     target_matrix = Matrix()
     target_matrix.add_coords(x, y, w, h)
-    offset = int(-256 * 256 / 2)
+    canvasoffset = math.pow(apime["canvases"][f"{canvasID}"]["size"], 0.5)
+    offset = int(-canvasoffset * canvasoffset / 2)
     xc = (x - offset) // 256
     wc = (x + w - offset) // 256
     yc = (y - offset) // 256
     hc = (y + h - offset) // 256
-    print("Load from %s / %s to %s / %s" % (xc, yc, wc + 1, hc + 1), "PixelGetter")
+    print(f"Loading from {xc} / {yc} to {wc + 1} / {hc + 1} PixelGetter")
     tasks = []
     async with aiohttp.ClientSession() as session:
         for iy in range(yc, hc + 1):
             for ix in range(xc, wc + 1):
-                tasks.append(fetch(session, ix, iy, target_matrix))
+                tasks.append(fetch(session, canvasID, canvasoffset, ix, iy, target_matrix))
         await asyncio.gather(*tasks)
         return target_matrix
 
+def validateCoorRange(ulcoor: str, brcoor: str, canvasSize: int): # stolen from hf with love
+    if not ulcoor or not brcoor:
+        return 'Not all coordinates defined'
+    splitCoords = ulcoor.strip().split('_')
+    if not len(splitCoords) == 2:
+        return 'Invalid Coordinate Format for top-left corner'
+    
+    x, y = map(lambda z: int(math.floor(float(z))), splitCoords)
+
+    splitCoords = brcoor.strip().split('_')
+    if not len(splitCoords) == 2:
+        return 'Invalid Coordinate Format for top-left corner'
+    u, v = map(lambda z: int(math.floor(float(z))), splitCoords)
+    
+    error = None
+
+    if (math.isnan(x)):
+        error = 'x of top-left corner is not a valid number'
+    elif (math.isnan(y)):
+        error = 'y of top-left corner is not a valid number'
+    elif (math.isnan(u)):
+        error = 'x of bottom-right corner is not a valid number'
+    elif (math.isnan(v)):
+        error = 'y of bottom-right corner is not a valid number'
+    elif (u < x or v < y):
+        error = 'Corner coordinates are aligned wrong'
+
+    if not error is None:
+        return error
+    
+    canvasMaxXY = canvasSize / 2
+    canvasMinXY = -canvasMaxXY
+    
+    if (x < canvasMinXY or y < canvasMinXY or x >= canvasMaxXY or y >= canvasMaxXY):
+        return 'Coordinates of top-left corner are outside of canvas'
+    if (u < canvasMinXY or v < canvasMinXY or u >= canvasMaxXY or v >= canvasMaxXY):
+        return 'Coordinates of bottom-right corner are outside of canvas'
+    
+    return (x, y, u, v)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
+    if len(sys.argv) != 5:
         print("Download an area of pixelplanet")
-        print("Usage: areaDownload.py startX_startY endX_endY filename.png")
-        print("(user R key on pixelplanet to copy coordinates)")
+        print("Usage: areaDownload.py canvasID startX_startY endX_endY filename.png")
+        print("(use R key on pixelplanet to copy coordinates)")
+        print("Canvas ID: ", end='')
+        for canvas in apime['canvases']:
+            if canvas == '2':
+                continue
+            print(f"{canvas} = {apime['canvases'][f'{canvas}']['title']}", end=' ')
+        print()
     else:
-        start = sys.argv[1].split('_')
-        end = sys.argv[2].split('_')
-        filename = sys.argv[3]
-        x = int(start[0])
-        y = int(start[1])
-        w = int(end[0]) - x + 1
-        h =int( end[1]) - y + 1
-        loop = asyncio.get_event_loop()
-        matrix = loop.run_until_complete(get_area(x, y, w, h))
+        canvasID = sys.argv[1]
+
+        if canvasID == '2':
+            print('Can\'t get area for 3D canvas')
+            sys.exit()
+
+        parseCoords = validateCoorRange(sys.argv[2], sys.argv[3], apime["canvases"][f"{canvasID}"]["size"])
+
+        if (type(parseCoords) is str):
+            print(parseCoords)
+            sys.exit()
+        else:
+            x, y, w, h = parseCoords
+            w = w - x + 1
+            h = h - y + 1
+
+        EnumColorPixelplanet.getColors(canvasID)
+        filename = sys.argv[4]
+
+        loop = asyncio.new_event_loop()
+        matrix = loop.run_until_complete(get_area(canvasID, x, y, w, h))
         matrix.create_image(filename)
         print("Done!")
