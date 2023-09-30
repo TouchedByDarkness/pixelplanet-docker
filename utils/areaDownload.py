@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 
 import PIL.Image
-import sys, os, io
+import sys, os, io, math
 import asyncio
 import aiohttp
-import requests
-import math
 
-apime = requests.get('https://pixelplanet.fun/api/me').json()
+USER_AGENT = "ppfun areaDownload 1.0"
+PPFUN_URL = "https://pixelplanet.fun"
 
 class Color(object):
     def __init__(self, index, rgb):
@@ -18,8 +17,8 @@ class EnumColorPixelplanet:
 
     ENUM = []
 
-    def getColors(canvasid):
-        colors = apime['canvases'][canvasid]['colors']
+    def getColors(canvas):
+        colors = canvas['colors']
         for i, color in enumerate(colors):
             EnumColorPixelplanet.ENUM.append(Color(i, tuple(color)))
     
@@ -82,12 +81,36 @@ class Matrix:
                 self.matrix[x] = {}
             self.matrix[x][y] = color
 
+async def fetchMe():
+    url = f"{PPFUN_URL}/api/me"
+    headers = {
+      'User-Agent': USER_AGENT
+    }
+    async with aiohttp.ClientSession() as session:
+        attempts = 0
+        while True:
+            try:
+                async with session.get(url, headers=headers) as resp:
+                    data = await resp.json()
+                    return data
+            except:
+                if attempts > 3:
+                    print(f"Could not get {url} in three tries, cancelling")
+                    raise
+                attempts += 1
+                print(f"Failed to load {url}, trying again in 5s")
+                await asyncio.sleep(5)
+                pass
+
 async def fetch(session, canvasID, canvasoffset, ix, iy, target_matrix):
-    url = f'https://pixelplanet.fun/chunks/{canvasID}/{ix}/{iy}.bmp'
+    url = f"{PPFUN_URL}/chunks/{canvasID}/{ix}/{iy}.bmp"
+    headers = {
+      'User-Agent': USER_AGENT
+    }
     attempts = 0
     while True:
         try:
-            async with session.get(url) as resp:
+            async with session.get(url, headers=headers) as resp:
                 data = await resp.read()
                 offset = int(-canvasoffset * canvasoffset / 2)
                 off_x = ix * 256 + offset
@@ -110,14 +133,17 @@ async def fetch(session, canvasID, canvasoffset, ix, iy, target_matrix):
                 break
         except:
             if attempts > 3:
+                print(f"Could not get {url} in three tries, cancelling")
                 raise
             attempts += 1
+            print(f"Failed to load {url}, trying again in 3s")
+            await asyncio.sleep(3)
             pass
 
-async def get_area(canvasID, x, y, w, h):
+async def get_area(canvasID, canvas, x, y, w, h):
     target_matrix = Matrix()
     target_matrix.add_coords(x, y, w, h)
-    canvasoffset = math.pow(apime["canvases"][f"{canvasID}"]["size"], 0.5)
+    canvasoffset = math.pow(canvas['size'], 0.5)
     offset = int(-canvasoffset * canvasoffset / 2)
     xc = (x - offset) // 256
     wc = (x + w - offset) // 256
@@ -134,30 +160,30 @@ async def get_area(canvasID, x, y, w, h):
 
 def validateCoorRange(ulcoor: str, brcoor: str, canvasSize: int): # stolen from hf with love
     if not ulcoor or not brcoor:
-        return 'Not all coordinates defined'
+        return "Not all coordinates defined"
     splitCoords = ulcoor.strip().split('_')
     if not len(splitCoords) == 2:
-        return 'Invalid Coordinate Format for top-left corner'
+        return "Invalid Coordinate Format for top-left corner"
     
     x, y = map(lambda z: int(math.floor(float(z))), splitCoords)
 
     splitCoords = brcoor.strip().split('_')
     if not len(splitCoords) == 2:
-        return 'Invalid Coordinate Format for top-left corner'
+        return "Invalid Coordinate Format for top-left corner"
     u, v = map(lambda z: int(math.floor(float(z))), splitCoords)
     
     error = None
 
     if (math.isnan(x)):
-        error = 'x of top-left corner is not a valid number'
+        error = "x of top-left corner is not a valid number"
     elif (math.isnan(y)):
-        error = 'y of top-left corner is not a valid number'
+        error = "y of top-left corner is not a valid number"
     elif (math.isnan(u)):
-        error = 'x of bottom-right corner is not a valid number'
+        error = "x of bottom-right corner is not a valid number"
     elif (math.isnan(v)):
-        error = 'y of bottom-right corner is not a valid number'
+        error = "y of bottom-right corner is not a valid number"
     elif (u < x or v < y):
-        error = 'Corner coordinates are aligned wrong'
+        error = "Corner coordinates are aligned wrong"
 
     if not error is None:
         return error
@@ -166,44 +192,55 @@ def validateCoorRange(ulcoor: str, brcoor: str, canvasSize: int): # stolen from 
     canvasMinXY = -canvasMaxXY
     
     if (x < canvasMinXY or y < canvasMinXY or x >= canvasMaxXY or y >= canvasMaxXY):
-        return 'Coordinates of top-left corner are outside of canvas'
+        return "Coordinates of top-left corner are outside of canvas"
     if (u < canvasMinXY or v < canvasMinXY or u >= canvasMaxXY or v >= canvasMaxXY):
-        return 'Coordinates of bottom-right corner are outside of canvas'
+        return "Coordinates of bottom-right corner are outside of canvas"
     
     return (x, y, u, v)
 
-if __name__ == "__main__":
+async def main():
+    apime = await fetchMe()
+
     if len(sys.argv) != 5:
         print("Download an area of pixelplanet")
         print("Usage: areaDownload.py canvasID startX_startY endX_endY filename.png")
         print("(use R key on pixelplanet to copy coordinates)")
-        print("Canvas ID: ", end='')
-        for canvas in apime['canvases']:
-            if canvas == '2':
+        print("canvasID: ", end='')
+        for canvasID, canvas in apime['canvases'].items():
+            if 'v' in canvas and canvas['v']:
                 continue
-            print(f"{canvas} = {apime['canvases'][f'{canvas}']['title']}", end=' ')
+            print(f"{canvasID} = {canvas['title']}", end=', ')
         print()
+        return
+
+    canvasID = sys.argv[1]
+
+    if canvasID not in apime['canvases']:
+        print("Invalid canvas selected")
+        return
+
+    canvas = apime['canvases'][canvasID]
+
+    if 'v' in canvas and canvas['v']:
+        print("Can\'t get area for 3D canvas")
+        return
+
+    parseCoords = validateCoorRange(sys.argv[2], sys.argv[3], canvas['size'])
+
+    if (type(parseCoords) is str):
+        print(parseCoords)
+        sys.exit()
     else:
-        canvasID = sys.argv[1]
+        x, y, w, h = parseCoords
+        w = w - x + 1
+        h = h - y + 1
 
-        if canvasID == '2':
-            print('Can\'t get area for 3D canvas')
-            sys.exit()
+    EnumColorPixelplanet.getColors(canvas)
+    filename = sys.argv[4]
 
-        parseCoords = validateCoorRange(sys.argv[2], sys.argv[3], apime["canvases"][f"{canvasID}"]["size"])
+    matrix = await get_area(canvasID, canvas, x, y, w, h)
+    matrix.create_image(filename)
+    print("Done!")
 
-        if (type(parseCoords) is str):
-            print(parseCoords)
-            sys.exit()
-        else:
-            x, y, w, h = parseCoords
-            w = w - x + 1
-            h = h - y + 1
-
-        EnumColorPixelplanet.getColors(canvasID)
-        filename = sys.argv[4]
-
-        loop = asyncio.new_event_loop()
-        matrix = loop.run_until_complete(get_area(canvasID, x, y, w, h))
-        matrix.create_image(filename)
-        print("Done!")
+if __name__ == "__main__":
+    asyncio.run(main())
