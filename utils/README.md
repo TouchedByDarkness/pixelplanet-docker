@@ -36,6 +36,7 @@ Usage: `areaDownload.py startX_startY endX_endY filename.png`
 downloads the history from an canvas area between two dates.
 Useage: `historyDownload.py canvasId startX_startY endX_endY start_date end_date
 This is used for creating timelapses, see the cmd help to know how
+**Requires:** aiohttp, asyncio and PIL python3 packages
 
 ## pp-center\*.png
 center logo of pixelplanet
