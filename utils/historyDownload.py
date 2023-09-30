@@ -5,7 +5,10 @@ import sys, io, os
 import datetime
 import asyncio
 import aiohttp
-import json
+
+USER_AGENT = "ppfun historyDownload 1.0 " + ' '.join(sys.argv[1:])
+PPFUN_URL = "https://pixelplanet.fun"
+PPFUN_STORAGE_URL = "https://storage.pixelplanet.fun"
 
 # how many frames to skip
 #  1 means none
@@ -14,62 +17,35 @@ import json
 #  [...]
 frameskip = 1
 
-canvases = [
-        {
-            "canvas_name": "earth",
-            "canvas_size": 256*256,
-            "canvas_id": 0,
-            "bkg": (202, 227, 255),
-        },
-        {
-            "canvas_name": "moon",
-            "canvas_size": 16384,
-            "canvas_id": 1,
-            "bkg": (49, 46, 47),
-            "historical_sizes" : [
-                    ["20210417", 4096],
-                ]
-        },
-        {
-        },
-        {
-            "canvas_name": "corona",
-            "canvas_size": 256,
-            "canvas_id": 3,
-            "bkg": (33, 28, 15),
-        },
-        {
-            "canvas_name": "compass",
-            "canvas_size": 1024,
-            "canvas_id": 4,
-            "bkg": (196, 196, 196),
-        },
-        {
-        },
-        {
-        },
-        {
-            "canvas_name": "1bit",
-            "canvas_size": 256*256,
-            "canvas_id": 7,
-            "bkg": (0, 0, 0),
-        },
-        {
-            "canvas_name": "top10",
-            "canvas_size": 2048,
-            "canvas_id": 8,
-            "bkg": (197, 204, 184),
-            "historical_sizes" : [
-                    ["20220626", 1024],
-                ]
-        },
-    ]
-
+async def fetchMe():
+    url = f"{PPFUN_URL}/api/me"
+    headers = {
+      'User-Agent': USER_AGENT
+    }
+    async with aiohttp.ClientSession() as session:
+        attempts = 0
+        while True:
+            try:
+                async with session.get(url, headers=headers) as resp:
+                    data = await resp.json()
+                    return data
+            except:
+                if attempts > 3:
+                    print(f"Could not get {url} in three tries, cancelling")
+                    raise
+                attempts += 1
+                print(f"Failed to load {url}, trying again in 5s")
+                await asyncio.sleep(5)
+                pass
+            
 async def fetch(session, url, offx, offy, image, bkg, needed = False):
     attempts = 0
+    headers = {
+      'User-Agent': USER_AGENT
+    }
     while True:
         try:
-            async with session.get(url) as resp:
+            async with session.get(url, headers=headers) as resp:
                 if resp.status == 404:
                     if needed:
                         img = PIL.Image.new('RGB', (256, 256), color=bkg)
@@ -91,11 +67,9 @@ async def fetch(session, url, offx, offy, image, bkg, needed = False):
             attempts += 1
             pass
 
-async def get_area(canvas, x, y, w, h, start_date, end_date):
-    canvas_data = canvases[canvas]
-    canvas_id = canvas_data["canvas_id"]
-    canvas_size = canvas_data["canvas_size"]
-    bkg = canvas_data["bkg"]
+async def get_area(canvas_id, canvas, x, y, w, h, start_date, end_date):
+    canvas_size = canvas["size"]
+    bkg = tuple(canvas['colors'][0])
 
     delta = datetime.timedelta(days=1)
     end_date = end_date.strftime("%Y%m%d")
@@ -110,8 +84,8 @@ async def get_area(canvas, x, y, w, h, start_date, end_date):
         start_date = start_date + delta
 
         fetch_canvas_size = canvas_size
-        if 'historical_sizes' in canvas_data:
-            for ts in canvas_data['historical_sizes']:
+        if 'historicalSizes' in canvas:
+            for ts in canvas['historicalSizes']:
                 date = ts[0]
                 size = ts[1]
                 if iter_date <= date:
@@ -122,14 +96,14 @@ async def get_area(canvas, x, y, w, h, start_date, end_date):
         wc = (x + w - offset) // 256
         yc = (y - offset) // 256
         hc = (y + h - offset) // 256
-        print("Load from %s / %s to %s / %s" % (xc, yc, wc + 1, hc + 1))
+        print("Load from %s / %s to %s / %s with canvas size %s" % (xc, yc, wc + 1, hc + 1, fetch_canvas_size))
 
         tasks = []
         async with aiohttp.ClientSession() as session:
             image = PIL.Image.new('RGBA', (w, h))
             for iy in range(yc, hc + 1):
                 for ix in range(xc, wc + 1):
-                    url = 'https://storage.pixelplanet.fun/%s/%s/%s/%s/tiles/%s/%s.png' % (iter_date[0:4], iter_date[4:6] , iter_date[6:], canvas_id, ix, iy)
+                    url = '%s/%s/%s/%s/%s/tiles/%s/%s.png' % (PPFUN_STORAGE_URL, iter_date[0:4], iter_date[4:6] , iter_date[6:], canvas_id, ix, iy)
                     offx = ix * 256 + offset - x
                     offy = iy * 256 + offset - y
                     tasks.append(fetch(session, url, offx, offy, image, bkg, True))
@@ -143,10 +117,13 @@ async def get_area(canvas, x, y, w, h, start_date, end_date):
             cnt += 1
             #frames.append(image.copy())
             image.save('./timelapse/t%s.png' % (cnt))
+            headers = {
+                'User-Agent': USER_AGENT
+            }
             while True:
-                async with session.get('https://pixelplanet.fun/history?day=%s&id=%s' % (iter_date, canvas_id)) as resp:
+                async with session.get('%s/history?day=%s&id=%s' % (PPFUN_URL, iter_date, canvas_id), headers=headers) as resp:
                     try:
-                        time_list = json.loads(await resp.text())
+                        time_list = await resp.json()
                         break
                     except:
                         print('Couldn\'t decode json for day %s, trying again' % (iter_date))
@@ -162,7 +139,7 @@ async def get_area(canvas, x, y, w, h, start_date, end_date):
                 image_rel = image.copy()
                 for iy in range(yc, hc + 1):
                     for ix in range(xc, wc + 1):
-                        url = 'https://storage.pixelplanet.fun/%s/%s/%s/%s/%s/%s/%s.png' % (iter_date[0:4], iter_date[4:6] , iter_date[6:], canvas_id, time, ix, iy)
+                        url = '%s/%s/%s/%s/%s/%s/%s/%s.png' % (PPFUN_STORAGE_URL, iter_date[0:4], iter_date[4:6] , iter_date[6:], canvas_id, time, ix, iy)
                         offx = ix * 256 + offset - x
                         offy = iy * 256 + offset - y
                         tasks.append(fetch(session, url, offx, offy, image_rel, bkg))
@@ -183,41 +160,63 @@ async def get_area(canvas, x, y, w, h, start_date, end_date):
     #frames[0].save('timelapse.png', save_all=True, append_images=frames[1:], duration=100, loop=0, default_image=False, blend=1)
 
 
-if __name__ == "__main__":
+async def main():
+    apime = await fetchMe()
+
     if len(sys.argv) != 5 and len(sys.argv) != 6:
         print("Download history of an area of pixelplanet - useful for timelapses")
         print("")
-        print("Usage:    historyDownload.py canvasId startX_startY endX_endY start_date [end_date]")
+        print("Usage:    historyDownload.py canvasID startX_startY endX_endY start_date [end_date]")
         print("")
         print("→start_date and end_date are in YYYY-MM-dd formate")
         print("→user R key on pixelplanet to copy coordinates)")
         print("→images will be saved into timelapse folder)")
+        print("canvasID: ", end='')
+        for canvas_id, canvas in apime['canvases'].items():
+            if 'v' in canvas and canvas['v']:
+                continue
+            print(f"{canvas_id} = {canvas['title']}", end=', ')
+        print()
         print("-----------")
         print("You can create a timelapse from the resulting files with ffmpeg like that:")
         print("ffmpeg -framerate 15 -f image2 -i timelapse/t%d.png -c:v libvpx-vp9 -pix_fmt yuva420p output.webm")
         print("or lossless example:")
         print("ffmpeg -framerate 15 -f image2 -i timelapse/t%d.png -c:v libvpx-vp9 -pix_fmt yuv444p -qmin 0 -qmax 0 -lossless 1 -an output.webm")
+        return
+
+    canvas_id = sys.argv[1]
+
+    if canvas_id not in apime['canvases']:
+        print("Invalid canvas selected")
+        return
+
+    canvas = apime['canvases'][canvas_id]
+
+    if 'v' in canvas and canvas['v']:
+        print("Can\'t get area for 3D canvas")
+        return
+
+    start = sys.argv[2].split('_')
+    end = sys.argv[3].split('_')
+    start_date = datetime.date.fromisoformat(sys.argv[4])
+    if len(sys.argv) == 6:
+        end_date = datetime.date.fromisoformat(sys.argv[5])
     else:
-        canvas = int(sys.argv[1])
-        start = sys.argv[2].split('_')
-        end = sys.argv[3].split('_')
-        start_date = datetime.date.fromisoformat(sys.argv[4])
-        if len(sys.argv) == 6:
-            end_date = datetime.date.fromisoformat(sys.argv[5])
-        else:
-            end_date = datetime.date.today()
-        x = int(start[0])
-        y = int(start[1])
-        w = int(end[0]) - x + 1
-        h = int( end[1]) - y + 1
-        loop = asyncio.get_event_loop()
-        if not os.path.exists('./timelapse'):
-            os.mkdir('./timelapse')
-        loop.run_until_complete(get_area(canvas, x, y, w, h, start_date, end_date))
-        print("Done!")
-        print("to create a timelapse from it:")
-        print("ffmpeg -framerate 15 -f image2 -i timelapse/t%d.png -c:v libvpx-vp9 -pix_fmt yuva420p output.webm")
-        print("example with scaling *3 and audio track:")
-        print("ffmpeg -i ./audio.mp3 -framerate 8 -f image2 -i timelapse/t%d.png -map 0:a -map 1:v -vf scale=iw*3:-1 -shortest -c:v libvpx-vp9 -c:a libvorbis -pix_fmt yuva420p output.webm")
-        print("lossless example:")
-        print("ffmpeg -framerate 15 -f image2 -i timelapse/t%d.png -c:v libvpx-vp9 -pix_fmt yuv444p -qmin 0 -qmax 0 -lossless 1 -an output.webm")
+        end_date = datetime.date.today()
+    x = int(start[0])
+    y = int(start[1])
+    w = int(end[0]) - x + 1
+    h = int( end[1]) - y + 1
+    if not os.path.exists('./timelapse'):
+        os.mkdir('./timelapse')
+    await get_area(canvas_id, canvas, x, y, w, h, start_date, end_date)
+    print("Done!")
+    print("to create a timelapse from it:")
+    print("ffmpeg -framerate 15 -f image2 -i timelapse/t%d.png -c:v libvpx-vp9 -pix_fmt yuva420p output.webm")
+    print("example with scaling *3 and audio track:")
+    print("ffmpeg -i ./audio.mp3 -framerate 8 -f image2 -i timelapse/t%d.png -map 0:a -map 1:v -vf scale=iw*3:-1 -shortest -c:v libvpx-vp9 -c:a libvorbis -pix_fmt yuva420p output.webm")
+    print("lossless example:")
+    print("ffmpeg -framerate 15 -f image2 -i timelapse/t%d.png -c:v libvpx-vp9 -pix_fmt yuv444p -qmin 0 -qmax 0 -lossless 1 -an output.webm")
+
+if __name__ == "__main__":
+    asyncio.run(main())

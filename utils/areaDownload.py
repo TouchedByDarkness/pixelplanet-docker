@@ -5,7 +5,7 @@ import sys, os, io, math
 import asyncio
 import aiohttp
 
-USER_AGENT = "ppfun areaDownload 1.0"
+USER_AGENT = "ppfun areaDownload 1.0 " + ' '.join(sys.argv[1:])
 PPFUN_URL = "https://pixelplanet.fun"
 
 class Color(object):
@@ -102,8 +102,8 @@ async def fetchMe():
                 await asyncio.sleep(5)
                 pass
 
-async def fetch(session, canvasID, canvasoffset, ix, iy, target_matrix):
-    url = f"{PPFUN_URL}/chunks/{canvasID}/{ix}/{iy}.bmp"
+async def fetch(session, canvas_id, canvasoffset, ix, iy, target_matrix):
+    url = f"{PPFUN_URL}/chunks/{canvas_id}/{ix}/{iy}.bmp"
     headers = {
       'User-Agent': USER_AGENT
     }
@@ -140,7 +140,7 @@ async def fetch(session, canvasID, canvasoffset, ix, iy, target_matrix):
             await asyncio.sleep(3)
             pass
 
-async def get_area(canvasID, canvas, x, y, w, h):
+async def get_area(canvas_id, canvas, x, y, w, h):
     target_matrix = Matrix()
     target_matrix.add_coords(x, y, w, h)
     canvasoffset = math.pow(canvas['size'], 0.5)
@@ -154,7 +154,7 @@ async def get_area(canvasID, canvas, x, y, w, h):
     async with aiohttp.ClientSession() as session:
         for iy in range(yc, hc + 1):
             for ix in range(xc, wc + 1):
-                tasks.append(fetch(session, canvasID, canvasoffset, ix, iy, target_matrix))
+                tasks.append(fetch(session, canvas_id, canvasoffset, ix, iy, target_matrix))
         await asyncio.gather(*tasks)
         return target_matrix
 
@@ -206,20 +206,20 @@ async def main():
         print("Usage: areaDownload.py canvasID startX_startY endX_endY filename.png")
         print("(use R key on pixelplanet to copy coordinates)")
         print("canvasID: ", end='')
-        for canvasID, canvas in apime['canvases'].items():
+        for canvas_id, canvas in apime['canvases'].items():
             if 'v' in canvas and canvas['v']:
                 continue
-            print(f"{canvasID} = {canvas['title']}", end=', ')
+            print(f"{canvas_id} = {canvas['title']}", end=', ')
         print()
         return
 
-    canvasID = sys.argv[1]
+    canvas_id = sys.argv[1]
 
-    if canvasID not in apime['canvases']:
+    if canvas_id not in apime['canvases']:
         print("Invalid canvas selected")
         return
 
-    canvas = apime['canvases'][canvasID]
+    canvas = apime['canvases'][canvas_id]
 
     if 'v' in canvas and canvas['v']:
         print("Can\'t get area for 3D canvas")
@@ -238,7 +238,7 @@ async def main():
     EnumColorPixelplanet.getColors(canvas)
     filename = sys.argv[4]
 
-    matrix = await get_area(canvasID, canvas, x, y, w, h)
+    matrix = await get_area(canvas_id, canvas, x, y, w, h)
     matrix.create_image(filename)
     print("Done!")
 
