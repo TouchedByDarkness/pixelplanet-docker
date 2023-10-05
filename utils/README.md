@@ -30,11 +30,13 @@ Script to move canvas chunks, i.e. for resizing canvas
 downloads an area of the canvas into a png file.
 Usage: `areaDownload.py startX_startY endX_endY filename.png`
 (note that you can copy the current coordinates in this format on the site by pressing R)
+**Requires:** aiohttp, asyncio and PIL python3 packages
 
 ## historyDownload.py
 downloads the history from an canvas area between two dates.
 Useage: `historyDownload.py canvasId startX_startY endX_endY start_date end_date
 This is used for creating timelapses, see the cmd help to know how
+**Requires:** aiohttp, asyncio and PIL python3 packages
 
 ## pp-center\*.png
 center logo of pixelplanet
