@@ -46,6 +46,7 @@ const lang2CC = {
   be: 'by',
   kk: 'kz',
   da: 'dk',
+  fa: 'ir',
 };
 export function langCodeToCC(lang) {
   return lang2CC[lang] || lang;
