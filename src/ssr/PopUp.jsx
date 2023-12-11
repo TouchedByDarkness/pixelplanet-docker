@@ -8,7 +8,7 @@
 import { langCodeToCC } from '../utils/location';
 import ttags, { getTTag } from '../core/ttag';
 import socketEvents from '../socket/socketEvents';
-import { styleassets, assets } from '../core/assets';
+import { getJsAssets, getCssAssets } from '../core/assets';
 import { BACKUP_URL } from '../core/config';
 import { getHostFromRequest } from '../utils/ip';
 
@@ -23,7 +23,7 @@ const langs = Object.keys(ttags)
  * values that we pass to client scripts
  */
 const ssv = {
-  availableStyles: styleassets,
+  availableStyles: getCssAssets(),
   langs,
 };
 if (BACKUP_URL) {
@@ -44,9 +44,7 @@ function generatePopUpPage(req) {
       ? null : socketEvents.getLowestActiveShard(),
     lang: lang === 'default' ? 'en' : lang,
   };
-  const script = (assets[`popup-${lang}`])
-    ? assets[`popup-${lang}`].js
-    : assets.popup.js;
+  const script = getJsAssets('popup', lang);
 
   const { t } = getTTag(lang);
 
@@ -65,7 +63,7 @@ function generatePopUpPage(req) {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <script>window.ssv=JSON.parse('${JSON.stringify(ssvR)}')</script>
-        <link rel="stylesheet" type="text/css" id="globcss" href="${styleassets.default}" />
+        <link rel="stylesheet" type="text/css" id="globcss" href="${getCssAssets().default}" />
       </head>
       <body>
         <div id="app" class="popup">

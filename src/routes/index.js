@@ -16,7 +16,7 @@ import captcha from './captcha';
 import resetPassword from './reset_password';
 import api from './api';
 
-import { assets } from '../core/assets';
+import { getJsAssets } from '../core/assets';
 import { expressTTag } from '../core/ttag';
 import corsMiddleware from '../utils/corsMiddleware';
 import generateGlobePage from '../ssr/Globe';
@@ -73,7 +73,7 @@ router.use(expressTTag);
 // 3D Globe (react generated)
 // -----------------------------------------------------------------------------
 const globeEtag = etag(
-  assets.globe.js.join('_'),
+  getJsAssets('globe').join('_'),
   { weak: true },
 );
 router.get('/globe', (req, res) => {
@@ -96,7 +96,7 @@ router.get('/globe', (req, res) => {
 // PopUps
 // -----------------------------------------------------------------------------
 const winEtag = etag(
-  assets.popup.js,
+  getJsAssets('popup').join('_'),
   { weak: true },
 );
 
@@ -125,23 +125,26 @@ router.use(
 );
 
 //
-// Main Page (react generated)
+// Main Page
 // -----------------------------------------------------------------------------
 const indexEtag = etag(
-  assets.client.js.join('_'),
+  getJsAssets('client').join('_'),
   { weak: true },
 );
 
 router.get('/', (req, res) => {
   res.set({
     'Cache-Control': `private, max-age=${15 * 60}`, // seconds
-    ETag: indexEtag,
+    // ETag: indexEtag,
   });
 
+  /*
+   * TODO fix this per language
   if (req.headers['if-none-match'] === indexEtag) {
     res.status(304).end();
     return;
   }
+  */
 
   const [html, csp] = generateMainPage(req);
 

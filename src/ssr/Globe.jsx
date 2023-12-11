@@ -8,7 +8,7 @@
 import { getTTag } from '../core/ttag';
 
 /* this will be set by webpack */
-import { assets } from '../core/assets';
+import { getJsAssets } from '../core/assets';
 
 import globeCss from '../styles/globe.css';
 
@@ -18,9 +18,7 @@ import globeCss from '../styles/globe.css';
  * @return html of mainpage
  */
 function generateGlobePage(lang) {
-  const scripts = (assets[`globe-${lang}`])
-    ? assets[`globe-${lang}`].js
-    : assets.globe.js;
+  const scripts = getJsAssets('globe', lang);
 
   const { t } = getTTag(lang);
 

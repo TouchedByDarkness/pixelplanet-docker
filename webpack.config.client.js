@@ -6,7 +6,6 @@ const fs = require('fs');
 const path = require('path');
 const process = require('process');
 const webpack = require('webpack');
-const AssetsPlugin = require('assets-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 /*
@@ -15,16 +14,9 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 process.chdir(__dirname);
 
 /*
- * Emit a file with assets paths
+ * timestamp for filenames
  */
-const assetPlugin = new AssetsPlugin({
-  path: path.resolve('dist'),
-  filename: 'assets.json',
-  update: true,
-  entrypoints: true,
-  prettyPrint: true,
-});
-
+const buildTs = Date.now();
 
 function buildWebpackClientConfig(
   development,
@@ -66,21 +58,19 @@ function buildWebpackClientConfig(
     devtool: (development) ? 'inline-source-map' : false,
 
     entry: {
-      [(locale !== 'default') ? `client-${locale}` : 'client']:
+      [`client.${locale}`]:
         [path.resolve('src', 'client.js')],
-      [(locale !== 'default') ? `globe-${locale}` : 'globe']:
+      [`globe.${locale}`]:
         [path.resolve('src', 'globe.js')],
-      [(locale !== 'default') ? `popup-${locale}` : 'popup']:
+      [`popup.${locale}`]:
         [path.resolve('src', 'popup.js')],
     },
 
     output: {
       path: path.resolve('dist', 'public', 'assets'),
-      publicPath: '/assets/',
-      filename: '[name].[chunkhash:8].js',
-      chunkFilename: (locale !== 'default')
-        ? `[name]-${locale}.[chunkhash:8].js`
-        : '[name].[chunkhash:8].js',
+      // publicPath: '/assets/', // Is this neccessary?
+      filename: `[name].${buildTs}.js`,
+      chunkFilename: `[name].${locale}.${buildTs}.js`,
     },
 
     resolve: {
@@ -148,8 +138,6 @@ function buildWebpackClientConfig(
         'process.env.BROWSER': true,
       }),
 
-      assetPlugin,
-
       // Webpack Bundle Analyzer
       // https://github.com/th0r/webpack-bundle-analyzer
       ...analyze ? [new BundleAnalyzerPlugin({ analyzerPort: 8889 })] : [],
@@ -163,6 +151,11 @@ function buildWebpackClientConfig(
           default: false,
           defaultVendors: false,
 
+          /*
+           * this layout of chunks is also assumed in src/core/assets.js
+           * client -> client.js + vendor.js
+           * globe -> globe.js + three.js
+           */
           vendor: {
             name: 'vendor',
             chunks: (chunk) => chunk.name.startsWith('client'),

@@ -12,8 +12,8 @@
 const fs = require('fs');
 const path = require('path');
 const CleanCSS = require('clean-css');
-const crypto = require('crypto');
 
+const buildTs = Date.now();
 const assetdir = path.resolve(__dirname, '..', 'dist', 'public', 'assets');
 const builddir = path.resolve(__dirname, '..', 'dist');
 
@@ -41,12 +41,11 @@ async function minifyCss() {
     }
     // eslint-disable-next-line max-len
     console.log('\x1b[33m%s\x1b[0m', `Minified ${file} by ${Math.round(output.stats.efficiency * 100)}%`);
-    const hash = crypto.createHash('md5').update(output.styles).digest('hex');
     let key = file.substr(0, file.indexOf('.'));
     if (key.startsWith('theme-')) {
       key = key.substr(6);
     }
-    const filename = `${key}.${hash.substr(0, 8)}.css`;
+    const filename = `${key}.${buildTs}.css`;
     fs.writeFileSync(path.resolve(assetdir, filename), output.styles, 'utf8');
     assets[key] = `/assets/${filename}`;
   });

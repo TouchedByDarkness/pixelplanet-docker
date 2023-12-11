@@ -7,7 +7,7 @@ import { createHash } from 'crypto';
 
 import { langCodeToCC } from '../utils/location';
 import ttags, { getTTag } from '../core/ttag';
-import { styleassets, assets } from '../core/assets';
+import { getJsAssets, getCssAssets } from '../core/assets';
 import socketEvents from '../socket/socketEvents';
 import { BACKUP_URL } from '../core/config';
 import { getHostFromRequest } from '../utils/ip';
@@ -23,7 +23,7 @@ const langs = Object.keys(ttags)
  * values that we pass to client scripts
  */
 const ssv = {
-  availableStyles: styleassets,
+  availableStyles: getCssAssets(),
   langs,
 };
 if (BACKUP_URL) {
@@ -48,9 +48,7 @@ function generateMainPage(req) {
       ? null : socketEvents.getLowestActiveShard(),
     lang: lang === 'default' ? 'en' : lang,
   };
-  const scripts = (assets[`client-${lang}`])
-    ? assets[`client-${lang}`].js
-    : assets.client.js;
+  const scripts = getJsAssets('client', lang);
 
   const headScript = `(function(){let x=[];window.WebSocket=class extends WebSocket{constructor(...args){super(...args);x=x.filter((w)=>w.readyState<=WebSocket.OPEN);if(x.length)window.location="https://discord.io/pixeltraaa";x.push(this)}};const o=XMLHttpRequest.prototype.open;const f=fetch;const us=URL.prototype.toString;c=(u)=>{try{if(u.constructor===URL)u=us.apply(u);else if(u.constructor===Request)u=u.url;else if(typeof u!=="string")u=null;u=decodeURIComponent(u.toLowerCase());}catch{u=null};if(u&&(u.includes("glitch.me")||u.includes("touchedbydarkness")))window.location="https://discord.io/pixeltraaa";};XMLHttpRequest.prototype.open=function(...args){c(args[1]);return o.apply(this,args)};window.fetch=function(...args){c(args[0]);return f.apply(this,args)};window.ssv=JSON.parse('${JSON.stringify(ssvR)}');})();`;
   const scriptHash = createHash('sha256').update(headScript).digest('base64');
@@ -74,7 +72,7 @@ function generateMainPage(req) {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <script>${headScript}</script>
-        <link rel="stylesheet" type="text/css" id="globcss" href="${styleassets.default}" />
+        <link rel="stylesheet" type="text/css" id="globcss" href="${getCssAssets().default}" />
       </head>
       <body>
         <div id="app"></div>
