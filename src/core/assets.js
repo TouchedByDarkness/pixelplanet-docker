@@ -54,10 +54,12 @@ function checkAssets() {
         // Format: name.[lang].[timestamp].js
         if (parts.length === 4) {
           const [name, lang] = parts;
-          if (!parsedAssets.js[name]) {
-            parsedAssets.js[name] = {};
+          let nameObj = parsedAssets.js[name];
+          if (typeof nameObj !== 'object') {
+            nameObj = {};
+            parsedAssets.js[name] = nameObj;
           }
-          parsedAssets.js[name][lang] = relPath;
+          nameObj[lang] = relPath;
         } else {
           const [name] = parts;
           parsedAssets.js[name] = relPath;
