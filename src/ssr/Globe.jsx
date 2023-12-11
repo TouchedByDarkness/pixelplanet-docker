@@ -4,6 +4,7 @@
  */
 
 /* eslint-disable max-len */
+import etag from 'etag';
 
 import { getTTag } from '../core/ttag';
 
@@ -17,8 +18,14 @@ import globeCss from '../styles/globe.css';
  * @param lang language code
  * @return html of mainpage
  */
-function generateGlobePage(lang) {
+function generateGlobePage(req) {
+  const { lang } = req;
   const scripts = getJsAssets('globe', lang);
+
+  const globeEtag = etag(scripts.join('_'), { weak: true });
+  if (req.headers['if-none-match'] === globeEtag) {
+    return { html: null, etag: globeEtag };
+  }
 
   const { t } = getTTag(lang);
 
@@ -48,7 +55,7 @@ function generateGlobePage(lang) {
     </html>
   `;
 
-  return html;
+  return { html, etag: globeEtag };
 }
 
 export default generateGlobePage;

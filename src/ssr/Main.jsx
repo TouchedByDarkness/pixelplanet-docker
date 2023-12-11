@@ -4,6 +4,7 @@
 
 /* eslint-disable max-len */
 import { createHash } from 'crypto';
+import etag from 'etag';
 
 import { langCodeToCC } from '../utils/location';
 import ttags, { getTTag } from '../core/ttag';
@@ -42,18 +43,24 @@ const bodyScriptHash = createHash('sha256').update(bodyScript).digest('base64');
 function generateMainPage(req) {
   const { lang } = req;
   const host = getHostFromRequest(req, false);
-  const ssvR = {
+  const shard = (host.startsWith(`${socketEvents.thisShard}.`))
+    ? null : socketEvents.getLowestActiveShard();
+  const ssvR = JSON.stringify({
     ...ssv,
-    shard: (host.startsWith(`${socketEvents.thisShard}.`))
-      ? null : socketEvents.getLowestActiveShard(),
+    shard,
     lang: lang === 'default' ? 'en' : lang,
-  };
+  });
   const scripts = getJsAssets('client', lang);
 
-  const headScript = `(function(){let x=[];window.WebSocket=class extends WebSocket{constructor(...args){super(...args);x=x.filter((w)=>w.readyState<=WebSocket.OPEN);if(x.length)window.location="https://discord.io/pixeltraaa";x.push(this)}};const o=XMLHttpRequest.prototype.open;const f=fetch;const us=URL.prototype.toString;c=(u)=>{try{if(u.constructor===URL)u=us.apply(u);else if(u.constructor===Request)u=u.url;else if(typeof u!=="string")u=null;u=decodeURIComponent(u.toLowerCase());}catch{u=null};if(u&&(u.includes("glitch.me")||u.includes("touchedbydarkness")))window.location="https://discord.io/pixeltraaa";};XMLHttpRequest.prototype.open=function(...args){c(args[1]);return o.apply(this,args)};window.fetch=function(...args){c(args[0]);return f.apply(this,args)};window.ssv=JSON.parse('${JSON.stringify(ssvR)}');})();`;
+  const headScript = `(function(){let x=[];window.WebSocket=class extends WebSocket{constructor(...args){super(...args);x=x.filter((w)=>w.readyState<=WebSocket.OPEN);if(x.length)window.location="https://discord.io/pixeltraaa";x.push(this)}};const o=XMLHttpRequest.prototype.open;const f=fetch;const us=URL.prototype.toString;c=(u)=>{try{if(u.constructor===URL)u=us.apply(u);else if(u.constructor===Request)u=u.url;else if(typeof u!=="string")u=null;u=decodeURIComponent(u.toLowerCase());}catch{u=null};if(u&&(u.includes("glitch.me")||u.includes("touchedbydarkness")))window.location="https://discord.io/pixeltraaa";};XMLHttpRequest.prototype.open=function(...args){c(args[1]);return o.apply(this,args)};window.fetch=function(...args){c(args[0]);return f.apply(this,args)};window.ssv=JSON.parse('${ssvR}');})();`;
   const scriptHash = createHash('sha256').update(headScript).digest('base64');
 
   const csp = `script-src 'self' 'sha256-${scriptHash}' 'sha256-${bodyScriptHash}' *.tiktok.com *.ttwstatic.com; worker-src 'self' blob:;`;
+
+  const mainEtag = etag(scripts.concat(ssvR).join('_'), { weak: true });
+  if (req.headers['if-none-match'] === mainEtag) {
+    return { html: null, csp, etag: mainEtag };
+  }
 
   const { t } = getTTag(lang);
 
@@ -81,7 +88,8 @@ function generateMainPage(req) {
       </body>
     </html>
   `;
-  return [html, csp];
+
+  return { html, csp, etag: mainEtag };
 }
 
 export default generateMainPage;

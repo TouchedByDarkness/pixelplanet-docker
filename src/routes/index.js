@@ -3,7 +3,6 @@
  */
 
 import express from 'express';
-import etag from 'etag';
 import path from 'path';
 
 import ranking from './ranking';
@@ -16,7 +15,6 @@ import captcha from './captcha';
 import resetPassword from './reset_password';
 import api from './api';
 
-import { getJsAssets } from '../core/assets';
 import { expressTTag } from '../core/ttag';
 import corsMiddleware from '../utils/corsMiddleware';
 import generateGlobePage from '../ssr/Globe';
@@ -72,34 +70,26 @@ router.use(expressTTag);
 //
 // 3D Globe (react generated)
 // -----------------------------------------------------------------------------
-const globeEtag = etag(
-  getJsAssets('globe').join('_'),
-  { weak: true },
-);
 router.get('/globe', (req, res) => {
+  const { html, etag: globeEtag } = generateGlobePage(req);
+
   res.set({
     'Cache-Control': `private, max-age=${15 * 60}`, // seconds
     ETag: globeEtag,
   });
 
-  if (req.headers['if-none-match'] === globeEtag) {
+  if (!html) {
     res.status(304).end();
     return;
   }
 
   res.set('Content-Type', 'text/html; charset=utf-8');
-
-  res.status(200).send(generateGlobePage(req.lang));
+  res.status(200).send(html);
 });
 
 //
 // PopUps
 // -----------------------------------------------------------------------------
-const winEtag = etag(
-  getJsAssets('popup').join('_'),
-  { weak: true },
-);
-
 router.use(
   AVAILABLE_POPUPS.map((p) => `/${p.toLowerCase()}`),
   (req, res, next) => {
@@ -108,51 +98,43 @@ router.use(
       return;
     }
 
+    const { html, etag: winEtag } = generatePopUpPage(req);
+
     res.set({
       'Cache-Control': `private, max-age=${15 * 60}`, // seconds
       ETag: winEtag,
     });
 
-    if (req.headers['if-none-match'] === winEtag) {
+    if (!html) {
       res.status(304).end();
       return;
     }
 
     res.set('Content-Type', 'text/html; charset=utf-8');
-
-    res.status(200).send(generatePopUpPage(req));
+    res.status(200).send(html);
   },
 );
 
 //
 // Main Page
 // -----------------------------------------------------------------------------
-const indexEtag = etag(
-  getJsAssets('client').join('_'),
-  { weak: true },
-);
-
 router.get('/', (req, res) => {
+  const { html, csp, etag: mainEtag } = generateMainPage(req);
+
   res.set({
     'Cache-Control': `private, max-age=${15 * 60}`, // seconds
-    // ETag: indexEtag,
+    'Content-Security-Policy': csp,
+    ETag: mainEtag,
   });
 
-  /*
-   * TODO fix this per language
-  if (req.headers['if-none-match'] === indexEtag) {
+  if (!html) {
     res.status(304).end();
     return;
   }
-  */
-
-  const [html, csp] = generateMainPage(req);
 
   res.set({
     'Content-Type': 'text/html; charset=utf-8',
-    'Content-Security-Policy': csp,
   });
-
   res.status(200).send(html);
 });
 

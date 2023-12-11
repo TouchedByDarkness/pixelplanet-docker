@@ -4,6 +4,7 @@
  */
 
 /* eslint-disable max-len */
+import etag from 'etag';
 
 import { langCodeToCC } from '../utils/location';
 import ttags, { getTTag } from '../core/ttag';
@@ -33,18 +34,24 @@ if (BACKUP_URL) {
 /*
  * generates string with html of win page
  * @param lang language code
- * @return html of mainpage
+ * @return html and etag of popup page
  */
 function generatePopUpPage(req) {
   const { lang } = req;
   const host = getHostFromRequest(req);
-  const ssvR = {
+  const shard = (host.startsWith(`${socketEvents.thisShard}.`))
+    ? null : socketEvents.getLowestActiveShard();
+  const ssvR = JSON.stringify({
     ...ssv,
-    shard: (host.startsWith(`${socketEvents.thisShard}.`))
-      ? null : socketEvents.getLowestActiveShard(),
+    shard,
     lang: lang === 'default' ? 'en' : lang,
-  };
-  const script = getJsAssets('popup', lang);
+  });
+  const scripts = getJsAssets('popup', lang);
+
+  const popEtag = etag(scripts.concat(ssvR).join('_'), { weak: true });
+  if (req.headers['if-none-match'] === popEtag) {
+    return { html: null, etag: popEtag };
+  }
 
   const { t } = getTTag(lang);
 
@@ -62,18 +69,18 @@ function generatePopUpPage(req) {
         />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <script>window.ssv=JSON.parse('${JSON.stringify(ssvR)}')</script>
+        <script>window.ssv=JSON.parse('${ssvR}')</script>
         <link rel="stylesheet" type="text/css" id="globcss" href="${getCssAssets().default}" />
       </head>
       <body>
         <div id="app" class="popup">
         </div>
-        <script src="${script}"></script>
+        ${scripts.map((script) => `<script src="${script}"></script>`).join('')}
       </body>
     </html>
   `;
 
-  return html;
+  return { html, etag: popEtag };
 }
 
 export default generatePopUpPage;

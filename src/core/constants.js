@@ -57,7 +57,7 @@ export const DEFAULT_CANVASES = {
     ranked: true,
     req: -1,
     sd: '2020-01-08',
-  }
+  },
 };
 
 export const TILE_LOADING_IMAGE = './loading.png';
