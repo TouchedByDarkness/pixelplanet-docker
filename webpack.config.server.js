@@ -75,7 +75,7 @@ module.exports = ({
     },
 
     output: {
-      clean: true,
+      clean: false,
     },
 
     resolve: {
