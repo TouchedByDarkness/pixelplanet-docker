@@ -66,14 +66,14 @@ function LanguageSelect() {
           /* set with selected language */
           const d = new Date();
           d.setTime(d.getTime() + 24 * MONTH);
-          let { host } = window.location;
-          if (host.lastIndexOf('.') !== host.indexOf('.')) {
-            host = host.slice(host.indexOf('.'));
+          let { hostname } = window.location;
+          if (hostname.lastIndexOf('.') !== hostname.indexOf('.')) {
+            hostname = hostname.slice(hostname.indexOf('.'));
           } else {
-            host = `.${host}`;
+            hostname = `.${hostname}`;
           }
           // eslint-disable-next-line max-len
-          document.cookie = `plang=${langSel};expires=${d.toUTCString()};path=/;domain=${host}`;
+          document.cookie = `plang=${langSel};expires=${d.toUTCString()};path=/;domain=${hostname}`;
           window.location.reload();
         }}
       >
