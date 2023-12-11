@@ -34,7 +34,7 @@ function checkAssets() {
     const parts = filename.split('.');
 
     // File needs to have a timestamp in its name
-    if (parts.length < 3 || Number.isNaN(Number(parts[parts.length - 2]))) {
+    if (parts.length < 3) {
       continue;
     }
     // if multiple candidates exist, take most recent created file
@@ -81,12 +81,6 @@ assets = checkAssets();
 
 export function getJsAssets(name, lang) {
   const jsAssets = [];
-  const mainAsset = (lang && assets.js[name][lang])
-    || assets.js[name].default
-    || assets.js[name];
-  if (mainAsset) {
-    jsAssets.push(mainAsset);
-  }
 
   switch (name) {
     case 'client':
@@ -98,6 +92,14 @@ export function getJsAssets(name, lang) {
     default:
       // nothing
   }
+
+  const mainAsset = (lang && assets.js[name][lang])
+    || assets.js[name].default
+    || assets.js[name];
+  if (mainAsset) {
+    jsAssets.push(mainAsset);
+  }
+
   return jsAssets;
 }
 

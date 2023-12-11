@@ -13,11 +13,6 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
  */
 process.chdir(__dirname);
 
-/*
- * timestamp for filenames
- */
-const buildTs = Date.now();
-
 function buildWebpackClientConfig(
   development,
   analyze,
@@ -68,9 +63,9 @@ function buildWebpackClientConfig(
 
     output: {
       path: path.resolve('dist', 'public', 'assets'),
-      // publicPath: '/assets/', // Is this neccessary?
-      filename: `[name].${buildTs}.js`,
-      chunkFilename: `[name].${locale}.${buildTs}.js`,
+      publicPath: '/assets/',
+      filename: `[name].[chunkhash:8].js`,
+      chunkFilename: `[name].${locale}.[chunkhash:8].js`,
     },
 
     resolve: {
@@ -169,6 +164,8 @@ function buildWebpackClientConfig(
         },
       },
     },
+
+    recordsPath: path.join(__dirname, 'records.json'),
 
     stats: {
       colors: true,
