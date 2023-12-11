@@ -53,18 +53,21 @@ function buildWebpackClientConfig(
     devtool: (development) ? 'inline-source-map' : false,
 
     entry: {
-      [`client.${locale}`]:
+      client:
         [path.resolve('src', 'client.js')],
-      [`globe.${locale}`]:
+      globe:
         [path.resolve('src', 'globe.js')],
-      [`popup.${locale}`]:
+      popup:
         [path.resolve('src', 'popup.js')],
     },
 
     output: {
       path: path.resolve('dist', 'public', 'assets'),
       publicPath: '/assets/',
-      filename: `[name].[chunkhash:8].js`,
+      // chunkReason is set if it is a split chunk like vendor or three
+      filename: (pathData) => (pathData.chunk.chunkReason)
+        ? '[name].[chunkhash:8].js'
+        : `[name].${locale}.[chunkhash:8].js`,
       chunkFilename: `[name].${locale}.[chunkhash:8].js`,
     },
 
