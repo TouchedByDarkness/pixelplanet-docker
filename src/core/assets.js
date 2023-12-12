@@ -81,6 +81,14 @@ function checkAssets() {
 // eslint-disable-next-line prefer-const
 assets = checkAssets();
 
+export function getLangsOfJsAsset(name) {
+  const nameAssets = assets.js[name];
+  if (!nameAssets) {
+    return [];
+  }
+  return Object.keys(nameAssets);
+}
+
 export function getJsAssets(name, lang) {
   const jsAssets = [];
 

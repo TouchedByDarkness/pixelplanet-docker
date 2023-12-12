@@ -17,7 +17,6 @@ import { getHostFromRequest } from '../utils/ip';
  * generate language list
  */
 const langs = Object.keys(ttags)
-  .map((l) => (l === 'default' ? 'en' : l))
   .map((l) => [l, langCodeToCC(l)]);
 
 /*

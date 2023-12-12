@@ -8,7 +8,7 @@
   "description": "Unlimited planet canvas for placing pixels",
   "main": "server.js",
   "scripts": {
-    "build": "node scripts/build.js && npm run minify-css",
+    "build": "node scripts/build.js",
     "build:dev": "webpack --env extract --config ./webpack.config.server.js && webpack --env extract --env development --config ./webpack.config.client.js && npm run minify-css",
     "deploy": "ssh pixelplanet /home/pixelpla/rebuild.sh",
     "minify-css": "node scripts/minifyCss.js",
