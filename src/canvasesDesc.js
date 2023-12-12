@@ -66,8 +66,8 @@ const lCanvases = {};
   });
 })();
 
-export function getLocalizedCanvases(lang) {
-  return lCanvases[lang] || lCanvases.default;
+export function getLocalizedCanvases(lang = 'en') {
+  return lCanvases[lang] || lCanvases.en;
 }
 
 export default lCanvases;

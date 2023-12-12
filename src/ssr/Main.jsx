@@ -48,7 +48,7 @@ function generateMainPage(req) {
   const ssvR = JSON.stringify({
     ...ssv,
     shard,
-    lang: lang === 'default' ? 'en' : lang,
+    lang,
   });
   const scripts = getJsAssets('client', lang);
 

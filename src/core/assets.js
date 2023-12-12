@@ -7,7 +7,7 @@ const assetDir = path.join(__dirname, 'public', ASSET_DIR);
  * {
  *   js:
  *     client:
- *       default: "/assets/client.defult.134234.js",
+ *       en: "/assets/client.defult.134234.js",
  *       de: "/assets/client.de.32834234.js",
  *       [...]
  *     [...]
@@ -95,9 +95,15 @@ export function getJsAssets(name, lang) {
       // nothing
   }
 
-  const mainAsset = (lang && assets.js[name][lang])
-    || assets.js[name].default
-    || assets.js[name];
+  const nameAssets = assets.js[name];
+  let mainAsset;
+  if (typeof nameAssets === 'object') {
+    mainAsset = (lang && nameAssets[lang])
+      || nameAssets.en
+      || Object.values(nameAssets)[0];
+  } else {
+    mainAsset = nameAssets;
+  }
   if (mainAsset) {
     jsAssets.push(mainAsset);
   }

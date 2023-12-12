@@ -9,7 +9,7 @@
  */
 export function languageFromLocalisation(localisation) {
   if (!localisation) {
-    return 'default';
+    return 'en';
   }
   let lang = localisation;
   let i = lang.indexOf('-');
@@ -23,9 +23,6 @@ export function languageFromLocalisation(localisation) {
   i = lang.indexOf(';');
   if (i !== -1) {
     lang = lang.slice(0, i);
-  }
-  if (lang === 'en') {
-    lang = 'default';
   }
   return lang.toLowerCase();
 }

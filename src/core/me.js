@@ -9,7 +9,7 @@ import { USE_MAILER } from './config';
 import chatProvider from './ChatProvider';
 
 
-export default async function getMe(user, lang = 'default') {
+export default async function getMe(user, lang) {
   const userdata = await user.getUserData();
   // sanitize data
   const {

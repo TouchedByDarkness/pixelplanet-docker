@@ -192,7 +192,7 @@ export class ChatProvider {
 
   getDefaultChannels(lang) {
     const langChannel = {};
-    if (lang && lang !== 'default') {
+    if (lang && lang !== 'en') {
       const { langChannels } = this;
       if (langChannels[lang]) {
         const {

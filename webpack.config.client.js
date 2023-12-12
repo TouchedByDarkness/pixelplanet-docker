@@ -21,9 +21,9 @@ function buildWebpackClientConfig(
 ) {
   const ttag = {
     resolve: {
-      translations: (locale !== 'default')
+      translations: (locale !== 'en')
         ? path.resolve('i18n', `${locale}.po`)
-        : locale,
+        : 'default',
     },
   };
 
@@ -182,12 +182,11 @@ function buildWebpackClientConfig(
 }
 
 function getAllAvailableLocals() {
-  // return ['default', 'de', 'tr'];
   const langDir = path.resolve('i18n');
   const langs = fs.readdirSync(langDir)
     .filter((e) => (e.endsWith('.po') && !e.startsWith('ssr')))
     .map((l) => l.slice(0, -3));
-  langs.unshift('default');
+  langs.unshift('en');
   return langs;
 }
 
@@ -222,7 +221,7 @@ module.exports = ({
 }) => {
   if (extract || analyze || locale || development) {
     return buildWebpackClientConfig(
-      development, analyze, locale || 'default', extract,
+      development, analyze, locale || 'en', extract,
     );
   }
   return buildWebpackClientConfigAllLangs(development);

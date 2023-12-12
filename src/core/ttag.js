@@ -10,7 +10,7 @@ import { languageFromLocalisation } from '../utils/location';
 const localeImports = require.context('../../i18n', false, /^\.[/\\]ssr-.+\.po$/);
 
 const ttags = {
-  default: new TTag(),
+  en: new TTag(),
 };
 
 (() => {
@@ -27,7 +27,7 @@ const ttags = {
 })();
 
 export function getTTag(lang) {
-  return ttags[lang] || ttags.default;
+  return ttags[lang] || ttags.en;
 }
 
 /*
