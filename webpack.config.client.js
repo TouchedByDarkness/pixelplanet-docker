@@ -18,6 +18,7 @@ function buildWebpackClientConfig(
   analyze,
   locale,
   extract,
+  clean,
 ) {
   const ttag = {
     resolve: {
@@ -61,7 +62,7 @@ function buildWebpackClientConfig(
         ? '[name].[chunkhash:8].js'
         : `[name].${locale}.[chunkhash:8].js`,
       chunkFilename: `[name].${locale}.[chunkhash:8].js`,
-      clean: true,
+      clean,
     },
 
     resolve: {
@@ -174,8 +175,7 @@ function buildWebpackClientConfig(
       chunkModules: false,
     },
 
-    cache: (extract) ? false
-     : {
+    cache: {
         type: 'filesystem',
       },
   };
@@ -217,11 +217,11 @@ function buildWebpackClientConfigAllLangs() {
  * @return webpack configuration
  */
 module.exports = ({
-  development, analyze, extract, locale,
+  development, analyze, extract, locale, clean,
 }) => {
-  if (extract || analyze || locale || development) {
+  if (extract || analyze || locale || development || clean) {
     return buildWebpackClientConfig(
-      development, analyze, locale || 'en', extract,
+      development, analyze, locale || 'en', extract, clean,
     );
   }
   return buildWebpackClientConfigAllLangs(development);

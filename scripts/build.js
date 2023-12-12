@@ -3,6 +3,8 @@
  * Lets split that here
  */
 
+const path = require('path');
+const fs = require('fs');
 const webpack = require('webpack');
 const serverConfig = require('../webpack.config.server.js');
 const clientConfig = require('../webpack.config.client.js');
@@ -22,6 +24,9 @@ function compile(webpackConfig) {
 }
 
 async function buildProduction() {
+  // cleanup old files
+  fs.rmSync(path.resolve(__dirname, '..', 'node_modules', '.cache', 'webpack'), { recursive: true, force: true });
+  // fs.rmSync(path.resolve(__dirname, '..', 'dist', 'public', 'assets'), { recursive: true, force: true });
   // server files
   console.log('-----------------------------');
   console.log(`Build server...`);
@@ -43,6 +48,7 @@ async function buildProduction() {
       analyze: false,
       extract: false,
       locale: lang,
+      clean: (i === 0),
     }));
   }
   console.log(`Finished building in ${(Date.now() - st) / 1000}s`);
