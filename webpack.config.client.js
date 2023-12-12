@@ -198,7 +198,7 @@ function buildWebpackClientConfigAllLangs() {
   const webpackConfigClient = [];
   for (let l = 0; l < langs.length; l += 1) {
     const lang = langs[l];
-    const cfg = buildWebpackClientConfig(false, false, lang, false);
+    const cfg = buildWebpackClientConfig(false, false, lang, false, false);
     webpackConfigClient.push(cfg);
   }
   return webpackConfigClient;
@@ -224,7 +224,7 @@ module.exports = ({
       development, analyze, locale || 'en', extract, clean,
     );
   }
-  return buildWebpackClientConfigAllLangs(development);
+  return buildWebpackClientConfig(false, false, 'en', false, true);
 };
 
 module.exports.buildWebpackClientConfig = buildWebpackClientConfig;
