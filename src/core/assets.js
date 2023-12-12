@@ -28,7 +28,7 @@ function checkAssets() {
     css: {},
   };
   const assetFiles = fs.readdirSync(assetDir);
-  const birthtimes = {};
+  const mtimes = {};
 
   for (const filename of assetFiles) {
     const parts = filename.split('.');
@@ -38,13 +38,13 @@ function checkAssets() {
       continue;
     }
     // if multiple candidates exist, take most recent created file
-    const birthtime = fs.statSync(path.resolve(assetDir, filename))
-      .birthtime.getTime();
+    const mtime = fs.statSync(path.resolve(assetDir, filename))
+      .mtime.getTime();
     const ident = parts.filter((a, ind) => ind !== parts.length - 2).join('.');
-    if (birthtimes[ident] && birthtimes[ident] > birthtime) {
+    if (mtimes[ident] && mtimes[ident] > mtime) {
       continue;
     }
-    birthtimes[ident] = birthtime;
+    mtimes[ident] = mtime;
 
     const ext = parts[parts.length - 1];
     const relPath = `${ASSET_DIR}/${filename}`;

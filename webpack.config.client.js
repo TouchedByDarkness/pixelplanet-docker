@@ -37,14 +37,6 @@ function buildWebpackClientConfig(
     ['ttag', ttag],
   ];
 
-  // cache invalidates if .po file changed
-  const buildDependencies = {
-    config: [__filename],
-  }
-  if (locale !== 'default') {
-    buildDependencies.i18n = [ttag.resolve.translations];
-  }
-
   return {
     name: 'client',
     target: 'web',
@@ -69,6 +61,7 @@ function buildWebpackClientConfig(
         ? '[name].[chunkhash:8].js'
         : `[name].${locale}.[chunkhash:8].js`,
       chunkFilename: `[name].${locale}.[chunkhash:8].js`,
+      clean: true,
     },
 
     resolve: {
@@ -91,9 +84,7 @@ function buildWebpackClientConfig(
         {
           test: /\.svg$/,
           use: [
-            {
-              loader: 'babel-loader',
-            },
+            'babel-loader',
             {
               loader: 'react-svg-loader',
               options: {
@@ -114,16 +105,21 @@ function buildWebpackClientConfig(
         },
         {
           test: /\.(js|jsx)$/,
-          loader: 'babel-loader',
+          use: [
+            {
+              loader: 'babel-loader',
+              options: {
+                plugins: babelPlugins,
+              },
+            },
+            path.resolve('scripts/TtagNonCacheableLoader.js'),
+          ],
           include: [
             path.resolve('src'),
             ...['image-q'].map((moduleName) => (
               path.resolve('node_modules', moduleName)
             )),
           ],
-          options: {
-            plugins: babelPlugins,
-          },
         },
       ],
     },
@@ -168,7 +164,7 @@ function buildWebpackClientConfig(
       },
     },
 
-    recordsPath: path.join(__dirname, 'records.json'),
+    recordsPath: path.resolve('records.json'),
 
     stats: {
       colors: true,
@@ -179,20 +175,19 @@ function buildWebpackClientConfig(
     },
 
     cache: (extract) ? false
-      : {
+     : {
         type: 'filesystem',
-        name: (development) ? `${locale}-dev` : locale,
-        buildDependencies,
       },
   };
 }
 
 function getAllAvailableLocals() {
+  // return ['default', 'de', 'tr'];
   const langDir = path.resolve('i18n');
   const langs = fs.readdirSync(langDir)
     .filter((e) => (e.endsWith('.po') && !e.startsWith('ssr')))
     .map((l) => l.slice(0, -3));
-  langs.push('default');
+  langs.unshift('default');
   return langs;
 }
 
