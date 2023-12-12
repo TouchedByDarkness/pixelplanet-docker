@@ -23,7 +23,6 @@ FILES.push('default.css');
 
 async function minifyCss() {
   console.log('Minifying css');
-  const assets = {};
   FILES.forEach((file) => {
     const input = fs.readFileSync(path.resolve(FOLDER, file), 'utf8');
     const options = {};
@@ -47,10 +46,7 @@ async function minifyCss() {
     }
     const filename = `${key}.${buildTs}.css`;
     fs.writeFileSync(path.resolve(assetdir, filename), output.styles, 'utf8');
-    assets[key] = `/assets/${filename}`;
   });
-  const json = JSON.stringify(assets);
-  fs.writeFileSync(path.resolve(builddir, 'styleassets.json'), json);
 }
 
 async function doMinifyCss() {
