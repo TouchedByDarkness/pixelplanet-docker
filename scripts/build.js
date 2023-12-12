@@ -5,6 +5,7 @@
 
 const path = require('path');
 const fs = require('fs');
+const { spawn } = require('node:child_process');
 const webpack = require('webpack');
 
 const minifyCss = require('./minifyCss');
@@ -13,17 +14,41 @@ const clientConfig = require('../webpack.config.client.js');
 const { getAllAvailableLocals } = clientConfig;
 
 let langs = 'all';
+let doBuildServer = false;
+let doBuildClient = false;
+let parallel = false;
+let recursion = false;
 for (let i = 0; i < process.argv.length; i += 1) {
-  if (process.argv[i] == '--langs') {
-    const newLangs = process.argv[++i];
-    if (newLangs) langs = newLangs;
-    break;
+  switch (process.argv[i]) {
+    case '--langs': {
+      const newLangs = process.argv[++i];
+      if (newLangs) langs = newLangs;
+      break;
+    }
+    case '--client':
+      doBuildClient = true;
+      break;
+    case `--server`:
+      doBuildServer = true;
+      break;
+    case '--parallel':
+      parallel = true;
+      break;
+    case '--recursion':
+      recursion = true;
+      break;
+    default:
+      // nothing
   }
+}
+if (!doBuildServer && !doBuildClient) {
+  doBuildServer = true;
+  doBuildClient = true;
 }
 
 function compile(webpackConfig) {
   return new Promise((resolve, reject) => {
-    webpack(webpackConfig).run((err, stats) => {
+    webpack(webpackConfig, (err, stats) => {
       if (err) {
         return reject(err);
       }
@@ -34,10 +59,90 @@ function compile(webpackConfig) {
   });
 }
 
+function buildServer() {
+  console.log('-----------------------------');
+  console.log(`Build server...`);
+  console.log('-----------------------------');
+  const ts = Date.now();
+
+  return new Promise((resolve, reject) => {
+    const serverCompile = spawn('npm', ['run', 'build:server']);
+    serverCompile.stdout.on('data', (data) => {
+      console.log(data.toString());
+    });
+    serverCompile.stderr.on('data', (data) => {
+      console.error(data.toString());
+    });
+    serverCompile.on('close', (code) => {
+      if (code) {
+        reject(new Error('Server compilation failed!'));
+      } else {
+        console.log('---------------------------------------');
+        console.log(`Server Compilation finished in ${Math.floor((Date.now() - ts) / 1000)}s`);
+        console.log('---------------------------------------');
+        resolve();
+      }
+    });
+  });
+}
+
+function buildClients(slangs) {
+  return new Promise((resolve, reject) => {
+    const clientCompile = spawn('npm', ['run', 'build', '--', '--client', '--recursion', '--langs', slangs.join(',')]);
+    clientCompile.stdout.on('data', (data) => {
+      console.log(data.toString());
+    });
+    clientCompile.stderr.on('data', (data) => {
+      console.error(data.toString());
+    });
+    clientCompile.on('close', (code) => {
+      if (code) {
+        reject(new Error('Client compilation failed!'));
+      } else {
+        resolve();
+      }
+    });
+  });
+}
+
+async function buildClientsSync(avlangs) {
+  for(let i = 0; i < avlangs.length; i += 1) {
+    const lang = avlangs[i];
+    console.log(`Build client for locale ${lang}...`);
+    await compile(clientConfig({
+      development: false,
+      analyze: false,
+      extract: false,
+      locale: lang,
+      clean: false,
+      readonly: recursion,
+    }));
+  }
+}
+
+function buildClientsParallel(avlangs) {
+  const st = Date.now();
+  const numProc = 3;
+  let nump = Math.floor(avlangs.length / numProc);
+  if (!nump) nump = 1;
+
+  const promises = [];
+  while (avlangs.length >= nump) {
+    const slangs = avlangs.splice(0, nump);
+    promises.push(buildClients(slangs));
+  }
+  if (avlangs.length) {
+    promises.push(buildClientsSync(avlangs));
+  }
+  return Promise.all(promises);
+}
+
 async function buildProduction() {
+  const st = Date.now();
   // cleanup old files
-  fs.rmSync(path.resolve(__dirname, '..', 'node_modules', '.cache', 'webpack'), { recursive: true, force: true });
-  // fs.rmSync(path.resolve(__dirname, '..', 'dist', 'public', 'assets'), { recursive: true, force: true });
+  if (!recursion) {
+    fs.rmSync(path.resolve(__dirname, '..', 'node_modules', '.cache', 'webpack'), { recursive: true, force: true });
+  }
 
   // decide which languages to build
   let avlangs = getAllAvailableLocals();
@@ -52,31 +157,41 @@ async function buildProduction() {
   }
   console.log('Building locales:', avlangs);
 
-  // server files
-  console.log('-----------------------------');
-  console.log(`Build server...`);
-  console.log('-----------------------------');
-  await compile(serverConfig({
-    development: false,
-    extract: false,
-  }));
+  const promises = [];
 
-  // client files
-  const st = Date.now();
-  for(let i = 0; i < avlangs.length; i += 1) {
-    const lang = avlangs[i];
-    console.log(`Build client for locale ${lang}...`);
-    console.log('-----------------------------');
-    await compile(clientConfig({
-      development: false,
-      analyze: false,
-      extract: false,
-      locale: lang,
-      clean: (i === 0),
-    }));
+  if (doBuildServer) {
+    promises.push(buildServer());
   }
-  console.log(`Finished building in ${(Date.now() - st) / 1000}s`);
-  await minifyCss();
+
+  if (!recursion) {
+      console.log(
+        'Building one package seperately to populate cache and extract langs...',
+      );
+      await compile(clientConfig({
+        development: false,
+        analyze: false,
+        extract: true,
+        locale: avlangs.shift(),
+        clean: true,
+        readonly: false,
+      }));
+  }
+
+  if (doBuildClient) {
+    if (parallel) {
+      promises.push(buildClientsParallel(avlangs));
+    } else {
+      promises.push(buildClientsSync(avlangs));
+    }
+  }
+  await Promise.all(promises);
+
+  if (!recursion) {
+    await minifyCss();
+    console.log(`Finished building in ${(Date.now() - st) / 1000}s`);
+  } else {
+    console.log(`Worker done in ${(Date.now() - st) / 1000}s`);
+  }
 }
 
 buildProduction();

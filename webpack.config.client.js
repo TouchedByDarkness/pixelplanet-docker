@@ -13,13 +13,14 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
  */
 process.chdir(__dirname);
 
-function buildWebpackClientConfig(
+module.exports = ({
   development,
   analyze,
-  locale,
+  locale = 'en',
   extract,
-  clean,
-) {
+  clean = true,
+  readonly,
+}) => {
   const ttag = {
     resolve: {
       translations: (locale !== 'en')
@@ -43,7 +44,7 @@ function buildWebpackClientConfig(
     target: 'web',
 
     mode: (development) ? 'development' : 'production',
-    devtool: (development) ? 'inline-source-map' : false,
+    devtool: (development) ? 'source-map' : false,
 
     entry: {
       client:
@@ -176,8 +177,9 @@ function buildWebpackClientConfig(
     },
 
     cache: {
-        type: 'filesystem',
-      },
+      type: 'filesystem',
+      readonly,
+    },
   };
 }
 
@@ -190,42 +192,4 @@ function getAllAvailableLocals() {
   return langs;
 }
 
-/*
- * return array of webpack configuartions for all languages
- */
-function buildWebpackClientConfigAllLangs() {
-  const langs = getAllAvailableLocals();
-  const webpackConfigClient = [];
-  for (let l = 0; l < langs.length; l += 1) {
-    const lang = langs[l];
-    const cfg = buildWebpackClientConfig(false, false, lang, false, false);
-    webpackConfigClient.push(cfg);
-  }
-  return webpackConfigClient;
-}
-
-/*
- * Per default get configuration of all packages
- * If any argument is given, it will only get one
- * ('default' aka english if locale is unset)
- *
- * @param development If development mode
- * @param extract if translatable strings get in i18n templates should
- *   get updated
- * @param locale language get single configuration of specific locale
- * @param analyze launch BundleAnalyzerPlugin after build
- * @return webpack configuration
- */
-module.exports = ({
-  development, analyze, extract, locale, clean,
-}) => {
-  if (extract || analyze || locale || development || clean) {
-    return buildWebpackClientConfig(
-      development, analyze, locale || 'en', extract, clean,
-    );
-  }
-  return buildWebpackClientConfig(false, false, 'en', false, true);
-};
-
-module.exports.buildWebpackClientConfig = buildWebpackClientConfig;
 module.exports.getAllAvailableLocals = getAllAvailableLocals;
