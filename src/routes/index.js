@@ -74,7 +74,7 @@ router.get('/globe', (req, res) => {
   const { html, etag: globeEtag } = generateGlobePage(req);
 
   res.set({
-    'Cache-Control': `private, max-age=${15 * 60}`, // seconds
+    'Cache-Control': `private, no-cache`, // seconds
     ETag: globeEtag,
   });
 
@@ -101,7 +101,7 @@ router.use(
     const { html, etag: winEtag } = generatePopUpPage(req);
 
     res.set({
-      'Cache-Control': `private, max-age=${15 * 60}`, // seconds
+      'Cache-Control': `private, no-cache`, // seconds
       ETag: winEtag,
     });
 
@@ -122,7 +122,7 @@ router.get('/', (req, res) => {
   const { html, csp, etag: mainEtag } = generateMainPage(req);
 
   res.set({
-    'Cache-Control': `private, max-age=${15 * 60}`, // seconds
+    'Cache-Control': `private, no-cache`, // seconds
     'Content-Security-Policy': csp,
     ETag: mainEtag,
   });
