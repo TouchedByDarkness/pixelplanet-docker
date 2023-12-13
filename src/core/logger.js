@@ -10,7 +10,11 @@ import DailyRotateFile from 'winston-daily-rotate-file';
 import { SHARD_NAME } from './config';
 
 export const PIXELLOGGER_PREFIX = (SHARD_NAME)
-  ? `./log/pixels-${SHARD_NAME}` : './log/pixels-';
+  ? `./log/pixels-${SHARD_NAME}-` : './log/pixels-';
+const PROXYLOGGER_PREFIX = (SHARD_NAME)
+  ? `./log/prodycheck-${SHARD_NAME}-` : './log/proxycheck-';
+const MODTOOLLOGGER_PREFIX = (SHARD_NAME)
+  ? `./log/modtools-${SHARD_NAME}-` : './log/modtools-';
 
 const logger = createLogger({
   level: 'info',
@@ -43,7 +47,7 @@ export const proxyLogger = createLogger({
   transports: [
     new DailyRotateFile({
       level: 'info',
-      filename: './log/proxycheck-%DATE%.log',
+      filename: `${PROXYLOGGER_PREFIX}%DATE%.log`,
       maxsize: '10m',
       maxFiles: '14d',
       utc: true,
@@ -57,7 +61,7 @@ export const modtoolsLogger = createLogger({
   transports: [
     new DailyRotateFile({
       level: 'info',
-      filename: './log/moderation/modtools-%DATE%.log',
+      filename: `${MODTOOLLOGGER_PREFIX}%DATE%.log`,
       maxSize: '20m',
       maxFiles: '14d',
       utc: true,
