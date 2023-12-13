@@ -39,8 +39,6 @@ copy () {
   cp -r dist/public "${TARGETDIR}/"
   cp -r dist/captchaFonts "${TARGETDIR}/"
   cp -r dist/package.json "${TARGETDIR}/"
-  cp -r dist/assets.json "${TARGETDIR}/"
-  cp -r dist/styleassets.json "${TARGETDIR}/"
   mkdir -p "${TARGETDIR}/log"
   cd "${TARGETDIR}"
   [ $REINSTALL -eq 0 ] && npm_reinstall
