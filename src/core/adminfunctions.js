@@ -268,14 +268,18 @@ export async function executeImageAction(
  * register responses on socket for Watch Actions
  */
 socketEvents.onReq('watch', (action, ...args) => {
-  if (action === 'getIIDSummary') {
-    return getIIDSummary(...args);
-  } if (action === 'getIIDPixels') {
-    return getIIDPixels(...args);
-  } if (action === 'getSummaryFromArea') {
-    return getSummaryFromArea(...args);
-  } if (action === 'getPixelsFromArea') {
-    return getPixelsFromArea(...args);
+  try {
+    if (action === 'getIIDSummary') {
+      return getIIDSummary(...args);
+    } if (action === 'getIIDPixels') {
+      return getIIDPixels(...args);
+    } if (action === 'getSummaryFromArea') {
+      return getSummaryFromArea(...args);
+    } if (action === 'getPixelsFromArea') {
+      return getPixelsFromArea(...args);
+    }
+  } catch {
+    // silently fail when file couldn't be parsed
   }
   return null;
 });
