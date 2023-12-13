@@ -1,18 +1,10 @@
 #!/bin/bash
-# Rebuild from master branch and restart pixelplanet
+# Rebuild and Restert pixelplanet
 
 #folder for building the canvas (the git repository will get checkout there and the canvas will get buil thtere)
 BUILDDIR="/home/pixelpla/pixelplanet-build"
 #folder for dev canvas
 DEVFOLDER="/home/pixelpla/pixelplanet-dev"
-#folder for shards
-SCBFOLDER="/home/pixelpla/pixelplanet-scb"
-SCCFOLDER="/home/pixelpla/pixelplanet-scc"
-SCDFOLDER="/home/pixelpla/pixelplanet-scd"
-SCEFOLDER="/home/pixelpla/pixelplanet-sce"
-SCFFOLDER="/home/pixelpla/pixelplanet-scf"
-SCGFOLDER="/home/pixelpla/pixelplanet-scg"
-SCHFOLDER="/home/pixelpla/pixelplanet-sch"
 #folder for production canvas
 PFOLDER="/home/pixelpla/pixelplanet"
 #which branch to use
@@ -40,21 +32,20 @@ npm_reinstall () {
 copy () {
   local TARGETDIR="${1}"
   local REINSTALL="${2}"
-  cp -r dist/*.js "${TARGETDIR}/"
-  cp -r dist/workers "${TARGETDIR}/"
+  cp -r "${BUILDDIR}"/dist/*.js "${TARGETDIR}/"
+  cp -r "${BUILDDIR}"/dist/workers "${TARGETDIR}/"
   rm -rf "${TARGETDIR}/public/assets"
-  cp -r dist/public "${TARGETDIR}/"
-  cp -r dist/captchaFonts "${TARGETDIR}/"
-  cp -r dist/package.json "${TARGETDIR}/"
+  cp -r "${BUILDDIR}"/dist/public "${TARGETDIR}/"
+  cp -r "${BUILDDIR}"/dist/captchaFonts "${TARGETDIR}/"
+  cp -r "${BUILDDIR}"/dist/package.json "${TARGETDIR}/"
   mkdir -p "${TARGETDIR}/log"
   cd "${TARGETDIR}"
-  [ $REINSTALL -eq 0 ] && npm_reinstall
-  pm2 start ecosystem.yml
+  [ ${REINSTALL} -eq 0 ] && npm_reinstall
   cd -
 }
 
-GIT_WORK_TREE="$BUILDDIR" GIT_DIR="${BUILDDIR}/.git" git fetch --all
 cd "$BUILDDIR"
+GIT_WORK_TREE="$BUILDDIR" GIT_DIR="${BUILDDIR}/.git" git fetch --all
 echo "---UPDATING REPO ON PRODUCTION SERVER---"
 GIT_WORK_TREE="$BUILDDIR" GIT_DIR="${BUILDDIR}/.git" git reset --hard "origin/${BRANCH}"
 echo "---BUILDING pixelplanet---"
@@ -63,22 +54,10 @@ DO_REINSTALL=$?
 [ $DO_REINSTALL -eq 0 ] && npm_reinstall
 npm run build
 echo "---RESTARTING CANVAS---"
-pm2 stop ppfun-server
-pm2 stop ppfun-backups
-pm2 stop ppfun-scb
-pm2 stop ppfun-scc
-pm2 stop ppfun-scd
-pm2 stop ppfun-sce
-pm2 stop ppfun-scf
-pm2 stop ppfun-scg
-pm2 stop ppfun-sch
-copy "${PFOLDER}" "${DO_REINSTALL}"
-copy "${SCBFOLDER}" 1
-copy "${SCCFOLDER}" 1
-copy "${SCDFOLDER}" 1
-copy "${SCEFOLDER}" 1
-copy "${SCFFOLDER}" 1
-copy "${SCGFOLDER}" 1
-copy "${SCHFOLDER}" 1
+cp dist/canvases.json ~/
 cd "$PFOLDER"
+pm2 stop ppfun-backups
+pm2 stop ecosystem.config.js
+copy "${PFOLDER}" "${DO_REINSTALL}"
 pm2 start ecosystem-backup.yml
+pm2 start ecosystem.config.js
