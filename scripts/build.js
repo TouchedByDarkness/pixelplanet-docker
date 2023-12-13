@@ -170,7 +170,7 @@ async function buildProduction() {
       await compile(clientConfig({
         development: false,
         analyze: false,
-        extract: true,
+        extract: (langs === 'all'),
         locale: avlangs.shift(),
         clean: true,
         readonly: false,

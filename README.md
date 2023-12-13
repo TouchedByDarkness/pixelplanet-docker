@@ -256,18 +256,19 @@ If v is set and true for a canvas in the canvas.json, it will be a 3D voxel canv
 
 Run `npm run lint:src` to check for code errors and warnings or `npm run lint -- ./your/file.js` to check a single file.
 
-[ttag](https://github.com/ttag-org/ttag/) is used for handling translations. For server-side rendering the `Accept-Language` header gets checked and the first locale used and on-the-fly translated (`src/core/ttag.js` provides the functions for it). On the client-side a seperate bundle for every language gets provided.
-The language definitions in `i18n/template.pot` and `i18n/template-ssr.pot` get updated when doing a dev build with
+Compile with source-maps and debug options (but only english language) with
 
 ```
 npm run build:dev
 ```
-which also only builds the default local in a development environment for debugging.
+
+[ttag](https://github.com/ttag-org/ttag/) is used for handling translations. For server-side rendering the `Accept-Language` header gets checked and the first locale used and on-the-fly translated (`src/core/ttag.js` provides the functions for it). On the client-side a seperate bundle for every language gets provided.
+The language definitions in `i18n/template.pot` and `i18n/template-ssr.pot` get updated when doing a full production build with all languages (`npm run build`)-
 
 To build only specific languages, you can define them with the `--langs` flag:
 
 ```
-npm run build -- --langs de,tr
+npm run build -- --langs de,gr
 ```
 
 You can use `npm run babel-node ./utils/script.js` to execute a script with local babel (path always relative to the root directory).
