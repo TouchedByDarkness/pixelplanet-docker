@@ -12,7 +12,7 @@ import { SHARD_NAME } from './config';
 export const PIXELLOGGER_PREFIX = (SHARD_NAME)
   ? `./log/pixels-${SHARD_NAME}-` : './log/pixels-';
 const PROXYLOGGER_PREFIX = (SHARD_NAME)
-  ? `./log/prodycheck-${SHARD_NAME}-` : './log/proxycheck-';
+  ? `./log/proxycheck-${SHARD_NAME}-` : './log/proxycheck-';
 const MODTOOLLOGGER_PREFIX = (SHARD_NAME)
   ? `./log/modtools-${SHARD_NAME}-` : './log/modtools-';
 
