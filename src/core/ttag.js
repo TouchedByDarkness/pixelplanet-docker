@@ -4,6 +4,7 @@
 import { TTag } from 'ttag';
 import cookie from 'cookie';
 
+import assetWatcher from './fsWatcher';
 import { getLangsOfJsAsset } from './assets';
 
 // eslint-disable-next-line max-len
@@ -13,13 +14,18 @@ const ttags = {};
 
 export const availableLangs = [];
 
-(() => {
+function loadTtags() {
   const langs = localeImports.keys();
   const jsLangs = getLangsOfJsAsset('client');
+  availableLangs.length = 0;
 
   if (jsLangs.includes('en')) {
-    ttags.en = new TTag();
+    if (!ttags.en) {
+      ttags.en = new TTag();
+    }
     availableLangs.push(['en', 'gb']);
+  } else if (ttags.en) {
+    delete ttags.en;
   }
 
   for (let i = 0; i < langs.length; i += 1) {
@@ -37,14 +43,24 @@ export const availableLangs = [];
       [lang, flag] = lang.split('-');
     }
     if (jsLangs.includes(lang)) {
-      const ttag = new TTag();
-      ttag.addLocale(lang, localeImports(file).default);
-      ttag.useLocale(lang);
-      ttags[lang] = ttag;
+      if (!ttags[lang]) {
+        const ttag = new TTag();
+        ttag.addLocale(lang, localeImports(file).default);
+        ttag.useLocale(lang);
+        ttags[lang] = ttag;
+      }
       availableLangs.push([lang, flag]);
+    } else if (ttags[lang]) {
+      delete ttags[lang];
     }
   }
-})();
+}
+
+loadTtags();
+// reload on asset change
+assetWatcher.onChange(() => {
+  loadTtags();
+});
 
 export function getTTag(lang) {
   return ttags[lang] || ttags.en || Object.values(ttags)[0];

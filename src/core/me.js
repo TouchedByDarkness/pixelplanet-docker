@@ -4,7 +4,7 @@
  * various api endpoints.
  *
  */
-import { getLocalizedCanvases } from '../canvasesDesc';
+import getLocalizedCanvases from '../canvasesDesc';
 import { USE_MAILER } from './config';
 import chatProvider from './ChatProvider';
 

@@ -10,6 +10,8 @@ if (process.env.BROWSER) {
   );
 }
 
+export const ASSET_DIR = '/assets';
+
 export const PORT = process.env.PORT || 8080;
 export const HOST = process.env.HOST || 'localhost';
 

@@ -4,6 +4,7 @@
  *
  */
 
+import assetWatcher from './core/fsWatcher';
 import canvases from './core/canvases';
 import ttag from './core/ttag';
 
@@ -58,16 +59,21 @@ function getCanvases(t) {
   return localizedCanvases;
 }
 
-const lCanvases = {};
-(() => {
+function translateCanvases() {
+  const parsedCanvases = {};
   const langs = Object.keys(ttag);
   langs.forEach((lang) => {
-    lCanvases[lang] = getCanvases(ttag[lang].t);
+    parsedCanvases[lang] = getCanvases(ttag[lang].t);
   });
-})();
-
-export function getLocalizedCanvases(lang = 'en') {
-  return lCanvases[lang] || lCanvases.en;
+  return parsedCanvases;
 }
 
-export default lCanvases;
+let lCanvases = translateCanvases();
+// reload on asset change
+assetWatcher.onChange(() => {
+  lCanvases = translateCanvases();
+});
+
+export default function getLocalizedCanvases(lang = 'en') {
+  return lCanvases[lang] || lCanvases.en;
+}

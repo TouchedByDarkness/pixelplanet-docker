@@ -1,7 +1,13 @@
+/*
+ * Provide css and js asset files for client
+ */
+
 import fs from 'fs';
 import path from 'path';
 
-const ASSET_DIR = '/assets';
+import assetWatcher from './fsWatcher';
+import { ASSET_DIR } from './config';
+
 const assetDir = path.join(__dirname, 'public', ASSET_DIR);
 /*
  * {
@@ -78,8 +84,11 @@ function checkAssets() {
   return parsedAssets;
 }
 
-// eslint-disable-next-line prefer-const
 assets = checkAssets();
+// reload on asset change
+assetWatcher.onChange(() => {
+  assets = checkAssets();
+});
 
 export function getLangsOfJsAsset(name) {
   const nameAssets = assets.js[name];

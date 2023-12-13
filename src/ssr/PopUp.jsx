@@ -12,16 +12,6 @@ import { getJsAssets, getCssAssets } from '../core/assets';
 import { BACKUP_URL } from '../core/config';
 import { getHostFromRequest } from '../utils/ip';
 
-/*
- * values that we pass to client scripts
- */
-const ssv = {
-  availableStyles: getCssAssets(),
-  langs,
-};
-if (BACKUP_URL) {
-  ssv.backupurl = BACKUP_URL;
-}
 
 /*
  * generates string with html of win page
@@ -34,7 +24,9 @@ function generatePopUpPage(req) {
   const shard = (host.startsWith(`${socketEvents.thisShard}.`))
     ? null : socketEvents.getLowestActiveShard();
   const ssvR = JSON.stringify({
-    ...ssv,
+    availableStyles: getCssAssets(),
+    langs,
+    backupurl: BACKUP_URL,
     shard,
     lang,
   });
