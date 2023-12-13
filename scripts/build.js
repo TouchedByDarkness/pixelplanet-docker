@@ -66,7 +66,10 @@ function buildServer() {
   const ts = Date.now();
 
   return new Promise((resolve, reject) => {
-    const serverCompile = spawn('npm', ['run', 'build:server']);
+    const argsc = (langs === 'all')
+      ? ['webpack', '--env', 'extract', '--config', './webpack.config.server.js']
+      : ['webpack', '--config', './webpack.config.server.js']
+    const serverCompile = spawn('npx', argsc);
     serverCompile.stdout.on('data', (data) => {
       console.log(data.toString());
     });
@@ -163,7 +166,8 @@ async function buildProduction() {
     promises.push(buildServer());
   }
 
-  if (!recursion) {
+  if (doBuildClient) {
+    if (!recursion) {
       console.log(
         'Building one package seperately to populate cache and possibly extract langs...',
       );
@@ -175,16 +179,13 @@ async function buildProduction() {
         clean: true,
         readonly: false,
       }));
-  }
 
-  if (!recursion) {
-    console.log('-----------------------------');
-    console.log(`Minify CSS assets...`);
-    console.log('-----------------------------');
-    await minifyCss();
-  }
+      console.log('-----------------------------');
+      console.log(`Minify CSS assets...`);
+      console.log('-----------------------------');
+      await minifyCss();
+    }
 
-  if (doBuildClient) {
     if (parallel) {
       promises.push(buildClientsParallel(avlangs));
     } else {

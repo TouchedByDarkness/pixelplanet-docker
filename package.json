@@ -9,7 +9,7 @@
   "main": "server.js",
   "scripts": {
     "build": "node scripts/build.js",
-    "build:server": "webpack --env extract --config ./webpack.config.server.js",
+    "build:server": "webpack --config ./webpack.config.server.js",
     "build:client": "node scripts/build.js --client",
     "build:dev": "webpack --config ./webpack.config.server.js && webpack --env development --config ./webpack.config.client.js && npm run minify-css",
     "update-browserlist": "browserslist --update-db",
