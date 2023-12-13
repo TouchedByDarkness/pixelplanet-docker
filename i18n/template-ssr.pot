@@ -98,19 +98,19 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: src/ssr/PopUp.jsx:62
+#: src/ssr/PopUp.jsx:55
 msgid "ppfun"
 msgstr ""
 
-#: src/ssr/PopUp.jsx:63
+#: src/ssr/PopUp.jsx:56
 msgid "PixelPlanet.Fun PopUp"
 msgstr ""
 
-#: src/ssr/Main.jsx:71
+#: src/ssr/Main.jsx:64
 msgid "PixelPlanet.Fun"
 msgstr ""
 
-#: src/ssr/Main.jsx:72
+#: src/ssr/Main.jsx:65
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 

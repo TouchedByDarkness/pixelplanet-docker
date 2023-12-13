@@ -6,18 +6,11 @@
 /* eslint-disable max-len */
 import etag from 'etag';
 
-import { langCodeToCC } from '../utils/location';
-import ttags, { getTTag } from '../core/ttag';
+import { getTTag, availableLangs as langs } from '../core/ttag';
 import socketEvents from '../socket/socketEvents';
 import { getJsAssets, getCssAssets } from '../core/assets';
 import { BACKUP_URL } from '../core/config';
 import { getHostFromRequest } from '../utils/ip';
-
-/*
- * generate language list
- */
-const langs = Object.keys(ttags)
-  .map((l) => [l, langCodeToCC(l)]);
 
 /*
  * values that we pass to client scripts

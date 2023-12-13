@@ -6,6 +6,8 @@ Translation files can be created out of the templates [template.pot](https://git
 
 All translated languages get an own chat channel that just people who use this language can access.
 
+If a language code differs from the country code of a wanted flag, it can be defined in the ssr filename, like `ssr-en-gb.po` would be the english language, with the flag of Great Britain.
+
 ## With poedit
 
 ### Create new translation

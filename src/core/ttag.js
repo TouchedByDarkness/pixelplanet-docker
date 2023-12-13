@@ -4,7 +4,6 @@
 import { TTag } from 'ttag';
 import cookie from 'cookie';
 
-import { languageFromLocalisation } from '../utils/location';
 import { getLangsOfJsAsset } from './assets';
 
 // eslint-disable-next-line max-len
@@ -12,29 +11,68 @@ const localeImports = require.context('../../i18n', false, /^\.[/\\]ssr-.+\.po$/
 
 const ttags = {};
 
+export const availableLangs = [];
+
 (() => {
   const langs = localeImports.keys();
   const jsLangs = getLangsOfJsAsset('client');
 
   if (jsLangs.includes('en')) {
     ttags.en = new TTag();
+    availableLangs.push(['en', 'gb']);
   }
 
   for (let i = 0; i < langs.length; i += 1) {
     const file = langs[i];
     // ./ssr-de.po
-    const lang = file.replace('./ssr-', '').replace('.po', '').toLowerCase();
+    let lang = file.replace('./ssr-', '').replace('.po', '').toLowerCase();
+    let flag = lang;
+    /*
+     * in cases where the language code and country code differ,
+     * the country code can be given seperately in the file name
+     * i.e.: ./ssr-en-gb.po
+     */
+    const seperator = lang.indexOf('-');
+    if (seperator !== -1) {
+      [lang, flag] = lang.split('-');
+    }
     if (jsLangs.includes(lang)) {
       const ttag = new TTag();
       ttag.addLocale(lang, localeImports(file).default);
       ttag.useLocale(lang);
       ttags[lang] = ttag;
+      availableLangs.push([lang, flag]);
     }
   }
 })();
 
 export function getTTag(lang) {
   return ttags[lang] || ttags.en || Object.values(ttags)[0];
+}
+
+/*
+ * gets preferred language out of localisation string
+ * @param location string (like from accept-language header)
+ * @return language code
+ */
+function languageFromLocalisation(localisation) {
+  if (!localisation) {
+    return 'en';
+  }
+  let lang = localisation;
+  let i = lang.indexOf('-');
+  if (i !== -1) {
+    lang = lang.slice(0, i);
+  }
+  i = lang.indexOf(',');
+  if (i !== -1) {
+    lang = lang.slice(0, i);
+  }
+  i = lang.indexOf(';');
+  if (i !== -1) {
+    lang = lang.slice(0, i);
+  }
+  return lang.toLowerCase();
 }
 
 /*

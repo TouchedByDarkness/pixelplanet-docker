@@ -6,18 +6,11 @@
 import { createHash } from 'crypto';
 import etag from 'etag';
 
-import { langCodeToCC } from '../utils/location';
-import ttags, { getTTag } from '../core/ttag';
+import { getTTag, availableLangs as langs } from '../core/ttag';
 import { getJsAssets, getCssAssets } from '../core/assets';
 import socketEvents from '../socket/socketEvents';
 import { BACKUP_URL } from '../core/config';
 import { getHostFromRequest } from '../utils/ip';
-
-/*
- * generate language list
- */
-const langs = Object.keys(ttags)
-  .map((l) => [l, langCodeToCC(l)]);
 
 /*
  * values that we pass to client scripts
