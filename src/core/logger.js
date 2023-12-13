@@ -7,7 +7,10 @@
 import { createLogger, format, transports } from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
 
-export const PIXELLOGGER_PREFIX = './log/pixels-';
+import { SHARD_NAME } from './config';
+
+export const PIXELLOGGER_PREFIX = (SHARD_NAME)
+  ? `./log/pixels-${SHARD_NAME}` : './log/pixels-';
 
 const logger = createLogger({
   level: 'info',
