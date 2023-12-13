@@ -5,7 +5,7 @@
 
 const path = require('path');
 const fs = require('fs');
-const { spawn } = require('node:child_process');
+const { spawn } = require('child_process');
 const webpack = require('webpack');
 
 const minifyCss = require('./minifyCss');
@@ -165,7 +165,7 @@ async function buildProduction() {
 
   if (!recursion) {
       console.log(
-        'Building one package seperately to populate cache and extract langs...',
+        'Building one package seperately to populate cache and possibly extract langs...',
       );
       await compile(clientConfig({
         development: false,
@@ -175,6 +175,13 @@ async function buildProduction() {
         clean: true,
         readonly: false,
       }));
+  }
+
+  if (!recursion) {
+    console.log('-----------------------------');
+    console.log(`Minify CSS assets...`);
+    console.log('-----------------------------');
+    await minifyCss();
   }
 
   if (doBuildClient) {
@@ -187,7 +194,6 @@ async function buildProduction() {
   await Promise.all(promises);
 
   if (!recursion) {
-    await minifyCss();
     console.log(`Finished building in ${(Date.now() - st) / 1000}s`);
   } else {
     console.log(`Worker done in ${(Date.now() - st) / 1000}s`);
