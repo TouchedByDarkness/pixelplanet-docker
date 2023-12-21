@@ -14,6 +14,7 @@ import OnlineBox from './OnlineBox';
 import ChatButton from './buttons/ChatButton';
 import Menu from './Menu';
 import UI from './UI';
+import ChristmasButton from './ChristmasButton';
 import ExpandMenuButton from './buttons/ExpandMenuButton';
 import WindowManager from './WindowManager';
 
@@ -26,6 +27,7 @@ const App = () => (
       <CanvasSwitchButton />
       <Menu />
       <ChatButton />
+      <ChristmasButton />
       <OnlineBox />
       <CoordinatesBox />
       <ExpandMenuButton />
