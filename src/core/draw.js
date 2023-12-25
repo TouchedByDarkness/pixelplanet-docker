@@ -121,9 +121,11 @@ export default async function drawByOffsets(
     let factor = (isAdmin || (user.userlvl > 0 && pixels[0][1] < clrIgnore))
       ? 0.0 : coolDownFactor;
 
+    /*
     if (user.country === 'tr') {
       factor *= 1.4;
     }
+    */
 
     factor *= 0.75;
 
