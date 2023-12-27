@@ -93,6 +93,23 @@ class Ranks {
     if (!cHourlyStats.length || !PUNISH_DOMINATOR) {
       return;
     }
+    /*
+     * don't punish when canvas has less than 22% of
+     * daily peak activity
+     */
+    const { pHourlyStats } = this.ranks;
+    let maxActivity = 0;
+    pHourlyStats.slice(0, 24).forEach((e) => {
+      if (e > maxActivity) {
+        maxActivity = e;
+      }
+    });
+    if (pHourlyStats[0] < maxActivity * 0.22) {
+      this.#punishedCountry = null;
+      this.#punishmentFactor = 1.0;
+      return;
+    }
+
     let outnumbered = 0;
     const { cc: leadingCountry } = cHourlyStats[0];
     let { px: margin } = cHourlyStats[0];
