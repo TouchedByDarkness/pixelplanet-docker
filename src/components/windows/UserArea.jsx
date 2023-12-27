@@ -49,9 +49,12 @@ const UserArea = () => {
       dispatch(fetchStats());
     }
   }, 300000);
-
+  
   return (
     <div style={{ textAlign: 'center' }}>
+      <a style={{ display: 'inline-block' }} href="https://www.youtube.com/watch?v=D7dzSapaIS4">
+        <img style={{ maxWidth: '100%', maxHeight: 200 }} src="rcpc-fansite.png" />
+      </a>
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab}>
         <div label={t`Profile`}>
           {(name) ? <UserAreaContent /> : <LogInArea />}
