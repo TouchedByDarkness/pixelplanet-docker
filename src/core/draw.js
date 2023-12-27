@@ -132,8 +132,8 @@ export default async function drawByOffsets(
 
     factor *= 0.75;
 
-    const bcd = canvas.bcd * factor;
-    const pcd = (canvas.pcd) ? canvas.pcd * factor : bcd;
+    const bcd = Math.floor(canvas.bcd * factor);
+    const pcd = Math.floor((canvas.pcd) ? canvas.pcd * factor : bcd);
     const userId = user.id;
     const pxlOffsets = [];
 
