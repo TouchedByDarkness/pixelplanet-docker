@@ -50,8 +50,8 @@ class Ranks {
   };
 
   // if a country dominates, adjust its cooldown
-  #punishedCountry;
-  #punishmentFactor;
+  #punishedCountry = null;
+  #punishmentFactor = 1.0;
 
   constructor() {
     /*
@@ -109,12 +109,12 @@ class Ranks {
      * 20% gets added to their cooldown for every country
      * after the first. Ceiled at 200%
      */
-    if (outnumbered > 2) {
-      this.#punishedCountry = leadingCountry;
-      let punishmentFactor = 1 + 0.2 * (outnumbered - 1);
-      if (punishmentFactor > 2) {
-        punishmentFactor = 2;
+    if (outnumbered >= 2) {
+      let punishmentFactor = 1 + 0.25 * (outnumbered - 1);
+      if (punishmentFactor > 3) {
+        punishmentFactor = 3;
       }
+      this.#punishedCountry = leadingCountry;
       this.#punishmentFactor = punishmentFactor;
       logger.info(
         // eslint-disable-next-line max-len

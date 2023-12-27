@@ -145,11 +145,11 @@ export async function storeHourlyCountryStats(start, amount) {
     prevData.forEach(({ value, score }) => prevRanks.set(value, score));
     const addArr = [];
     curData.forEach(({ value: cc, score: curPx }) => {
-      const prevPx = prevData.get(cc) || 0;
+      const prevPx = prevRanks.get(cc) || 0;
       const px = (curPx > prevPx) ? curPx - prevPx : curPx;
       addArr.push({
-        score: cc,
-        value: px,
+        value: cc,
+        score: px,
       });
     });
     if (addArr.length) {
