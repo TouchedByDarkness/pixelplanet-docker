@@ -122,15 +122,14 @@ export default async function drawByOffsets(
     let factor = (isAdmin || (user.userlvl > 0 && pixels[0][1] < clrIgnore))
       ? 0.0 : coolDownFactor;
 
-    /*
-    if (user.country === 'tr') {
-      factor *= 1.4;
-    }
-    */
-
     factor *= rankings.getCountryCoolDownFactor(user.country);
 
-    factor *= 0.75;
+    if (canvasId === 0 && (user.country === 'ir' || user.country === 'lb')) {
+      factor *= 0.25;
+      if (canvas.bcd * factor < 1000) {
+        factor = 1000 / canvas.bcd;
+      }
+    }
 
     const bcd = Math.floor(canvas.bcd * factor);
     const pcd = Math.floor((canvas.pcd) ? canvas.pcd * factor : bcd);
