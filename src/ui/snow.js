@@ -8,8 +8,8 @@
  * http://schillmania.com/projects/snowstorm/license.txt
  */
 
-/*jslint nomen: true, plusplus: true, sloppy: true, vars: true, white: true */
-/*global window, document, navigator, clearInterval, setInterval */
+/* jslint nomen: true, plusplus: true, sloppy: true, vars: true, white: true */
+/* global window, document, navigator, clearInterval, setInterval */
 
 /* eslint-disable */
 

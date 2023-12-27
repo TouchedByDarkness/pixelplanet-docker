@@ -61,12 +61,14 @@ const ChristmasButton = () => {
       }}
       style={style}
     >
-      {(playing) ? <embed
+      {(playing) ? (
+        <embed
           style={{ margin: 10 }}
           width="320"
           height="180"
           src={url}
-        /> : <GiPineTree />}
+        />
+      ) : <GiPineTree />}
     </div>
   );
 };
