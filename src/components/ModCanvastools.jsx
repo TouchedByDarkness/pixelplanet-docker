@@ -306,9 +306,10 @@ function ModCanvastools() {
       <div className="modaldivider" />
       <h3>{t`Pixel Protection`}</h3>
       <p>
-        {t`Set protection of areas \
-        (if you need finer grained control, \
-        use protect with image upload and alpha layers)`}
+        {
+          // eslint-disable-next-line max-len
+          t`Set protection of areas (if you need finer grained control, use protect with image upload and alpha layers)`
+        }
       </p>
       <select
         value={protAction}
