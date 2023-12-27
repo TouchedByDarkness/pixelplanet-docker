@@ -8,6 +8,7 @@ import {
 import logger, { pixelLogger } from './logger';
 import allowPlace from '../data/redis/cooldown';
 import socketEvents from '../socket/socketEvents';
+import rankings from './Ranks';
 import { setPixelByOffset } from './setPixel';
 import isIPAllowed from './isAllowed';
 import canvases from './canvases';
@@ -126,6 +127,8 @@ export default async function drawByOffsets(
       factor *= 1.4;
     }
     */
+
+    factor *= rankings.getCountryCoolDownFactor(user.country);
 
     factor *= 0.75;
 

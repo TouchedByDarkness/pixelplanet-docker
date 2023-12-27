@@ -29,6 +29,9 @@ export const BACKUP_DIR = process.env.BACKUP_DIR || null;
 
 export const OUTGOING_ADDRESS = process.env.OUTGOING_ADDRESS || null;
 
+// Punish when a country dominates
+export const PUNISH_DOMINATOR = !!process.env.PUNISH_DOMINATOR;
+
 // Proxycheck
 export const USE_PROXYCHECK = parseInt(process.env.USE_PROXYCHECK, 10) || false;
 export const { PROXYCHECK_KEY } = process.env;

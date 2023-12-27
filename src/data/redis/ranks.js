@@ -7,6 +7,9 @@ import { getDateKeyOfTs } from '../../core/utils';
 export const RANKED_KEY = 'rank';
 export const DAILY_RANKED_KEY = 'rankd';
 export const DAILY_CRANKED_KEY = 'crankd';
+export const HOURLY_CRANKED_KEY = 'crankh';
+export const PREV_DAILY_CRANKED_KEY = 'pcrankd';
+export const PREV_DAILY_CRANKED_TS_KEY = 'pcrankdts';
 export const PREV_DAY_TOP_KEY = 'prankd';
 const DAY_STATS_RANKS_KEY = 'ds';
 const CDAY_STATS_RANKS_KEY = 'cds';
@@ -98,6 +101,61 @@ export async function getCountryRanks(start, amount) {
     px: Number(r.score),
   }));
   return ranks;
+}
+
+/*
+ * get previous daily country ranking (one hour before cranks)
+ */
+export async function getHourlyCountryStats(start, amount) {
+  start -= 1;
+  amount -= 1;
+  let ranks = await client.zRangeWithScores(
+    HOURLY_CRANKED_KEY, start, start + amount, {
+      REV: true,
+    });
+  ranks = ranks.map((r) => ({
+    cc: r.value,
+    px: Number(r.score),
+  }));
+  return ranks;
+}
+
+export async function storeHourlyCountryStats(start, amount) {
+  start -= 1;
+  amount -= 1;
+  const tsNow = Date.now();
+  const prevTs = Number(await client.get(PREV_DAILY_CRANKED_TS_KEY));
+  const prevData = await client.zRangeWithScores(
+    PREV_DAILY_CRANKED_KEY, start, start + amount, {
+      REV: true,
+    });
+
+  await client.copy(DAILY_CRANKED_KEY, PREV_DAILY_CRANKED_KEY, {
+    REAPLACE: true,
+  });
+  await client.set(PREV_DAILY_CRANKED_TS_KEY, String(tsNow));
+  await client.del(HOURLY_CRANKED_KEY);
+
+  if (prevTs && prevTs > tsNow - 1000 * 3600 * 1.5) {
+    const curData = await client.zRangeWithScores(
+      DAILY_CRANKED_KEY, start, start + amount, {
+        REV: true,
+      });
+    const prevRanks = new Map();
+    prevData.forEach(({ value, score }) => prevRanks.set(value, score));
+    const addArr = [];
+    curData.forEach(({ value: cc, score: curPx }) => {
+      const prevPx = prevData.get(cc) || 0;
+      const px = (curPx > prevPx) ? curPx - prevPx : curPx;
+      addArr.push({
+        score: cc,
+        value: px,
+      });
+    });
+    if (addArr.length) {
+      await client.zAdd(HOURLY_CRANKED_KEY, addArr);
+    }
+  }
 }
 
 /*

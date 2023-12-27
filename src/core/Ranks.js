@@ -11,6 +11,8 @@ import {
   storeOnlinUserAmount,
   getCountryDailyHistory,
   getCountryRanks,
+  getHourlyCountryStats,
+  storeHourlyCountryStats,
   getTopDailyHistory,
   storeHourlyPixelsPlaced,
   getHourlyPixelStats,
@@ -20,30 +22,38 @@ import socketEvents from '../socket/socketEvents';
 import logger from './logger';
 
 import { MINUTE } from './constants';
+import { PUNISH_DOMINATOR } from './config';
 import { DailyCron, HourlyCron } from '../utils/cron';
 
 class Ranks {
+  ranks = {
+    // ranking today of users by pixels
+    dailyRanking: [],
+    // ranking of users by pixels
+    ranking: [],
+    // ranking today of countries by pixels
+    dailyCRanking: [],
+    // ranking hourly of countries by pixels
+    cHourlyStats: [],
+    // yesterdays ranking of users by pixels
+    prevTop: [],
+    // online user amount by hour
+    onlineStats: [],
+    // ranking of countries by day
+    cHistStats: [],
+    // ranking of users by day
+    histStats: { users: [], stats: [] },
+    // pixels placed by hour
+    pHourlyStats: [],
+    // pixels placed by day
+    pDailyStats: [],
+  };
+
+  // if a country dominates, adjust its cooldown
+  #punishedCountry;
+  #punishmentFactor;
+
   constructor() {
-    this.ranks = {
-      // ranking today of users by pixels
-      dailyRanking: [],
-      // ranking of users by pixels
-      ranking: [],
-      // ranking today of countries by pixels
-      dailyCRanking: [],
-      // yesterdays ranking of users by pixels
-      prevTop: [],
-      // online user amount by hour
-      onlineStats: [],
-      // ranking of countries by day
-      cHistStats: [],
-      // ranking of users by day
-      histStats: { users: [], stats: [] },
-      // pixels placed by hour
-      pHourlyStats: [],
-      // pixels placed by day
-      pDailyStats: [],
-    };
     /*
      * we go through socketEvents for sharding
      */
@@ -70,10 +80,57 @@ class Ranks {
     if (!newRanks) {
       return;
     }
+    if (newRanks.cHourlyStats) {
+      this.setPunishments(newRanks.cHourlyStats);
+    }
     this.ranks = {
       ...this.ranks,
       ...newRanks,
     };
+  }
+
+  setPunishments(cHourlyStats) {
+    if (!cHourlyStats.length || !PUNISH_DOMINATOR) {
+      return;
+    }
+    let outnumbered = 0;
+    const { cc: leadingCountry } = cHourlyStats[0];
+    let { px: margin } = cHourlyStats[0];
+    for (let i = 1; i < cHourlyStats.length; i += 1) {
+      margin -= cHourlyStats[i].px;
+      if (margin < 0) {
+        break;
+      }
+      outnumbered += 1;
+    }
+    /*
+     * if the leading country places more pixels
+     * than the fellowing 2+ countries after,
+     * 20% gets added to the cooldown for every following
+     * country, cailed at 200%;
+     */
+    if (outnumbered > 2) {
+      this.#punishedCountry = leadingCountry;
+      let punishmentFactor = 1 + 0.2 * (outnumbered - 1);
+      if (punishmentFactor > 2) {
+        punishmentFactor = 2;
+      }
+      this.#punishmentFactor = punishmentFactor;
+      logger.info(
+        // eslint-disable-next-line max-len
+        `Punishment for dominating country ${leadingCountry} of ${punishmentFactor}`,
+      );
+      return;
+    }
+    this.#punishedCountry = null;
+    this.#punishmentFactor = 1.0;
+  }
+
+  getCountryCoolDownFactor(country) {
+    if (this.#punishedCountry === country) {
+      return this.#punishmentFactor;
+    }
+    return 1.0;
   }
 
   static async updateRanking() {
@@ -107,10 +164,12 @@ class Ranks {
     const onlineStats = await getOnlineUserStats();
     const cHistStats = await getCountryDailyHistory();
     const pHourlyStats = await getHourlyPixelStats();
+    const cHourlyStats = await getHourlyCountryStats(1, 100);
     const ret = {
       onlineStats,
       cHistStats,
       pHourlyStats,
+      cHourlyStats,
     };
     if (socketEvents.amIImportant()) {
       // only main shard sends to others
@@ -148,6 +207,7 @@ class Ranks {
     const amount = socketEvents.onlineCounter.total;
     await storeOnlinUserAmount(amount);
     await storeHourlyPixelsPlaced();
+    await storeHourlyCountryStats(1, 100);
     await Ranks.hourlyUpdateRanking();
   }
 
