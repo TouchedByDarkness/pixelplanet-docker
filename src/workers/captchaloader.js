@@ -20,7 +20,7 @@ if (isMainThread) {
 }
 
 const font = fs.readdirSync(path.resolve(__dirname, '..', FONT_FOLDER))
-  .filter((e) => e.endsWith('.ttf'))
+  .filter((e) => e.endsWith('.ttf') || e.endsWith('.otf'))
   .map((e) => ppfunCaptcha.loadFont(
     path.resolve(__dirname, '..', FONT_FOLDER, e),
   ));
