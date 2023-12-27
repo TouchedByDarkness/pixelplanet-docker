@@ -106,8 +106,8 @@ class Ranks {
     /*
      * if the leading country places more pixels
      * than the fellowing 2+ countries after,
-     * 20% gets added to the cooldown for every following
-     * country, cailed at 200%;
+     * 20% gets added to their cooldown for every country
+     * after the first. Ceiled at 200%
      */
     if (outnumbered > 2) {
       this.#punishedCountry = leadingCountry;
