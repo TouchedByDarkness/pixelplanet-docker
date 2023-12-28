@@ -130,11 +130,13 @@ export async function storeHourlyCountryStats(start, amount) {
       REV: true,
     });
 
-  await client.copy(DAILY_CRANKED_KEY, PREV_DAILY_CRANKED_KEY, {
-    REAPLACE: true,
-  });
-  await client.set(PREV_DAILY_CRANKED_TS_KEY, String(tsNow));
-  await client.del(HOURLY_CRANKED_KEY);
+  await Promise.all([
+    client.copy(DAILY_CRANKED_KEY, PREV_DAILY_CRANKED_KEY, {
+      replace: true,
+    }),
+    client.set(PREV_DAILY_CRANKED_TS_KEY, String(tsNow)),
+    client.del(HOURLY_CRANKED_KEY),
+  ]);
 
   if (prevTs && prevTs > tsNow - 1000 * 3600 * 1.5) {
     const curData = await client.zRangeWithScores(
