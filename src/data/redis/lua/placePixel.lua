@@ -146,10 +146,10 @@ if pxlcnt > 0 then
   if KEYS[7] ~= 'nope' then
     redis.call('zincrby', KEYS[6], pxlcnt, ARGV[6])
     redis.call('zincrby', KEYS[7], pxlcnt, ARGV[6])
-    -- increase country stats only by registered users
-    if ARGV[7] ~= 'xx' then
-      redis.call('zincrby', KEYS[8], pxlcnt, ARGV[7])
-    end
+  end
+  -- increase country stats
+  if ARGV[7] ~= 'xx' then
+    redis.call('zincrby', KEYS[8], pxlcnt, ARGV[7])
   end
 end
 

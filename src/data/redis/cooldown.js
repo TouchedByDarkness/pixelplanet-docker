@@ -21,7 +21,7 @@ const PREFIX = 'cd';
  * and returns the number of pixels to set
  * @param ip ip of request
  * @param id userId
- * @param ranked boolean if increasing rank
+ * @param ranked boolean if increasing rank (should only be true if logged in)
  * @param clrIgnore, bcd, pcd, cds information about canvas
  * @param i, j chunk coordinates
  * @param pxls Array with offsets of pixels
