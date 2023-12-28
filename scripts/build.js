@@ -69,7 +69,9 @@ function buildServer() {
     const argsc = (langs === 'all')
       ? ['webpack', '--env', 'extract', '--config', './webpack.config.server.js']
       : ['webpack', '--config', './webpack.config.server.js']
-    const serverCompile = spawn('npx', argsc);
+    const serverCompile = spawn('npx', argsc, {
+      PATH: process.env.PATH,
+    });
     serverCompile.stdout.on('data', (data) => {
       console.log(data.toString());
     });
@@ -91,7 +93,9 @@ function buildServer() {
 
 function buildClients(slangs) {
   return new Promise((resolve, reject) => {
-    const clientCompile = spawn('npm', ['run', 'build', '--', '--client', '--recursion', '--langs', slangs.join(',')]);
+    const clientCompile = spawn('npm', ['run', 'build', '--', '--client', '--recursion', '--langs', slangs.join(',')], {
+      PATH: process.env.PATH,
+    });
     clientCompile.stdout.on('data', (data) => {
       console.log(data.toString());
     });
