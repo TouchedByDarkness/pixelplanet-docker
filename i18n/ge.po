@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: src/controls/keypress.js:41
 #, javascript-format
@@ -400,11 +400,11 @@ msgstr "გაგზავნა"
 
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustifed? Check out the "
-msgstr "აკრძალული ხარ. თქვენ ფიქრობთ, რომ ეს გაუმართლებელია? შეამოწმეთ"
+msgstr "აკრძალული ხარ. თქვენ ფიქრობთ, რომ ეს გაუმართლებელია? შეამოწმეთ "
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
-msgstr "როგორ გაასაჩივროთ."
+msgstr " როგორ გაასაჩივროთ."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -420,11 +420,11 @@ msgstr "ხანგრძლივობა"
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
-msgstr "თქვენი აკრძალვა იწურება"
+msgstr "თქვენი აკრძალვა იწურება "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr "რომელიც არის"
+msgstr " რომელიც არის  "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
@@ -478,7 +478,7 @@ msgstr "რეკომენდებულია"
 
 #: src/components/windows/Help.jsx:51
 msgid "Source on "
-msgstr "სოურს კოდი"
+msgstr "სოურს კოდი "
 
 #: src/components/windows/Help.jsx:52
 msgid "Map Data"
@@ -490,7 +490,7 @@ msgid ""
 "for orientation, can be downloaded from mega.nz here: "
 msgstr ""
 "რუქის შიშველი მონაცემები, რომელსაც ჩვენ ვიყენებთ, კონვერტირებულ "
-"OpenStreetMap ფილებთან ერთად, შეგიძლიათ ჩამოტვირთოთ mega.nz-დან აქ:"
+"OpenStreetMap ფილებთან ერთად, შეგიძლიათ ჩამოტვირთოთ mega.nz-დან აქ: "
 
 #: src/components/windows/Help.jsx:55
 msgid "Banned? Detected as Proxy?"
@@ -890,7 +890,7 @@ msgstr "შეიყვანეთ თქვენი ფოსტის მი
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:105
 msgid "Could not load captcha"
-msgstr "captcha ვერ ჩაიტვირთა"
+msgstr "კაპჩა ვერ ჩაიტვირთა"
 
 #: src/components/Captcha.jsx:69
 msgid "Type the characters from the following image:"

@@ -5,16 +5,16 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: hu_HU\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
-msgstr "Proxy-val nem küldhetsz üzenetet"
+msgstr "Proxyval nem küldhetsz üzenetet"
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
@@ -23,8 +23,7 @@ msgstr "Az országod ideiglenesen némítva van ezen a chaten"
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
-"Véglegesen némítva lettél, csatlakozz a Guilded szerverünkhöz a "
-"fellebbezéshez"
+"Örökre némítva lettél, csatlakozz a Discord szerverünkhöz a fellebbezéshez"
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
@@ -40,6 +39,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "${ timeMin } percig némítva vagy"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "${ ttl } másodpercig némítva vagy"
 
@@ -94,46 +94,46 @@ msgstr "Jelszó sikeresen megváltoztatva."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Érvénytelen link :( Kérjük, ellenőrizd újra a leveled."
 
-#: src/ssr/Globe.jsx:32
+#: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3D földgömb"
 
-#: src/ssr/Globe.jsx:33
+#: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
 msgstr "3D-s földgömb az egész térképünkről"
 
-#: src/ssr/Globe.jsx:46
+#: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
 msgstr "Kattints duplán a földgömbre a visszatéréshez."
 
-#: src/ssr/Globe.jsx:47
+#: src/ssr/Globe.jsx:52
 msgid "Loading..."
 msgstr "Betöltés..."
 
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:55
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:56
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun felugró"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Main.jsx:64
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:65
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Helyezz el pixeleket egy hatalmas online vásznon más játékosokkal együtt"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Az e-mail nem lehet üres."
+msgstr "Az e-mail cím nem lehet üres."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr "Az e-mailnek legalább 5 karakter hosszúnak kell lennie."
+msgstr "Az e-mail címnek legalább 5 karakter hosszúnak kell lennie."
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
@@ -161,11 +161,11 @@ msgstr "A név nem lehet hosszabb 26 karakternél"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "A név érvénytelen karaktereket tartalmaz mint: @, /, \\ vagy #"
+msgstr "A név érvénytelen karaktereket tartalmaz mint például: @, /, \\ vagy #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr "Nem lett jelszó megadva."
+msgstr "Nem adtál meg jelszót."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
@@ -229,7 +229,7 @@ msgstr "Ezt csak az adminok tehetik meg"
 msgid "You are not banned"
 msgstr "Nem vagy kitiltva"
 
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Ez az e-mail szolgáltató nem engedélyezett"
 
@@ -265,26 +265,6 @@ msgstr "Nem sikerült új felhasználót létrehozni :("
 msgid "Failed to establish session after register :("
 msgstr "Nem sikerült létrehozni a munkamenetet a regisztráció után :("
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Még csak be sem vagy jelentkezve."
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Szerverhiba a kijelentkezéskor."
-
-#: src/routes/api/auth/change_mail.js:43
-#: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
-msgid "You are not authenticated."
-msgstr "Nem vagy hitelesítve."
-
-#: src/routes/api/auth/change_mail.js:52
-#: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
-msgid "Incorrect password!"
-msgstr "Hibás jelszó!"
-
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "E-mail hitelesítés"
@@ -299,6 +279,34 @@ msgid ""
 "a new one."
 msgstr ""
 "A leveled hitelesítő kódja érvénytelen vagy már lejárt :(, kérj egy újat."
+
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Még csak be sem vagy jelentkezve."
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Szerverhiba a kijelentkezéskor."
+
+#: src/routes/api/auth/change_mail.js:44
+#: src/routes/api/auth/change_passwd.js:34
+#: src/routes/api/auth/delete_account.js:36
+msgid "You are not authenticated."
+msgstr "Nem vagy hitelesítve."
+
+#: src/routes/api/auth/change_mail.js:53
+#: src/routes/api/auth/change_passwd.js:43
+#: src/routes/api/auth/delete_account.js:55
+msgid "Incorrect password!"
+msgstr "Hibás jelszó!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr "A némított felhasználók nem törölhetik fiókjukat."
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr "A némított felhasználók nem tehetik meg ezt."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -345,11 +353,15 @@ msgstr "1bit"
 msgid "Top10"
 msgstr "Top10"
 
-#: src/canvasesDesc.js:29
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
-msgstr "A fő vászonunk egy hatalmas világtérkép. Azt rajzolsz rá, amit akarsz"
+#: src/canvasesDesc.js:27
+msgid "Thoia"
+msgstr "Trója"
 
 #: src/canvasesDesc.js:30
+msgid "Our main canvas, a huge map of the world. Place everywhere you like"
+msgstr "A fő vásznunk egy hatalmas világtérkép. Azt rajzolsz rá, amit akarsz"
+
+#: src/canvasesDesc.js:31
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -358,41 +370,50 @@ msgstr ""
 "nagyméretű szöveg (kivéve, ha az az alkotás része) vagy 1,5k x 1,5k pixelnél "
 "nagyobb rajz."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:32
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Helyezz el voxeleket egy 3D-s vászonra, másokkal együtt"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:33
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Speciális vászon a SARS-CoV2 terjesztésére"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:34
 msgid "Mirror of PixelZone"
 msgstr "A Pixelzóna tükörképe"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:35
 msgid "Mirror of PixelCanvas"
 msgstr "A Pixelvászon tükörképe"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:36
 msgid "Black and White canvas"
 msgstr "Fekete-fehér vászon"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:37
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
-"Az előző nap legaktívabb játékosainak vászona. A napi rangsor UTC idő "
-"szerint 00:00-kor frissül."
+"Az előző nap legaktívabb játékosainak vászna. A napi rangsor UTC idő szerint "
+"00:00-kor frissül."
+
+#: src/canvasesDesc.js:38
+msgid ""
+"Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon the "
+"old world and all it entails."
+msgstr ""
+"Trójai világvászon. Haladó fiktív világépítés és művészetek. Hagyd el a régi "
+"világot és minden velejáróját."
 
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr ""
-"Üdvözöljük ${ név } a PixelPlaneten, kérjük, hitelesítse az e-mail címét"
+"Üdvözöljük ${ name } a PixelPlaneten, kérjük, hitelesítsd az e-mail címedet"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Szia ${ name }"
 
@@ -406,7 +427,7 @@ msgstr ""
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
-msgstr "Kattints a hitelesítéshez"
+msgstr "Kattints ide a hitelesítéshez"
 
 #: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"

@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -37,7 +37,7 @@ msgstr "თქვენს ინტერნეტ პროვაიდერ�
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr "თქვენ დადუმებული ხართ კიდევ $ {timeMin } წუთით"
+msgstr "თქვენ დადუმებული ხართ კიდევ ${ timeMin } წუთით"
 
 #: src/core/ChatProvider.js:450
 msgid "You are muted for another ${ ttl } seconds"
@@ -406,7 +406,7 @@ msgid ""
 msgstr ""
 "კეთილი იყოს თქვენი მობრძანება pixelplacers-ის ჩვენს პატარა საზოგადოებაში, "
 "თქვენი ანგარიშის გამოსაყენებლად, თქვენ უნდა გადაამოწმოთ თქვენი ფოსტა. ამის "
-"გაკეთება შეგიძლიათ აქ:"
+"გაკეთება შეგიძლიათ აქ: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
@@ -449,7 +449,7 @@ msgid ""
 "next 30min here: "
 msgstr ""
 "თქვენ მოითხოვეთ ახალი პაროლის მიღება. თქვენ შეგიძლიათ შეცვალოთ თქვენი პაროლი "
-"შემდეგი 30 წუთის განმავლობაში აქ:"
+"შემდეგი 30 წუთის განმავლობაში აქ: "
 
 #: src/core/MailProvider.js:106
 #, javascript-format
