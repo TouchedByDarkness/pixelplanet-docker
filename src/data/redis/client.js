@@ -3,6 +3,7 @@
  * REDIS_URL can be url or path to unix socket
  */
 import fs from 'fs';
+import path from 'path';
 import { createClient, defineScript } from 'redis';
 import { isMainThread } from 'worker_threads';
 
@@ -11,7 +12,7 @@ import { REDIS_URL, SHARD_NAME } from '../../core/config';
 const scripts = {
   placePxl: defineScript({
     NUMBER_OF_KEYS: 9,
-    SCRIPT: fs.readFileSync('./workers/lua/placePixel.lua'),
+    SCRIPT: fs.readFileSync(path.resolve('./workers/lua/placePixel.lua')),
     transformArguments(...args) {
       return args.map((a) => ((typeof a === 'string') ? a : a.toString()));
     },
@@ -19,7 +20,7 @@ const scripts = {
   }),
   allowedChat: defineScript({
     NUMBER_OF_KEYS: 3,
-    SCRIPT: fs.readFileSync('./workers/lua/allowedChat.lua'),
+    SCRIPT: fs.readFileSync(path.resolve('./workers/lua/allowedChat.lua')),
     transformArguments(...args) {
       return args.map((a) => ((typeof a === 'string') ? a : a.toString()));
     },
@@ -27,7 +28,7 @@ const scripts = {
   }),
   getUserRanks: defineScript({
     NUMBER_OF_KEYS: 2,
-    SCRIPT: fs.readFileSync('./workers/lua/getUserRanks.lua'),
+    SCRIPT: fs.readFileSync(path.resolve('./workers/lua/getUserRanks.lua')),
     transformArguments(...args) {
       return args.map((a) => ((typeof a === 'string') ? a : a.toString()));
     },
@@ -35,7 +36,7 @@ const scripts = {
   }),
   zmRankRev: defineScript({
     NUMBER_OF_KEYS: 1,
-    SCRIPT: fs.readFileSync('./workers/lua/zmRankRev.lua'),
+    SCRIPT: fs.readFileSync(path.resolve('./workers/lua/zmRankRev.lua')),
     transformArguments(key, uids) {
       return [
         key,

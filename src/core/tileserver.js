@@ -4,6 +4,7 @@
  */
 
 import fs from 'fs';
+import path from 'path';
 import { Worker } from 'worker_threads';
 
 import logger from './logger';
@@ -23,7 +24,7 @@ const CanvasUpdaters = {};
 /*
  * worker thread
  */
-const worker = new Worker('./workers/tilewriter.js');
+const worker = new Worker(path.resolve('./workers/tilewriter.js'));
 
 /*
  * queue of tasks that is worked on in FIFO

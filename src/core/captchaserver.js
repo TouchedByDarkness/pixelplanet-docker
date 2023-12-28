@@ -2,6 +2,7 @@
  * creation of captchas
  */
 
+import path from 'path';
 import { Worker } from 'worker_threads';
 
 import logger from './logger';
@@ -11,7 +12,7 @@ const MAX_WAIT = 30 * 1000;
 /*
  * worker thread
  */
-const worker = new Worker('./workers/captchaloader.js');
+const worker = new Worker(path.resolve('./workers/captchaloader.js'));
 
 /*
  * queue of captcha-generation tasks
