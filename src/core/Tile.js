@@ -9,8 +9,9 @@
 // Tile creation is allowed to be slow
 /* eslint-disable no-await-in-loop */
 
-import sharp from 'sharp';
 import fs from 'fs';
+import path from 'path';
+import sharp from 'sharp';
 
 import RedisCanvas from '../data/redis/RedisCanvas';
 import Palette from './Palette';
@@ -241,7 +242,7 @@ function addIndexedSubtiletoTile(
  */
 function tileFileName(canvasTileFolder, cell) {
   const [z, x, y] = cell;
-  const filename = `${canvasTileFolder}/${z}/${x}/${y}.webp`;
+  const filename = path.resolve(`${canvasTileFolder}/${z}/${x}/${y}.webp`);
   try {
     const mtime = new Date(fs.statSync(filename).mtime).getTime();
     if (Date.now() - mtime < 120000) {
@@ -470,7 +471,7 @@ async function createEmptyTile(
     // eslint-disable-next-line prefer-destructuring
     tileRGBBuffer[i++] = palette.rgb[2];
   }
-  const filename = `${canvasTileFolder}/emptytile.webp`;
+  const filename = path.resolve(`${canvasTileFolder}/emptytile.webp`);
   try {
     await sharp(tileRGBBuffer, {
       raw: {
@@ -507,7 +508,7 @@ export async function createTexture(
   // dont create textures larger than 4096
   const targetSize = Math.min(canvasSize, 4096);
   const amount = targetSize / TILE_SIZE;
-  const zoom = Math.log2(amount) * 2 / TILE_ZOOM_LEVEL;
+  const zoom = Math.log2(amount) * Math.log2(TILE_ZOOM_LEVEL);
   const textureBuffer = new Uint8Array(targetSize * targetSize * 3);
   const startTime = Date.now();
 
@@ -571,7 +572,7 @@ export async function createTexture(
     deleteSubtilefromTile(TILE_SIZE, palette, amount, element, textureBuffer);
   });
 
-  const filename = `${canvasTileFolder}/texture.webp`;
+  const filename = path.resolve(`${canvasTileFolder}/texture.webp`);
   try {
     await sharp(textureBuffer, {
       raw: {
@@ -627,7 +628,9 @@ export async function initializeTiles(
       fs.mkdirSync(tileDir);
     }
     for (let cy = 0; cy < maxBase; cy += 1) {
-      const filename = `${canvasTileFolder}/${zoom}/${cx}/${cy}.webp`;
+      const filename = path.resolve(
+        `${canvasTileFolder}/${zoom}/${cx}/${cy}.webp`,
+      );
       if (force || !fs.existsSync(filename)) {
         const ret = await createZoomTileFromChunk(
           canvasId,
@@ -658,7 +661,9 @@ export async function initializeTiles(
         fs.mkdirSync(tileDir);
       }
       for (let cy = 0; cy < maxZ; cy += 1) {
-        const filename = `${canvasTileFolder}/${zoom}/${cx}/${cy}.webp`;
+        const filename = path.resolve(
+          `${canvasTileFolder}/${zoom}/${cx}/${cy}.webp`,
+        );
         if (force || !fs.existsSync(filename)) {
           const ret = await createZoomedTile(
             canvas,
