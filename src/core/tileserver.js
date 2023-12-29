@@ -24,7 +24,7 @@ const CanvasUpdaters = {};
 /*
  * worker thread
  */
-const worker = new Worker(path.resolve('./workers/tilewriter.js'));
+const worker = new Worker(path.resolve('workers', 'tilewriter.js'));
 
 /*
  * queue of tasks that is worked on in FIFO
@@ -61,7 +61,7 @@ class CanvasUpdater {
     this.TileLoadingQueues = [];
     this.id = id;
     this.canvas = canvases[id];
-    this.canvasTileFolder = `${TILE_FOLDER}/${id}`;
+    this.canvasTileFolder = path.resolve(TILE_FOLDER, id);
     this.firstZoomtileWidth = this.canvas.size / TILE_SIZE / TILE_ZOOM_LEVEL;
     this.maxTiledZoom = getMaxTiledZoom(this.canvas.size);
   }
@@ -194,7 +194,7 @@ socketEvents.on('chunkUpdate', (canvasId, chunk) => {
  * starting update loops for canvases
  */
 export default function startAllCanvasLoops() {
-  if (!fs.existsSync(`${TILE_FOLDER}`)) fs.mkdirSync(`${TILE_FOLDER}`);
+  if (!fs.existsSync(TILE_FOLDER)) fs.mkdirSync(TILE_FOLDER);
   const ids = Object.keys(canvases);
   for (let i = 0; i < ids.length; i += 1) {
     const id = parseInt(ids[i], 10);

@@ -20,7 +20,7 @@ export const MAIL_ADDRESS = process.env.MAIL_ADDRESS
   || 'donotreply@pixelplanet.fun';
 
 const TILE_FOLDER_REL = process.env.TILE_FOLDER || 'tiles';
-export const TILE_FOLDER = path.join(__dirname, `./${TILE_FOLDER_REL}`);
+export const TILE_FOLDER = path.resolve(TILE_FOLDER_REL);
 
 export const USE_XREALIP = !!process.env.USE_XREALIP;
 

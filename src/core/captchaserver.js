@@ -12,7 +12,7 @@ const MAX_WAIT = 30 * 1000;
 /*
  * worker thread
  */
-const worker = new Worker(path.resolve('./workers/captchaloader.js'));
+const worker = new Worker(path.resolve('workers', 'captchaloader.js'));
 
 /*
  * queue of captcha-generation tasks
