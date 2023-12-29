@@ -21,13 +21,16 @@ const basePackageValues = {
   private: true,
   engines: pkg.engines,
   scripts: {
-    start: 'pm2 restart ecosystem.yml',
+    start: 'pm2 start ecosystem.yml',
+    restart: 'pm2 restart ecosystem.yml',
+    stop: 'pm2 stop all',
+    poststop: 'pm2 kill',
+    'install-pm2': 'npm install -g pm2'
   },
   dependencies: {
     mysql2: '',
     'utf-8-validate': '',
     bufferutil: '',
-    pm2: '^5.3.0',
   },
 };
 

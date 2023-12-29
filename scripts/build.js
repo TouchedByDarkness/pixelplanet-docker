@@ -172,9 +172,7 @@ async function buildProduction() {
 
   if (doBuildClient) {
     if (!recursion) {
-      console.log(
-        'Building one package seperately to populate cache and possibly extract langs...',
-      );
+      console.log('Building one client package...');
       await compile(clientConfig({
         development: false,
         analyze: false,

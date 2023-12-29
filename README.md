@@ -27,7 +27,6 @@ Click or tab: Place Pixel
 ## Build
 ### Requirements
 - [nodejs environment](https://nodejs.org/en/) (>=16)
-- Linux or WSL if you want to be safe (we do not build on Windows and therefor can't guarantee that it will work there)
 
 ### Building
 Checkout repository
@@ -44,7 +43,6 @@ npm install
 npm run build
 ```
 
-
 All needed files to run it got created in `./dist`. You can copy it to wherever you want to run pixelplanet.
 
 Notes:
@@ -59,9 +57,9 @@ git config --global url.https://github.com/.insteadOf git://github.com/
 
 ## Run
 ### Requirements
-- nodejs environment with [npm](https://www.npmjs.com/get-npm) (>=16)
-- [pm2](https://github.com/Unitech/pm2) (`npm install -g pm2`) as process manager and for logging
-- [redis](https://redis.io/) as database for storìng the canvas
+
+- [nodejs environment](https://nodejs.org/en/) (>=16)
+- [redis](https://redis.io/) or [redis-for-windows](https://github.com/redis-windows/redis-windows) as database for storìng the canvas 
 - mysql or mariadb ([setup own user](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql) and [create database](https://www.w3schools.com/SQl/sql_create_db.asp) for pixelplanet) for storing additional data like IP blacklist
 
 ### Configuration
@@ -75,9 +73,9 @@ Configuration takes place in the environment variables that are defined in ecosy
 | HOST           | Own Host                 | "localhost"             |
 | REDIS_URL      | URL:PORT of redis server | "redis://localhost:6379"|
 | MYSQL_HOST     | MySql Host               | "localhost"             |
-| MYSQL_USER     | MySql User               | "user"                  |
-| MYSQL_PW       | MySql Password           | "password"              |
-| MYSQL_DATABASE | MySql Database           | "pixelpladb"            |
+| MYSQL_USER     | MySql User               | "pixelplanet"           |
+| MYSQL_PW       | MySql Password           | "sqlpassword"           |
+| MYSQL_DATABASE | MySql Database           | "pixelplanet"           |
 
 #### Optional Configuration
 
@@ -167,6 +165,12 @@ Install required packages
 npm install
 ```
 
+and [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/) is used as process manager to restart on error and provie logging:
+
+```
+npm install -g pm2
+```
+
 ### Running
 
 1. Make sure that mysql and redis are running
@@ -176,11 +180,14 @@ npm install
 pm2 start ecosystem.yml
 ```
 
+> NOTE: On Windows you might have to prepend `npx`, like: `npx pm2 start ecosystem.yml`
+
 ### Logging
+
 General logs are in `~/pm2/log/`, you can view them with
 
 ```
-pm2 log ppfun-server
+pm2 log ppfun
 ```
 
 you can flush the logs with 
@@ -192,8 +199,9 @@ pm2 log flush
 Pixel placing logs are in `./log/pixels.log`and proxycheck logs in `./log/proxies.log` in the directory where you start pixelplaent. They get rotated daily and deleted if >14d old.
 
 ### Stopping
+
 ```
-pm2 stop ppfun-server
+pm2 stop ppfun
 ```
 
 ### If using reverse Proxy
@@ -204,12 +212,15 @@ If USE\_XREALIP is set, we take the IP from the X-Real-Ip header. Use this if yo
 To have the canvas with all it's components autostart at systemstart,
 enable mysql, redis (and probably nginx if you use it) according to your system (`systemctl enable ...`)
 And then setup pm2 startup with:
+
 ```
 pm2 startup
 ```
+
 (execute as the user that is running pixelplanet)
 And follow the printed steps if needed. This will generate a systemctl service file `/etc/systemd/system/pm2-pixelplanet.service` and enable it. You will have to run `pm2 save` while the canvas is running to let pm2 know what to start.
 To make sure that mysql and redis are up when pixelplanet starts, edit this service file and modify the lines:
+
 ```
 Wants=network-online.target
 After=network.target mysql.service redis.service
