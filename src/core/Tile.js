@@ -242,7 +242,9 @@ function addIndexedSubtiletoTile(
  */
 function tileFileName(canvasTileFolder, cell) {
   const [z, x, y] = cell;
-  const filename = path.resolve(canvasTileFolder, z, x, `${y}.webp`);
+  const filename = path.resolve(
+    canvasTileFolder, String(z), String(x), `${y}.webp`,
+  );
   try {
     const mtime = new Date(fs.statSync(filename).mtime).getTime();
     if (Date.now() - mtime < 120000) {
@@ -616,19 +618,21 @@ export async function initializeTiles(
   await createEmptyTile(canvasTileFolder, palette);
   // base zoomlevel
   let zoom = maxTiledZoom - 1;
-  let zoomDir = path.resolve(canvasTileFolder, zoom);
+  let zoomDir = path.resolve(canvasTileFolder, String(zoom));
   console.log(`Tiling: Checking zoomlevel ${zoomDir}`);
   if (!fs.existsSync(zoomDir)) fs.mkdirSync(zoomDir);
   let cnt = 0;
   let cnts = 0;
   const maxBase = TILE_ZOOM_LEVEL ** zoom;
   for (let cx = 0; cx < maxBase; cx += 1) {
-    const tileDir = path.resolve(canvasTileFolder, zoom, cx);
+    const tileDir = path.resolve(canvasTileFolder, String(zoom), String(cx));
     if (!fs.existsSync(tileDir)) {
       fs.mkdirSync(tileDir);
     }
     for (let cy = 0; cy < maxBase; cy += 1) {
-      const filename = path.resolve(canvasTileFolder, zoom, cx, `${cy}.webp`);
+      const filename = path.resolve(
+        canvasTileFolder, String(zoom), String(cx), `${cy}.webp`,
+      );
       if (force || !fs.existsSync(filename)) {
         const ret = await createZoomTileFromChunk(
           canvasId,
@@ -649,18 +653,18 @@ export async function initializeTiles(
   for (zoom = maxTiledZoom - 2; zoom >= 0; zoom -= 1) {
     cnt = 0;
     cnts = 0;
-    zoomDir = path.resolve(canvasTileFolder, zoom);
+    zoomDir = path.resolve(canvasTileFolder, String(zoom));
     console.log(`Tiling: Checking zoomlevel ${zoomDir}`);
     if (!fs.existsSync(zoomDir)) fs.mkdirSync(zoomDir);
     const maxZ = TILE_ZOOM_LEVEL ** zoom;
     for (let cx = 0; cx < maxZ; cx += 1) {
-      const tileDir = path.resolve(canvasTileFolder, zoom, cx);
+      const tileDir = path.resolve(canvasTileFolder, String(zoom), String(cx));
       if (!fs.existsSync(tileDir)) {
         fs.mkdirSync(tileDir);
       }
       for (let cy = 0; cy < maxZ; cy += 1) {
         const filename = path.resolve(
-          canvasTileFolder, zoom, cx, `${cy}.webp`,
+          canvasTileFolder, String(zoom), String(cx), `${cy}.webp`,
         );
         if (force || !fs.existsSync(filename)) {
           const ret = await createZoomedTile(

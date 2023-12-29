@@ -61,7 +61,7 @@ class CanvasUpdater {
     this.TileLoadingQueues = [];
     this.id = id;
     this.canvas = canvases[id];
-    this.canvasTileFolder = path.resolve(TILE_FOLDER, id);
+    this.canvasTileFolder = path.resolve(TILE_FOLDER, String(id));
     this.firstZoomtileWidth = this.canvas.size / TILE_SIZE / TILE_ZOOM_LEVEL;
     this.maxTiledZoom = getMaxTiledZoom(this.canvas.size);
   }
@@ -144,7 +144,7 @@ class CanvasUpdater {
    */
   initialize() {
     logger.info(`Tiling: Using folder ${this.canvasTileFolder}`);
-    if (!fs.existsSync(`${this.canvasTileFolder}/0`)) {
+    if (!fs.existsSync(path.resolve(this.canvasTileFolder, '0'))) {
       if (!fs.existsSync(this.canvasTileFolder)) {
         fs.mkdirSync(this.canvasTileFolder);
       }
