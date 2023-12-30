@@ -124,8 +124,8 @@ export default async function drawByOffsets(
 
     factor *= rankings.getCountryCoolDownFactor(user.country);
 
-    if (canvasId === 0 && (user.country === 'ir' || user.country === 'lb')) {
-      factor *= 0.25;
+    if (canvasId === 0 && (user.country === 'ir')) {
+      factor *= 0.5;
       if (canvas.bcd * factor < 1000) {
         factor = 1000 / canvas.bcd;
       }
