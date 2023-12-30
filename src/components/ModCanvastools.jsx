@@ -7,7 +7,7 @@ import { useSelector, shallowEqual } from 'react-redux';
 import { t } from 'ttag';
 
 import useInterval from './hooks/interval';
-import { getToday, dateToString } from '../core/utils';
+import { getToday, dateToString, coordsFromUrl } from '../core/utils';
 import { shardOrigin } from '../store/actions/fetch';
 
 const keptState = {
@@ -275,9 +275,12 @@ function ModCanvastools() {
             maxWidth: '15em',
           }}
           type="text"
-          placeholder="X_Y"
+          placeholder="X_Y or URL"
           onChange={(evt) => {
-            keptState.coords = evt.target.value.trim();
+            let co = evt.target.value.trim();
+            co = coordsFromUrl(co) || co;
+            evt.target.value = co;
+            keptState.coords = co;
           }}
         />
       </p>
@@ -328,7 +331,7 @@ function ModCanvastools() {
         ))}
       </select>
       <p>
-        {t`Top-left corner`} (X_Y):&nbsp;
+        {t`Top-left corner`}:&nbsp;
         <input
           defaultValue={keptState.tlcoords}
           style={{
@@ -337,15 +340,17 @@ function ModCanvastools() {
             maxWidth: '15em',
           }}
           type="text"
-          placeholder="X_Y"
+          placeholder="X_Y or URL"
           onChange={(evt) => {
-            const co = evt.target.value.trim();
+            let co = evt.target.value.trim();
+            co = coordsFromUrl(co) || co;
+            evt.target.value = co;
             keptState.tlcoords = co;
           }}
         />
       </p>
       <p>
-        {t`Bottom-right corner`} (X_Y):&nbsp;
+        {t`Bottom-right corner`}:&nbsp;
         <input
           defaultValue={keptState.brcoords}
           style={{
@@ -354,9 +359,11 @@ function ModCanvastools() {
             maxWidth: '15em',
           }}
           type="text"
-          placeholder="X_Y"
+          placeholder="X_Y or URL"
           onChange={(evt) => {
-            const co = evt.target.value.trim();
+            let co = evt.target.value.trim();
+            co = coordsFromUrl(co) || co;
+            evt.target.value = co;
             keptState.brcoords = co;
           }}
         />
@@ -401,7 +408,7 @@ function ModCanvastools() {
             }}
           />
           <p>
-            {t`Top-left corner`} (X_Y):&nbsp;
+            {t`Top-left corner`}:&nbsp;
             <input
               defaultValue={keptState.tlrcoords}
               style={{
@@ -410,15 +417,17 @@ function ModCanvastools() {
                 maxWidth: '15em',
               }}
               type="text"
-              placeholder="X_Y"
+              placeholder="X_Y or URL"
               onChange={(evt) => {
-                const co = evt.target.value.trim();
+                let co = evt.target.value.trim();
+                co = coordsFromUrl(co) || co;
+                evt.target.value = co;
                 keptState.tlrcoords = co;
               }}
             />
           </p>
           <p>
-            {t`Bottom-right corner`} (X_Y):&nbsp;
+            {t`Bottom-right corner`}:&nbsp;
             <input
               defaultValue={keptState.brrcoords}
               style={{
@@ -427,9 +436,11 @@ function ModCanvastools() {
                 maxWidth: '15em',
               }}
               type="text"
-              placeholder="X_Y"
+              placeholder="X_Y or URL"
               onChange={(evt) => {
-                const co = evt.target.value.trim();
+                let co = evt.target.value.trim();
+                co = coordsFromUrl(co) || co;
+                evt.target.value = co;
                 keptState.brrcoords = co;
               }}
             />
@@ -484,7 +495,7 @@ function ModCanvastools() {
         {cleanerStatusString}
       </p>
       <p>
-        {t`Top-left corner`} (X_Y):&nbsp;
+        {t`Top-left corner`}:&nbsp;
         <input
           defaultValue={keptState.tlccoords}
           style={{
@@ -493,15 +504,17 @@ function ModCanvastools() {
             maxWidth: '15em',
           }}
           type="text"
-          placeholder="X_Y"
+          placeholder="X_Y or URL"
           onChange={(evt) => {
-            const co = evt.target.value.trim();
+            let co = evt.target.value.trim();
+            co = coordsFromUrl(co) || co;
+            evt.target.value = co;
             keptState.tlccoords = co;
           }}
         />
       </p>
       <p>
-        {t`Bottom-right corner`} (X_Y):&nbsp;
+        {t`Bottom-right corner`}:&nbsp;
         <input
           defaultValue={keptState.brccoords}
           style={{
@@ -510,9 +523,11 @@ function ModCanvastools() {
             maxWidth: '15em',
           }}
           type="text"
-          placeholder="X_Y"
+          placeholder="X_Y or URL"
           onChange={(evt) => {
-            const co = evt.target.value.trim();
+            let co = evt.target.value.trim();
+            co = coordsFromUrl(co) || co;
+            evt.target.value = co;
             keptState.brccoords = co;
           }}
         />

@@ -8,7 +8,7 @@ import { useSelector, shallowEqual } from 'react-redux';
 import { t } from 'ttag';
 
 import copyTextToClipboard from '../utils/clipboard';
-import { parseInterval } from '../core/utils';
+import { parseInterval, coordsFromUrl } from '../core/utils';
 import { shardOrigin } from '../store/actions/fetch';
 
 const keepState = {
@@ -173,7 +173,7 @@ function ModWatchtools() {
           />
         </p>
         <p>
-          {t`Top-left corner`} (X_Y):&nbsp;
+          {t`Top-left corner`}:&nbsp;
           <input
             defaultValue={keepState.tlcoords}
             style={{
@@ -182,15 +182,17 @@ function ModWatchtools() {
               maxWidth: '15em',
             }}
             type="text"
-            placeholder="X_Y"
+            placeholder="X_Y or URL"
             onChange={(evt) => {
-              const co = evt.target.value.trim();
+              let co = evt.target.value.trim();
+              co = coordsFromUrl(co) || co;
+              evt.target.value = co;
               keepState.tlcoords = co;
             }}
           />
         </p>
         <p>
-          {t`Bottom-right corner`} (X_Y):&nbsp;
+          {t`Bottom-right corner`}:&nbsp;
           <input
             defaultValue={keepState.brcoords}
             style={{
@@ -199,9 +201,11 @@ function ModWatchtools() {
               maxWidth: '15em',
             }}
             type="text"
-            placeholder="X_Y"
+            placeholder="X_Y or URL"
             onChange={(evt) => {
-              const co = evt.target.value.trim();
+              let co = evt.target.value.trim();
+              co = coordsFromUrl(co) || co;
+              evt.target.value = co;
               keepState.brcoords = co;
             }}
           />
@@ -312,11 +316,13 @@ function ModWatchtools() {
                       switch (type) {
                         case 'ts': {
                           const date = new Date(val);
-                          let minutes = date.getMinutes();
-                          if (minutes < 10) minutes = `0${minutes}`;
+                          const hours = date.getHours();
+                          const minutes = `0${date.getMinutes()}`.slice(-2);
+                          const seconds = `0${date.getSeconds()}`.slice(-2);
+                          const ms = `00${date.getMilliseconds()}`.slice(-3);
                           return (
                             <td key={type} title={date.toLocaleDateString()}>
-                              {`${date.getHours()}:${minutes}`}
+                              {`${hours}:${minutes}:${seconds}.${ms}`}
                             </td>
                           );
                         }

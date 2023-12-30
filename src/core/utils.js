@@ -471,6 +471,28 @@ export function getDateTimeString(timestamp) {
 }
 
 /*
+ * get X_Y coordinates out of URL
+ * @param url url ending with #canas,x,y,z coords
+ * @return coordinates in X_Y form or null
+ */
+export function coordsFromUrl(url) {
+  let splitInd = url.lastIndexOf('#');
+  if (splitInd === -1) {
+    return null;
+  }
+  let part = url.slice(splitInd + 1);
+  splitInd = part.indexOf('?');
+  if (splitInd !== -1) {
+    part = part.slice(0, splitInd);
+  }
+  const [, x, y] = part.split(',');
+  if (x && y) {
+    return `${x}_${y}`;
+  }
+  return null;
+}
+
+/*
  * parse interval in s/m/h form to timestamp
  * @param interval string like "2d"
  * @return timestamp of now - interval
