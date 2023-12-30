@@ -14,7 +14,7 @@ export const PIXELLOGGER_PREFIX = (SHARD_NAME)
 const PROXYLOGGER_PREFIX = (SHARD_NAME)
   ? `./log/proxycheck-${SHARD_NAME}-` : './log/proxycheck-';
 const MODTOOLLOGGER_PREFIX = (SHARD_NAME)
-  ? `./log/modtools-${SHARD_NAME}-` : './log/modtools-';
+  ? `./log/moderation/modtools-${SHARD_NAME}-` : './log/moderation/modtools-';
 
 const logger = createLogger({
   level: 'info',
