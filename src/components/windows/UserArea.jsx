@@ -49,7 +49,7 @@ const UserArea = () => {
       dispatch(fetchStats());
     }
   }, 300000);
-  
+
   return (
     <div style={{ textAlign: 'center' }}>
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab}>

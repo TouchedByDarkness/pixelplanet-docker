@@ -139,21 +139,82 @@ export async function storeHourlyCountryStats(start, amount) {
   ]);
 
   if (prevTs && prevTs > tsNow - 1000 * 3600 * 1.5) {
-    const curData = await client.zRangeWithScores(
-      DAILY_CRANKED_KEY, start, start + amount, {
-        REV: true,
-      });
+    const dataPromises = [
+      client.zRangeWithScores(
+        DAILY_CRANKED_KEY, start, start + amount, {
+          REV: true,
+        }),
+    ];
+
+    /*
+     * when the day changed, we can not be sure if the
+     * PREV_DAILY_CRANKED_KEY already reset or not.
+     * Therefor we get the previous day history, which might already
+     * exist, and add it to the curent data if it makes sense
+     */
+    const curDay = new Date().getDate();
+    const prevDay = new Date(prevTs).getDate();
+    if (curDay !== prevDay) {
+      const dateKey = getDateKeyOfTs(tsNow - 1000 * 3600 * 24);
+      dataPromises.push(client.zRangeWithScores(
+        `${CDAY_STATS_RANKS_KEY}:${dateKey}`, start, start + amount, {
+          REV: true,
+        }),
+      );
+    } else {
+      dataPromises.push(null);
+    }
+
+    const [curData, addData] = await Promise.all(dataPromises);
+
     const prevRanks = new Map();
     prevData.forEach(({ value, score }) => prevRanks.set(value, score));
+
+    const addRanks = new Map();
+    if (addData) {
+      addData.forEach(({ value, score }) => addRanks.set(value, score));
+    }
+
     const addArr = [];
     curData.forEach(({ value: cc, score: curPx }) => {
       const prevPx = prevRanks.get(cc) || 0;
-      const px = (curPx > prevPx) ? curPx - prevPx : curPx;
+      const addPx = addRanks.get(cc) || 0;
+      let px;
+      if (curPx >= prevPx) {
+        px = curPx - prevPx;
+      } else if (addPx) {
+        px = curPx + addPx - prevPx;
+      } else {
+        px = curPx;
+      }
+
+      if (addPx) {
+        addRanks.delete(cc);
+      }
+
       addArr.push({
         value: cc,
         score: px,
       });
     });
+
+    /*
+     * after a day change and reset occured, many countries
+     * will not be present in curData, cause they didn't place
+     * a pixel yet.
+     * Therefore we check the previous day data that is left.
+     */
+    addRanks.forEach((px, cc) => {
+      const prevPx = prevRanks.get(cc) || 0;
+      if (px <= prevPx) {
+        return;
+      }
+      addArr.push({
+        value: cc,
+        score: px - prevPx,
+      });
+    });
+
     if (addArr.length) {
       await client.zAdd(HOURLY_CRANKED_KEY, addArr);
     }

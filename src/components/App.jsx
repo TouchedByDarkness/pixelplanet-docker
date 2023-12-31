@@ -33,7 +33,9 @@ const App = () => (
       <WindowManager />
     </IconContext.Provider>
     <a
-      style={{ position: 'absolute', bottom: 4, left: '50%', marginLeft: -27 }}
+      style={{
+        position: 'absolute', bottom: 4, left: '50%', marginLeft: -27,
+      }}
       href="https://www.bitchute.com/video/bOOoNdPdjWmt/"
     >
       <img style={{ width: 75 }} src="2024.gif" />
