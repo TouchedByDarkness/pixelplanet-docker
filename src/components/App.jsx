@@ -36,7 +36,7 @@ const App = () => (
       style={{
         position: 'absolute', bottom: 4, left: '50%', marginLeft: -27,
       }}
-      href="https://www.bitchute.com/video/bOOoNdPdjWmt/"
+      href="https://files.catbox.moe/70ej7o.mp4"
     >
       <img style={{ width: 75 }} src="2024.gif" />
     </a>
