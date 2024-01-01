@@ -126,8 +126,8 @@ class Ranks {
      * 20% gets added to their cooldown for every country
      * after the first. Ceiled at 200%
      */
-    if (outnumbered >= 2) {
-      let punishmentFactor = 1 + 0.25 * (outnumbered - 1);
+    if (outnumbered > 2) {
+      let punishmentFactor = 1 + 0.25 * (outnumbered - 2);
       if (punishmentFactor > 3) {
         punishmentFactor = 3;
       }
