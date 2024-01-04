@@ -65,7 +65,7 @@ function createKeyPressHandler(store) {
           : t`Grid OFF`));
         return;
       case 'h':
-        if (window.ssv && window.ssv.backupurl) {
+        if (window?.ssv.backupurl) {
           store.dispatch(toggleHistoricalView());
         }
         return;

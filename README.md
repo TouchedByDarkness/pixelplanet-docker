@@ -133,7 +133,6 @@ Meaning of some values:
 | size   | canvas size, power of 2 and between 256 and 65536               |
 | bcd    | Base cooldown for unset pixels                                  |
 | cds    | Stack time of Cooldown                                          |
-| sd     | Start-date of the canvas (for historical view)                  |
 
 #### Optional canvases Configuration
 
@@ -145,6 +144,8 @@ Meaning of some values:
 | ranked | If pixels on canvas count on player statistic (default: false)  |
 | v      | If 3D voxel canvas (boolean) (default: false)                   |
 | hid    | Hidden canvases, can be just seen by pressing P (default: false)|
+| sd     | Start-date of the canvas (for historical view)                  |
+| ed     | end date for historical view (canvas retired)                   |
 
 Notes:
 

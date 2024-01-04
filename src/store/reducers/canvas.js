@@ -23,6 +23,7 @@ export type CanvasState = {
   is3D: boolean,
   canvasSize: number,
   canvasStartDate: string,
+  canvasEndDate: string,
   palette: Palette,
   clrIgnore: number,
   view: Array,
@@ -68,10 +69,12 @@ function getViewFromURL(canvases) {
     const clrIgnore = canvas.cli || 0;
     const {
       colors,
-      sd: canvasStartDate,
+      sd: canvasStartDate = null,
+      ed: canvasEndDate = null,
       size: canvasSize,
     } = canvas;
     const is3D = !!canvas.v;
+    const isHistoricalView = !!canvasEndDate;
 
     const x = parseInt(almost[1], 10);
     const y = parseInt(almost[2], 10);
@@ -92,7 +95,8 @@ function getViewFromURL(canvases) {
     }
 
     if (!is3D && canvasId !== null) {
-      scale = clamp(scale, TILE_SIZE / canvasSize, MAX_SCALE);
+      const minScale = (isHistoricalView) ? 0.7 : TILE_SIZE / canvasSize;
+      scale = clamp(scale, minScale, MAX_SCALE);
       view.length = 2;
     }
 
@@ -103,12 +107,14 @@ function getViewFromURL(canvases) {
       historicalCanvasSize: canvasSize,
       is3D,
       canvasStartDate,
+      canvasEndDate,
       canvasMaxTiledZoom: getMaxTiledZoom(canvasSize),
       palette: new Palette(colors, 0),
       clrIgnore,
       selectedColor: clrIgnore,
       view,
       viewscale: scale,
+      isHistoricalView,
       scale,
       canvases,
     };
@@ -121,12 +127,14 @@ function getViewFromURL(canvases) {
       historicalCanvasSize: canvasd.size,
       is3D: !!canvasd.v,
       canvasStartDate: null,
+      canvasEndDate: null,
       canvasMaxTiledZoom: getMaxTiledZoom(canvasd.size),
       palette: new Palette(canvasd.colors, 0),
       clrIgnore: canvasd.cli || 0,
       selectedColor: canvasd.cli || 0,
       view: [0, 0, 0],
       viewscale: DEFAULT_SCALE,
+      isHistoricalView: false,
       scale: DEFAULT_SCALE,
       canvases,
     };
@@ -135,7 +143,6 @@ function getViewFromURL(canvases) {
 
 const initialState = {
   ...getViewFromURL(DEFAULT_CANVASES),
-  isHistoricalView: false,
   historicalDate: null,
   historicalTime: null,
   showHiddenCanvases: false,
@@ -220,9 +227,11 @@ export default function canvasReducer(
       } = state;
       return {
         ...state,
-        scale: (scale < 1.0) ? 1.0 : scale,
-        viewscale: (viewscale < 1.0) ? 1.0 : viewscale,
-        isHistoricalView: !state.is3D && !state.isHistoricalView,
+        scale: (scale < 0.7) ? 0.7 : scale,
+        viewscale: (viewscale < 0.7) ? 0.7 : viewscale,
+        isHistoricalView: !state.is3D && (
+          !state.isHistoricalView || state.canvasEndDate
+        ),
       };
     }
 
@@ -289,7 +298,8 @@ export default function canvasReducer(
       const clrIgnore = canvas.cli || 0;
       const {
         size: canvasSize,
-        sd: canvasStartDate,
+        sd: canvasStartDate = null,
+        ed: canvasEndDate = null,
         ident: canvasIdent,
         colors,
       } = canvas;
@@ -306,7 +316,9 @@ export default function canvasReducer(
         selectedColor = prevCanvasCoords[canvasId].selectedColor;
       }
       //---
-      const isHistoricalView = !is3D && state.isHistoricalView;
+      const isHistoricalView = !is3D && (
+        state.isHistoricalView || !!canvasEndDate
+      );
       const historicalCanvasSize = getHistoricalCanvasSize(
         state.historicalDate,
         canvasSize,
@@ -324,6 +336,7 @@ export default function canvasReducer(
         canvasSize,
         is3D,
         canvasStartDate,
+        canvasEndDate,
         palette,
         clrIgnore,
         view,
@@ -349,7 +362,9 @@ export default function canvasReducer(
       let { canvasIdent, scale, view } = state;
 
       let canvasId = getIdFromObject(canvases, canvasIdent);
-      if (canvasId === null) {
+      if (canvasId === null || (
+        !window.ssv?.backupurl && canvases[canvasId].ed
+      )) {
         canvasId = DEFAULT_CANVAS_ID;
         canvasIdent = canvases[DEFAULT_CANVAS_ID].ident;
       }
@@ -358,13 +373,16 @@ export default function canvasReducer(
       const is3D = !!canvas.v;
       const {
         size: canvasSize,
-        sd: canvasStartDate,
+        sd: canvasStartDate = null,
+        ed: canvasEndDate = null,
         colors,
       } = canvas;
       const palette = new Palette(colors, 0);
+      const isHistoricalView = !!canvasEndDate;
 
       if (!is3D) {
-        scale = clamp(scale, TILE_SIZE / canvasSize, MAX_SCALE);
+        const minScale = (isHistoricalView) ? 0.7 : TILE_SIZE / canvasSize;
+        scale = clamp(scale, minScale, MAX_SCALE);
         view = [view[0], view[1]];
       }
 
@@ -380,6 +398,7 @@ export default function canvasReducer(
         canvases,
         viewscale: scale,
         scale,
+        isHistoricalView,
         view,
       };
     }

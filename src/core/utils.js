@@ -51,15 +51,15 @@ export function dateToString(date) {
 }
 
 /*
- * get current date in YYYY-MM-DD
+ * get current UTC date in YYYY-MM-DD
  */
 export function getToday() {
   const date = new Date();
-  let day = date.getDate();
-  let month = date.getMonth() + 1;
+  let day = date.getUTCDate();
+  let month = date.getUTCMonth() + 1;
   if (month < 10) month = `0${month}`;
   if (day < 10) day = `0${day}`;
-  return `${date.getFullYear()}-${month}-${day}`;
+  return `${date.getUTCFullYear()}-${month}-${day}`;
 }
 
 // z is assumed to be height here

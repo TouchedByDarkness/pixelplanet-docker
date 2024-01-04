@@ -266,7 +266,7 @@ function ModCanvastools() {
       </select>
       <p>{descAction}</p>
       <p>
-        {t`Coordinates in X_Y format:`}&nbsp;
+        {t`Coordinates:`}&nbsp;
         <input
           defaultValue={keptState.coords}
           style={{

@@ -34,11 +34,13 @@ const HistorySelect = () => {
   const [
     canvasId,
     canvasStartDate,
+    canvasEndDate,
     historicalDate,
     historicalTime,
   ] = useSelector((state) => [
     state.canvas.canvasId,
     state.canvas.canvasStartDate,
+    state.canvas.canvasEndDate,
     state.canvas.historicalDate,
     state.canvas.historicalTime,
   ], shallowEqual);
@@ -108,7 +110,7 @@ const HistorySelect = () => {
         key="dateinput"
         value={selectedDate}
         min={canvasStartDate}
-        max={max}
+        max={canvasEndDate || max}
         ref={dateSelect}
         onChange={handleDateChange}
       />

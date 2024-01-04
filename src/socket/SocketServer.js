@@ -584,6 +584,7 @@ class SocketServer {
             this.deleteAllChunks(ws);
           }
           ws.canvasId = canvasId;
+          if (canvases[canvasId].ed) return;
           const wait = await ws.user.getWait(canvasId);
           ws.send(dehydrateCoolDown(wait));
           break;

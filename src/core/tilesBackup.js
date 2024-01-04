@@ -24,8 +24,8 @@ export async function updateBackupRedis(canvasRedis, backupRedis, canvases) {
   for (let i = 0; i < ids.length; i += 1) {
     const id = ids[i];
     const canvas = canvases[id];
-    if (canvas.v || canvas.hid) {
-      // ignore 3D and hidden canvases
+    if (canvas.v || canvas.hid || canvas.ed) {
+      // ignore 3D, hidden and retired canvases
       continue;
     }
     const chunksXY = (canvas.size / TILE_SIZE);
@@ -86,8 +86,8 @@ export async function incrementalBackupRedis(
     const id = ids[ind];
 
     const canvas = canvases[id];
-    if (canvas.v || canvas.hid) {
-      // ignore 3D and hidden canvases
+    if (canvas.v || canvas.hid || canvas.ed) {
+      // ignore 3D, hidden and retired canvases
       continue;
     }
 
