@@ -4,6 +4,7 @@ import {
   getIdFromObject,
   getHistoricalCanvasSize,
   getMaxTiledZoom,
+  dateToString,
 } from '../../core/utils';
 
 
@@ -46,6 +47,51 @@ export type CanvasState = {
 */
 
 /*
+ * checks if toggling historical view is neccessary
+ * in given state or if properties have to change.
+ * Changes the state inplace.
+ * @param state
+ * @return same state with fixed historical view
+ */
+function fixHistoryIfNeccessary(state, doClamp = true) {
+  const {
+    canvasEndDate,
+    isHistoricalView,
+    is3D,
+  } = state;
+
+  if (is3D && isHistoricalView) {
+    state.isHistoricalView = false;
+  } else if (canvasEndDate && !isHistoricalView) {
+    state.isHistoricalView = true;
+    if (!state.historicalDate) {
+      state.historicalDate = dateToString(canvasEndDate);
+      state.historicalTime = '0000';
+    }
+  }
+  if (state.isHistoricalView) {
+    const {
+      historicalDate,
+      canvasId,
+      canvasSize,
+      canvases,
+      scale,
+      viewscale,
+    } = state;
+    state.historicalCanvasSize = getHistoricalCanvasSize(
+      historicalDate,
+      canvasSize,
+      canvases[canvasId]?.historicalSizes,
+    );
+    if (doClamp && (scale < 0.7 || viewscale < 0.7)) {
+      state.scale = 0.7;
+      state.viewscale = 0.7;
+    }
+  }
+  return state;
+}
+
+/*
  * parse url hash and sets view to coordinates
  * @param canvases Object with all canvas information
  * @return view, viewscale and scale for state
@@ -74,7 +120,6 @@ function getViewFromURL(canvases) {
       size: canvasSize,
     } = canvas;
     const is3D = !!canvas.v;
-    const isHistoricalView = !!canvasEndDate;
 
     const x = parseInt(almost[1], 10);
     const y = parseInt(almost[2], 10);
@@ -95,12 +140,12 @@ function getViewFromURL(canvases) {
     }
 
     if (!is3D && canvasId !== null) {
-      const minScale = (isHistoricalView) ? 0.7 : TILE_SIZE / canvasSize;
+      const minScale = TILE_SIZE / canvasSize;
       scale = clamp(scale, minScale, MAX_SCALE);
       view.length = 2;
     }
 
-    return {
+    return fixHistoryIfNeccessary({
       canvasId,
       canvasIdent,
       canvasSize,
@@ -114,20 +159,21 @@ function getViewFromURL(canvases) {
       selectedColor: clrIgnore,
       view,
       viewscale: scale,
-      isHistoricalView,
+      isHistoricalView: false,
+      historicalDate: null,
       scale,
       canvases,
-    };
+    }, canvasId !== null);
   } catch (error) {
     const canvasd = canvases[DEFAULT_CANVAS_ID];
-    return {
+    return fixHistoryIfNeccessary({
       canvasId: DEFAULT_CANVAS_ID,
       canvasIdent: canvasd.ident,
       canvasSize: canvasd.size,
       historicalCanvasSize: canvasd.size,
       is3D: !!canvasd.v,
-      canvasStartDate: null,
-      canvasEndDate: null,
+      canvasStartDate: canvasd.sd,
+      canvasEndDate: canvasd.ed,
       canvasMaxTiledZoom: getMaxTiledZoom(canvasd.size),
       palette: new Palette(canvasd.colors, 0),
       clrIgnore: canvasd.cli || 0,
@@ -135,21 +181,20 @@ function getViewFromURL(canvases) {
       view: [0, 0, 0],
       viewscale: DEFAULT_SCALE,
       isHistoricalView: false,
+      historicalDate: null,
       scale: DEFAULT_SCALE,
       canvases,
-    };
+    });
   }
 }
 
 const initialState = {
   ...getViewFromURL(DEFAULT_CANVASES),
-  historicalDate: null,
   historicalTime: null,
   showHiddenCanvases: false,
   hover: null,
   prevCanvasCoords: {},
 };
-
 
 export default function canvasReducer(
   state = initialState,
@@ -203,36 +248,21 @@ export default function canvasReducer(
         date,
         time,
       } = action;
-      const {
-        canvasSize,
-        canvases,
-        canvasId,
-      } = state;
-      const historicalCanvasSize = getHistoricalCanvasSize(
-        date, canvasSize, canvases[canvasId].historicalSizes,
-      );
-
-      return {
+      return fixHistoryIfNeccessary({
         ...state,
-        historicalCanvasSize,
         historicalDate: date,
         historicalTime: time,
-      };
+      });
     }
 
     case 's/TGL_HISTORICAL_VIEW': {
-      const {
-        scale,
-        viewscale,
-      } = state;
-      return {
+      if (state.is3D || state.canvasEndDate) {
+        return state;
+      }
+      return fixHistoryIfNeccessary({
         ...state,
-        scale: (scale < 0.7) ? 0.7 : scale,
-        viewscale: (viewscale < 0.7) ? 0.7 : viewscale,
-        isHistoricalView: !state.is3D && (
-          !state.isHistoricalView || state.canvasEndDate
-        ),
-      };
+        isHistoricalView: !state.isHistoricalView,
+      });
     }
 
     case 's/TGL_HIDDEN_CANVASES': {
@@ -289,7 +319,11 @@ export default function canvasReducer(
 
     case 's/SELECT_CANVAS': {
       let { canvasId } = action;
-      const { canvases, prevCanvasCoords, canvasId: prevCanvasId } = state;
+      const {
+        canvases,
+        prevCanvasCoords,
+        canvasId: prevCanvasId,
+      } = state;
       let canvas = canvases[canvasId];
       if (!canvas) {
         canvasId = DEFAULT_CANVAS_ID;
@@ -315,20 +349,13 @@ export default function canvasReducer(
         scale = prevCanvasCoords[canvasId].scale;
         selectedColor = prevCanvasCoords[canvasId].selectedColor;
       }
-      //---
-      const isHistoricalView = !is3D && (
-        state.isHistoricalView || !!canvasEndDate
-      );
-      const historicalCanvasSize = getHistoricalCanvasSize(
-        state.historicalDate,
-        canvasSize,
-        canvas.historicalSizes,
-      );
       const palette = new Palette(colors, 0);
+
       if (!is3D) {
         view.length = 2;
       }
-      return {
+
+      return fixHistoryIfNeccessary({
         ...state,
         canvasId,
         canvasIdent,
@@ -342,8 +369,6 @@ export default function canvasReducer(
         view,
         viewscale,
         scale,
-        isHistoricalView,
-        historicalCanvasSize,
         // remember view, scale and viewscale
         prevCanvasCoords: {
           ...state.prevCanvasCoords,
@@ -354,12 +379,16 @@ export default function canvasReducer(
             selectedColor: state.selectedColor,
           },
         },
-      };
+      });
     }
 
     case 's/REC_ME': {
       const { canvases } = action;
-      let { canvasIdent, scale, view } = state;
+      let {
+        canvasIdent,
+        scale,
+        view,
+      } = state;
 
       let canvasId = getIdFromObject(canvases, canvasIdent);
       if (canvasId === null || (
@@ -378,29 +407,28 @@ export default function canvasReducer(
         colors,
       } = canvas;
       const palette = new Palette(colors, 0);
-      const isHistoricalView = !!canvasEndDate;
 
       if (!is3D) {
-        const minScale = (isHistoricalView) ? 0.7 : TILE_SIZE / canvasSize;
+        const minScale = TILE_SIZE / canvasSize;
         scale = clamp(scale, minScale, MAX_SCALE);
         view = [view[0], view[1]];
       }
 
-      return {
+      return fixHistoryIfNeccessary({
         ...state,
         canvasId,
         canvasIdent,
         canvasSize,
         is3D,
         canvasStartDate,
+        canvasEndDate,
         palette,
         clrIgnore,
         canvases,
         viewscale: scale,
         scale,
-        isHistoricalView,
         view,
-      };
+      });
     }
 
     default:

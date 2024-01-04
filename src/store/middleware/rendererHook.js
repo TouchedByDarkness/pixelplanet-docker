@@ -58,6 +58,20 @@ export default (store) => (next) => (action) => {
       } else {
         initRenderer(store, is3D);
       }
+
+      if (state.canvas.isHistoricalView) {
+        const {
+          historicalDate,
+          historicalTime,
+          historicalCanvasSize,
+        } = state.canvas;
+        renderer.updateHistoricalTime(
+          historicalDate,
+          historicalTime,
+          historicalCanvasSize,
+        );
+      }
+
       break;
     }
 

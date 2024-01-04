@@ -98,20 +98,20 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: src/ssr/Main.jsx:55
-msgid "PixelPlanet.Fun"
-msgstr ""
-
-#: src/ssr/Main.jsx:56
-msgid "Place color pixels on an map styled canvas with other players online"
-msgstr ""
-
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr ""
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
+msgstr ""
+
+#: src/ssr/Main.jsx:55
+msgid "PixelPlanet.Fun"
+msgstr ""
+
+#: src/ssr/Main.jsx:56
+msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 
 #: src/utils/validation.js:17
@@ -204,10 +204,6 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr ""
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr ""
@@ -220,66 +216,13 @@ msgstr ""
 msgid "Just admins can do that"
 msgstr ""
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr ""
-
-#: src/routes/api/auth/delete_account.js:65
-#: src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr ""
-
-#: src/routes/api/auth/verify.js:26
-#: src/routes/api/auth/verify.js:35
-msgid "Mail verification"
-msgstr ""
-
-#: src/routes/api/auth/verify.js:27
-msgid "You are now verified :)"
-msgstr ""
-
-#: src/routes/api/auth/verify.js:35
-msgid ""
-"Your mail verification code is invalid or already expired :(, please "
-"request a new one."
-msgstr ""
-
-#: src/routes/api/auth/change_mail.js:44
-#: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:36
-msgid "You are not authenticated."
-msgstr ""
-
-#: src/routes/api/auth/change_mail.js:53
-#: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:55
-msgid "Incorrect password!"
-msgstr ""
-
-#: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
 msgstr ""
 
 #: src/routes/api/auth/change_mail.js:22
 #: src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
-msgstr ""
-
-#: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
-msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr ""
 
 #: src/routes/api/auth/register.js:31
@@ -312,6 +255,50 @@ msgstr ""
 
 #: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
+msgstr ""
+
+#: src/routes/api/auth/verify.js:26
+#: src/routes/api/auth/verify.js:35
+msgid "Mail verification"
+msgstr ""
+
+#: src/routes/api/auth/verify.js:27
+msgid "You are now verified :)"
+msgstr ""
+
+#: src/routes/api/auth/verify.js:35
+msgid ""
+"Your mail verification code is invalid or already expired :(, please "
+"request a new one."
+msgstr ""
+
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr ""
+
+#: src/routes/api/auth/delete_account.js:65
+#: src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:44
+#: src/routes/api/auth/change_passwd.js:34
+#: src/routes/api/auth/delete_account.js:36
+msgid "You are not authenticated."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:53
+#: src/routes/api/auth/change_passwd.js:43
+#: src/routes/api/auth/delete_account.js:55
+msgid "Incorrect password!"
+msgstr ""
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
 msgstr ""
 
 #: src/canvasesDesc.js:20
@@ -390,6 +377,19 @@ msgstr ""
 msgid ""
 "Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon the "
 "old world and all it entails."
+msgstr ""
+
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr ""
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr ""
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr ""
 
 #: src/core/MailProvider.js:66

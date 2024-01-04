@@ -28,7 +28,7 @@ const CanvasSelect = () => {
       <p>
         {t`Select the canvas you want to use.
 Every canvas is unique and has different palettes, cooldown and requirements.
-Archive of closed canvases can be accessed here:`}&nbsp;
+Archive of removed canvases can be accessed here:`}&nbsp;
         <span
           role="button"
           tabIndex={0}
@@ -50,6 +50,29 @@ Archive of closed canvases can be accessed here:`}&nbsp;
               />
             )
         ))
+      }
+      {
+        (window.ssv?.backupurl
+          && Object.keys(canvases).some((i) => canvases[i].ed))
+          && (
+          <>
+            <h3>{t`Retired Canvases (history only)`}</h3>
+            {
+            Object.keys(canvases).map((canvasId) => (
+              canvases[canvasId].ed
+              && (
+                <CanvasItem
+                  key={canvasId}
+                  online={online[canvasId]}
+                  canvasId={canvasId}
+                  canvas={canvases[canvasId]}
+                  selCanvas={selCanvas}
+                />
+              )
+            ))
+          }
+          </>
+          )
       }
     </div>
   );

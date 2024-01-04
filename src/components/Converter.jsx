@@ -197,7 +197,7 @@ function Converter() {
         >
           {
           Object.keys(canvases).map((canvas) => (
-            (canvases[canvas].v || canvases[canvas].ed
+            (canvases[canvas].v
               || (canvases[canvas].hid && !showHiddenCanvases))
               ? null
               : (
