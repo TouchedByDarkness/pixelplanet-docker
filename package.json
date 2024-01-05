@@ -13,7 +13,7 @@
     "build:client": "node scripts/build.js --client",
     "build:dev": "webpack --config ./webpack.config.server.js && webpack --env development --config ./webpack.config.client.js && npm run minify-css",
     "update-browserlist": "browserslist --update-db",
-    "deploy": "ssh pixelplanet /home/pixelpla/rebuild.sh",
+    "deploy": "./deployment/deploy.sh",
     "minify-css": "node scripts/minifyCss.js",
     "babel-node": "babel-node",
     "lint": "cd $INIT_CWD && eslint --ext .jsx --ext .js",

@@ -369,6 +369,8 @@ export default function canvasReducer(
         view,
         viewscale,
         scale,
+        // reset if last canvas was retired
+        isHistoricalView: (!state.canvasEndDate && state.isHistoricalView),
         // remember view, scale and viewscale
         prevCanvasCoords: {
           ...state.prevCanvasCoords,
