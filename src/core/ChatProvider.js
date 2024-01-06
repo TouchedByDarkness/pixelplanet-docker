@@ -482,6 +482,8 @@ export class ChatProvider {
       displayCountry = 'bt';
     } else if (user.id === 41030) {
       displayCountry = 'to';
+    } else if (user.id === 1384) {
+      displayCountry = 'fa';
     }
 
     if (USE_MAILER && !user.regUser.verified) {
