@@ -33,6 +33,7 @@ const Help = () => {
 
   const starhouseLink = <a href="https://twitter.com/starhousedev">starhouse </a>;
   const vinikLink = <a href="https://twitter.com/Vinikdev">Vinikdev</a>;
+  const donendoLink = <a href="https://lospec.com/palette-list/lava-gb">Do-Nendo</a>;
   const guildedLink = <a href="https://pixelplanet.fun/guilded">guilded</a>;
   const mailLink = <a href="mailto:admin@pixelplanet.fun">admin@pixelplanet.fun</a>;
 
@@ -95,6 +96,9 @@ can be downloaded from mega.nz here: `}<a href="https://mega.nz/#!JpkBwAbJ!EnSLl
         </p>
         <p>
           {jt`Credit for the Palette of the Top10 canvas goes to ${vinikLink}.`}
+        </p>
+        <p>
+          {jt`Credit for the Palette of the 2bit canvas goes to ${donendoLink}.`}
         </p>
       </div>
     </div>

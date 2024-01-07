@@ -26,6 +26,7 @@ function getCanvases(t) {
     7: t`1bit`,
     8: t`Top10`,
     9: t`Thoia`,
+    10: t`2bit`,
   };
   const canvasDesc = {
     0: t`Our main canvas, a huge map of the world. Place everywhere you like`,
@@ -37,6 +38,7 @@ function getCanvases(t) {
     7: t`Black and White canvas`,
     8: t`A canvas for the most active players from the the previous day. Daily ranking updates at 00:00 UTC.`,
     9: t`Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon the old world and all it entails.`,
+    10: t`Only four colors. Same rules as moon.`,
   };
   /*
    * no edit below here needed when adding/removing canvas
