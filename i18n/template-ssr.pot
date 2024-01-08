@@ -204,6 +204,10 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr ""
+
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr ""
@@ -214,47 +218,6 @@ msgstr ""
 
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
-msgstr ""
-
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr ""
-
-#: src/routes/api/auth/change_mail.js:22
-#: src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr ""
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr ""
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr ""
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr ""
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr ""
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr ""
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr ""
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr ""
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
 msgstr ""
 
 #: src/routes/api/auth/verify.js:26
@@ -297,8 +260,45 @@ msgstr ""
 msgid "Muted users can not delete their account."
 msgstr ""
 
+#: src/routes/api/auth/change_mail.js:22
+#: src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr ""
+
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted users can not do this."
+msgstr ""
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr ""
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr ""
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr ""
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr ""
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr ""
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr ""
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr ""
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
 msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
