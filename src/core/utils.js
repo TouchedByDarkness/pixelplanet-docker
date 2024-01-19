@@ -155,6 +155,9 @@ export function getOffsetOfPixel(
  * @return key
  */
 export function getIdFromObject(obj, ident) {
+  if (!obj) {
+    return null;
+  }
   const ids = Object.keys(obj);
   for (let i = 0; i < ids.length; i += 1) {
     const key = ids[i];
@@ -195,30 +198,30 @@ export function getCellInsideChunk(
 }
 
 export function screenToWorld(
-  state,
+  view,
+  scale,
   $viewport,
   [x, y],
 ) {
-  const { view, viewscale } = state.canvas;
   const [viewX, viewY] = view;
   const { width, height } = $viewport;
   return [
-    Math.floor(((x - (width / 2)) / viewscale) + viewX),
-    Math.floor(((y - (height / 2)) / viewscale) + viewY),
+    Math.floor(((x - (width / 2)) / scale) + viewX),
+    Math.floor(((y - (height / 2)) / scale) + viewY),
   ];
 }
 
 export function worldToScreen(
-  state,
+  view,
+  scale,
   $viewport,
   [x, y],
 ) {
-  const { view, viewscale } = state.canvas;
   const [viewX, viewY] = view;
   const { width, height } = $viewport;
   return [
-    ((x - viewX) * viewscale) + (width / 2),
-    ((y - viewY) * viewscale) + (height / 2),
+    ((x - viewX) * scale) + (width / 2),
+    ((y - viewY) * scale) + (height / 2),
   ];
 }
 

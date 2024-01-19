@@ -17,7 +17,7 @@ export default () => (next) => (action) => {
       break;
     }
 
-    case 'SET_VIEW_COORDINATES': {
+    case 'UPDATE_VIEW': {
       /*
        * view: [x, y] float canvas coordinates of the center of the screen,
        */

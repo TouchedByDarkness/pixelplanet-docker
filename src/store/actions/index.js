@@ -146,6 +146,13 @@ export function selectCanvas(canvasId) {
   };
 }
 
+export function updateView(view) {
+  return {
+    type: 'UPDATE_VIEW',
+    view,
+  };
+}
+
 export function setViewCoordinates(view) {
   return {
     type: 'SET_VIEW_COORDINATES',
@@ -164,9 +171,9 @@ export function move([dx, dy]) {
 
 export function moveDirection([vx, vy]) {
   return (dispatch, getState) => {
-    const { viewscale } = getState().canvas;
+    const [,, scale] = getState().canvas.view;
 
-    const speed = 100.0 / viewscale;
+    const speed = 100.0 / scale;
     dispatch(move([speed * vx, speed * vy]));
   };
 }
@@ -192,22 +199,6 @@ export function setScale(scale, zoompoint) {
     type: 'SET_SCALE',
     scale,
     zoompoint,
-  };
-}
-
-export function zoomIn(zoompoint) {
-  return (dispatch, getState) => {
-    const { scale } = getState().canvas;
-    const zoomscale = scale >= 1.0 ? scale * 1.1 : scale * 1.04;
-    dispatch(setScale(zoomscale, zoompoint));
-  };
-}
-
-export function zoomOut(zoompoint) {
-  return (dispatch, getState) => {
-    const { scale } = getState().canvas;
-    const zoomscale = scale >= 1.0 ? scale / 1.1 : scale / 1.04;
-    dispatch(setScale(zoomscale, zoompoint));
   };
 }
 
@@ -430,12 +421,6 @@ export function unmuteChatChannel(cid) {
   return {
     type: 's/UNMUTE_CHAT_CHANNEL',
     cid,
-  };
-}
-
-export function onViewFinishChange() {
-  return {
-    type: 'ON_VIEW_FINISH_CHANGE',
   };
 }
 

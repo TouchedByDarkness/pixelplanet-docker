@@ -16,6 +16,7 @@ class Chunk2D extends Chunk {
     super(zoom, cx, cy);
     this.palette = palette;
     this.image = document.createElement('canvas');
+    this.image.getContext('2d', { willReadFrequently: true, alpha: false });
     this.image.width = TILE_SIZE;
     this.image.height = TILE_SIZE;
     this.ready = false;
@@ -84,7 +85,6 @@ class Chunk2D extends Chunk {
   getColorIndex(cell, nearest = true) {
     const [x, y] = cell;
     const ctx = this.image.getContext('2d');
-
     const rgb = ctx.getImageData(x, y, 1, 1).data;
     const ind = (nearest)
       ? this.palette.getClosestIndexOfColor(rgb[0], rgb[1], rgb[2])

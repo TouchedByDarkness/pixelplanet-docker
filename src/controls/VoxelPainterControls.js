@@ -25,7 +25,6 @@ import {
   Vector3,
 } from 'three';
 import {
-  onViewFinishChange,
   setViewCoordinates,
 } from '../store/actions';
 import {
@@ -41,8 +40,9 @@ import {
 //          or arrow keys / touch: two-finger move
 
 class VoxelPainterControls extends EventDispatcher {
-  constructor(object, domElement, store) {
+  constructor(renderer, object, domElement, store) {
     super();
+    this.renderer = renderer;
     // eslint-disable-next-line max-len
     if (domElement === undefined) console.warn('THREE.VoxelPainterControls: The second parameter "domElement" is now mandatory.');
     // eslint-disable-next-line max-len
@@ -976,13 +976,13 @@ class VoxelPainterControls extends EventDispatcher {
           if (panOffset.length() < 0.2 && panOffset.length() !== 0.0) {
             panOffset.set(0, 0, 0);
             scope.store.dispatch(setViewCoordinates(scope.target.toArray()));
-            scope.store.dispatch(onViewFinishChange());
+            scope.renderer.storeViewInState();
           } else if (panOffset.length() !== 0.0) {
             const curTime = Date.now();
             if (curTime > updateTime + 500) {
               updateTime = curTime;
               scope.store.dispatch(setViewCoordinates(scope.target.toArray()));
-              scope.store.dispatch(onViewFinishChange());
+              scope.renderer.storeViewInState();
             }
           }
           /*

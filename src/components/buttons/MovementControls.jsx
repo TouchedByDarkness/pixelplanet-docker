@@ -5,7 +5,7 @@
 
 import React from 'react';
 
-import { getRenderer } from '../ui/rendererFactory';
+import { getRenderer } from '../../ui/rendererFactory';
 
 const btnStyle = {
   fontSize: 34,
@@ -53,7 +53,7 @@ function cancelMovement() {
   renderer.controls.moveDown = false;
 }
 
-const Mobile3DControls = () => (
+const MovementControls = () => (
   <div>
     <div
       className="actionbuttons"
@@ -220,4 +220,4 @@ const Mobile3DControls = () => (
   </div>
 );
 
-export default Mobile3DControls;
+export default MovementControls;

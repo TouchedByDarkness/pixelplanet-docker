@@ -11,14 +11,14 @@ const PLACEHOLDER_BORDER = 1;
 export function renderPlaceholder(
   state,
   $viewport,
+  view,
   scale,
 ) {
   const viewportCtx = $viewport.getContext('2d');
 
-  const { hover } = state.canvas;
-  const { palette, selectedColor } = state.canvas;
+  const { hover, palette, selectedColor } = state.canvas;
 
-  const [sx, sy] = worldToScreen(state, $viewport, hover);
+  const [sx, sy] = worldToScreen(view, scale, $viewport, hover);
 
   viewportCtx.save();
   viewportCtx.translate(sx + (scale / 2), sy + (scale / 2));
@@ -45,6 +45,7 @@ export function renderPlaceholder(
 export function renderPotatoPlaceholder(
   state,
   $viewport,
+  view,
   scale,
 ) {
   const viewportCtx = $viewport.getContext('2d');
@@ -52,7 +53,7 @@ export function renderPotatoPlaceholder(
   const { hover } = state.canvas;
   const { palette, selectedColor } = state.canvas;
 
-  const [sx, sy] = worldToScreen(state, $viewport, hover);
+  const [sx, sy] = worldToScreen(view, scale, $viewport, hover);
 
   viewportCtx.save();
   viewportCtx.fillStyle = '#000';
@@ -72,6 +73,7 @@ export function renderPotatoPlaceholder(
 export function renderGrid(
   state,
   $viewport,
+  view,
   scale,
   isLightGrid,
 ) {
@@ -83,8 +85,8 @@ export function renderGrid(
   viewportCtx.globalAlpha = 0.5;
   viewportCtx.fillStyle = (isLightGrid) ? '#DDDDDD' : '#222222';
 
-  let [xoff, yoff] = screenToWorld(state, $viewport, [0, 0]);
-  let [x, y] = worldToScreen(state, $viewport, [xoff, yoff]);
+  let [xoff, yoff] = screenToWorld(view, scale, $viewport, [0, 0]);
+  let [x, y] = worldToScreen(view, scale, $viewport, [xoff, yoff]);
 
   for (; x < width; x += scale) {
     const thick = (xoff++ % 10 === 0) ? 2 : 1;

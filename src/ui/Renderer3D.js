@@ -26,8 +26,6 @@ import pixelTransferController from './PixelTransferController';
 const renderDistance = 150;
 
 class Renderer3D extends Renderer {
-  is3D = true;
-  //--
   scene;
   camera;
   rollOverMesh;
@@ -51,6 +49,7 @@ class Renderer3D extends Renderer {
 
   constructor(store) {
     super(store);
+    this.is3D = true;
     const state = store.getState();
     this.objects = [];
 
@@ -163,6 +162,7 @@ class Renderer3D extends Renderer {
 
     // controls
     const controls = new VoxelPainterControls(
+      this,
       camera,
       domElement,
       store,
@@ -354,7 +354,7 @@ class Renderer3D extends Renderer {
     if (!this.threeRenderer) {
       return;
     }
-    this.controls.update();
+    super.render();
     if (this.forceNextRender) {
       this.reloadChunks();
       this.forceNextRender = false;

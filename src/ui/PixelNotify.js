@@ -57,6 +57,8 @@ class PixelNotify {
   render(
     state,
     $viewport,
+    view,
+    scale,
   ) {
     const viewportCtx = $viewport.getContext('2d');
     if (!viewportCtx) return;
@@ -71,7 +73,7 @@ class PixelNotify {
         this.pixelList.pop();
         continue;
       }
-      const [sx, sy] = worldToScreen(state, $viewport, [x, y])
+      const [sx, sy] = worldToScreen(view, scale, $viewport, [x, y])
         .map((z) => z + this.scale / 2);
 
       // eslint-disable-next-line max-len

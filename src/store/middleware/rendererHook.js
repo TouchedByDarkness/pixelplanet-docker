@@ -14,15 +14,7 @@ import {
 export default (store) => (next) => (action) => {
   const { type } = action;
 
-  let prevScale = null;
-
   switch (type) {
-    case 'SET_SCALE': {
-      const state = store.getState();
-      prevScale = state.canvas.viewscale;
-      break;
-    }
-
     case 'SET_HISTORICAL_TIME': {
       const state = store.getState();
       const renderer = getRenderer();
@@ -55,6 +47,9 @@ export default (store) => (next) => (action) => {
 
       if (is3D === renderer.is3D) {
         renderer.updateCanvasData(state);
+        if (type === 's/RELOAD_URL') {
+          renderer.updateView(state.canvas.view);
+        }
       } else {
         initRenderer(store, is3D);
       }
@@ -115,16 +110,24 @@ export default (store) => (next) => (action) => {
       break;
     }
 
-    case 's/TGL_HISTORICAL_VIEW':
-    case 'SET_SCALE': {
+    case 's/TGL_HISTORICAL_VIEW': {
       const renderer = getRenderer();
-      renderer.updateScale(state, prevScale);
+      renderer.updateView(state.view);
       break;
     }
 
     case 'SET_VIEW_COORDINATES': {
       const renderer = getRenderer();
-      renderer.updateView(state);
+      renderer.updateView(action.view);
+      renderer.storeViewInState();
+      break;
+    }
+
+    case 'SET_SCALE': {
+      const renderer = getRenderer();
+      const [x, y] = renderer.view;
+      renderer.updateView([x, y, action.scale], action.zoompoint);
+      renderer.storeViewInState();
       break;
     }
 

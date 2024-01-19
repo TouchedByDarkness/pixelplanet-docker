@@ -354,7 +354,13 @@ export function requestBanInfo() {
   );
 }
 
-export function requestMe() {
+export async function requestMe() {
+  if (window.me) {
+    // api/me gets pre-fetched by embedded script in html
+    const response = await window.me;
+    delete window.me;
+    return parseAPIresponse(response);
+  }
   return makeAPIGETRequest(
     '/api/me',
   );

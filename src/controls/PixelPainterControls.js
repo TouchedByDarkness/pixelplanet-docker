@@ -9,16 +9,12 @@
 import {
   setHover,
   unsetHover,
-  setViewCoordinates,
   setScale,
-  zoomIn,
-  zoomOut,
   selectColor,
   moveNorth,
   moveWest,
   moveSouth,
   moveEast,
-  onViewFinishChange,
 } from '../store/actions';
 import pixelTransferController from '../ui/PixelTransferController';
 import {
@@ -28,8 +24,8 @@ import {
 } from '../core/utils';
 
 class PixelPainterControls {
-  constructor(renderer, viewport, curStore) {
-    this.store = curStore;
+  constructor(renderer, viewport, store) {
+    this.store = store;
     this.renderer = renderer;
     this.viewport = viewport;
 
@@ -44,8 +40,6 @@ class PixelPainterControls {
     this.onTouchStart = this.onTouchStart.bind(this);
     this.onTouchEnd = this.onTouchEnd.bind(this);
     this.onTouchMove = this.onTouchMove.bind(this);
-
-    this.onViewFinishChangeTimeOut = null;
 
     this.clickTapStartView = [0, 0];
     this.clickTapStartTime = 0;
@@ -89,6 +83,9 @@ class PixelPainterControls {
     document.removeEventListener('keyup', this.onKeyUp, false);
   }
 
+  // eslint-disable-next-line class-methods-use-this
+  update() {}
+
   gotCoolDownDelta(delta) {
     this.coolDownDelta = true;
     setTimeout(() => {
@@ -101,12 +98,12 @@ class PixelPainterControls {
     document.activeElement.blur();
 
     if (event.button === 0) {
-      clearTimeout(this.onViewFinishChangeTimeOut);
+      this.renderer.cancelStoreViewInState();
       this.isClicking = true;
       const { clientX, clientY } = event;
       this.clickTapStartTime = Date.now();
       this.clickTapStartCoords = [clientX, clientY];
-      this.clickTapStartView = this.store.getState().canvas.view;
+      this.clickTapStartView = [...this.renderer.view];
       const { viewport } = this;
       setTimeout(() => {
         if (this.isClicking) {
@@ -116,22 +113,10 @@ class PixelPainterControls {
     }
   }
 
-  /*
-   * try to avoid updating history too often
-   */
-  scheduleOnViewFinishChange() {
-    if (this.onViewFinishChangeTimeOut) {
-      clearTimeout(this.onViewFinishChangeTimeOut);
-    }
-    this.onViewFinishChangeTimeOut = setTimeout(() => {
-      this.store.dispatch(onViewFinishChange());
-    }, 500);
-  }
-
   onMouseUp(event) {
     event.preventDefault();
 
-    const { store } = this;
+    const { store, renderer } = this;
     if (event.button === 0) {
       this.isClicking = false;
       const { clientX, clientY } = event;
@@ -143,21 +128,21 @@ class PixelPainterControls {
       // thresholds for single click / holding
       if (clickTapStartTime > Date.now() - 250
         && coordsDiff[0] < 2 && coordsDiff[1] < 2) {
-        const state = store.getState();
         const cell = screenToWorld(
-          state,
+          renderer.view,
+          renderer.viewscale,
           this.viewport,
           [clientX, clientY],
         );
         PixelPainterControls.placePixel(
           store,
-          this.renderer,
+          renderer,
           cell,
         );
       }
       this.viewport.style.cursor = 'auto';
     }
-    this.scheduleOnViewFinishChange();
+    renderer.storeViewInState();
   }
 
   static getTouchCenter(event) {
@@ -186,11 +171,8 @@ class PixelPainterControls {
   static placePixel(store, renderer, cell, colorIndex = null) {
     const state = store.getState();
     const { autoZoomIn } = state.gui;
-    const { clrIgnore } = state.canvas;
-    const {
-      scale,
-      isHistoricalView,
-    } = state.canvas;
+    const { clrIgnore, isHistoricalView } = state.canvas;
+    const { viewscale: scale } = renderer;
     const selectedColor = (colorIndex === null)
       ? state.canvas.selectedColor
       : colorIndex;
@@ -198,8 +180,7 @@ class PixelPainterControls {
     if (isHistoricalView) return;
 
     if (autoZoomIn && scale < 8) {
-      store.dispatch(setViewCoordinates(cell));
-      store.dispatch(setScale(12));
+      renderer.updateView([cell[0], cell[1], 12]);
       return;
     }
 
@@ -266,14 +247,12 @@ class PixelPainterControls {
     event.stopPropagation();
     document.activeElement.blur();
 
-    clearTimeout(this.onViewFinishChangeTimeOut);
+    this.renderer.cancelStoreViewInState();
     this.clickTapStartTime = Date.now();
     this.clickTapStartCoords = PixelPainterControls.getTouchCenter(event);
-    const state = this.store.getState();
-    this.clickTapStartView = state.canvas.view;
+    this.clickTapStartView = [...this.renderer.view];
 
     if (event.touches.length > 1) {
-      this.tapStartScale = state.canvas.scale;
       this.tapStartDist = PixelPainterControls.getMultiTouchDistance(event);
       this.isMultiTab = true;
       this.clearTabTimeout();
@@ -296,7 +275,7 @@ class PixelPainterControls {
     event.preventDefault();
     event.stopPropagation();
 
-    const { store } = this;
+    const { store, renderer } = this;
     if (event.touches.length === 0 && this.isClicking) {
       const { pageX, pageY } = event.changedTouches[0];
       const { clickTapStartCoords, clickTapStartTime } = this;
@@ -307,11 +286,10 @@ class PixelPainterControls {
       // thresholds for single click / holding
       if (clickTapStartTime > Date.now() - 580
         && coordsDiff[0] < 2 && coordsDiff[1] < 2) {
-        const { viewport } = this;
-        const state = store.getState();
         const cell = screenToWorld(
-          state,
-          viewport,
+          renderer.view,
+          renderer.viewscale,
+          this.viewport,
           [pageX, pageY],
         );
         PixelPainterControls.placePixel(
@@ -324,7 +302,7 @@ class PixelPainterControls {
         }, 500);
       }
     }
-    this.scheduleOnViewFinishChange();
+    renderer.storeViewInState();
     this.clearTabTimeout();
   }
 
@@ -335,15 +313,12 @@ class PixelPainterControls {
     const multiTouch = (event.touches.length > 1);
 
     const [clientX, clientY] = PixelPainterControls.getTouchCenter(event);
-    const { store } = this;
-    const state = store.getState();
     if (this.isMultiTab !== multiTouch) {
       // if one finger got lifted or added, reset clickTabStart
       this.isMultiTab = multiTouch;
       this.clickTapStartCoords = [clientX, clientY];
-      this.clickTapStartView = state.canvas.view;
+      this.clickTapStartView = [...this.renderer.view];
       this.tapStartDist = PixelPainterControls.getMultiTouchDistance(event);
-      this.tapStartScale = state.canvas.scale;
     } else {
       // pan
       const { clickTapStartView, clickTapStartCoords } = this;
@@ -354,11 +329,11 @@ class PixelPainterControls {
       if (deltaX > 2 || deltaY > 2) {
         this.clearTabTimeout();
       }
-      const { scale } = state.canvas;
-      store.dispatch(setViewCoordinates([
+      const { viewscale: scale } = this.renderer.view;
+      this.renderer.updateView([
         lastPosX - (deltaX / scale),
         lastPosY - (deltaY / scale),
-      ]));
+      ]);
 
       // pinch
       if (multiTouch) {
@@ -366,12 +341,12 @@ class PixelPainterControls {
 
         const a = event.touches[0];
         const b = event.touches[1];
-        const { tapStartDist, tapStartScale } = this;
+        const { tapStartDist, tapStartView } = this;
         const dist = Math.sqrt(
           (b.pageX - a.pageX) ** 2 + (b.pageY - a.pageY) ** 2,
         );
         const pinchScale = dist / tapStartDist;
-        store.dispatch(setScale(tapStartScale * pinchScale));
+        this.store.dispatch(setScale(tapStartView[2] * pinchScale));
       }
     }
   }
@@ -384,33 +359,42 @@ class PixelPainterControls {
     }
   }
 
+  zoomIn(origin) {
+    const [x, y, scale] = this.renderer.view;
+    const deltaScale = scale >= 1.0 ? 1.1 : 1.04;
+    this.renderer.updateView([x, y, scale * deltaScale], origin);
+    this.renderer.storeViewInState();
+  }
+
+  zoomOut(origin) {
+    const [x, y, scale] = this.renderer.view;
+    const deltaScale = scale >= 1.0 ? 1.1 : 1.04;
+    this.renderer.updateView([x, y, scale / deltaScale], origin);
+    this.renderer.storeViewInState();
+  }
+
   onWheel(event) {
     event.preventDefault();
     document.activeElement.blur();
 
     const { deltaY } = event;
     const { store } = this;
-    const state = store.getState();
-    const { hover } = state.canvas;
-    let zoompoint = null;
-    if (hover) {
-      zoompoint = hover;
-    }
+    const { hover } = store.getState().canvas;
+    const origin = hover || null;
     if (deltaY < 0) {
-      store.dispatch(zoomIn(zoompoint));
+      this.zoomIn(origin);
     }
     if (deltaY > 0) {
-      store.dispatch(zoomOut(zoompoint));
+      this.zoomOut(origin);
     }
-    this.scheduleOnViewFinishChange();
   }
 
   onMouseMove(event) {
     event.preventDefault();
 
     const { clientX, clientY } = event;
-    const { store, isClicking } = this;
-    const state = store.getState();
+    const { renderer, isClicking } = this;
+    const { viewscale } = renderer;
     if (isClicking) {
       if (Date.now() < this.clickTapStartTime + 100) {
         // 100ms threshold till starting to pan
@@ -421,15 +405,18 @@ class PixelPainterControls {
       const deltaX = clientX - clickTapStartCoords[0];
       const deltaY = clientY - clickTapStartCoords[1];
 
-      const { scale } = state.canvas;
-      store.dispatch(setViewCoordinates([
-        lastPosX - (deltaX / scale),
-        lastPosY - (deltaY / scale),
-      ]));
+      this.renderer.updateView([
+        lastPosX - (deltaX / viewscale),
+        lastPosY - (deltaY / viewscale),
+      ]);
     } else {
+      const { store } = this;
+      const state = store.getState();
       const { hover } = state.canvas;
+      const { view } = renderer;
       const screenCoor = screenToWorld(
-        state,
+        view,
+        viewscale,
         this.viewport,
         [clientX, clientY],
       );
@@ -491,11 +478,15 @@ class PixelPainterControls {
   }
 
   static selectColor(store, viewport, renderer, center) {
-    const state = store.getState();
-    if (state.canvas.scale < 3) {
+    if (renderer.viewscale < 3) {
       return;
     }
-    const coords = screenToWorld(state, viewport, center);
+    const coords = screenToWorld(
+      renderer.view,
+      renderer.viewscale,
+      viewport,
+      center,
+    );
     const clrIndex = renderer.getColorIndexOfPixel(...coords);
     if (clrIndex !== null) {
       store.dispatch(selectColor(clrIndex));
@@ -558,10 +549,10 @@ class PixelPainterControls {
         store.dispatch(moveEast());
         return;
       case 'KeyE':
-        store.dispatch(zoomIn());
+        this.zoomIn();
         return;
       case 'KeyQ':
-        store.dispatch(zoomOut());
+        this.zoomOut();
         return;
       default:
     }
@@ -571,11 +562,11 @@ class PixelPainterControls {
      */
     switch (event.key) {
       case '+':
-        store.dispatch(zoomIn());
-        break;
+        this.zoomIn();
+        return;
       case '-':
-        store.dispatch(zoomOut());
-        break;
+        this.zoomOut();
+        return;
       case 'Control':
       case 'Shift': {
         const state = store.getState();

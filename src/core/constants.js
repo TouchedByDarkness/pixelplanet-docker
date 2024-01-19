@@ -8,57 +8,7 @@
 export const MAX_SCALE = 40; // 52 in log2
 // export const DEFAULT_SCALE = 0.25; //-20 in log2
 export const DEFAULT_SCALE = 3;
-
-// default canvas that is first assumed, before real canvas data
-// gets fetched via api/me
 export const DEFAULT_CANVAS_ID = '0';
-export const DEFAULT_CANVASES = {
-  0: {
-    ident: 'd',
-    colors: [
-      [202, 227, 255],
-      [255, 255, 255],
-      [255, 255, 255],
-      [228, 228, 228],
-      [196, 196, 196],
-      [136, 136, 136],
-      [78, 78, 78],
-      [0, 0, 0],
-      [244, 179, 174],
-      [255, 167, 209],
-      [255, 84, 178],
-      [255, 101, 101],
-      [229, 0, 0],
-      [154, 0, 0],
-      [254, 164, 96],
-      [229, 149, 0],
-      [160, 106, 66],
-      [96, 64, 40],
-      [245, 223, 176],
-      [255, 248, 137],
-      [229, 217, 0],
-      [148, 224, 68],
-      [2, 190, 1],
-      [104, 131, 56],
-      [0, 101, 19],
-      [202, 227, 255],
-      [0, 211, 221],
-      [0, 131, 199],
-      [0, 0, 234],
-      [25, 25, 115],
-      [207, 110, 228],
-      [130, 0, 128],
-    ],
-    cli: 2,
-    size: 65536,
-    bcd: 4000,
-    pcd: 7000,
-    cds: 60000,
-    ranked: true,
-    req: -1,
-    sd: '2020-01-08',
-  },
-};
 
 export const TILE_LOADING_IMAGE = './loading.png';
 
@@ -96,6 +46,9 @@ export const MAX_CHAT_MESSAGES = 100;
 export const EVENT_USER_NAME = 'event';
 export const INFO_USER_NAME = 'info';
 export const APISOCKET_USER_NAME = 'apisocket';
+
+// delay for updating coordinates (for window title, history, url, etc.)
+export const VIEW_UPDATE_DELAY = 1000;
 
 // maximum chunks to subscribe to
 export const MAX_LOADED_CHUNKS = 2000;

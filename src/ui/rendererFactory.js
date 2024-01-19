@@ -24,23 +24,29 @@ animationLoop();
 
 export async function initRenderer(store, is3D) {
   renderer.destructor();
-  if (is3D) {
-    if (!isWebGL2Available()) {
-      store.dispatch(pAlert(
-        t`Canvas Error`,
-        t`Can't render 3D canvas, do you have WebGL2 disabled?`,
-        'error',
-        'OK',
-      ));
-      renderer = dummyRenderer;
-    } else {
-      /* eslint-disable-next-line max-len */
-      const module = await import(/* webpackChunkName: "voxel" */ './Renderer3D');
-      const Renderer3D = module.default;
-      renderer = new Renderer3D(store);
+  switch (is3D) {
+    case true: {
+      if (!isWebGL2Available()) {
+        store.dispatch(pAlert(
+          t`Canvas Error`,
+          t`Can't render 3D canvas, do you have WebGL2 disabled?`,
+          'error',
+          'OK',
+        ));
+        renderer = dummyRenderer;
+      } else {
+        /* eslint-disable-next-line max-len */
+        const module = await import(/* webpackChunkName: "voxel" */ './Renderer3D');
+        const Renderer3D = module.default;
+        renderer = new Renderer3D(store);
+      }
+      break;
     }
-  } else {
-    renderer = new Renderer2D(store);
+    case false:
+      renderer = new Renderer2D(store);
+      break;
+    default:
+      renderer = dummyRenderer;
   }
   return renderer;
 }

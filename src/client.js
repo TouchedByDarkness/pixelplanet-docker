@@ -17,7 +17,7 @@ import {
 import pixelTransferController from './ui/PixelTransferController';
 import store from './store/store';
 import renderApp from './components/App';
-import { initRenderer, getRenderer } from './ui/rendererFactory';
+import { getRenderer } from './ui/rendererFactory';
 import socketClient from './socket/SocketClient';
 import { GC_INTERVAL } from './core/constants';
 
@@ -25,8 +25,6 @@ persistStore(store, {}, () => {
   window.addEventListener('message', store.dispatch);
 
   store.dispatch({ type: 'HYDRATED' });
-
-  initRenderer(store, false);
 
   pixelTransferController.initialize(store, socketClient, getRenderer);
 

@@ -39,31 +39,30 @@ export default (store) => (next) => (action) => {
       break;
     }
 
-
     case 's/SELECT_CANVAS':
     case 's/REC_ME':
     case 'RELOAD_URL':
-    case 'ON_VIEW_FINISH_CHANGE': {
+    case 'UPDATE_VIEW': {
       const state = store.getState();
 
       const {
         view,
-        viewscale,
         canvasIdent,
         is3D,
       } = state.canvas;
 
-      if (action.type !== 'ON_VIEW_FINISH_CHANGE') {
+      if (action.type !== 'UPDATE_VIEW') {
         const [r, g, b] = state.canvas.palette.rgb;
         setThemeColorMeta(r, g, b);
       }
 
-      const coords = view.map((u) => Math.round(u)).join(',');
-      let newhash = `#${canvasIdent},${coords}`;
-      if (!is3D) {
-        const scale = Math.round(Math.log2(viewscale) * 10);
-        newhash += `,${scale}`;
-      }
+      const viewString = view.map((c, ind) => {
+        if (ind === 2 && !is3D) {
+          c = Math.log2(c) * 10;
+        }
+        return Math.round(c);
+      }).join(',');
+      const newhash = `#${canvasIdent},${viewString}`;
       window.history.replaceState(undefined, undefined, newhash);
       break;
     }

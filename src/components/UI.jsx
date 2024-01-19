@@ -9,10 +9,10 @@ import CoolDownBox from './CoolDownBox';
 import NotifyBox from './NotifyBox';
 import GlobeButton from './buttons/GlobeButton';
 import PalselButton from './buttons/PalselButton';
+import MovementControls from './buttons/MovementControls';
 import Palette from './Palette';
 import Alert from './Alert';
 import HistorySelect from './HistorySelect';
-import Mobile3DControls from './Mobile3DControls';
 
 const UI = () => {
   const [
@@ -35,7 +35,7 @@ const UI = () => {
           <PalselButton />
           <Palette />
           {(!is3D) && <GlobeButton />}
-          {(is3D && isOnMobile) && <Mobile3DControls />}
+          {(isOnMobile) && <MovementControls />}
           <CoolDownBox />
         </>
       )}
