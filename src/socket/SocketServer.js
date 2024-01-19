@@ -174,6 +174,8 @@ class SocketServer {
       }
     });
 
+    // when changing interval, remember that online counter gets used as ping
+    // for binary sharded channels in MessageBroker.js
     setInterval(this.onlineCounterBroadcast, 20 * 1000);
     setInterval(this.checkHealth, 15 * 1000);
   }
