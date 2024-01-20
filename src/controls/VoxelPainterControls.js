@@ -91,8 +91,6 @@ class VoxelPainterControls {
   renderer;
   domElement;
   state;
-  // Set to false to disable this control
-  enabled = true;
   // "target" sets the location of focus, where the object orbits around
   target;
   // for reset
@@ -437,9 +435,6 @@ class VoxelPainterControls {
   //
   //
   onDocumentKeyDown(event) {
-    if (!this.enabled) {
-      return;
-    }
     // ignore key presses if modal is open or chat is used
     if (event.target.nodeName === 'INPUT'
       || event.target.nodeName === 'TEXTAREA'
@@ -476,9 +471,6 @@ class VoxelPainterControls {
   }
 
   onDocumentKeyUp(event) {
-    if (!this.enabled) {
-      return;
-    }
     // ignore key presses if modal is open or chat is used
     if (event.target.nodeName === 'INPUT'
       || event.target.nodeName === 'TEXTAREA'
@@ -516,10 +508,6 @@ class VoxelPainterControls {
 
 
   onMouseMove(event) {
-    if (!this.enabled) {
-      return;
-    }
-
     event.preventDefault();
 
     switch (this.state) {
@@ -538,10 +526,6 @@ class VoxelPainterControls {
   }
 
   onMouseUp(event) {
-    if (!this.enabled) {
-      return;
-    }
-
     this.handleMouseUp(event);
     document.removeEventListener('mousemove', this.onMouseMove, false);
     document.removeEventListener('mouseup', this.onMouseUp, false);
@@ -549,8 +533,7 @@ class VoxelPainterControls {
   }
 
   onMouseWheel(event) {
-    if (!this.enabled
-      || !enableZoom
+    if (!enableZoom
       || (this.state !== STATE.NONE
         && this.state !== STATE.ROTATE)
     ) {
@@ -564,10 +547,6 @@ class VoxelPainterControls {
   }
 
   onTouchStart(event) {
-    if (!this.enabled) {
-      return;
-    }
-
     event.preventDefault();
 
     switch (event.touches.length) {
@@ -617,10 +596,6 @@ class VoxelPainterControls {
   }
 
   onTouchMove(event) {
-    if (!this.enabled) {
-      return;
-    }
-
     event.preventDefault();
     event.stopPropagation();
 
@@ -659,27 +634,15 @@ class VoxelPainterControls {
   }
 
   onTouchEnd(event) {
-    if (!this.enabled) {
-      return;
-    }
-
     this.handleTouchEnd(event);
     this.state = STATE.NONE;
   }
 
   onContextMenu(event) {
-    if (!this.enabled) {
-      return;
-    }
-
     event.preventDefault();
   }
 
   onMouseDown(event) {
-    if (!this.enabled) {
-      return;
-    }
-
     // Prevent the browser from scrolling.
     event.preventDefault();
 

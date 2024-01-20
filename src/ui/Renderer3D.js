@@ -520,13 +520,15 @@ class Renderer3D extends Renderer {
   multiTapEnd() {
     const {
       store,
-      mouseMoveStart,
       multitap,
     } = this;
     this.multitap = 0;
     const state = store.getState();
 
-    const [px, py, pz] = mouseMoveStart;
+    if (!this.mouseMoveStart || !state.canvas.hover) {
+      return;
+    }
+    const [px, py, pz] = this.mouseMoveStart;
     const [qx, qy, qz] = state.canvas.hover;
     if (px !== qx || py !== qy || pz !== qz) {
       return;
@@ -614,10 +616,10 @@ class Renderer3D extends Renderer {
       return;
     }
 
-    const [px, py, pz] = this.mouseMoveStart;
-    if (!state.canvas.hover) {
+    if (!this.mouseMoveStart || !state.canvas.hover) {
       return;
     }
+    const [px, py, pz] = this.mouseMoveStart;
     const [qx, qy, qz] = state.canvas.hover;
     if (px !== qx || py !== qy || pz !== qz) {
       return;
