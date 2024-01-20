@@ -11,7 +11,7 @@ import { updateView } from '../store/actions';
 class Renderer {
   store;
   // object for user controls
-  constrols = {
+  controls = {
     update() {},
   };
 
@@ -77,7 +77,7 @@ class Renderer {
   }
 
   render() {
-    this.controls?.update();
+    return this.controls.update();
   }
 
   renderPixel() {}

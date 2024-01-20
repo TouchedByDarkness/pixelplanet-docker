@@ -24,6 +24,33 @@ import {
 } from '../core/utils';
 
 class PixelPainterControls {
+  store;
+  renderer;
+  viewport;
+  //
+  clickTapStartView = [0, 0];
+  clickTapStartTime = 0;
+  clickTapStartCoords = [0, 0];
+  tapStartDist = 50;
+  //
+  // on mouse: true as long as left mouse button is pressed
+  // on touch: set to true when one finger touches the screen
+  //           set to false when second finger touches or touch ends
+  isClicking = false;
+  // on touch: true if more than one finger on screen
+  isMultiTab = false;
+  // on touch: timeout to detect long-press
+  tapTimeout = null;
+  /*
+   * if we are shift-hold-painting
+   * 0: no
+   * 1: left shift
+   * 2: right shift
+   */
+  holdPainting = 0;
+  // if we are waiting before placing pixel via holdPainting again
+  coolDownDelta = false;
+
   constructor(renderer, viewport, store) {
     this.store = store;
     this.renderer = renderer;
@@ -40,29 +67,6 @@ class PixelPainterControls {
     this.onTouchStart = this.onTouchStart.bind(this);
     this.onTouchEnd = this.onTouchEnd.bind(this);
     this.onTouchMove = this.onTouchMove.bind(this);
-
-    this.clickTapStartView = [0, 0];
-    this.clickTapStartTime = 0;
-    this.clickTapStartCoords = [0, 0];
-    this.tapStartDist = 50;
-    this.tapStartScale = this.store.getState().scale;
-    // on mouse: true as long as left mouse button is pressed
-    // on touch: set to true when one finger touches the screen
-    //           set to false when second finger touches or touch ends
-    this.isClicking = false;
-    // on touch: true if more than one finger on screen
-    this.isMultiTab = false;
-    // on touch: timeout to detect long-press
-    this.tapTimeout = null;
-    /*
-     * if we are shift-hold-painting
-     * 0: no
-     * 1: left shift
-     * 2: right shift
-     */
-    this.holdPainting = 0;
-    // if we are waiting before placing pixel via holdPainting again
-    this.coolDownDelta = false;
 
     document.addEventListener('keydown', this.onKeyDown, false);
     document.addEventListener('keyup', this.onKeyUp, false);

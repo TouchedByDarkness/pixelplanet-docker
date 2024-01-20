@@ -35,7 +35,6 @@ class Renderer3D extends Renderer {
   oobGeometry;
   oobMaterial;
   //--
-  controls;
   threeRenderer;
   // temp variables for mouse events
   mouse;
