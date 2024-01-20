@@ -16,7 +16,6 @@
 /* eslint-disable no-console */
 
 import {
-  EventDispatcher,
   MOUSE,
   Quaternion,
   Spherical,
@@ -50,9 +49,6 @@ const STATE = {
   TOUCH_DOLLY_PAN: 5,
   TOUCH_DOLLY_ROTATE: 6,
 };
-const CHANGE_EVENT = { type: 'change' };
-const START_EVENT = { type: 'start' };
-const END_EVENT = { type: 'end' };
 
 /*
  * configuration
@@ -89,7 +85,7 @@ const screenSpacePanning = true; // if true, pan in screen-space
 //    Pan - right mouse, or left mouse + ctrl/meta/shiftKey,
 //          or arrow keys / touch: two-finger move
 
-class VoxelPainterControls extends EventDispatcher {
+class VoxelPainterControls {
   store;
   camera;
   renderer;
@@ -141,7 +137,6 @@ class VoxelPainterControls extends EventDispatcher {
   vec = new Vector3();
 
   constructor(renderer, camera, target, domElement, store) {
-    super();
     this.renderer = renderer;
     this.camera = camera;
     this.domElement = domElement;
@@ -550,7 +545,6 @@ class VoxelPainterControls extends EventDispatcher {
     this.handleMouseUp(event);
     document.removeEventListener('mousemove', this.onMouseMove, false);
     document.removeEventListener('mouseup', this.onMouseUp, false);
-    this.dispatchEvent(END_EVENT);
     this.state = STATE.NONE;
   }
 
@@ -566,9 +560,7 @@ class VoxelPainterControls extends EventDispatcher {
     event.preventDefault();
     event.stopPropagation();
 
-    this.dispatchEvent(START_EVENT);
     this.handleMouseWheel(event);
-    this.dispatchEvent(END_EVENT);
   }
 
   onTouchStart(event) {
@@ -580,66 +572,47 @@ class VoxelPainterControls extends EventDispatcher {
 
     switch (event.touches.length) {
       case 1:
-
         switch (TOUCHES.ONE) {
           case TOUCH.ROTATE:
             if (!enableRotate) {
               return;
             }
-
             this.handleTouchStartRotate(event);
             this.state = STATE.TOUCH_ROTATE;
             break;
-
           case TOUCH.PAN:
             if (!enablePan) {
               return;
             }
-
             this.handleTouchStartPan(event);
             this.state = STATE.TOUCH_PAN;
             break;
-
           default:
             this.state = STATE.NONE;
         }
-
         break;
-
       case 2:
-
         switch (TOUCHES.TWO) {
           case TOUCH.DOLLY_PAN:
             if (!enableZoom && !enablePan) {
               return;
             }
-
             this.handleTouchStartDollyPan(event);
             this.state = STATE.TOUCH_DOLLY_PAN;
             break;
-
           case TOUCH.DOLLY_ROTATE:
             if (!enableZoom && !enableRotate) {
               return;
             }
-
             this.handleTouchStartDollyRotate(event);
             this.state = STATE.TOUCH_DOLLY_ROTATE;
             break;
-
           default:
             this.state = STATE.NONE;
         }
-
         break;
-
       default:
-
         this.state = STATE.NONE;
-    }
-
-    if (this.state !== STATE.NONE) {
-      this.dispatchEvent(START_EVENT);
     }
   }
 
@@ -656,38 +629,30 @@ class VoxelPainterControls extends EventDispatcher {
         if (!enableRotate) {
           return;
         }
-
         this.handleTouchMoveRotate(event);
         this.update();
         break;
-
       case STATE.TOUCH_PAN:
         if (!enablePan) {
           return;
         }
-
         this.handleTouchMovePan(event);
         this.update();
         break;
-
       case STATE.TOUCH_DOLLY_PAN:
         if (!enableZoom && !enablePan) {
           return;
         }
-
         this.handleTouchMoveDollyPan(event);
         this.update();
         break;
-
       case STATE.TOUCH_DOLLY_ROTATE:
         if (!enableZoom && !enableRotate) {
           return;
         }
-
         this.handleTouchMoveDollyRotate(event);
         this.update();
         break;
-
       default:
         this.state = STATE.NONE;
     }
@@ -699,7 +664,6 @@ class VoxelPainterControls extends EventDispatcher {
     }
 
     this.handleTouchEnd(event);
-    this.dispatchEvent(END_EVENT);
     this.state = STATE.NONE;
   }
 
@@ -773,8 +737,6 @@ class VoxelPainterControls extends EventDispatcher {
     if (this.state !== STATE.NONE) {
       document.addEventListener('mousemove', this.onMouseMove, false);
       document.addEventListener('mouseup', this.onMouseUp, false);
-
-      this.dispatchEvent(START_EVENT);
     }
   }
 
@@ -799,7 +761,6 @@ class VoxelPainterControls extends EventDispatcher {
     this.camera.zoom = this.zoom0;
 
     this.camera.updateProjectionMatrix();
-    this.dispatchEvent(CHANGE_EVENT);
     this.update();
     this.state = STATE.NONE;
   }
@@ -939,7 +900,6 @@ class VoxelPainterControls extends EventDispatcher {
     panOffset.set(0, 0, 0);
     this.scale = 1;
 
-    this.dispatchEvent(CHANGE_EVENT);
     return true;
   }
 }
