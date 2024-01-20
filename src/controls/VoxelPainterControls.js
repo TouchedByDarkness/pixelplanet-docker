@@ -194,10 +194,6 @@ class VoxelPainterControls {
     document.removeEventListener('keyup', this.onDocumentKeyUp, false);
   }
 
-  getZoomScale() {
-    return 0.95 ** zoomSpeed;
-  }
-
   rotateLeft(angle) {
     this.sphericalDelta.theta -= angle;
   }
@@ -232,14 +228,6 @@ class VoxelPainterControls {
     }
     v.multiplyScalar(distance);
     this.panOffset.add(v);
-  }
-
-  dollyIn(dollyScale) {
-    this.scale /= dollyScale;
-  }
-
-  dollyOut(dollyScale) {
-    this.scale *= dollyScale;
   }
 
   //
@@ -285,10 +273,11 @@ class VoxelPainterControls {
     dollyEnd.set(event.clientX, event.clientY);
 
     dollyDelta.subVectors(dollyEnd, dollyStart);
+    const scaleDelta = 0.95 ** zoomSpeed;
     if (dollyDelta.y > 0) {
-      this.dollyIn(this.getZoomScale());
+      this.scale /= scaleDelta;
     } else if (dollyDelta.y < 0) {
-      this.dollyOut(this.getZoomScale());
+      this.scale *= scaleDelta;
     }
     dollyStart.copy(this.dollyEnd);
     this.update();
@@ -308,15 +297,15 @@ class VoxelPainterControls {
     this.update();
   }
 
-  handleMouseUp(/* event */) {
-    // no-op
-  }
+  // eslint-disable-next-line class-methods-use-this
+  handleMouseUp() {}
 
   handleMouseWheel(event) {
+    const scaleDelta = 0.95 ** zoomSpeed;
     if (event.deltaY < 0) {
-      this.dollyOut(this.getZoomScale());
+      this.scale *= scaleDelta;
     } else if (event.deltaY > 0) {
-      this.dollyIn(this.getZoomScale());
+      this.scale /= scaleDelta;
     }
     this.forceNextUpdate = true;
   }
@@ -412,7 +401,7 @@ class VoxelPainterControls {
     const distance = Math.sqrt(dx * dx + dy * dy);
     dollyEnd.set(0, distance);
     dollyDelta.set(0, (dollyEnd.y / dollyStart.y) ** zoomSpeed);
-    this.dollyIn(dollyDelta.y);
+    this.scale /= dollyDelta.y;
     dollyStart.copy(dollyEnd);
   }
 
@@ -426,9 +415,8 @@ class VoxelPainterControls {
     if (enableRotate) this.handleTouchMoveRotate(event);
   }
 
-  handleTouchEnd(/* event */) {
-    // no-op
-  }
+  // eslint-disable-next-line class-methods-use-this
+  handleTouchEnd() {}
 
   //
   // event handlers - FSM: listen for events and reset state
@@ -638,6 +626,7 @@ class VoxelPainterControls {
     this.state = STATE.NONE;
   }
 
+  // eslint-disable-next-line class-methods-use-this
   onContextMenu(event) {
     event.preventDefault();
   }
