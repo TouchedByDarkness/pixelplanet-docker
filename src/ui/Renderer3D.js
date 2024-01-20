@@ -34,6 +34,7 @@ import {
 } from '../core/constants';
 import {
   setHover,
+  unsetHover,
   selectColor,
 } from '../store/actions';
 import pixelTransferController from './PixelTransferController';
@@ -45,6 +46,7 @@ class Renderer3D extends Renderer {
   camera;
   // position camera is looking at
   target = new Vector3();
+  // red voxel cursor cube
   rollOverMesh;
   objects;
   loadedChunks;
@@ -54,12 +56,13 @@ class Renderer3D extends Renderer {
   //--
   threeRenderer;
   // temp variables for mouse events
-  mouse;
+  mouse = new Vector2();
   mouseMoveStart;
-  raycaster;
+  raycaster = new Raycaster();
   pressTime;
   pressCdTime;
-  multitap;
+  multitap = 0;
+  lastIntersect = 0;
 
   constructor(store) {
     super(store);
@@ -132,11 +135,6 @@ class Renderer3D extends Renderer {
     // const gridHelper = new GridHelper(100, 10, 0x555555, 0x555555);
     const gridHelper = new InfiniteGridHelper(1, 10);
     scene.add(gridHelper);
-
-    //
-    this.raycaster = new Raycaster();
-    this.mouse = new Vector2();
-    this.multitap = 0;
 
     // Plane Floor
     const geometry = new PlaneBufferGeometry(1024, 1024);
@@ -379,7 +377,10 @@ class Renderer3D extends Renderer {
     if (this.forceNextRender) {
       this.reloadChunks();
     }
-    if (this.forceNextRender || this.forceNextSubRender || controlUpdate) {
+    if (this.forceNextRender
+      || this.forceNextSubrender
+      || controlUpdate
+    ) {
       if (this.forceNextRender) {
         if (this.lol !== 'force') {
           console.log(this.lol, this.lola);
@@ -387,7 +388,7 @@ class Renderer3D extends Renderer {
           this.lola = 0;
         }
         this.lola += 1;
-      } else if (this.forceNextSubRender) {
+      } else if (this.forceNextSubrender) {
         if (this.lol !== 'sub') {
           console.log(this.lol, this.lola);
           this.lol = 'sub';
@@ -402,9 +403,10 @@ class Renderer3D extends Renderer {
         }
         this.lola += 1;
       }
+
       this.threeRenderer.render(this.scene, this.camera);
       this.forceNextRender = false;
-      this.forceNextSubRender = false;
+      this.forceNextSubrender = false;
     } else {
       if (this.lol !== 'skip') {
         console.log(this.lol, this.lola);
@@ -421,35 +423,28 @@ class Renderer3D extends Renderer {
     this.threeRenderer.setSize(window.innerWidth, window.innerHeight);
   }
 
-  onDocumentMouseMove(event) {
-    event.preventDefault();
+  updateRollOverMesh(sx, sy) {
+    // 25ms break between intersects
+    const time = Date.now();
+    if (this.lastIntersect + 25 > time) {
+      return;
+    }
+    this.lastIntersect = time;
+
     const {
-      clientX,
-      clientY,
-    } = event;
-    const {
-      innerWidth,
-      innerHeight,
-    } = window;
-    const {
-      camera,
-      objects,
-      raycaster,
-      mouse,
-      rollOverMesh,
       store,
+      rollOverMesh,
+      raycaster,
+      objects,
+      mouse,
+      camera,
     } = this;
     const state = store.getState();
     const {
       fetchingPixel,
     } = state.fetching;
 
-    mouse.set(
-      (clientX / innerWidth) * 2 - 1,
-      -(clientY / innerHeight) * 2 + 1,
-    );
-
-    console.log('move mouse');
+    mouse.set(sx, sy);
     raycaster.setFromCamera(mouse, camera);
     const intersects = raycaster.intersectObjects(objects);
     if (intersects.length > 0) {
@@ -462,24 +457,33 @@ class Renderer3D extends Renderer {
         || target.clone().sub(camera.position).length() > 120
       ) {
         if (rollOverMesh.position.y !== -10) {
-          // unsetHover ?
+          this.store.dispatch(unsetHover());
           rollOverMesh.position.y = -10;
-          this.forceNextSubRender = true;
+          this.forceNextSubrender = true;
         }
       } else {
         const { hover: prevHover } = state.canvas;
         rollOverMesh.position.copy(target);
         const hover = target.toArray().map((u) => Math.floor(u));
         if (!prevHover
-          || prevHover[0] !== hover[0]
+          || (prevHover[0] !== hover[0]
           || prevHover[1] !== hover[1]
-          || prevHover[2] !== hover[2]
+          || prevHover[2] !== hover[2])
         ) {
           this.store.dispatch(setHover(hover));
-          this.forceNextSubRender = true;
+          this.forceNextSubrender = true;
         }
       }
     }
+  }
+
+  onDocumentMouseMove(event) {
+    event.preventDefault();
+
+    this.updateRollOverMesh(
+      (event.clientX / window.innerWidth) * 2 - 1,
+      -(event.clientY / window.innerHeight) * 2 + 1,
+    );
   }
 
   onDocumentMouseDownOrTouchStart() {
@@ -489,39 +493,7 @@ class Renderer3D extends Renderer {
   }
 
   onDocumentTouchMove() {
-    const {
-      camera,
-      objects,
-      raycaster,
-      mouse,
-      rollOverMesh,
-      store,
-    } = this;
-    const {
-      fetchingPixel,
-    } = store.getState().fetching;
-
-    mouse.set(0, 0);
-    raycaster.setFromCamera(mouse, camera);
-    const intersects = raycaster.intersectObjects(objects);
-    if (intersects.length > 0) {
-      const intersect = intersects[0];
-      const target = intersect.point.clone()
-        .add(intersect.face.normal.multiplyScalar(0.5))
-        .floor()
-        .addScalar(0.5);
-      // TODO make rollOverMesh in a different color while fetchingPixel
-      // instead of hiding it.... we can now queue Voxels
-      if (fetchingPixel
-        || target.clone().sub(camera.position).length() > 50) {
-        rollOverMesh.position.y = -10;
-      } else {
-        rollOverMesh.position.copy(target);
-        const hover = target
-          .toArray().map((u) => Math.floor(u));
-        this.store.dispatch(setHover(hover));
-      }
-    }
+    this.updateRollOverMesh(0, 0);
   }
 
   placeVoxel(x, y, z, color = null) {
@@ -643,6 +615,9 @@ class Renderer3D extends Renderer {
     }
 
     const [px, py, pz] = this.mouseMoveStart;
+    if (!state.canvas.hover) {
+      return;
+    }
     const [qx, qy, qz] = state.canvas.hover;
     if (px !== qx || py !== qy || pz !== qz) {
       return;
