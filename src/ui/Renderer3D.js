@@ -3,7 +3,22 @@
  *
  */
 
-import * as THREE from 'three';
+import {
+  Vector2,
+  Vector3,
+  PerspectiveCamera,
+  Scene,
+  AmbientLight,
+  DirectionalLight,
+  FogExp2,
+  BoxBufferGeometry,
+  MeshBasicMaterial,
+  Mesh,
+  Raycaster,
+  PlaneBufferGeometry,
+  MeshLambertMaterial,
+  WebGLRenderer,
+} from 'three';
 import Sky from './Sky';
 
 import InfiniteGridHelper from './InfiniteGridHelper';
@@ -28,6 +43,8 @@ const renderDistance = 150;
 class Renderer3D extends Renderer {
   scene;
   camera;
+  // position camera is looking at
+  target = new Vector3();
   rollOverMesh;
   objects;
   loadedChunks;
@@ -43,8 +60,6 @@ class Renderer3D extends Renderer {
   pressTime;
   pressCdTime;
   multitap;
-  //--
-  forceNextRender = false;
 
   constructor(store) {
     super(store);
@@ -53,7 +68,7 @@ class Renderer3D extends Renderer {
     this.objects = [];
 
     // camera
-    const camera = new THREE.PerspectiveCamera(
+    const camera = new PerspectiveCamera(
       45,
       window.innerWidth / window.innerHeight,
       1,
@@ -64,19 +79,19 @@ class Renderer3D extends Renderer {
     this.camera = camera;
 
     // scene
-    const scene = new THREE.Scene();
-    // scene.background = new THREE.Color(0xf0f0f0);
+    const scene = new Scene();
+    // scene.background = new Color(0xf0f0f0);
     this.scene = scene;
 
     // lights
-    const ambientLight = new THREE.AmbientLight(0x222222);
+    const ambientLight = new AmbientLight(0x222222);
     scene.add(ambientLight);
 
-    // const directionalLight = new THREE.DirectionalLight(0xffffff);
+    // const directionalLight = new DirectionalLight(0xffffff);
     // directionalLight.position.set(1, 1.2, 0.8).normalize();
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    const directionalLight = new DirectionalLight(0xffffff, 1);
     directionalLight.position.set(80, 80, 75);
-    const contourLight = new THREE.DirectionalLight(0xffffff, 0.4);
+    const contourLight = new DirectionalLight(0xffffff, 0.4);
     contourLight.position.set(-80, 80, -75);
     scene.add(directionalLight);
     scene.add(contourLight);
@@ -85,7 +100,7 @@ class Renderer3D extends Renderer {
     sky.scale.setScalar(450000);
     scene.add(sky);
 
-    scene.fog = new THREE.FogExp2(0xffffff, 0.003);
+    scene.fog = new FogExp2(0xffffff, 0.003);
 
     const effectController = {
       turbidity: 10,
@@ -104,31 +119,31 @@ class Renderer3D extends Renderer {
     uniforms.sunPosition.value.set(400000, 400000, 400000);
 
     // hover helper
-    const rollOverGeo = new THREE.BoxBufferGeometry(1, 1, 1);
-    const rollOverMaterial = new THREE.MeshBasicMaterial({
+    const rollOverGeo = new BoxBufferGeometry(1, 1, 1);
+    const rollOverMaterial = new MeshBasicMaterial({
       color: 0xff0000,
       opacity: 0.5,
       transparent: true,
     });
-    this.rollOverMesh = new THREE.Mesh(rollOverGeo, rollOverMaterial);
+    this.rollOverMesh = new Mesh(rollOverGeo, rollOverMaterial);
     scene.add(this.rollOverMesh);
 
     // grid
-    // const gridHelper = new THREE.GridHelper(100, 10, 0x555555, 0x555555);
+    // const gridHelper = new GridHelper(100, 10, 0x555555, 0x555555);
     const gridHelper = new InfiniteGridHelper(1, 10);
     scene.add(gridHelper);
 
     //
-    this.raycaster = new THREE.Raycaster();
-    this.mouse = new THREE.Vector2();
+    this.raycaster = new Raycaster();
+    this.mouse = new Vector2();
     this.multitap = 0;
 
     // Plane Floor
-    const geometry = new THREE.PlaneBufferGeometry(1024, 1024);
+    const geometry = new PlaneBufferGeometry(1024, 1024);
     geometry.rotateX(-Math.PI / 2);
-    const plane = new THREE.Mesh(
+    const plane = new Mesh(
       geometry,
-      new THREE.MeshLambertMaterial({ color: 0xcae3ff }),
+      new MeshLambertMaterial({ color: 0xcae3ff }),
     );
     scene.add(plane);
     this.plane = plane;
@@ -136,20 +151,20 @@ class Renderer3D extends Renderer {
     this.plane.position.y = -0.1;
 
     // Out of bounds plane
-    const oobGeometry = new THREE.PlaneBufferGeometry(
+    const oobGeometry = new PlaneBufferGeometry(
       THREE_TILE_SIZE,
       THREE_TILE_SIZE,
     );
     oobGeometry.rotateX(-Math.PI / 2);
     oobGeometry.translate(THREE_TILE_SIZE / 2, 0.2, THREE_TILE_SIZE / 2);
-    const oobMaterial = new THREE.MeshLambertMaterial({
+    const oobMaterial = new MeshLambertMaterial({
       color: '#C4C4C4',
     });
     this.oobGeometry = oobGeometry;
     this.oobMaterial = oobMaterial;
 
     // renderer
-    const threeRenderer = new THREE.WebGLRenderer({
+    const threeRenderer = new WebGLRenderer({
       preserveDrawingBuffer: true,
     });
     threeRenderer.setPixelRatio(window.devicePixelRatio);
@@ -163,11 +178,11 @@ class Renderer3D extends Renderer {
     const controls = new VoxelPainterControls(
       this,
       camera,
+      this.target,
       domElement,
       store,
     );
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.10;
+    // TODO doesn't work like this anymore
     controls.maxPolarAngle = Math.PI / 2;
     controls.minDistance = 10.00;
     controls.maxDistance = 100.00;
@@ -201,6 +216,14 @@ class Renderer3D extends Renderer {
     this.updateCanvasData(state);
   }
 
+  get view() {
+    return this.target.toArray();
+  }
+
+  set view(view) {
+    this.target.set(...view);
+  }
+
   destructor() {
     window.removeEventListener('resize', this.onWindowResize, false);
     this.threeRenderer.dispose();
@@ -211,7 +234,11 @@ class Renderer3D extends Renderer {
     super.destructor();
   }
 
-  updateView() {
+  updateView(view) {
+    if (view.length !== 3) {
+      return;
+    }
+    this.view = view;
     this.forceNextRender = true;
   }
 
@@ -251,13 +278,8 @@ class Renderer3D extends Renderer {
         );
       }
     }
-    this.controls.setView(view);
+    this.updateView(view);
     this.forceNextRender = true;
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  updateScale() {
-    return null;
   }
 
   renderPixel(
@@ -319,7 +341,7 @@ class Renderer3D extends Renderer {
           let chunk = null;
           if (xc < 0 || zc < 0 || xc >= chunkMaxXY || zc >= chunkMaxXY) {
             // if out of bounds
-            chunk = new THREE.Mesh(this.oobGeometry, this.oobMaterial);
+            chunk = new Mesh(this.oobGeometry, this.oobMaterial);
           } else {
             chunk = chunkLoader.getChunk(xc, zc, true);
           }
@@ -353,12 +375,44 @@ class Renderer3D extends Renderer {
     if (!this.threeRenderer) {
       return;
     }
-    super.render();
+    const controlUpdate = super.render();
     if (this.forceNextRender) {
       this.reloadChunks();
-      this.forceNextRender = false;
     }
-    this.threeRenderer.render(this.scene, this.camera);
+    if (this.forceNextRender || this.forceNextSubRender || controlUpdate) {
+      if (this.forceNextRender) {
+        if (this.lol !== 'force') {
+          console.log(this.lol, this.lola);
+          this.lol = 'force';
+          this.lola = 0;
+        }
+        this.lola += 1;
+      } else if (this.forceNextSubRender) {
+        if (this.lol !== 'sub') {
+          console.log(this.lol, this.lola);
+          this.lol = 'sub';
+          this.lola = 0;
+        }
+        this.lola += 1;
+      } else if (controlUpdate) {
+        if (this.lol !== 'update') {
+          console.log(this.lol, this.lola);
+          this.lol = 'update';
+          this.lola = 0;
+        }
+        this.lola += 1;
+      }
+      this.threeRenderer.render(this.scene, this.camera);
+      this.forceNextRender = false;
+      this.forceNextSubRender = false;
+    } else {
+      if (this.lol !== 'skip') {
+        console.log(this.lol, this.lola);
+        this.lol = 'skip';
+        this.lola = 0;
+      }
+      this.lola += 1;
+    }
   }
 
   onWindowResize() {
@@ -385,15 +439,17 @@ class Renderer3D extends Renderer {
       rollOverMesh,
       store,
     } = this;
+    const state = store.getState();
     const {
       fetchingPixel,
-    } = store.getState().fetching;
+    } = state.fetching;
 
     mouse.set(
       (clientX / innerWidth) * 2 - 1,
       -(clientY / innerHeight) * 2 + 1,
     );
 
+    console.log('move mouse');
     raycaster.setFromCamera(mouse, camera);
     const intersects = raycaster.intersectObjects(objects);
     if (intersects.length > 0) {
@@ -403,13 +459,25 @@ class Renderer3D extends Renderer {
         .floor()
         .addScalar(0.5);
       if (fetchingPixel
-        || target.clone().sub(camera.position).length() > 120) {
-        rollOverMesh.position.y = -10;
+        || target.clone().sub(camera.position).length() > 120
+      ) {
+        if (rollOverMesh.position.y !== -10) {
+          // unsetHover ?
+          rollOverMesh.position.y = -10;
+          this.forceNextSubRender = true;
+        }
       } else {
+        const { hover: prevHover } = state.canvas;
         rollOverMesh.position.copy(target);
-        const hover = target
-          .toArray().map((u) => Math.floor(u));
-        this.store.dispatch(setHover(hover));
+        const hover = target.toArray().map((u) => Math.floor(u));
+        if (!prevHover
+          || prevHover[0] !== hover[0]
+          || prevHover[1] !== hover[1]
+          || prevHover[2] !== hover[2]
+        ) {
+          this.store.dispatch(setHover(hover));
+          this.forceNextSubRender = true;
+        }
       }
     }
   }

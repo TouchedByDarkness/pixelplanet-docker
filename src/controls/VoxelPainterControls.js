@@ -25,9 +25,6 @@ import {
   Vector3,
 } from 'three';
 import {
-  setViewCoordinates,
-} from '../store/actions';
-import {
   THREE_CANVAS_HEIGHT,
 } from '../core/constants';
 
@@ -56,7 +53,6 @@ const STATE = {
 const CHANGE_EVENT = { type: 'change' };
 const START_EVENT = { type: 'start' };
 const END_EVENT = { type: 'end' };
-const EPS = 0.000001;
 
 /*
  * configuration
@@ -73,10 +69,6 @@ const maxPolarAngle = Math.PI; // radians
 // If set, must be a sub-interval of the interval [ - Math.PI, Math.PI ].
 const minAzimuthAngle = -Infinity; // radians
 const maxAzimuthAngle = Infinity; // radians
-// Set to true to enable damping (inertia)
-// If damping is enabled, you must call controls.update() in your animation loop
-const enableDamping = false;
-const dampingFactor = 0.05;
 // This option actually enables dollying in and out; left as "zoom" for backwards compatibility.
 // Set to false to disable zooming
 const enableZoom = true;
@@ -103,7 +95,6 @@ class VoxelPainterControls extends EventDispatcher {
   renderer;
   domElement;
   state;
-  //
   // Set to false to disable this control
   enabled = true;
   // "target" sets the location of focus, where the object orbits around
@@ -128,7 +119,6 @@ class VoxelPainterControls extends EventDispatcher {
   //
   scale = 1;
   panOffset = new Vector3();
-  zoomChanged = false;
   rotateStart = new Vector2();
   rotateEnd = new Vector2();
   rotateDelta = new Vector2();
@@ -146,23 +136,22 @@ class VoxelPainterControls extends EventDispatcher {
   updateTime = Date.now();
   prevTime = Date.now();
   offset = new Vector3();
-  lastPosition = new Vector3();
-  lastQuaternion = new Quaternion();
   direction = new Vector3();
   velocity = new Vector3();
   vec = new Vector3();
 
-  constructor(renderer, camera, domElement, store) {
+  constructor(renderer, camera, target, domElement, store) {
     super();
     this.renderer = renderer;
     this.camera = camera;
     this.domElement = domElement;
     this.store = store;
     //
-    this.target = new Vector3();
-    this.target0 = this.target.clone();
-    this.position0 = this.camera.position.clone();
-    this.zoom0 = this.camera.zoom;
+    this.target = target;
+    //
+    this.target0 = target.clone();
+    this.position0 = camera.position.clone();
+    this.zoom0 = camera.zoom;
     this.state = STATE.NONE;
 
     this.onContextMenu = this.onContextMenu.bind(this);
@@ -336,7 +325,7 @@ class VoxelPainterControls extends EventDispatcher {
     } else if (event.deltaY > 0) {
       this.dollyIn(this.getZoomScale());
     }
-    this.update();
+    this.forceNextUpdate = true;
   }
 
   handleTouchStartRotate(event) {
@@ -468,30 +457,24 @@ class VoxelPainterControls extends EventDispatcher {
       case 87: // w
         this.moveForward = true;
         break;
-
       case 37: // left
       case 65: // a
         this.moveLeft = true;
         break;
-
       case 40: // down
       case 83: // s
         this.moveBackward = true;
         break;
-
       case 39: // right
       case 68: // d
         this.moveRight = true;
         break;
-
       case 69: // E
         this.moveUp = true;
         break;
-
       case 67: // C
         this.moveDown = true;
         break;
-
       default:
         break;
     }
@@ -513,30 +496,24 @@ class VoxelPainterControls extends EventDispatcher {
       case 87: // w
         this.moveForward = false;
         break;
-
       case 37: // left
       case 65: // a
         this.moveLeft = false;
         break;
-
       case 40: // down
       case 83: // s
         this.moveBackward = false;
         break;
-
       case 39: // right
       case 68: // d
         this.moveRight = false;
         break;
-
       case 69: // E
         this.moveUp = false;
         break;
-
       case 67: // C
         this.moveDown = false;
         break;
-
       default:
         break;
     }
@@ -756,15 +733,12 @@ class VoxelPainterControls extends EventDispatcher {
       case 0:
         mouseAction = MOUSE_BUTTONS.LEFT;
         break;
-
       case 1:
         mouseAction = MOUSE_BUTTONS.MIDDLE;
         break;
-
       case 2:
         mouseAction = MOUSE_BUTTONS.RIGHT;
         break;
-
       default:
         mouseAction = -1;
     }
@@ -774,7 +748,6 @@ class VoxelPainterControls extends EventDispatcher {
         this.handleMouseDownDolly(event);
         this.state = STATE.DOLLY;
         break;
-
       case MOUSE.ROTATE:
         if (event.ctrlKey || event.metaKey) {
           this.handleMouseDownPan(event);
@@ -784,7 +757,6 @@ class VoxelPainterControls extends EventDispatcher {
           this.state = STATE.ROTATE;
         }
         break;
-
       case MOUSE.PAN:
         if (event.ctrlKey || event.metaKey) {
           this.handleMouseDownRotate(event);
@@ -794,7 +766,6 @@ class VoxelPainterControls extends EventDispatcher {
           this.state = STATE.PAN;
         }
         break;
-
       default:
         this.state = STATE.NONE;
     }
@@ -833,14 +804,26 @@ class VoxelPainterControls extends EventDispatcher {
     this.state = STATE.NONE;
   }
 
-  setView(view) {
-    if (view.length !== 3) {
-      return;
-    }
-    this.target.set(...view);
-  }
-
   update() {
+    const {
+      moveRight,
+      moveLeft,
+      moveUp,
+      moveDown,
+      moveForward,
+      moveBackward,
+    } = this;
+
+    if (!(this.state !== STATE.NONE
+      || this.forceNextUpdate
+      || moveRight || moveLeft
+      || moveUp || moveDown
+      || moveForward || moveBackward
+    )) {
+      return false;
+    }
+    this.forceNextUpdate = false;
+
     const {
       camera,
       target,
@@ -862,15 +845,6 @@ class VoxelPainterControls extends EventDispatcher {
     if (length < 1 || length > 10) {
       velocity.set(0, 0, 0);
     }
-
-    const {
-      moveRight,
-      moveLeft,
-      moveUp,
-      moveDown,
-      moveForward,
-      moveBackward,
-    } = this;
 
     direction.x = Number(moveRight) - Number(moveLeft);
     direction.y = Number(moveUp) - Number(moveDown);
@@ -898,9 +872,7 @@ class VoxelPainterControls extends EventDispatcher {
 
     this.prevTime = time;
 
-    const { position } = camera;
-
-    offset.copy(position).sub(this.target);
+    offset.copy(camera.position).sub(this.target);
 
     // rotate offset to "y-axis-is-up" space
     offset.applyQuaternion(this.quat);
@@ -908,13 +880,8 @@ class VoxelPainterControls extends EventDispatcher {
     // angle from z-axis around y-axis
     spherical.setFromVector3(offset);
 
-    if (enableDamping) {
-      spherical.theta += sphericalDelta.theta * dampingFactor;
-      spherical.phi += sphericalDelta.phi * dampingFactor;
-    } else {
-      spherical.theta += sphericalDelta.theta;
-      spherical.phi += sphericalDelta.phi;
-    }
+    spherical.theta += sphericalDelta.theta;
+    spherical.phi += sphericalDelta.phi;
 
     // restrict theta to be between desired limits
     spherical.theta = Math.max(
@@ -941,11 +908,7 @@ class VoxelPainterControls extends EventDispatcher {
     if (panOffset.length() > 1000) {
       panOffset.set(0, 0, 0);
     }
-    if (enableDamping) {
-      target.addScaledVector(panOffset, dampingFactor);
-    } else {
-      target.add(panOffset);
-    }
+    target.add(panOffset);
     /*
     if (scope.target.y < 10.0) {
       scope.target.y = 10.0;
@@ -969,58 +932,15 @@ class VoxelPainterControls extends EventDispatcher {
 
     // rotate offset back to "camera-up-vector-is-up" space
     offset.applyQuaternion(this.quatInverse);
-    position.copy(target).add(offset);
+    this.camera.position.copy(target).add(offset);
     camera.lookAt(target);
 
-    if (enableDamping) {
-      sphericalDelta.theta *= (1 - dampingFactor);
-      sphericalDelta.phi *= (1 - dampingFactor);
-      panOffset.multiplyScalar(1 - dampingFactor);
-
-      if (panOffset.length() < 0.2 && panOffset.length() !== 0.0) {
-        panOffset.set(0, 0, 0);
-        this.store.dispatch(setViewCoordinates(target.toArray()));
-        this.renderer.storeViewInState();
-      } else if (panOffset.length() !== 0.0) {
-        if (time > this.updateTime + 500) {
-          this.updateTime = time;
-          this.store.dispatch(setViewCoordinates(target.toArray()));
-          this.renderer.storeViewInState();
-        }
-      }
-      /*
-      if (Math.abs(sphericalDelta.theta) < rotationFinishThreshold
-        && sphericalDelta.theta != 0.0
-        && Math.abs(sphericalDelta.phi) < rotationFinishThreshold
-        && sphericalDelta.phi != 0.0) {
-        sphericalDelta.set(0, 0, 0);
-        console.log(`rotation finished`);
-      }
-      */
-    } else {
-      sphericalDelta.set(0, 0, 0);
-      panOffset.set(0, 0, 0);
-    }
-
+    sphericalDelta.set(0, 0, 0);
+    panOffset.set(0, 0, 0);
     this.scale = 1;
 
-    // update condition is:
-    // min(camera displacement, camera rotation in radians)^2 > EPS
-    // using small-angle approximation cos(x/2) = 1 - x^2 / 8
-
-    if (this.zoomChanged
-      || this.lastPosition.distanceToSquared(camera.position) > EPS
-      || 8 * (1 - this.lastQuaternion.dot(camera.quaternion)) > EPS
-    ) {
-      this.dispatchEvent(CHANGE_EVENT);
-
-      this.lastPosition.copy(camera.position);
-      this.lastQuaternion.copy(camera.quaternion);
-      this.zoomChanged = false;
-      return true;
-    }
-
-    return false;
+    this.dispatchEvent(CHANGE_EVENT);
+    return true;
   }
 }
 

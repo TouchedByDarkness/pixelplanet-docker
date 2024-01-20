@@ -7,20 +7,26 @@
 
 /* eslint-disable max-len */
 
-import * as THREE from 'three';
+import {
+  Mesh,
+  Color,
+  PlaneBufferGeometry,
+  ShaderMaterial,
+  DoubleSide,
+} from 'three';
 
-export default class InfiniteGridHelper extends THREE.Mesh {
+export default class InfiniteGridHelper extends Mesh {
   constructor(size1, size2, color, distance, axes = 'xzy') {
-    color = color || new THREE.Color('white');
+    color = color || new Color('white');
     size1 = size1 || 10;
     size2 = size2 || 100;
 
     distance = distance || 8000;
     const planeAxes = axes.substring(0, 2);
-    const geometry = new THREE.PlaneBufferGeometry(2, 2, 1, 1);
-    const material = new THREE.ShaderMaterial({
+    const geometry = new PlaneBufferGeometry(2, 2, 1, 1);
+    const material = new ShaderMaterial({
 
-      side: THREE.DoubleSide,
+      side: DoubleSide,
 
       uniforms: {
         uSize1: { value: size1 },

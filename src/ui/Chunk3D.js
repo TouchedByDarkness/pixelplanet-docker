@@ -6,7 +6,12 @@
 /* We have to look for performance here not for good looking code */
 /* eslint-disable prefer-destructuring */
 
-import * as THREE from 'three';
+import {
+  MeshLambertMaterial,
+  Mesh,
+  BufferGeometry,
+  BufferAttribute,
+} from 'three';
 
 import Chunk from './Chunk';
 import {
@@ -69,7 +74,7 @@ const faceCorners = [
   ],
 ];
 
-const material = new THREE.MeshLambertMaterial({
+const material = new MeshLambertMaterial({
   vertexColors: true,
 });
 
@@ -79,7 +84,7 @@ class Chunk3D extends Chunk {
   ready = false;
   palette; // Object
   buffer; // Uint8Array
-  mesh = null; // THREE.Mesh
+  mesh = null; // Mesh
   faceCnt; // number
   lastPixel; //  number
   heightMap; // Array
@@ -344,36 +349,36 @@ class Chunk3D extends Chunk {
 
     const geometry = (this.mesh)
       ? this.mesh.geometry
-      : new THREE.BufferGeometry();
+      : new BufferGeometry();
 
     geometry.setAttribute(
       'position',
-      new THREE.BufferAttribute(
+      new BufferAttribute(
         positions,
         3,
       ),
     );
     geometry.setAttribute(
       'normal',
-      new THREE.BufferAttribute(
+      new BufferAttribute(
         normals,
         3,
       ),
     );
     geometry.setAttribute(
       'color',
-      new THREE.BufferAttribute(
+      new BufferAttribute(
         colors,
         3,
         true,
       ),
     );
-    geometry.setIndex(new THREE.BufferAttribute(indices, 1));
+    geometry.setIndex(new BufferAttribute(indices, 1));
     geometry.computeBoundingSphere();
     geometry.setDrawRange(0, this.faceCnt * 6);
 
     if (!this.mesh) {
-      this.mesh = new THREE.Mesh(geometry, material);
+      this.mesh = new Mesh(geometry, material);
       this.mesh.name = this.key;
     }
 

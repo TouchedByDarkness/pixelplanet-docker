@@ -19,8 +19,14 @@ class Renderer {
   chunkLoader = null;
   // needs to be known for lazy loading THREE
   is3D = null;
+  // force renderer to rebuild whole view or
+  // to "subrender" known view next tick
+  forceNextRender = true;
+  forceNextSubrender = true;
   // current position (subclass decies what it means),
   // will be changed by controls
+  // TODO might be better as private and with a getter but no setter to avoid
+  //      misconseption of it being writeable. Might have performance impact.
   view = [0, 0, 0];
   //
   #storeViewTimeout = null;

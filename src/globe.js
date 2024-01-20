@@ -1,4 +1,19 @@
-import * as THREE from 'three';
+import {
+  MeshPhongMaterial,
+  TextureLoader,
+  Color,
+  Scene,
+  PerspectiveCamera,
+  WebGLRenderer,
+  AmbientLight,
+  DirectionalLight,
+  Mesh,
+  SphereGeometry,
+  MeshBasicMaterial,
+  BackSide,
+  Raycaster,
+  Vector2,
+} from 'three';
 
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import TrackballControls from 'three-trackballcontrols';
@@ -50,27 +65,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const [canvasIdent, canvasId, canvasSize, x, y] = parseHashCoords();
 
-  const canvasTexture = new THREE.MeshPhongMaterial({
-    map: new THREE.TextureLoader().load(`./tiles/${canvasId}/texture.webp`),
-    bumpMap: new THREE.TextureLoader().load(`./assets3d/normal${canvasId}.jpg`),
+  const canvasTexture = new MeshPhongMaterial({
+    map: new TextureLoader().load(`./tiles/${canvasId}/texture.webp`),
+    bumpMap: new TextureLoader().load(`./assets3d/normal${canvasId}.jpg`),
     bumpScale: 0.02,
-    specularMap: new THREE.TextureLoader()
+    specularMap: new TextureLoader()
       .load(`./assets3d/specular${canvasId}.jpg`),
-    specular: new THREE.Color('grey'),
+    specular: new Color('grey'),
   });
 
   let width = window.innerWidth;
   let height = window.innerHeight;
 
-  const scene = new THREE.Scene();
+  const scene = new Scene();
 
-  const camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 1000);
+  const camera = new PerspectiveCamera(45, width / height, 0.01, 1000);
   camera.position.z = 4.0;
 
-  const renderer = new THREE.WebGLRenderer();
+  const renderer = new WebGLRenderer();
   renderer.setSize(width, height);
 
-  scene.add(new THREE.AmbientLight(0x333333));
+  scene.add(new AmbientLight(0x333333));
 
   let controls = null;
   let object = null;
@@ -82,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderer.render(scene, camera);
   }
 
-  const light = new THREE.DirectionalLight(0xffffff, 0.7);
+  const light = new DirectionalLight(0xffffff, 0.7);
   light.position.set(10, 6, 10);
   scene.add(light);
 
@@ -129,11 +144,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   webglEl.appendChild(renderer.domElement);
 
-  const stars = new THREE.Mesh(
-    new THREE.SphereGeometry(90, 64, 64),
-    new THREE.MeshBasicMaterial({
-      map: new THREE.TextureLoader().load('./assets3d/starfield.png'),
-      side: THREE.BackSide,
+  const stars = new Mesh(
+    new SphereGeometry(90, 64, 64),
+    new MeshBasicMaterial({
+      map: new TextureLoader().load('./assets3d/starfield.png'),
+      side: BackSide,
     }),
   );
   scene.add(stars);
@@ -153,8 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /*
    * update coords
    */
-  const raycaster = new THREE.Raycaster();
-  const mouse = new THREE.Vector2();
+  const raycaster = new Raycaster();
+  const mouse = new Vector2();
   const coorbox = document.getElementById('coorbox');
   function onDocumentMouseMove(event) {
     if (!object) {

@@ -17,22 +17,29 @@
 
 /* eslint-disable max-len */
 
-import * as THREE from 'three';
+import {
+  Vector3,
+  Mesh,
+  ShaderMaterial,
+  BackSide,
+  BoxGeometry,
+  UniformsUtils,
+} from 'three';
 
-export default class Sky extends THREE.Mesh {
+export default class Sky extends Mesh {
   static isSky = true;
 
   constructor() {
     const shader = Sky.SkyShader;
-    const material = new THREE.ShaderMaterial({
+    const material = new ShaderMaterial({
       name: 'SkyShader',
       fragmentShader: shader.fragmentShader,
       vertexShader: shader.vertexShader,
-      uniforms: THREE.UniformsUtils.clone(shader.uniforms),
-      side: THREE.BackSide,
+      uniforms: UniformsUtils.clone(shader.uniforms),
+      side: BackSide,
       depthWrite: false,
     });
-    super(new THREE.BoxGeometry(1, 1, 1), material);
+    super(new BoxGeometry(1, 1, 1), material);
   }
 }
 
@@ -51,10 +58,10 @@ Sky.SkyShader = {
       value: 0.8,
     },
     sunPosition: {
-      value: new THREE.Vector3(),
+      value: new Vector3(),
     },
     up: {
-      value: new THREE.Vector3(0, 1, 0),
+      value: new Vector3(0, 1, 0),
     },
   },
   vertexShader:
