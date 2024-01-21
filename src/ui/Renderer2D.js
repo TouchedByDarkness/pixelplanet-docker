@@ -3,6 +3,8 @@
  *
  */
 
+/* eslint-disable no-underscore-dangle */
+
 import {
   TILE_ZOOM_LEVEL,
   TILE_SIZE,
@@ -29,39 +31,27 @@ import pixelNotify from './PixelNotify';
 
 class Renderer2D extends Renderer {
   canvasId = null;
-  viewscale;
+  viewscale = 0;
   //--
-  centerChunk;
-  tiledScale;
-  tiledZoom;
-  hover;
+  centerChunk = [null, null];
+  tiledScale = 0;
+  tiledZoom = 4;
+  hover = false;
   //--
   viewport = null;
   //--
-  forceNextRender;
-  forceNextSubrender;
+  lastFetch = 0;
   canvas;
-  lastFetch;
   //--
-  oldHistoricalTime;
+  oldHistoricalTime = null;
 
   constructor(store) {
     super(store);
     this.is3D = false;
-    [,, this.viewscale] = this.view;
 
-    this.centerChunk = [null, null];
-    this.tiledScale = 0;
-    this.tiledZoom = 4;
     this.canvasMaxTiledZoom = 0;
     this.historicalCanvasMaxTiledZoom = 0;
-    this.hover = false;
     this.scaleThreshold = 1;
-    //--
-    this.forceNextRender = true;
-    this.forceNextSubrender = true;
-    this.lastFetch = 0;
-    this.oldHistoricalTime = null;
     //--
     const viewport = document.createElement('canvas');
     viewport.className = 'viewport';
@@ -124,6 +114,7 @@ class Renderer2D extends Renderer {
       canvasId,
     } = state.canvas;
     if (canvasId !== this.canvasId) {
+      // TODO doesn't immediatelly reload when change from 3d to 2d
       this.canvasId = canvasId;
       if (canvasId !== null) {
         const {
@@ -141,9 +132,8 @@ class Renderer2D extends Renderer {
           canvases[canvasId].historicalSizes,
         );
       }
-      // scale of 0 is impossible, so it always updates
-      this.view[2] = 0;
       this.updateView(state.canvas.view);
+      this.forceNextRender = true;
     }
   }
 
@@ -202,7 +192,7 @@ class Renderer2D extends Renderer {
         this.viewscale = scale;
       }
     } else {
-      [,, scale] = this.view;
+      [,, scale] = this._view;
     }
     // clamp coords
     const canvasMinXY = -canvasSize / 2;
@@ -252,7 +242,6 @@ class Renderer2D extends Renderer {
       this.forceNextSubrender = true;
     }
   }
-
 
   renderPixel(
     i,
@@ -450,8 +439,8 @@ class Renderer2D extends Renderer {
     state,
   ) {
     const {
+      _view,
       viewport,
-      view,
       viewscale,
     } = this;
     const {
@@ -468,7 +457,7 @@ class Renderer2D extends Renderer {
       hover,
     } = state.canvas;
 
-    const [x, y] = view;
+    const [x, y] = _view;
     const [cx, cy] = this.centerChunk;
 
     // if we have to render pixelnotify
@@ -553,18 +542,18 @@ class Renderer2D extends Renderer {
     }
 
     if (showGrid && viewscale >= 8) {
-      renderGrid(state, viewport, view, viewscale, isLightGrid);
+      renderGrid(state, viewport, _view, viewscale, isLightGrid);
     }
 
     if (doRenderPixelnotify) {
-      pixelNotify.render(state, viewport, view, viewscale);
+      pixelNotify.render(state, viewport, _view, viewscale);
     }
 
     if (hover && doRenderPlaceholder) {
-      renderPlaceholder(state, viewport, view, viewscale);
+      renderPlaceholder(state, viewport, _view, viewscale);
     }
     if (hover && doRenderPotatoPlaceholder) {
-      renderPotatoPlaceholder(state, viewport, view, viewscale);
+      renderPotatoPlaceholder(state, viewport, _view, viewscale);
     }
   }
 
@@ -704,7 +693,6 @@ class Renderer2D extends Renderer {
   ) {
     const {
       viewport,
-      view,
       viewscale,
     } = this;
     const {
@@ -715,7 +703,7 @@ class Renderer2D extends Renderer {
       historicalCanvasSize,
     } = state.canvas;
 
-    const [x, y] = view;
+    const [x, y] = this._view;
     const [cx, cy] = this.centerChunk;
 
     if (!this.forceNextRender && !this.forceNextSubrender) {

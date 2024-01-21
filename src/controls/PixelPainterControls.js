@@ -107,7 +107,7 @@ class PixelPainterControls {
       const { clientX, clientY } = event;
       this.clickTapStartTime = Date.now();
       this.clickTapStartCoords = [clientX, clientY];
-      this.clickTapStartView = [...this.renderer.view];
+      this.clickTapStartView = this.renderer.view;
       const { viewport } = this;
       setTimeout(() => {
         if (this.isClicking) {
@@ -254,7 +254,7 @@ class PixelPainterControls {
     this.renderer.cancelStoreViewInState();
     this.clickTapStartTime = Date.now();
     this.clickTapStartCoords = PixelPainterControls.getTouchCenter(event);
-    this.clickTapStartView = [...this.renderer.view];
+    this.clickTapStartView = this.renderer.view;
 
     if (event.touches.length > 1) {
       this.tapStartDist = PixelPainterControls.getMultiTouchDistance(event);
@@ -321,7 +321,7 @@ class PixelPainterControls {
       // if one finger got lifted or added, reset clickTabStart
       this.isMultiTab = multiTouch;
       this.clickTapStartCoords = [clientX, clientY];
-      this.clickTapStartView = [...this.renderer.view];
+      this.clickTapStartView = this.renderer.view;
       this.tapStartDist = PixelPainterControls.getMultiTouchDistance(event);
     } else {
       // pan
@@ -333,7 +333,7 @@ class PixelPainterControls {
       if (deltaX > 2 || deltaY > 2) {
         this.clearTabTimeout();
       }
-      const { viewscale: scale } = this.renderer.view;
+      const { viewscale: scale } = this.renderer;
       this.renderer.updateView([
         lastPosX - (deltaX / scale),
         lastPosY - (deltaY / scale),

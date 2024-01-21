@@ -25,8 +25,10 @@ import {
 } from 'three';
 import {
   THREE_CANVAS_HEIGHT,
+  VIEW_UPDATE_DELAY,
 } from '../core/constants';
 
+const STORE_UPDATE_DELAY = VIEW_UPDATE_DELAY / 2;
 // Mouse buttons
 const MOUSE_BUTTONS = {
   LEFT: MOUSE.ROTATE,
@@ -127,7 +129,7 @@ class VoxelPainterControls {
   // temp for update
   quat;
   quatInverse;
-  updateTime = Date.now();
+  storeViewInStateTime = Date.now();
   prevTime = Date.now();
   offset = new Vector3();
   direction = new Vector3();
@@ -176,8 +178,6 @@ class VoxelPainterControls {
     this.quat = new Quaternion()
       .setFromUnitVectors(camera.up, new Vector3(0, 1, 0));
     this.quatInverse = this.quat.clone().invert();
-
-    this.update();
   }
 
   dispose() {
@@ -261,7 +261,6 @@ class VoxelPainterControls {
     this.rotateLeft(Math.PI * rotateDelta.x / element.clientHeight); // yes, height
     this.rotateUp(Math.PI * rotateDelta.y / element.clientHeight);
     this.rotateStart.copy(rotateEnd);
-    this.update();
   }
 
   handleMouseMoveDolly(event) {
@@ -280,7 +279,6 @@ class VoxelPainterControls {
       this.scale *= scaleDelta;
     }
     dollyStart.copy(this.dollyEnd);
-    this.update();
   }
 
   handleMouseMovePan(event) {
@@ -294,7 +292,6 @@ class VoxelPainterControls {
     panDelta.subVectors(panEnd, panStart).multiplyScalar(panSpeed);
     this.pan(panDelta.x, panDelta.y);
     panStart.copy(panEnd);
-    this.update();
   }
 
   // eslint-disable-next-line class-methods-use-this
@@ -593,28 +590,24 @@ class VoxelPainterControls {
           return;
         }
         this.handleTouchMoveRotate(event);
-        this.update();
         break;
       case STATE.TOUCH_PAN:
         if (!enablePan) {
           return;
         }
         this.handleTouchMovePan(event);
-        this.update();
         break;
       case STATE.TOUCH_DOLLY_PAN:
         if (!enableZoom && !enablePan) {
           return;
         }
         this.handleTouchMoveDollyPan(event);
-        this.update();
         break;
       case STATE.TOUCH_DOLLY_ROTATE:
         if (!enableZoom && !enableRotate) {
           return;
         }
         this.handleTouchMoveDollyRotate(event);
-        this.update();
         break;
       default:
         this.state = STATE.NONE;
@@ -713,11 +706,10 @@ class VoxelPainterControls {
     this.camera.zoom = this.zoom0;
 
     this.camera.updateProjectionMatrix();
-    this.update();
     this.state = STATE.NONE;
   }
 
-  update() {
+  update(force) {
     const {
       moveRight,
       moveLeft,
@@ -727,7 +719,8 @@ class VoxelPainterControls {
       moveBackward,
     } = this;
 
-    if (!(this.state !== STATE.NONE
+    if (!(force
+      || this.state !== STATE.NONE
       || this.forceNextUpdate
       || moveRight || moveLeft
       || moveUp || moveDown
@@ -851,6 +844,10 @@ class VoxelPainterControls {
     sphericalDelta.set(0, 0, 0);
     panOffset.set(0, 0, 0);
     this.scale = 1;
+
+    if (this.storeViewInStateTime + STORE_UPDATE_DELAY < time) {
+      this.renderer.storeViewInState();
+    }
 
     return true;
   }

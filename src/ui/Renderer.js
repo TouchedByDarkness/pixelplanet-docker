@@ -1,6 +1,9 @@
 /*
  * parent class for Renderer
  */
+
+/* eslint-disable no-underscore-dangle */
+
 import {
   VIEW_UPDATE_DELAY,
 } from '../core/constants';
@@ -23,17 +26,19 @@ class Renderer {
   // to "subrender" known view next tick
   forceNextRender = true;
   forceNextSubrender = true;
-  // current position (subclass decies what it means),
-  // will be changed by controls
-  // TODO might be better as private and with a getter but no setter to avoid
-  //      misconseption of it being writeable. Might have performance impact.
-  view = [0, 0, 0];
+  // current position
+  // third value can be scale (2d) or z axis (3d)
+  _view = [0, 0, 0];
   //
   #storeViewTimeout = null;
 
   constructor(store) {
     this.store = store;
-    this.loadViewFromState();
+    //this.loadViewFromState();
+  }
+
+  get view() {
+    return [...this._view];
   }
 
   get chunks() {
@@ -52,7 +57,7 @@ class Renderer {
 
   updateView(view) {
     for (let i = 0; i < view.length; i += 1) {
-      this.view[i] = view[i];
+      this._view[i] = view[i];
     }
   }
 
@@ -83,7 +88,7 @@ class Renderer {
   }
 
   render() {
-    return this.controls.update();
+    return this.controls.update(this.forceNextRender);
   }
 
   renderPixel() {}

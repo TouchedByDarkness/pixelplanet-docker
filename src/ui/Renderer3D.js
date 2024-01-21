@@ -44,12 +44,17 @@ const renderDistance = 150;
 class Renderer3D extends Renderer {
   scene;
   camera;
+  // current chunk in center of view
+  centerChunk = [null, null];
   // position camera is looking at
   target = new Vector3();
   // red voxel cursor cube
   rollOverMesh;
-  objects;
-  loadedChunks;
+  // loaded objects in scene
+  objects = [];
+  // map of chunkId to chunk mesh
+  loadedChunks = new Map();
+  // plane object
   plane;
   oobGeometry;
   oobMaterial;
@@ -67,8 +72,8 @@ class Renderer3D extends Renderer {
   constructor(store) {
     super(store);
     this.is3D = true;
+    this.loadViewFromState();
     const state = store.getState();
-    this.objects = [];
 
     // camera
     const camera = new PerspectiveCamera(
@@ -212,14 +217,12 @@ class Renderer3D extends Renderer {
     window.addEventListener('resize', this.onWindowResize, false);
 
     this.updateCanvasData(state);
+    // TODO REMOVE
+    window.renderer = this;
   }
 
   get view() {
     return this.target.toArray();
-  }
-
-  set view(view) {
-    this.target.set(...view);
   }
 
   destructor() {
@@ -236,7 +239,8 @@ class Renderer3D extends Renderer {
     if (view.length !== 3) {
       return;
     }
-    this.view = view;
+    console.log('go to', view);
+    this.target.set(...view);
     this.forceNextRender = true;
   }
 
@@ -252,18 +256,18 @@ class Renderer3D extends Renderer {
     if (canvasId !== this.canvasId) {
       this.canvasId = canvasId;
       if (canvasId !== null) {
-        if (this.chunkLoader) {
-          // destroy old chunks,
-          // meshes need to get disposed
-          if (this.loadedChunks) {
-            this.loadedChunks.forEach((chunk) => {
-              this.scene.remove(chunk);
-              this.objects = [this.plane];
-            });
-            this.chunkLoader.destructor();
-          }
+        // destroy old chunks,
+        // meshes need to get disposed
+        if (this.loadedChunks.length) {
+          this.loadedChunks.forEach((chunk) => {
+            this.scene.remove(chunk);
+          });
+          this.loadedChunks = new Map();
         }
-        this.loadedChunks = new Map();
+        if (this.chunkLoader) {
+          this.chunkLoader.destructor();
+        }
+        this.objects = [this.plane];
         const {
           palette,
           canvasSize,
@@ -275,9 +279,9 @@ class Renderer3D extends Renderer {
           canvasSize,
         );
       }
+      this.updateView(view);
+      this.forceNextRender = true;
     }
-    this.updateView(view);
-    this.forceNextRender = true;
   }
 
   renderPixel(
@@ -290,6 +294,7 @@ class Renderer3D extends Renderer {
     if (chunkLoader) {
       chunkLoader.getVoxelUpdate(i, j, offset, color);
     }
+    this.forceNextSubrender = true;
   }
 
   isChunkInView(yc, xc, zc) {
@@ -304,18 +309,13 @@ class Renderer3D extends Renderer {
     if (!this.chunkLoader) {
       return;
     }
-    const state = this.store.getState();
-    const {
-      canvasSize,
-      view,
-    } = state.canvas;
-    const x = view[0];
-    const z = view[2] || 0;
+    const { canvasSize } = this.store.getState().canvas;
     const {
       scene,
       loadedChunks,
       chunkLoader,
     } = this;
+    const { x, z } = this.target;
     const [xcMin, zcMin] = getChunkOfPixel(
       canvasSize,
       x - renderDistance,
@@ -374,13 +374,31 @@ class Renderer3D extends Renderer {
       return;
     }
     const controlUpdate = super.render();
-    if (this.forceNextRender) {
-      this.reloadChunks();
+
+    // check if we enter new chunk
+    if (controlUpdate) {
+      const { canvasSize } = this.store.getState().canvas;
+      const prevCenterChunk = this.centerChunk;
+      const { x, z } = this.target;
+      const centerChunk = getChunkOfPixel(canvasSize, x, 0, z);
+      if (!prevCenterChunk
+        || prevCenterChunk[0] !== centerChunk[0]
+        || prevCenterChunk[1] !== centerChunk[1]
+      ) {
+        this.centerChunk = centerChunk;
+        this.forceNextRender = true;
+        console.log('new cc', this.centerChunk);
+      }
     }
+
     if (this.forceNextRender
       || this.forceNextSubrender
       || controlUpdate
     ) {
+      if (this.forceNextRender) {
+        this.reloadChunks();
+      }
+
       if (this.forceNextRender) {
         if (this.lol !== 'force') {
           console.log(this.lol, this.lola);
@@ -421,6 +439,7 @@ class Renderer3D extends Renderer {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
     this.threeRenderer.setSize(window.innerWidth, window.innerHeight);
+    this.forceNextSubrender = true;
   }
 
   updateRollOverMesh(sx, sy) {
