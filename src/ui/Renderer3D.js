@@ -222,6 +222,8 @@ class Renderer3D extends Renderer {
 
   destructor() {
     // TODO is still leaking memory
+    // eslint-disable-next-line max-len
+    // https://threejs.org/docs/#manual/en/introduction/How-to-dispose-of-objects
     window.removeEventListener('resize', this.onWindowResize, false);
     this.controls.dispose();
     this.oobGeometry.dispose();
@@ -345,7 +347,6 @@ class Renderer3D extends Renderer {
       z + renderDistance,
     );
     const chunkMaxXY = canvasSize / THREE_TILE_SIZE;
-    // console.log(`Get ${xcMin} - ${xcMax} - ${zcMin} - ${zcMax}`);
     const curLoadedChunks = [];
     for (let zc = zcMin; zc <= zcMax; ++zc) {
       for (let xc = xcMin; xc <= xcMax; ++xc) {
