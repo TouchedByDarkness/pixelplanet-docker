@@ -214,8 +214,6 @@ class Renderer3D extends Renderer {
     window.addEventListener('resize', this.onWindowResize, false);
 
     this.updateCanvasData(state);
-    // TODO REMOVE
-    window.renderer = this;
   }
 
   get view() {
@@ -223,12 +221,29 @@ class Renderer3D extends Renderer {
   }
 
   destructor() {
+    // TODO is still leaking memory
     window.removeEventListener('resize', this.onWindowResize, false);
-    this.threeRenderer.dispose();
     this.controls.dispose();
+    this.oobGeometry.dispose();
+    this.oobMaterial.dispose();
+    delete this.controls;
+    delete this.scene;
+    delete this.camera;
+    delete this.target;
+    delete this.rollOverMesh;
+    delete this.plane;
+    delete this.oobGeometry;
+    delete this.oobMaterial;
+    delete this.mouse;
+    delete this.raycaster;
+    //
+    delete this.loadedChunks;
+    delete this.objects;
     const { domElement } = this.threeRenderer;
-    this.threeRenderer = null;
     domElement.remove();
+    this.threeRenderer.renderLists.dispose();
+    this.threeRenderer.dispose();
+    delete this.threeRenderer;
     super.destructor();
   }
 

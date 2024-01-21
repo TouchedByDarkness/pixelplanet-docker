@@ -114,7 +114,6 @@ class Renderer2D extends Renderer {
       canvasId,
     } = state.canvas;
     if (canvasId !== this.canvasId) {
-      // TODO doesn't immediatelly reload when change from 3d to 2d
       this.canvasId = canvasId;
       if (canvasId !== null) {
         const {
