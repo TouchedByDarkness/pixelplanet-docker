@@ -6,22 +6,80 @@
  *
  */
 
+/* eslint-disable no-underscore-dangle */
+
 import EventEmitter from 'events';
+
+import { getRenderer } from '../../ui/rendererFactory';
+
+let isActive = false;
 
 const pixelPlanetEvents = new EventEmitter();
 
-export default () => (next) => (action) => {
-  switch (action.type) {
-    case 's/SELECT_CANVAS': {
-      pixelPlanetEvents.emit('selectcanvas', action.canvasId);
-      break;
-    }
-
-    case 'UPDATE_VIEW': {
+/*
+ * Monkey patch the 2D renderer when any extension is subscribed to anything
+ * to get live view updates.
+ * But at the same time limiting the impact when no extension is running
+ */
+function monkeyPatchRenderer(renderer) {
+  if (!isActive || renderer.is3D || renderer.origUpdateView) {
+    return;
+  }
+  // eslint-disable-next-line no-console
+  console.log('Extension hooked into Renderer');
+  renderer.origUpdateView = renderer.updateView;
+  renderer.updateView = function mpUpdateView(...args) {
+    const [px, py, pScale] = this._view;
+    this.origUpdateView(...args);
+    const [x, y, scale] = this._view;
+    if (x !== px || y !== py) {
       /*
        * view: [x, y] float canvas coordinates of the center of the screen,
        */
-      pixelPlanetEvents.emit('setviewcoordinates', action.view);
+      pixelPlanetEvents.emit('setviewcoordinates', [x, y]);
+    }
+    if (scale !== pScale) {
+      /*
+       * scale: float of canvas scale aka zoom
+       *        (not logarithmic, doesn't clamp to 1.0)
+       */
+      pixelPlanetEvents.emit('setscale', scale);
+    }
+  };
+}
+
+(function mpPixelPlanetEvents() {
+  function setActive() {
+    // eslint-disable-next-line no-console
+    console.log('Extension active');
+    pixelPlanetEvents.once = pixelPlanetEvents.origOnce;
+    pixelPlanetEvents.addListener = pixelPlanetEvents.origAdd;
+    pixelPlanetEvents.on = pixelPlanetEvents.addListener;
+    delete pixelPlanetEvents.origOnce;
+    delete pixelPlanetEvents.origAdd;
+    isActive = true;
+    const renderer = getRenderer();
+    monkeyPatchRenderer(renderer);
+  }
+  pixelPlanetEvents.origOnce = pixelPlanetEvents.once;
+  pixelPlanetEvents.origAdd = pixelPlanetEvents.addListener;
+  pixelPlanetEvents.once = function once(...args) {
+    pixelPlanetEvents.origOnce(...args);
+    setActive();
+  };
+  pixelPlanetEvents.addListener = function addListener(...args) {
+    pixelPlanetEvents.origAdd(...args);
+    setActive();
+  };
+  pixelPlanetEvents.on = pixelPlanetEvents.addListener;
+}());
+
+export default () => (next) => (action) => {
+  const { type } = action;
+
+  switch (type) {
+    case 's/SELECT_CANVAS': {
+      pixelPlanetEvents.emit('selectcanvas', action.canvasId);
       break;
     }
 
@@ -31,17 +89,6 @@ export default () => (next) => (action) => {
        * just used on 2D canvas
        */
       pixelPlanetEvents.emit('sethover', action.hover);
-      break;
-    }
-
-    case 'SET_SCALE': {
-      /*
-       * scale: float of canvas scale aka zoom
-       *        (not logarithmic, doesn't clamp to 1.0)
-       * zoompoint: center of scaling
-       */
-      const { scale, zoompoint } = action;
-      pixelPlanetEvents.emit('setscale', scale, zoompoint);
       break;
     }
 
@@ -58,7 +105,24 @@ export default () => (next) => (action) => {
       // nothing
   }
 
-  return next(action);
+  const ret = next(action);
+
+  switch (type) {
+    case 'RELOAD_URL':
+    case 's/SELECT_CANVAS':
+    case 's/TGL_HIDDEN_CANVASES':
+    case 's/REC_ME':
+      if (isActive) {
+        const renderer = getRenderer();
+        monkeyPatchRenderer(renderer);
+      }
+      break;
+
+    default:
+      // nothing
+  }
+
+  return ret;
 };
 
 window.pixelPlanetEvents = pixelPlanetEvents;

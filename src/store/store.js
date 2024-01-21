@@ -55,8 +55,8 @@ const store = createStore(
     notifications,
     title,
     socketClientHook,
-    rendererHook,
     extensions,
+    rendererHook,
   ),
 );
 
