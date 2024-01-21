@@ -704,6 +704,7 @@ class VoxelPainterControls {
       || moveUp || moveDown
       || moveForward || moveBackward
     )) {
+      this.prevTime = Date.now();
       return false;
     }
     this.forceNextUpdate = false;
