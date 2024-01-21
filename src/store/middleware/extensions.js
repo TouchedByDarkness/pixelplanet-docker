@@ -34,16 +34,17 @@ function monkeyPatchRenderer(renderer) {
     const [x, y, scale] = this._view;
     if (x !== px || y !== py) {
       /*
-       * view: [x, y] float canvas coordinates of the center of the screen,
+       * [x, y]: floats of canvas coordinates of the center of the screen,
        */
       pixelPlanetEvents.emit('setviewcoordinates', [x, y]);
     }
     if (scale !== pScale) {
+      // clamp to 1 if origin is given, see src/ui/Renderer2.js#184
+      const viewscale = (args[1] && scale > 0.85 && scale < 1.20) ? 1.0 : scale;
       /*
-       * scale: float of canvas scale aka zoom
-       *        (not logarithmic, doesn't clamp to 1.0)
+       * viewscale: float of canvas scale aka zoom
        */
-      pixelPlanetEvents.emit('setscale', scale);
+      pixelPlanetEvents.emit('setscale', viewscale);
     }
   };
 }
