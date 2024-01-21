@@ -62,6 +62,7 @@ const maxDistance = Infinity;
 // How far you can orbit vertically, upper and lower limits.
 // Range is 0 to Math.PI radians.
 const minPolarAngle = 0; // radians
+// const maxPolarAngle = Math.PI / 2; // don't allow going underground
 const maxPolarAngle = Math.PI; // radians
 // How far you can orbit horizontally, upper and lower limits.
 // If set, must be a sub-interval of the interval [ - Math.PI, Math.PI ].
@@ -95,10 +96,6 @@ class VoxelPainterControls {
   state;
   // "target" sets the location of focus, where the object orbits around
   target;
-  // for reset
-  target0;
-  position0;
-  zoom0;
   //
   // internals
   //
@@ -144,9 +141,6 @@ class VoxelPainterControls {
     //
     this.target = target;
     //
-    this.target0 = target.clone();
-    this.position0 = camera.position.clone();
-    this.zoom0 = camera.zoom;
     this.state = STATE.NONE;
 
     this.onContextMenu = this.onContextMenu.bind(this);
@@ -693,22 +687,6 @@ class VoxelPainterControls {
     return this.spherical.theta;
   }
 
-  saveState() {
-    const { target, camera } = this;
-    this.target0.copy(target);
-    this.position0.copy(camera.position);
-    this.zoom0 = camera.zoom;
-  }
-
-  reset() {
-    this.target.copy(this.target0);
-    this.camera.position.copy(this.position0);
-    this.camera.zoom = this.zoom0;
-
-    this.camera.updateProjectionMatrix();
-    this.state = STATE.NONE;
-  }
-
   update(force) {
     const {
       moveRight,
@@ -778,7 +756,7 @@ class VoxelPainterControls {
 
     this.prevTime = time;
 
-    offset.copy(camera.position).sub(this.target);
+    offset.copy(camera.position).sub(target);
 
     // rotate offset to "y-axis-is-up" space
     offset.applyQuaternion(this.quat);
@@ -826,7 +804,7 @@ class VoxelPainterControls {
     const bound = canvasSize / 2;
     target.clamp({
       x: -bound,
-      y: 10,
+      y: 0,
       z: -bound,
     }, {
       x: bound,
@@ -846,6 +824,7 @@ class VoxelPainterControls {
     this.scale = 1;
 
     if (this.storeViewInStateTime + STORE_UPDATE_DELAY < time) {
+      this.storeViewInStateTime = time;
       this.renderer.storeViewInState();
     }
 

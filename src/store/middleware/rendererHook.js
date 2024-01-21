@@ -47,7 +47,7 @@ export default (store) => (next) => (action) => {
 
       if (is3D === renderer.is3D) {
         renderer.updateCanvasData(state);
-        if (type === 's/RELOAD_URL') {
+        if (type === 'RELOAD_URL') {
           renderer.updateView(state.canvas.view);
         }
       } else {

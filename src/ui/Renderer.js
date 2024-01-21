@@ -34,7 +34,7 @@ class Renderer {
 
   constructor(store) {
     this.store = store;
-    //this.loadViewFromState();
+    // this.loadViewFromState();
   }
 
   get view() {

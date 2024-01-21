@@ -67,7 +67,7 @@ function getViewFromURL(canvases) {
     canvasId = DEFAULT_CANVAS_ID;
     canvasIdent = canvases[DEFAULT_CANVAS_ID].ident;
   }
-  const { is3D } = !!canvases[canvasId].v;
+  const is3D = !!canvases[canvasId].v;
 
   const x = parseInt(almost[1], 10) || 0;
   const y = parseInt(almost[2], 10) || 0;
@@ -92,6 +92,7 @@ function getViewFromURL(canvases) {
 const initialState = {
   canvasId: null,
   canvasIdent: 'xx',
+  canvases: null,
   canvasSize: 65536,
   historicalCanvasSize: 65536,
   is3D: null,
@@ -158,6 +159,9 @@ export default function canvasReducer(
 
     case 'RELOAD_URL': {
       const { canvases } = state;
+      if (!canvases) {
+        return state;
+      }
       const urlState = getViewFromURL(canvases);
       return {
         ...state,

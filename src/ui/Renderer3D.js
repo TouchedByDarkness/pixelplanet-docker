@@ -72,19 +72,21 @@ class Renderer3D extends Renderer {
   constructor(store) {
     super(store);
     this.is3D = true;
-    this.loadViewFromState();
     const state = store.getState();
 
     // camera
     const camera = new PerspectiveCamera(
       45,
       window.innerWidth / window.innerHeight,
-      1,
-      400,
+      5,
+      600,
     );
-    camera.position.set(10, 16, 26);
-    camera.lookAt(0, 0, 0);
     this.camera = camera;
+    // make camera look at target (defaults to 0,0,0) from the sky
+    camera.position.set(0, 150, 190);
+    camera.lookAt(this.target);
+
+    this.loadViewFromState();
 
     // scene
     const scene = new Scene();
@@ -107,7 +109,6 @@ class Renderer3D extends Renderer {
     const sky = new Sky();
     sky.scale.setScalar(450000);
     scene.add(sky);
-
     scene.fog = new FogExp2(0xffffff, 0.003);
 
     const effectController = {
@@ -185,10 +186,6 @@ class Renderer3D extends Renderer {
       domElement,
       store,
     );
-    // TODO doesn't work like this anymore
-    controls.maxPolarAngle = Math.PI / 2;
-    controls.minDistance = 10.00;
-    controls.maxDistance = 100.00;
     this.controls = controls;
 
 
@@ -239,8 +236,12 @@ class Renderer3D extends Renderer {
     if (view.length !== 3) {
       return;
     }
-    console.log('go to', view);
-    this.target.set(...view);
+    const { target } = this;
+    // camera has to look from the same angle and distance
+    const offset = target.clone();
+    target.set(...view);
+    offset.sub(target);
+    this.camera.position.sub(offset);
     this.forceNextRender = true;
   }
 
