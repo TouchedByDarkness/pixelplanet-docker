@@ -14,6 +14,7 @@
     "build:dev": "webpack --config ./webpack.config.server.js && webpack --env development --config ./webpack.config.client.js && npm run minify-css",
     "update-browserlist": "browserslist --update-db",
     "deploy": "./deployment/deploy.sh",
+    "deploy:dev": "./deployment/deploy-dev.sh",
     "deploy:server": "./deployment/deploy-server.sh",
     "minify-css": "node scripts/minifyCss.js",
     "babel-node": "babel-node",
