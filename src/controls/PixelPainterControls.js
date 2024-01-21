@@ -11,10 +11,6 @@ import {
   unsetHover,
   setScale,
   selectColor,
-  moveNorth,
-  moveWest,
-  moveSouth,
-  moveEast,
 } from '../store/actions';
 import pixelTransferController from '../ui/PixelTransferController';
 import {
@@ -363,17 +359,18 @@ class PixelPainterControls {
     }
   }
 
-  zoomIn(origin) {
+  zoom(direction, origin) {
     const [x, y, scale] = this.renderer.view;
     const deltaScale = scale >= 1.0 ? 1.1 : 1.04;
-    this.renderer.updateView([x, y, scale * deltaScale], origin);
+    const newScale = (direction > 0) ? scale * deltaScale : scale / deltaScale;
+    this.renderer.updateView([x, y, newScale], origin);
     this.renderer.storeViewInState();
   }
 
-  zoomOut(origin) {
+  move(direction) {
     const [x, y, scale] = this.renderer.view;
-    const deltaScale = scale >= 1.0 ? 1.1 : 1.04;
-    this.renderer.updateView([x, y, scale / deltaScale], origin);
+    const [dx, dy] = direction.map((z) => z * 100.0 / scale);
+    this.renderer.updateView([x + dx, y + dy]);
     this.renderer.storeViewInState();
   }
 
@@ -386,10 +383,10 @@ class PixelPainterControls {
     const { hover } = store.getState().canvas;
     const origin = hover || null;
     if (deltaY < 0) {
-      this.zoomIn(origin);
+      this.zoom(1, origin);
     }
     if (deltaY > 0) {
-      this.zoomOut(origin);
+      this.zoom(-1, origin);
     }
   }
 
@@ -538,25 +535,25 @@ class PixelPainterControls {
     switch (event.code) {
       case 'ArrowUp':
       case 'KeyW':
-        store.dispatch(moveNorth());
+        this.move([0, -1]);
         return;
       case 'ArrowLeft':
       case 'KeyA':
-        store.dispatch(moveWest());
+        this.move([-1, 0]);
         return;
       case 'ArrowDown':
       case 'KeyS':
-        store.dispatch(moveSouth());
+        this.move([0, 1]);
         return;
       case 'ArrowRight':
       case 'KeyD':
-        store.dispatch(moveEast());
+        this.move([1, 0]);
         return;
       case 'KeyE':
-        this.zoomIn();
+        this.zoom(1);
         return;
       case 'KeyQ':
-        this.zoomOut();
+        this.zoom(-1);
         return;
       default:
     }
@@ -566,10 +563,10 @@ class PixelPainterControls {
      */
     switch (event.key) {
       case '+':
-        this.zoomIn();
+        this.zoom(1);
         return;
       case '-':
-        this.zoomOut();
+        this.zoom(-1);
         return;
       case 'Control':
       case 'Shift': {

@@ -160,40 +160,6 @@ export function setViewCoordinates(view) {
   };
 }
 
-export function move([dx, dy]) {
-  return (dispatch, getState) => {
-    const { view } = getState().canvas;
-
-    const [x, y] = view;
-    dispatch(setViewCoordinates([x + dx, y + dy]));
-  };
-}
-
-export function moveDirection([vx, vy]) {
-  return (dispatch, getState) => {
-    const [,, scale] = getState().canvas.view;
-
-    const speed = 100.0 / scale;
-    dispatch(move([speed * vx, speed * vy]));
-  };
-}
-
-export function moveNorth() {
-  return moveDirection([0, -1]);
-}
-
-export function moveWest() {
-  return moveDirection([-1, 0]);
-}
-
-export function moveSouth() {
-  return moveDirection([0, 1]);
-}
-
-export function moveEast() {
-  return moveDirection([1, 0]);
-}
-
 export function setScale(scale, zoompoint) {
   return {
     type: 'SET_SCALE',
