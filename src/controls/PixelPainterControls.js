@@ -9,7 +9,6 @@
 import {
   setHover,
   unsetHover,
-  setScale,
   selectColor,
 } from '../store/actions';
 import pixelTransferController from '../ui/PixelTransferController';
@@ -341,12 +340,13 @@ class PixelPainterControls {
 
         const a = event.touches[0];
         const b = event.touches[1];
-        const { tapStartDist, tapStartView } = this;
+        const { tapStartDist } = this;
         const dist = Math.sqrt(
           (b.pageX - a.pageX) ** 2 + (b.pageY - a.pageY) ** 2,
         );
         const pinchScale = dist / tapStartDist;
-        this.store.dispatch(setScale(tapStartView[2] * pinchScale));
+        const [x, y] = this.renderer.view;
+        this.renderer.updateView([x, y, clickTapStartView[2] * pinchScale]);
       }
     }
   }
