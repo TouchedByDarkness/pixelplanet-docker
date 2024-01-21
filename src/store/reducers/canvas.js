@@ -52,6 +52,43 @@ function fixHistoryIfNeccessary(state) {
 }
 
 /*
+ * parse canvas data
+ * @param canvas object from api/me
+ * @param prevCoords from state
+ * @return partial canvas specific state
+ */
+function getCanvasArgs(canvas, prevCoords) {
+  const clrIgnore = canvas.cli || 0;
+  const {
+    size: canvasSize,
+    sd: canvasStartDate = null,
+    ed: canvasEndDate = null,
+    ident: canvasIdent,
+    colors,
+  } = canvas;
+  const is3D = !!canvas.v;
+  // get previous view if possible
+  let view = [0, 0, DEFAULT_SCALE];
+  let selectedColor = clrIgnore;
+  if (prevCoords) {
+    view = prevCoords.view;
+    selectedColor = prevCoords.selectedColor;
+  }
+  const palette = new Palette(colors, 0);
+  return {
+    clrIgnore,
+    canvasSize,
+    canvasStartDate,
+    canvasEndDate,
+    canvasIdent,
+    is3D,
+    view,
+    selectedColor,
+    palette,
+  };
+}
+
+/*
  * parse url hash and sets view to coordinates
  * @param canvases Object with all canvas information
  * @return incomplete state based on URL
@@ -112,7 +149,7 @@ const initialState = {
   // last canvas view and selectedColor
   // just used to get back to the previous state when switching canvases
   // { [canvasId]: { view: [x, y, z], selectedColor: c }, ... }
-  prevCanvasCoords: {},
+  prevCanvasState: {},
 };
 
 export default function canvasReducer(
@@ -163,6 +200,19 @@ export default function canvasReducer(
         return state;
       }
       const urlState = getViewFromURL(canvases);
+      if (urlState.canvasId !== state.canvasId) {
+        const { canvasId } = urlState;
+        const canvas = canvases[canvasId];
+        const canvasState = getCanvasArgs(
+          canvas,
+          state.prevCanvasState[canvasId],
+        );
+        return {
+          ...state,
+          ...canvasState,
+          ...urlState,
+        };
+      }
       return {
         ...state,
         ...urlState,
@@ -195,7 +245,7 @@ export default function canvasReducer(
       let { canvasId } = action;
       const {
         canvases,
-        prevCanvasCoords,
+        prevCanvasState,
         canvasId: prevCanvasId,
       } = state;
       let canvas = canvases[canvasId];
@@ -203,41 +253,17 @@ export default function canvasReducer(
         canvasId = DEFAULT_CANVAS_ID;
         canvas = canvases[DEFAULT_CANVAS_ID];
       }
-      const clrIgnore = canvas.cli || 0;
-      const {
-        size: canvasSize,
-        sd: canvasStartDate = null,
-        ed: canvasEndDate = null,
-        ident: canvasIdent,
-        colors,
-      } = canvas;
-      const is3D = !!canvas.v;
-      // get previous view if possible
-      let view = [0, 0, DEFAULT_SCALE];
-      let selectedColor = clrIgnore;
-      if (prevCanvasCoords[canvasId]) {
-        view = prevCanvasCoords[canvasId].view;
-        selectedColor = prevCanvasCoords[canvasId].selectedColor;
-      }
-      const palette = new Palette(colors, 0);
+      const canvasState = getCanvasArgs(canvas, prevCanvasState[canvasId]);
 
       return fixHistoryIfNeccessary({
         ...state,
+        ...canvasState,
         canvasId,
-        canvasIdent,
-        selectedColor,
-        canvasSize,
-        is3D,
-        canvasStartDate,
-        canvasEndDate,
-        palette,
-        clrIgnore,
-        view,
         // reset if last canvas was retired
         isHistoricalView: (!state.canvasEndDate && state.isHistoricalView),
         // remember view and color
-        prevCanvasCoords: {
-          ...state.prevCanvasCoords,
+        prevCanvasState: {
+          ...state.prevCanvasState,
           [prevCanvasId]: {
             view: state.view,
             selectedColor: state.selectedColor,
@@ -250,34 +276,22 @@ export default function canvasReducer(
       const { canvases } = action;
       let {
         canvasId,
-        canvasIdent,
         view,
       } = state;
 
       if (canvasId === null) {
-        ({ canvasId, canvasIdent, view } = getViewFromURL(canvases));
+        ({ canvasId, view } = getViewFromURL(canvases));
       }
       const canvas = canvases[canvasId];
-      const clrIgnore = canvas.cli || 0;
-      const {
-        size: canvasSize,
-        sd: canvasStartDate = null,
-        ed: canvasEndDate = null,
-        colors,
-      } = canvas;
-      const palette = new Palette(colors);
+      const canvasState = getCanvasArgs(
+        canvas,
+        state.prevCanvasState[canvasId],
+      );
 
       return fixHistoryIfNeccessary({
         ...state,
+        ...canvasState,
         canvasId,
-        canvasIdent,
-        canvasSize,
-        is3D: !!canvas.v,
-        canvasStartDate,
-        canvasEndDate,
-        palette,
-        clrIgnore,
-        selectedColor: clrIgnore,
         canvases,
         view,
       });
