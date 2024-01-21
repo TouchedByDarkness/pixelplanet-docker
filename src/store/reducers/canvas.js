@@ -91,7 +91,7 @@ function getCanvasArgs(canvas, prevCoords) {
 /*
  * parse url hash and sets view to coordinates
  * @param canvases Object with all canvas information
- * @return incomplete state based on URL
+ * @return incomplete state based on URL, null if failed
  */
 function getViewFromURL(canvases) {
   const { hash } = window.location;
@@ -102,7 +102,11 @@ function getViewFromURL(canvases) {
   let canvasId = getIdFromObject(canvases, canvasIdent);
   if (!canvasId || (!window.ssv?.backupurl && canvases[canvasId].ed)) {
     canvasId = DEFAULT_CANVAS_ID;
-    canvasIdent = canvases[DEFAULT_CANVAS_ID].ident;
+    const canvas = canvases[DEFAULT_CANVAS_ID];
+    if (!canvas) {
+      return null;
+    }
+    canvasIdent = canvas.ident;
   }
   const is3D = !!canvases[canvasId].v;
 
@@ -129,7 +133,7 @@ function getViewFromURL(canvases) {
 const initialState = {
   canvasId: null,
   canvasIdent: 'xx',
-  canvases: null,
+  canvases: {},
   canvasSize: 65536,
   historicalCanvasSize: 65536,
   is3D: null,
@@ -196,10 +200,10 @@ export default function canvasReducer(
 
     case 'RELOAD_URL': {
       const { canvases } = state;
-      if (!canvases) {
+      const urlState = getViewFromURL(canvases);
+      if (!urlState) {
         return state;
       }
-      const urlState = getViewFromURL(canvases);
       if (urlState.canvasId !== state.canvasId) {
         const { canvasId } = urlState;
         const canvas = canvases[canvasId];

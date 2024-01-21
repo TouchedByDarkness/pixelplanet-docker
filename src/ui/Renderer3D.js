@@ -370,6 +370,19 @@ class Renderer3D extends Renderer {
     this.objects = newObjects;
   }
 
+  debug(ident) {
+    if (process?.env.NODE_ENV !== 'development') {
+      return;
+    }
+    if (this.lol !== ident) {
+      // eslint-disable-next-line no-console
+      console.log(this.lol, this.lola);
+      this.lol = ident;
+      this.lola = 0;
+    }
+    this.lola += 1;
+  }
+
   render() {
     if (!this.threeRenderer) {
       return;
@@ -388,7 +401,6 @@ class Renderer3D extends Renderer {
       ) {
         this.centerChunk = centerChunk;
         this.forceNextRender = true;
-        console.log('new cc', this.centerChunk);
       }
     }
 
@@ -400,39 +412,21 @@ class Renderer3D extends Renderer {
         this.reloadChunks();
       }
 
-      if (this.forceNextRender) {
-        if (this.lol !== 'force') {
-          console.log(this.lol, this.lola);
-          this.lol = 'force';
-          this.lola = 0;
+      if (process?.env.NODE_ENV === 'development') {
+        if (this.forceNextRender) {
+          this.debug('force');
+        } else if (this.forceNextSubrender) {
+          this.debug('sub');
+        } else if (controlUpdate) {
+          this.debug('upd');
         }
-        this.lola += 1;
-      } else if (this.forceNextSubrender) {
-        if (this.lol !== 'sub') {
-          console.log(this.lol, this.lola);
-          this.lol = 'sub';
-          this.lola = 0;
-        }
-        this.lola += 1;
-      } else if (controlUpdate) {
-        if (this.lol !== 'update') {
-          console.log(this.lol, this.lola);
-          this.lol = 'update';
-          this.lola = 0;
-        }
-        this.lola += 1;
       }
 
       this.threeRenderer.render(this.scene, this.camera);
       this.forceNextRender = false;
       this.forceNextSubrender = false;
-    } else {
-      if (this.lol !== 'skip') {
-        console.log(this.lol, this.lola);
-        this.lol = 'skip';
-        this.lola = 0;
-      }
-      this.lola += 1;
+    } else if (process?.env.NODE_ENV === 'development') {
+      this.debug('skip');
     }
   }
 

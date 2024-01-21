@@ -155,9 +155,6 @@ export function getOffsetOfPixel(
  * @return key
  */
 export function getIdFromObject(obj, ident) {
-  if (!obj) {
-    return null;
-  }
   const ids = Object.keys(obj);
   for (let i = 0; i < ids.length; i += 1) {
     const key = ids[i];
