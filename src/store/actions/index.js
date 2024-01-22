@@ -93,6 +93,12 @@ export function toggleOpenPalette() {
   };
 }
 
+export function togglePencil() {
+  return {
+    type: 's/TGL_PENCIL',
+  };
+}
+
 export function selectStyle(style) {
   return {
     type: 's/SELECT_STYLE',

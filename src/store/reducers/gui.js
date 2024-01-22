@@ -6,6 +6,7 @@ const initialState = {
   isLightGrid: false,
   compactPalette: false,
   paletteOpen: true,
+  pencilEnabled: false,
   mute: false,
   chatNotify: true,
   // top-left button menu
@@ -78,6 +79,13 @@ export default function gui(
       };
     }
 
+    case 's/TGL_PENCIL': {
+      return {
+        ...state,
+        pencilEnabled: !state.pencilEnabled,
+      };
+    }
+
     case 's/TGL_OPEN_MENU': {
       return {
         ...state,
@@ -119,6 +127,12 @@ export default function gui(
       return {
         ...state,
         chatNotify: !state.chatNotify,
+      };
+
+    case 'persist/REHYDRATE':
+      return {
+        ...state,
+        pencilEnabled: false,
       };
 
     default:

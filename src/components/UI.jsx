@@ -9,6 +9,7 @@ import CoolDownBox from './CoolDownBox';
 import NotifyBox from './NotifyBox';
 import GlobeButton from './buttons/GlobeButton';
 import PalselButton from './buttons/PalselButton';
+import PencilButton from './buttons/PencilButton';
 import MovementControls from './buttons/MovementControls';
 import Palette from './Palette';
 import Alert from './Alert';
@@ -35,7 +36,10 @@ const UI = () => {
           <PalselButton />
           <Palette />
           {(!is3D) && <GlobeButton />}
-          {(isOnMobile) && <MovementControls />}
+          {// (isOnMobile) && <MovementControls />
+          }
+          <MovementControls />
+          {(!is3D) && <PencilButton />}
           <CoolDownBox />
         </>
       )}

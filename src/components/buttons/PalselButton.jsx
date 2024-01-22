@@ -21,7 +21,7 @@ const PalselButton = () => {
   return (
     <div
       id="palselbutton"
-      className={`actionbuttons ${(paletteOpen) ? '' : 'pressed'}`}
+      className={`actionbuttons${(paletteOpen) ? ' pressed' : ''}`}
       style={{
         color: palette.isDark(selectedColor) ? 'white' : 'black',
         backgroundColor: palette.colors[selectedColor],

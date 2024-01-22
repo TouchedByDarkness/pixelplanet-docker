@@ -17,7 +17,7 @@ const ExpandMenuButton = () => {
   return (
     <div
       id="menubutton"
-      className="actionbuttons"
+      className={`actionbuttons${menuOpen ? ' pressed' : ''}`}
       role="button"
       title={(menuOpen) ? t`Close Menu` : t`Open Menu`}
       tabIndex={-1}

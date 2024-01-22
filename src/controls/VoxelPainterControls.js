@@ -103,12 +103,9 @@ class VoxelPainterControls {
   spherical = new Spherical();
   sphericalDelta = new Spherical();
   //
-  moveLeft = false;
-  moveRight = false;
-  moveForward = false;
-  moveBackward = false;
-  moveUp = false;
-  moveDown = false;
+  moveU = 0;
+  moveV = 0;
+  moveW = 0;
   //
   scale = 1;
   panOffset = new Vector3();
@@ -421,67 +418,58 @@ class VoxelPainterControls {
       return;
     }
 
-    switch (event.keyCode) {
-      case 38: // up
-      case 87: // w
-        this.moveForward = true;
-        break;
-      case 37: // left
-      case 65: // a
-        this.moveLeft = true;
-        break;
-      case 40: // down
-      case 83: // s
-        this.moveBackward = true;
-        break;
-      case 39: // right
-      case 68: // d
-        this.moveRight = true;
-        break;
-      case 69: // E
-        this.moveUp = true;
-        break;
-      case 67: // C
-        this.moveDown = true;
-        break;
+    switch (event.code) {
+      case 'ArrowUp':
+      case 'KeyW':
+        this.moveV = -1;
+        return;
+      case 'ArrowLeft':
+      case 'KeyA':
+        this.moveU = -1;
+        return;
+      case 'ArrowDown':
+      case 'KeyS':
+        this.moveV = 1;
+        return;
+      case 'ArrowRight':
+      case 'KeyD':
+        this.moveU = 1;
+        return;
+      case 'KeyE':
+        this.moveW = 1;
+        return;
+      case 'KeyQ':
+        this.moveW = -1;
+        return;
       default:
-        break;
     }
   }
 
   onDocumentKeyUp(event) {
-    // ignore key presses if modal is open or chat is used
-    if (event.target.nodeName === 'INPUT'
-      || event.target.nodeName === 'TEXTAREA'
-    ) {
-      return;
-    }
-
-    switch (event.keyCode) {
-      case 38: // up
-      case 87: // w
-        this.moveForward = false;
-        break;
-      case 37: // left
-      case 65: // a
-        this.moveLeft = false;
-        break;
-      case 40: // down
-      case 83: // s
-        this.moveBackward = false;
-        break;
-      case 39: // right
-      case 68: // d
-        this.moveRight = false;
-        break;
-      case 69: // E
-        this.moveUp = false;
-        break;
-      case 67: // C
-        this.moveDown = false;
-        break;
+    switch (event.code) {
+      case 'ArrowUp':
+      case 'KeyW':
+        this.moveV = 0;
+        return;
+      case 'ArrowLeft':
+      case 'KeyA':
+        this.moveU = 0;
+        return;
+      case 'ArrowDown':
+      case 'KeyS':
+        this.moveV = 0;
+        return;
+      case 'ArrowRight':
+      case 'KeyD':
+        this.moveU = 0;
+        return;
+      case 'KeyE':
+        this.moveW = 0;
+        return;
+      case 'KeyQ':
+        this.moveW = 0;
+        return;
       default:
-        break;
     }
   }
 
@@ -688,26 +676,21 @@ class VoxelPainterControls {
   }
 
   update(force) {
-    const {
-      moveRight,
-      moveLeft,
-      moveUp,
-      moveDown,
-      moveForward,
-      moveBackward,
-    } = this;
+    const time = Date.now();
+    const { moveU, moveV, moveW } = this;
 
     if (!(force
       || this.state !== STATE.NONE
       || this.forceNextUpdate
-      || moveRight || moveLeft
-      || moveUp || moveDown
-      || moveForward || moveBackward
+      || moveU || moveV || moveW
     )) {
-      this.prevTime = Date.now();
+      this.prevTime = time;
       return false;
     }
     this.forceNextUpdate = false;
+
+    const delta = (time - this.prevTime) / 1000.0;
+    this.prevTime = time;
 
     const {
       camera,
@@ -720,9 +703,7 @@ class VoxelPainterControls {
       panOffset,
       sphericalDelta,
     } = this;
-    const time = Date.now();
 
-    const delta = (time - this.prevTime) / 1000.0;
     velocity.x -= velocity.x * 40.0 * delta;
     velocity.y -= velocity.y * 40.0 * delta;
     velocity.z -= velocity.z * 40.0 * delta;
@@ -731,20 +712,12 @@ class VoxelPainterControls {
       velocity.set(0, 0, 0);
     }
 
-    direction.x = Number(moveRight) - Number(moveLeft);
-    direction.y = Number(moveUp) - Number(moveDown);
-    direction.z = Number(moveForward) - Number(moveBackward);
+    direction.set(moveU, -moveW, -moveV);
     direction.normalize();
 
-    if (moveLeft || moveRight) {
-      velocity.x -= direction.x * 1000.0 * delta;
-    }
-    if (moveUp || moveDown) {
-      velocity.y -= direction.y * 1000.0 * delta;
-    }
-    if (moveForward || moveBackward) {
-      velocity.z -= direction.z * 1000.0 * delta;
-    }
+    if (moveU) velocity.x -= direction.x * 1000.0 * delta;
+    if (moveW) velocity.y -= direction.y * 1000.0 * delta;
+    if (moveV) velocity.z -= direction.z * 1000.0 * delta;
 
     vec.setFromMatrixColumn(camera.matrix, 0);
     vec.crossVectors(camera.up, vec);
@@ -754,8 +727,6 @@ class VoxelPainterControls {
     vec.setFromMatrixColumn(camera.matrix, 0);
     vec.multiplyScalar(-velocity.x * delta);
     panOffset.add(vec);
-
-    this.prevTime = time;
 
     offset.copy(camera.position).sub(target);
 

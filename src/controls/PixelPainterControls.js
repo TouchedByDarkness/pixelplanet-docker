@@ -43,6 +43,11 @@ class PixelPainterControls {
    * 2: right shift
    */
   holdPainting = 0;
+  // if we are moving
+  moveU = 0;
+  moveV = 0;
+  moveW = 0;
+  prevTime = Date.now();
   // if we are waiting before placing pixel via holdPainting again
   coolDownDelta = false;
 
@@ -81,9 +86,6 @@ class PixelPainterControls {
     document.removeEventListener('keydown', this.onKeyDown, false);
     document.removeEventListener('keyup', this.onKeyUp, false);
   }
-
-  // eslint-disable-next-line class-methods-use-this
-  update() {}
 
   gotCoolDownDelta(delta) {
     this.coolDownDelta = true;
@@ -367,7 +369,7 @@ class PixelPainterControls {
     this.renderer.storeViewInState();
   }
 
-  move(direction) {
+  step(direction) {
     const [x, y, scale] = this.renderer.view;
     const [dx, dy] = direction.map((z) => z * 100.0 / scale);
     this.renderer.updateView([x + dx, y + dy]);
@@ -511,6 +513,38 @@ class PixelPainterControls {
   }
 
   onKeyUp(event) {
+    /*
+     * key locations
+     */
+    switch (event.code) {
+      case 'ArrowUp':
+      case 'KeyW':
+        this.moveV = 0;
+        return;
+      case 'ArrowLeft':
+      case 'KeyA':
+        this.moveU = 0;
+        return;
+      case 'ArrowDown':
+      case 'KeyS':
+        this.moveV = 0;
+        return;
+      case 'ArrowRight':
+      case 'KeyD':
+        this.moveU = 0;
+        return;
+      case 'KeyE':
+        this.moveW = 0;
+        return;
+      case 'KeyQ':
+        this.moveW = 0;
+        return;
+      default:
+    }
+
+    /*
+     * key char
+     */
     switch (event.key) {
       case 'Shift':
       case 'CapsLock':
@@ -527,7 +561,6 @@ class PixelPainterControls {
     ) {
       return;
     }
-    const { store } = this;
 
     /*
      * key location
@@ -535,25 +568,25 @@ class PixelPainterControls {
     switch (event.code) {
       case 'ArrowUp':
       case 'KeyW':
-        this.move([0, -1]);
+        this.moveV = -1;
         return;
       case 'ArrowLeft':
       case 'KeyA':
-        this.move([-1, 0]);
+        this.moveU = -1;
         return;
       case 'ArrowDown':
       case 'KeyS':
-        this.move([0, 1]);
+        this.moveV = 1;
         return;
       case 'ArrowRight':
       case 'KeyD':
-        this.move([1, 0]);
+        this.moveU = 1;
         return;
       case 'KeyE':
-        this.zoom(1);
+        this.moveW = 1;
         return;
       case 'KeyQ':
-        this.zoom(-1);
+        this.moveW = -1;
         return;
       default:
     }
@@ -570,6 +603,7 @@ class PixelPainterControls {
         return;
       case 'Control':
       case 'Shift': {
+        const { store } = this;
         const state = store.getState();
         const { hover } = state.canvas;
         if (hover) {
@@ -604,6 +638,33 @@ class PixelPainterControls {
       }
       default:
     }
+  }
+
+  update() {
+    let time = Date.now();
+    const { moveU, moveV, moveW } = this;
+
+    if (!(moveU || moveV || moveW)) {
+      this.prevTime = time;
+      return false;
+    }
+    // set to time since last tick
+    time -= this.prevTime;
+    this.prevTime += time;
+
+    const [x, y, scale] = this.renderer.view;
+
+    const directionalStep = time * 0.4 / scale;
+    let scaleFactor = scale >= 1.0 ? 1.0005 : 1.0003;
+    scaleFactor **= moveW;
+
+    this.renderer.updateView([
+      x + directionalStep * moveU,
+      y + directionalStep * moveV,
+      scale * scaleFactor ** time,
+    ]);
+
+    return true;
   }
 }
 
