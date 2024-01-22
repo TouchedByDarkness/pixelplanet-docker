@@ -45,6 +45,12 @@ export function togglePixelNotify() {
   };
 }
 
+export function toggleMvmCtrls() {
+  return {
+    type: 's/TGL_MVM_CTRLS',
+  };
+}
+
 export function toggleAutoZoomIn() {
   return {
     type: 's/TGL_AUTO_ZOOM_IN',

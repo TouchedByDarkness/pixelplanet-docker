@@ -461,12 +461,8 @@ tr:nth-child(even) {
   right: 57px;
 }
 #pencilbutton {
-  bottom: 98px;
   left: 16px;
   transition: bottom 300ms ease-in-out;
-}
-#pencilbutton.pressed {
-  bottom: 180px;
 }
 
 #historyselect {

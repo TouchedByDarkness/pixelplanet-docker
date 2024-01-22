@@ -8,7 +8,6 @@ import React, {
 } from 'react';
 import {
   useSelector,
-  shallowEqual,
   useDispatch,
 } from 'react-redux';
 import {
@@ -20,7 +19,7 @@ import {
   PiArrowFatDown,
   PiCaretDoubleUp,
   PiCaretDoubleDown,
-} from "react-icons/pi";
+} from 'react-icons/pi';
 
 import {
   setMoveU,
@@ -34,10 +33,7 @@ const btnStyle = {
 };
 
 const MovementControls = () => {
-  const [holdPaint, is3D] = useSelector((state) => [
-    state.gui.holdPaint,
-    state.canvas.is3D,
-  ], shallowEqual);
+  const is3D = useSelector((state) => state.canvas.is3D);
   const dispatch = useDispatch();
 
   const onPressStart = useCallback((event) => {
@@ -92,7 +88,7 @@ const MovementControls = () => {
 
   const onCancel = useCallback((event) => {
     event.preventDefault();
-    dispatch(cancelMove());
+    // dispatch(cancelMove());
   }, []);
 
   const refCallBack = useCallback((node) => {
@@ -106,10 +102,6 @@ const MovementControls = () => {
     node.addEventListener('mouseleave', onCancel, { passive: false });
     node.addEventListener('touchcancel', onCancel, { passive: false });
   }, [onPressStart, onPressStop, onCancel]);
-
-  if (!holdPaint && !is3D) {
-    return null;
-  }
 
   return (
     <>

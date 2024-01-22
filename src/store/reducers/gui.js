@@ -3,6 +3,7 @@ import { HOLD_PAINT } from '../../core/constants';
 const initialState = {
   showGrid: false,
   showPixelNotify: false,
+  showMvmCtrls: false,
   autoZoomIn: false,
   isPotato: false,
   isLightGrid: false,
@@ -40,6 +41,13 @@ export default function gui(
       return {
         ...state,
         showPixelNotify: !state.showPixelNotify,
+      };
+    }
+
+    case 's/TGL_MVM_CTRLS': {
+      return {
+        ...state,
+        showMvmCtrls: !state.showMvmCtrls,
       };
     }
 
@@ -136,23 +144,29 @@ export default function gui(
     }
 
     case 's/SET_MOVE_U': {
+      const { value } = action;
+      const moveU = state.moveU + value;
       return {
         ...state,
-        moveU: action.value,
+        moveU,
       };
     }
 
     case 's/SET_MOVE_V': {
+      const { value } = action;
+      const moveV = state.moveV + value;
       return {
         ...state,
-        moveV: action.value,
+        moveV,
       };
     }
 
     case 's/SET_MOVE_W': {
+      const { value } = action;
+      const moveW = state.moveW + value;
       return {
         ...state,
-        moveW: action.value,
+        moveW,
       };
     }
 

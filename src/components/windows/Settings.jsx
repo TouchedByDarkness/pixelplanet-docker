@@ -11,6 +11,7 @@ import LanguageSelect from '../LanguageSelect';
 import {
   toggleGrid,
   togglePixelNotify,
+  toggleMvmCtrls,
   toggleMute,
   toggleAutoZoomIn,
   toggleCompactPalette,
@@ -56,6 +57,7 @@ function Settings() {
   const [
     isGridShown,
     isPixelNotifyShown,
+    isMvmCtrlsShown,
     autoZoomIn,
     compactPalette,
     isPotato,
@@ -67,6 +69,7 @@ function Settings() {
   ] = useSelector((state) => [
     state.gui.showGrid,
     state.gui.showPixelNotify,
+    state.gui.showMvmCtrls,
     state.gui.autoZoomIn,
     state.gui.compactPalette,
     state.gui.isPotato,
@@ -97,6 +100,14 @@ function Settings() {
         onToggle={() => dispatch(togglePixelNotify())}
       >
         {t`Show circles where pixels are placed.`}
+      </SettingsItem>
+      <SettingsItem
+        title={t`Always show Movement Controls`}
+        keyBind={c('keybinds').t`N`}
+        value={isMvmCtrlsShown}
+        onToggle={() => dispatch(toggleMvmCtrls())}
+      >
+        {t`Always show movement control buttons`}
       </SettingsItem>
       <SettingsItem
         title={t`Disable Game Sounds`}

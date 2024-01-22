@@ -20,10 +20,14 @@ const UI = () => {
     isHistoricalView,
     is3D,
     isOnMobile,
+    showMvmCtrls,
+    holdPaint,
   ] = useSelector((state) => [
     state.canvas.isHistoricalView,
     state.canvas.is3D,
     state.user.isOnMobile,
+    state.gui.showMvmCtrls,
+    state.gui.holdPaint,
   ], shallowEqual);
 
   return (
@@ -36,10 +40,9 @@ const UI = () => {
           <PalselButton />
           <Palette />
           {(!is3D) && <GlobeButton />}
-          {// (isOnMobile) && <MovementControls />
-          }
-          <MovementControls />
-          {(!is3D) && <PencilButton />}
+          {(showMvmCtrls || ((is3D || holdPaint) && isOnMobile))
+            && <MovementControls />}
+          {(!is3D && isOnMobile) && <PencilButton />}
           <CoolDownBox />
         </>
       )}

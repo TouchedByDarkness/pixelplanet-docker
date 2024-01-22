@@ -8,6 +8,7 @@ import {
   toggleHistoricalView,
   toggleHiddenCanvases,
   togglePixelNotify,
+  toggleMvmCtrls,
   toggleMute,
   selectCanvas,
   selectHoverColor,
@@ -196,6 +197,9 @@ export function createKeyDownHandler(store) {
         store.dispatch(notify((store.getState().gui.mute)
           ? t`Muted Sound`
           : t`Unmuted Sound`));
+        return;
+      case 'n':
+        store.dispatch(toggleMvmCtrls());
         return;
       case 'r': {
         const { hover } = store.getState().canvas;
