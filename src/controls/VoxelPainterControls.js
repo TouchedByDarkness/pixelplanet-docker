@@ -440,7 +440,7 @@ class VoxelPainterControls {
         return;
       case 'KeyQ':
         this.moveW = -1;
-        return;
+
       default:
     }
   }
@@ -468,7 +468,7 @@ class VoxelPainterControls {
         return;
       case 'KeyQ':
         this.moveW = 0;
-        return;
+
       default:
     }
   }

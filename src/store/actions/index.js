@@ -93,9 +93,17 @@ export function toggleOpenPalette() {
   };
 }
 
-export function togglePencil() {
+export function selectHoldPaint(value, immediate) {
   return {
-    type: 's/TGL_PENCIL',
+    type: 's/SELECT_HOLD_PAINT',
+    value,
+    immediate,
+  };
+}
+
+export function selectHoverColor() {
+  return {
+    type: 'SELECT_HOVER_COLOR',
   };
 }
 
@@ -171,6 +179,34 @@ export function setScale(scale, zoompoint) {
     type: 'SET_SCALE',
     scale,
     zoompoint,
+  };
+}
+
+export function setMoveU(value) {
+  return {
+    type: 's/SET_MOVE_U',
+    value,
+  };
+}
+
+export function setMoveV(value) {
+  return {
+    type: 's/SET_MOVE_V',
+    value,
+  };
+}
+
+export function setMoveW(value) {
+  return {
+    type: 's/SET_MOVE_W',
+    value,
+  };
+}
+
+export function cancelMove(value) {
+  return {
+    type: 's/CANCEL_MOVE',
+    value,
   };
 }
 

@@ -4,7 +4,10 @@
 
 import { persistStore } from 'redux-persist';
 
-import createKeyPressHandler from './controls/keypress';
+import {
+  createKeyDownHandler,
+  createKeyUpHandler,
+} from './controls/keypress';
 import {
   initTimer,
   urlChange,
@@ -57,8 +60,10 @@ persistStore(store, {}, () => {
     window.name = 'main';
     renderApp(document.getElementById('app'), store);
 
-    const onKeyPress = createKeyPressHandler(store);
-    document.addEventListener('keydown', onKeyPress, false);
+    const onKeyDown = createKeyDownHandler(store);
+    const onKeyUp = createKeyUpHandler(store);
+    document.addEventListener('keydown', onKeyDown, false);
+    document.addEventListener('keyup', onKeyUp, false);
 
     // garbage collection
     setInterval(() => {

@@ -35,7 +35,7 @@ import {
 import {
   setHover,
   unsetHover,
-  selectColor,
+  selectHoverColor,
 } from '../store/actions';
 import pixelTransferController from './PixelTransferController';
 
@@ -526,6 +526,40 @@ class Renderer3D extends Renderer {
     this.updateRollOverMesh(0, 0);
   }
 
+  getPointedColor() {
+    const {
+      objects,
+      raycaster,
+      mouse,
+      camera,
+    } = this;
+    raycaster.setFromCamera(mouse, camera);
+
+    const intersects = raycaster.intersectObjects(objects);
+    if (intersects.length <= 0) {
+      return null;
+    }
+    const intersect = intersects[0];
+    const target = intersect.point.clone()
+      .add(intersect.face.normal.multiplyScalar(-0.5))
+      .floor()
+      .addScalar(0.5)
+      .floor();
+    if (target.y < 0) {
+      return null;
+    }
+    if (target.clone().sub(camera.position).length() < 120) {
+      const cell = target.toArray();
+      if (this.chunkLoader) {
+        const clr = this.chunkLoader.getVoxel(...cell);
+        if (clr) {
+          return clr;
+        }
+      }
+    }
+    return null;
+  }
+
   placeVoxel(x, y, z, color = null) {
     const {
       store,
@@ -666,17 +700,26 @@ class Renderer3D extends Renderer {
       innerHeight,
     } = window;
     const {
-      camera,
-      objects,
-      raycaster,
-      mouse,
       store,
+      mouse,
     } = this;
 
     mouse.set(
       (clientX / innerWidth) * 2 - 1,
       -(clientY / innerHeight) * 2 + 1,
     );
+
+    if (button === 1) {
+      // middle mouse button
+      store.dispatch(selectHoverColor());
+      return;
+    }
+
+    const {
+      camera,
+      objects,
+      raycaster,
+    } = this;
 
     raycaster.setFromCamera(mouse, camera);
 
@@ -694,25 +737,6 @@ class Renderer3D extends Renderer {
         if (target.clone().sub(camera.position).length() < 120) {
           const [x, y, z] = target.toArray();
           this.placeVoxel(x, y, z);
-        }
-      } else if (button === 1) {
-        // middle mouse button
-        const target = intersect.point.clone()
-          .add(intersect.face.normal.multiplyScalar(-0.5))
-          .floor()
-          .addScalar(0.5)
-          .floor();
-        if (target.y < 0) {
-          return;
-        }
-        if (target.clone().sub(camera.position).length() < 120) {
-          const cell = target.toArray();
-          if (this.chunkLoader) {
-            const clr = this.chunkLoader.getVoxel(...cell);
-            if (clr) {
-              store.dispatch(selectColor(clr));
-            }
-          }
         }
       } else if (button === 2) {
         // right mouse button

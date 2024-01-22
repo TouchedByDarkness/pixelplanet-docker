@@ -3,29 +3,33 @@
  * Menu for WASD keys for mobile users
  */
 
-import React from 'react';
-import { useSelector, shallowEqual } from 'react-redux';
+import React, {
+  useCallback,
+} from 'react';
+import {
+  useSelector,
+  shallowEqual,
+  useDispatch,
+} from 'react-redux';
 
-import { getRenderer } from '../../ui/rendererFactory';
+import {
+  setMoveU,
+  setMoveV,
+  setMoveW,
+} from '../../store/actions';
 
 const btnStyle = {
   fontSize: 34,
 };
 
-function cancelMovement() {
-  const renderer = getRenderer();
-  renderer.controls.moveU = 0;
-  renderer.controls.moveV = 0;
-  renderer.controls.moveW = 0;
-}
-
 const MovementControls = () => {
-  const [pencilEnabled, is3D] = useSelector((state) => [
-    state.gui.pencilEnabled,
+  const [holdPaint, is3D] = useSelector((state) => [
+    state.gui.holdPaint,
     state.canvas.is3D,
   ], shallowEqual);
+  const dispatch = useDispatch();
 
-  if (!pencilEnabled && !is3D) {
+  if (!holdPaint && !is3D) {
     return null;
   }
 
@@ -37,25 +41,13 @@ const MovementControls = () => {
         tabIndex={0}
         style={{
           ...btnStyle,
-          // left: 46,
           left: 57,
-          // bottom: 128,
           bottom: 139,
         }}
-        onMouseDown={() => {
-          getRenderer().controls.moveV = -1;
-        }}
-        onMouseUp={() => {
-          getRenderer().controls.moveV = 0;
-        }}
-        onTouchStart={() => {
-          getRenderer().controls.moveV = -1;
-        }}
-        onTouchEnd={() => {
-          getRenderer().controls.moveV = 0;
-        }}
-        onTouchCancel={cancelMovement}
-        onMouseLeave={cancelMovement}
+        onMouseDown={() => dispatch(setMoveV(-1))}
+        onMouseUp={() => dispatch(setMoveV(0))}
+        onTouchStart={() => dispatch(setMoveV(-1))}
+        onTouchEnd={() => dispatch(setMoveV(0))}
       >
         ↑
       </div>
@@ -65,24 +57,13 @@ const MovementControls = () => {
         tabIndex={0}
         style={{
           ...btnStyle,
-          // left: 46,
           left: 57,
           bottom: 98,
         }}
-        onMouseDown={() => {
-          getRenderer().controls.moveV = 1;
-        }}
-        onMouseUp={() => {
-          getRenderer().controls.moveV = 0;
-        }}
-        onTouchStart={() => {
-          getRenderer().controls.moveV = 1;
-        }}
-        onTouchEnd={() => {
-          getRenderer().controls.moveV = 0;
-        }}
-        onTouchCancel={cancelMovement}
-        onMouseLeave={cancelMovement}
+        onMouseDown={() => dispatch(setMoveV(1))}
+        onMouseUp={() => dispatch(setMoveV(0))}
+        onTouchStart={(event) => dispatch(setMoveV(1))}
+        onTouchEnd={(event) => dispatch(setMoveV(0))}
       >
         ↓
       </div>
@@ -95,20 +76,10 @@ const MovementControls = () => {
           left: 16,
           bottom: 98,
         }}
-        onMouseDown={() => {
-          getRenderer().controls.moveU = -1;
-        }}
-        onMouseUp={() => {
-          getRenderer().controls.moveU = 0;
-        }}
-        onTouchStart={() => {
-          getRenderer().controls.moveU = -1;
-        }}
-        onTouchEnd={() => {
-          getRenderer().controls.moveU = 0;
-        }}
-        onTouchCancel={cancelMovement}
-        onMouseLeave={cancelMovement}
+        onMouseDown={() => dispatch(setMoveU(-1))}
+        onMouseUp={() => dispatch(setMoveU(0))}
+        onTouchStart={() => dispatch(setMoveU(-1))}
+        onTouchEnd={() => dispatch(setMoveU(0))}
       >
         ←
       </div>
@@ -118,24 +89,13 @@ const MovementControls = () => {
         tabIndex={0}
         style={{
           ...btnStyle,
-          // left: 76,
           left: 98,
           bottom: 98,
         }}
-        onMouseDown={() => {
-          getRenderer().controls.moveU = 1;
-        }}
-        onMouseUp={() => {
-          getRenderer().controls.moveU = 0;
-        }}
-        onTouchStart={() => {
-          getRenderer().controls.moveU = 1;
-        }}
-        onTouchEnd={() => {
-          getRenderer().controls.moveU = 0;
-        }}
-        onTouchCancel={cancelMovement}
-        onMouseLeave={cancelMovement}
+        onMouseDown={() => dispatch(setMoveU(1))}
+        onMouseUp={() => dispatch(setMoveU(0))}
+        onTouchStart={() => dispatch(setMoveU(1))}
+        onTouchEnd={() => dispatch(setMoveU(0))}
       >
         →
       </div>
@@ -145,24 +105,13 @@ const MovementControls = () => {
         tabIndex={0}
         style={{
           ...btnStyle,
-          // left: 76,
           left: 16,
           bottom: 139,
         }}
-        onMouseDown={() => {
-          getRenderer().controls.moveW = -1;
-        }}
-        onMouseUp={() => {
-          getRenderer().controls.moveW = 0;
-        }}
-        onTouchStart={() => {
-          getRenderer().controls.moveW = -1;
-        }}
-        onTouchEnd={() => {
-          getRenderer().controls.moveW = 0;
-        }}
-        onTouchCancel={cancelMovement}
-        onMouseLeave={cancelMovement}
+        onMouseDown={() => dispatch(setMoveW(-1))}
+        onMouseUp={() => dispatch(setMoveW(0))}
+        onTouchStart={() => dispatch(setMoveW(-1))}
+        onTouchEnd={() => dispatch(setMoveW(0))}
       >
         ↖
       </div>
@@ -172,24 +121,13 @@ const MovementControls = () => {
         tabIndex={0}
         style={{
           ...btnStyle,
-          // left: 76,
           left: 98,
           bottom: 139,
         }}
-        onMouseDown={() => {
-          getRenderer().controls.moveW = 1;
-        }}
-        onMouseUp={() => {
-          getRenderer().controls.moveW = 0;
-        }}
-        onTouchStart={() => {
-          getRenderer().controls.moveW = 1;
-        }}
-        onTouchEnd={() => {
-          getRenderer().controls.moveW = 0;
-        }}
-        onTouchCancel={cancelMovement}
-        onMouseLeave={cancelMovement}
+        onMouseDown={() => dispatch(setMoveW(1))}
+        onMouseUp={() => dispatch(setMoveW(0))}
+        onTouchStart={() => dispatch(setMoveW(1))}
+        onTouchEnd={() => dispatch(setMoveW(0))}
       >
         ↘
       </div>

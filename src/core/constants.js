@@ -54,3 +54,10 @@ export const VIEW_UPDATE_DELAY = 1000;
 export const MAX_LOADED_CHUNKS = 2000;
 export const MAX_CHUNK_AGE = 300000;
 export const GC_INTERVAL = 300000;
+
+export const HOLD_PAINT = {
+  OFF: 0,
+  PENCIL: 1,
+  HISTORY: 2,
+  OVERLAY: 3,
+};

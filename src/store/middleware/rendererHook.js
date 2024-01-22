@@ -10,6 +10,9 @@ import {
   getRenderer,
   initRenderer,
 } from '../../ui/rendererFactory';
+import {
+  selectColor,
+} from '../actions';
 
 export default (store) => (next) => (action) => {
   const { type } = action;
@@ -28,7 +31,14 @@ export default (store) => (next) => (action) => {
       );
       break;
     }
-
+    case 'SELECT_HOVER_COLOR': {
+      const renderer = getRenderer();
+      const clr = renderer.getPointedColor();
+      if (clr !== null) {
+        store.dispatch(selectColor(clr));
+      }
+      break;
+    }
     default:
       // nothing
   }
@@ -112,7 +122,26 @@ export default (store) => (next) => (action) => {
 
     case 's/TGL_HISTORICAL_VIEW': {
       const renderer = getRenderer();
-      renderer.updateView(state.view);
+      renderer.updateView(state.canvas.view);
+      break;
+    }
+
+    case 's/SELECT_HOLD_PAINT': {
+      if (action.value) {
+        const renderer = getRenderer();
+        renderer.controls?.holdPaintStarted?.(action.immediate);
+      }
+      break;
+    }
+
+    case 's/SET_MOVE_U':
+    case 's/SET_MOVE_V':
+    case 's/SET_MOVE_W':
+    case 's/CANCEL_MOVE': {
+      if (!action.value) {
+        const renderer = getRenderer();
+        renderer.storeViewInState();
+      }
       break;
     }
 

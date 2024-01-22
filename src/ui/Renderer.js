@@ -95,6 +95,10 @@ class Renderer {
 
   updateCanvasData() {}
 
+  getPointedColor() {
+    return null;
+  }
+
   isChunkInView() {
     return true;
   }

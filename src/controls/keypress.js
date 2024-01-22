@@ -10,14 +10,72 @@ import {
   togglePixelNotify,
   toggleMute,
   selectCanvas,
+  selectHoverColor,
+  selectHoldPaint,
+  setMoveU,
+  setMoveV,
+  setMoveW,
 } from '../store/actions';
+import {
+  HOLD_PAINT,
+} from '../core/constants';
 import {
   notify,
 } from '../store/actions/thunks';
 
-const usedKeys = ['g', 'h', 'x', 'm', 'r', 'p'];
+const charKeys = ['g', 'h', 'x', 'm', 'r', 'p', '+', '-'];
 
-function createKeyPressHandler(store) {
+export function createKeyUpHandler(store) {
+  return (event) => {
+    /*
+     * key locations
+     */
+    switch (event.code) {
+      case 'ArrowUp':
+      case 'KeyW':
+        store.dispatch(setMoveV(0));
+        return;
+      case 'ArrowLeft':
+      case 'KeyA':
+        store.dispatch(setMoveU(0));
+        return;
+      case 'ArrowDown':
+      case 'KeyS':
+        store.dispatch(setMoveV(0));
+        return;
+      case 'ArrowRight':
+      case 'KeyD':
+        store.dispatch(setMoveU(0));
+        return;
+      case 'KeyE':
+        store.dispatch(setMoveW(0));
+        return;
+      case 'KeyQ':
+        store.dispatch(setMoveW(0));
+        return;
+      default:
+    }
+
+    /*
+     * key char
+     */
+    switch (event.key) {
+      case '+':
+        store.dispatch(setMoveW(0));
+        return;
+      case '-':
+        store.dispatch(setMoveW(0));
+        return;
+      case 'Shift':
+      case 'CapsLock':
+        store.dispatch(selectHoldPaint(HOLD_PAINT.OFF));
+        break;
+      default:
+    }
+  };
+}
+
+export function createKeyDownHandler(store) {
   return (event) => {
     // ignore key presses if modal is open or chat is used
     if (event.target.nodeName === 'INPUT'
@@ -45,11 +103,69 @@ function createKeyPressHandler(store) {
     }
 
     /*
+     * key locations
+     */
+    switch (event.code) {
+      case 'ArrowUp':
+      case 'KeyW':
+        store.dispatch(setMoveV(-1));
+        return;
+      case 'ArrowLeft':
+      case 'KeyA':
+        store.dispatch(setMoveU(-1));
+        return;
+      case 'ArrowDown':
+      case 'KeyS':
+        store.dispatch(setMoveV(1));
+        return;
+      case 'ArrowRight':
+      case 'KeyD':
+        store.dispatch(setMoveU(1));
+        return;
+      case 'KeyE':
+        store.dispatch(setMoveW(1));
+        return;
+      case 'KeyQ':
+        store.dispatch(setMoveW(-1));
+        return;
+      default:
+    }
+
+    /*
+     * key char
+     */
+    switch (event.key) {
+      case '+':
+        store.dispatch(setMoveW(1));
+        return;
+      case '-':
+        store.dispatch(setMoveW(-1));
+        return;
+      case 'Control':
+        store.dispatch(selectHoverColor(-1));
+        return;
+      case 'Shift': {
+        if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {
+          // left shift
+          store.dispatch(selectHoldPaint(HOLD_PAINT.PENCIL), true);
+          return;
+        }
+        if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {
+          // right shift
+          store.dispatch(selectHoldPaint(HOLD_PAINT.HISTORY), true);
+          return;
+        }
+        return;
+      }
+      default:
+    }
+
+    /*
      * if char of key isn't used by a keybind,
      * we check if the key location is where a
      * key that is used would be on QWERTY
      */
-    if (!usedKeys.includes(key)) {
+    if (!charKeys.includes(key)) {
       key = event.code;
       if (!key.startsWith('Key')) {
         return;
@@ -98,5 +214,3 @@ function createKeyPressHandler(store) {
     }
   };
 }
-
-export default createKeyPressHandler;

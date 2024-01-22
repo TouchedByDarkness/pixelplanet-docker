@@ -166,6 +166,12 @@ class Renderer2D extends Renderer {
     return this.chunkLoader.getColorIndexOfPixel(cx, cy);
   }
 
+  getPointedColor() {
+    return this.getColorIndexOfPixel(
+      ...this.store.getState().canvas.hover,
+    );
+  }
+
   updateView(view, origin) {
     let [x, y, scale] = view;
     const state = this.store.getState();

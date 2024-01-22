@@ -62,7 +62,7 @@ class ChunkLoader2D extends ChunkLoader {
     const key = `${this.canvasMaxTiledZoom}:${cx}:${cy}`;
     const chunk = this.cget(key);
     if (!chunk) {
-      return 0;
+      return null;
     }
     return chunk.getColorIndex(
       getCellInsideChunk(canvasSize, [x, y]),

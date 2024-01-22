@@ -1,3 +1,5 @@
+import { HOLD_PAINT } from '../../core/constants';
+
 const initialState = {
   showGrid: false,
   showPixelNotify: false,
@@ -6,7 +8,6 @@ const initialState = {
   isLightGrid: false,
   compactPalette: false,
   paletteOpen: true,
-  pencilEnabled: false,
   mute: false,
   chatNotify: true,
   // top-left button menu
@@ -15,6 +16,11 @@ const initialState = {
   onlineCanvas: false,
   // selected theme
   style: 'default',
+  // properties that aren't saved
+  holdPaint: HOLD_PAINT.OFF,
+  moveU: 0,
+  moveV: 0,
+  moveW: 0,
 };
 
 
@@ -79,17 +85,29 @@ export default function gui(
       };
     }
 
-    case 's/TGL_PENCIL': {
-      return {
-        ...state,
-        pencilEnabled: !state.pencilEnabled,
-      };
-    }
-
     case 's/TGL_OPEN_MENU': {
       return {
         ...state,
         menuOpen: !state.menuOpen,
+      };
+    }
+
+    case 's/TGL_MUTE':
+      return {
+        ...state,
+        mute: !state.mute,
+      };
+
+    case 's/TGL_CHAT_NOTIFY':
+      return {
+        ...state,
+        chatNotify: !state.chatNotify,
+      };
+
+    case 's/SELECT_HOLD_PAINT': {
+      return {
+        ...state,
+        holdPaint: action.value,
       };
     }
 
@@ -117,22 +135,43 @@ export default function gui(
       };
     }
 
-    case 's/TGL_MUTE':
+    case 's/SET_MOVE_U': {
       return {
         ...state,
-        mute: !state.mute,
+        moveU: action.value,
       };
+    }
 
-    case 's/TGL_CHAT_NOTIFY':
+    case 's/SET_MOVE_V': {
       return {
         ...state,
-        chatNotify: !state.chatNotify,
+        moveV: action.value,
       };
+    }
+
+    case 's/SET_MOVE_W': {
+      return {
+        ...state,
+        moveW: action.value,
+      };
+    }
+
+    case 's/CANCEL_MOVE': {
+      return {
+        ...state,
+        moveU: 0,
+        moveV: 0,
+        moveW: 0,
+      };
+    }
 
     case 'persist/REHYDRATE':
       return {
         ...state,
-        pencilEnabled: false,
+        holdPaint: HOLD_PAINT.OFF,
+        moveU: 0,
+        moveV: 0,
+        moveW: 0,
       };
 
     default:
