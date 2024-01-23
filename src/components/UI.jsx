@@ -33,6 +33,9 @@ const UI = () => {
   return (
     <>
       <Alert />
+      {(showMvmCtrls
+        || (isOnMobile && (is3D || (holdPaint > 0) && !isHistoricalView))
+      ) && <MovementControls />}
       {(isHistoricalView) ? (
         <HistorySelect />
       ) : (
@@ -40,8 +43,6 @@ const UI = () => {
           <PalselButton />
           <Palette />
           {(!is3D) && <GlobeButton />}
-          {(showMvmCtrls || ((is3D || holdPaint) && isOnMobile))
-            && <MovementControls />}
           {(!is3D && isOnMobile) && <PencilButton />}
           <CoolDownBox />
         </>
