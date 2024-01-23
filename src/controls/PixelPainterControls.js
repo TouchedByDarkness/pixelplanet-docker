@@ -224,7 +224,6 @@ class PixelPainterControls {
 
   onTouchStart(event) {
     event.preventDefault();
-    event.stopPropagation();
     document.activeElement.blur();
 
     this.renderer.cancelStoreViewInState();
@@ -262,7 +261,6 @@ class PixelPainterControls {
 
   onTouchEnd(event) {
     event.preventDefault();
-    event.stopPropagation();
     if (event.touches.length) {
       // still other touches left
       return;
@@ -394,6 +392,7 @@ class PixelPainterControls {
 
   onWheel(event) {
     event.preventDefault();
+    event.stopPropagation();
     document.activeElement.blur();
 
     const { deltaY } = event;
