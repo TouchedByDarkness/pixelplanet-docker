@@ -6,7 +6,8 @@ apps:
     watch_delay: 5000
     env:
       PORT: 5000
-      HOST: "localhost"
+      HOST: "0.0.0.0"
+      #HOST: "localhost"
       REDIS_URL: 'redis://localhost:6379'
       MYSQL_HOST: "localhost"
       MYSQL_USER: "pixelplanet"
