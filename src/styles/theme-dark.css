@@ -67,6 +67,16 @@ tr:nth-child(even) {
   color: #f4f4f4;
 }
 
+#pencilbutton.ppencil {
+  background-color: rgba(131, 147, 19, 0.8);
+}
+#pencilbutton.phistory {
+  background-color: rgba(31, 84, 111, 0.8);
+}
+#pencilbutton.poverlay {
+  background-color: rgba(117, 31, 31, 0.8);
+}
+
 .menu > div {
   z-index: 1;
   background-color: #15374fd1;

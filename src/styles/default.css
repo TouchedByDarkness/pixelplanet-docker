@@ -464,6 +464,15 @@ tr:nth-child(even) {
   left: 16px;
   transition: bottom 300ms ease-in-out;
 }
+#pencilbutton.ppencil {
+  background-color: rgba(240, 232, 169, 0.8);
+}
+#pencilbutton.phistory {
+  background-color: rgba(171, 240, 169, 0.8);
+}
+#pencilbutton.poverlay {
+  background-color: rgba(240, 169, 169, 0.8);
+}
 
 #historyselect {
   position: fixed;
