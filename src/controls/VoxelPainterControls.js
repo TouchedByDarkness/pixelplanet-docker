@@ -122,9 +122,10 @@ class VoxelPainterControls {
   storeViewInStateTime = Date.now();
   prevTime = Date.now();
   offset = new Vector3();
-  direction = new Vector3();
   velocity = new Vector3();
   vec = new Vector3();
+  // force full update next tick
+  forceNextUpdate = true;
 
   constructor(renderer, camera, target, domElement, store) {
     this.renderer = renderer;
@@ -177,10 +178,12 @@ class VoxelPainterControls {
 
   rotateLeft(angle) {
     this.sphericalDelta.theta -= angle;
+    this.forceNextUpdate = true;
   }
 
   rotateUp(angle) {
     this.sphericalDelta.phi -= angle;
+    this.forceNextUpdate = true;
   }
 
   // deltaX and deltaY are in pixels; right and down are positive
@@ -209,6 +212,7 @@ class VoxelPainterControls {
     }
     v.multiplyScalar(distance);
     this.panOffset.add(v);
+    this.forceNextUpdate = true;
   }
 
   //
@@ -381,6 +385,7 @@ class VoxelPainterControls {
     dollyDelta.set(0, (dollyEnd.y / dollyStart.y) ** zoomSpeed);
     this.scale /= dollyDelta.y;
     dollyStart.copy(dollyEnd);
+    this.forceNextUpdate = true;
   }
 
   handleTouchMoveDollyPan(event) {
@@ -601,44 +606,51 @@ class VoxelPainterControls {
     const time = Date.now();
     const state = this.store.getState();
     const { moveU, moveV, moveW } = state.gui;
+    const isMoving = (moveU || moveV || moveW);
 
     if (!(force
       || this.state !== STATE.NONE
       || this.forceNextUpdate
-      || moveU || moveV || moveW
+      || isMoving
     )) {
       this.prevTime = time;
       return false;
     }
     this.forceNextUpdate = false;
-
-    const delta = (time - this.prevTime) / 1000.0;
     this.prevTime = time;
 
     const {
       camera,
-      target,
-      velocity,
-      direction,
-      offset,
-      vec,
-      spherical,
       panOffset,
-      sphericalDelta,
     } = this;
 
-    velocity.set(-moveU, moveW, moveV)
-      .normalize()
-      .multiplyScalar(1000.0 * delta);
+    if (isMoving) {
+      const {
+        velocity,
+        vec,
+      } = this;
+      const delta = (time - this.prevTime) / 1000.0;
 
-    vec.setFromMatrixColumn(camera.matrix, 0);
-    vec.crossVectors(camera.up, vec);
-    vec.multiplyScalar(-velocity.z * delta);
-    vec.y += -velocity.y * delta;
-    panOffset.add(vec);
-    vec.setFromMatrixColumn(camera.matrix, 0);
-    vec.multiplyScalar(-velocity.x * delta);
-    panOffset.add(vec);
+      velocity.set(-moveU, moveW, moveV)
+        .normalize()
+        .multiplyScalar(1000.0 * delta);
+
+      vec.setFromMatrixColumn(camera.matrix, 0);
+      vec.crossVectors(camera.up, vec);
+      vec.multiplyScalar(-velocity.z * delta);
+      vec.y += -velocity.y * delta;
+      panOffset.add(vec);
+      vec.setFromMatrixColumn(camera.matrix, 0);
+      vec.multiplyScalar(-velocity.x * delta);
+      panOffset.add(vec);
+    }
+
+    const {
+      target,
+      offset,
+      spherical,
+      sphericalDelta,
+    } = this;
 
     offset.copy(camera.position).sub(target);
 
@@ -677,23 +689,13 @@ class VoxelPainterControls {
       panOffset.set(0, 0, 0);
     }
     target.add(panOffset);
-    /*
-    if (scope.target.y < 10.0) {
-      scope.target.y = 10.0;
-    }
-    */
 
     // clamp to boundaries
     const bound = state.canvas.canvasSize / 2;
-    target.clamp({
-      x: -bound,
-      y: 0,
-      z: -bound,
-    }, {
-      x: bound,
-      y: THREE_CANVAS_HEIGHT,
-      z: bound,
-    });
+    target.clamp(
+      { x: -bound, y: 0, z: -bound },
+      { x: bound, y: THREE_CANVAS_HEIGHT, z: bound },
+    );
 
     offset.setFromSpherical(spherical);
 
