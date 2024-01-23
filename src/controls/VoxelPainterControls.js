@@ -103,10 +103,6 @@ class VoxelPainterControls {
   spherical = new Spherical();
   sphericalDelta = new Spherical();
   //
-  moveU = 0;
-  moveV = 0;
-  moveW = 0;
-  //
   scale = 1;
   panOffset = new Vector3();
   rotateStart = new Vector2();
@@ -145,8 +141,6 @@ class VoxelPainterControls {
     this.onMouseMove = this.onMouseMove.bind(this);
     this.onMouseUp = this.onMouseUp.bind(this);
     this.onMouseWheel = this.onMouseWheel.bind(this);
-    this.onDocumentKeyDown = this.onDocumentKeyDown.bind(this);
-    this.onDocumentKeyUp = this.onDocumentKeyUp.bind(this);
     this.onTouchStart = this.onTouchStart.bind(this);
     this.onTouchEnd = this.onTouchEnd.bind(this);
     this.onTouchMove = this.onTouchMove.bind(this);
@@ -154,8 +148,6 @@ class VoxelPainterControls {
     this.domElement.addEventListener('contextmenu', this.onContextMenu, false);
     this.domElement.addEventListener('mousedown', this.onMouseDown, false);
     this.domElement.addEventListener('wheel', this.onMouseWheel, false);
-    document.addEventListener('keydown', this.onDocumentKeyDown, false);
-    document.addEventListener('keyup', this.onDocumentKeyUp, false);
     this.domElement.addEventListener('touchstart', this.onTouchStart, false);
     this.domElement.addEventListener('touchend', this.onTouchEnd, false);
     this.domElement.addEventListener('touchmove', this.onTouchMove, false);
@@ -181,8 +173,6 @@ class VoxelPainterControls {
     domElement.removeEventListener('touchmove', this.onTouchMove, false);
     document.removeEventListener('mousemove', this.onMouseMove, false);
     document.removeEventListener('mouseup', this.onMouseUp, false);
-    document.removeEventListener('keydown', this.onDocumentKeyDown, false);
-    document.removeEventListener('keyup', this.onDocumentKeyUp, false);
   }
 
   rotateLeft(angle) {
@@ -406,74 +396,6 @@ class VoxelPainterControls {
   // eslint-disable-next-line class-methods-use-this
   handleTouchEnd() {}
 
-  //
-  // event handlers - FSM: listen for events and reset state
-  //
-  //
-  onDocumentKeyDown(event) {
-    // ignore key presses if modal is open or chat is used
-    if (event.target.nodeName === 'INPUT'
-      || event.target.nodeName === 'TEXTAREA'
-    ) {
-      return;
-    }
-
-    switch (event.code) {
-      case 'ArrowUp':
-      case 'KeyW':
-        this.moveV = -1;
-        return;
-      case 'ArrowLeft':
-      case 'KeyA':
-        this.moveU = -1;
-        return;
-      case 'ArrowDown':
-      case 'KeyS':
-        this.moveV = 1;
-        return;
-      case 'ArrowRight':
-      case 'KeyD':
-        this.moveU = 1;
-        return;
-      case 'KeyE':
-        this.moveW = 1;
-        return;
-      case 'KeyQ':
-        this.moveW = -1;
-
-      default:
-    }
-  }
-
-  onDocumentKeyUp(event) {
-    switch (event.code) {
-      case 'ArrowUp':
-      case 'KeyW':
-        this.moveV = 0;
-        return;
-      case 'ArrowLeft':
-      case 'KeyA':
-        this.moveU = 0;
-        return;
-      case 'ArrowDown':
-      case 'KeyS':
-        this.moveV = 0;
-        return;
-      case 'ArrowRight':
-      case 'KeyD':
-        this.moveU = 0;
-        return;
-      case 'KeyE':
-        this.moveW = 0;
-        return;
-      case 'KeyQ':
-        this.moveW = 0;
-
-      default:
-    }
-  }
-
-
   onMouseMove(event) {
     event.preventDefault();
 
@@ -677,7 +599,8 @@ class VoxelPainterControls {
 
   update(force) {
     const time = Date.now();
-    const { moveU, moveV, moveW } = this;
+    const state = this.store.getState();
+    const { moveU, moveV, moveW } = state.gui;
 
     if (!(force
       || this.state !== STATE.NONE
@@ -704,20 +627,9 @@ class VoxelPainterControls {
       sphericalDelta,
     } = this;
 
-    velocity.x -= velocity.x * 40.0 * delta;
-    velocity.y -= velocity.y * 40.0 * delta;
-    velocity.z -= velocity.z * 40.0 * delta;
-    const length = velocity.length();
-    if (length < 1 || length > 10) {
-      velocity.set(0, 0, 0);
-    }
-
-    direction.set(moveU, -moveW, -moveV);
-    direction.normalize();
-
-    if (moveU) velocity.x -= direction.x * 1000.0 * delta;
-    if (moveW) velocity.y -= direction.y * 1000.0 * delta;
-    if (moveV) velocity.z -= direction.z * 1000.0 * delta;
+    velocity.set(-moveU, moveW, moveV)
+      .normalize()
+      .multiplyScalar(1000.0 * delta);
 
     vec.setFromMatrixColumn(camera.matrix, 0);
     vec.crossVectors(camera.up, vec);
@@ -772,8 +684,7 @@ class VoxelPainterControls {
     */
 
     // clamp to boundaries
-    const { canvasSize } = this.store.getState().canvas;
-    const bound = canvasSize / 2;
+    const bound = state.canvas.canvasSize / 2;
     target.clamp({
       x: -bound,
       y: 0,
