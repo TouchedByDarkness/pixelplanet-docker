@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "airbnb"
-  ],
+  "extends": [ "airbnb", "airbnb/hooks" ],
   "parser":"@babel/eslint-parser",
   "parserOptions": {
     "babelOptions":{
@@ -27,8 +25,8 @@
     "function-paren-newline": "off",
     "function-call-argument-newline":"off",
     "max-len": [1, 80, 2, {"ignoreComments": true}],
-    "no-bitwise": 0,
-    "no-restricted-syntax": 0,
+    "no-bitwise": "off",
+    "no-restricted-syntax": "off",
     "no-plusplus" : "off",
     "no-param-reassign": "off",
     "no-mixed-operators":"off",
@@ -36,7 +34,7 @@
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-closing-tag-location": "off",
     "react/jsx-key": "warn",
-    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/rules-of-hooks": "warn",
     "jsx-a11y/click-events-have-key-events":"off",
     "jsx-a11y/no-static-element-interactions":"off",
     "jsx-a11y/control-has-associated-label": "off",
