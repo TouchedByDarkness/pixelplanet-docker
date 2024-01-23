@@ -5,8 +5,6 @@ module.exports = function (api) {
     // react-optimize
     '@babel/transform-react-constant-elements',
     '@babel/transform-react-inline-elements',
-    'transform-react-remove-prop-types',
-    'transform-react-pure-class-to-function',
   ];
 
   const presets = [
