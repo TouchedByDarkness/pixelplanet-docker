@@ -30,6 +30,8 @@ class PixelPainterControls {
   clickTapStartTime = 0;
   clickTapStartCoords = [0, 0];
   tapStartDist = 50;
+  // stored speed for acceleration
+  speedScalar = 0;
   // on mouse: true as long as left mouse button is pressed
   isClicking = false;
   // on touch: true if more than one finger on screen
@@ -523,20 +525,24 @@ class PixelPainterControls {
   update() {
     let time = Date.now();
     const { moveU, moveV, moveW } = this.store.getState().gui;
+    const isAccelerating = (moveU || moveV || moveW);
 
-    if (!(moveU || moveV || moveW)) {
+    if (!isAccelerating) {
       this.prevTime = time;
+      this.speedScalar = 0;
       return false;
     }
     // set to time since last tick
     time -= this.prevTime;
     this.prevTime += time;
 
+    this.speedScalar = Math.min(1, this.speedScalar + 0.025);
+
     const [x, y, scale] = this.renderer.view;
 
-    const directionalStep = time * 0.4 / scale;
+    const directionalStep = time * 0.4 / scale * this.speedScalar;
     let scaleFactor = scale >= 1.0 ? 1.0005 : 1.0003;
-    scaleFactor **= moveW;
+    scaleFactor **= moveW * this.speedScalar;
 
     this.renderer.updateView([
       x + directionalStep * moveU,
