@@ -682,23 +682,13 @@ class VoxelPainterControls {
       panOffset.set(0, 0, 0);
     }
     target.add(panOffset);
-    /*
-    if (scope.target.y < 10.0) {
-      scope.target.y = 10.0;
-    }
-    */
 
     // clamp to boundaries
     const bound = state.canvas.canvasSize / 2;
-    target.clamp({
-      x: -bound,
-      y: 0,
-      z: -bound,
-    }, {
-      x: bound,
-      y: THREE_CANVAS_HEIGHT,
-      z: bound,
-    });
+    target.clamp(
+      { x: -bound, y: 0, z: -bound },
+      { x: bound, y: THREE_CANVAS_HEIGHT, z: bound },
+    );
 
     offset.setFromSpherical(spherical);
 
