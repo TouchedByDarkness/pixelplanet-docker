@@ -53,7 +53,7 @@ const SettingsItemSelect = ({
   </div>
 );
 
-function Settings() {
+const Settings = () => {
   const [
     isGridShown,
     isPixelNotifyShown,
@@ -194,6 +194,6 @@ function Settings() {
       )}
     </div>
   );
-}
+};
 
 export default React.memo(Settings);

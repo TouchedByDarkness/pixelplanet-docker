@@ -65,7 +65,7 @@ const HistorySelect = () => {
       setTime(date, newTimes[0]);
     }
     setSubmitting(false);
-  }, [submitting, times]);
+  }, [submitting, canvasId, setTime]);
 
   const changeTime = useCallback(async (diff) => {
     if (!times.length
@@ -97,7 +97,7 @@ const HistorySelect = () => {
 
     setTimes(newTimes);
     setTime(newSelectedDate, newTimes[newPos]);
-  }, [historicalTime, times, submitting]);
+  }, [historicalTime, times, canvasId, setTime]);
 
   const selectedDate = stringToDate(historicalDate);
   const selectedTime = stringToTime(historicalTime);

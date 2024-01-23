@@ -19,7 +19,7 @@ function usePostMessage(iFrameRef, callback) {
     window.addEventListener('message', handleMessage, false);
 
     return () => window.removeEventListener('message', handleMessage);
-  }, []);
+  }, [iFrameRef]);
 }
 
 export default usePostMessage;

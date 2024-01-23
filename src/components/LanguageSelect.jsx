@@ -11,12 +11,11 @@ import { t } from 'ttag';
 import { MONTH } from '../core/constants';
 
 function LanguageSelect() {
-  const { lang, langs } = window.ssv;
-
-  const [langSel, setLangSel] = useState(lang);
+  const [langSel, setLangSel] = useState(window.ssv.lang);
   const [ccSel, setCCSel] = useState('xx');
 
   useEffect(() => {
+    const { langs } = window.ssv;
     for (let i = 0; i < langs.length; i += 1) {
       const [lc, cc] = langs[i];
       if (lc === langSel) {
@@ -41,7 +40,7 @@ function LanguageSelect() {
           }}
         >
           {
-            langs.map(([l]) => (
+            window.ssv.langs.map(([l]) => (
               <option
                 key={l}
                 value={l}

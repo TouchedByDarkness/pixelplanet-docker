@@ -122,7 +122,6 @@ class VoxelPainterControls {
   storeViewInStateTime = Date.now();
   prevTime = Date.now();
   offset = new Vector3();
-  direction = new Vector3();
   velocity = new Vector3();
   vec = new Vector3();
   // forcing next update
@@ -622,7 +621,6 @@ class VoxelPainterControls {
       camera,
       target,
       velocity,
-      direction,
       offset,
       vec,
       spherical,

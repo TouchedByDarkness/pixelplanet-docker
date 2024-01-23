@@ -59,6 +59,8 @@ const Captcha = ({ autoload, width, setLegit }) => {
     if (autoload) {
       reloadCaptcha();
     }
+  // intentionally only executed on first render
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const contWidth = width || 100;

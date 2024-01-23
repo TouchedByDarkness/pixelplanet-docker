@@ -145,6 +145,7 @@ function Converter() {
     extraOpts,
     scaleData,
     gridData,
+    canvases,
   ]);
 
   const {
@@ -171,17 +172,17 @@ function Converter() {
     if (showExtraOptions) {
       setTimeout(() => setExtraRender(true), 10);
     }
-  }, [selectedStrategy]);
+  }, [showExtraOptions]);
   useEffect(() => {
     if (gridEnabled) {
       setTimeout(() => setGridRender(true), 10);
     }
-  }, [gridData.enabled]);
+  }, [gridEnabled]);
   useEffect(() => {
     if (scalingEnabled) {
       setTimeout(() => setScalingRender(true), 10);
     }
-  }, [scaleData.enabled]);
+  }, [scalingEnabled]);
 
   const gimpLink = <a href="https://www.gimp.org">GIMP</a>;
 

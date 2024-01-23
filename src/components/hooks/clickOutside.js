@@ -19,7 +19,7 @@ export function useConditionalClickOutside(insideRefs, active, callback) {
       || !ref.current.contains(event.target))) {
       callback();
     }
-  }, [callback]);
+  }, [callback, insideRefs]);
 
   const handleWindowResize = useCallback(() => {
     callback();
@@ -37,7 +37,7 @@ export function useConditionalClickOutside(insideRefs, active, callback) {
       });
       window.removeEventListener('resize', handleWindowResize);
     }
-  }, [active, callback]);
+  }, [active, handleClickOutside, handleWindowResize]);
 }
 
 /*

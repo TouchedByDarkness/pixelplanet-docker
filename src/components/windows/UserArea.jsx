@@ -42,7 +42,7 @@ const UserArea = () => {
       activeTab: label,
     });
     setTitle(label);
-  }, [setArgs]);
+  }, [setArgs, setTitle]);
 
   useInterval(() => {
     if (Date.now() - 300000 > lastStatsFetch) {

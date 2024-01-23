@@ -17,7 +17,7 @@ const NotifyBox = () => {
         setClassName(newClassName);
       }
     }
-  }, [notification]);
+  }, [notification, className]);
 
   return (
     <div

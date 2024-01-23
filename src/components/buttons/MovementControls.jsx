@@ -59,7 +59,7 @@ const MovementControls = () => {
         break;
       default:
     }
-  }, []);
+  }, [dispatch]);
 
   const onPressStop = useCallback((event) => {
     event.preventDefault();
@@ -84,12 +84,12 @@ const MovementControls = () => {
         break;
       default:
     }
-  }, []);
+  }, [dispatch]);
 
   const onCancel = useCallback((event) => {
     event.preventDefault();
     dispatch(cancelMove());
-  }, []);
+  }, [dispatch]);
 
   const refCallBack = useCallback((node) => {
     if (!node) {

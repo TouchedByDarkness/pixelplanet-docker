@@ -51,7 +51,7 @@ const ChannelDropDown = ({
         setType(chType);
       }
     }
-  }, [show]);
+  }, [show, channels, chatChannel]);
 
   useEffect(() => {
     const cids = Object.keys(channels);
@@ -90,7 +90,7 @@ const ChannelDropDown = ({
     if (i === cids.length) {
       setUnreadAny(false);
     }
-  }, [channels, unread]);
+  }, [channels, unread, mute, unreadAny]);
 
   useEffect(() => {
     const cids = Object.keys(channels);

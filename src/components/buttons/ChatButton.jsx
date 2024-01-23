@@ -69,7 +69,7 @@ const ChatButton = () => {
     if (i === cids.length) {
       setUnreadAny(false);
     }
-  });
+  }, [chatNotify, chatOpen, channels, unread, mute]);
 
   return (
     <div

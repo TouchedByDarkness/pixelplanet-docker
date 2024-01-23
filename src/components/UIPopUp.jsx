@@ -28,7 +28,7 @@ const UIPopUp = () => {
     setTitle: (title) => dispatch(setWindowTitle(title)),
     // eslint-disable-next-line max-len
     changeType: (newType, newTitle, newArgs) => dispatch(changeWindowType(newType, newTitle, newArgs)),
-  }), [args]);
+  }), [args, dispatch]);
 
   return (
     <div

@@ -126,7 +126,7 @@ function useLink() {
 
     // open within window
     contextData.changeType(windowType, title, args);
-  }, [contextData]);
+  }, [contextData, dispatch]);
 }
 
 export default useLink;

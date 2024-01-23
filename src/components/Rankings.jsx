@@ -83,7 +83,7 @@ const Rankings = () => {
       return null;
     }
     return getOnlineStatsData(onlineStats, pHourlyStats);
-  }, [area, onlineStats]);
+  }, [area, onlineStats, pHourlyStats]);
 
   const onlineOpts = useMemo(() => {
     if (area !== 'charts') {

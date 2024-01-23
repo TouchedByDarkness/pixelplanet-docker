@@ -1,6 +1,4 @@
 /*
- * @flex
- *
  * can be used in react components
  * to trigger on window resize
  */

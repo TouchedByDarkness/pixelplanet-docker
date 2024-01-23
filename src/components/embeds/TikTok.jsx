@@ -27,7 +27,7 @@ const TikTok = ({ url }) => {
       }
     }
     fetchData();
-  }, []);
+  }, [url]);
 
   if (!embedCode) {
     return <div>LOADING</div>;

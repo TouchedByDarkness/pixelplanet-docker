@@ -17,12 +17,8 @@ import {
   setMoveV,
   setMoveW,
 } from '../store/actions';
-import {
-  HOLD_PAINT,
-} from '../core/constants';
-import {
-  notify,
-} from '../store/actions/thunks';
+import { HOLD_PAINT } from '../core/constants';
+import { notify } from '../store/actions/thunks';
 
 const charKeys = ['g', 'h', 'x', 'm', 'r', 'p', '+', '-'];
 
