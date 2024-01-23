@@ -10,6 +10,7 @@ import { t } from 'ttag';
 import useLongPress from '../hooks/useLongPress';
 import { HOLD_PAINT } from '../../core/constants';
 import { selectHoldPaint } from '../../store/actions';
+import { notify } from '../../store/actions/thunks';
 
 const PencilButton = () => {
   const [
@@ -28,29 +29,35 @@ const PencilButton = () => {
       case HOLD_PAINT.PENCIL:
         if (window.ssv?.backupurl) {
           nextMode = HOLD_PAINT.HISTORY;
+          dispatch(notify(t`History Pencil ON`));
           break;
         }
       // eslint-disable-next-line no-fallthrough
       case HOLD_PAINT.HISTORY:
         if (window.let_me_cheat) {
           nextMode = HOLD_PAINT.OVERLAY;
+          dispatch(notify(t`Overlay Pencil ON`));
           break;
         }
       // eslint-disable-next-line no-fallthrough
       default:
-        nextMode = (holdPaint)
-          ? HOLD_PAINT.OFF
-          : HOLD_PAINT.PENCIL;
+        if (holdPaint) {
+          nextMode = HOLD_PAINT.OFF;
+        } else {
+          nextMode = HOLD_PAINT.PENCIL;
+        }
     }
     dispatch(selectHoldPaint(nextMode));
   }, [holdPaint, dispatch]);
 
   const onShortPress = useCallback(() => {
-    dispatch(selectHoldPaint(
-      (holdPaint)
-        ? HOLD_PAINT.OFF
-        : HOLD_PAINT.PENCIL,
-    ));
+    let nextMode;
+    if (holdPaint) {
+      nextMode = HOLD_PAINT.OFF;
+    } else {
+      nextMode = HOLD_PAINT.PENCIL;
+    }
+    dispatch(selectHoldPaint(nextMode));
   }, [holdPaint, dispatch]);
 
   const refCallback = useLongPress(onShortPress, onLongPress);
