@@ -88,7 +88,7 @@ const MovementControls = () => {
 
   const onCancel = useCallback((event) => {
     event.preventDefault();
-    // dispatch(cancelMove());
+    dispatch(cancelMove());
   }, []);
 
   const refCallBack = useCallback((node) => {

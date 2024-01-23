@@ -145,7 +145,7 @@ export default function gui(
 
     case 's/SET_MOVE_U': {
       const { value } = action;
-      const moveU = state.moveU + value;
+      const moveU = value;
       return {
         ...state,
         moveU,
@@ -154,7 +154,7 @@ export default function gui(
 
     case 's/SET_MOVE_V': {
       const { value } = action;
-      const moveV = state.moveV + value;
+      const moveV = value;
       return {
         ...state,
         moveV,
@@ -163,7 +163,7 @@ export default function gui(
 
     case 's/SET_MOVE_W': {
       const { value } = action;
-      const moveW = state.moveW + value;
+      const moveW = value;
       return {
         ...state,
         moveW,
