@@ -144,12 +144,12 @@ export function createKeyDownHandler(store) {
       case 'Shift': {
         if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {
           // left shift
-          store.dispatch(selectHoldPaint(HOLD_PAINT.PENCIL), true);
+          store.dispatch(selectHoldPaint(HOLD_PAINT.PENCIL, true));
           return;
         }
         if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {
           // right shift
-          store.dispatch(selectHoldPaint(HOLD_PAINT.HISTORY), true);
+          store.dispatch(selectHoldPaint(HOLD_PAINT.HISTORY, true));
           return;
         }
         return;
