@@ -5,7 +5,7 @@
 
 import { useState, useRef, useCallback } from 'react';
 
-function useLongPress(shortPressCallback, longPressCallback) {
+function useLongPress(shortPressCallback, longPressCallback, timeout = 600) {
   const [pressTimeout, setPressTimeout] = useState(null);
   const btnRef = useRef();
 
@@ -14,8 +14,8 @@ function useLongPress(shortPressCallback, longPressCallback) {
     setPressTimeout(setTimeout(() => {
       longPressCallback(event);
       setPressTimeout(null);
-    }, 600));
-  }, [longPressCallback]);
+    }, timeout));
+  }, [longPressCallback, timeout]);
 
   const release = useCallback((event) => {
     event.preventDefault();
@@ -24,7 +24,9 @@ function useLongPress(shortPressCallback, longPressCallback) {
       return;
     }
     clearTimeout(pressTimeout);
-    shortPressCallback(event);
+    if (shortPressCallback) {
+      shortPressCallback(event);
+    }
     setPressTimeout(null);
   }, [pressTimeout, shortPressCallback]);
 

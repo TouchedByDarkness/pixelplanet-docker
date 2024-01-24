@@ -14,7 +14,7 @@ import useLink from '../hooks/link';
 const CanvasSelect = () => {
   const [canvases, showHiddenCanvases, online] = useSelector((state) => [
     state.canvas.canvases,
-    state.canvas.showHiddenCanvases,
+    state.gui.easterEgg,
     state.ranks.online,
   ], shallowEqual);
   const dispatch = useDispatch();

@@ -2,12 +2,16 @@
  *
  */
 
-import React from 'react';
+import React, { useCallback } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { c, t, jt } from 'ttag';
 import { GiMouse } from 'react-icons/gi';
 import { MdTouchApp } from 'react-icons/md';
 
 import GetIID from '../GetIID';
+import useLongPress from '../hooks/useLongPress';
+import { toggleEasterEgg } from '../../store/actions';
+import { notify } from '../../store/actions/thunks';
 
 /* eslint-disable max-len */
 
@@ -37,8 +41,27 @@ const Help = () => {
   const guildedLink = <a href="https://pixelplanet.fun/guilded">guilded</a>;
   const mailLink = <a href="mailto:admin@pixelplanet.fun">admin@pixelplanet.fun</a>;
 
+  const dispatch = useDispatch();
+  const easterEgg = useSelector((state) => state.gui.easterEgg);
+
+  const onLongPress = useCallback(() => {
+    dispatch(toggleEasterEgg());
+    dispatch(notify((easterEgg)
+      ? t`Easter Egg OFF`
+      : t`Easter Egg ON`));
+  }, [easterEgg, dispatch]);
+  const refCallback = useLongPress(null, onLongPress, 1000);
+
   return (
     <div className="content">
+      <img
+        style={{
+          padding: 2, maxWidth: '20%', verticalAlign: 'middle', display: 'inline-block',
+        }}
+        alt="ppfun"
+        src="./logo.svg"
+        ref={refCallback}
+      />
       <p>
         {t`Place color pixels on a large canvas with other players online!`}<br />
         {t`Our main canvas is a huge worldmap, you can place wherever you like, but you will have to wait a specific \

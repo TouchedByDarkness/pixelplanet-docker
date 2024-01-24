@@ -3,13 +3,6 @@
 import React from 'react';
 import { t } from 'ttag';
 
-const imageStyle = {
-  maxWidth: '20%',
-  padding: 2,
-  display: 'inline-block',
-  verticalAlign: 'middle',
-};
-
 const Archive = () => (
   <div className="content">
     <p>
@@ -18,7 +11,9 @@ const Archive = () => (
     </p>
     <h3>{t`Political Compass Canvas`}</h3>
     <img
-      style={imageStyle}
+      style={{
+        padding: 2, maxWidth: '20%', verticalAlign: 'middle', display: 'inline-block',
+      }}
       alt="political-compass"
       src="https://storage.pixelplanet.fun/compass-preview.png"
     />

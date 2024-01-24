@@ -916,7 +916,7 @@ table td span {
   border-width: thin;
   margin-left: auto;
   margin-right: auto;
-  z-index: 2;
+  z-index: 8;
   transition: visibility 0.5s, opacity 0.5s linear;
   visibility: hidden;
   opacity: 0;
