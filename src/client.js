@@ -39,7 +39,7 @@ persistStore(store, {}, () => {
   window.imMobile = function checkMobile() {
     delete window.imMobile;
     store.dispatch(setMobile(true));
-  }
+  };
   document.addEventListener('touchstart', window.imMobile, { once: true });
 
   // listen for resize

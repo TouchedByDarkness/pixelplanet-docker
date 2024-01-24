@@ -20,22 +20,16 @@ const UI = () => {
     isHistoricalView,
     is3D,
     isOnMobile,
-    showMvmCtrls,
-    holdPaint,
   ] = useSelector((state) => [
     state.canvas.isHistoricalView,
     state.canvas.is3D,
     state.user.isOnMobile,
-    state.gui.showMvmCtrls,
-    state.gui.holdPaint,
   ], shallowEqual);
 
   return (
     <>
       <Alert />
-      {(showMvmCtrls
-        || (isOnMobile && (is3D || (holdPaint > 0) && !isHistoricalView))
-      ) && <MovementControls />}
+      <MovementControls />
       {(isHistoricalView) ? (
         <HistorySelect />
       ) : (
