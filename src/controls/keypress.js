@@ -20,7 +20,7 @@ import {
 import { HOLD_PAINT } from '../core/constants';
 import { notify } from '../store/actions/thunks';
 
-const charKeys = ['g', 'h', 'x', 'm', 'r', 'p', '+', '-'];
+const charKeys = ['g', 'h', 'x', 'm', 'r', 'z', '+', '-'];
 
 export function createKeyUpHandler(store) {
   return (event) => {
@@ -204,7 +204,7 @@ export function createKeyDownHandler(store) {
         store.dispatch(notify(t`Copied!`));
         return;
       }
-      case 'p':
+      case 'z':
         store.dispatch(toggleEasterEgg());
         store.dispatch(notify((store.getState().gui.easterEgg)
           ? t`Easter Egg ON`
