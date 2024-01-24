@@ -115,10 +115,11 @@ class PixelPainterControls {
       const coordsDiff = [
         clickTapStartCoords[0] - clientX,
         clickTapStartCoords[1] - clientY,
-      ];
+      ].map(Math.abs);
       // thresholds for single click / holding
       if (clickTapStartTime > Date.now() - 250
-        && coordsDiff[0] < 2 && coordsDiff[1] < 2) {
+        && coordsDiff[0] < 3 && coordsDiff[1] < 3
+      ) {
         PixelPainterControls.placePixel(
           store,
           renderer,
@@ -273,10 +274,10 @@ class PixelPainterControls {
       const coordsDiff = [
         clickTapStartCoords[0] - pageX,
         clickTapStartCoords[1] - pageY,
-      ];
+      ].map(Math.abs);
       // thresholds for single click / holding
       if (clickTapStartTime > Date.now() - 580
-        && coordsDiff[0] < 2 && coordsDiff[1] < 2
+        && coordsDiff[0] < 3 && coordsDiff[1] < 3
       ) {
         PixelPainterControls.placePixel(
           store,
