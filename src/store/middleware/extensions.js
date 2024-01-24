@@ -111,7 +111,7 @@ export default () => (next) => (action) => {
   switch (type) {
     case 'RELOAD_URL':
     case 's/SELECT_CANVAS':
-    case 's/TGL_HIDDEN_CANVASES':
+    case 's/TGL_EASTER_EGG':
     case 's/REC_ME':
       if (isActive) {
         const renderer = getRenderer();

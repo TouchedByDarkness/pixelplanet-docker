@@ -148,7 +148,6 @@ const initialState = {
   isHistoricalView: false,
   historicalDate: null,
   historicalTime: null,
-  showHiddenCanvases: false,
   hover: null,
   // last canvas view and selectedColor
   // just used to get back to the previous state when switching canvases
@@ -181,13 +180,6 @@ export default function canvasReducer(
         ...state,
         isHistoricalView: !state.isHistoricalView,
       });
-    }
-
-    case 's/TGL_HIDDEN_CANVASES': {
-      return {
-        ...state,
-        showHiddenCanvases: !state.showHiddenCanvases,
-      };
     }
 
     case 'UPDATE_VIEW': {

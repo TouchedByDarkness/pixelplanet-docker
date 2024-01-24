@@ -6,7 +6,7 @@ import copy from '../utils/clipboard';
 import {
   toggleGrid,
   toggleHistoricalView,
-  toggleHiddenCanvases,
+  toggleEasterEgg,
   togglePixelNotify,
   toggleMvmCtrls,
   toggleMute,
@@ -205,10 +205,10 @@ export function createKeyDownHandler(store) {
         return;
       }
       case 'p':
-        store.dispatch(toggleHiddenCanvases());
-        store.dispatch(notify((store.getState().canvas.showHiddenCanvases)
-          ? t`Show Hidden Canvases`
-          : t`Hide Hidden Canvases`));
+        store.dispatch(toggleEasterEgg());
+        store.dispatch(notify((store.getState().gui.easterEgg)
+          ? t`Easter Egg ON`
+          : t`Easter Egg OFF`));
         break;
       default:
     }

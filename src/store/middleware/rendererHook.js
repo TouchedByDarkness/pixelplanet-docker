@@ -80,7 +80,7 @@ export default (store) => (next) => (action) => {
       break;
     }
 
-    case 's/TGL_HIDDEN_CANVASES': {
+    case 's/TGL_EASTER_EGG': {
       const renderer = getRenderer();
       const { is3D } = state.canvas;
       if (is3D) {

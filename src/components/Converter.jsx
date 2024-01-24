@@ -93,7 +93,7 @@ function Converter() {
   ] = useSelector((state) => [
     state.canvas.canvasId,
     state.canvas.canvases,
-    state.canvas.showHiddenCanvases,
+    state.gui.easterEgg,
   ], shallowEqual);
 
   const [selectedCanvas, selectCanvas] = useState(canvasId);

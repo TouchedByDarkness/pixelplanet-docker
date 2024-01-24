@@ -27,9 +27,9 @@ export function toggleHistoricalView() {
   };
 }
 
-export function toggleHiddenCanvases() {
+export function toggleEasterEgg() {
   return {
-    type: 's/TGL_HIDDEN_CANVASES',
+    type: 's/TGL_EASTER_EGG',
   };
 }
 

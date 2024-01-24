@@ -19,6 +19,7 @@ const initialState = {
   style: 'default',
   // properties that aren't saved
   holdPaint: HOLD_PAINT.OFF,
+  easterEgg: false,
   moveU: 0,
   moveV: 0,
   moveW: 0,
@@ -112,6 +113,13 @@ export default function gui(
         chatNotify: !state.chatNotify,
       };
 
+    case 's/TGL_EASTER_EGG': {
+      return {
+        ...state,
+        easterEgg: !state.easterEgg,
+      };
+    }
+
     case 's/SELECT_HOLD_PAINT': {
       return {
         ...state,
@@ -182,6 +190,7 @@ export default function gui(
     case 'persist/REHYDRATE':
       return {
         ...state,
+        easterEgg: false,
         holdPaint: HOLD_PAINT.OFF,
         moveU: 0,
         moveV: 0,
