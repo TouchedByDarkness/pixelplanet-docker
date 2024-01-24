@@ -28,6 +28,7 @@ import ChunkLoader from './ChunkLoader3D';
 import {
   getChunkOfPixel,
   getOffsetOfPixel,
+  getTapOrClickCenter,
 } from '../core/utils';
 import {
   THREE_TILE_SIZE,
@@ -62,12 +63,15 @@ class Renderer3D extends Renderer {
   threeRenderer;
   // temp variables for mouse events
   mouse = new Vector2();
-  mouseMoveStart;
   raycaster = new Raycaster();
   pressTime;
   pressCdTime;
   multitap = 0;
   lastIntersect = 0;
+  // on touch: true if current tab was ever more than one figher at any time
+  wasEverMultiTap = false;
+  // screen coords of where a tap/click started
+  clickTapStartCoords = [0, 0];
 
   constructor(store) {
     super(store);
@@ -187,7 +191,6 @@ class Renderer3D extends Renderer {
       store,
     );
     this.controls = controls;
-
 
     this.onDocumentMouseMove = this.onDocumentMouseMove.bind(this);
     this.onDocumentTouchMove = this.onDocumentTouchMove.bind(this);
@@ -516,13 +519,16 @@ class Renderer3D extends Renderer {
     );
   }
 
-  onDocumentMouseDownOrTouchStart() {
+  onDocumentMouseDownOrTouchStart(event) {
     this.pressTime = Date.now();
-    const state = this.store.getState();
-    this.mouseMoveStart = state.canvas.hover;
+    this.clickTapStartCoords = getTapOrClickCenter(event);
+    this.wasEverMultiTap = (event.touches?.length > 1);
   }
 
-  onDocumentTouchMove() {
+  onDocumentTouchMove(event) {
+    if (event.touches?.length > 1) {
+      this.wasEverMultiTap = true;
+    }
     this.updateRollOverMesh(0, 0);
   }
 
@@ -581,7 +587,7 @@ class Renderer3D extends Renderer {
     );
   }
 
-  multiTapEnd() {
+  multiTapEnd(event) {
     const {
       store,
       multitap,
@@ -589,12 +595,16 @@ class Renderer3D extends Renderer {
     this.multitap = 0;
     const state = store.getState();
 
-    if (!this.mouseMoveStart || !state.canvas.hover) {
+    if (!state.canvas.hover || this.wasEverMultiTap) {
       return;
     }
-    const [px, py, pz] = this.mouseMoveStart;
-    const [qx, qy, qz] = state.canvas.hover;
-    if (px !== qx || py !== qy || pz !== qz) {
+    const [clientX, clientY] = getTapOrClickCenter(event);
+    const { clickTapStartCoords } = this;
+    const coordsDiff = [
+      clickTapStartCoords[0] - clientX,
+      clickTapStartCoords[1] - clientY,
+    ].map(Math.abs);
+    if (coordsDiff[0] > 5 || coordsDiff[1] > 5) {
       return;
     }
 
@@ -605,7 +615,7 @@ class Renderer3D extends Renderer {
         if (this.rollOverMesh.position.y < 0) {
           return;
         }
-        this.placeVoxel(px, py, pz);
+        this.placeVoxel(...state.canvas.hover);
         break;
       }
       case 2: {
@@ -644,6 +654,9 @@ class Renderer3D extends Renderer {
 
   onDocumentTouchEnd(event) {
     event.preventDefault();
+    if (event.touches.length) {
+      return;
+    }
 
     const curTime = Date.now();
     if (curTime - this.pressTime > 600) {
@@ -654,7 +667,7 @@ class Renderer3D extends Renderer {
     // we should reset on every tap
     // but we don't need that right now...
     if (this.multitap === 0) {
-      setTimeout(this.multiTapEnd, 500);
+      setTimeout(() => this.multiTapEnd(event), 500);
     }
     this.multitap += 1;
   }
@@ -680,21 +693,21 @@ class Renderer3D extends Renderer {
       return;
     }
 
-    if (!this.mouseMoveStart || !state.canvas.hover) {
+    if (!state.canvas.hover) {
       return;
     }
-    const [px, py, pz] = this.mouseMoveStart;
-    const [qx, qy, qz] = state.canvas.hover;
-    if (px !== qx || py !== qy || pz !== qz) {
+    const [clientX, clientY] = getTapOrClickCenter(event);
+    const { clickTapStartCoords } = this;
+    const coordsDiff = [
+      clickTapStartCoords[0] - clientX,
+      clickTapStartCoords[1] - clientY,
+    ].map(Math.abs);
+    if (coordsDiff[0] > 5 || coordsDiff[1] > 5) {
       return;
     }
 
     event.preventDefault();
-    const {
-      clientX,
-      clientY,
-      button,
-    } = event;
+    const { button } = event;
     const {
       innerWidth,
       innerHeight,

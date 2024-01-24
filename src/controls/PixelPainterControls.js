@@ -16,6 +16,7 @@ import {
   screenToWorld,
   getChunkOfPixel,
   getOffsetOfPixel,
+  getTapOrClickCenter,
 } from '../core/utils';
 import {
   HOLD_PAINT,
@@ -28,8 +29,9 @@ class PixelPainterControls {
   //
   clickTapStartView = [0, 0];
   clickTapStartTime = 0;
-  clickTapStartCoords = [0, 0];
   tapStartDist = 50;
+  // screen coords of where a tap/click started
+  clickTapStartCoords = [0, 0];
   // stored speed for acceleration
   speedScalar = 0;
   // on mouse: true as long as left mouse button is pressed
@@ -118,7 +120,7 @@ class PixelPainterControls {
       ].map(Math.abs);
       // thresholds for single click / holding
       if (clickTapStartTime > Date.now() - 250
-        && coordsDiff[0] < 3 && coordsDiff[1] < 3
+        && coordsDiff[0] < 6 && coordsDiff[1] < 6
       ) {
         PixelPainterControls.placePixel(
           store,
@@ -231,7 +233,7 @@ class PixelPainterControls {
     this.clearTabTimeout();
     this.isTapPainting = false;
     this.clickTapStartTime = Date.now();
-    this.clickTapStartCoords = PixelPainterControls.getTouchCenter(event);
+    this.clickTapStartCoords = getTapOrClickCenter(event);
     this.clickTapStartView = this.renderer.view;
 
     if (event.touches.length > 1) {
@@ -263,26 +265,25 @@ class PixelPainterControls {
   onTouchEnd(event) {
     event.preventDefault();
     if (event.touches.length) {
-      // still other touches left
       return;
     }
 
     const { store, renderer } = this;
     if (!this.wasEverMultiTap) {
-      const { pageX, pageY } = event.changedTouches[0];
+      const [clientX, clientY] = getTapOrClickCenter(event);
       const { clickTapStartCoords, clickTapStartTime } = this;
       const coordsDiff = [
-        clickTapStartCoords[0] - pageX,
-        clickTapStartCoords[1] - pageY,
+        clickTapStartCoords[0] - clientX,
+        clickTapStartCoords[1] - clientY,
       ].map(Math.abs);
       // thresholds for single click / holding
       if (clickTapStartTime > Date.now() - 580
-        && coordsDiff[0] < 3 && coordsDiff[1] < 3
+        && coordsDiff[0] < 6 && coordsDiff[1] < 6
       ) {
         PixelPainterControls.placePixel(
           store,
           this.renderer,
-          this.screenToWorld([pageX, pageY]),
+          this.screenToWorld([clientX, clientY]),
         );
         setTimeout(() => {
           store.dispatch(unsetHover());
@@ -300,7 +301,7 @@ class PixelPainterControls {
     const multiTouch = (event.touches.length > 1);
     const state = this.store.getState();
 
-    const [clientX, clientY] = PixelPainterControls.getTouchCenter(event);
+    const [clientX, clientY] = getTapOrClickCenter(event);
     if (this.isMultiTap !== multiTouch) {
       this.wasEverMultiTap = true;
       // if one finger got lifted or added, reset clickTabStart
@@ -328,7 +329,7 @@ class PixelPainterControls {
       const [lastPosX, lastPosY] = clickTapStartView;
       const deltaX = clientX - clickTapStartCoords[0];
       const deltaY = clientY - clickTapStartCoords[1];
-      if (deltaX > 2 || deltaY > 2) {
+      if (deltaX > 5 || deltaY > 5) {
         this.clearTabTimeout();
       }
       const { viewscale: scale } = this.renderer;

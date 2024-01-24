@@ -637,6 +637,30 @@ export function getDateKeyOfTs(ts) {
 }
 
 /*
+ * get screen coords of touch / mouse event
+ * @param event MouseEvent or TouchEvent
+ * @return [x, y] in screen coordinates
+ */
+export function getTapOrClickCenter(event) {
+  if (event instanceof TouchEvent) {
+    const touches = (event.touches.length)
+      ? event.touches : event.changedTouches;
+    let x = 0;
+    let y = 0;
+    for (const { pageX, pageY } of touches) {
+      x += pageX;
+      y += pageY;
+    }
+    const { length } = touches;
+    return [x / length, y / length];
+  }
+  return [
+    event.clientX,
+    event.clientY,
+  ];
+}
+
+/*
  * check if parent window exists and
  * is accessible
  */
