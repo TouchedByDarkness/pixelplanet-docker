@@ -637,6 +637,20 @@ export function getDateKeyOfTs(ts) {
 }
 
 /*
+ * get largest distance between axes of array
+ */
+export function getDiff(arr1, arr2) {
+  let largest = 0;
+  for (let i = 0; i < arr1.length; i += 1) {
+    const length = Math.abs(arr1[i] - arr2[i]);
+    if (length > largest) {
+      largest = length;
+    }
+  }
+  return largest;
+}
+
+/*
  * get screen coords of touch / mouse event
  * @param event MouseEvent or TouchEvent
  * @return [x, y] in screen coordinates

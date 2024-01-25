@@ -28,7 +28,6 @@ import ChunkLoader from './ChunkLoader3D';
 import {
   getChunkOfPixel,
   getOffsetOfPixel,
-  getTapOrClickCenter,
 } from '../core/utils';
 import {
   THREE_TILE_SIZE,
@@ -36,7 +35,6 @@ import {
 import {
   setHover,
   unsetHover,
-  selectHoverColor,
 } from '../store/actions';
 import pixelTransferController from './PixelTransferController';
 
@@ -64,14 +62,7 @@ class Renderer3D extends Renderer {
   // temp variables for mouse events
   mouse = new Vector2();
   raycaster = new Raycaster();
-  pressTime;
-  pressCdTime;
-  multitap = 0;
   lastIntersect = 0;
-  // on touch: true if current tab was ever more than one figher at any time
-  wasEverMultiTap = false;
-  // screen coords of where a tap/click started
-  clickTapStartCoords = [0, 0];
 
   constructor(store) {
     super(store);
@@ -194,26 +185,9 @@ class Renderer3D extends Renderer {
 
     this.onDocumentMouseMove = this.onDocumentMouseMove.bind(this);
     this.onDocumentTouchMove = this.onDocumentTouchMove.bind(this);
-    // eslint-disable-next-line max-len
-    this.onDocumentMouseDownOrTouchStart = this.onDocumentMouseDownOrTouchStart.bind(this);
-    this.onDocumentMouseUp = this.onDocumentMouseUp.bind(this);
     this.onWindowResize = this.onWindowResize.bind(this);
-    this.onDocumentTouchEnd = this.onDocumentTouchEnd.bind(this);
-    this.multiTapEnd = this.multiTapEnd.bind(this);
     domElement.addEventListener('mousemove', this.onDocumentMouseMove, false);
     domElement.addEventListener('touchmove', this.onDocumentTouchMove, false);
-    domElement.addEventListener(
-      'mousedown',
-      this.onDocumentMouseDownOrTouchStart,
-      false,
-    );
-    domElement.addEventListener(
-      'touchstart',
-      this.onDocumentMouseDownOrTouchStart,
-      false,
-    );
-    domElement.addEventListener('touchend', this.onDocumentTouchEnd, false);
-    domElement.addEventListener('mouseup', this.onDocumentMouseUp, false);
     window.addEventListener('resize', this.onWindowResize, false);
 
     this.updateCanvasData(state);
@@ -511,25 +485,34 @@ class Renderer3D extends Renderer {
   }
 
   onDocumentMouseMove(event) {
-    event.preventDefault();
-
     this.updateRollOverMesh(
       (event.clientX / window.innerWidth) * 2 - 1,
       -(event.clientY / window.innerHeight) * 2 + 1,
     );
   }
 
-  onDocumentMouseDownOrTouchStart(event) {
-    this.pressTime = Date.now();
-    this.clickTapStartCoords = getTapOrClickCenter(event);
-    this.wasEverMultiTap = (event.touches?.length > 1);
+  onDocumentTouchMove(event) {
+    if (this.rollOverMesh.position.y !== -10) {
+      console.log('unset hover');
+      this.store.dispatch(unsetHover());
+      this.rollOverMesh.position.y = -10;
+    }
   }
 
-  onDocumentTouchMove(event) {
-    if (event.touches?.length > 1) {
-      this.wasEverMultiTap = true;
+  castRay([clientX, clientY]) {
+    const {
+      mouse, camera, raycaster, objects,
+    } = this;
+    mouse.set(
+      (clientX / window.innerWidth) * 2 - 1,
+      -(clientY / window.innerHeight) * 2 + 1,
+    );
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObjects(objects);
+    if (intersects.length > 0) {
+      return intersects[0];
     }
-    this.updateRollOverMesh(0, 0);
+    return null;
   }
 
   getPointedColor() {
@@ -540,7 +523,6 @@ class Renderer3D extends Renderer {
       camera,
     } = this;
     raycaster.setFromCamera(mouse, camera);
-
     const intersects = raycaster.intersectObjects(objects);
     if (intersects.length <= 0) {
       return null;
@@ -585,188 +567,6 @@ class Renderer3D extends Renderer {
       chClr,
       curColor,
     );
-  }
-
-  multiTapEnd(event) {
-    const {
-      store,
-      multitap,
-    } = this;
-    this.multitap = 0;
-    const state = store.getState();
-
-    if (!state.canvas.hover || this.wasEverMultiTap) {
-      return;
-    }
-    const [clientX, clientY] = getTapOrClickCenter(event);
-    const { clickTapStartCoords } = this;
-    const coordsDiff = [
-      clickTapStartCoords[0] - clientX,
-      clickTapStartCoords[1] - clientY,
-    ].map(Math.abs);
-    if (coordsDiff[0] > 5 || coordsDiff[1] > 5) {
-      return;
-    }
-
-    switch (multitap) {
-      case 1: {
-        // single tap
-        // Place Voxel
-        if (this.rollOverMesh.position.y < 0) {
-          return;
-        }
-        this.placeVoxel(...state.canvas.hover);
-        break;
-      }
-      case 2: {
-        // double tap
-        // Remove Voxel
-        const {
-          mouse,
-          raycaster,
-          camera,
-          objects,
-        } = this;
-        mouse.set(0, 0);
-        raycaster.setFromCamera(mouse, camera);
-        const intersects = raycaster.intersectObjects(objects);
-        if (intersects.length > 0) {
-          const intersect = intersects[0];
-          const target = intersect.point.clone()
-            .add(intersect.face.normal.multiplyScalar(-0.5))
-            .floor()
-            .addScalar(0.5)
-            .floor();
-          if (target.y < 0) {
-            return;
-          }
-          if (target.clone().sub(camera.position).length() <= 50) {
-            const [x, y, z] = target.toArray();
-            this.placeVoxel(x, y, z, 0);
-          }
-        }
-        break;
-      }
-      default:
-        break;
-    }
-  }
-
-  onDocumentTouchEnd(event) {
-    event.preventDefault();
-    if (event.touches.length) {
-      return;
-    }
-
-    const curTime = Date.now();
-    if (curTime - this.pressTime > 600) {
-      this.multitap = 0;
-      return;
-    }
-    // if we want to do something with triple tap,
-    // we should reset on every tap
-    // but we don't need that right now...
-    if (this.multitap === 0) {
-      setTimeout(() => this.multiTapEnd(event), 500);
-    }
-    this.multitap += 1;
-  }
-
-  onDocumentMouseUp(event) {
-    const curTime = Date.now();
-    if (curTime - this.pressCdTime < 200) {
-      return;
-    }
-    if (curTime - this.pressTime > 500) {
-      this.pressCdTime = curTime;
-      return;
-    }
-
-    const state = this.store.getState();
-    const {
-      isOnMobile,
-    } = state.user;
-    const {
-      fetchingPixel,
-    } = state.fetching;
-    if (fetchingPixel || isOnMobile) {
-      return;
-    }
-
-    if (!state.canvas.hover) {
-      return;
-    }
-    const [clientX, clientY] = getTapOrClickCenter(event);
-    const { clickTapStartCoords } = this;
-    const coordsDiff = [
-      clickTapStartCoords[0] - clientX,
-      clickTapStartCoords[1] - clientY,
-    ].map(Math.abs);
-    if (coordsDiff[0] > 5 || coordsDiff[1] > 5) {
-      return;
-    }
-
-    event.preventDefault();
-    const { button } = event;
-    const {
-      innerWidth,
-      innerHeight,
-    } = window;
-    const {
-      store,
-      mouse,
-    } = this;
-
-    mouse.set(
-      (clientX / innerWidth) * 2 - 1,
-      -(clientY / innerHeight) * 2 + 1,
-    );
-
-    if (button === 1) {
-      // middle mouse button
-      store.dispatch(selectHoverColor());
-      return;
-    }
-
-    const {
-      camera,
-      objects,
-      raycaster,
-    } = this;
-
-    raycaster.setFromCamera(mouse, camera);
-
-    const intersects = raycaster.intersectObjects(objects);
-    if (intersects.length > 0) {
-      const intersect = intersects[0];
-
-      if (button === 0) {
-        // left mouse button
-        const target = intersect.point.clone()
-          .add(intersect.face.normal.multiplyScalar(0.5))
-          .floor()
-          .addScalar(0.5)
-          .floor();
-        if (target.clone().sub(camera.position).length() < 120) {
-          const [x, y, z] = target.toArray();
-          this.placeVoxel(x, y, z);
-        }
-      } else if (button === 2) {
-        // right mouse button
-        const target = intersect.point.clone()
-          .add(intersect.face.normal.multiplyScalar(-0.5))
-          .floor()
-          .addScalar(0.5)
-          .floor();
-        if (target.y < 0) {
-          return;
-        }
-        if (target.clone().sub(camera.position).length() < 120) {
-          const [x, y, z] = target.toArray();
-          this.placeVoxel(x, y, z, 0);
-        }
-      }
-    }
   }
 }
 

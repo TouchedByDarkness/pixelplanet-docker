@@ -27,6 +27,13 @@ import {
   THREE_CANVAS_HEIGHT,
   VIEW_UPDATE_DELAY,
 } from '../core/constants';
+import {
+  getDiff,
+  getTapOrClickCenter,
+} from '../core/utils';
+import {
+  selectHoverColor,
+} from '../store/actions';
 
 const STORE_UPDATE_DELAY = VIEW_UPDATE_DELAY / 2;
 // Mouse buttons
@@ -126,6 +133,14 @@ class VoxelPainterControls {
   vec = new Vector3();
   // forcing next update
   forceNextUpdate = false;
+  // start of touch or click
+  clickTapStartTime = 0;
+  // on touch: true if current tab was ever more than one figher at any time
+  wasEverMultiTap = false;
+  // screen coords of where a tap/click started
+  clickTapStartCoords = [0, 0];
+  // on touch: timeout to detect long-press
+  tapTimeout = null;
 
   constructor(renderer, camera, target, domElement, store) {
     this.renderer = renderer;
@@ -276,9 +291,6 @@ class VoxelPainterControls {
     panStart.copy(panEnd);
   }
 
-  // eslint-disable-next-line class-methods-use-this
-  handleMouseUp() {}
-
   handleMouseWheel(event) {
     const scaleDelta = 0.95 ** zoomSpeed;
     if (event.deltaY < 0) {
@@ -394,8 +406,102 @@ class VoxelPainterControls {
     if (enableRotate) this.handleTouchMoveRotate(event);
   }
 
-  // eslint-disable-next-line class-methods-use-this
-  handleTouchEnd() {}
+  placeVoxelOnScreen(screenCoords, allowedDistance) {
+    const intersect = this.renderer.castRay(screenCoords);
+    if (!intersect) {
+      return;
+    }
+    const target = intersect.point.clone()
+      .add(intersect.face.normal.multiplyScalar(0.5))
+      .floor()
+      .addScalar(0.5)
+      .floor();
+    if (target.clone().sub(this.camera.position).length() < allowedDistance) {
+      const [x, y, z] = target.toArray();
+      this.renderer.placeVoxel(x, y, z);
+    }
+  }
+
+  deleteVoxelOnScreen(screenCoords, allowedDistance) {
+    const intersect = this.renderer.castRay(screenCoords);
+    if (!intersect) {
+      return;
+    }
+    const target = intersect.point.clone()
+      .add(intersect.face.normal.multiplyScalar(-0.5))
+      .floor()
+      .addScalar(0.5)
+      .floor();
+    if (target.y < 0) {
+      return;
+    }
+    if (target.clone().sub(this.camera.position).length() < allowedDistance) {
+      const [x, y, z] = target.toArray();
+      this.renderer.placeVoxel(x, y, z, 0);
+    }
+  }
+
+  selectColorOnScreen(screenCoords) {
+    // selectHoverColor doesn't actually do anything with the coords
+    this.store.dispatch(selectHoverColor(screenCoords));
+  }
+
+  handleMouseUp(event) {
+    if (!this.clickTapStartTime
+      || Date.now() - this.clickTapStartTime > 300
+      || this.store.getState().fetching.fetchingPixel
+    ) {
+      return;
+    }
+    const screenCoords = getTapOrClickCenter(event);
+    if (getDiff(screenCoords, this.clickTapStartCoords) > 6) {
+      return;
+    }
+
+    switch (event.button) {
+      case 0:
+        // left
+        this.placeVoxelOnScreen(screenCoords, 120);
+        break;
+      case 1:
+        // middle
+        this.selectColorOnScreen(screenCoords);
+        break;
+      case 2:
+        // right
+        this.deleteVoxelOnScreen(screenCoords, 120);
+        break;
+      default:
+    }
+  }
+
+  handleTouchEnd(event) {
+    if (event.touches.length
+      || !this.clickTapStartTime
+      || Date.now() - this.clickTapStartTime > 300
+      || this.store.getState().fetching.fetchingPixel
+    ) {
+      return;
+    }
+    const screenCoords = getTapOrClickCenter(event);
+    if (getDiff(screenCoords, this.clickTapStartCoords) > 6) {
+      return;
+    }
+    this.placeVoxelOnScreen(screenCoords, 90);
+  }
+
+  onLongTap(event) {
+    if (!this.clickTapStartTime
+      || this.store.getState().fetching.fetchingPixel
+    ) {
+      return;
+    }
+    const screenCoords = getTapOrClickCenter(event);
+    if (getDiff(screenCoords, this.clickTapStartCoords) > 6) {
+      return;
+    }
+    this.deleteVoxelOnScreen(screenCoords, 90);
+  }
 
   onMouseMove(event) {
     event.preventDefault();
@@ -417,6 +523,7 @@ class VoxelPainterControls {
 
   onMouseUp(event) {
     this.handleMouseUp(event);
+    this.clickTapStartTime = 0;
     document.removeEventListener('mousemove', this.onMouseMove, false);
     document.removeEventListener('mouseup', this.onMouseUp, false);
     this.state = STATE.NONE;
@@ -438,6 +545,17 @@ class VoxelPainterControls {
 
   onTouchStart(event) {
     event.preventDefault();
+
+    if (event.touches.length === 1) {
+      this.clickTapStartTime = Date.now();
+      this.clickTapStartCoords = getTapOrClickCenter(event);
+      this.tapTimeout = setTimeout(() => {
+        this.onLongTap(event);
+      }, 600);
+    } else {
+      this.clickTapStartTime = 0;
+      clearTimeout(this.tapTimeout);
+    }
 
     switch (event.touches.length) {
       case 1:
@@ -489,6 +607,12 @@ class VoxelPainterControls {
     event.preventDefault();
     event.stopPropagation();
 
+    const screenCoords = getTapOrClickCenter(event);
+    if (getDiff(screenCoords, this.clickTapStartCoords) > 6) {
+      clearTimeout(this.tapTimeout);
+      this.clickTapStartTime = 0;
+    }
+
     switch (this.state) {
       case STATE.TOUCH_ROTATE:
         if (!enableRotate) {
@@ -520,7 +644,12 @@ class VoxelPainterControls {
   }
 
   onTouchEnd(event) {
-    this.handleTouchEnd(event);
+    event.preventDefault();
+    if (!event.touches.length) {
+      clearTimeout(this.tapTimeout);
+      this.handleTouchEnd(event);
+      this.clickTapStartTime = 0;
+    }
     this.state = STATE.NONE;
   }
 
@@ -532,6 +661,8 @@ class VoxelPainterControls {
   onMouseDown(event) {
     // Prevent the browser from scrolling.
     event.preventDefault();
+    this.clickTapStartTime = Date.now();
+    this.clickTapStartCoords = getTapOrClickCenter(event);
 
     // Manually set the focus since calling preventDefault above
     // prevents the browser from setting it automatically.

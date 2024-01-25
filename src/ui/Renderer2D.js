@@ -409,6 +409,7 @@ class Renderer2D extends Renderer {
           context.fillRect(x, y, TILE_SIZE, TILE_SIZE);
         } else {
           chunk = this.chunkLoader.getChunk(tiledZoom, cx, cy);
+          // TODO is chunk nnow an object or image? it doesnt make any sense
           if (chunk) {
             context.drawImage(chunk, x, y);
             if (touch) {
