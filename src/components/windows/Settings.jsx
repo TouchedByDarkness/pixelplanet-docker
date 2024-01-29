@@ -8,6 +8,7 @@ import { c, t } from 'ttag';
 
 import SettingsItem from '../SettingsItem';
 import LanguageSelect from '../LanguageSelect';
+import TemplateSettings from '../TemplateSettings';
 import {
   toggleGrid,
   togglePixelNotify,
@@ -80,7 +81,6 @@ const Settings = () => {
     state.canvas.isHistoricalView,
   ], shallowEqual);
   const dispatch = useDispatch();
-
   const audioAvailable = window.AudioContext || window.webkitAudioContext;
 
   return (
@@ -192,6 +192,12 @@ const Settings = () => {
           </div>
         </div>
       )}
+      <div className="modaldivider" />
+      <h3>{t`Templates`}</h3>
+      <p>
+        {t`Tired of always spaming one single color? Want to create art instead, but you have to count pixels from some other image? Templates can help you with that! Templates can show as overlay and you can draw over them. One pixel on the template, should be one pixel on the canvas.`}
+      </p>
+      <TemplateSettings />
     </div>
   );
 };

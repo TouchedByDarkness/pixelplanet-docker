@@ -10,11 +10,11 @@ import { jt, t } from 'ttag';
 import {
   ColorDistanceCalculators,
   ImageQuantizerKernels,
-  readFileIntoCanvas,
   scaleImage,
   quantizeImage,
   addGrid,
-} from '../utils/image';
+} from '../utils/imageFilters';
+import { fileToCanvas } from '../utils/imageFiles';
 import printGIMPPalette from '../core/exportGPL';
 import { copyCanvasToClipboard } from '../utils/clipboard';
 
@@ -247,7 +247,7 @@ function Converter() {
           const fileSel = evt.target;
           const file = (!fileSel.files || !fileSel.files[0])
             ? null : fileSel.files[0];
-          const imageData = await readFileIntoCanvas(file);
+          const imageData = await fileToCanvas(file);
           setInputImageCanvas(null);
           setScaleData({
             enabled: false,

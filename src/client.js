@@ -21,6 +21,7 @@ import pixelTransferController from './ui/PixelTransferController';
 import store from './store/store';
 import renderApp from './components/App';
 import { getRenderer } from './ui/rendererFactory';
+import templateLoader from './ui/templateLoader';
 import socketClient from './socket/SocketClient';
 import { GC_INTERVAL } from './core/constants';
 
@@ -30,6 +31,9 @@ persistStore(store, {}, () => {
   store.dispatch({ type: 'HYDRATED' });
 
   pixelTransferController.initialize(store, socketClient, getRenderer);
+
+  // TODO should be in middleware
+  templateLoader.initialize(store);
 
   window.addEventListener('hashchange', () => {
     store.dispatch(urlChange());

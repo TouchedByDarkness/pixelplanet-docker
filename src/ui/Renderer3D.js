@@ -491,9 +491,8 @@ class Renderer3D extends Renderer {
     );
   }
 
-  onDocumentTouchMove(event) {
+  onDocumentTouchMove() {
     if (this.rollOverMesh.position.y !== -10) {
-      console.log('unset hover');
       this.store.dispatch(unsetHover());
       this.rollOverMesh.position.y = -10;
     }

@@ -102,32 +102,6 @@ export function scaleImage(imgCanvas, width, height, doAA) {
 }
 
 /*
- * read File object into canvas
- * @param file
- * @return HTMLCanvas
- */
-export function readFileIntoCanvas(file) {
-  return new Promise((resolve, reject) => {
-    const fr = new FileReader();
-    fr.onload = () => {
-      const img = new Image();
-      img.onload = () => {
-        const cani = document.createElement('canvas');
-        cani.width = img.width;
-        cani.height = img.height;
-        const ctxi = cani.getContext('2d');
-        ctxi.drawImage(img, 0, 0);
-        resolve(cani);
-      };
-      img.onerror = (error) => reject(error);
-      img.src = fr.result;
-    };
-    fr.onerror = (error) => reject(error);
-    fr.readAsDataURL(file);
-  });
-}
-
-/*
  * converts pointContainer to HTMLCanvas
  * @param pointContainer
  * @return HTMLCanvas

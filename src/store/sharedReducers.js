@@ -12,6 +12,7 @@ import ranks from './reducers/ranks';
 import chatRead from './reducers/chatRead';
 import user from './reducers/user';
 import canvas from './reducers/canvas';
+import templates from './reducers/templates';
 import chat from './reducers/chat';
 import fetching from './reducers/fetching';
 
@@ -48,10 +49,18 @@ const chatReadPersist = persistReducer({
   migrate,
 }, chatRead);
 
+const templatesPersist = persistReducer({
+  key: 'tem',
+  storage,
+  version: CURRENT_VERSION,
+  migrate,
+}, templates);
+
 export default {
   gui: guiPersist,
   ranks: ranksPersist,
   chatRead: chatReadPersist,
+  templates: templatesPersist,
   user,
   canvas,
   chat,

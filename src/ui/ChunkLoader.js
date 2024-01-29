@@ -20,12 +20,11 @@ import {
 class ChunkLoader {
   #store;
   // Map of chunkId: chunkRGB
-  #chunks;
+  #chunks = new Map();
   #canvasId;
 
   constructor(store, canvasId) {
     this.#store = store;
-    this.#chunks = new Map();
     this.#canvasId = canvasId;
   }
 

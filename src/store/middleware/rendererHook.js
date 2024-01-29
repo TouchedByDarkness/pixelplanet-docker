@@ -64,6 +64,7 @@ export default (store) => (next) => (action) => {
         initRenderer(store, is3D);
       }
 
+      // TODO this looks shade, i.e. when a nwe Renderer appears
       if (state.canvas.isHistoricalView) {
         const {
           historicalDate,
