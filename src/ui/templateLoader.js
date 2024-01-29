@@ -6,7 +6,11 @@ import FileStorage from '../utils/FileStorage';
 import {
   removeTemplate,
   listTemplate,
+  updatedTemplateImage,
+  changeTemplate,
+  templatesReady,
 } from '../store/actions/templates';
+import { bufferToBase64, base64ToBuffer } from '../core/utils';
 import Template from './Template';
 
 const STORE_NAME = 'templates';
@@ -20,13 +24,21 @@ class TemplateLoader {
   ready = false;
 
   async initialize(store) {
-    this.#store = store;
-    await this.#fileStorage.initialize();
-    await this.syncDB();
-    this.ready = true;
+    try {
+      this.#store = store;
+      await this.#fileStorage.initialize();
+      this.ready = true;
+      this.#store.dispatch(templatesReady());
+      await this.syncDB();
+    } catch (err) {
+      console.warn(`Couldn't initialize Templates: ${err.message}`);
+    }
   }
 
   async getTemplate(id) {
+    if (!this.ready) {
+      return null;
+    }
     let template = this.#templates.get(id);
     if (template) {
       return template.image;
@@ -88,6 +100,7 @@ class TemplateLoader {
         throw new Error('File does not exist in indexedDB');
       }
       const { mimetype, buffer } = fileData;
+      console.log('mime', mimetype, 'buffer', buffer);
       const template = new Template(imageId);
       await template.fromBuffer(buffer, mimetype);
       this.#templates.set(imageId, template);
@@ -105,16 +118,11 @@ class TemplateLoader {
    * @param element optional image or canvas element where file is already loaded,
    *                can be used to avoid having to load it multiple times
    */
-  async addFile(file, title, canvasId, x, y, element = null) {
+  async addFile(file, title, canvasId, x, y) {
     try {
       const imageId = await this.#fileStorage.saveFile(file);
       const template = new Template(imageId);
-      let dimensions;
-      if (element) {
-        dimensions = await template.fromImage(element);
-      } else {
-        dimensions = await template.fromFile(file);
-      }
+      const dimensions = await template.fromFile(file);
       this.#templates.set(imageId, template);
       this.#store.dispatch(listTemplate(
         imageId, title, canvasId, x, y, ...dimensions,
@@ -122,6 +130,89 @@ class TemplateLoader {
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error(`Error saving template ${title}: ${err.message}`);
+    }
+  }
+
+  async updateFile(imageId, file) {
+    try {
+      await this.#fileStorage.updateFile(imageId, file);
+      const template = new Template(imageId);
+      const dimensions = await template.fromFile(file);
+      this.#templates.set(imageId, template);
+      this.#store.dispatch(updatedTemplateImage(imageId, ...dimensions));
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(`Error updating file ${imageId}: ${err.message}`);
+    }
+  }
+
+  changeTemplate(title, props) {
+    this.#store.dispatch(changeTemplate(title, props));
+  }
+
+  deleteTemplate(title) {
+    const { list } = this.#store.getState().templates;
+    const tData = list.find((z) => z.title === title)
+    if (!tData) {
+      return;
+    }
+    const { imageId } = tData;
+    this.#store.dispatch(removeTemplate(title));
+    this.#fileStorage.deleteFile(imageId);
+    this.#templates.delete(imageId);
+  }
+  
+  async exportEnabledTemplates() {
+    const { list } = this.#store.getState().templates;
+    const tDataList = list.filter((z) => z.enabled);
+    const temps = await this.#fileStorage.loadFile(
+      tDataList.map((z) => z.imageId),
+    );
+    const serilizableObj = [];
+    for (let i = 0; i < tDataList.length; i += 1) {
+      const { buffer, mimetype } = temps[i];
+      console.log('mimetype', mimetype);
+      serilizableObj.push({
+        ...tDataList[i],
+        // eslint-disable-next-line no-await-in-loop
+        buffer: await bufferToBase64(buffer),
+        mimetype,
+      });
+    }
+    return serilizableObj;
+  }
+  
+  async importTemplates(file) {
+    const tDataList = JSON.parse(await file.text());
+    const bufferList = await Promise.all(
+      tDataList.map((z) => base64ToBuffer(z.buffer)),
+    );
+    const fileList = [];
+    for (let i = 0; i < tDataList.length; i += 1) {
+      const { mimetype } = tDataList[i];
+      console.log('mimetype', mimetype, 'buffer', bufferList[i]);
+      fileList.push(new Blob([bufferList[i]], { type: mimetype }));
+    }
+    const { list } = this.#store.getState().templates;
+    const imageIdList = await this.#fileStorage.saveFile(fileList);
+    const idsToDelete = [];
+    for (let i = 0; i < tDataList.length; i += 1) {
+      const { x, y, width, height, canvasId, title } = tDataList[i];
+      const imageId = imageIdList[i];
+      const existing = list.find((z) => z.title === title);
+      if (existing) {
+        idsToDelete.push(existing.imageId);
+        this.changeTemplate(title, {
+          imageId, title, canvasId, x, y, width, height,
+        });
+      } else {
+        this.#store.dispatch(listTemplate(
+          imageId, title, canvasId, x, y, width, height,
+        ));
+      }
+    }
+    if (idsToDelete.length) {
+      this.#fileStorage.deleteFile(idsToDelete);
     }
   }
 }

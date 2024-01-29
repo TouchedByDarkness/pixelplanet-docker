@@ -688,3 +688,25 @@ export function parentExists() {
     return false;
   }
 }
+
+export function bufferToBase64(array) {
+  return new Promise((resolve) => {
+    const blob = new Blob([array]);
+    const reader = new FileReader();
+    
+    reader.onload = (event) => {
+      const dataUrl = event.target.result;
+      const [_, base64] = dataUrl.split(',');
+      
+      resolve(base64);
+    };
+    
+    reader.readAsDataURL(blob);
+  });
+}
+
+export async function base64ToBuffer(base64) {
+  const dataUrl = "data:application/octet-binary;base64," + base64;
+  const res = await fetch(dataUrl);
+  return res.arrayBuffer();
+}

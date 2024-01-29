@@ -67,6 +67,7 @@ const Settings = () => {
     isMuted,
     chatNotify,
     isHistoricalView,
+    templatesAvailable,
   ] = useSelector((state) => [
     state.gui.showGrid,
     state.gui.showPixelNotify,
@@ -79,6 +80,7 @@ const Settings = () => {
     state.gui.mute,
     state.gui.chatNotify,
     state.canvas.isHistoricalView,
+    state.templates.available,
   ], shallowEqual);
   const dispatch = useDispatch();
   const audioAvailable = window.AudioContext || window.webkitAudioContext;
@@ -193,11 +195,7 @@ const Settings = () => {
         </div>
       )}
       <div className="modaldivider" />
-      <h3>{t`Templates`}</h3>
-      <p>
-        {t`Tired of always spaming one single color? Want to create art instead, but you have to count pixels from some other image? Templates can help you with that! Templates can show as overlay and you can draw over them. One pixel on the template, should be one pixel on the canvas.`}
-      </p>
-      <TemplateSettings />
+      {(templatesAvailable) && <TemplateSettings />}
     </div>
   );
 };

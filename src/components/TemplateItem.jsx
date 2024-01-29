@@ -14,7 +14,6 @@ const TemplateItem = ({
   enabled, title, canvasId, x, y, width, height, imageId, startEditing,
 }) => {
   const imgRef = useRef();
-  const [canvasTitle, setCanvasTitle] = useState('Earth');
   const canvases = useSelector((state) => state.canvas.canvases);
   const dispatch = useDispatch();
 
@@ -27,19 +26,25 @@ const TemplateItem = ({
       if (!previewImg) {
         return;
       }
-      imgRef.current.getContext('2d').drawImage(previewImg, 0, 0);
+      console.log('rerendering image', imageId, previewImg);
+      const bitmap = await createImageBitmap(previewImg);
+      imgRef.current.getContext('bitmaprenderer')
+        .transferFromImageBitmap(bitmap);
+      bitmap.close();
     })();
   }, [imageId]);
 
   return (
     <div
       className={(enabled) ? 'tmpitm' : 'tmpitm disabled'}
+      style={{ cursor: 'pointer' }}
       onClick={() => dispatch(changeTemplate(title, { enabled: !enabled }))}
     >
       <div className="tmpitm-preview">
         <canvas
           className="tmpitm-img"
           ref={imgRef}
+          key="showimg"
           width={width}
           height={height}
         />

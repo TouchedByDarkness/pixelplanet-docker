@@ -71,6 +71,47 @@ export default function templates(
       };
     }
 
+    case 's/REM_TEMPLATE': {
+      return {
+        ...state,
+        list: state.list.filter((t) => t.title !== action.title),
+      };
+    }
+
+    case 's/UPD_TEMPLATE_IMG': {
+      const { imageId, width, height } = action;
+      const { list } = state;
+      const index = list.findIndex((t) => t.imageId === imageId);
+      if (index === -1) {
+        return state;
+      }
+      return {
+        ...state,
+        list: [
+          ...list.slice(0, index),
+          {
+            ...list[index],
+            imageId,
+            width,
+            height,
+          },
+          ...list.slice(index + 1),
+        ],
+      };
+    }
+    
+    case 'TEMPLATES_READY':
+      return {
+        ...state,
+        available: true,
+      };
+
+    case 'persist/REHYDRATE':
+      return {
+        ...state,
+        available: false,
+      };
+
     default:
       return state;
   }

@@ -316,7 +316,6 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: row;
   align-items: center;
-  cursor: pointer;
 }
 
 .tmpitm.disabled {
@@ -356,9 +355,9 @@ tr:nth-child(even) {
 
 .centered-on-img {
   position: relative;
-  transform: translateY(-99px);
+  transform: translateY(-96px);
   line-height: 96px;
-  background: #e6e6e6d1;
+  background: #e6e6e6a6;
   white-space: nowrap;
   max-width: 96px;
   height: 96px;

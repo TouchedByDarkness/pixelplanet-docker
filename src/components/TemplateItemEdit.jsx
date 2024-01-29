@@ -5,44 +5,41 @@
 import React, {
   useRef, useState, useEffect, useMemo,
 } from 'react';
-import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import { useSelector, shallowEqual } from 'react-redux';
 import { t } from 'ttag';
 
 import templateLoader from '../ui/templateLoader';
-import { changeTemplate } from '../store/actions/templates';
-import { selectCanvas, setViewCoordinates } from '../store/actions';
 import { coordsFromUrl } from '../core/utils';
 
-const TemplateItem = ({
+const TemplateItemEdit = ({
   title: initTitle,
   canvasId: initCanvasId,
   x: initX, y: initY,
-  width: initWidth, height: initHeight,
-  imageId: initImageId,
+  imageId,
   stopEditing,
 }) => {
   const [initCoords, initDimensions] = useMemo(() => [
     (Number.isNaN(parseInt(initX, 10))
       || Number.isNaN(parseInt(initY, 10))) ? null : [initX, initY],
-    (Number.isNaN(parseInt(initWidth, 10))
-      || Number.isNaN(parseInt(initHeight, 10))) ? null : [initWidth, initHeight],
-  ], [initX, initY, initWidth, initHeight]);
+  ], [initX, initY]);
 
   const [coords, setCoords] = useState(initCoords);
   const [dimensions, setDimensions] = useState(initDimensions);
-  const [title, setTitle] = useState(initTitle);
+  const [title, setTitle] = useState(initTitle || '');
   const [file, setFile] = useState(null);
-  const [imageId, setImageId] = useState(initImageId);
+  const [titleUnique, setTitleUnique] = useState(true);
   const imgRef = useRef();
+  const fileRef = useRef();
   const [
     storeCanvasId,
     canvases,
+    templateList,
   ] = useSelector((state) => [
     state.canvas.canvasId,
     state.canvas.canvases,
+    state.templates.list,
   ], shallowEqual);
-  const [selectedCanvas, selectCanvas] = useState(initCanvasId ?? storeCanvasId);
-  const dispatch = useDispatch();
+  const [canvasId, selectCanvas] = useState(initCanvasId ?? storeCanvasId);
 
   useEffect(() => {
     (async () => {
@@ -53,36 +50,78 @@ const TemplateItem = ({
       if (!previewImg) {
         return;
       }
+      const bitmap = await createImageBitmap(previewImg);
       const canvas = imgRef.current;
-      canvas.width = previewImg.width;
-      canvas.height = previewImg.height;
-      canvas.getContext('2d').drawImage(previewImg, 0, 0);
+      const { width, height } = bitmap;
+      canvas.width = width;
+      canvas.height = height;
+      canvas.getContext('bitmaprenderer').transferFromImageBitmap(bitmap);
+      setDimensions([width, height]);
+      bitmap.close();
     })();
   }, [imageId]);
 
-  const canSubmit = (imgRef.current && file && coords && title && dimensions);
+  useEffect(() => {
+    if (!file || !imgRef.current) {
+      return;
+    }
+    (async () => {
+      const bitmap = await createImageBitmap(file);
+      const canvas = imgRef.current;
+      const { width, height } = bitmap;
+      canvas.width = width;
+      canvas.height = height;
+      canvas.getContext('bitmaprenderer').transferFromImageBitmap(bitmap);
+      setDimensions([width, height]);
+      bitmap.close();
+    })();
+  }, [file]);
+
+  const canSubmit = (imgRef.current && (file || imageId)
+    && titleUnique && coords && title && dimensions);
 
   return (
     <div className="tmpitm">
       <div className="tmpitm-preview">
-        <canvas
-          className="tmpitm-img"
-          ref={imgRef}
-          style={{ opacity: 0.4 }}
+        <div style={{ width: '100%', height: '100%' }}>
+          <canvas
+            className="tmpitm-img"
+            ref={imgRef}
+            key="editimg"
+            style={{ opacity: 0.4 }}
+          />
+        </div>
+        <div
+          className="centered-on-img modallink"
+          onClick={(evt) => fileRef.current?.click()}
+        >{t`Select File`}</div>
+        <input
+          type="file"
+          key="hinpt"
+          accept="image/*"
+          ref={fileRef}
+          style={{ display: 'none' }}
+          onChange={(evt) => {
+            setDimensions(null);
+            setFile(evt.target.files?.[0]);
+          }}
         />
-        <div className="centered-on-img modallink">{t`Select File`}</div>
       </div>
       <div className="tmpitm-desc">
         <h4><input
           value={title}
           style={{ width: '10em' }}
           type="text"
-          onChange={(evt) => setTitle(evt.target.value)}
+          onChange={(evt) => {
+            const newTitle = evt.target.value;
+            setTitleUnique(!templateList.some((t) => t.title === newTitle));
+            setTitle(evt.target.value);
+          }}
           placeholder={t`Template Name`}
         /></h4>
         <p>{t`Canvas`}:&nbsp;
           <span><select
-            value={selectedCanvas}
+            value={canvasId}
             onChange={(e) => {
               const sel = e.target;
               selectCanvas(sel.options[sel.selectedIndex].value);
@@ -117,23 +156,54 @@ const TemplateItem = ({
           /></span>
         </p>
         <p>
-          {t`Dimensions`}:&nbsp;<span>{(dimensions) ? dimensions.join(' x ') : 'N/A'}</span>
+          {t`Dimensions`}:&nbsp;<span>
+            {(dimensions) ? dimensions.join(' x ') : 'N/A'}
+          </span>
         </p>
       </div>
       <div className="tmpitm-actions">
-        <button>
-          {t`Delete`}
-        </button>
+        {(initTitle) && (
+          <button
+            onClick={() => {
+              stopEditing(initTitle);
+              templateLoader.deleteTemplate(initTitle);
+            }}
+          >
+            {t`Delete`}
+          </button>
+        )}
         <button
-          onClick={(evt) => {
-            evt.stopPropagation();
-            stopEditing(title);
-          }}
+          onClick={(evt) => stopEditing(title)}
         >
           {t`Cancel`}
         </button>
         <button
           disabled={!canSubmit}
+          onClick={async (evt) => {
+            if (!canSubmit) {
+              return;
+            }
+            const [x, y] = coords;
+            if (!initTitle) {
+              console.log('Create new template');
+              await templateLoader.addFile(file, title, canvasId, x, y);
+            } else {
+              if (file && imageId) {
+                console.log('file changed for id', imageId);
+                await templateLoader.updateFile(imageId, file);
+              }
+              if (initTitle
+                && (initTitle !== title || initX !== x
+                || initY !== y || initCanvasId !== canvasId
+                )) {
+                console.log(`template ${title} changed`);
+                templateLoader.changeTemplate(initTitle, {
+                  title, canvasId, x, y,
+                });
+              }
+            }
+            stopEditing(initTitle);
+          }}
         >
           {t`Save`}
         </button>
@@ -142,4 +212,4 @@ const TemplateItem = ({
   );
 };
 
-export default React.memo(TemplateItem);
+export default React.memo(TemplateItemEdit);

@@ -49,7 +49,7 @@ class FileStorage {
 
       request.onerror = () => {
         console.error('Error on opening indexedDB:', request.error);
-        reject();
+        reject(request.error);
       };
     });
   }
@@ -74,7 +74,7 @@ class FileStorage {
       transaction.onabort = (event) => {
         event.stopPropagation();
         console.log('Saving files to indexedDB aborted:', event, result);
-        reject();
+        reject(event.target.error);
       };
 
       const os = transaction.objectStore('files');
@@ -89,6 +89,29 @@ class FileStorage {
           result[index] = event.target.result;
         };
       });
+    });
+  }
+
+  async updateFile(id, file) {
+    const { db } = FileStorage;
+    if (!db) {
+      return null;
+    }
+    const buffer = await file.arrayBuffer();
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction('files', 'readwrite');
+
+      transaction.onabort = (event) => {
+        event.stopPropagation();
+        console.log('Saving files to indexedDB aborted:', event);
+        reject(event.target.error);
+      };
+
+      transaction.objectStore('files').put({
+        type: this.type,
+        mimetpe: file.type,
+        buffer,
+      }, id).onsuccess = (event) => resolve(event.target.result);
     });
   }
 
@@ -111,7 +134,7 @@ class FileStorage {
       transaction.onabort = (event) => {
         event.stopPropagation();
         console.log('Loading file from indexedDB aborted:', event.target.error);
-        reject();
+        reject(event.target.error);
       };
 
       const os = transaction.objectStore('files');
@@ -143,7 +166,7 @@ class FileStorage {
       transaction.onabort = (event) => {
         event.stopPropagation();
         console.log('Saving files to indexedDB aborted:', event);
-        reject();
+        reject(event.target.error);
       };
 
       const os = transaction.objectStore('files');
