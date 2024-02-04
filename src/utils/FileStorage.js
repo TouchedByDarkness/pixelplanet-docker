@@ -5,8 +5,6 @@
 const CURRENT_VERSION = 1;
 const DB_NAME = 'ppfun_files';
 
-// TODO make sure we get sane errors on reject()
-
 class FileStorage {
   type;
   static db;
@@ -28,10 +26,10 @@ class FileStorage {
       const request = window.indexedDB.open(DB_NAME, CURRENT_VERSION);
 
       request.onsuccess = (event) => {
-        console.log('Successfully opened indexedDB');
         const db = event.target.result;
 
         db.onerror = (evt) => {
+          // eslint-disable-next-line no-console
           console.error('indexedDB error:', evt.target.error);
         };
 
@@ -48,6 +46,7 @@ class FileStorage {
       };
 
       request.onerror = () => {
+        // eslint-disable-next-line no-console
         console.error('Error on opening indexedDB:', request.error);
         reject(request.error);
       };
@@ -61,25 +60,21 @@ class FileStorage {
     }
     const fileArray = Array.isArray(files) ? files : [files];
     const buffers = await Promise.all(fileArray.map((f) => f.arrayBuffer()));
-    console.log('buffers', buffers);
 
     return new Promise((resolve, reject) => {
       const result = [];
       const transaction = db.transaction('files', 'readwrite');
 
       transaction.oncomplete = () => {
-        console.log('Success on saving files to indexedDB', result);
         resolve(Array.isArray(files) ? result : result[0]);
       };
       transaction.onabort = (event) => {
         event.stopPropagation();
-        console.log('Saving files to indexedDB aborted:', event, result);
         reject(event.target.error);
       };
 
       const os = transaction.objectStore('files');
       fileArray.forEach((file, index) => {
-        console.log('type', this.type, 'mime', file.type, 'buffer', buffers[index], 'file', file);
         result.push(null);
         os.add({
           type: this.type,
@@ -103,7 +98,6 @@ class FileStorage {
 
       transaction.onabort = (event) => {
         event.stopPropagation();
-        console.log('Saving files to indexedDB aborted:', event);
         reject(event.target.error);
       };
 
@@ -128,12 +122,10 @@ class FileStorage {
       const transaction = db.transaction('files', 'readonly');
 
       transaction.oncomplete = () => {
-        console.log('Success on loading file', result);
         resolve(Array.isArray(ids) ? result : result[0]);
       };
       transaction.onabort = (event) => {
         event.stopPropagation();
-        console.log('Loading file from indexedDB aborted:', event.target.error);
         reject(event.target.error);
       };
 
@@ -147,6 +139,7 @@ class FileStorage {
     });
   }
 
+  // eslint-disable-next-line class-methods-use-this
   deleteFile(ids) {
     const { db } = FileStorage;
     if (!db) {
@@ -157,15 +150,11 @@ class FileStorage {
     return new Promise((resolve, reject) => {
       const transaction = db.transaction('files', 'readwrite');
 
-      transaction.oncomplete = (event) => {
-        console.log(
-          `Successfully deleted ${indicesArray.length} files from indexedDB`,
-        );
+      transaction.oncomplete = () => {
         resolve();
       };
       transaction.onabort = (event) => {
         event.stopPropagation();
-        console.log('Saving files to indexedDB aborted:', event);
         reject(event.target.error);
       };
 
@@ -188,12 +177,10 @@ class FileStorage {
         .getAllKeys(this.type);
 
       request.onsuccess = (event) => {
-        console.log('got all keys', event.target.result);
         resolve(event.target.result);
       };
       transaction.onabort = (event) => {
         event.stopPropagation();
-        console.log('GetAllKeys aborted:', event.target);
         reject(event.target.error);
       };
     });
@@ -208,11 +195,13 @@ class FileStorage {
     const allKeys = await this.getAllKeys();
     const toDelete = allKeys.filter((i) => !ids.includes(i));
     if (toDelete.length) {
+      // eslint-disable-next-line no-console
       console.log('Templaes: Keys in db but not in store', toDelete);
       await this.deleteFile(toDelete);
     }
     const deadIds = ids.filter((i) => !allKeys.includes(i));
     if (deadIds.length) {
+      // eslint-disable-next-line no-console
       console.log('Templates: Keys in store but not in db', deadIds);
     }
     return deadIds;

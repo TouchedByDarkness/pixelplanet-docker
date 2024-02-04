@@ -50,7 +50,7 @@ const PencilButton = () => {
         }
     }
     dispatch(selectHoldPaint(nextMode));
-  }, [holdPaint, dispatch]);
+  }, [holdPaint, easterEgg, dispatch]);
 
   const onShortPress = useCallback(() => {
     let nextMode;

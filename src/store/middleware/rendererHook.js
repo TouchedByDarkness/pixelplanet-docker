@@ -111,7 +111,6 @@ export default (store) => (next) => (action) => {
     case 's/REM_TEMPLATE':
     case 's/UPD_TEMPLATE_IMG':
     case 's/SET_O_OPACITY':
-    //
     case 'REQ_BIG_CHUNK':
     case 'PRE_LOADED_BIG_CHUNK':
     case 'REC_BIG_CHUNK':

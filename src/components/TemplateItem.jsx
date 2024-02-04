@@ -2,7 +2,7 @@
  * Item for list of Tamplates
  */
 
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { t } from 'ttag';
 
@@ -26,7 +26,6 @@ const TemplateItem = ({
       if (!previewImg) {
         return;
       }
-      console.log('rerendering image', imageId, previewImg);
       const bitmap = await createImageBitmap(previewImg);
       imgRef.current.getContext('bitmaprenderer')
         .transferFromImageBitmap(bitmap);
@@ -67,6 +66,7 @@ const TemplateItem = ({
             evt.stopPropagation();
             startEditing(title);
           }}
+          type="button"
         >
           {t`Edit`}
         </button>
@@ -76,6 +76,7 @@ const TemplateItem = ({
             dispatch(selectCanvas(canvasId));
             dispatch(setViewCoordinates([x + width / 2, y + height / 2]));
           }}
+          type="button"
         >
           {t`Go to`}
         </button>

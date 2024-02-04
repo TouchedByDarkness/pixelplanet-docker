@@ -2,6 +2,8 @@
  * Settings for minimap / overlay
  */
 
+/* eslint-disable react/no-array-index-key */
+
 import React, { useState, useCallback, useRef } from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import fileDownload from 'js-file-download';
@@ -37,7 +39,7 @@ const TemplateSettings = () => {
   const dispatch = useDispatch();
 
   const toggleEditing = useCallback((title) => {
-    const index = list.findIndex((t) => t.title === title);
+    const index = list.findIndex((z) => z.title === title);
     const ind = editingIndices.indexOf(index);
     setEditingIndices((ind === -1)
       ? [...editingIndices, index]
@@ -45,13 +47,14 @@ const TemplateSettings = () => {
     );
   }, [list, editingIndices]);
 
-  console.log('list', list);
-
   return (
     <>
       <h2>{t`Templates`}</h2>
       <p>
-        {t`Tired of always spaming one single color? Want to create art instead, but you have to count pixels from some other image? Templates can help you with that! Templates can show as overlay and you can draw over them. One pixel on the template, should be one pixel on the canvas.`}
+        {
+          // eslint-disable-next-line max-len
+          t`Tired of always spaming one single color? Want to create art instead, but you have to count pixels from some other image? Templates can help you with that! Templates can show as overlay and you can draw over them. One pixel on the template, should be one pixel on the canvas.`
+        }
       </p>
       <SettingsItem
         title={t`Enable Overlay`}
@@ -64,10 +67,12 @@ const TemplateSettings = () => {
       <SettingsItem
         title={t`Small Pixels Overlay`}
         value={oSmallPxls}
-        deactivated={!oVEnabled}
         onToggle={() => dispatch(toggleSmallPxls())}
       >
-        {t`Show overlay as small individual pixels (will only show in high zoomlevels).`}
+        {
+          // eslint-disable-next-line max-len
+          t`Show overlay as small individual pixels (will only show in high zoomlevels).`
+        }
       </SettingsItem>
 
       <div className="setitem">
@@ -144,9 +149,11 @@ const TemplateSettings = () => {
               className="modallink"
               onClick={async () => {
                 const data = await templateLoader.exportEnabledTemplates();
-                fileDownload(
-                  JSON.stringify(data), 'PixelplanetTemplates.json',
-                );
+                if (data) {
+                  fileDownload(
+                    JSON.stringify(data), 'PixelplanetTemplates.json',
+                  );
+                }
               }}
             >{t`Export enabled templates`}</span>
           </React.Fragment>

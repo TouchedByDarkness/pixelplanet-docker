@@ -153,7 +153,8 @@ export function createKeyDownHandler(store) {
         if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {
           // right shift
           store.dispatch(selectHoldPaint(
-            (store.getState().gui.easterEgg) ? HOLD_PAINT.OVERLAY : HOLD_PAINT.HISTORY,
+            (store.getState().gui.easterEgg)
+              ? HOLD_PAINT.OVERLAY : HOLD_PAINT.HISTORY,
             true,
           ));
           return;

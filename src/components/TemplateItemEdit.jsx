@@ -93,7 +93,7 @@ const TemplateItemEdit = ({
         </div>
         <div
           className="centered-on-img modallink"
-          onClick={(evt) => fileRef.current?.click()}
+          onClick={() => fileRef.current?.click()}
         >{t`Select File`}</div>
         <input
           type="file"
@@ -114,7 +114,7 @@ const TemplateItemEdit = ({
           type="text"
           onChange={(evt) => {
             const newTitle = evt.target.value;
-            setTitleUnique(!templateList.some((t) => t.title === newTitle));
+            setTitleUnique(!templateList.some((z) => z.title === newTitle));
             setTitle(evt.target.value);
           }}
           placeholder={t`Template Name`}
@@ -152,8 +152,9 @@ const TemplateItemEdit = ({
               co = coordsFromUrl(co) || co;
               evt.target.value = co;
               const newCoords = co.split('_').map((z) => parseInt(z, 10));
-              setCoords((!newCoords.some(Number.isNaN) && newCoords.length === 2)
-                ? newCoords : null,
+              setCoords(
+                (!newCoords.some(Number.isNaN) && newCoords.length === 2)
+                  ? newCoords : null,
               );
             }}
           /></span>
@@ -171,35 +172,34 @@ const TemplateItemEdit = ({
               stopEditing(initTitle);
               templateLoader.deleteTemplate(initTitle);
             }}
+            type="button"
           >
             {t`Delete`}
           </button>
         )}
         <button
-          onClick={(evt) => stopEditing(title)}
+          onClick={() => stopEditing(title)}
+          type="button"
         >
           {t`Cancel`}
         </button>
         <button
           disabled={!canSubmit}
-          onClick={async (evt) => {
+          onClick={async () => {
             if (!canSubmit) {
               return;
             }
             const [x, y] = coords;
             if (!initTitle) {
-              console.log('Create new template');
               await templateLoader.addFile(file, title, canvasId, x, y);
             } else {
               if (file && imageId) {
-                console.log('file changed for id', imageId);
                 await templateLoader.updateFile(imageId, file);
               }
               if (initTitle
                 && (initTitle !== title || initX !== x
                 || initY !== y || initCanvasId !== canvasId
                 )) {
-                console.log(`template ${title} changed`);
                 templateLoader.changeTemplate(initTitle, {
                   title, canvasId, x, y,
                 });
@@ -207,6 +207,7 @@ const TemplateItemEdit = ({
             }
             stopEditing(initTitle);
           }}
+          type="button"
         >
           {t`Save`}
         </button>

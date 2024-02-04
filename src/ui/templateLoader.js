@@ -2,6 +2,8 @@
  * class for storing templates for minimap / overlay
  */
 
+import { t } from 'ttag';
+
 import FileStorage from '../utils/FileStorage';
 import {
   removeTemplate,
@@ -11,6 +13,7 @@ import {
   templatesReady,
   receivedTemplate,
 } from '../store/actions/templates';
+import { pAlert } from '../store/actions';
 import { bufferToBase64, base64ToBuffer } from '../core/utils';
 import Template from './Template';
 
@@ -32,6 +35,7 @@ class TemplateLoader {
       this.#store.dispatch(templatesReady());
       await this.syncDB();
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.warn(`Couldn't initialize Templates: ${err.message}`);
     }
   }
@@ -59,7 +63,6 @@ class TemplateLoader {
     if (template) {
       return template.image;
     }
-    // TODO some store action when available
     this.loadExistingTemplate(id);
     return null;
   }
@@ -72,7 +75,6 @@ class TemplateLoader {
     if (template) {
       return template.imageSmall;
     }
-    // TODO some store action when available
     this.loadExistingTemplate(id);
     return null;
   }
@@ -119,10 +121,10 @@ class TemplateLoader {
   async syncDB() {
     try {
       const { list } = this.#store.getState().templates;
-      const ids = list.map((t) => t.imageId);
+      const ids = list.map((z) => z.imageId);
       const deadIds = await this.#fileStorage.sync(ids);
-      list.filter((t) => deadIds.includes(t.imageId)).forEach((t) => {
-        this.#store.dispatch(removeTemplate(t.title));
+      list.filter((z) => deadIds.includes(z.imageId)).forEach((z) => {
+        this.#store.dispatch(removeTemplate(z.title));
       });
     } catch (err) {
       // eslint-disable-next-line no-console
@@ -137,7 +139,7 @@ class TemplateLoader {
    */
   async loadAllMissing() {
     const { templates } = this.#store.getState();
-    const ids = templates.list.map((t) => t.imageId);
+    const ids = templates.list.map((z) => z.imageId);
     const toLoad = ids.filter((i) => !this.#templates.has(i));
     for (const id of toLoad) {
       // eslint-disable-next-line no-await-in-loop
@@ -156,7 +158,6 @@ class TemplateLoader {
         throw new Error('File does not exist in indexedDB');
       }
       const { mimetype, buffer } = fileData;
-      console.log('mime', mimetype, 'buffer', buffer);
       const template = new Template(imageId);
       await template.fromBuffer(buffer, mimetype);
       this.#templates.set(imageId, template);
@@ -222,13 +223,20 @@ class TemplateLoader {
   async exportEnabledTemplates() {
     const { list } = this.#store.getState().templates;
     const tDataList = list.filter((z) => z.enabled);
+    if (!tDataList.length || tDataList.length > 20) {
+      this.#store.dispatch(pAlert(
+        t`Error :(`,
+        t`Can not export more than 20 or no template!`,
+        'error',
+      ));
+      return null;
+    }
     const temps = await this.#fileStorage.loadFile(
       tDataList.map((z) => z.imageId),
     );
     const serilizableObj = [];
     for (let i = 0; i < tDataList.length; i += 1) {
       const { buffer, mimetype } = temps[i];
-      console.log('mimetype', mimetype);
       serilizableObj.push({
         ...tDataList[i],
         // eslint-disable-next-line no-await-in-loop
@@ -241,13 +249,20 @@ class TemplateLoader {
 
   async importTemplates(file) {
     const tDataList = JSON.parse(await file.text());
+    if (!tDataList.length || tDataList.length > 20) {
+      this.#store.dispatch(pAlert(
+        t`Error :(`,
+        t`Can not import more than 20 or no template!`,
+        'error',
+      ));
+      return;
+    }
     const bufferList = await Promise.all(
       tDataList.map((z) => base64ToBuffer(z.buffer)),
     );
     const fileList = [];
     for (let i = 0; i < tDataList.length; i += 1) {
       const { mimetype } = tDataList[i];
-      console.log('mimetype', mimetype, 'buffer', bufferList[i]);
       fileList.push(new Blob([bufferList[i]], { type: mimetype }));
     }
     const { list } = this.#store.getState().templates;
