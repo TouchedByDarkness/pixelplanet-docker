@@ -102,7 +102,7 @@ can be downloaded from mega.nz here: `}<a href="https://mega.nz/#!JpkBwAbJ!EnSLl
       <div style={{ lineHeight: 1.5 }}>
         {jt`Press ${bindW}, ${bindA}, ${bindS}, ${bindD} to move`}<br />
         {jt`Press ${bindAUp}, ${bindALeft}, ${bindADown}, ${bindARight} to move`}<br />
-        {jt`Press ${bindE} and ${bindC} to fly up and down`}<br />
+        {jt`Press ${bindQ} and ${bindE} to fly up and down`}<br />
         {jt`${mouseSymbol} Hold left mouse button and drag mouse to rotate`}<br />
         {jt`${mouseSymbol} Scroll mouse wheel or hold ${mouseSymbol} middle mouse button and drag to zoom`}<br />
         {jt`${mouseSymbol} Right click and drag mouse to pan`}<br />
