@@ -52,8 +52,7 @@ export function renderPotatoPlaceholder(
 ) {
   const viewportCtx = $viewport.getContext('2d');
 
-  const { hover } = state.canvas;
-  const { palette, selectedColor } = state.canvas;
+  const { palette, selectedColor, hover } = state.canvas;
 
   const [sx, sy] = worldToScreen(view, scale, $viewport, hover);
 
@@ -107,13 +106,14 @@ export function renderGrid(
  * Overlay draws onto offscreen canvas, so its doing weirder math
  */
 export function renderOverlay(
+  state,
   $canvas,
   centerChunk,
-  canvasSize,
   scale,
   tiledScale,
   scaleThreshold,
 ) {
+  const { canvasSize } = state.canvas;
   // world coordinates of center of center chunk
   const [x, y] = centerChunk
     .map((z) => z * TILE_SIZE / tiledScale
@@ -138,9 +138,45 @@ export function renderOverlay(
   for (const template of templates) {
     const image = templateLoader.getTemplateSync(template.imageId);
     if (!image) continue;
+
     context.drawImage(image,
       template.x - x + width / 2 / offscreenScale,
       template.y - y + height / 2 / offscreenScale,
+    );
+  }
+  context.restore();
+}
+
+/*
+ * Small pixel overlay draws into viewport, because it needs
+ * high scale values
+ */
+export function renderSmallPOverlay(
+  $viewport,
+  view,
+  scale,
+) {
+  const [x, y] = view;
+  const { width, height } = $viewport;
+  const horizontalRadius = width / 2 / scale;
+  const verticalRadius = height / 2 / scale;
+  const templates = templateLoader.getTemplatesInView(
+    x, y, horizontalRadius, verticalRadius,
+  );
+
+  if (!templates.length) return;
+  const context = $viewport.getContext('2d');
+  if (!context) return;
+
+  const relScale = scale / 3;
+  context.save();
+  context.scale(relScale, relScale);
+  for (const template of templates) {
+    const image = templateLoader.getSmallTemplateSync(template.imageId);
+    if (!image) continue;
+    context.drawImage(image,
+      (template.x - x) * 3 + width / 2 / relScale,
+      (template.y - y) * 3 + height / 2 / relScale,
     );
   }
   context.restore();

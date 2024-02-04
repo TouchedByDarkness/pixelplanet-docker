@@ -23,6 +23,7 @@ import {
   renderPlaceholder,
   renderPotatoPlaceholder,
   renderOverlay,
+  renderSmallPOverlay,
 } from './render2Delements';
 import PixelPainterControls from '../controls/PixelPainterControls';
 
@@ -273,7 +274,6 @@ class Renderer2D extends Renderer {
 
     const [x, y] = getPixelFromChunkOffset(i, j, offset, canvasSize);
 
-    // TODO centerChunk is scaled!
     const [canX, canY] = this.centerChunk
       .map((z) => (z + 0.5) * TILE_SIZE - canvasSize / 2);
     const { width: canvasWidth, height: canvasHeight } = this.canvas;
@@ -423,10 +423,12 @@ class Renderer2D extends Renderer {
     }
     context.restore();
     // TODO conditions
-    renderOverlay(
-      this.canvas, chunkPosition, canvasSize, scale,
-      this.tiledScale, this.scaleThreshold,
-    );
+    if (false) {
+      renderOverlay(
+        state, this.canvas, chunkPosition, scale,
+        this.tiledScale, this.scaleThreshold,
+      );
+    }
   }
 
 
@@ -550,6 +552,11 @@ class Renderer2D extends Renderer {
           + ((cy + 0.5) * TILE_SIZE / this.tiledScale
           - canvasCenter - y) * viewscale),
       );
+    }
+
+    // TODO conditions
+    if (viewscale >= 5) {
+      renderSmallPOverlay(viewport, _view, viewscale);
     }
 
     if (showGrid && viewscale >= 8) {

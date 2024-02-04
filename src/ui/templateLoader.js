@@ -63,6 +63,19 @@ class TemplateLoader {
     return null;
   }
 
+  getSmallTemplateSync(id) {
+    if (!this.ready) {
+      return null;
+    }
+    const template = this.#templates.get(id);
+    if (template) {
+      return template.imageSmall;
+    }
+    // TODO some store action when available
+    this.loadExistingTemplate(id);
+    return null;
+  }
+
   getTemplatesInView(x, y, horizontalRadius, verticalRadius) {
     const topX = x - horizontalRadius;
     const topY = y - verticalRadius;

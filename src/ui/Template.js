@@ -19,9 +19,44 @@ class Template {
   height;
   // if image is loaded
   ready = false;
+  // small pixels image
+  #imageSmall;
 
   constructor(imageId) {
     this.id = imageId;
+  }
+
+  get imageSmall() {
+    if (!this.#imageSmall) {
+      const imgData = this.image.getContext('2d').getImageData(
+        0, 0, this.width, this.height,
+      );
+      const imageSmall = document.createElement('canvas');
+      imageSmall.width = this.width * 3;
+      imageSmall.height = this.height * 3;
+      const targetContext = imageSmall.getContext('2d');
+      const targetData = targetContext.getImageData(
+        0, 0, imageSmall.width, imageSmall.height,
+      );
+
+      let c = 0;
+      let o = targetData.width * 4 + 4;
+      while (c < imgData.data.length) {
+        for (let r = 0; r < imgData.width; r += 1) {
+          targetData.data[o] = imgData.data[c];
+          targetData.data[++o] = imgData.data[++c];
+          targetData.data[++o] = imgData.data[++c];
+          targetData.data[++o] = imgData.data[++c];
+          o += 1 + 2 * 4;
+          c += 1;
+        }
+        o += targetData.width * 4 * 2;
+      }
+      targetContext.putImageData(targetData, 0, 0);
+      this.#imageSmall = imageSmall;
+    }
+
+    return this.#imageSmall;
   }
 
   async arrayBuffer() {
