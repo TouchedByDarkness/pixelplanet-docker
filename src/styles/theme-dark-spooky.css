@@ -189,13 +189,13 @@ tr:nth-child(odd) {
 }
 
 
-.modalinfo {
+.modalinfo, .tmpitm-desc span {
   color: #c9abab;
   font-size: 20px;
   font-weight: 500, bold;
 }
 
-.modalcvtext {
+.modalcvtext, .tmpitm-desc {
   color: #e2e2e2;
 }
 

@@ -292,5 +292,6 @@ class TemplateLoader {
 }
 
 const templateLoader = new TemplateLoader();
+window.templateLoader = templateLoader;
 
 export default templateLoader;

@@ -134,11 +134,11 @@ h3, h4 {
   background-color: hsla(216, 4%, 74%, .3);
 }
 
-.modalinfo {
+.modalinfo, .tmpitm-desc span {
   color: #ddd;
 }
 
-.modalcvtext {
+.modalcvtext, .tmpitm-desc {
   color: hsla(220, 100%, 95.3%, 0.6);
 }
 
