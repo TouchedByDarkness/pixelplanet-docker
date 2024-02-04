@@ -9,6 +9,7 @@ import {
   updatedTemplateImage,
   changeTemplate,
   templatesReady,
+  receivedTemplate,
 } from '../store/actions/templates';
 import { bufferToBase64, base64ToBuffer } from '../core/utils';
 import Template from './Template';
@@ -76,21 +77,39 @@ class TemplateLoader {
     return null;
   }
 
+  getColorOfPixel(x, y) {
+    const templatesInView = this.#store.getState().templates.list
+      .filter((template) => (
+        template.enabled && template.x < x && template.y < y
+      && template.x + template.width > x
+      && template.y + template.height > y
+      ));
+
+    for (const tData of templatesInView) {
+      const image = this.getTemplateSync(tData.imageId);
+      if (!image) {
+        continue;
+      }
+      const ctx = image.getContext('2d');
+      const rgb = ctx.getImageData(x - tData.x, y - tData.y, 1, 1).data;
+      if (rgb[3] > 200) {
+        return [rgb[0], rgb[1], rgb[2]];
+      }
+    }
+    return null;
+  }
+
   getTemplatesInView(x, y, horizontalRadius, verticalRadius) {
     const topX = x - horizontalRadius;
     const topY = y - verticalRadius;
     const bottomX = x + horizontalRadius;
     const bottomY = y + verticalRadius;
 
-    const templates = [];
-    this.#store.getState().templates.list.forEach((template) => {
-      if (x < bottomX && y < bottomY
-        && x + template.width > topX && y + template.height > topY
-      ) {
-        templates.push(template);
-      }
-    });
-    return templates;
+    return this.#store.getState().templates.list.filter((template) => (
+      template.enabled && template.x < bottomX && template.y < bottomY
+      && template.x + template.width > topX
+      && template.y + template.height > topY
+    ));
   }
 
   /*
@@ -141,6 +160,7 @@ class TemplateLoader {
       const template = new Template(imageId);
       await template.fromBuffer(buffer, mimetype);
       this.#templates.set(imageId, template);
+      this.#store.dispatch(receivedTemplate());
       return template;
     } catch (err) {
       // eslint-disable-next-line no-console

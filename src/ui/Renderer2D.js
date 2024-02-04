@@ -422,8 +422,8 @@ class Renderer2D extends Renderer {
       }
     }
     context.restore();
-    // TODO conditions
-    if (false) {
+
+    if (state.templates.ovEnabled && !state.templates.oSmallPxls) {
       renderOverlay(
         state, this.canvas, chunkPosition, scale,
         this.tiledScale, this.scaleThreshold,
@@ -554,8 +554,9 @@ class Renderer2D extends Renderer {
       );
     }
 
-    // TODO conditions
-    if (viewscale >= 5) {
+    if (viewscale >= 5 && state.templates.ovEnabled
+      && state.templates.oSmallPxls
+    ) {
       renderSmallPOverlay(viewport, _view, viewscale);
     }
 

@@ -113,6 +113,7 @@ export function renderOverlay(
   tiledScale,
   scaleThreshold,
 ) {
+  if (!templateLoader.ready) return;
   const { canvasSize } = state.canvas;
   // world coordinates of center of center chunk
   const [x, y] = centerChunk
@@ -135,6 +136,7 @@ export function renderOverlay(
 
   context.save();
   context.scale(offscreenScale, offscreenScale);
+  context.globalAlpha = state.templates.oOpacity / 100;
   for (const template of templates) {
     const image = templateLoader.getTemplateSync(template.imageId);
     if (!image) continue;
@@ -156,6 +158,7 @@ export function renderSmallPOverlay(
   view,
   scale,
 ) {
+  if (!templateLoader.ready) return;
   const [x, y] = view;
   const { width, height } = $viewport;
   const horizontalRadius = width / 2 / scale;

@@ -7,7 +7,7 @@ const initialState = {
   // prefix o: overlay, m: minimap
   ovEnabled: false,
   mEnabled: false,
-  oOpacity: 1.0,
+  oOpacity: 70,
   oSmallPxls: false,
   /*
    * [{
@@ -99,6 +99,24 @@ export default function templates(
         ],
       };
     }
+
+    case 's/TGL_OVENABLED':
+      return {
+        ...state,
+        ovEnabled: !state.ovEnabled,
+      };
+
+    case 's/TGL_SMALLPXLS':
+      return {
+        ...state,
+        oSmallPxls: !state.oSmallPxls,
+      };
+
+    case 's/SET_O_OPACITY':
+      return {
+        ...state,
+        oOpacity: action.opacity,
+      };
 
     case 'TEMPLATES_READY':
       return {

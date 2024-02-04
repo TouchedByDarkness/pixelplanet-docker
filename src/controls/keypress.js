@@ -17,10 +17,13 @@ import {
   setMoveV,
   setMoveW,
 } from '../store/actions';
+import {
+  toggleOVEnabled,
+} from '../store/actions/templates';
 import { HOLD_PAINT } from '../core/constants';
 import { notify } from '../store/actions/thunks';
 
-const charKeys = ['g', 'h', 'x', 'm', 'r', 'z', '+', '-'];
+const charKeys = ['g', 'h', 'x', 'm', 't', 'r', 'z', '+', '-'];
 
 export function createKeyUpHandler(store) {
   return (event) => {
@@ -149,7 +152,10 @@ export function createKeyDownHandler(store) {
         }
         if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {
           // right shift
-          store.dispatch(selectHoldPaint(HOLD_PAINT.HISTORY, true));
+          store.dispatch(selectHoldPaint(
+            (store.getState().gui.easterEgg) ? HOLD_PAINT.OVERLAY : HOLD_PAINT.HISTORY,
+            true,
+          ));
           return;
         }
         return;
@@ -202,6 +208,13 @@ export function createKeyDownHandler(store) {
         const text = hover.join('_');
         copy(text);
         store.dispatch(notify(t`Copied!`));
+        return;
+      }
+      case 't': {
+        store.dispatch(toggleOVEnabled());
+        store.dispatch(notify((store.getState().templates.ovEnabled)
+          ? t`Overlay ON`
+          : t`Overlay OFF`));
         return;
       }
       case 'z':

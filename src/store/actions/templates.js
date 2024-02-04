@@ -15,7 +15,7 @@ export function listTemplate(imageId, title, canvasId, x, y, width, height) {
   };
 }
 
-export function templatesReady(title) {
+export function templatesReady() {
   return {
     type: 'TEMPLATES_READY',
   };
@@ -36,8 +36,32 @@ export function changeTemplate(title, props) {
   };
 }
 
+export function toggleOVEnabled() {
+  return {
+    type: 's/TGL_OVENABLED',
+  };
+}
+
+export function toggleSmallPxls() {
+  return {
+    type: 's/TGL_SMALLPXLS',
+  };
+}
+
+export function setOvOpacity(opacity) {
+  return {
+    type: 's/SET_O_OPACITY',
+    opacity,
+  };
+}
+
+export function receivedTemplate() {
+  return {
+    type: 'REC_TEMPLATE',
+  };
+}
+
 export function updatedTemplateImage(imageId, width, height) {
-  console.log('update', width, height, 'store');
   return {
     type: 's/UPD_TEMPLATE_IMG',
     imageId,

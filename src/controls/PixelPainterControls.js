@@ -21,6 +21,7 @@ import {
 import {
   HOLD_PAINT,
 } from '../core/constants';
+import templateLoader from '../ui/templateLoader';
 
 class PixelPainterControls {
   store;
@@ -412,6 +413,13 @@ class PixelPainterControls {
   static getWantedColor(state, renderer, cell) {
     if (state.gui.holdPaint === HOLD_PAINT.HISTORY) {
       return renderer.getColorIndexOfPixel(...cell, true);
+    }
+    if (state.gui.holdPaint === HOLD_PAINT.OVERLAY) {
+      const rgb = templateLoader.getColorOfPixel(...cell);
+      if (!rgb) {
+        return null;
+      }
+      return state.canvas.palette.getIndexOfColor(...rgb);
     }
     return state.canvas.selectedColor;
   }

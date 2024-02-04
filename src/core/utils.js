@@ -696,7 +696,7 @@ export function bufferToBase64(array) {
 
     reader.onload = (event) => {
       const dataUrl = event.target.result;
-      const [_, base64] = dataUrl.split(',');
+      const [, base64] = dataUrl.split(',');
 
       resolve(base64);
     };
