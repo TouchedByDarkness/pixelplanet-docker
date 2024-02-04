@@ -557,7 +557,7 @@ class Renderer2D extends Renderer {
     if (viewscale >= 5 && state.templates.ovEnabled
       && state.templates.oSmallPxls
     ) {
-      renderSmallPOverlay(viewport, _view, viewscale);
+      renderSmallPOverlay(state, viewport, _view, viewscale);
     }
 
     if (showGrid && viewscale >= 8) {

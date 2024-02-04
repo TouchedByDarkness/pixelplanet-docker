@@ -79,10 +79,11 @@ class TemplateLoader {
     return null;
   }
 
-  getColorOfPixel(x, y) {
+  getColorOfPixel(canvasId, x, y) {
     const templatesInView = this.#store.getState().templates.list
       .filter((template) => (
-        template.enabled && template.x < x && template.y < y
+        template.enabled && template.canvasId === canvasId
+      && template.x < x && template.y < y
       && template.x + template.width > x
       && template.y + template.height > y
       ));
@@ -101,14 +102,15 @@ class TemplateLoader {
     return null;
   }
 
-  getTemplatesInView(x, y, horizontalRadius, verticalRadius) {
+  getTemplatesInView(canvasId, x, y, horizontalRadius, verticalRadius) {
     const topX = x - horizontalRadius;
     const topY = y - verticalRadius;
     const bottomX = x + horizontalRadius;
     const bottomY = y + verticalRadius;
 
     return this.#store.getState().templates.list.filter((template) => (
-      template.enabled && template.x < bottomX && template.y < bottomY
+      template.enabled && template.canvasId === canvasId
+      && template.x < bottomX && template.y < bottomY
       && template.x + template.width > topX
       && template.y + template.height > topY
     ));

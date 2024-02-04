@@ -114,7 +114,7 @@ export function renderOverlay(
   scaleThreshold,
 ) {
   if (!templateLoader.ready) return;
-  const { canvasSize } = state.canvas;
+  const { canvasSize, canvasId } = state.canvas;
   // world coordinates of center of center chunk
   const [x, y] = centerChunk
     .map((z) => z * TILE_SIZE / tiledScale
@@ -123,7 +123,7 @@ export function renderOverlay(
   const horizontalRadius = width / 2 / scale;
   const verticalRadius = height / 2 / scale;
   const templates = templateLoader.getTemplatesInView(
-    x, y, horizontalRadius, verticalRadius,
+    canvasId, x, y, horizontalRadius, verticalRadius,
   );
 
   if (!templates.length) return;
@@ -154,17 +154,19 @@ export function renderOverlay(
  * high scale values
  */
 export function renderSmallPOverlay(
+  state,
   $viewport,
   view,
   scale,
 ) {
   if (!templateLoader.ready) return;
+  const { canvasId } = state.canvas;
   const [x, y] = view;
   const { width, height } = $viewport;
   const horizontalRadius = width / 2 / scale;
   const verticalRadius = height / 2 / scale;
   const templates = templateLoader.getTemplatesInView(
-    x, y, horizontalRadius, verticalRadius,
+    canvasId, x, y, horizontalRadius, verticalRadius,
   );
 
   if (!templates.length) return;

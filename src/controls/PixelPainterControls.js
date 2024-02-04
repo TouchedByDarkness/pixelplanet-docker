@@ -415,7 +415,8 @@ class PixelPainterControls {
       return renderer.getColorIndexOfPixel(...cell, true);
     }
     if (state.gui.holdPaint === HOLD_PAINT.OVERLAY) {
-      const rgb = templateLoader.getColorOfPixel(...cell);
+      const { canvasId } = state.canvas;
+      const rgb = templateLoader.getColorOfPixel(canvasId, ...cell);
       if (!rgb) {
         return null;
       }
