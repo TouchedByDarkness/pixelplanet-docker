@@ -50,11 +50,35 @@ class TemplateLoader {
     return null;
   }
 
-  /*
-  getTemplatesInView() {
-    this.#store.templates
+  getTemplateSync(id) {
+    if (!this.ready) {
+      return null;
+    }
+    const template = this.#templates.get(id);
+    if (template) {
+      return template.image;
+    }
+    // TODO some store action when available
+    this.loadExistingTemplate(id);
+    return null;
   }
-  */
+
+  getTemplatesInView(x, y, horizontalRadius, verticalRadius) {
+    const topX = x - horizontalRadius;
+    const topY = y - verticalRadius;
+    const bottomX = x + horizontalRadius;
+    const bottomY = y + verticalRadius;
+
+    const templates = [];
+    this.#store.getState().templates.list.forEach((template) => {
+      if (x < bottomX && y < bottomY
+        && x + template.width > topX && y + template.height > topY
+      ) {
+        templates.push(template);
+      }
+    });
+    return templates;
+  }
 
   /*
    * sync database to store,
@@ -152,7 +176,7 @@ class TemplateLoader {
 
   deleteTemplate(title) {
     const { list } = this.#store.getState().templates;
-    const tData = list.find((z) => z.title === title)
+    const tData = list.find((z) => z.title === title);
     if (!tData) {
       return;
     }
@@ -161,7 +185,7 @@ class TemplateLoader {
     this.#fileStorage.deleteFile(imageId);
     this.#templates.delete(imageId);
   }
-  
+
   async exportEnabledTemplates() {
     const { list } = this.#store.getState().templates;
     const tDataList = list.filter((z) => z.enabled);
@@ -181,7 +205,7 @@ class TemplateLoader {
     }
     return serilizableObj;
   }
-  
+
   async importTemplates(file) {
     const tDataList = JSON.parse(await file.text());
     const bufferList = await Promise.all(
@@ -197,7 +221,9 @@ class TemplateLoader {
     const imageIdList = await this.#fileStorage.saveFile(fileList);
     const idsToDelete = [];
     for (let i = 0; i < tDataList.length; i += 1) {
-      const { x, y, width, height, canvasId, title } = tDataList[i];
+      const {
+        x, y, width, height, canvasId, title,
+      } = tDataList[i];
       const imageId = imageIdList[i];
       const existing = list.find((z) => z.title === title);
       if (existing) {

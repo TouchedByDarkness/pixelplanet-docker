@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux';
 import fileDownload from 'js-file-download';
 import { t } from 'ttag';
 
-import AddTemplate from './AddTemplate';
 import TemplateItem from './TemplateItem';
 import TemplateItemEdit from './TemplateItemEdit';
 import templateLoader from '../ui/templateLoader';
@@ -35,7 +34,7 @@ const TemplateSettings = () => {
     <>
       <h3>{t`Templates`}</h3>
       <p>
-      {t`Tired of always spaming one single color? Want to create art instead, but you have to count pixels from some other image? Templates can help you with that! Templates can show as overlay and you can draw over them. One pixel on the template, should be one pixel on the canvas.`}
+        {t`Tired of always spaming one single color? Want to create art instead, but you have to count pixels from some other image? Templates can help you with that! Templates can show as overlay and you can draw over them. One pixel on the template, should be one pixel on the canvas.`}
       </p>
       <div className="content">
         {list.map(({
@@ -103,17 +102,17 @@ const TemplateSettings = () => {
           tabIndex={-1}
           className="modallink"
           onClick={async () => importRef.current?.click()}
-          >{t`Import templates`}</span>
-          <input
-            type="file"
-            key="impin"
-            accept="image/*"
-            ref={importRef}
-            style={{ display: 'none' }}
-            onChange={(evt) => {
-              templateLoader.importTemplates(evt.target.files?.[0]);
-            }}
-          />
+        >{t`Import templates`}</span>
+        <input
+          type="file"
+          key="impin"
+          accept="image/*"
+          ref={importRef}
+          style={{ display: 'none' }}
+          onChange={(evt) => {
+            templateLoader.importTemplates(evt.target.files?.[0]);
+          }}
+        />
       </div>
     </>
   );

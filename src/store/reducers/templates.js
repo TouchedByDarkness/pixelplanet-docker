@@ -99,7 +99,7 @@ export default function templates(
         ],
       };
     }
-    
+
     case 'TEMPLATES_READY':
       return {
         ...state,

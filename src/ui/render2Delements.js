@@ -3,7 +3,9 @@
  *
  */
 
+import templateLoader from './templateLoader';
 import { screenToWorld, worldToScreen } from '../core/utils';
+import { TILE_SIZE } from '../core/constants';
 
 const PLACEHOLDER_SIZE = 1.2;
 const PLACEHOLDER_BORDER = 1;
@@ -99,4 +101,47 @@ export function renderGrid(
   }
 
   viewportCtx.globalAlpha = 1;
+}
+
+/*
+ * Overlay draws onto offscreen canvas, so its doing weirder math
+ */
+export function renderOverlay(
+  $canvas,
+  centerChunk,
+  canvasSize,
+  scale,
+  tiledScale,
+  scaleThreshold,
+) {
+  // world coordinates of center of center chunk
+  const [x, y] = centerChunk
+    .map((z) => z * TILE_SIZE / tiledScale
+    + TILE_SIZE / 2 / tiledScale - canvasSize / 2);
+  const { width, height } = $canvas;
+  const horizontalRadius = width / 2 / scale;
+  const verticalRadius = height / 2 / scale;
+  const templates = templateLoader.getTemplatesInView(
+    x, y, horizontalRadius, verticalRadius,
+  );
+
+  if (!templates.length) return;
+  const context = $canvas.getContext('2d');
+  if (!context) return;
+
+  // if scale > scaleThreshold, then scaling happens in renderer
+  // instead of offscreen canvas
+  const offscreenScale = (scale > scaleThreshold) ? 1.0 : scale;
+
+  context.save();
+  context.scale(offscreenScale, offscreenScale);
+  for (const template of templates) {
+    const image = templateLoader.getTemplateSync(template.imageId);
+    if (!image) continue;
+    context.drawImage(image,
+      template.x - x + width / 2 / offscreenScale,
+      template.y - y + height / 2 / offscreenScale,
+    );
+  }
+  context.restore();
 }

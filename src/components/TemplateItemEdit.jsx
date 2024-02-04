@@ -127,11 +127,14 @@ const TemplateItemEdit = ({
               selectCanvas(sel.options[sel.selectedIndex].value);
             }}
           >
-            {Object.keys(canvases).filter((c) => !canvases[c].v).map((canvas) => (
-              <option key={canvas} value={canvas}>
-                {canvases[canvas].title}
-              </option>
-            ))}
+            {Object.keys(canvases)
+              .filter((c) => !canvases[c].v && !canvases[c].ed)
+              .map((canvas) => (
+                <option key={canvas} value={canvas}>
+                  {canvases[canvas].title}
+                </option>
+              ),
+              )}
           </select></span>
         </p>
         <p>
