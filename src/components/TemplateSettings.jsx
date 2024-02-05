@@ -96,85 +96,83 @@ const TemplateSettings = () => {
         <div className="modaldivider" />
       </div>
 
-      <div className="content">
-        {list.map(({
-          enabled, imageId, canvasId, title, x, y, width, height,
-        }, index) => (editingIndices.includes(index) ? (
-          <TemplateItemEdit
-            enabled={enabled}
-            key={index}
-            title={title}
-            imageId={imageId}
-            canvasId={canvasId}
-            x={x}
-            y={y}
-            stopEditing={toggleEditing}
-          />
-        ) : (
-          <TemplateItem
-            enabled={enabled}
-            key={index}
-            title={title}
-            imageId={imageId}
-            canvasId={canvasId}
-            x={x}
-            y={y}
-            width={width}
-            height={height}
-            startEditing={toggleEditing}
-          />
-        )))}
-        {showAdd && <TemplateItemEdit stopEditing={close} />}
-        {(showAdd) ? (
-          <span
-            role="button"
-            tabIndex={-1}
-            className="modallink"
-            onClick={() => close()}
-          > {t`Cancel adding Template`}</span>
-        ) : (
-          <span
-            role="button"
-            tabIndex={-1}
-            className="modallink"
-            onClick={() => setShowAdd(true)}
-          > {t`Add Template`}</span>
-        )}
-        {(list.some((z) => z.enabled)) && (
-          <React.Fragment key="exps">
-            &nbsp;|&nbsp;
-            <span
-              role="button"
-              tabIndex={-1}
-              className="modallink"
-              onClick={async () => {
-                const data = await templateLoader.exportEnabledTemplates();
-                if (data) {
-                  fileDownload(
-                    JSON.stringify(data), 'PixelplanetTemplates.json',
-                  );
-                }
-              }}
-            >{t`Export enabled templates`}</span>
-          </React.Fragment>
-        )}
-        &nbsp;|&nbsp;
+      {list.map(({
+        enabled, imageId, canvasId, title, x, y, width, height,
+      }, index) => (editingIndices.includes(index) ? (
+        <TemplateItemEdit
+          enabled={enabled}
+          key={index}
+          title={title}
+          imageId={imageId}
+          canvasId={canvasId}
+          x={x}
+          y={y}
+          stopEditing={toggleEditing}
+        />
+      ) : (
+        <TemplateItem
+          enabled={enabled}
+          key={index}
+          title={title}
+          imageId={imageId}
+          canvasId={canvasId}
+          x={x}
+          y={y}
+          width={width}
+          height={height}
+          startEditing={toggleEditing}
+        />
+      )))}
+      {showAdd && <TemplateItemEdit stopEditing={close} />}
+      {(showAdd) ? (
         <span
           role="button"
           tabIndex={-1}
           className="modallink"
-          onClick={async () => importRef.current?.click()}
-        >{t`Import templates`}</span>
-        <input
-          type="file"
-          key="impin"
-          ref={importRef}
-          style={{ display: 'none' }}
-          onChange={(evt) => {
-            templateLoader.importTemplates(evt.target.files?.[0]);
-          }}
-        />
-      </div>
+          onClick={() => close()}
+        > {t`Cancel adding Template`}</span>
+      ) : (
+        <span
+          role="button"
+          tabIndex={-1}
+          className="modallink"
+          onClick={() => setShowAdd(true)}
+        > {t`Add Template`}</span>
+      )}
+      {(list.some((z) => z.enabled)) && (
+        <React.Fragment key="exps">
+          &nbsp;|&nbsp;
+          <span
+            role="button"
+            tabIndex={-1}
+            className="modallink"
+            onClick={async () => {
+              const data = await templateLoader.exportEnabledTemplates();
+              if (data) {
+                fileDownload(
+                  JSON.stringify(data), 'PixelplanetTemplates.json',
+                );
+              }
+            }}
+          >{t`Export enabled templates`}</span>
+        </React.Fragment>
+      )}
+      &nbsp;|&nbsp;
+      <span
+        role="button"
+        tabIndex={-1}
+        className="modallink"
+        onClick={async () => importRef.current?.click()}
+      >{t`Import templates`}</span>
+      <input
+        type="file"
+        key="impin"
+        ref={importRef}
+        style={{ display: 'none' }}
+        onChange={(evt) => {
+          templateLoader.importTemplates(evt.target.files?.[0]);
+        }}
+      />
     </>
   );
 };
