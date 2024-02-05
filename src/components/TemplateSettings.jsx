@@ -168,7 +168,6 @@ const TemplateSettings = () => {
         <input
           type="file"
           key="impin"
-          accept="image/*"
           ref={importRef}
           style={{ display: 'none' }}
           onChange={(evt) => {

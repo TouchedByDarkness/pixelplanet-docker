@@ -83,7 +83,7 @@ class TemplateLoader {
     const templatesInView = this.#store.getState().templates.list
       .filter((template) => (
         template.enabled && template.canvasId === canvasId
-      && template.x < x && template.y < y
+      && template.x <= x && template.y <= y
       && template.x + template.width > x
       && template.y + template.height > y
       ));
@@ -110,7 +110,7 @@ class TemplateLoader {
 
     return this.#store.getState().templates.list.filter((template) => (
       template.enabled && template.canvasId === canvasId
-      && template.x < bottomX && template.y < bottomY
+      && template.x <= bottomX && template.y <= bottomY
       && template.x + template.width > topX
       && template.y + template.height > topY
     ));

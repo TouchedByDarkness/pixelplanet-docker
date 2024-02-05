@@ -420,7 +420,7 @@ class PixelPainterControls {
       if (!rgb) {
         return null;
       }
-      return state.canvas.palette.getIndexOfColor(...rgb);
+      return state.canvas.palette.getClosestIndexOfColor(...rgb);
     }
     return state.canvas.selectedColor;
   }
