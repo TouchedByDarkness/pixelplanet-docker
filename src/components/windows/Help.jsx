@@ -33,7 +33,6 @@ const Help = () => {
   const mouseSymbol = <kbd><GiMouse /></kbd>;
   const touchSymbol = <kbd><MdTouchApp /></kbd>;
   const bindShift = <kbd>⇧ {c('keybinds').t`Shift`}</kbd>;
-  const bindC = <kbd>{c('keybinds').t`C`}</kbd>;
 
   const starhouseLink = <a href="https://twitter.com/starhousedev">starhouse </a>;
   const vinikLink = <a href="https://twitter.com/Vinikdev">Vinikdev</a>;

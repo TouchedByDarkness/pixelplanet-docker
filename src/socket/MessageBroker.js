@@ -176,6 +176,11 @@ class MessageBroker extends SocketEvents {
    */
   async onShardListenMessage(message) {
     try {
+      if (message === 'ping') {
+        const channel = `${LISTEN_PREFIX}:${this.thisShard}`;
+        this.pings[channel] = Date.now();
+        return;
+      }
       const comma = message.indexOf(',');
       const key = message.slice(0, comma);
       console.log(`CLUSTER shard listener got ${key}`);
@@ -443,6 +448,8 @@ class MessageBroker extends SocketEvents {
     }
     // send keep alive to others
     this.publisher.publish(BROADCAST_CHAN, this.thisShard);
+    // ping to own text listener channel
+    this.publisher.publish(`${LISTEN_PREFIX}:${this.thisShard}`, 'ping');
     // clean up dead shard requests
     threshold -= 30000;
     this.csReq = this.csReq.filter((r) => r.ts > threshold);
