@@ -23,7 +23,7 @@ import {
 import { HOLD_PAINT } from '../core/constants';
 import { notify } from '../store/actions/thunks';
 
-const charKeys = ['g', 'h', 'x', 'm', 't', 'r', 'z', '+', '-'];
+const charKeys = ['g', 'h', 'x', 'm', 't', 'r', 'l', '+', '-'];
 
 export function createKeyUpHandler(store) {
   return (event) => {
@@ -153,7 +153,7 @@ export function createKeyDownHandler(store) {
         if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {
           // right shift
           store.dispatch(selectHoldPaint(
-            (store.getState().gui.easterEgg)
+            (store.getState().templates.oRightShift)
               ? HOLD_PAINT.OVERLAY : HOLD_PAINT.HISTORY,
             true,
           ));
@@ -218,7 +218,7 @@ export function createKeyDownHandler(store) {
           : t`Overlay OFF`));
         return;
       }
-      case 'z':
+      case 'l':
         store.dispatch(toggleEasterEgg());
         store.dispatch(notify((store.getState().gui.easterEgg)
           ? t`Easter Egg ON`

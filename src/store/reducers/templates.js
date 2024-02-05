@@ -9,6 +9,7 @@ const initialState = {
   mEnabled: false,
   oOpacity: 40,
   oSmallPxls: true,
+  oRightShift: false,
   /*
    * [{
    *   enabled,
@@ -110,6 +111,12 @@ export default function templates(
       return {
         ...state,
         oSmallPxls: !state.oSmallPxls,
+      };
+
+    case 's/TGL_RIGHTSHIFT':
+      return {
+        ...state,
+        oRightShift: !state.oRightShift,
       };
 
     case 's/SET_O_OPACITY':

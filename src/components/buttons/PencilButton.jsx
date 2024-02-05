@@ -16,11 +16,9 @@ const PencilButton = () => {
   const [
     holdPaint,
     showMvmCtrls,
-    easterEgg,
   ] = useSelector((state) => [
     state.gui.holdPaint,
     state.gui.showMvmCtrls,
-    state.gui.easterEgg,
   ], shallowEqual);
   const dispatch = useDispatch();
 
@@ -35,12 +33,11 @@ const PencilButton = () => {
           break;
         }
       // eslint-disable-next-line no-fallthrough
-      case HOLD_PAINT.HISTORY:
-        if (easterEgg) {
-          nextMode = HOLD_PAINT.OVERLAY;
-          dispatch(notify(t`Overlay Pencil ON`));
-          break;
-        }
+      case HOLD_PAINT.HISTORY: {
+        nextMode = HOLD_PAINT.OVERLAY;
+        dispatch(notify(t`Overlay Pencil ON`));
+        break;
+      }
       // eslint-disable-next-line no-fallthrough
       default:
         if (holdPaint) {
@@ -50,7 +47,7 @@ const PencilButton = () => {
         }
     }
     dispatch(selectHoldPaint(nextMode));
-  }, [holdPaint, easterEgg, dispatch]);
+  }, [holdPaint, dispatch]);
 
   const onShortPress = useCallback(() => {
     let nextMode;

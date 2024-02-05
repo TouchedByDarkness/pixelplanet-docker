@@ -16,6 +16,7 @@ import templateLoader from '../ui/templateLoader';
 import {
   toggleOVEnabled,
   toggleSmallPxls,
+  toggleRightShift,
   setOvOpacity,
 } from '../store/actions/templates';
 
@@ -27,11 +28,15 @@ const TemplateSettings = () => {
     oVEnabled,
     oSmallPxls,
     oOpacity,
+    oRightShift,
+    isOnMobile,
   ] = useSelector((state) => [
     state.templates.list,
     state.templates.ovEnabled,
     state.templates.oSmallPxls,
     state.templates.oOpacity,
+    state.templates.oRightShift,
+    state.user.isOnMobile,
   ], shallowEqual);
   const [editingIndices, setEditingIndices] = useState([]);
   const close = useCallback(() => setShowAdd(false), []);
@@ -94,6 +99,18 @@ const TemplateSettings = () => {
         <div className="modaldesc">{t`Opacity of Overlay in percent.`}</div>
         <div className="modaldivider" />
       </div>
+
+      {(!isOnMobile) && (
+      <SettingsItem
+        title={t`Right-Shift Auto-Color`}
+        value={oRightShift}
+        onToggle={() => dispatch(toggleRightShift())}
+      >
+        {
+          t`Place pixels from overlay on right-shift, instead of history.`
+        }
+      </SettingsItem>
+      )}
 
       {list.map(({
         enabled, imageId, canvasId, title, x, y, width, height,
