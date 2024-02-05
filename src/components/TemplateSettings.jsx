@@ -65,13 +65,12 @@ const TemplateSettings = () => {
         {t`Show templates as overlays ingame.`}
       </SettingsItem>
       <SettingsItem
-        title={t`Small Pixels Overlay`}
+        title={t`Small Pixels Zoom`}
         value={oSmallPxls}
         onToggle={() => dispatch(toggleSmallPxls())}
       >
         {
-          // eslint-disable-next-line max-len
-          t`Show overlay as small individual pixels (will only show in high zoomlevels).`
+          t`Show overlay as small individual pixels on high zoomlevels.`
         }
       </SettingsItem>
 

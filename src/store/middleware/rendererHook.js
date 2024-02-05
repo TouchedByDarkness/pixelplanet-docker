@@ -130,7 +130,7 @@ export default (store) => (next) => (action) => {
     case 's/TGL_HISTORICAL_VIEW': {
       const renderer = getRenderer();
       // update view to clamp scale
-      renderer.updateView(renderer.view);
+      renderer.updateView(renderer.view, renderer.view);
       renderer.forceNextRender = true;
       break;
     }

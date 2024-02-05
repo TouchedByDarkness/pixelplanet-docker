@@ -61,3 +61,6 @@ export const HOLD_PAINT = {
   HISTORY: 2,
   OVERLAY: 3,
 };
+
+// threshold at which zoomlevel overlay switches to small-pixel mode
+export const OVERLAY_SP_TH = 8;

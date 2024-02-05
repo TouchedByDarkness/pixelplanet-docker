@@ -9,6 +9,7 @@ import {
   TILE_ZOOM_LEVEL,
   TILE_SIZE,
   MAX_SCALE,
+  OVERLAY_SP_TH,
 } from '../core/constants';
 
 import {
@@ -133,6 +134,7 @@ class Renderer2D extends Renderer {
           canvases[canvasId].historicalSizes,
         );
       }
+      this._view[2] = 0;
       this.updateView(state.canvas.view);
       this.forceNextRender = true;
     }
@@ -226,7 +228,11 @@ class Renderer2D extends Renderer {
       this.tiledScale = tiledScale;
       this.tiledZoom = tiledZoom;
       this.relScale = relScale;
-      if (viewscale < this.scaleThreshold || prevScale < this.scaleThreshold) {
+      if (viewscale < this.scaleThreshold || prevScale < this.scaleThreshold
+        || (state.templates.ovEnabled && (
+          (prevScale <= OVERLAY_SP_TH && scale > OVERLAY_SP_TH)
+          || (prevScale > OVERLAY_SP_TH && scale <= OVERLAY_SP_TH)
+        ))) {
         this.forceNextRender = true;
       } else {
         this.forceNextSubrender = true;
@@ -423,7 +429,9 @@ class Renderer2D extends Renderer {
     }
     context.restore();
 
-    if (state.templates.ovEnabled && !state.templates.oSmallPxls) {
+    if (state.templates.ovEnabled
+      && (scale < OVERLAY_SP_TH || !state.templates.oSmallPxls)
+    ) {
       renderOverlay(
         state, this.canvas, chunkPosition, scale,
         this.tiledScale, this.scaleThreshold,
@@ -554,8 +562,8 @@ class Renderer2D extends Renderer {
       );
     }
 
-    if (viewscale >= 5 && state.templates.ovEnabled
-      && state.templates.oSmallPxls
+    if (state.templates.ovEnabled
+      && state.templates.oSmallPxls && viewscale >= OVERLAY_SP_TH
     ) {
       renderSmallPOverlay(state, viewport, _view, viewscale);
     }

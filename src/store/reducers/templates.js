@@ -7,8 +7,8 @@ const initialState = {
   // prefix o: overlay, m: minimap
   ovEnabled: false,
   mEnabled: false,
-  oOpacity: 70,
-  oSmallPxls: false,
+  oOpacity: 40,
+  oSmallPxls: true,
   /*
    * [{
    *   enabled,

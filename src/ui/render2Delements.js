@@ -119,9 +119,14 @@ export function renderOverlay(
   const [x, y] = centerChunk
     .map((z) => z * TILE_SIZE / tiledScale
     + TILE_SIZE / 2 / tiledScale - canvasSize / 2);
+
+  // if scale > scaleThreshold, then scaling happens in renderer
+  // instead of offscreen canvas
+  const offscreenScale = (scale > scaleThreshold) ? 1.0 : scale;
+
   const { width, height } = $canvas;
-  const horizontalRadius = width / 2 / scale;
-  const verticalRadius = height / 2 / scale;
+  const horizontalRadius = width / 2 / offscreenScale;
+  const verticalRadius = height / 2 / offscreenScale;
   const templates = templateLoader.getTemplatesInView(
     canvasId, x, y, horizontalRadius, verticalRadius,
   );
@@ -129,10 +134,6 @@ export function renderOverlay(
   if (!templates.length) return;
   const context = $canvas.getContext('2d');
   if (!context) return;
-
-  // if scale > scaleThreshold, then scaling happens in renderer
-  // instead of offscreen canvas
-  const offscreenScale = (scale > scaleThreshold) ? 1.0 : scale;
 
   context.save();
   context.scale(offscreenScale, offscreenScale);
