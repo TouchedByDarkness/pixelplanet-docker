@@ -17,7 +17,7 @@ class Chunk2D extends Chunk {
     this.palette = palette;
     this.image = document.createElement('canvas');
     // do NOT use willReadFrequently, it massively trashes Render2D.renderChunks
-    this.image.getContext('2d', { alpha: false });
+    this.image.getContext('2d');
     this.image.width = TILE_SIZE;
     this.image.height = TILE_SIZE;
     this.ready = false;
