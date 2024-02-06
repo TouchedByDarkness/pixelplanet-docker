@@ -507,6 +507,7 @@ class PixelPainterControls {
     const { store, viewport } = this;
     viewport.style.cursor = 'auto';
     store.dispatch(unsetHover());
+    this.isClicking = false;
     this.clearTabTimeout();
   }
 
