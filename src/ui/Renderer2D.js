@@ -775,7 +775,7 @@ class Renderer2D extends Renderer {
     }
 
     if (showGrid && viewscale >= 8) {
-      renderGrid(state, viewport, viewscale, isLightGrid);
+      renderGrid(state, viewport, this._view, viewscale, isLightGrid);
     }
   }
 }
