@@ -63,18 +63,14 @@ const Help = () => {
       />
       <p>
         {t`Place color pixels on a large canvas with other players online!`}<br />
-        {t`Our main canvas is a huge worldmap, you can place wherever you like, but you will have to wait a specific \
-Cooldown between pixels. You can check out the cooldown and requirements on the Canvas Selection menu (globe button on top). \
-Some canvases have a different cooldown for replacing a user-set pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh \
-pixels and 7s on already set pixels.`}<br />
+        {t`Our main canvas is a huge worldmap, you can place wherever you like, but you will have to wait a specific Cooldown between pixels. You can check out the cooldown and requirements on the Canvas Selection menu (globe button on top). Some canvases have a different cooldown for replacing a user-set pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels and 7s on already set pixels.`}<br />
         {t`Higher zoomlevels take some time to update, the 3D globe gets updated at least once per day.`}<br />
         {t`Have fun!`}
       </p>
       <p className="modalinfo">Guilded ({t`recommended`}): <a href="./guilded" target="_blank" rel="noopener noreferrer">pixelplanet.fun/guilded</a></p>
       <p className="modalinfo">{t`Source on `}<a href="https://git.pixelplanet.fun" target="_blank" rel="noopener noreferrer">git.pixelplanet.fun</a></p>
       <h3>{t`Map Data`}</h3>
-      <p>{t`The bare map data that we use, together with converted OpenStreetMap tiles for orientation, \
-can be downloaded from mega.nz here: `}<a href="https://mega.nz/#!JpkBwAbJ!EnSLlZmKv3kEBE0HDhakTgAZZycD3ELjduajJxPGaXo">pixelplanetmap.zip</a> (422MB)</p>
+      <p>{t`The bare map data that we use, together with converted OpenStreetMap tiles for orientation, can be downloaded from mega.nz here: `}<a href="https://mega.nz/#!JpkBwAbJ!EnSLlZmKv3kEBE0HDhakTgAZZycD3ELjduajJxPGaXo">pixelplanetmap.zip</a> (422MB)</p>
       <h3>{t`Banned? Detected as Proxy?`}</h3>
       <div>
         <p>{jt`If you got detected as proxy, but you are none, or think that you got wrongfully banned, please go to our ${guildedLink} or send us an e-mail to ${mailLink} and include the following IID:`}</p>
