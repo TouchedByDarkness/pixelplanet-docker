@@ -109,7 +109,7 @@ export async function checkCaptchaSolution(
   if (!captchaid) {
     return 4;
   }
-  const solution = await client.get(`capt:${captchaid}`);
+  const solution = await client.getDel(`capt:${captchaid}`);
   if (solution) {
     if (evaluateResult(solution, text)) {
       if (Math.random() < 0.1) {
@@ -122,7 +122,7 @@ export async function checkCaptchaSolution(
           EX: TTL_CACHE,
         });
       }
-      logger.info(`CAPTCHA ${ip} successfully solved captcha`);
+      logger.info(`CAPTCHA ${ip} successfully solved captcha ${text}`);
       return 0;
     }
     logger.info(
