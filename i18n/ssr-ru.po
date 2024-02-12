@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -39,6 +39,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "Вы в муте еще на ${ timeMin } минут"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "Вы в муте еще на ${ ttl } секунд"
 
@@ -46,25 +47,26 @@ msgstr "Вы в муте еще на ${ ttl } секунд"
 #, javascript-format
 msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
 msgstr ""
-"Вы отправляете сообщения слишком быстро, вам нужно подождать ${waitTime}с :("
+"Вы отправляете сообщения слишком быстро, вам нужно подождать ${ waitTime }с :"
+"("
 
 #: src/core/ChatProvider.js:471
 msgid "You don't have access to this channel"
 msgstr "У вас нет доступа к этому каналу"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Ваша почта должна быть подтверждена, чтобы общаться в чате"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Вы не можете отправить сообщение такой длины :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Пожалуйста, используйте канал int"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Перестаньте флудить."
 
@@ -92,35 +94,35 @@ msgstr "Пароль успешно изменен."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Неверный адрес :( Пожалуйста, проверьте свою почту еще раз."
 
-#: src/ssr/Globe.jsx:32
+#: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3D-глобус"
 
-#: src/ssr/Globe.jsx:33
+#: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
 msgstr "3D-глобус всей нашей карты"
 
-#: src/ssr/Globe.jsx:46
+#: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
 msgstr "Дважды щелкните по глобусу, чтобы вернуться."
 
-#: src/ssr/Globe.jsx:47
+#: src/ssr/Globe.jsx:52
 msgid "Loading..."
 msgstr "Загрузка..."
 
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "Всплывающее окно PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Main.jsx:58
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:59
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr "Ставьте цветные пиксели на огромном полотне с другими людьми по сети"
 
@@ -227,7 +229,7 @@ msgstr "Это могут сделать только админы"
 msgid "You are not banned"
 msgstr "Вы не забанены"
 
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Этот провайдер электронной почты не разрешен"
 
@@ -263,26 +265,6 @@ msgstr "Не удалось создать нового пользователя
 msgid "Failed to establish session after register :("
 msgstr "Не удалось установить сеанс после регистрации :("
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Вы даже не вошли в систему."
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Ошибка сервера при выходе из аккаунта."
-
-#: src/routes/api/auth/change_mail.js:43
-#: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
-msgid "You are not authenticated."
-msgstr "Вы не авторизованы."
-
-#: src/routes/api/auth/change_mail.js:52
-#: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
-msgid "Incorrect password!"
-msgstr "Неверный пароль!"
-
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Подтверждение почты"
@@ -299,6 +281,34 @@ msgstr ""
 "Ваш код проверки почты недействителен или срок его действия уже истек :(, "
 "запросите новый."
 
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Вы даже не вошли в систему."
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Ошибка сервера при выходе из аккаунта."
+
+#: src/routes/api/auth/change_mail.js:44
+#: src/routes/api/auth/change_passwd.js:34
+#: src/routes/api/auth/delete_account.js:36
+msgid "You are not authenticated."
+msgstr "Вы не авторизованы."
+
+#: src/routes/api/auth/change_mail.js:53
+#: src/routes/api/auth/change_passwd.js:43
+#: src/routes/api/auth/delete_account.js:55
+msgid "Incorrect password!"
+msgstr "Неверный пароль!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr "Пользователи в муте не могут удалить свой аккаунт."
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr "Пользователи в муте не могут это сделать."
+
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
 msgstr "Аккаунты PixelPlanet.fun"
@@ -312,45 +322,53 @@ msgstr "Вы будете автоматически перенаправлен�
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Или ${clickHere}, чтобы вернуться на pixelplanet"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Земля"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Луна"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D полотно"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Коронавирус"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1бит"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Топ-10"
 
+#: src/canvasesDesc.js:28
+msgid "Thoia"
+msgstr "Тойя"
+
 #: src/canvasesDesc.js:29
+msgid "2bit"
+msgstr "2бит"
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr ""
 "Наше главное полотно - огромная карта мира, вы можете ставить пиксели где "
 "хотите"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -359,33 +377,45 @@ msgstr ""
 "текста (если только это не часть рисунка) или изображений размером более 1,5 "
 "х 1,5 тысячи пикселей."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Размещайте воксели на 3D полотне вместе с другими игроками"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Специальное полотно для распространения осведомленности о SARS-CoV2"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "Зеркало PixelZone"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "Зеркало PixelCanvas"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Чёрно-белое полотно"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
 "Полотно для самых активных игроков за предыдущий день. Ежедневное обновление "
 "рейтинга в 00:00 UTC."
+
+#: src/canvasesDesc.js:40
+msgid ""
+"Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon the "
+"old world and all it entails."
+msgstr ""
+"Полотно мира Тойи. Стройте вымышленные миры и рисунки. Оставьте старый мир и "
+"все, что с ним связано."
+
+#: src/canvasesDesc.js:41
+msgid "Only four colors. Same rules as moon."
+msgstr "Только четыре цвета. Правила такие же как и на луне."
 
 #: src/core/MailProvider.js:66
 #, javascript-format
@@ -394,6 +424,7 @@ msgstr ""
 "Добро пожаловать ${ name } на PixelPlanet, пожалуйста, подтвердите свою почту"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Привет, ${ name }"
 
@@ -457,7 +488,7 @@ msgid ""
 "requested this mail was ${ ip })."
 msgstr ""
 "Если вы не запрашивали это письмо, просто проигнорируйте его (IP-адрес, "
-"который запрашивал это письмо: ${ip})."
+"который запрашивал это письмо: ${ ip })."
 
 #: src/core/MailProvider.js:114
 msgid "Mail is not configured on the server"
