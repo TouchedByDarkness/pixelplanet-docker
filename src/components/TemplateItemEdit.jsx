@@ -9,7 +9,7 @@ import { useSelector, shallowEqual } from 'react-redux';
 import { t } from 'ttag';
 
 import templateLoader from '../ui/templateLoader';
-import { coordsFromUrl } from '../core/utils';
+import { coordsFromString } from '../core/utils';
 
 const TemplateItemEdit = ({
   title: initTitle,
@@ -18,13 +18,13 @@ const TemplateItemEdit = ({
   imageId,
   stopEditing,
 }) => {
-  const [initCoords, initDimensions] = useMemo(() => [
+  const [initCoords] = useMemo(() => [
     (Number.isNaN(parseInt(initX, 10))
       || Number.isNaN(parseInt(initY, 10))) ? null : [initX, initY],
   ], [initX, initY]);
 
   const [coords, setCoords] = useState(initCoords);
-  const [dimensions, setDimensions] = useState(initDimensions);
+  const [dimensions, setDimensions] = useState(null);
   const [title, setTitle] = useState(initTitle || '');
   const [file, setFile] = useState(null);
   const [titleUnique, setTitleUnique] = useState(true);
@@ -148,14 +148,11 @@ const TemplateItemEdit = ({
             }}
             placeholder="X_Y or URL"
             onChange={(evt) => {
-              let co = evt.target.value.trim();
-              co = coordsFromUrl(co) || co;
-              evt.target.value = co;
-              const newCoords = co.split('_').map((z) => parseInt(z, 10));
-              setCoords(
-                (!newCoords.some(Number.isNaN) && newCoords.length === 2)
-                  ? newCoords : null,
-              );
+              const co = coordsFromString(evt.target.value.trim());
+              if (co) {
+                evt.target.value = co.join('_');
+              }
+              setCoords(co);
             }}
           /></span>
         </p>

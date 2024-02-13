@@ -7,7 +7,7 @@ import { useSelector, shallowEqual } from 'react-redux';
 import { t } from 'ttag';
 
 import useInterval from './hooks/interval';
-import { getToday, dateToString, coordsFromUrl } from '../core/utils';
+import { getToday, dateToString, coordsFromString } from '../core/utils';
 import { shardOrigin } from '../store/actions/fetch';
 
 const keptState = {
@@ -278,8 +278,11 @@ function ModCanvastools() {
           placeholder="X_Y or URL"
           onChange={(evt) => {
             let co = evt.target.value.trim();
-            co = coordsFromUrl(co) || co;
-            evt.target.value = co;
+            co = coordsFromString(co);
+            if (co) {
+              co = co.join('_');
+              evt.target.value = co;
+            }
             keptState.coords = co;
           }}
         />
@@ -343,8 +346,11 @@ function ModCanvastools() {
           placeholder="X_Y or URL"
           onChange={(evt) => {
             let co = evt.target.value.trim();
-            co = coordsFromUrl(co) || co;
-            evt.target.value = co;
+            co = coordsFromString(co);
+            if (co) {
+              co = co.join('_');
+              evt.target.value = co;
+            }
             keptState.tlcoords = co;
           }}
         />
@@ -362,8 +368,11 @@ function ModCanvastools() {
           placeholder="X_Y or URL"
           onChange={(evt) => {
             let co = evt.target.value.trim();
-            co = coordsFromUrl(co) || co;
-            evt.target.value = co;
+            co = coordsFromString(co);
+            if (co) {
+              co = co.join('_');
+              evt.target.value = co;
+            }
             keptState.brcoords = co;
           }}
         />
@@ -420,8 +429,11 @@ function ModCanvastools() {
               placeholder="X_Y or URL"
               onChange={(evt) => {
                 let co = evt.target.value.trim();
-                co = coordsFromUrl(co) || co;
-                evt.target.value = co;
+                co = coordsFromString(co);
+                if (co) {
+                  co = co.join('_');
+                  evt.target.value = co;
+                }
                 keptState.tlrcoords = co;
               }}
             />
@@ -439,8 +451,11 @@ function ModCanvastools() {
               placeholder="X_Y or URL"
               onChange={(evt) => {
                 let co = evt.target.value.trim();
-                co = coordsFromUrl(co) || co;
-                evt.target.value = co;
+                co = coordsFromString(co);
+                if (co) {
+                  co = co.join('_');
+                  evt.target.value = co;
+                }
                 keptState.brrcoords = co;
               }}
             />
@@ -507,8 +522,11 @@ function ModCanvastools() {
           placeholder="X_Y or URL"
           onChange={(evt) => {
             let co = evt.target.value.trim();
-            co = coordsFromUrl(co) || co;
-            evt.target.value = co;
+            co = coordsFromString(co);
+            if (co) {
+              co = co.join('_');
+              evt.target.value = co;
+            }
             keptState.tlccoords = co;
           }}
         />
@@ -526,8 +544,11 @@ function ModCanvastools() {
           placeholder="X_Y or URL"
           onChange={(evt) => {
             let co = evt.target.value.trim();
-            co = coordsFromUrl(co) || co;
-            evt.target.value = co;
+            co = coordsFromString(co);
+            if (co) {
+              co = co.join('_');
+              evt.target.value = co;
+            }
             keptState.brccoords = co;
           }}
         />

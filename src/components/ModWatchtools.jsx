@@ -8,7 +8,7 @@ import { useSelector, shallowEqual } from 'react-redux';
 import { t } from 'ttag';
 
 import copyTextToClipboard from '../utils/clipboard';
-import { parseInterval, coordsFromUrl } from '../core/utils';
+import { parseInterval, coordsFromString } from '../core/utils';
 import { shardOrigin } from '../store/actions/fetch';
 
 const keepState = {
@@ -185,8 +185,11 @@ function ModWatchtools() {
             placeholder="X_Y or URL"
             onChange={(evt) => {
               let co = evt.target.value.trim();
-              co = coordsFromUrl(co) || co;
-              evt.target.value = co;
+              co = coordsFromString(co);
+              if (co) {
+                co = co.join('_');
+                evt.target.value = co;
+              }
               keepState.tlcoords = co;
             }}
           />
@@ -204,8 +207,11 @@ function ModWatchtools() {
             placeholder="X_Y or URL"
             onChange={(evt) => {
               let co = evt.target.value.trim();
-              co = coordsFromUrl(co) || co;
-              evt.target.value = co;
+              co = coordsFromString(co);
+              if (co) {
+                co = co.join('_');
+                evt.target.value = co;
+              }
               keepState.brcoords = co;
             }}
           />

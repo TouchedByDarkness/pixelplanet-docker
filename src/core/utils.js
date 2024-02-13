@@ -471,25 +471,31 @@ export function getDateTimeString(timestamp) {
 }
 
 /*
- * get X_Y coordinates out of URL
+ * get X_Y coordinates out of url or x_y or x,y string
  * @param url url ending with #canas,x,y,z coords
- * @return coordinates in X_Y form or null
+ * @return coordinates in [x,y] array or null
  */
-export function coordsFromUrl(url) {
+export function coordsFromString(url) {
   let splitInd = url.lastIndexOf('#');
-  if (splitInd === -1) {
-    return null;
-  }
-  let part = url.slice(splitInd + 1);
-  splitInd = part.indexOf('?');
+  let coords = [];
   if (splitInd !== -1) {
-    part = part.slice(0, splitInd);
+    let part = url.slice(splitInd + 1);
+    splitInd = part.indexOf('?');
+    if (splitInd !== -1) {
+      part = part.slice(0, splitInd);
+    }
+    coords = part.split(',').map((z) => parseInt(z, 10)).slice(1);
   }
-  const [, x, y] = part.split(',');
-  if (x && y) {
-    return `${x}_${y}`;
+  if (coords.length !== 2 || coords.some(Number.isNaN)) {
+    coords = url.split('_').map((z) => parseInt(z, 10));
   }
-  return null;
+  if (coords.length !== 2 || coords.some(Number.isNaN)) {
+    coords = url.split(',').map((z) => parseInt(z, 10));
+  }
+  if (coords.length !== 2 || coords.some(Number.isNaN)) {
+    coords = null;
+  }
+  return coords;
 }
 
 /*
