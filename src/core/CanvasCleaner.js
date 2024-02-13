@@ -34,10 +34,11 @@ const METHODS = {
     let rplPxl = null;
     for (let u = -1; u <= 1; u += 1) {
       for (let v = -1; v <= 1; v += 1) {
+        if  (u === 0 && v === 0) {
+          continue;
+        }
         pxl = canvasCleaner.getPixelInChunkArea(xc + u, yc + v);
-        if (pxl === null
-          || (u === 0 && v === 0)
-        ) {
+        if (pxl === null) {
           continue;
         }
         if (pxl >= clrIgnore) {
@@ -60,10 +61,11 @@ const METHODS = {
     let rplPxl = null;
     for (let u = -1; u <= 1; u += 1) {
       for (let v = -1; v <= 1; v += 1) {
+        if  (u === 0 && v === 0) {
+          continue;
+        }
         pxl = canvasCleaner.getPixelInChunkArea(xc + u, yc + v);
-        if (pxl === null
-          || (u === 0 && v === 0)
-        ) {
+        if (pxl === null) {
           continue;
         }
         if (pxl >= clrIgnore) {
@@ -90,10 +92,11 @@ const METHODS = {
     const origPxl = pxl;
     for (let u = -1; u <= 1; u += 1) {
       for (let v = -1; v <= 1; v += 1) {
+        if  (u === 0 && v === 0) {
+          continue;
+        }
         pxl = canvasCleaner.getPixelInChunkArea(xc + u, yc + v);
-        if (pxl === null
-          || (u === 0 && v === 0)
-        ) {
+        if (pxl === null) {
           continue;
         }
         if (pxl < clrIgnore) {
@@ -364,7 +367,7 @@ class CanvasCleaner {
         const iAbs = iRel + i;
         const jAbs = jRel + j;
         if (
-          io && jo
+          io !== null && jo !== null
           && iAbs >= io - 1
           && iAbs <= io + 1
           && jAbs >= jo - 1
@@ -402,7 +405,7 @@ class CanvasCleaner {
     const { chunks, centerChunk } = this;
     const [io, jo] = centerChunk;
     if (
-      io && jo
+      io !== null && jo !== null
       && i >= io - 1
       && i <= io + 1
       && j >= jo - 1
