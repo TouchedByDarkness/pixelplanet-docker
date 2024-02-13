@@ -484,7 +484,7 @@ export function coordsFromString(url) {
     if (splitInd !== -1) {
       part = part.slice(0, splitInd);
     }
-    coords = part.split(',').map((z) => parseInt(z, 10)).slice(1);
+    coords = part.split(',').map((z) => parseInt(z, 10)).slice(1, 3);
   }
   if (coords.length !== 2 || coords.some(Number.isNaN)) {
     coords = url.split('_').map((z) => parseInt(z, 10));
