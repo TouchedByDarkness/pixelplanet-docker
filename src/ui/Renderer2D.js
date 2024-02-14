@@ -58,10 +58,10 @@ class Renderer2D extends Renderer {
     //--
     const viewport = document.createElement('canvas');
     viewport.className = 'viewport';
-    const viewportCtx = viewport.getContext('2d', { alpha: false });
+    const viewportCtx = viewport.getContext('2d');
     this.viewport = viewport;
     const canvas = document.createElement('canvas');
-    const context = canvas.getContext('2d', { alpha: false });
+    const context = canvas.getContext('2d');
     this.canvas = canvas;
     this.onWindowResize();
     //--
