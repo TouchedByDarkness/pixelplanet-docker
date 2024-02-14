@@ -171,9 +171,11 @@ class Renderer2D extends Renderer {
   }
 
   getPointedColor() {
-    return this.getColorIndexOfPixel(
-      ...this.store.getState().canvas.hover,
-    );
+    const { hover } = this.store.getState().canvas;
+    if (!hover) {
+      return null;
+    }
+    return this.getColorIndexOfPixel(...hover);
   }
 
   updateView(view, origin) {
