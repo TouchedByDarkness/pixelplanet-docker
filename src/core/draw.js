@@ -189,6 +189,7 @@ export default async function drawByOffsets(
       user.country,
       ranked,
       canvasId,
+      canvas.linkcd ?? canvasId,
       i, j,
       clrIgnore,
       req,

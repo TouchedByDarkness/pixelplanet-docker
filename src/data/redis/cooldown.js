@@ -23,6 +23,8 @@ const PREFIX = 'cd';
  * @param id userId
  * @param ranked boolean if increasing rank (should only be true if logged in)
  * @param clrIgnore, bcd, pcd, cds information about canvas
+ * @param canvasId id of the canvas we are placing on
+ * @param canvasCdId id of the canvas we take the cooldown from
  * @param i, j chunk coordinates
  * @param pxls Array with offsets of pixels
  * @return see lua/placePixel.lua
@@ -33,6 +35,7 @@ export default function allowPlace(
   country,
   ranked,
   canvasId,
+  canvasCdId,
   i, j,
   clrIgnore,
   req,
@@ -44,11 +47,6 @@ export default function allowPlace(
 ) {
   const isalKey = `${ALLOWED_PREFIX}:${ip}`;
   const captKey = (CAPTCHA_TIME >= 0) ? `${CAPTCHA_PREFIX}:${ip}` : 'nope';
-  // ATTENTION: HARDCODED LINKED COODLOWN OF MINIMAP AND EARTH CANVAS
-  let canvasCdId = canvasId;
-  if (canvasId === 11) {
-    canvasCdId = 0;
-  }
   const ipCdKey = `${PREFIX}:${canvasCdId}:ip:${ip}`;
   let idCdKey;
   if (id) {

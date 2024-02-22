@@ -146,6 +146,7 @@ Meaning of some values:
 | hid    | Hidden canvases, can be just seen by pressing P (default: false)|
 | sd     | Start-date of the canvas (for historical view)                  |
 | ed     | end date for historical view (canvas retired)                   |
+| linkcd | id of another canvas to take the cooldown from                  |
 
 Notes:
 
