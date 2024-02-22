@@ -5,6 +5,7 @@ utils/ocean-tiles/ocean
 utils/osm-tiles/osm
 i18n/*.mo
 test*.js
+utils/rendering
 
 logs
 *.log
