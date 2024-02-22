@@ -44,17 +44,15 @@ export default function allowPlace(
 ) {
   const isalKey = `${ALLOWED_PREFIX}:${ip}`;
   const captKey = (CAPTCHA_TIME >= 0) ? `${CAPTCHA_PREFIX}:${ip}` : 'nope';
-  const ipCdKey = `${PREFIX}:${canvasId}:ip:${ip}`;
+  // ATTENTION: HARDCODED LINKED COODLOWN OF MINIMAP AND EARTH CANVAS
+  let canvasCdId = canvasId;
+  if (canvasId === 11) {
+    canvasCdId = 0;
+  }
+  const ipCdKey = `${PREFIX}:${canvasCdId}:ip:${ip}`;
   let idCdKey;
   if (id) {
-    idCdKey = `${PREFIX}:${canvasId}:id:${id}`;
-  /*
-   * cooldown by subnet should be more restrictive
-   *
-  } else if (ip.includes('.')) {
-    const ips = ip.slice(0, ip.lastIndexOf('.'));
-    idCdKey = `${PREFIX}:${canvasId}:ips:${ips}`;
-  */
+    idCdKey = `${PREFIX}:${canvasCdId}:id:${id}`;
   } else {
     idCdKey = 'nope';
   }
