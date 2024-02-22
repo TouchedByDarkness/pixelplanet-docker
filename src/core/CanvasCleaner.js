@@ -34,7 +34,7 @@ const METHODS = {
     let rplPxl = null;
     for (let u = -1; u <= 1; u += 1) {
       for (let v = -1; v <= 1; v += 1) {
-        if  (u === 0 && v === 0) {
+        if (u === 0 && v === 0) {
           continue;
         }
         pxl = canvasCleaner.getPixelInChunkArea(xc + u, yc + v);
@@ -61,7 +61,7 @@ const METHODS = {
     let rplPxl = null;
     for (let u = -1; u <= 1; u += 1) {
       for (let v = -1; v <= 1; v += 1) {
-        if  (u === 0 && v === 0) {
+        if (u === 0 && v === 0) {
           continue;
         }
         pxl = canvasCleaner.getPixelInChunkArea(xc + u, yc + v);
@@ -92,7 +92,7 @@ const METHODS = {
     const origPxl = pxl;
     for (let u = -1; u <= 1; u += 1) {
       for (let v = -1; v <= 1; v += 1) {
-        if  (u === 0 && v === 0) {
+        if (u === 0 && v === 0) {
           continue;
         }
         pxl = canvasCleaner.getPixelInChunkArea(xc + u, yc + v);
