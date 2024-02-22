@@ -8,7 +8,7 @@ Note:
 
 ## sphere-protection.blend
 This blend file includes the sphere we use to display the globe with two UV maps, one for protection like it's used on many globe textures of the earth like [here](http://blog.mastermaps.com/2013/09/creating-webgl-earth-with-threejs.html) and [here](http://www.shadedrelief.com/natural3/pages/textures.html) and one for our mercator projection that is the same as on OpenStreetMap, with additional changes for poles.
-The shader nodes in the bumpmap material are setup so that they bake from one uv map to another.
+The shader nodes in the bumpmap material are setup so that they bake from one uv map to another, you might have to remove all other materials and set the correct origin textures for it to bake.
 
 If you want to generate the .glb model file for the site thats in public/globe/globe.glb:
 1. delete all materials of the sphere
