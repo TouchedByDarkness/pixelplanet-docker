@@ -640,11 +640,13 @@ class SocketServer {
   }
 
   deleteChunk(chunkid, ws) {
-    ws.chunkCnt -= 1;
     if (!this.CHUNK_CLIENTS.has(chunkid)) return;
     const clients = this.CHUNK_CLIENTS.get(chunkid);
     const pos = clients.indexOf(ws);
-    if (~pos) clients.splice(pos, 1);
+    if (~pos) {
+      clients.splice(pos, 1);
+      ws.chunkCnt -= 1;
+    }
   }
 
   deleteAllChunks(ws) {
