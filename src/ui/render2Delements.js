@@ -135,7 +135,7 @@ export function renderOverlay(
   const context = $canvas.getContext('2d');
   if (!context) return;
 
-  context.imageSmoothingEnabled = true;
+  context.imageSmoothingEnabled = false;
   context.save();
   context.scale(offscreenScale, offscreenScale);
   context.globalAlpha = state.templates.oOpacity / 100;
@@ -177,7 +177,7 @@ export function renderSmallPOverlay(
   if (!context) return;
 
   const relScale = scale / 3;
-  context.imageSmoothingEnabled = true;
+  context.imageSmoothingEnabled = false;
   context.save();
   context.scale(relScale, relScale);
   for (const template of templates) {
