@@ -191,6 +191,9 @@ function ModCanvastools() {
       // eslint-disable-next-line max-len
       descCleanAction = t`Clean spare pixels that are surrounded by a single other color or unset pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are two cooldowns)!)`;
       break;
+    case 'makenull':
+      // eslint-disable-next-line max-len
+      descCleanAction = t`Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT ISN'T ALREADY MOSTLY 0)`;
     default:
       // nothing
   }
@@ -496,7 +499,7 @@ function ModCanvastools() {
           selectCleanAction(sel.options[sel.selectedIndex].value);
         }}
       >
-        {['spare', 'spareext', 'spareextu'].map((opt) => (
+        {['spare', 'spareext', 'spareextu', 'makenull'].map((opt) => (
           <option
             key={opt}
             value={opt}

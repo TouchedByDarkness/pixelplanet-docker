@@ -120,6 +120,14 @@ const METHODS = {
     }
     return finPxl;
   },
+  
+  makenull: (xc, yc, clrIgnore, canvasCleaner) => {
+    let pxl = canvasCleaner.getPixelInChunkArea(xc, yc);
+    if (pxl === null || pxl === 0) {
+      return null;
+    }
+    return 0;
+  },
 };
 
 class CanvasCleaner {
