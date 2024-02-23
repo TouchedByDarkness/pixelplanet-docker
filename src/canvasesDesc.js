@@ -38,7 +38,7 @@ function getCanvases(t) {
     7: t`Black and White canvas`,
     8: t`A canvas for the most active players from the the previous day. Daily ranking updates at 00:00 UTC.`,
     10: t`Only four colors. Same rules as moon.`,
-    11: t`Spam trash on a smaller earth with protected ocean. Shares cooldown with earth canvas`,
+    11: t`Conquer land on a smaller earth with protected ocean. Shares cooldown with earth canvas.`,
   };
   /*
    * no edit below here needed when adding/removing canvas
