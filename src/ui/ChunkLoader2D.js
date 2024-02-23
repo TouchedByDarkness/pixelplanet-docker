@@ -89,7 +89,7 @@ class ChunkLoader2D extends ChunkLoader {
     const px = getCellInsideChunk(historicalCanvasSize, [x, y]);
     const curTime = Date.now();
 
-    if (historicalTime && historicalTime !== '0000') {
+    if (historicalTime && historicalTime && historicalTime !== '0000') {
       // eslint-disable-next-line max-len
       const incrementalChunkKey = `${historicalDate}${historicalTime}:${cx}:${cy}`;
       const incrementalChunk = this.cget(incrementalChunkKey);

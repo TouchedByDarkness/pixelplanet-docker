@@ -86,10 +86,11 @@ class Chunk2D extends Chunk {
   getColorIndex(cell, nearest = true) {
     const [x, y] = cell;
     const ctx = this.image.getContext('2d');
-    const rgb = ctx.getImageData(x, y, 1, 1).data;
+    const rgba = ctx.getImageData(x, y, 1, 1).data;
+    if (!nearest && rgba[3] === 0) return null;
     const ind = (nearest)
-      ? this.palette.getClosestIndexOfColor(rgb[0], rgb[1], rgb[2])
-      : this.palette.getIndexOfColor(rgb[0], rgb[1], rgb[2]);
+      ? this.palette.getClosestIndexOfColor(rgba[0], rgba[1], rgba[2])
+      : this.palette.getIndexOfColor(rgba[0], rgba[1], rgba[2]);
     return ind;
   }
 
