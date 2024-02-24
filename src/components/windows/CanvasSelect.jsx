@@ -37,8 +37,19 @@ Archive of removed canvases can be accessed here:`}&nbsp;
         >{t`Archive`}</span>
       </p>
       {
-        Object.keys(canvases).map((canvasId) => (
-          (!canvases[canvasId].hid || showHiddenCanvases)
+        Object.keys(canvases)
+          .sort((a, b) => {
+            // display forced default canvas first
+            if (a === window.ssv.dc) return -1;
+            if (b === window.ssv.dc) return 1;
+            // display linked canvas right after canvas they are linked too
+            // eslint-disable-next-line eqeqeq
+            if (canvases[a].linkcd != null) a = canvases[a].linkcd + 0.1;
+            // eslint-disable-next-line eqeqeq
+            if (canvases[b].linkcd != null) b = canvases[b].linkcd + 0.1;
+            return a - b;
+          }).map((canvasId) => (
+            (!canvases[canvasId].hid || showHiddenCanvases)
             && !canvases[canvasId].ed
             && (
               <CanvasItem
@@ -49,7 +60,7 @@ Archive of removed canvases can be accessed here:`}&nbsp;
                 selCanvas={selCanvas}
               />
             )
-        ))
+          ))
       }
       {
         (window.ssv?.backupurl

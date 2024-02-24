@@ -100,6 +100,9 @@ function getViewFromURL(canvases) {
 
   let canvasIdent = almost[0];
   let canvasId = getIdFromObject(canvases, canvasIdent);
+  if (!canvasId && window.ssv.dc) {
+    canvasId = window.ssv.dc;
+  }
   if (!canvasId || (!window.ssv?.backupurl && canvases[canvasId].ed)) {
     canvasId = DEFAULT_CANVAS_ID;
     const canvas = canvases[DEFAULT_CANVAS_ID];

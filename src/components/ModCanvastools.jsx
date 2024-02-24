@@ -194,6 +194,7 @@ function ModCanvastools() {
     case 'makenull':
       // eslint-disable-next-line max-len
       descCleanAction = t`Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT ISN'T ALREADY MOSTLY 0)`;
+      break;
     default:
       // nothing
   }
