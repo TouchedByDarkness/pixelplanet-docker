@@ -26,13 +26,18 @@ function generateMainPage(req) {
   const host = getHostFromRequest(req, false);
   const shard = (host.startsWith(`${socketEvents.thisShard}.`))
     ? null : socketEvents.getLowestActiveShard();
-  const ssvR = JSON.stringify({
+  const ssv = {
     availableStyles: getCssAssets(),
     langs,
     backupurl: BACKUP_URL,
     shard,
     lang,
-  });
+  };
+  // HARDCODE canasId 11 as default for turkey
+  if (req.headers['cf-ipcountry'] === 'TR') {
+    ssv.dc = '11';
+  }
+  const ssvR = JSON.stringify(ssv);
   const scripts = getJsAssets('client', lang);
 
   /*
