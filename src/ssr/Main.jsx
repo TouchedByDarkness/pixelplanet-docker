@@ -34,7 +34,9 @@ function generateMainPage(req) {
     lang,
   };
   // HARDCODE canasId 11 as default for turkey
-  if (req.headers['cf-ipcountry'] === 'TR') {
+  if (req.headers['cf-ipcountry'] === 'TR'
+    || req.headers['cf-ipcountry'] === 'PL'
+  ) {
     ssv.dc = '11';
   }
   const ssvR = JSON.stringify(ssv);
