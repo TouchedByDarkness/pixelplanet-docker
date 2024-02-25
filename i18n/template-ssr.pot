@@ -106,11 +106,11 @@ msgstr ""
 msgid "PixelPlanet.Fun PopUp"
 msgstr ""
 
-#: src/ssr/Main.jsx:58
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr ""
 
-#: src/ssr/Main.jsx:59
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 
@@ -220,21 +220,6 @@ msgstr ""
 msgid "You are not banned"
 msgstr ""
 
-#: src/routes/api/auth/verify.js:26
-#: src/routes/api/auth/verify.js:35
-msgid "Mail verification"
-msgstr ""
-
-#: src/routes/api/auth/verify.js:27
-msgid "You are now verified :)"
-msgstr ""
-
-#: src/routes/api/auth/verify.js:35
-msgid ""
-"Your mail verification code is invalid or already expired :(, please "
-"request a new one."
-msgstr ""
-
 #: src/routes/api/auth/change_mail.js:22
 #: src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
@@ -270,6 +255,21 @@ msgstr ""
 
 #: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
+msgstr ""
+
+#: src/routes/api/auth/verify.js:26
+#: src/routes/api/auth/verify.js:35
+msgid "Mail verification"
+msgstr ""
+
+#: src/routes/api/auth/verify.js:27
+msgid "You are now verified :)"
+msgstr ""
+
+#: src/routes/api/auth/verify.js:35
+msgid ""
+"Your mail verification code is invalid or already expired :(, please "
+"request a new one."
 msgstr ""
 
 #: src/routes/api/auth/logout.js:11
@@ -347,11 +347,11 @@ msgid "Top10"
 msgstr ""
 
 #: src/canvasesDesc.js:28
-msgid "Thoia"
+msgid "2bit"
 msgstr ""
 
 #: src/canvasesDesc.js:29
-msgid "2bit"
+msgid "Minimap"
 msgstr ""
 
 #: src/canvasesDesc.js:32
@@ -391,13 +391,13 @@ msgid ""
 msgstr ""
 
 #: src/canvasesDesc.js:40
-msgid ""
-"Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon the "
-"old world and all it entails."
+msgid "Only four colors. Same rules as moon."
 msgstr ""
 
 #: src/canvasesDesc.js:41
-msgid "Only four colors. Same rules as moon."
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
 msgstr ""
 
 #: src/core/MailProvider.js:66

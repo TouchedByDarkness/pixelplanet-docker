@@ -55,11 +55,11 @@ msgstr "Оверлей включен"
 msgid "Overlay OFF"
 msgstr "Оверлей выключен"
 
-#: src/components/windows/Help.jsx:51 src/controls/keypress.js:224
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
 msgstr "Пасхалки включены"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:225
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
 msgstr "Пасхалки выключены"
 
@@ -260,7 +260,7 @@ msgid "You have new messages in chat"
 msgstr "У вас есть новые сообщения в чате"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
-#: src/components/ModWatchtools.jsx:384 src/components/ModWatchtools.jsx:402
+#: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
 msgid "Copy to Clipboard"
 msgstr "Скопировать в буфер обмена"
 
@@ -305,7 +305,7 @@ msgstr "Загрузка"
 msgid "Select Date above"
 msgstr "Выберите дату выше"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:222
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
@@ -358,30 +358,6 @@ msgstr "Сделать снимок экрана"
 msgid "Globe View"
 msgstr "Просмотр глобуса"
 
-#: src/components/buttons/PencilButton.jsx:34
-msgid "History Pencil ON"
-msgstr "Рисование по истории включено"
-
-#: src/components/buttons/PencilButton.jsx:41
-msgid "Overlay Pencil ON"
-msgstr "Рисование по оверлею включено"
-
-#: src/components/buttons/PencilButton.jsx:68
-msgid "Enable Pencil"
-msgstr "Включить непрерывное рисование"
-
-#: src/components/buttons/PencilButton.jsx:72
-msgid "Disable Pencil"
-msgstr "Отключить непрерывное рисование"
-
-#: src/components/buttons/PencilButton.jsx:76
-msgid "Disable History Pencil"
-msgstr "Отключить рисование по истории"
-
-#: src/components/buttons/PencilButton.jsx:80
-msgid "Disable Overlay Pencil"
-msgstr "Отключить рисование по оверлею"
-
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Закрыть палитру"
@@ -389,6 +365,30 @@ msgstr "Закрыть палитру"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Открыть палитру"
+
+#: src/components/buttons/PencilButton.jsx:32
+msgid "History Pencil ON"
+msgstr "Рисование по истории включено"
+
+#: src/components/buttons/PencilButton.jsx:38
+msgid "Overlay Pencil ON"
+msgstr "Рисование по оверлею включено"
+
+#: src/components/buttons/PencilButton.jsx:65
+msgid "Enable Pencil"
+msgstr "Включить непрерывное рисование"
+
+#: src/components/buttons/PencilButton.jsx:69
+msgid "Disable Pencil"
+msgstr "Отключить непрерывное рисование"
+
+#: src/components/buttons/PencilButton.jsx:73
+msgid "Disable History Pencil"
+msgstr "Отключить рисование по истории"
+
+#: src/components/buttons/PencilButton.jsx:77
+msgid "Disable Overlay Pencil"
+msgstr "Отключить рисование по оверлею"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -437,7 +437,7 @@ msgstr "Ошибка"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:184
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
@@ -487,11 +487,11 @@ msgstr "Теперь, после того как вы увидели это со
 msgid "Why?"
 msgstr "Почему?"
 
-#: src/components/windows/Help.jsx:66
+#: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
 msgstr "Ставьте цветные пиксели на огромном полотне с другими людьми по сети!"
 
-#: src/components/windows/Help.jsx:67
+#: src/components/windows/Help.jsx:66
 msgid ""
 "Our main canvas is a huge worldmap, you can place wherever you like, but you "
 "will have to wait a specific Cooldown between pixels. You can check out the "
@@ -508,7 +508,7 @@ msgstr ""
 "например, 4с/7с значит что 4с для нетронутых пикселей и 7с для уже "
 "поставленных ранее."
 
-#: src/components/windows/Help.jsx:71
+#: src/components/windows/Help.jsx:67
 msgid ""
 "Higher zoomlevels take some time to update, the 3D globe gets updated at "
 "least once per day."
@@ -516,23 +516,23 @@ msgstr ""
 "Более высокие уровни увеличения масштаба карты требуют некоторое время для "
 "обновления, 3D глобус обновляется как минимум один раз в день."
 
-#: src/components/windows/Help.jsx:72
+#: src/components/windows/Help.jsx:68
 msgid "Have fun!"
 msgstr "Развлекайтесь!"
 
-#: src/components/windows/Help.jsx:74
+#: src/components/windows/Help.jsx:70
 msgid "recommended"
 msgstr "рекомендовано"
 
-#: src/components/windows/Help.jsx:75
+#: src/components/windows/Help.jsx:71
 msgid "Source on "
 msgstr "Исходный код на "
 
-#: src/components/windows/Help.jsx:76
+#: src/components/windows/Help.jsx:72
 msgid "Map Data"
 msgstr "Картографические данные"
 
-#: src/components/windows/Help.jsx:77
+#: src/components/windows/Help.jsx:73
 msgid ""
 "The bare map data that we use, together with converted OpenStreetMap tiles "
 "for orientation, can be downloaded from mega.nz here: "
@@ -540,11 +540,11 @@ msgstr ""
 "Исходные данные которые мы используем, вместе с преобразованными фрагментами "
 "OpenStreetMap для ориентации, их можно скачать с сайта mega.nz здесь: "
 
-#: src/components/windows/Help.jsx:79
+#: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
 msgstr "Вы в бане? Определяетесь как прокси?"
 
-#: src/components/windows/Help.jsx:81
+#: src/components/windows/Help.jsx:76
 #, javascript-format
 msgid ""
 "If you got detected as proxy, but you are none, or think that you got "
@@ -555,46 +555,46 @@ msgstr ""
 "в бан по ошибке, пожалуйста перейдите в наш ${ guildedLink } или отправьте "
 "нам электронное письмо на ${ mailLink } и добавьте в него следующий IID:"
 
-#: src/components/windows/Help.jsx:84 src/components/windows/Help.jsx:101
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
 msgstr "Управление"
 
-#: src/components/windows/Help.jsx:86
+#: src/components/windows/Help.jsx:81
 msgid "Click a color in palette to select it"
 msgstr "Нажмите на цвет в палитре, чтобы выбрать его"
 
-#: src/components/windows/Help.jsx:87
+#: src/components/windows/Help.jsx:82
 #, javascript-format
 msgid "Press ${ bindG } to toggle grid"
 msgstr "Нажмите ${ bindG }, чтобы переключить сетку"
 
-#: src/components/windows/Help.jsx:88
+#: src/components/windows/Help.jsx:83
 #, javascript-format
 msgid "Press ${ bindX } to toggle showing of pixel activity"
 msgstr "Нажмите ${ bindX }, чтобы переключить активность пикселей"
 
-#: src/components/windows/Help.jsx:89
+#: src/components/windows/Help.jsx:84
 #, javascript-format
 msgid "Press ${ bindH } to toggle historical view"
 msgstr "Нажмите ${ bindH }, чтобы переключить режим истории"
 
-#: src/components/windows/Help.jsx:90
+#: src/components/windows/Help.jsx:85
 #, javascript-format
 msgid "Press ${ bindR } to copy coordinates"
 msgstr "Нажмите ${ bindR }, чтобы скопировать координаты"
 
-#: src/components/windows/Help.jsx:91
+#: src/components/windows/Help.jsx:86
 #, javascript-format
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr "Нажмайте ${ bindQ } или ${ bindE }, чтобы изменить масштаб"
 
-#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr ""
 "Нажмайте ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD }, чтобы перемещаться"
 
-#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -602,28 +602,28 @@ msgstr ""
 "Нажмайте ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight }, "
 "чтобы перемещаться"
 
-#: src/components/windows/Help.jsx:94
+#: src/components/windows/Help.jsx:89
 #, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
 msgstr ""
 "Перемещайте ${ mouseSymbol } мышь или ${ touchSymbol } проводите пальцем, "
 "чтобы перемещаться"
 
-#: src/components/windows/Help.jsx:95
+#: src/components/windows/Help.jsx:90
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
 "Вращайте ${ mouseSymbol } колесо мыши или ${ touchSymbol } сводите пальцы, "
 "чтобы изменять масштаб"
 
-#: src/components/windows/Help.jsx:96
+#: src/components/windows/Help.jsx:91
 #, javascript-format
 msgid "Hold left ${ bindShift } for placing while moving mouse"
 msgstr ""
 "Удерживайте левый ${ bindShift } для установки пикселей во время движения "
 "мыши"
 
-#: src/components/windows/Help.jsx:97
+#: src/components/windows/Help.jsx:92
 #, javascript-format
 msgid ""
 "Hold right ${ bindShift } for placing while moving mouse according to "
@@ -632,14 +632,14 @@ msgstr ""
 "Удерживайте правый ${ bindShift } для установки пикселей во время движения "
 "мыши в соответствии с историческим видом"
 
-#: src/components/windows/Help.jsx:98 src/components/windows/Help.jsx:109
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "${ mouseSymbol } Нажмите левую кнопку мыши или ${ touchSymbol } нажмите "
 "пальцем, чтобы поставить пиксель"
 
-#: src/components/windows/Help.jsx:99 src/components/windows/Help.jsx:111
+#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -649,19 +649,19 @@ msgstr ""
 "удерживайте палец на пикселе, чтобы выбрать цвет пикселя, на который вы "
 "удерживайте курсор"
 
-#: src/components/windows/Help.jsx:105
+#: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Нажимайте ${ bindQ } и ${ bindE }, чтобы перемещаться вверх и вниз"
 
-#: src/components/windows/Help.jsx:106
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
 "${ mouseSymbol } Удерживая левую кнопку мыши, перемещайте мышь, чтобы "
 "поворачивать камеру"
 
-#: src/components/windows/Help.jsx:107
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -670,14 +670,14 @@ msgstr ""
 "${ mouseSymbol } Прокручивайте колесо мыши или, удерживая ${ mouseSymbol } "
 "среднюю копку мыши, перемещайте мышь, чтобы изменять масштаб"
 
-#: src/components/windows/Help.jsx:108
+#: src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
 "${ mouseSymbol } Удерживая правую кнопку мыши, перемещайте мышь, чтобы "
 "передвигаться"
 
-#: src/components/windows/Help.jsx:110
+#: src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -685,52 +685,27 @@ msgstr ""
 "${ mouseSymbol } Нажимайте правую кнопку мыши или ${ touchSymbol } дважды "
 "коснитесь пальцем, чтобы убрать пиксель"
 
-#: src/components/windows/Help.jsx:115
+#: src/components/windows/Help.jsx:110
 msgid ""
 "We thanks those artists very much, they offered their palettes to the public "
 "on"
 msgstr ""
 "Мы очень благодарны художникам, которые предложили свои палитры публике на"
 
-#: src/components/windows/Help.jsx:118
+#: src/components/windows/Help.jsx:113
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "Авторство палитры луны принадлежит ${ starhouseLink }."
 
-#: src/components/windows/Help.jsx:121
+#: src/components/windows/Help.jsx:116
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Авторство палитры Топ-10 принадлежит ${ vinikLink }."
 
-#: src/components/windows/Help.jsx:124
+#: src/components/windows/Help.jsx:119
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Авторство палитры 2бит принадлежит ${ donendoLink }."
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Профиль"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr "Статистика"
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Пикселизатор"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Инструменты модератора"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Загрузка..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Присоединяйтесь к нам в Guilded:"
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
@@ -838,6 +813,31 @@ msgstr "Как должен выглядеть pixelplanet."
 msgid "Select Language"
 msgstr "Выбрать язык"
 
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Профиль"
+
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr "Статистика"
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Пикселизатор"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Инструменты модератора"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Загрузка..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Присоединяйтесь к нам в Guilded:"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Зарегистрируйте новый аккаунт здесь"
@@ -869,8 +869,8 @@ msgid "Captcha"
 msgstr "Капча"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:305 src/components/ModCanvastools.jsx:390
-#: src/components/ModCanvastools.jsx:467 src/components/ModCanvastools.jsx:562
+#: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
+#: src/components/ModCanvastools.jsx:486 src/components/ModCanvastools.jsx:587
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
@@ -893,7 +893,7 @@ msgstr ""
 msgid "Archive"
 msgstr "Архив"
 
-#: src/components/windows/CanvasSelect.jsx:59
+#: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
 msgstr "Списанные полотна (только история)"
 
@@ -1058,6 +1058,79 @@ msgstr "Получить IID"
 msgid "Copy"
 msgstr "Скопировать"
 
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Сохранить"
+
+#: src/components/TemplateSettings.jsx:57
+msgid "Templates"
+msgstr "Шаблоны"
+
+#: src/components/TemplateSettings.jsx:61
+msgid ""
+"Tired of always spaming one single color? Want to create art instead, but "
+"you have to count pixels from some other image? Templates can help you with "
+"that! Templates can show as overlay and you can draw over them. One pixel on "
+"the template, should be one pixel on the canvas."
+msgstr ""
+"Устали постоянно спамить один единственный цвет? Хотите вместо этого "
+"создавать рисунки, но вам нужно считать пиксели по какому-то другому "
+"изображению? Шаблоны могут помочь вам в этом! Шаблоны могут отображаться как "
+"оверлей и вы можете рисовать поверх него. Один пиксель в шаблоне должен "
+"соответствовать одному пикселю на полотне."
+
+#: src/components/TemplateSettings.jsx:65
+msgid "Enable Overlay"
+msgstr "Включить оверлей"
+
+#: src/components/TemplateSettings.jsx:70
+msgid "Show templates as overlays ingame."
+msgstr "Показывать шаблоны в виде оверлея в игре."
+
+#: src/components/TemplateSettings.jsx:73
+msgid "Small Pixels Zoom"
+msgstr "Оверлей в виде мелких пикселей"
+
+#: src/components/TemplateSettings.jsx:78
+msgid "Show overlay as small individual pixels on high zoomlevels."
+msgstr ""
+"Показывать оверлей в виде маленьких отдельных пикселей при высоком уровне "
+"масштабирования."
+
+#: src/components/TemplateSettings.jsx:85
+msgid "Overlay Opacity"
+msgstr "Прозрачность оверлея"
+
+#: src/components/TemplateSettings.jsx:99
+msgid "Opacity of Overlay in percent."
+msgstr "Прозрачность оверлея в процентах."
+
+#: src/components/TemplateSettings.jsx:105
+msgid "Right-Shift Auto-Color"
+msgstr "Автовыбор цвета на правый шифт"
+
+#: src/components/TemplateSettings.jsx:110
+msgid "Place pixels from overlay on right-shift, instead of history."
+msgstr "При нажатии правого шифта ставит пиксели по шаблону, а не по истории."
+
+#: src/components/TemplateSettings.jsx:149
+msgid "Cancel adding Template"
+msgstr "Отменить добавление шаблона"
+
+#: src/components/TemplateSettings.jsx:156
+msgid "Add Template"
+msgstr "Добавить шаблон"
+
+#: src/components/TemplateSettings.jsx:173
+msgid "Export enabled templates"
+msgstr "Экспортировать включенные шаблоны"
+
+#: src/components/TemplateSettings.jsx:182
+msgid "Import templates"
+msgstr "Импортировать включенные шаблоны"
+
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
 msgstr "Войдите, чтобы получить доступ к дополнительным функциям и статистике."
@@ -1127,7 +1200,7 @@ msgstr "Удалить аккаунт"
 msgid "Social Settings"
 msgstr "Социальные настройки"
 
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:226
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
 msgstr "Выбрать полотно"
 
@@ -1239,72 +1312,6 @@ msgstr ""
 "Рейтинг обновляется каждые 5 минут. Ежедневный рейтинг обновляется в полночь "
 "UTC."
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:212
-msgid "Save"
-msgstr "Сохранить"
-
-#: src/components/TemplateSettings.jsx:52
-msgid "Templates"
-msgstr "Шаблон"
-
-#: src/components/TemplateSettings.jsx:56
-msgid ""
-"Tired of always spaming one single color? Want to create art instead, but "
-"you have to count pixels from some other image? Templates can help you with "
-"that! Templates can show as overlay and you can draw over them. One pixel on "
-"the template, should be one pixel on the canvas."
-msgstr ""
-"Устали постоянно спамить один единственный цвет? Хотите вместо этого "
-"создавать рисунки, но вам нужно считать пиксели по какому-то другого "
-"изображения? Шаблоны могут помочь вам в этом! Шаблоны могут отображаться как "
-"оверлей и вы можете рисовать поверх него. Один пиксель в шаблоне должен "
-"соответствовать одному пикселю на полотне."
-
-#: src/components/TemplateSettings.jsx:60
-msgid "Enable Overlay"
-msgstr "Включить оверлей"
-
-#: src/components/TemplateSettings.jsx:65
-msgid "Show templates as overlays ingame."
-msgstr "Показывать шаблоны в виде оверлея в игре."
-
-#: src/components/TemplateSettings.jsx:68
-msgid "Small Pixels Overlay"
-msgstr "Оверлей в виде мелких пикселей"
-
-#: src/components/TemplateSettings.jsx:74
-msgid ""
-"Show overlay as small individual pixels (will only show in high zoomlevels)."
-msgstr ""
-"Показывать оверлей в виде маленьких отдельных пикселей (будет отображаться "
-"только при высоком уровне масштабирования)."
-
-#: src/components/TemplateSettings.jsx:81
-msgid "Overlay Opacity"
-msgstr "Прозрачность оверлея"
-
-#: src/components/TemplateSettings.jsx:95
-msgid "Opacity of Overlay in percent."
-msgstr "Прозрачность оверлея в процентах."
-
-#: src/components/TemplateSettings.jsx:134
-msgid "Cancel adding Template"
-msgstr "Отменить добавление шаблона"
-
-#: src/components/TemplateSettings.jsx:141
-msgid "Add Template"
-msgstr "Добавить шаблон"
-
-#: src/components/TemplateSettings.jsx:158
-msgid "Export enabled templates"
-msgstr "Экспортировать включенные шаблоны"
-
-#: src/components/TemplateSettings.jsx:167
-msgid "Import templates"
-msgstr "Импортировать включенные шаблоны"
-
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Пользователи онлайн"
@@ -1347,29 +1354,38 @@ msgid "Top 10 Daily Ranking"
 msgstr "Быть в Топ-10 дневного рейтинга"
 
 #: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:163
+#: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Размеры"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Топ-10 стран [пикселей/день]"
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "Полотно"
 
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Игроки и пиксели в час"
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr "Координаты"
 
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Топ-10 игроков [пикселей/день]"
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Изменить"
 
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Страны по пикселям сегодня"
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Перейти"
 
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Всего пикселей, размещенных за день"
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Выбрать файл"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Имя шаблона"
+
+#: src/components/TemplateItemEdit.jsx:174
+msgid "Delete"
+msgstr "Удалить"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1496,31 +1512,39 @@ msgstr ""
 "пикселями (ОЧЕНЬ АГРЕССИВНО НА ПОЛОТНАХ, КОТОРЫЕ ДОПУСКАЮТ НЕТРОНУТЫЕ "
 "ПИКСЕЛИ (где есть две перезарядки)!)"
 
-#: src/components/ModCanvastools.jsx:203
+#: src/components/ModCanvastools.jsx:196
+msgid ""
+"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
+"ISN'T ALREADY MOSTLY 0)"
+msgstr ""
+"Стирает пиксели в области в ноль (НЕ СТОИТ ИСПОЛЬЗОВАТЬ В ОБЛАСТИ, КОТОРАЯ "
+"УЖЕ НЕ ОБНУЛЕНА)"
+
+#: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
 msgstr "Статус: Не запущено"
 
-#: src/components/ModCanvastools.jsx:245
+#: src/components/ModCanvastools.jsx:249
 msgid "Image Upload"
 msgstr "Загрузить изображение"
 
-#: src/components/ModCanvastools.jsx:246
+#: src/components/ModCanvastools.jsx:250
 msgid "Upload images to canvas"
 msgstr "Загружает изображения на полотно"
 
-#: src/components/ModCanvastools.jsx:248
+#: src/components/ModCanvastools.jsx:252
 msgid "File"
 msgstr "Файл"
 
-#: src/components/ModCanvastools.jsx:269
+#: src/components/ModCanvastools.jsx:273
 msgid "Coordinates:"
 msgstr "Координаты:"
 
-#: src/components/ModCanvastools.jsx:310
+#: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
 msgstr "Защита пикселей"
 
-#: src/components/ModCanvastools.jsx:314
+#: src/components/ModCanvastools.jsx:321
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
@@ -1528,33 +1552,33 @@ msgstr ""
 "Поставить защиту на область (если вам нужен более точный контроль, "
 "используйте защиту вместе с загрузкой изображения и альфа слоями)"
 
-#: src/components/ModCanvastools.jsx:334 src/components/ModCanvastools.jsx:411
-#: src/components/ModCanvastools.jsx:498 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
 msgstr "Верхний левый угол"
 
-#: src/components/ModCanvastools.jsx:353 src/components/ModCanvastools.jsx:430
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:195
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
 msgstr "Нижний правый угол"
 
-#: src/components/ModCanvastools.jsx:396
+#: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Откатить до даты"
 
-#: src/components/ModCanvastools.jsx:398
+#: src/components/ModCanvastools.jsx:411
 msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
 msgstr "Откатить область полотна до установленной даты (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:473
+#: src/components/ModCanvastools.jsx:492
 msgid "Canvas Cleaner"
 msgstr "Очиститель полотна"
 
-#: src/components/ModCanvastools.jsx:475
+#: src/components/ModCanvastools.jsx:494
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr "Примените фильтр, чтобы очистить мусор на больших областях полотна."
 
-#: src/components/ModCanvastools.jsx:580
+#: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
 msgstr "Остановить очиститель"
 
@@ -1598,11 +1622,6 @@ msgstr "Недопустимый интервал"
 msgid "Check who placed in an area"
 msgstr "Проверить, кто ставил пиксели в области"
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr "Полотно"
-
 #: src/components/ModWatchtools.jsx:144
 msgid "Interval"
 msgstr "Интервал"
@@ -1611,11 +1630,11 @@ msgstr "Интервал"
 msgid "IID (optional)"
 msgstr "IID (необязательно)"
 
-#: src/components/ModWatchtools.jsx:243
+#: src/components/ModWatchtools.jsx:249
 msgid "Get Pixels"
 msgstr "Получить пиксели"
 
-#: src/components/ModWatchtools.jsx:275
+#: src/components/ModWatchtools.jsx:281
 msgid "Get Users"
 msgstr "Получить пользователей"
 
@@ -1639,29 +1658,25 @@ msgstr "Введите причину"
 msgid "(0 = infinite)"
 msgstr "(0 = бесконечно)"
 
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-msgid "Coordinates"
-msgstr "Координаты"
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Топ-10 стран [пикселей/день]"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Изменить"
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Игроки и пиксели в час"
 
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Перейти"
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Топ-10 игроков [пикселей/день]"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Выбрать файл"
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Страны по пикселям сегодня"
 
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Имя шаблона"
-
-#: src/components/TemplateItemEdit.jsx:177
-msgid "Delete"
-msgstr "Удалить"
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Всего пикселей, размещенных за день"
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
@@ -1734,11 +1749,6 @@ msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
 
-#: src/components/windows/Help.jsx:36
-msgctxt "keybinds"
-msgid "C"
-msgstr "C"
-
 #: src/components/windows/Settings.jsx:108
 msgctxt "keybinds"
 msgid "N"
@@ -1749,10 +1759,14 @@ msgctxt "keybinds"
 msgid "M"
 msgstr "M"
 
-#: src/components/TemplateSettings.jsx:61
+#: src/components/TemplateSettings.jsx:66
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgctxt "keybinds"
+#~ msgid "C"
+#~ msgstr "C"
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "Показать скрытые полотна"

@@ -12,49 +12,58 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: src/controls/keypress.js:41
+#: src/controls/keypress.js:99
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "Átváltottál ${ canvasName } vászonra"
 
-#: src/controls/keypress.js:64
+#: src/controls/keypress.js:184
 msgid "Grid ON"
 msgstr "Rács bekapcsolva"
 
-#: src/controls/keypress.js:65
+#: src/controls/keypress.js:185
 msgid "Grid OFF"
 msgstr "Rács kikapcsolva"
 
-#: src/controls/keypress.js:75
+#: src/controls/keypress.js:195
 msgid "Pixel Notify ON"
 msgstr "Pixel-aktivitás bekapcsolva"
 
-#: src/controls/keypress.js:76
+#: src/controls/keypress.js:196
 msgid "Pixel Notify OFF"
 msgstr "Pixel-aktivitás kikapcsolva"
 
-#: src/controls/keypress.js:81
+#: src/controls/keypress.js:201
 msgid "Muted Sound"
 msgstr "Némítva"
 
-#: src/controls/keypress.js:82
+#: src/controls/keypress.js:202
 msgid "Unmuted Sound"
 msgstr "Hang"
 
-#: src/components/CoordinatesBox.jsx:28 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:88
+#: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
+#: src/controls/keypress.js:211
 msgid "Copied!"
 msgstr "Másolva!"
 
-#: src/controls/keypress.js:94
-msgid "Show Hidden Canvases"
-msgstr "Rejtett vásznak megjelenítése"
+#: src/controls/keypress.js:217
+msgid "Overlay ON"
+msgstr "Overlay bekapcsolva"
 
-#: src/controls/keypress.js:95
-msgid "Hide Hidden Canvases"
-msgstr "Rejtett vásznak elrejtése"
+#: src/controls/keypress.js:218
+msgid "Overlay OFF"
+msgstr "Overlay kikapcsolva"
 
-#: src/ui/PixelTransferController.js:70
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
+msgid "Easter Egg ON"
+msgstr "Easter Egg bekapcsolva"
+
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
+msgid "Easter Egg OFF"
+msgstr "Easter Egg kikapcsolva"
+
+#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
+#: src/ui/templateLoader.js:256
 msgid "Error :("
 msgstr "Hiba :("
 
@@ -155,7 +164,7 @@ msgstr "Tiltott tartomány"
 
 #: src/ui/PixelTransferController.js:161
 msgid "Your Internet Provider is banned from playing this game"
-msgstr "Az internetszolgáltatója le van tiltva a játéktól"
+msgstr "Az internetszolgáltatód nem játszhat ezzel a játékkal"
 
 #: src/ui/PixelTransferController.js:164
 msgid "Timeout"
@@ -182,13 +191,21 @@ msgstr "Nem sikerült kiválasztani a pixelt"
 msgid "Error ${ retCode }"
 msgstr "Hiba ${ retCode }"
 
-#: src/ui/rendererFactory.js:30
+#: src/ui/rendererFactory.js:31
 msgid "Canvas Error"
 msgstr "Vászon hiba"
 
-#: src/ui/rendererFactory.js:31
+#: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
-msgstr "Nem lehet 3D-s vásznat renderelni, ki van kapcsolva a WebGL2?"
+msgstr "Nem képes a 3D vászon megjelenítésére, a WebGL2 ki van kapcsolva?"
+
+#: src/ui/templateLoader.js:231
+msgid "Can not export more than 20 or no template!"
+msgstr "Nem lehet 20-nál többet exportálni, vagy nincsen sablon!"
+
+#: src/ui/templateLoader.js:257
+msgid "Can not import more than 20 or no template!"
+msgstr "Nem lehet 20-nál többet importálni, vagy nincsen sablon!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -236,7 +253,12 @@ msgstr "megemlített téged"
 
 #: src/store/middleware/notifications.js:58
 msgid "You have new messages in chat"
-msgstr "Új üzeneteid vannak a chatben"
+msgstr "Új üzeneteid vannak a chaten"
+
+#: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
+#: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
+msgid "Copy to Clipboard"
+msgstr "Vágólapra másolás"
 
 #: src/components/OnlineBox.jsx:40
 msgid "Online Users on Canvas"
@@ -249,11 +271,6 @@ msgstr "Összes online felhasználó"
 #: src/components/OnlineBox.jsx:55
 msgid "Pixels placed"
 msgstr "Elhelyezett pixelek"
-
-#: src/components/Converter.jsx:565 src/components/CoordinatesBox.jsx:31
-#: src/components/ModWatchtools.jsx:378 src/components/ModWatchtools.jsx:396
-msgid "Copy to Clipboard"
-msgstr "Vágólapra másolás"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -276,15 +293,15 @@ msgstr "Menü bezárása"
 msgid "Open Menu"
 msgstr "Menü kinyitása"
 
-#: src/components/HistorySelect.jsx:144
+#: src/components/HistorySelect.jsx:146
 msgid "Loading"
 msgstr "Betöltés"
 
-#: src/components/HistorySelect.jsx:145
+#: src/components/HistorySelect.jsx:147
 msgid "Select Date above"
 msgstr "Válassz a fenti dátumokból"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:222
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
@@ -345,6 +362,30 @@ msgstr "Paletta bezárása"
 msgid "Open Palette"
 msgstr "Paletta kinyitása"
 
+#: src/components/buttons/PencilButton.jsx:32
+msgid "History Pencil ON"
+msgstr "Történelmi ceruza bekapcsolva"
+
+#: src/components/buttons/PencilButton.jsx:38
+msgid "Overlay Pencil ON"
+msgstr "Overlay ceruza bekapcsolva"
+
+#: src/components/buttons/PencilButton.jsx:65
+msgid "Enable Pencil"
+msgstr "Ceruza bekapcsolása"
+
+#: src/components/buttons/PencilButton.jsx:69
+msgid "Disable Pencil"
+msgstr "Ceruza kikapcsolása"
+
+#: src/components/buttons/PencilButton.jsx:73
+msgid "Disable History Pencil"
+msgstr "Történelmi ceruza kikapcsolása"
+
+#: src/components/buttons/PencilButton.jsx:77
+msgid "Disable Overlay Pencil"
+msgstr "Overlay ceruza kikapcsolása"
+
 #: src/components/windows/index.js:16
 msgid "Registration"
 msgstr "Regisztrálás"
@@ -379,9 +420,9 @@ msgstr "Nincs megadva captcha-azonosító"
 
 #: src/components/GlobalCaptcha.jsx:59
 msgid "Unknown Captcha Error"
-msgstr "Ismeretlen captcha hiba"
+msgstr "Ismeretlen Captcha hiba"
 
-#: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:77
+#: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
 #: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
@@ -392,7 +433,7 @@ msgstr "Hiba"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
@@ -424,7 +465,7 @@ msgstr "Időtartam"
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
-msgstr "A kitiltásod ekkor jár le: "
+msgstr "A kitiltásod ekkor jár le "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
@@ -442,12 +483,12 @@ msgstr "Most, hogy láttad ezt az üzenetet, már nem vagy kitiltva."
 msgid "Why?"
 msgstr "Miért?"
 
-#: src/components/windows/Help.jsx:42
+#: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
 msgstr ""
 "Helyezz el pixeleket egy hatalmas online vásznon más játékosokkal együtt!"
 
-#: src/components/windows/Help.jsx:43
+#: src/components/windows/Help.jsx:66
 msgid ""
 "Our main canvas is a huge worldmap, you can place wherever you like, but you "
 "will have to wait a specific Cooldown between pixels. You can check out the "
@@ -461,10 +502,10 @@ msgstr ""
 "feltételekről a vászon kiválasztó menüben (földgömb ikon felül) "
 "tájékozódhatsz. Néhány vásznon más-más töltési idő tartozik a többi játékos "
 "által elhelyezett illetve a friss pixelekhez, tehát a 4mp/7mp azt jelenti, "
-"hogy a friss pixelek 4mp-t, míg a korábbiak megváltoztatása 7mp-t vesz le a "
-"teljes időtartamból."
+"hogy a friss pixelek 4mp-t, míg a már beállított pixelek megváltoztatása 7mp-"
+"t vesz le a teljes időtartamból."
 
-#: src/components/windows/Help.jsx:47
+#: src/components/windows/Help.jsx:67
 msgid ""
 "Higher zoomlevels take some time to update, the 3D globe gets updated at "
 "least once per day."
@@ -472,23 +513,23 @@ msgstr ""
 "A magasabb nagyítási szintek frissítése némi időt vesz igénybe, a 3D "
 "földgömb legalább naponta egyszer frissül."
 
-#: src/components/windows/Help.jsx:48
+#: src/components/windows/Help.jsx:68
 msgid "Have fun!"
 msgstr "Jó szórakozást!"
 
-#: src/components/windows/Help.jsx:50
+#: src/components/windows/Help.jsx:70
 msgid "recommended"
 msgstr "ajánlott"
 
-#: src/components/windows/Help.jsx:51
+#: src/components/windows/Help.jsx:71
 msgid "Source on "
 msgstr "Forráskód "
 
-#: src/components/windows/Help.jsx:52
+#: src/components/windows/Help.jsx:72
 msgid "Map Data"
 msgstr "Térkép adatok"
 
-#: src/components/windows/Help.jsx:53
+#: src/components/windows/Help.jsx:73
 msgid ""
 "The bare map data that we use, together with converted OpenStreetMap tiles "
 "for orientation, can be downloaded from mega.nz here: "
@@ -496,11 +537,11 @@ msgstr ""
 "A nyers térképadatok a tájékozódáshoz használt átkonvertált OpenStreetMap "
 "mozaikokkal együtt letölthetőek a mega.nz-ről itt: "
 
-#: src/components/windows/Help.jsx:55
+#: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
 msgstr "Kitiltva? Proxyként észlelve?"
 
-#: src/components/windows/Help.jsx:57
+#: src/components/windows/Help.jsx:76
 #, javascript-format
 msgid ""
 "If you got detected as proxy, but you are none, or think that you got "
@@ -509,50 +550,50 @@ msgid ""
 msgstr ""
 "Ha hamisan gondoljuk azt, hogy proxyt használsz, vagy jogtalannak gondolod a "
 "kitiltásodat, kérjük látogass el a ${ guildedLink } szerverre, vagy írj egy "
-"levelet az ${ mailLink } e-mail címre az alábbi IID-vel:"
+"levelet az ${ mailLink } e-mail címre az alábbi IID-vel együtt:"
 
-#: src/components/windows/Help.jsx:60 src/components/windows/Help.jsx:77
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
 msgstr "Irányítás"
 
-#: src/components/windows/Help.jsx:62
+#: src/components/windows/Help.jsx:81
 msgid "Click a color in palette to select it"
 msgstr "Kattints egy színre a palettán, hogy kiválaszd"
 
-#: src/components/windows/Help.jsx:63
+#: src/components/windows/Help.jsx:82
 #, javascript-format
 msgid "Press ${ bindG } to toggle grid"
 msgstr "Nyomd meg a ${ bindG } gombot a rács váltásához"
 
-#: src/components/windows/Help.jsx:64
+#: src/components/windows/Help.jsx:83
 #, javascript-format
 msgid "Press ${ bindX } to toggle showing of pixel activity"
 msgstr ""
 "Nyomd meg az ${ bindX } gombot a pixel-aktivitás megjelenítésének váltásához"
 
-#: src/components/windows/Help.jsx:65
+#: src/components/windows/Help.jsx:84
 #, javascript-format
 msgid "Press ${ bindH } to toggle historical view"
 msgstr "Nyomd meg a ${ bindH } gombot a történelmi nézet váltásához"
 
-#: src/components/windows/Help.jsx:66
+#: src/components/windows/Help.jsx:85
 #, javascript-format
 msgid "Press ${ bindR } to copy coordinates"
 msgstr "Nyomd meg az ${ bindR } gombot a koordináta másolásához"
 
-#: src/components/windows/Help.jsx:67
+#: src/components/windows/Help.jsx:86
 #, javascript-format
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr "Nyomd meg a ${ bindQ } vagy az ${ bindE } gombot a zoomoláshoz"
 
-#: src/components/windows/Help.jsx:68 src/components/windows/Help.jsx:79
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr ""
 "Nyomd meg a ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } gombokat a "
 "mozgáshoz"
 
-#: src/components/windows/Help.jsx:69 src/components/windows/Help.jsx:80
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -560,26 +601,26 @@ msgstr ""
 "Nyomd meg a ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } "
 "gombokat a mozgáshoz"
 
-#: src/components/windows/Help.jsx:70
+#: src/components/windows/Help.jsx:89
 #, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
 msgstr ""
 "A mozgatáshoz húzd az egeredet ${ mouseSymbol } vagy az érintőpadodat "
 "${ touchSymbol }"
 
-#: src/components/windows/Help.jsx:71
+#: src/components/windows/Help.jsx:90
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
 "Görgess egérgörgővel ${ mouseSymbol } vagy csúsztasd két ujjal "
 "${ touchSymbol } a zoomoláshoz"
 
-#: src/components/windows/Help.jsx:72
+#: src/components/windows/Help.jsx:91
 #, javascript-format
 msgid "Hold left ${ bindShift } for placing while moving mouse"
 msgstr "Tartsd lenyomva a bal ${ bindShift }-et, hogy kattintás nélkül rajzolj"
 
-#: src/components/windows/Help.jsx:73
+#: src/components/windows/Help.jsx:92
 #, javascript-format
 msgid ""
 "Hold right ${ bindShift } for placing while moving mouse according to "
@@ -588,14 +629,14 @@ msgstr ""
 "Tartsd lenyomva a jobb ${ bindShift }-et, hogy kattintás nélkül rajzolj a "
 "történelmi nézet szerint"
 
-#: src/components/windows/Help.jsx:74 src/components/windows/Help.jsx:85
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "Kattints bal egérgombbal ${ mouseSymbol } vagy koppints ${ touchSymbol } a "
 "képernyőre a pixel elhelyezésére"
 
-#: src/components/windows/Help.jsx:75 src/components/windows/Help.jsx:87
+#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -604,20 +645,19 @@ msgstr ""
 "Kattints a görgővel ${ mouseSymbol } vagy koppints hosszan ${ touchSymbol } "
 "a pixelre, hogy kiválaszd a színét"
 
-#: src/components/windows/Help.jsx:81
+#: src/components/windows/Help.jsx:100
 #, javascript-format
-msgid "Press ${ bindE } and ${ bindC } to fly up and down"
+msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr ""
-"Nyomd meg az ${ bindE } vagy a ${ bindC } gombot a függőleges tengelyen való "
-"mozgáshoz"
+"Nyomd meg a ${ bindQ } és ${ bindE } gombokat a felfelé és lefelé repüléshez"
 
-#: src/components/windows/Help.jsx:82
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
 "Tartsd lenyomva a bal egérgombot ${ mouseSymbol } a kamera forgatásához"
 
-#: src/components/windows/Help.jsx:83
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -626,12 +666,12 @@ msgstr ""
 "Görgess az egérgörgővel ${ mouseSymbol } vagy tartsd lenyomva az egérgörgőt "
 "${ mouseSymbol } a zoomoláshoz"
 
-#: src/components/windows/Help.jsx:84
+#: src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr "Tartsd lenyomva a jobb egérgombot ${ mouseSymbol } és húzd a mozgáshoz"
 
-#: src/components/windows/Help.jsx:86
+#: src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -639,69 +679,82 @@ msgstr ""
 "Kattints jobb egérgombbal ${ mouseSymbol } vagy koppints kétszer az "
 "érintőpadra ${ touchSymbol } a pixel eltávolításához"
 
-#: src/components/windows/Help.jsx:91
+#: src/components/windows/Help.jsx:110
 msgid ""
 "We thanks those artists very much, they offered their palettes to the public "
 "on"
 msgstr ""
-"Köszönet az alábbi oldalnak, hogy a művészek felajánlották palettáikat a "
-"nagyközönség számára:"
+"Köszönetet szeretnénk mondani azoknak a művészeknek, akik felajánlották "
+"palettáikat a közönségnek:"
 
-#: src/components/windows/Help.jsx:94
+#: src/components/windows/Help.jsx:113
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
-msgstr "Köszönet ${ starhouseLink } a Hold vászon palettájáért."
+msgstr "A Hold vászon palettája a ${ starhouseLink } érdeme."
 
-#: src/components/windows/Help.jsx:97
+#: src/components/windows/Help.jsx:116
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr "Köszönet ${ vinikLink } a Top10 vászon palettájáért."
+msgstr "A Top10 vászon palettája a ${ vinikLink } érdeme."
 
-#: src/components/windows/Settings.jsx:86
+#: src/components/windows/Help.jsx:119
+#, javascript-format
+msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
+msgstr "A 2bit vászon palettája a ${ donendoLink } érdeme."
+
+#: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
 msgstr "Rács megjelenítése"
 
-#: src/components/windows/Settings.jsx:91
+#: src/components/windows/Settings.jsx:96
 msgid "Turn on grid to highlight pixel borders."
 msgstr "Kapcsold be a rácsot, hogy lásd a pixelhatárokat."
 
-#: src/components/windows/Settings.jsx:94
+#: src/components/windows/Settings.jsx:99
 msgid "Show Pixel Activity"
 msgstr "Pixel-aktivitás megjelenítése"
 
-#: src/components/windows/Settings.jsx:99
+#: src/components/windows/Settings.jsx:104
 msgid "Show circles where pixels are placed."
 msgstr "A pixelek lerakásakor körök jelennek meg."
 
-#: src/components/windows/Settings.jsx:102
+#: src/components/windows/Settings.jsx:107
+msgid "Always show Movement Controls"
+msgstr "Mindig mutassa a mozgásvezérlőket"
+
+#: src/components/windows/Settings.jsx:112
+msgid "Always show movement control buttons"
+msgstr "Mindig mutassa a mozgásvezérlő gombokat"
+
+#: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
 msgstr "Játék hangjainak letiltása"
 
-#: src/components/windows/Settings.jsx:108
+#: src/components/windows/Settings.jsx:121
 msgid "All sound effects will be disabled."
 msgstr "Az összes hang le lesz tiltva."
 
-#: src/components/windows/Settings.jsx:112
+#: src/components/windows/Settings.jsx:125
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
 msgstr ""
-"A böngésződ nem teszi lehetővé számunkra az AudioContext használatát hangok "
-"lejátszására. Van valamilyen adatvédelmi funkciód, amely blokkol minket?"
+"A böngésződ nem engedi, hogy AudioContextet használjunk a hangok "
+"lejátszásához. Van valamilyen adatvédelmi rendszered, amely blokkol minket?"
 
-#: src/components/windows/Settings.jsx:118
+#: src/components/windows/Settings.jsx:131
 msgid "Enable chat notifications"
 msgstr "Chat értesítések engedélyezése"
 
-#: src/components/windows/Settings.jsx:122
+#: src/components/windows/Settings.jsx:135
 msgid "Play a sound when new chat messages arrive"
 msgstr "Új üzenet érkezésekor hang lejátszása"
 
-#: src/components/windows/Settings.jsx:125
+#: src/components/windows/Settings.jsx:138
 msgid "Auto Zoom In"
 msgstr "Automatikus zoomolás"
 
-#: src/components/windows/Settings.jsx:130
+#: src/components/windows/Settings.jsx:143
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
@@ -709,47 +762,47 @@ msgstr ""
 "Ha a zoomolás túl kicsi ahhoz, hogy pixelt helyezz el, automatikusan "
 "kinagyítja."
 
-#: src/components/windows/Settings.jsx:133
+#: src/components/windows/Settings.jsx:146
 msgid "Compact Palette"
 msgstr "Kompakt paletta"
 
-#: src/components/windows/Settings.jsx:138
+#: src/components/windows/Settings.jsx:151
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr "A paletta kompakt formában jelenik meg, ami kevesebb helyet foglal."
 
-#: src/components/windows/Settings.jsx:141
+#: src/components/windows/Settings.jsx:154
 msgid "Potato Mode"
 msgstr "Kenyérpirító mód"
 
-#: src/components/windows/Settings.jsx:145
+#: src/components/windows/Settings.jsx:158
 msgid "For when you are playing on a potato."
-msgstr "Arra az esetre ha kenyérpiríton játszol."
+msgstr "Arra az esetre, ha kenyérpiríton játszol."
 
-#: src/components/Converter.jsx:380 src/components/windows/Settings.jsx:148
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
 msgid "Light Grid"
 msgstr "Világos rács"
 
-#: src/components/windows/Settings.jsx:152
+#: src/components/windows/Settings.jsx:165
 msgid "Show Grid in white instead of black."
 msgstr "Rács megjelenítése fekete helyett fehéren."
 
-#: src/components/windows/Settings.jsx:156
+#: src/components/windows/Settings.jsx:169
 msgid "Historical View"
 msgstr "Történelmi nézet"
 
-#: src/components/windows/Settings.jsx:161
+#: src/components/windows/Settings.jsx:174
 msgid "Check out past versions of the canvas."
 msgstr "A vászon korábbi állapotának megtekintése."
 
-#: src/components/windows/Settings.jsx:166
+#: src/components/windows/Settings.jsx:179
 msgid "Themes"
 msgstr "Témák"
 
-#: src/components/windows/Settings.jsx:171
+#: src/components/windows/Settings.jsx:184
 msgid "How pixelplanet should look like."
 msgstr "Ahogy a pixelplanetnek kellene kinéznie."
 
-#: src/components/windows/Settings.jsx:178
+#: src/components/windows/Settings.jsx:191
 msgid "Select Language"
 msgstr "Nyelv kiválasztása"
 
@@ -809,8 +862,8 @@ msgid "Captcha"
 msgstr "Captcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:302 src/components/ModCanvastools.jsx:382
-#: src/components/ModCanvastools.jsx:455 src/components/ModCanvastools.jsx:546
+#: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
+#: src/components/ModCanvastools.jsx:486 src/components/ModCanvastools.jsx:587
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
@@ -819,44 +872,49 @@ msgstr "Küldés"
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
-"Select the canvas you want to use.  Every canvas is unique and has different "
-"palettes, cooldown and requirements.  Archive of closed canvases can be "
-"accessed here:"
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archive of removed canvases can be accessed here:"
 msgstr ""
-"Válaszd ki a vásznat, amit használni szeretnél. Minden vászon egyedi, és "
-"sajátos színpalettával, töltési idővel illetve használati feltételekkel "
-"rendelkezik. A bezárt vásznak archívuma itt érhető el:"
+"Válaszd ki a használni kívánt vásznat.\n"
+"Minden vászon egyedi, és sajátos színpalettával, töltési idővel illetve "
+"követelményekkel rendelkezik.\n"
+"Az eltávolított vásznak archívuma itt érhető el:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
 msgstr "Archívum"
 
-#: src/components/windows/Archive.jsx:16
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Nyugdíjazott vásznak (csak történelmi nézet)"
+
+#: src/components/windows/Archive.jsx:9
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who currently like a meme. Those canvases can get "
 "boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active, we decide to remove them."
+"aren't worth being kept active."
 msgstr ""
-"Bár általában nem töröljük a vásznakat, de néhány vászon csak szórakozásból "
-"indult, vagy olyan felhasználók kérésére, akiknek éppen tetszik egy mém. "
-"Ezek a vásznak egy idő után unalmassá válhatnak, és miután hetekig nem "
-"történt nagyobb változás, nem érdemes őket aktívan fenntartani, eltávolítjuk "
-"őket."
+"Bár általában nem törlünk vásznakat, ám néhány vásznat csak szórakozásból "
+"vagy olyan felhasználók kérésére indítottunk, akiknek éppen tetszett egy "
+"mém. Ezek a vásznak egy idő után unalmassá válnak, és ha hetekig nem "
+"történik nagyobb változás, akkor már tényleg nem érdemes őket fenntartani."
 
-#: src/components/windows/Archive.jsx:18
+#: src/components/windows/Archive.jsx:10
 msgid ""
-"Here we collect those canvases to archive them in a proper way (which is "
-"currently just one)."
+"Here we collect removed canvases to archive them in a proper way. Which is "
+"currently only one."
 msgstr ""
-"Itt gyűjtjük ezeket a vásznakat, hogy megfelelően legyenek archiválva "
-"(jelenleg csak egy van)"
+"Itt gyűjtjük össze az eltávolított vásznakat, hogy megfelelő módon "
+"archiválhassuk őket. Amiből jelenleg csak egy van."
 
-#: src/components/windows/Archive.jsx:20
+#: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
 msgstr "Politikai iránytű vászon"
 
-#: src/components/windows/Archive.jsx:27
+#: src/components/windows/Archive.jsx:21
 msgid ""
 "This canvas got requested during a time of political conflicts on the main "
 "Earth canvas. It was a 1024x1024 representation of the political compass "
@@ -868,7 +926,7 @@ msgstr ""
 "idővel és 60mp időtartamig. Május 11-én indult el, és hónapokig aktív volt, "
 "amíg november 30-án le nem állítottuk."
 
-#: src/components/windows/Archive.jsx:28
+#: src/components/windows/Archive.jsx:22
 msgid ""
 "We decided to archive it as a timelapse with lossless encoded webm. Taking a "
 "screenshot from the timelapse results in a perfect 1:1 representation of how "
@@ -904,35 +962,35 @@ msgstr ""
 msgid "Enter your mail address and we will send you a new password:"
 msgstr "Írd be az e-mail címedet és küldünk egy új jelszót:"
 
-#: src/components/Captcha.jsx:51 src/components/Captcha.jsx:105
+#: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
 msgstr "Nem sikerült betölteni a captchat"
 
-#: src/components/Captcha.jsx:69
+#: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
 msgstr "Írd be az alábbi képen látható karaktereket:"
 
-#: src/components/Captcha.jsx:72
+#: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
 msgstr "Tipp: Nem számít a kis- és nagybetű; az I és az l ugyanaz"
 
-#: src/components/Captcha.jsx:114
+#: src/components/Captcha.jsx:116
 msgid "Load Captcha"
 msgstr "Captcha betöltése"
 
-#: src/components/Captcha.jsx:119
+#: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
 msgstr "Kattints ide a Captcha betöltéséhez"
 
-#: src/components/Captcha.jsx:124
+#: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
 msgstr "Nem tudsz olvasni? Újra:"
 
-#: src/components/Captcha.jsx:128
+#: src/components/Captcha.jsx:130
 msgid "Reload"
 msgstr "Újra"
 
-#: src/components/Captcha.jsx:138
+#: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Ide írj"
 
@@ -993,9 +1051,77 @@ msgid "Copy"
 msgstr "Másolás"
 
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:80
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
 msgid "Save"
 msgstr "Mentés"
+
+#: src/components/TemplateSettings.jsx:57
+msgid "Templates"
+msgstr "Sablonok"
+
+#: src/components/TemplateSettings.jsx:61
+msgid ""
+"Tired of always spaming one single color? Want to create art instead, but "
+"you have to count pixels from some other image? Templates can help you with "
+"that! Templates can show as overlay and you can draw over them. One pixel on "
+"the template, should be one pixel on the canvas."
+msgstr ""
+"Eleged van abból, hogy mindig csak egy színt használsz? Szeretnél helyette "
+"műalkotásokat létrehozni, de ehhez pixeleket kell számolnod egy másik "
+"képből? A sablonok segíthetnek ebben! A sablonok megjelenhetnek overlay-"
+"ként, és rajzolhatsz felettük. Egy pixelnek a sablonon, egy pixelnek kell "
+"lennie a vásznon."
+
+#: src/components/TemplateSettings.jsx:65
+msgid "Enable Overlay"
+msgstr "Overlay bekapcsolása"
+
+#: src/components/TemplateSettings.jsx:70
+msgid "Show templates as overlays ingame."
+msgstr "Sablonok megjelenítése overlay-ként a játékban."
+
+#: src/components/TemplateSettings.jsx:73
+msgid "Small Pixels Zoom"
+msgstr "Kis pixeles nagyítás"
+
+#: src/components/TemplateSettings.jsx:78
+msgid "Show overlay as small individual pixels on high zoomlevels."
+msgstr "Az overlay kis egyedi pixelként jelenik meg nagy zoomolási szinteken."
+
+#: src/components/TemplateSettings.jsx:85
+msgid "Overlay Opacity"
+msgstr "Overlay átlátszósága"
+
+#: src/components/TemplateSettings.jsx:99
+msgid "Opacity of Overlay in percent."
+msgstr "Az overlay átlátszósága százalékban."
+
+#: src/components/TemplateSettings.jsx:105
+msgid "Right-Shift Auto-Color"
+msgstr "Jobb Shift-tel automatikus színezés"
+
+#: src/components/TemplateSettings.jsx:110
+msgid "Place pixels from overlay on right-shift, instead of history."
+msgstr ""
+"Pixelek elhelyezése az overlay-ből a jobb oldali shift-tel, a történelmi "
+"nézet helyett."
+
+#: src/components/TemplateSettings.jsx:149
+msgid "Cancel adding Template"
+msgstr "Sablon hozzáadásának visszavonása"
+
+#: src/components/TemplateSettings.jsx:156
+msgid "Add Template"
+msgstr "Sablon hozzáadása"
+
+#: src/components/TemplateSettings.jsx:173
+msgid "Export enabled templates"
+msgstr "Bekapcsolt sablonok exportálása"
+
+#: src/components/TemplateSettings.jsx:182
+msgid "Import templates"
+msgstr "Sablonok importálása"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1066,80 +1192,80 @@ msgstr "Fiók törlése"
 msgid "Social Settings"
 msgstr "Szociális beállítások"
 
-#: src/components/Converter.jsx:190 src/components/ModCanvastools.jsx:226
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
 msgstr "Vászon kiválasztása"
 
-#: src/components/Converter.jsx:217
+#: src/components/Converter.jsx:218
 msgid "Palette Download"
 msgstr "Paletta letöltése"
 
-#: src/components/Converter.jsx:219
+#: src/components/Converter.jsx:220
 #, javascript-format
 msgid "Palette for ${ gimpLink }"
 msgstr "Paletta ${ gimpLink } számára"
 
-#: src/components/Converter.jsx:240
+#: src/components/Converter.jsx:241
 msgid "Image Converter"
 msgstr "Kép konvertáló"
 
-#: src/components/Converter.jsx:241
+#: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
 msgstr "Kép konvertálása a vászon színeire"
 
-#: src/components/Converter.jsx:260
+#: src/components/Converter.jsx:261
 msgid "Choose Strategy"
 msgstr "Stratégia kiválasztása"
 
-#: src/components/Converter.jsx:298
+#: src/components/Converter.jsx:299
 msgid "Serpentine"
 msgstr "Serpentine"
 
-#: src/components/Converter.jsx:300
+#: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
 msgstr "Minimális színtartomány"
 
-#: src/components/Converter.jsx:327
+#: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
 msgstr "Számítás úgy, mint a GIMP"
 
-#: src/components/Converter.jsx:331
+#: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
 msgstr "Színmód kiválasztása"
 
-#: src/components/Converter.jsx:360
+#: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
 msgstr "Rács hozzáadása (ne jelöld be, ha 1:1 sablon kell)"
 
-#: src/components/Converter.jsx:382 src/components/Converter.jsx:398
+#: src/components/Converter.jsx:383 src/components/Converter.jsx:399
 msgid "Offset"
 msgstr "Eltolás"
 
-#: src/components/Converter.jsx:427
+#: src/components/Converter.jsx:428
 msgid "Scale Image"
 msgstr "Méretarányos kép"
 
-#: src/components/Converter.jsx:438
+#: src/components/Converter.jsx:439
 msgid "Width"
 msgstr "Szélesség"
 
-#: src/components/Converter.jsx:469
+#: src/components/Converter.jsx:470
 msgid "Height"
 msgstr "Magasság"
 
-#: src/components/Converter.jsx:508
+#: src/components/Converter.jsx:509
 msgid "Keep Ratio"
 msgstr "Arány megtartása"
 
-#: src/components/Converter.jsx:521
+#: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
 msgstr "Élsimítás"
 
-#: src/components/Converter.jsx:535
+#: src/components/Converter.jsx:536
 msgid "Reset"
 msgstr "Visszaállítás"
 
-#: src/components/Converter.jsx:553
+#: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr "Sablon letöltése"
 
@@ -1219,29 +1345,39 @@ msgstr "és ${ canvas.req } pixel letétele"
 msgid "Top 10 Daily Ranking"
 msgstr "Top 10 napi rangsor"
 
-#: src/components/CanvasItem.jsx:64
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Méretek"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Top 10 ország [pixelek / nap]"
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "Vásznak"
 
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Játékosok és pixelek óránként"
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr "Koordináták"
 
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Top 10 játékos [pixelek / nap]"
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Szerkesztés"
 
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Országok napi helyezése"
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Menj oda"
 
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Naponta elhelyezett pixelek száma"
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Fájl kiválasztása"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Sablon neve"
+
+#: src/components/TemplateItemEdit.jsx:174
+msgid "Delete"
+msgstr "Törlés"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1367,66 +1503,74 @@ msgstr ""
 "beállított pixelek vesznek körül (NAGYON AGGRESSZÍV AZOKON A VÁSZONOKON, "
 "AMELYEK MEGENGEDIK A NEM BEÁLLÍTOTT PIXELEKET (ahol két töltési idő van)!)."
 
-#: src/components/ModCanvastools.jsx:203
+#: src/components/ModCanvastools.jsx:196
+msgid ""
+"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
+"ISN'T ALREADY MOSTLY 0)"
+msgstr ""
+"A terület minden pixelét állítsd 0-ra (TÉNYLEG NEM KELL EZT MEGCSINÁLNOD "
+"SEMMELYIK TERÜLETEN, AMELYIK NEM TELJESEN 0)."
+
+#: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
 msgstr "Állapot: Nem fut"
 
-#: src/components/ModCanvastools.jsx:245
+#: src/components/ModCanvastools.jsx:249
 msgid "Image Upload"
 msgstr "Képfeltöltés"
 
-#: src/components/ModCanvastools.jsx:246
+#: src/components/ModCanvastools.jsx:250
 msgid "Upload images to canvas"
 msgstr "Képek feltöltése a vászonra"
 
-#: src/components/ModCanvastools.jsx:248
+#: src/components/ModCanvastools.jsx:252
 msgid "File"
 msgstr "Fájl"
 
-#: src/components/ModCanvastools.jsx:269
-msgid "Coordinates in X_Y format:"
-msgstr "Koordináták X_Y formátumban:"
+#: src/components/ModCanvastools.jsx:273
+msgid "Coordinates:"
+msgstr "Koordináták:"
 
-#: src/components/ModCanvastools.jsx:307
+#: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
 msgstr "Pixel védelem"
 
-#: src/components/ModCanvastools.jsx:309
+#: src/components/ModCanvastools.jsx:321
 msgid ""
-"Set protection of areas         (if you need finer grained control,         "
-"use protect with image upload and alpha layers)"
+"Set protection of areas (if you need finer grained control, use protect with "
+"image upload and alpha layers)"
 msgstr ""
 "Területek védelmének beállítása (ha finomabb ellenőrzésre van szükséged, "
-"használd a képfeltöltést és az alfa rétegek védelmét)"
+"használd a képfeltöltéssel és az alfa rétegekkel való védelmet)."
 
-#: src/components/ModCanvastools.jsx:330 src/components/ModCanvastools.jsx:403
-#: src/components/ModCanvastools.jsx:486 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
 msgstr "Bal felső sarok"
 
-#: src/components/ModCanvastools.jsx:347 src/components/ModCanvastools.jsx:420
-#: src/components/ModCanvastools.jsx:503 src/components/ModWatchtools.jsx:193
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
 msgstr "Jobb alsó sarok"
 
-#: src/components/ModCanvastools.jsx:388
+#: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Visszaállítás egy dátumra"
 
-#: src/components/ModCanvastools.jsx:390
+#: src/components/ModCanvastools.jsx:411
 msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
 msgstr ""
 "A vászon egy területének visszaállítása egy meghatározott dátumra (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:461
+#: src/components/ModCanvastools.jsx:492
 msgid "Canvas Cleaner"
 msgstr "Vászon tisztító"
 
-#: src/components/ModCanvastools.jsx:463
+#: src/components/ModCanvastools.jsx:494
 msgid "Apply a filter to clean trash in large canvas areas."
-msgstr "Alkalmazz szűrőt a nagy vászonfelületeken lévő szemét megtisztítására."
+msgstr "Használj szűrőt a nagy vászonfelületeken lévő szemét megtisztításához."
 
-#: src/components/ModCanvastools.jsx:564
+#: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
 msgstr "Tisztítás leállítása"
 
@@ -1470,10 +1614,6 @@ msgstr "Érvénytelen intervallum"
 msgid "Check who placed in an area"
 msgstr "Ellenőrizd, ki rajzolt ezen a területen"
 
-#: src/components/ModWatchtools.jsx:125
-msgid "Canvas"
-msgstr "Vásznak"
-
 #: src/components/ModWatchtools.jsx:144
 msgid "Interval"
 msgstr "Intervallum"
@@ -1482,11 +1622,11 @@ msgstr "Intervallum"
 msgid "IID (optional)"
 msgstr "IID (opcionális)"
 
-#: src/components/ModWatchtools.jsx:239
+#: src/components/ModWatchtools.jsx:249
 msgid "Get Pixels"
 msgstr "Pixelek lekérése"
 
-#: src/components/ModWatchtools.jsx:271
+#: src/components/ModWatchtools.jsx:281
 msgid "Get Users"
 msgstr "Felhasználók lekérése"
 
@@ -1510,6 +1650,26 @@ msgstr "Indoklás megadása"
 msgid "(0 = infinite)"
 msgstr "(0 = végtelen)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Top 10 ország [pixelek / nap]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Játékosok és pixelek óránként"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Top 10 játékos [pixelek / nap]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Országok napi helyezése"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Naponta elhelyezett pixelek száma"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Megemlítés"
@@ -1526,67 +1686,85 @@ msgstr "Blokkolás"
 msgid "Mute"
 msgstr "Némít"
 
-#: src/components/windows/Help.jsx:15 src/components/windows/Settings.jsx:87
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:16 src/components/windows/Settings.jsx:95
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:17 src/components/windows/Settings.jsx:158
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
 
-#: src/components/windows/Help.jsx:18
+#: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
 msgid "R"
 msgstr "R"
 
-#: src/components/windows/Help.jsx:19
+#: src/components/windows/Help.jsx:23
 msgctxt "keybinds"
 msgid "Q"
 msgstr "Q"
 
-#: src/components/windows/Help.jsx:20
+#: src/components/windows/Help.jsx:24
 msgctxt "keybinds"
 msgid "E"
 msgstr "E"
 
-#: src/components/windows/Help.jsx:21
+#: src/components/windows/Help.jsx:25
 msgctxt "keybinds"
 msgid "W"
 msgstr "W"
 
-#: src/components/windows/Help.jsx:22
+#: src/components/windows/Help.jsx:26
 msgctxt "keybinds"
 msgid "A"
 msgstr "A"
 
-#: src/components/windows/Help.jsx:23
+#: src/components/windows/Help.jsx:27
 msgctxt "keybinds"
 msgid "S"
 msgstr "S"
 
-#: src/components/windows/Help.jsx:24
+#: src/components/windows/Help.jsx:28
 msgctxt "keybinds"
 msgid "D"
 msgstr "D"
 
-#: src/components/windows/Help.jsx:31
+#: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
 
-#: src/components/windows/Help.jsx:32
+#: src/components/windows/Settings.jsx:108
 msgctxt "keybinds"
-msgid "C"
-msgstr "C"
+msgid "N"
+msgstr "N"
 
-#: src/components/windows/Settings.jsx:103
+#: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
 msgid "M"
 msgstr "M"
+
+#: src/components/TemplateSettings.jsx:66
+msgctxt "keybinds"
+msgid "T"
+msgstr "T"
+
+#~ msgid "Show Hidden Canvases"
+#~ msgstr "Rejtett vásznak megjelenítése"
+
+#~ msgid "Hide Hidden Canvases"
+#~ msgstr "Rejtett vásznak elrejtése"
+
+#~ msgid "Coordinates in X_Y format:"
+#~ msgstr "Koordináták X_Y formátumban:"
+
+#~ msgctxt "keybinds"
+#~ msgid "C"
+#~ msgstr "C"
