@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: src/core/ChatProvider.js:435
+#: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
 msgstr ""
 
@@ -82,6 +82,14 @@ msgstr ""
 msgid "Invalid url :( Please check your mail again."
 msgstr ""
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr ""
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr ""
+
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr ""
@@ -98,19 +106,11 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr ""
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr ""
-
-#: src/ssr/Main.jsx:62
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr ""
 
-#: src/ssr/Main.jsx:63
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 
