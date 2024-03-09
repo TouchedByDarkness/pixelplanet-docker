@@ -239,7 +239,8 @@ async function buildProduction() {
     avlangs = langs.split(',').map((l) => l.trim())
       .filter((l) => avlangs.includes(l));
   } else {
-    const { avlangs: goodLangs, badLangs } = await filterLackingLocals(avlangs, 50);
+    let badLangs;
+    ({ goodLangs: avlangs, badLangs } = await filterLackingLocals(avlangs, 50));
     if (badLangs.length) {
       console.log(
         'Skipping',
