@@ -42,7 +42,7 @@ msgstr "Դուք խլացված եք ևս ${timeMin} ր"
 #: src/core/ChatProvider.js:450
 #, fuzzy, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Դուք խլացված եք ևս ${timeMin} վրկ"
+msgstr "Դուք խլացված եք ևս ${ ttl } վրկ"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format

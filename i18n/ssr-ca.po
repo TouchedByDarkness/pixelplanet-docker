@@ -39,12 +39,12 @@ msgstr ""
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr "Estàs silenciat ${ muted } minuts més"
+msgstr "Estàs silenciat ${ timeMin } minuts més"
 
 #: src/core/ChatProvider.js:450
 #, fuzzy, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Estàs silenciat ${ muted } segons més"
+msgstr "Estàs silenciat ${ ttl } segons més"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format

@@ -41,7 +41,7 @@ msgstr "Nemo ste za ${ timeMin } minuta"
 #: src/core/ChatProvider.js:450
 #, fuzzy, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Nemo ste za ${ muted } sekundi"
+msgstr "Nemo ste za ${ ttl } sekundi"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format

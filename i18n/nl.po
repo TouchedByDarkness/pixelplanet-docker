@@ -650,7 +650,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Druk op ${ bindE } en ${ bindC } om op en neer te vliegen"
+msgstr "Druk op ${ bindQ } en ${ bindE } om op en neer te vliegen"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -703,7 +703,7 @@ msgstr "Credit voor het palet van het Top10-canvas gaat naar ${ vinikLink }."
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Credit voor het palet van het Top10-canvas gaat naar ${ vinikLink }."
+msgstr "Credit voor het palet van het Top10-canvas gaat naar ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

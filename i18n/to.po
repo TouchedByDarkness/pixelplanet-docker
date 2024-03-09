@@ -659,7 +659,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Lomiʻi ʻa e ${bindE } mo e ${bindC } ke puna ki ʻolunga mo lalo"
+msgstr "Lomiʻi ʻa e ${ bindQ } mo e ${bindE } ke puna ki ʻolunga mo lalo"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -716,7 +716,7 @@ msgstr ""
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr ""
 "ʻOku ʻalu ʻa e credit ki he Palette ʻo e Top10 fakatataa ki he "
-"${ vinikLink }."
+"${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

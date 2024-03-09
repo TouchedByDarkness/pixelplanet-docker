@@ -649,7 +649,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "بزن روی ${ bindE } و ${ bindC } تا بالا و پایین بری"
+msgstr "بزن روی ${ bindQ } و ${ bindE } تا بالا و پایین بری"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -699,7 +699,7 @@ msgstr "فرد سازنده بوم 10 نفر اول ${ vinikLink }."
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "فرد سازنده بوم 10 نفر اول ${ vinikLink }."
+msgstr "فرد سازنده بوم 10 نفر اول ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

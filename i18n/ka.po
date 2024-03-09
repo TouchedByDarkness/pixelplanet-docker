@@ -644,7 +644,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "დააჭირეთ ${ bindE } და ${ bindC } ზევით და ქვევით ფრენისთვის"
+msgstr "დააჭირეთ ${ bindQ } და ${ bindE } ზევით და ქვევით ფრენისთვის"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -697,7 +697,7 @@ msgstr "ტოპ10 ტილოს პალიტრის კრედიტ�
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "ტოპ10 ტილოს პალიტრის კრედიტი გადადის ${ vinikLink }."
+msgstr "ტოპ10 ტილოს პალიტრის კრედიტი გადადის ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

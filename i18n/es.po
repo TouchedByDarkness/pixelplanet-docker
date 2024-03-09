@@ -559,9 +559,6 @@ msgid ""
 "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
 "${ mailLink } and include the following IID:"
 msgstr ""
-"Si has sido detectado como un proxy, pero no lo eres, por favor ve a nuestro "
-"${ guildedLink } o envíanos un email con ${ getIPLink } a ${ mailLink }. No "
-"publiques tu dirección IP en ningún otro lugar .  Lamentamos las molestias."
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
@@ -660,7 +657,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Presiona ${ bindE } y ${ bindC } para volar hacia arriba y hacia abajo"
+msgstr "Presiona ${ bindQ } y ${ bindE } para volar hacia arriba y hacia abajo"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -705,12 +702,12 @@ msgstr "El crédito por la Paleta de la Luna es para ${ starhouseLink }."
 #: src/components/windows/Help.jsx:116
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr "El crédito por la Paleta de la Luna es para ${ starhouseLink }."
+msgstr "El crédito por la Paleta de la Luna es para ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "El crédito por la Paleta de la Luna es para ${ starhouseLink }."
+msgstr "El crédito por la Paleta de la Luna es para ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

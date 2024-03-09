@@ -648,7 +648,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Көтерілу үшін ${ bindE }, төмен түсу үшін ${ bindC } басыңыз"
+msgstr "Көтерілу үшін ${ bindQ }, төмен түсу үшін ${ bindE } басыңыз"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -700,7 +700,7 @@ msgstr "Топ-10 кенебі палитрасының авторы: ${ vinikLi
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Топ-10 кенебі палитрасының авторы: ${ vinikLink }."
+msgstr "Топ-10 кенебі палитрасының авторы: ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

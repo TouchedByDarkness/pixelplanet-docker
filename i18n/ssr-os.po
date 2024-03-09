@@ -42,7 +42,7 @@ msgstr "Дæ зæл æгъгъæд рафтау ма ${timeMin} минуты"
 #: src/core/ChatProvider.js:450
 #, fuzzy, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Дæ зæл æгъгъæд рафтау ма ${muted} сикъунды"
+msgstr "Дæ зæл æгъгъæд рафтау ма ${ ttl } сикъунды"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format

@@ -44,7 +44,7 @@ msgstr "Você está silenciado por mais ${ timeMin } minutos"
 #: src/core/ChatProvider.js:450
 #, fuzzy, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Você está silenciado por mais ${ muted } segundos"
+msgstr "Você está silenciado por mais ${ ttl } segundos"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format

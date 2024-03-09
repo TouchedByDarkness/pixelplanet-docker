@@ -41,7 +41,7 @@ msgstr "${ timeMin } dakikalığına susturuldun"
 #: src/core/ChatProvider.js:450
 #, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "${ muted } saniyeliğine susturuldun"
+msgstr "${ ttl } saniyeliğine susturuldun"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format

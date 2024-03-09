@@ -659,7 +659,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Πατήστε ${ bindE } και ${ bindC } για να πετάξετε πάνω και κάτω"
+msgstr "Πατήστε ${ bindQ } και ${ bindE } για να πετάξετε πάνω και κάτω"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -711,7 +711,7 @@ msgstr "Τα εύσημα για την Παλέτα του καμβά Top10 π�
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Τα εύσημα για την Παλέτα του καμβά Top10 πηγαίνουν στο ${ vinikLink }."
+msgstr "Τα εύσημα για την Παλέτα του καμβά Top10 πηγαίνουν στο ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

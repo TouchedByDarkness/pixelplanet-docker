@@ -417,7 +417,7 @@ msgstr ""
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr ""
-"Witôj na PixelPlanet, { name }! Proszã, dôj  sprawdzëc swòjã adrésã e-mail"
+"Witôj na PixelPlanet, ${ name }! Proszã, dôj  sprawdzëc swòjã adrésã e-mail"
 
 #: src/core/MailProvider.js:67
 #, javascript-format

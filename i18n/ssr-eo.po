@@ -42,7 +42,7 @@ msgstr "Vi estas silentata por plua ${ timeMin } minutoj"
 #: src/core/ChatProvider.js:450
 #, fuzzy, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Vi estas silentata por plua ${ muted } seconds"
+msgstr "Vi estas silentata por plua ${ ttl } seconds"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format

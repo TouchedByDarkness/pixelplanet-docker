@@ -654,7 +654,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Yuxarı və aşağı getmək üçün ${ bindE } və ${ bindC } düymələrini basın"
+msgstr "Yuxarı və aşağı getmək üçün ${ bindQ } və ${ bindE } düymələrini basın"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -705,7 +705,7 @@ msgstr "Top10 Lövhə palitrası üçün kredit ${ vinikLink }-ə gedir."
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Top10 Lövhə palitrası üçün kredit ${ vinikLink }-ə gedir."
+msgstr "Top10 Lövhə palitrası üçün kredit ${ donendoLink }-ə gedir."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

@@ -560,10 +560,6 @@ msgid ""
 "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
 "${ mailLink } and include the following IID:"
 msgstr ""
-"Če ste zaznani kot proxy, ampak niste, prosim pojdite na naš "
-"${ guildedLink } ali pa nam pošljite e-mail z ${ getIPLink } na "
-"${ mailLink }. Ne objavljajte vašega IP naslova nikjer drugje. Opravičujemo "
-"se za neprijetnost. "
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
@@ -659,7 +655,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Pritisni ${ bindE } in ${ bindC } za se premakneš proč in proti"
+msgstr "Pritisni ${ bindQ } in ${ bindE } za se premakneš proč in proti"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -703,12 +699,12 @@ msgstr "Zasluge za Lunino Paleto imajo ${ starhouseLink }."
 #: src/components/windows/Help.jsx:116
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr "Zasluge za Lunino Paleto imajo ${ starhouseLink }."
+msgstr "Zasluge za Lunino Paleto imajo ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Zasluge za Lunino Paleto imajo ${ starhouseLink }."
+msgstr "Zasluge za Lunino Paleto imajo ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

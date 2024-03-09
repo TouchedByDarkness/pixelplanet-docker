@@ -560,10 +560,6 @@ msgid ""
 "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
 "${ mailLink } and include the following IID:"
 msgstr ""
-"Si has estat detectat com a proxy sense ser-ho, si us plau, ves al nostre "
-"${ guildedLink } o envia'ns un correu electrònic amb ${ getIPLink } a "
-"${ mailLink}. No publiquis la teva adreça IP a cap altre lloc. Sentim les "
-"molèsties."
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
@@ -657,7 +653,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Prem ${ bindE } i ${ bindC} per volar amunt i avall"
+msgstr "Prem ${ bindQ } i ${ bindE } per volar amunt i avall"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -712,7 +708,7 @@ msgstr ""
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr ""
-"Els crèdits per la paleta de colors del llenç Top10 són per ${ vinikLink }."
+"Els crèdits per la paleta de colors del llenç Top10 són per ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

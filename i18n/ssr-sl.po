@@ -44,7 +44,7 @@ msgstr "Utišani ste še ${ timeMin } minut"
 #: src/core/ChatProvider.js:450
 #, fuzzy, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Utišani ste še ${ muted } sekund"
+msgstr "Utišani ste še ${ ttl } sekund"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format

@@ -558,9 +558,6 @@ msgid ""
 "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
 "${ mailLink } and include the following IID:"
 msgstr ""
-"Եթե ձեզ համարել են պրոքսի օգտագործող, բայց դուք ոչ ոք չեք, խնդրում ենք "
-"այցելեք մեր ${guildedLink} կամ ${getIPLink} - ով նամակ ուղարկեք ${mailLink} "
-"- ին: Մի տեղադրեք ձեր IP- ն այլուր: Մենք ցավում ենք անհանգստության համար:"
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
@@ -653,7 +650,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Սեղմեք ${ bindE } և ${ bindC } ՝ վեր ու վար թռչելու համար"
+msgstr "Սեղմեք ${ bindQ } և ${ bindE } ՝ վեր ու վար թռչելու համար"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -697,12 +694,12 @@ msgstr "Լուսնի ներկապնակի վարկը տրամադրվում է $
 #: src/components/windows/Help.jsx:116
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr "Լուսնի ներկապնակի վարկը տրամադրվում է ${ starhouseLink }:"
+msgstr "Լուսնի ներկապնակի վարկը տրամադրվում է ${ vinikLink }:"
 
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Լուսնի ներկապնակի վարկը տրամադրվում է ${ starhouseLink }:"
+msgstr "Լուսնի ներկապնակի վարկը տրամադրվում է ${ donendoLink }:"
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

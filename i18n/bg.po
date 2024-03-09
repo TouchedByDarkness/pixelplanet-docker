@@ -649,7 +649,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Натиснете ${ bindE } и ${ bindC }, за да летите нагоре и надолу"
+msgstr "Натиснете ${ bindQ } и ${ bindE }, за да летите нагоре и надолу"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -699,7 +699,7 @@ msgstr "Заслугата за палитрата на платното Топ1
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Заслугата за палитрата на платното Топ10 е на ${ vinikLink }."
+msgstr "Заслугата за палитрата на платното Топ10 е на ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"

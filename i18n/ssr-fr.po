@@ -44,7 +44,7 @@ msgstr "Vous êtes mis en sourdine pour encore ${ timeMin } minutes"
 #: src/core/ChatProvider.js:450
 #, fuzzy, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Vous êtes mis en sourdine pour encore ${ muted } secondes"
+msgstr "Vous êtes mis en sourdine pour encore ${ ttl } secondes"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
