@@ -183,13 +183,3 @@ module.exports = ({
   };
 }
 
-function getAllAvailableLocals() {
-  const langDir = path.resolve('i18n');
-  const langs = fs.readdirSync(langDir)
-    .filter((e) => (e.endsWith('.po') && !e.startsWith('ssr')))
-    .map((l) => l.slice(0, -3));
-  langs.unshift('en');
-  return langs;
-}
-
-module.exports.getAllAvailableLocals = getAllAvailableLocals;

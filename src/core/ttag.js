@@ -6,6 +6,7 @@ import cookie from 'cookie';
 
 import assetWatcher from './fsWatcher';
 import { getLangsOfJsAsset } from './assets';
+import lccc from '../../i18n/lccc.json';
 
 // eslint-disable-next-line max-len
 const localeImports = require.context('../../i18n', false, /^\.[/\\]ssr-.+\.po$/);
@@ -32,16 +33,11 @@ function loadTtags() {
     const file = langs[i];
     // ./ssr-de.po
     let lang = file.replace('./ssr-', '').replace('.po', '').toLowerCase();
-    let flag = lang;
     /*
-     * in cases where the language code and country code differ,
-     * the country code can be given seperately in the file name
-     * i.e.: ./ssr-en-gb.po
+     * In cases where the language code and country code differ,
+     * it can be mapped in i18n/lccc.json
      */
-    const seperator = lang.indexOf('-');
-    if (seperator !== -1) {
-      [lang, flag] = lang.split('-');
-    }
+    let flag = lccc[lang] || lang;
     if (jsLangs.includes(lang)) {
       if (!ttags[lang]) {
         const ttag = new TTag();

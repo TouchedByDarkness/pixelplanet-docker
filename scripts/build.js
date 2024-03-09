@@ -5,13 +5,13 @@
 
 const path = require('path');
 const fs = require('fs');
+const readline = require('readline');
 const { spawn } = require('child_process');
 const webpack = require('webpack');
 
 const minifyCss = require('./minifyCss');
 const serverConfig = require('../webpack.config.server.js');
 const clientConfig = require('../webpack.config.client.js');
-const { getAllAvailableLocals } = clientConfig;
 
 let langs = 'all';
 let doBuildServer = false;
@@ -44,6 +44,88 @@ for (let i = 0; i < process.argv.length; i += 1) {
 if (!doBuildServer && !doBuildClient) {
   doBuildServer = true;
   doBuildClient = true;
+}
+
+/*
+ * get available locals based on the files available in ../i18n
+ */
+function getAllAvailableLocals() {
+  const langDir = path.resolve(__dirname, '..', 'i18n');
+  const langs = fs.readdirSync(langDir)
+    .filter((e) => (e.endsWith('.po') && !e.startsWith('ssr')))
+    .map((l) => l.slice(0, -3));
+  langs.unshift('en');
+  return langs;
+}
+
+/*
+ * get amount of msgid and msgstr of po file
+ */
+function getPoFileStats(file) {
+  return new Promise((resolve) => {
+    const fileStream = fs.createReadStream(file);
+    const lineReader = readline.createInterface({ 
+      input: fileStream,
+      crlfDelay: Infinity,
+    });
+
+    let msgid = 0;
+    let msgstr = 0;
+
+    lineReader.on('line', (l) => {
+      l = l.trim();
+      if (l.endsWith('""')) {
+        return;
+      }
+      let seperator = l.indexOf(' ');
+      if (seperator === -1) {
+        seperator = l.indexOf('\t');
+      }
+      if (seperator === -1) {
+        return;
+      }
+      const tag = l.substring(0, seperator);
+      if (tag === 'msgid') {
+        msgid += 1;
+      } else if (tag === 'msgstr') {
+        msgstr += 1;
+      }
+    });
+
+    lineReader.on('close', (l) => {
+      resolve({ msgid, msgstr });
+    });
+  });
+}
+
+async function filterLackingLocals(langs, percentage) {
+  langs = langs.filter((l) => l !== 'en');
+  const promises = [];
+  const { msgid, msgstr } = await getPoFileStats(path.resolve(
+    __dirname, '..', 'i18n', `template.pot`,
+  ));
+
+  const langStats = await Promise.all(langs
+    .map((l) => getPoFileStats(
+      path.resolve(__dirname, '..', 'i18n', `${l}.po`),
+    )));
+  const goodLangs = [ 'en' ];
+  const badLangs = [];
+  for (let i = 0; i < langs.length; i += 1) {
+    const lang = langs[i];
+    const stats = langStats[i];
+    const percent = Math.floor(stats.msgstr / msgid * 100);
+    if (percent >= percentage) {
+      goodLangs.push(lang);
+    } else {
+      console.log(`Lang ${lang} completion:`, percent, '%');
+      badLangs.push(lang);
+    }
+  }
+  return {
+    goodLangs,
+    badLangs,
+  };
 }
 
 function compile(webpackConfig) {
@@ -156,13 +238,23 @@ async function buildProduction() {
   if (langs !== 'all') {
     avlangs = langs.split(',').map((l) => l.trim())
       .filter((l) => avlangs.includes(l));
-    if (!avlangs.length) {
-      console.error(`ERROR: language ${langs} not available`);
-      process.exit(1);
-      return;
+  } else {
+    const { avlangs: goodLangs, badLangs } = await filterLackingLocals(avlangs, 50);
+    if (badLangs.length) {
+      console.log(
+        'Skipping',
+        badLangs.length,
+        'locals because of low completition:',
+        badLangs,
+      );
     }
   }
-  console.log('Building locales:', avlangs);
+  if (!avlangs.length) {
+    console.error(`ERROR: language ${langs} not available`);
+    process.exit(1);
+    return;
+  }
+  console.log('Building', avlangs.length, 'locales:', avlangs);
 
   const promises = [];
 
