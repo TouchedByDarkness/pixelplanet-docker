@@ -116,6 +116,9 @@ module.exports = ({
         {
           test: [/\.po$/],
           loader: 'ttag-po-loader',
+          options: {
+            excludeFuzzy: true,
+          },
         },
       ],
     },
