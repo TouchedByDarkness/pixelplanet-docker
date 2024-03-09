@@ -45,16 +45,6 @@ npm run build
 
 All needed files to run it got created in `./dist`. You can copy it to wherever you want to run pixelplanet.
 
-Notes:
-
-- If you run into problems, make sure that you have rights to g++ (if not, run as root and then chown username:username -R . after build)
-
-- If `npm install` fails with "unable to connect to github.com" set:
-
-```
-git config --global url.https://github.com/.insteadOf git://github.com/
-```
-
 ## Run
 ### Requirements
 
