@@ -1,5 +1,3 @@
-> **Currently pixelplanet is being developed in a another private repository. This development version diverted and is incompatible with the stable version here. Until it is ready, this public repository will be frozen.**
-
 # PixelPlanet.fun
 
 
@@ -9,7 +7,9 @@ Official  repository of [pixelplanet.fun](http://www.pixelplanet.fun).
 
 ![videothumb](promotion/videothumb.gif)
 
-> If you want to help us translate pixelplanet.fun, look into [i18n](./i18n)
+> Our translations are hosted [on Weblate](https://hosted.weblate.org/projects/pixelplanet), information on how to contribute is available under [i18n](./i18n). We very much appreciate any help. 
+
+[![Translation status](https://hosted.weblate.org/widget/pixelplanet/svg-badge.svg)](https://hosted.weblate.org/engage/pixelplanet/)
 
 To the 2nd anniversary of r/space, pixelplanet takes pixelgames to a new level. Place pixels, create pixelart and fight faction wars on pixelplanet.fun.
 Pixelplanet is a 65k x 65k large canvas that is a map of the world and can also be seen as 3d globe, you can place pixels where ever you want, build an island, take over another country with a flag or just create pixelart.

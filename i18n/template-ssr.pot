@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: src/core/ChatProvider.js:434
+#: src/core/ChatProvider.js:435
 msgid "You can not send chat messages with proxy"
 msgstr ""
 
@@ -106,11 +106,11 @@ msgstr ""
 msgid "PixelPlanet.Fun PopUp"
 msgstr ""
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
 msgstr ""
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 
