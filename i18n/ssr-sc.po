@@ -21,7 +21,8 @@ msgid "Your country is temporary muted from this chat channel"
 msgstr "U to paisi esti bannatu temporaniaminti ri stu canali"
 
 #: src/core/ChatProvider.js:439
-msgid "You are permanently muted, join our guilded to apppeal the mute"
+#, fuzzy
+msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr "Si bannatu pi ssempri, trasi nalu guilded pi appellari"
 
 #: src/core/ChatProvider.js:441
@@ -38,6 +39,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "Si mutatu pi n'avutri ${ timeMin } minuta"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "Si mutatu pi n'avutri ${ ttl } sicunna"
 
@@ -50,19 +52,19 @@ msgstr "Sta mannannu messaggia troppu veloci, asspittari ${ waitTime }s :("
 msgid "You don't have access to this channel"
 msgstr "Unna a accessu a stu canali"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "A to email ava a essiri verificata pi parrari intra a chat"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Umpo mannari messaggia accussi longa"
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Piffauri usa a chat int"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Abbasta affunnari."
 
@@ -83,42 +85,43 @@ msgid "User doesn't exist in our database :("
 msgstr "St'utenti unnisisti nalu database"
 
 #: src/routes/reset_password.js:89
-msgid "Passowrd successfully changed."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Password canciata."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
 msgstr "Url mmaliru,piffauri talia l'email arre..."
 
-#: src/ssr/Globe.jsx:32
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3DGlobe"
-
-#: src/ssr/Globe.jsx:33
-msgid "A 3D globe of our whole map"
-msgstr "U globo 3d ri tutta a mappa"
-
-#: src/ssr/Globe.jsx:46
-msgid "Double click on globe to go back."
-msgstr "Ammacca rui voti nalu globo pi iri in arre."
-
-#: src/ssr/Globe.jsx:47
-msgid "Loading..."
-msgstr "Caricannu..."
-
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PopUp ri PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3DGlobe"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "U globo 3d ri tutta a mappa"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Ammacca rui voti nalu globo pi iri in arre."
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Caricannu..."
+
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Piazza pixel culurata intra na mappa a stili canvas cu avutri chistiana"
@@ -225,31 +228,7 @@ msgstr "Sulu li admin ponnu fari chistu"
 msgid "You are not banned"
 msgstr "Unsi bannatu"
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Unsi mancu loggatu."
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Erruri rilu server quannu loggasti fora."
-
-#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
-msgid "Mail verification"
-msgstr "Verifica pi email"
-
-#: src/routes/api/auth/verify.js:27
-msgid "You are now verified :)"
-msgstr "Si verificatu"
-
-#: src/routes/api/auth/verify.js:35
-msgid ""
-"Your mail verification code is invalid or already expired :(, please request "
-"a new one."
-msgstr ""
-"U To codici pi verificarti j'e mmalidu o scarutu ;(, piffauri richiedi "
-"navutru."
-
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Stu provider rila email unne valiru"
 
@@ -285,17 +264,49 @@ msgstr "Falli a criari un novu utenti"
 msgid "Failed to establish session after register :("
 msgstr "Falli a fari na sissiuni ropu a registazioni :("
 
-#: src/routes/api/auth/change_mail.js:43
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
+msgid "Mail verification"
+msgstr "Verifica pi email"
+
+#: src/routes/api/auth/verify.js:27
+msgid "You are now verified :)"
+msgstr "Si verificatu"
+
+#: src/routes/api/auth/verify.js:35
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"U To codici pi verificarti j'e mmalidu o scarutu ;(, piffauri richiedi "
+"navutru."
+
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Unsi mancu loggatu."
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Erruri rilu server quannu loggasti fora."
+
+#: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
+#: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
 msgstr "Unsi autenticatu."
 
-#: src/routes/api/auth/change_mail.js:52
+#: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
+#: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
 msgstr "Password sbagliata!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -310,45 +321,53 @@ msgstr "Veni mannatu nala paggina automaticamente 'n 15s"
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "O ${ clickHere } Pi gghiri arre su pixelplanet"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Terra"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Luna"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "Canvas 3D"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Coronavirus"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1bit"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Top10"
 
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
+
 #: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr ""
 "U Canvas principali, na mappa ranni ri tuttu u munnu. Piazza unne ghie ca ti "
 "piaci"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -357,39 +376,50 @@ msgstr ""
 "(Aimmenu sa un fannu parti rilu disegnu) ne arti chiu ranni ri 1.5k x 1.5k "
 "pixels."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Piazza Voxels intra 'n canvas 3D cu l'avutri"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Canvas spiciali pi diffunniri a consapevolizza sulu SARS-CoV2"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "Specchiu ri PixelZone"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "Specchiu ri  PixelCanvas"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Canvas 'n viancu j'e' nivuru"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
 "U canvas sulu pili iucatura chiu attiva d'aeri. Aggiurnamenti a 00:00 UTC."
 
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+
 #: src/core/MailProvider.js:66
-#, javascript-format
-msgid "Welcome ${ name } to PixelPlanet, plese verify your mail"
+#, fuzzy, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr "Binvinutu  ${ name } na pixelplanet, piffauri verifica a to email"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Salutamu ${ name }"
 
@@ -410,8 +440,9 @@ msgid "Or by copying following url:"
 msgstr "O copia stu url:"
 
 #: src/core/MailProvider.js:69
+#, fuzzy
 msgid ""
-"Have fun and don't hesitate to contact us if you encouter any problems :)"
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr "Addivertiti j'e' un esitari a contattarici si viri quacchi problema :)"
 
 #: src/core/MailProvider.js:70 src/core/MailProvider.js:107

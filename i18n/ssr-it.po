@@ -40,6 +40,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "Sei mutato ancora per ${ timeMin } minuti"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "Sei mutato ancora per ${ ttl } secondi"
 
@@ -53,19 +54,19 @@ msgstr ""
 msgid "You don't have access to this channel"
 msgstr "Non hai accesso a questa chat"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Devi verificare la tua mail per chattare"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Non puoi mandare un messaggio così lungo :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Per favore usa il canale \"int\". Letteralmente 1984"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Manda messaggi più lentamente, sarai mica un turco"
 
@@ -93,35 +94,35 @@ msgstr "Password cambiata con successo"
 msgid "Invalid url :( Please check your mail again."
 msgstr "Url invalido :( Per favore controlla nuovamente la tua mail"
 
-#: src/ssr/Globe.jsx:32
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun Globo 3D"
-
-#: src/ssr/Globe.jsx:33
-msgid "A 3D globe of our whole map"
-msgstr "Un Globo 3D di tutta la nostra mappa"
-
-#: src/ssr/Globe.jsx:46
-msgid "Double click on globe to go back."
-msgstr "Doppio click sul globo per andare indietro"
-
-#: src/ssr/Globe.jsx:47
-msgid "Loading..."
-msgstr "Caricamento..."
-
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun Globo 3D"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "Un Globo 3D di tutta la nostra mappa"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Doppio click sul globo per andare indietro"
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Caricamento..."
+
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr "Piazza pixel colorati in un canvas con altri player online"
 
@@ -227,7 +228,7 @@ msgstr "Solo gli admin possono farlo"
 msgid "You are not banned"
 msgstr "Non sei bannato (purtroppo)"
 
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Il tuo email provider non è permesso, 1984"
 
@@ -263,26 +264,6 @@ msgstr "Fallimento nel creare un nuovo user"
 msgid "Failed to establish session after register :("
 msgstr "Fallimento nel ristabilire una sessione dopo la registraione"
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Non hai nemmeno fatto l'accesso"
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Errore del server durante il log out"
-
-#: src/routes/api/auth/change_mail.js:43
-#: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
-msgid "You are not authenticated."
-msgstr "Non sei autentificato"
-
-#: src/routes/api/auth/change_mail.js:52
-#: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
-msgid "Incorrect password!"
-msgstr "Password incorretta"
-
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Verificazione mail"
@@ -299,6 +280,34 @@ msgstr ""
 "Il tuo mail verification code è invalido o è già scaduto ;(, per farvore "
 "richiedine uno nuovo"
 
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Non hai nemmeno fatto l'accesso"
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Errore del server durante il log out"
+
+#: src/routes/api/auth/change_mail.js:44
+#: src/routes/api/auth/change_passwd.js:34
+#: src/routes/api/auth/delete_account.js:36
+msgid "You are not authenticated."
+msgstr "Non sei autentificato"
+
+#: src/routes/api/auth/change_mail.js:53
+#: src/routes/api/auth/change_passwd.js:43
+#: src/routes/api/auth/delete_account.js:55
+msgid "Incorrect password!"
+msgstr "Password incorretta"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr ""
+
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
 msgstr "PixelPlanet.fun Accounts"
@@ -312,45 +321,53 @@ msgstr "Sarai rediretto automaticamente dopo 15s"
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "o ${ clickHere } per tornare su pixelplanet"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Terra"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Luna "
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D Canvas"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Coronavirus"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1bit"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Top10"
 
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
+
 #: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr ""
 "Il nostro canvas principale, una enorme mappa del mondo. Piazza onunque to "
 "voglia"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -358,27 +375,27 @@ msgstr ""
 "Canvas luna. Spazio sicuro per le art. Nessuna bandiera o testo lago (a meno "
 "che sia parte di un'art) o art più grande di 1.5kx1.5k pixel"
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Piazza Voxels sul canvas 3D con altri"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Canvas speciale per sensibilizzare sul SARS-CoV2"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "Mirror di PixelZone"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "Mirror di PixelCanvas"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Canvas in bianco e nero"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
@@ -386,12 +403,23 @@ msgstr ""
 "Canvas per i player più attivi del giorno precedente (leggi autistici). Le "
 "classifiche giornaliere riniziano a 00:00 UTC"
 
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr "Benvenuto ${ name } su PixelPlanet, per favore verifica la tua mail"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Ciao ${ name }"
 

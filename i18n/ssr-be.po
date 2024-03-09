@@ -41,6 +41,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "Вы прыглушаны яшчэ на ${ timeMin } хвілін"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "Вы прыглушаны яшчэ на ${ ttl } секунд"
 
@@ -55,19 +56,19 @@ msgstr ""
 msgid "You don't have access to this channel"
 msgstr "Вы не маеце доступу да гэтага канала"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Ваша пошта павінна быць верыфікаванай, каб вы маглі карыстацца чатам"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Вы не можаце даслаць такое доўгае паведамленне :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Калі ласка, карыстайцеся інтэрнацыянальным чатам (int)"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Не флудзіце."
 
@@ -95,35 +96,35 @@ msgstr "Пароль паспяхова зменены."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Няправільны URL :( Калі ласка, праверце сваю пошту яшчэ раз."
 
-#: src/ssr/Globe.jsx:32
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3D Глобус"
-
-#: src/ssr/Globe.jsx:33
-msgid "A 3D globe of our whole map"
-msgstr "3D Глобус усёй нашай мапы"
-
-#: src/ssr/Globe.jsx:46
-msgid "Double click on globe to go back."
-msgstr "Каб вярнуцца, двойчы націсніце па глобусу."
-
-#: src/ssr/Globe.jsx:47
-msgid "Loading..."
-msgstr "Загрузка..."
-
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ппфан"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "Усплывальнае акно PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3D Глобус"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "3D Глобус усёй нашай мапы"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Каб вярнуцца, двойчы націсніце па глобусу."
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Загрузка..."
+
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Стаўце рознакаляровыя пікселі на палатне ў выглядзе мапы свету анлайн, разам "
@@ -231,7 +232,7 @@ msgstr "Толькі адміністратары могуць гэта рабі
 msgid "You are not banned"
 msgstr "Вы не забанены"
 
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Гэты email-правайдэр забанены"
 
@@ -267,26 +268,6 @@ msgstr "Не атрымалася стварыць новага карыстал
 msgid "Failed to establish session after register :("
 msgstr "Не атрымалася стварыць сэсію пасля рэгістрацыі :("
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Вы нават не ўвайшлі ў акаўнт."
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Памылка сервера пры выхадзе з акаўнту."
-
-#: src/routes/api/auth/change_mail.js:43
-#: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
-msgid "You are not authenticated."
-msgstr "Вы не аўтарызаваны."
-
-#: src/routes/api/auth/change_mail.js:52
-#: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
-msgid "Incorrect password!"
-msgstr "Няправільны пароль!"
-
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Спраўджанне пошты"
@@ -303,6 +284,34 @@ msgstr ""
 "Ваш код спраўджання пошты няправільны або ужо не працуе :(, калі ласка, "
 "запытайце новы."
 
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Вы нават не ўвайшлі ў акаўнт."
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Памылка сервера пры выхадзе з акаўнту."
+
+#: src/routes/api/auth/change_mail.js:44
+#: src/routes/api/auth/change_passwd.js:34
+#: src/routes/api/auth/delete_account.js:36
+msgid "You are not authenticated."
+msgstr "Вы не аўтарызаваны."
+
+#: src/routes/api/auth/change_mail.js:53
+#: src/routes/api/auth/change_passwd.js:43
+#: src/routes/api/auth/delete_account.js:55
+msgid "Incorrect password!"
+msgstr "Няправільны пароль!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr ""
+
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
 msgstr "Акаўнты PixelPlanet.fun"
@@ -316,44 +325,52 @@ msgstr "Вы будзеце аўтаматычна перанакіраваны�
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Альбо ${ clickHere } каб вярнуцца да pixelplanet"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Зямля"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Луна"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D палатно"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Каранавірус"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1-біт"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Топ 10"
 
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
+
 #: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr ""
 "Наша галоўнае палатно, вялізарная мапа свету. Стаўце пікселі дзе заўгодна"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -361,27 +378,27 @@ msgstr ""
 "Палатно Луна. Бяспечнае месца для малюнкаў. Ніякіх сцягаў ці вялікага тэксту "
 "(калі гэта ня частка малюнку), ці малюнкаў больш за 1.5k x 1.5k пікселяў."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Стаўце вокселі на 3D палатне разам з іншымі"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Асаблівае палатно, прызванае распаўсюджваць дасведчанасць аб SARS-CoV2"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "Люстэрка PixelZone"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "Люстэрка PixelCanvas"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Ч/Б палатно"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
@@ -389,12 +406,23 @@ msgstr ""
 "Палатно для найбольш актыўных гульцоў апошняга дня. Спіс аднаўляецца кожны "
 "дзень у 00:00 UTC."
 
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr "Вітаем у PixelPlanet, ${ name }, калі ласка, спраўдзіце сваю пошту"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Вітаем, ${ name }"
 

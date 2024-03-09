@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-09 11:55+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
+"server/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -38,6 +39,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "${ timeMin } dakikalığına susturuldun"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "${ muted } saniyeliğine susturuldun"
 
@@ -50,19 +52,19 @@ msgstr "Çok hızlı mesaj gönderiyorsun, ${ waitTime } saniye beklemen gerekiy
 msgid "You don't have access to this channel"
 msgstr "Bu kanala erişimin yok"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Onaylı bir E-Posta adresin olmadan sohbete katılamazsın"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Bu kadar uzun bir mesaj gönderemezsin :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Lütfen int sohbet kanalını kullanın"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Flood yapmayı bırak."
 
@@ -90,58 +92,58 @@ msgstr "Parolanız başarılı bir şekilde değiştirildi."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Geçersiz bağlantı :( Lütfen postanızı tekrar kontrol ediniz."
 
-#: src/ssr/Globe.jsx:32
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3BKüresel"
-
-#: src/ssr/Globe.jsx:33
-msgid "A 3D globe of our whole map"
-msgstr "Tüm haritamızın 3 boyutlu küreseli"
-
-#: src/ssr/Globe.jsx:46
-msgid "Double click on globe to go back."
-msgstr "Küreye çift tıklayarak geri dön."
-
-#: src/ssr/Globe.jsx:47
-msgid "Loading..."
-msgstr "Yükleniyor..."
-
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.fun PopUp"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3BKüresel"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "Tüm haritamızın 3 boyutlu küreseli"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Küreye çift tıklayarak geri dön."
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Yükleniyor..."
+
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Diğer oyuncularla beraber harita tarzı tuvallerde renkli pikseller atın"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Mail adresi boş bırakılamaz."
+msgstr "E-posta adresi boş olamaz."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr "Mail adresi en az 5 karakterden oluşmalıdır."
+msgstr "E-Posta en az 5 karakterden oluşmalıdır."
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr "Mail adresi 40 karakterden fazla olamaz."
+msgstr "E-Posta 40 karakterden uzun olamaz."
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr "Mail adresi içerisinde nokta bulundurmalıdır"
+msgstr "E-posta adresi içerisinde en az bir nokta bulundurmalıdır"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "Mail adresi içerisinde @ bulundurmalıdır"
+msgstr "E-posta adresi içerisinde @ bulundurmalıdır"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
@@ -149,7 +151,7 @@ msgstr "Kullanıcı adı boş bırakılamaz."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr "Kullanıcı adı 2 karakterden fazla olmalıdır"
+msgstr "Kullanıcı adı en az 2 karakterden oluşmalıdır"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
@@ -225,30 +227,7 @@ msgstr "Sadece adminler bunu yapabilir"
 msgid "You are not banned"
 msgstr "Banlanmadın"
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Henüz oturum açmadın."
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Oturum kapatılırken sunucu hatası oluştu."
-
-#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
-msgid "Mail verification"
-msgstr "Mail adresi doğrulaması"
-
-#: src/routes/api/auth/verify.js:27
-msgid "You are now verified :)"
-msgstr "Artık hesabın doğrulandı :)"
-
-#: src/routes/api/auth/verify.js:35
-msgid ""
-"Your mail verification code is invalid or already expired :(, please request "
-"a new one."
-msgstr ""
-"Doğrulama kodun geçersiz veya süresi doldu :(, lütfen yeni bir talepte bulun."
-
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Bu e-posta sağlayıcısına izin verilmiyor"
 
@@ -258,7 +237,7 @@ msgstr "Captcha girilmedi"
 
 #: src/routes/api/auth/register.js:34
 msgid "E-Mail already in use."
-msgstr "Mail adresi kullanımda."
+msgstr "E-posta adresi kullanımda."
 
 #: src/routes/api/auth/register.js:36
 msgid "Username already in use."
@@ -284,17 +263,48 @@ msgstr "Yeni hesap oluşturulamadı :("
 msgid "Failed to establish session after register :("
 msgstr "Hesap oluştururken bir hata meydana geldi :("
 
-#: src/routes/api/auth/change_mail.js:43
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
+msgid "Mail verification"
+msgstr "E-posta adresi doğrulaması"
+
+#: src/routes/api/auth/verify.js:27
+msgid "You are now verified :)"
+msgstr "Artık hesabın doğrulandı :)"
+
+#: src/routes/api/auth/verify.js:35
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"Doğrulama kodun geçersiz veya süresi doldu :(, lütfen yeni bir talepte bulun."
+
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Henüz oturum açmadın."
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Oturum kapatılırken sunucu hatası oluştu."
+
+#: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
+#: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
 msgstr "Kimliğiniz doğrulanamadı."
 
-#: src/routes/api/auth/change_mail.js:52
+#: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
+#: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
 msgstr "Yanlış parola!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr "Susturulan kullanıcılar hesaplarını silemez."
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr "Susturulan kullanıcılar bunu yapamaz."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -309,43 +319,51 @@ msgstr "15 saniye içerisinde otomatik olarak yönlendirileceksin"
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Veya ${ clickHere } pixelplanet'e dönebilirsin"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Dünya"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Ay"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3B Tuval"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Koronavirüs"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1bit"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Top10"
 
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr "2bit"
+
 #: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr "Küçük harita"
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr "Ana tuvalimiz devasa dünya haritası. İstediğin yere piksel atabilirsin"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -353,27 +371,27 @@ msgstr ""
 "Ay tuvali. Eserler için güvenilir bir yer. Bayraklar veya büyük yazılar "
 "(eserin parçası değilse) veya 1.5k x 1.5k pikselden oluşan eserler yasaktır."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "3B tuvalde diğer oyuncularla birlikte küp pikseller at"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Koronavirüs farkındalığını yaymak için özel olarak yapılan tuval"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "PixelZone'un aynası"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "PixelCanvas'ın aynası"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Siyah-beyaz tuval"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
@@ -381,12 +399,25 @@ msgstr ""
 "Geçen günün en aktif oyuncuları için yapılmış tuval. Sıralama her gün 00:00 "
 "UTC'da güncellenir."
 
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr "Yalnızca dört renk. Ay ile aynı kurallar."
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+"Korumalı okyanus ile daha küçük bir dünya üzerinde toprak fethedin. Toprak "
+"tuvali ile bekleme süresini paylaşır."
+
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr "PixelPlanet'e hoş geldin ${ name }, lütfen mail adresini doğrula"
+msgstr "PixelPlanet'e hoş geldin ${ name }, lütfen e-posta adresini doğrula"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Merhaba ${ name }"
 
@@ -395,8 +426,8 @@ msgid ""
 "welcome to our little community of pixelplacers, to use your account, you "
 "have to verify your mail. You can do that here: "
 msgstr ""
-"piksel atanlardan oluşan topluluğumuza hoş geldin, hesabını kullanmak için "
-"mail adresini doğrula. Buradan yapabilirsin: "
+"piksel atanlardan oluşan topluluğumuza hoş geldin, hesabını kullanmak için e-"
+"posta adresini doğrula. Buradan yapabilirsin: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
@@ -447,7 +478,7 @@ msgid ""
 "requested this mail was ${ ip })."
 msgstr ""
 "Eğer bu postayı talep etmediysen lütfen görmezden gel (bu postayı talep eden "
-"ip: ${ ip })"
+"ip: ${ ip })."
 
 #: src/core/MailProvider.js:114
 msgid "Mail is not configured on the server"
@@ -463,7 +494,7 @@ msgstr ""
 
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"
-msgstr "Bu mail adresini veri tabanımızda bulamadık"
+msgstr "Bu e-posta adresini veri tabanımızda bulamadık"
 
 #~ msgid "Ow no! Spam protection decided to mute you"
 #~ msgstr "Olamaz! Spam koruması seni susturdu"

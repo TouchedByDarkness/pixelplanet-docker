@@ -21,7 +21,8 @@ msgid "Your country is temporary muted from this chat channel"
 msgstr "Je land is tijdelijk gedempt op dit chatkanaal"
 
 #: src/core/ChatProvider.js:439
-msgid "You are permanently muted, join our guilded to apppeal the mute"
+#, fuzzy
+msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
 "Je bent permanent gedempt, sluit je aan bij onze gilde om in beroep te gaan "
 "tegen de demper"
@@ -40,6 +41,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "Je bent nog eens ${ timeMin } minuten gedempt"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "Je bent nog eens ${ ttl } seconden gedempt"
 
@@ -52,19 +54,19 @@ msgstr "Je verzendt berichten te snel, je moet ${ waitTime }s wachten :("
 msgid "You don't have access to this channel"
 msgstr "Je hebt geen toegang tot dit kanaal"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Je e-mail moet worden geverifieerd om te kunnen chatten"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Je kunt niet zo lang een bericht sturen :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Gebruik alstublieft het int-kanaal"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Stop met spammen."
 
@@ -87,42 +89,43 @@ msgid "User doesn't exist in our database :("
 msgstr "Gebruiker bestaat niet in onze database :("
 
 #: src/routes/reset_password.js:89
-msgid "Passowrd successfully changed."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Wachtwoord succesvol veranderd."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
 msgstr "Ongeldige url :( Controleer a.u.b. nogmaals uw mail."
 
-#: src/ssr/Globe.jsx:32
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3DGlobe"
-
-#: src/ssr/Globe.jsx:33
-msgid "A 3D globe of our whole map"
-msgstr "Een 3D-wereldbol van onze hele kaart"
-
-#: src/ssr/Globe.jsx:46
-msgid "Double click on globe to go back."
-msgstr "Dubbelklik op wereldbol om terug te gaan."
-
-#: src/ssr/Globe.jsx:47
-msgid "Loading..."
-msgstr "Laden…"
-
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun-pop-up"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3DGlobe"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "Een 3D-wereldbol van onze hele kaart"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Dubbelklik op wereldbol om terug te gaan."
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Laden…"
+
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Plaats kleurpixels op een canvas in kaartstijl samen met andere spelers "
@@ -230,30 +233,7 @@ msgstr "Alleen beheerders kunnen dat doen"
 msgid "You are not banned"
 msgstr "Je bent niet gebanned"
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Je bent niet eens ingelogd."
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Serverfout bij uitloggen."
-
-#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
-msgid "Mail verification"
-msgstr "E-mail verificatie"
-
-#: src/routes/api/auth/verify.js:27
-msgid "You are now verified :)"
-msgstr "Je bent nu geverifieerd :)"
-
-#: src/routes/api/auth/verify.js:35
-msgid ""
-"Your mail verification code is invalid or already expired :(, please request "
-"a new one."
-msgstr ""
-"Uw e-mailverificatiecode is ongeldig of al verlopen :(, vraag een nieuwe aan."
-
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Deze e-mailprovider is niet toegestaan"
 
@@ -289,17 +269,48 @@ msgstr "Kan nieuwe gebruiker niet aanmaken :("
 msgid "Failed to establish session after register :("
 msgstr "Kan sessie niet tot stand brengen na registratie :("
 
-#: src/routes/api/auth/change_mail.js:43
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
+msgid "Mail verification"
+msgstr "E-mail verificatie"
+
+#: src/routes/api/auth/verify.js:27
+msgid "You are now verified :)"
+msgstr "Je bent nu geverifieerd :)"
+
+#: src/routes/api/auth/verify.js:35
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"Uw e-mailverificatiecode is ongeldig of al verlopen :(, vraag een nieuwe aan."
+
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Je bent niet eens ingelogd."
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Serverfout bij uitloggen."
+
+#: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
+#: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
 msgstr "U bent niet geauthenticeerd."
 
-#: src/routes/api/auth/change_mail.js:52
+#: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
+#: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
 msgstr "Onjuist wachtwoord!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -314,45 +325,53 @@ msgstr "Na 15 seconden wordt u automatisch doorgestuurd"
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Of ${ clickHere } om terug te gaan naar pixelplanet"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Aarde"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Maan"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D-canvas"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Coronavirus"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1bit"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Top10"
 
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
+
 #: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr ""
 "Ons belangrijkste canvas, een enorme kaart van de wereld. Plaats waar je "
 "maar wilt"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -360,27 +379,27 @@ msgstr ""
 "Maan canvas. Veilige plek voor kunst. Geen vlaggen of grote tekst (tenzij "
 "onderdeel van kunst) of kunst groter dan 1,5k x 1,5k pixels."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Plaats Voxels samen met anderen op een 3D-canvas"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Speciaal canvas om het bewustzijn van SARS-CoV2 te vergroten"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "Mirror van PixelZone"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "Mirror van PixelCanvas"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Zwart-wit canvas"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
@@ -388,12 +407,23 @@ msgstr ""
 "Een canvas voor de meest actieve spelers van de vorige dag. Dagelijkse "
 "ranking-updates om 00:00 UTC."
 
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+
 #: src/core/MailProvider.js:66
-#, javascript-format
-msgid "Welcome ${ name } to PixelPlanet, plese verify your mail"
+#, fuzzy, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr "Welkom ${ name } bij PixelPlanet, verifieer a.u.b. uw e-mail"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Hallo ${ name }"
 
@@ -414,8 +444,9 @@ msgid "Or by copying following url:"
 msgstr "Of door volgende url te kopiëren:"
 
 #: src/core/MailProvider.js:69
+#, fuzzy
 msgid ""
-"Have fun and don't hesitate to contact us if you encouter any problems :)"
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
 "Veel plezier en aarzel niet om contact met ons op te nemen als u problemen "
 "ondervindt :)"

@@ -9,254 +9,123 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.1.1\n"
 
-#: src/core/ChatProvider.js:390
+#: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
 msgstr "Nemožete poslati poruke sa proksijem"
 
-#: src/core/ChatProvider.js:392
-msgid "You are banned"
-msgstr "Banovani ste"
+#: src/core/ChatProvider.js:436
+msgid "Your country is temporary muted from this chat channel"
+msgstr "Vaša država je privremeno nemo od ovog kanala"
 
-#: src/core/ChatProvider.js:394
-msgid "Your Internet Provider is banned"
-msgstr "Tvoj internet provajder je banovan"
-
-#: src/core/ChatProvider.js:396
-msgid "You are not allowed to use chat"
-msgstr "Ne smete da koristite čet"
-
-#: src/core/ChatProvider.js:411
-#, javascript-format
-msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
-msgstr "Prebrzo šaljate poruke, morate sačekati ${ waitTime }s :("
-
-#: src/core/ChatProvider.js:415
-msgid "You don't have access to this channel"
-msgstr "Nemate pristup za ovaj kanal"
-
-#: src/core/ChatProvider.js:433
-msgid "Your mail has to be verified in order to chat"
-msgstr "Tvoj e-mail treba da bude verifikovan da bi se četovalo"
-
-#: src/core/ChatProvider.js:438
+#: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr "Vi ste zauvek nemo, dođite u naš guilded da bi ste napravili zahtev"
 
+#: src/core/ChatProvider.js:441
+msgid "You are banned"
+msgstr "Banovani ste"
+
 #: src/core/ChatProvider.js:443
+msgid "Your Internet Provider is banned"
+msgstr "Tvoj internet provajder je banovan"
+
+#: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
 msgstr "Nemo ste za ${ timeMin } minuta"
 
-#: src/core/ChatProvider.js:445
-msgid "You are muted for another ${ muted } seconds"
+#: src/core/ChatProvider.js:450
+#, fuzzy, javascript-format
+msgid "You are muted for another ${ ttl } seconds"
 msgstr "Nemo ste za ${ muted } sekundi"
 
-#: src/core/ChatProvider.js:453
-msgid "Ow no! Spam protection decided to mute you"
-msgstr "A joj! Zaštiti protiv spama vas je napravila nemo"
+#: src/core/ChatProvider.js:467
+#, javascript-format
+msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
+msgstr "Prebrzo šaljate poruke, morate sačekati ${ waitTime }s :("
 
-#: src/core/ChatProvider.js:464
+#: src/core/ChatProvider.js:471
+msgid "You don't have access to this channel"
+msgstr "Nemate pristup za ovaj kanal"
+
+#: src/core/ChatProvider.js:490
+msgid "Your mail has to be verified in order to chat"
+msgstr "Tvoj e-mail treba da bude verifikovan da bi se četovalo"
+
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Nemožete poslati ovoliku poruku :("
 
-#: src/core/ChatProvider.js:468
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Molimo vas da koristite int kanal"
 
-#: src/core/ChatProvider.js:475
-msgid "Your country is temporary muted from this chat channel"
-msgstr "Vaša država je privremeno nemo od ovog kanala"
-
-#: src/core/ChatProvider.js:483
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Nemoj praviti poplave u četu."
 
-#: src/routes/reset_password.js:37
+#: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
 msgstr "Poslali ste praznu lozinku ili nevažeće podatke :("
 
-#: src/routes/reset_password.js:49
+#: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
 msgstr "Ovaj link za resetovanje lozinke ne radi više :("
 
-#: src/routes/reset_password.js:60
+#: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
 msgstr "Lozinke se ne spajaju :("
 
-#: src/routes/reset_password.js:75
+#: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
 msgstr "Nalog ne postoji u našim podacima :("
 
-#: src/routes/reset_password.js:87
+#: src/routes/reset_password.js:89
 msgid "Password successfully changed."
 msgstr "Lozinka uspešno promenjena"
 
-#: src/routes/reset_password.js:106
+#: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
 msgstr "Nevažeći url :( Molimo vas da proverite e-mail opet."
 
-#: src/routes/reset_password.js:119
-msgid ""
-"This passwort reset link is wrong or already expired, please request a new "
-"one (Note: you can use those links just once)"
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
 msgstr ""
-"Ovaj link za resetovanje lozinke je pogrešan ili već istekao, molimo vas da "
-"zahtevate novi link (Samo možete koristiti te linkove jednom)"
 
-#: src/ssr/Globe.jsx:34
+#: src/ssr/PopUp.jsx:48
+#, fuzzy
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun"
+
+#: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3DGlobus"
 
-#: src/ssr/Globe.jsx:35
+#: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
 msgstr "3D Globus od naše cele mape"
 
-#: src/ssr/Globe.jsx:48
+#: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
 msgstr "Kliknite dva puta na globus da bi ste se vratili"
 
-#: src/ssr/Globe.jsx:49
+#: src/ssr/Globe.jsx:52
 msgid "Loading..."
 msgstr "Učitavanje"
 
-#: src/ssr/Main.jsx:58
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:59
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Postavite bojne piksele na kanvasu koji liči na mapu sa drugim igračima "
 "onlajn"
-
-#: src/core/mail.js:71
-#, javascript-format
-msgid ""
-"We already sent you a verification mail, you can request another one in "
-"${ minLeft } minutes."
-msgstr ""
-"Već smo vam poslali e-mail za verifikaciju, možete zahtevati novi za "
-"${ minLeft } minuta"
-
-#: src/core/mail.js:78
-msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr ""
-"Zdravo ${ name }! Dobrodošli u PixelPlanet, molimo vas verifikujte vaš e-mail"
-
-#: src/core/mail.js:79
-#, javascript-format
-msgid "Hello ${ name }"
-msgstr "Zdravo ${ name }"
-
-#: src/core/mail.js:80
-msgid ""
-"welcome to our little community of pixelplacers, to use your account, you "
-"have to verify your mail. You can do that here: "
-msgstr ""
-"Dobrodošli u našu malu publiku od piksel postavljača, verifikujte vaš e-"
-"mail. Možete to uraditi ovde: "
-
-#: src/core/mail.js:80
-msgid "Click to Verify"
-msgstr "Kliknite da bi ste se verifikovali"
-
-#: src/core/mail.js:80 src/core/mail.js:127
-msgid "Or by copying following url:"
-msgstr "Ili kopirati ovaj url:"
-
-#: src/core/mail.js:81
-msgid ""
-"Have fun and don't hesitate to contact us if you encounter any problems :)"
-msgstr ""
-"Zabavite se i nemojte zaboraviti da nas možete kontaktirati ako vidite "
-"ikakve probleme :)"
-
-#: src/core/mail.js:82 src/core/mail.js:129
-msgid "Thanks"
-msgstr "Hvala"
-
-#: src/core/mail.js:92
-msgid "Mail is not configured on the server"
-msgstr "E-mail nije verifikovan na serveru"
-
-#: src/core/mail.js:101
-msgid ""
-"We already sent you a mail with instructions. Please wait before requesting "
-"another mail."
-msgstr ""
-"Već smo vam poslali e-mail sa instrukcijama. Molimo vas da sačekate pre "
-"traženja novog e-mail-a."
-
-#: src/core/mail.js:109
-msgid "Couldn't find this mail in our database"
-msgstr "Nije se mogao naći ovaj e-mail u našim podacima"
-
-#: src/core/mail.js:125
-msgid "You forgot your password for PixelPlanet? Get a new one here"
-msgstr "Zaboravili ste lozinku? Dobijte novu ovde"
-
-#: src/core/mail.js:126
-msgid "Hello"
-msgstr "Zdravo"
-
-#: src/core/mail.js:127
-msgid ""
-"You requested to get a new password. You can change your password within the "
-"next 30min here: "
-msgstr ""
-"Pitali ste da dobijete novu lozinku. Možete promeniti lozinku u sklopu od 30 "
-"minuta ovde: "
-
-#: src/core/mail.js:127 src/ssr/PasswordReset.jsx:28
-#: src/ssr/PasswordReset.jsx:49
-msgid "Reset Password"
-msgstr "Resetuj lozinku"
-
-#: src/core/mail.js:128
-#, javascript-format
-msgid ""
-"If you did not request this mail, please just ignore it (the ip that "
-"requested this mail was ${ ip })."
-msgstr ""
-"Ako niste zahtevali ovaj e-mail, ignorišite ga. (ip koji je pitao za ovaj "
-"email je ${ ip })."
-
-#: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
-msgid "PixelPlanet.fun Password Reset"
-msgstr "Resetujte lozinku"
-
-#: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
-msgid "Reset your password here"
-msgstr "Ovde možete da resetujete lozinku"
-
-#: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
-msgid "Click here"
-msgstr "Kliknite ovde"
-
-#: src/ssr/PasswordReset.jsx:30
-msgid "to go back to pixelplanet"
-msgstr "da bi se vratili u pixelplanet"
-
-#: src/ssr/PasswordReset.jsx:50
-#, javascript-format
-msgid "Hello ${ name }, you can set your new password here:"
-msgstr "Zdravo ${ name },možete postaviti novu lozinku ovde:"
-
-#: src/ssr/PasswordReset.jsx:54
-msgid "New Password"
-msgstr "Nova lozinka"
-
-#: src/ssr/PasswordReset.jsx:60
-msgid "Confirm New Password"
-msgstr "Potvrdi novu lozinku"
-
-#: src/ssr/PasswordReset.jsx:64
-msgid "Submit"
-msgstr "Pošalji"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -306,29 +175,43 @@ msgstr "Lozinka treba biti barem 6 karaktera."
 msgid "Password must be shorter than 60 characters."
 msgstr "Lozinka treba biti manja od 60 karaktera."
 
-#: src/routes/api/captcha.js:20
-msgid "No captcha text given"
-msgstr "Tekst za verifikaciju nije dat."
+#: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
+msgid "PixelPlanet.fun Password Reset"
+msgstr "Resetujte lozinku"
 
-#: src/routes/api/captcha.js:25
-msgid "No captcha id given"
-msgstr "Id za verifikaciju nije dat."
+#: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
+msgid "Reset your password here"
+msgstr "Ovde možete da resetujete lozinku"
 
-#: src/routes/api/auth/register.js:54 src/routes/api/captcha.js:44
-msgid "You took too long, try again."
-msgstr "Previše dugo vam je trebalo, pokušajte opet."
+#: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
+#: src/ssr/PasswordReset.jsx:49
+msgid "Reset Password"
+msgstr "Resetuj lozinku"
 
-#: src/routes/api/auth/register.js:57 src/routes/api/captcha.js:50
-msgid "You failed your captcha"
-msgstr "Niste uspeli da uradite verifikaciju"
+#: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
+msgid "Click here"
+msgstr "Kliknite ovde"
 
-#: src/routes/api/auth/register.js:60 src/routes/api/captcha.js:56
-msgid "Unknown Captcha Error"
-msgstr "Nepoznata greška sa verifikacijom"
+#: src/ssr/PasswordReset.jsx:30
+msgid "to go back to pixelplanet"
+msgstr "da bi se vratili u pixelplanet"
 
-#: src/routes/api/captcha.js:63
-msgid "Server error occured"
-msgstr "Greška sa serverom se dogodila"
+#: src/ssr/PasswordReset.jsx:50
+#, javascript-format
+msgid "Hello ${ name }, you can set your new password here:"
+msgstr "Zdravo ${ name },možete postaviti novu lozinku ovde:"
+
+#: src/ssr/PasswordReset.jsx:54
+msgid "New Password"
+msgstr "Nova lozinka"
+
+#: src/ssr/PasswordReset.jsx:60
+msgid "Confirm New Password"
+msgstr "Potvrdi novu lozinku"
+
+#: src/ssr/PasswordReset.jsx:65
+msgid "Submit"
+msgstr "Pošalji"
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
@@ -342,39 +225,55 @@ msgstr "Nemate pristup da vidite ovu stranicu"
 msgid "Just admins can do that"
 msgstr "Samo admini mogu to da rade"
 
-#: src/routes/api/baninfo.js:24
+#: src/routes/api/baninfo.js:32
 msgid "You are not banned"
 msgstr "Niste banovani"
 
-#: src/routes/api/auth/register.js:26
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr ""
+
+#: src/routes/api/auth/register.js:31
 msgid "No Captcha given"
 msgstr "Verifikacija nije data"
 
-#: src/routes/api/auth/register.js:29
+#: src/routes/api/auth/register.js:34
 msgid "E-Mail already in use."
 msgstr "E-mail je već u koristi."
 
-#: src/routes/api/auth/register.js:31
+#: src/routes/api/auth/register.js:36
 msgid "Username already in use."
 msgstr "Ime je već u koristi."
 
-#: src/routes/api/auth/register.js:84
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Previše dugo vam je trebalo, pokušajte opet."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Niste uspeli da uradite verifikaciju"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Nepoznata greška sa verifikacijom"
+
+#: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
 msgstr "Nije se mogao napraviti nov nalog :("
 
-#: src/routes/api/auth/register.js:100
+#: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
 msgstr "Nije se uspelo da se napravi sednica posle registrovanja :("
 
-#: src/routes/api/auth/verify.js:22 src/routes/api/auth/verify.js:29
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Verifikacija mail-a"
 
-#: src/routes/api/auth/verify.js:23
+#: src/routes/api/auth/verify.js:27
 msgid "You are now verified :)"
 msgstr "Sada ste verifikovani :)"
 
-#: src/routes/api/auth/verify.js:29
+#: src/routes/api/auth/verify.js:35
 msgid ""
 "Your mail verification code is invalid or already expired :(, please request "
 "a new one."
@@ -386,21 +285,29 @@ msgstr ""
 msgid "You are not even logged in."
 msgstr "Niste ni ulogovani."
 
-#: src/routes/api/auth/delete_account.js:54 src/routes/api/auth/logout.js:20
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
 msgstr "Greška sa serverom kad ste probali da se odjavite."
 
-#: src/routes/api/auth/change_mail.js:38
+#: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:34
+#: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
 msgstr "Niste overeni."
 
-#: src/routes/api/auth/change_mail.js:47
+#: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:44
+#: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
 msgstr "Neispravna lozinka!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -415,43 +322,51 @@ msgstr "Bićete automatično vraćeni posle 15 sekundi"
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Ili ${ clickHere } da bi ste se vratili na pixelplanet"
 
-#: src/canvasesDesc.js:18
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Zemlja"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Mesec"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D Canvas"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Koronavirus"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1bit"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Top10"
 
 #: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
+
+#: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr "Naš glavni kanvas, ogromna mapa sveta. Postavi piksele gde god hoćeš"
 
-#: src/canvasesDesc.js:29
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -459,29 +374,149 @@ msgstr ""
 "Kanvas Meseca. Dobro mesto za crteže. Nema zastava ili velikog teksta (osim "
 "ako deo crteža) ili crteže veće od 1.5k x 1.5k piksela."
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Postavljaj voksele na 3D kanvasu sa drugima"
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Specijalni kanvas za širenje informacija o SARS-CoV2"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "Ogledalo PixelZone-a"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "Ogledalo PixelCanvas-a"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Crno-beli kanvas"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
 "Kanvas za najaktivnije igrače od juče. Dnevni rang se ažurira u 00:00 UTC."
+
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+
+#: src/core/MailProvider.js:66
+#, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
+msgstr ""
+"Zdravo ${ name }! Dobrodošli u PixelPlanet, molimo vas verifikujte vaš e-mail"
+
+#: src/core/MailProvider.js:67
+#, javascript-format
+msgid "Hello ${ name }"
+msgstr "Zdravo ${ name }"
+
+#: src/core/MailProvider.js:68
+msgid ""
+"welcome to our little community of pixelplacers, to use your account, you "
+"have to verify your mail. You can do that here: "
+msgstr ""
+"Dobrodošli u našu malu publiku od piksel postavljača, verifikujte vaš e-"
+"mail. Možete to uraditi ovde: "
+
+#: src/core/MailProvider.js:68
+msgid "Click to Verify"
+msgstr "Kliknite da bi ste se verifikovali"
+
+#: src/core/MailProvider.js:68 src/core/MailProvider.js:105
+msgid "Or by copying following url:"
+msgstr "Ili kopirati ovaj url:"
+
+#: src/core/MailProvider.js:69
+msgid ""
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgstr ""
+"Zabavite se i nemojte zaboraviti da nas možete kontaktirati ako vidite "
+"ikakve probleme :)"
+
+#: src/core/MailProvider.js:70 src/core/MailProvider.js:107
+msgid "Thanks"
+msgstr "Hvala"
+
+#: src/core/MailProvider.js:87
+#, javascript-format
+msgid ""
+"We already sent you a verification mail, you can request another one in "
+"${ minLeft } minutes."
+msgstr ""
+"Već smo vam poslali e-mail za verifikaciju, možete zahtevati novi za "
+"${ minLeft } minuta"
+
+#: src/core/MailProvider.js:103
+msgid "You forgot your password for PixelPlanet? Get a new one here"
+msgstr "Zaboravili ste lozinku? Dobijte novu ovde"
+
+#: src/core/MailProvider.js:104
+msgid "Hello"
+msgstr "Zdravo"
+
+#: src/core/MailProvider.js:105
+msgid ""
+"You requested to get a new password. You can change your password within the "
+"next 30min here: "
+msgstr ""
+"Pitali ste da dobijete novu lozinku. Možete promeniti lozinku u sklopu od 30 "
+"minuta ovde: "
+
+#: src/core/MailProvider.js:106
+#, javascript-format
+msgid ""
+"If you did not request this mail, please just ignore it (the ip that "
+"requested this mail was ${ ip })."
+msgstr ""
+"Ako niste zahtevali ovaj e-mail, ignorišite ga. (ip koji je pitao za ovaj "
+"email je ${ ip })."
+
+#: src/core/MailProvider.js:114
+msgid "Mail is not configured on the server"
+msgstr "E-mail nije verifikovan na serveru"
+
+#: src/core/MailProvider.js:122
+msgid ""
+"We already sent you a mail with instructions. Please wait before requesting "
+"another mail."
+msgstr ""
+"Već smo vam poslali e-mail sa instrukcijama. Molimo vas da sačekate pre "
+"traženja novog e-mail-a."
+
+#: src/core/MailProvider.js:130
+msgid "Couldn't find this mail in our database"
+msgstr "Nije se mogao naći ovaj e-mail u našim podacima"
+
+#~ msgid "You are not allowed to use chat"
+#~ msgstr "Ne smete da koristite čet"
+
+#~ msgid "Ow no! Spam protection decided to mute you"
+#~ msgstr "A joj! Zaštiti protiv spama vas je napravila nemo"
+
+#~ msgid ""
+#~ "This passwort reset link is wrong or already expired, please request a "
+#~ "new one (Note: you can use those links just once)"
+#~ msgstr ""
+#~ "Ovaj link za resetovanje lozinke je pogrešan ili već istekao, molimo vas "
+#~ "da zahtevate novi link (Samo možete koristiti te linkove jednom)"
+
+#~ msgid "No captcha text given"
+#~ msgstr "Tekst za verifikaciju nije dat."
+
+#~ msgid "No captcha id given"
+#~ msgstr "Id za verifikaciju nije dat."
+
+#~ msgid "Server error occured"
+#~ msgstr "Greška sa serverom se dogodila"

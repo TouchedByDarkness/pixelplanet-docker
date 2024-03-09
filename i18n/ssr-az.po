@@ -38,6 +38,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "${ timeMin } dəqiqəliyinə susturuldun"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "${ ttl } saniyəliyinə susturuldun"
 
@@ -50,19 +51,19 @@ msgstr "Çox tez mesaj göndərirsən, ${ waitTime } saniyə gözləmən lazımd
 msgid "You don't have access to this channel"
 msgstr "Sənin bu kanala ərişimin yoxdur"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Doğrulanan bir emailin olmadan söhbət eliyəbilməzsən"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Bu qədər uzun bir mesaj göndərəbilməzsən :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Zəhmət olmasa int kanalından istifadə edin"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Floodlamayı burax."
 
@@ -90,35 +91,35 @@ msgstr "Parolunuz uğurla dəyişdirildi."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Keçərsiz bağlantı :( Zəhmət olmasa emailinizi yenidən yoxlayın."
 
-#: src/ssr/Globe.jsx:32
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3DGlobus"
-
-#: src/ssr/Globe.jsx:33
-msgid "A 3D globe of our whole map"
-msgstr "Bütün xəritəmizin 3D globusu"
-
-#: src/ssr/Globe.jsx:46
-msgid "Double click on globe to go back."
-msgstr "Globusa iki dəfə basaraq geri dön."
-
-#: src/ssr/Globe.jsx:47
-msgid "Loading..."
-msgstr "Yüklənir..."
-
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3DGlobus"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "Bütün xəritəmizin 3D globusu"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Globusa iki dəfə basaraq geri dön."
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Yüklənir..."
+
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Digər oyunçularla biryerdə fərqli lövhələrdə fərqli rənglərdə pixellər atın"
@@ -225,7 +226,7 @@ msgstr "Sadəcə adminlər bunu edəbilər"
 msgid "You are not banned"
 msgstr "Sən banlı deyilsən"
 
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Bu email provayderinə icazə verilmir"
 
@@ -261,26 +262,6 @@ msgstr "Yeni istifadəçi yaradılamadı :("
 msgid "Failed to establish session after register :("
 msgstr "Hesab oluşdurulurkən bir xəta meydana gəldi :("
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Siz heç daxil olmamasınız bilə."
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Çıxış zamanı server xətası."
-
-#: src/routes/api/auth/change_mail.js:43
-#: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
-msgid "You are not authenticated."
-msgstr "Kimliyiniz doğrulanamadı."
-
-#: src/routes/api/auth/change_mail.js:52
-#: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
-msgid "Incorrect password!"
-msgstr "Səhv Parol!"
-
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Email doğrulaması"
@@ -297,6 +278,34 @@ msgstr ""
 "Doğrulama kodun keçərsiz vəya sürəsi dolub :(,Zəhmət olmasa yeni bir tələbdə "
 "bulun."
 
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Siz heç daxil olmamasınız bilə."
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Çıxış zamanı server xətası."
+
+#: src/routes/api/auth/change_mail.js:44
+#: src/routes/api/auth/change_passwd.js:34
+#: src/routes/api/auth/delete_account.js:36
+msgid "You are not authenticated."
+msgstr "Kimliyiniz doğrulanamadı."
+
+#: src/routes/api/auth/change_mail.js:53
+#: src/routes/api/auth/change_passwd.js:43
+#: src/routes/api/auth/delete_account.js:55
+msgid "Incorrect password!"
+msgstr "Səhv Parol!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr ""
+
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
 msgstr "PixelPlanet.fun Hesabları"
@@ -310,45 +319,53 @@ msgstr "15 saniyə sonra avtomatik olaraq yönləndiriləcəksən"
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Vəya Pixelplanetə qayıtmaq üçün bura basın ${ clickHere }"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Dünya"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Ay"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D Lövhə"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Koronavirus"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1bit"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Top10"
 
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
+
 #: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr ""
 "Bizim əsas lövhəmiz,dünyanın böyük bir dünya xəritəsi.İstədiyiniz yerə pixel "
 "qoyun"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -357,27 +374,27 @@ msgstr ""
 "yazılar(əsərin parçası deyilsə) vəya 1.5k x 1.5k pixeldən oluşan əsərlər "
 "qadağandır."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr " başqaları ilə birlikdə 3D lövhə üzərinə kub pixellər yerləşdirin"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "SARS-CoV2 haqqında məlumatlılığı yaymaq üçün xüsusi lövhə"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "PixelZone'nin aynası"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "PixelCanvas'ın aynası"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Ağ-Qara Lövhə"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
@@ -385,12 +402,23 @@ msgstr ""
 "Əvvəlki günün ən aktiv oyunçuları üçün lövhə. Gündəlik reytinq yeniləmələri "
 "00:00 UTC'də həyata keçirilir."
 
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr "PixelPlanetə xoş gəldin  ${ name },Zəhmət olmasa emailini doğrula"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Salam ${ name }"
 

@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-09 11:55+0000\n"
+"Last-Translator: sallbet <Sallbet@mail.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/pixelplanet/"
+"server/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.4.2\n"
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -94,6 +95,14 @@ msgstr "Пароль успешно изменен."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Неверный адрес :( Пожалуйста, проверьте свою почту еще раз."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "Всплывающее окно PixelPlanet.Fun"
+
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3D-глобус"
@@ -110,19 +119,11 @@ msgstr "Дважды щелкните по глобусу, чтобы верну
 msgid "Loading..."
 msgstr "Загрузка..."
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "Всплывающее окно PixelPlanet.Fun"
-
-#: src/ssr/Main.jsx:62
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:63
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr "Ставьте цветные пиксели на огромном полотне с другими людьми по сети"
 
@@ -251,7 +252,7 @@ msgstr "Слишком долго, попробуйте еще раз."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
-msgstr "Вы неправильно ввели капчу"
+msgstr "Вы неправильно решили капчу"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"

@@ -54,19 +54,19 @@ msgstr "Šaljete poruke prebrzo, morate pričekati ${ waitTime }s :("
 msgid "You don't have access to this channel"
 msgstr "Nemate pristup ovom kanalu"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Vaša pošta mora biti potvrđena da biste mogli razgovarati"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Ne možete poslati poruku ovoliko dugo :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Molimo koristite int kanal"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Zaustavite pičkovac."
 
@@ -94,6 +94,14 @@ msgstr "Lozinka uspješno promijenjena."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Nevažeći url :( Molimo ponovno provjerite svoju poštu."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
+
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3DGlobus"
@@ -110,19 +118,11 @@ msgstr "Dvaput kliknite na globus za povratak."
 msgid "Loading..."
 msgstr "Učitavam..."
 
-#: src/ssr/PopUp.jsx:55
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:56
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
-
-#: src/ssr/Main.jsx:64
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Postavite piksele u boji na platno u stilu karte s drugim igračima na mreži"
@@ -321,47 +321,51 @@ msgstr "Bit ćete automatski preusmjereni nakon 15 s"
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Ili ${ clickHere } da se vratite na pixelplanet"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Zemlja"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Mjesec"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D platno"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Koronavirus"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "Pixelzone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1bit"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Top10"
 
-#: src/canvasesDesc.js:27
-msgid "Thoia"
-msgstr "Thoia"
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr "Naše glavno platno, ogromna karta svijeta. Stavite gdje god želite"
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -369,27 +373,27 @@ msgstr ""
 "Mjesečevo platno. Siguran prostor za umjetnost. Bez zastava ili velikog "
 "teksta (osim ako je dio slike) ili slike veće od 1,5k x 1,5k piksela."
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Postavite Voxele na 3D platno s drugima"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Posebno platno za širenje svijesti o SARS-CoV2"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "Ogledalo PixelZone-a"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "Ogledalo PixelCanvasa"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Crno-bijelo platno"
 
-#: src/canvasesDesc.js:37
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
@@ -397,13 +401,15 @@ msgstr ""
 "Platno za najaktivnije igrače prethodnog dana. Dnevno ažuriranje poretka u "
 "00:00 UTC."
 
-#: src/canvasesDesc.js:38
-msgid ""
-"Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon the "
-"old world and all it entails."
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
 msgstr ""
-"Thoia World Canvas. Napredna izmišljena izgradnja svijeta i umjetnost. "
-"Napustite stari svijet i sve što on podrazumijeva."
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
 
 #: src/core/MailProvider.js:66
 #, javascript-format
@@ -490,3 +496,13 @@ msgstr ""
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"
 msgstr "Nismo mogli pronaći ovu poštu u našoj bazi podataka"
+
+#~ msgid "Thoia"
+#~ msgstr "Thoia"
+
+#~ msgid ""
+#~ "Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon "
+#~ "the old world and all it entails."
+#~ msgstr ""
+#~ "Thoia World Canvas. Napredna izmišljena izgradnja svijeta i umjetnost. "
+#~ "Napustite stari svijet i sve što on podrazumijeva."

@@ -22,7 +22,8 @@ msgstr ""
 "ʻOku ʻikai ke ʻi ai ha meʻa fakataimi ʻi ho fonua mei he senolo ko ʻeni"
 
 #: src/core/ChatProvider.js:439
-msgid "You are permanently muted, join our guilded to apppeal the mute"
+#, fuzzy
+msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
 "ʻOku ʻikai ke ke fuʻu tokanga koe ki ai, kau ki heʻetau guilded ke apppeal "
 "ʻa e fakalongo"
@@ -41,6 +42,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "ʻOku ʻikai ke ke toe ʻi ha miniti ʻe ${ timeMin }"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "ʻOku ʻikai ke ke toe ʻi ai ha sekoni ʻe ${ ttl }"
 
@@ -55,19 +57,19 @@ msgstr ""
 msgid "You don't have access to this channel"
 msgstr "ʻOku ʻikai ke ke lava ʻo hu ki he senolo ko ʻeni"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Kuo pau ke fakapapauʻi hoʻo meili kae lava ke talanoa"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "He ʻikai lava ke ke ʻave ha popoaki fuoloa peheni :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Kātaki ʻo fakaʻaongaʻi ʻa e int channel"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Taʻofi e tafea."
 
@@ -90,42 +92,43 @@ msgid "User doesn't exist in our database :("
 msgstr "ʻOku ʻikai maʻu ʻa e tokotaha ngaue ʻi heʻetau faile fakakomipiuta :("
 
 #: src/routes/reset_password.js:89
-msgid "Passowrd successfully changed."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Naʻe lava lelei ʻo liliu ʻa e Passowrd."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
 msgstr "ʻIkai tonu e :( URL Kātaki ʻo toe vakaiʻi hoʻo meilí."
 
-#: src/ssr/Globe.jsx:32
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3DGlobe"
-
-#: src/ssr/Globe.jsx:33
-msgid "A 3D globe of our whole map"
-msgstr "Ko ha kolope 3D ʻo ʻetau mape kotoa"
-
-#: src/ssr/Globe.jsx:46
-msgid "Double click on globe to go back."
-msgstr "Lomiʻi tuʻo ua ʻi he mamani ke toe foki."
-
-#: src/ssr/Globe.jsx:47
-msgid "Loading..."
-msgstr "Load..."
-
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3DGlobe"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "Ko ha kolope 3D ʻo ʻetau mape kotoa"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Lomiʻi tuʻo ua ʻi he mamani ke toe foki."
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Load..."
+
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Fokotuʻu ʻa e lanu ʻo e lanu ʻi ha mape styled fakatataa mo e kau vaʻinga "
@@ -235,31 +238,7 @@ msgstr "ʻE lava ʻe he miniti pe ʻe taha ʻo fai ia"
 msgid "You are not banned"
 msgstr "ʻOku ʻikai ke ke banned"
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "ʻOku ʻikai ke ke hu ki he polokalama."
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Fehalaaki ʻa e server ʻi he taimi ʻoku loka ai."
-
-#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
-msgid "Mail verification"
-msgstr "Fakapapauʻi ʻo e meilí"
-
-#: src/routes/api/auth/verify.js:27
-msgid "You are now verified :)"
-msgstr "Kuo fakapapauʻi he taimí ni :)"
-
-#: src/routes/api/auth/verify.js:35
-msgid ""
-"Your mail verification code is invalid or already expired :(, please request "
-"a new one."
-msgstr ""
-"ʻOku ʻikai tonu hoʻo kouti fakapapauʻi ʻo e meilí pe kuo ʻosi e taimi "
-"ngāueʻaki :(, kātaki ʻo kole ha fika foʻou."
-
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "ʻOku ʻikai fakangofua ʻa e kautaha ʻimeili ko ʻeni"
 
@@ -295,17 +274,49 @@ msgstr "ʻIkai lava ʻo faʻu ha foʻou ki he polokalamá :("
 msgid "Failed to establish session after register :("
 msgstr "ʻIkai lava ke fokotuʻu ha fakataha hili e lesisita :("
 
-#: src/routes/api/auth/change_mail.js:43
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
+msgid "Mail verification"
+msgstr "Fakapapauʻi ʻo e meilí"
+
+#: src/routes/api/auth/verify.js:27
+msgid "You are now verified :)"
+msgstr "Kuo fakapapauʻi he taimí ni :)"
+
+#: src/routes/api/auth/verify.js:35
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"ʻOku ʻikai tonu hoʻo kouti fakapapauʻi ʻo e meilí pe kuo ʻosi e taimi "
+"ngāueʻaki :(, kātaki ʻo kole ha fika foʻou."
+
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "ʻOku ʻikai ke ke hu ki he polokalama."
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Fehalaaki ʻa e server ʻi he taimi ʻoku loka ai."
+
+#: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
+#: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
 msgstr "ʻOku ʻikai ke ke authenticated."
 
-#: src/routes/api/auth/change_mail.js:52
+#: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
+#: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
 msgstr "ʻIkai tonu e lea fufuú!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -320,45 +331,53 @@ msgstr "ʻE toe fakafoki fakahangatonu atu koe hili 15s"
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Pe ${ clickHere } ke foki ki pixelplanet"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Mamani"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Mahina"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D Fakatataa"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Coronavirus"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1bit"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Top10"
 
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
+
 #: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr ""
 "Ko ʻetau tefitoʻi fakatataa, ko ha mape lahi ʻo e mamani. Tuku ʻi he feituʻu "
 "kotoa pe ʻoku ke saiʻia ai"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -367,27 +386,27 @@ msgstr ""
 "lahi (tuku kehe kapau ko ha konga ʻo e ʻati) pe ʻaati lahi ange ʻi he 1.5 k "
 "x 1.5 k."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Fokotuʻu Voxels ʻi ha fakatataa 3D mo e niʻihi kehe"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Fakatataa makehe ke fakamafola hono ʻiloʻi ʻo e SARS-CoV2"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "Sioʻata ʻo e PixelZone"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "Sioʻata ʻo e PixelCanvas"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Fakatataa ʻuliʻuli mo hinehina"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
@@ -395,13 +414,24 @@ msgstr ""
 "Ko ha fakatataa maʻa e kau vaʻinga malohi taha mei he ʻaho kimuʻa. Ngaahi "
 "fakamatala fakamuimuitaha ʻi he 00:00 UTC."
 
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+
 #: src/core/MailProvider.js:66
-#, javascript-format
-msgid "Welcome ${ name } to PixelPlanet, plese verify your mail"
+#, fuzzy, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr ""
 "Talitali lelei ʻa e ${ name } ki he PixelPlanet, plese fakapapauʻi hoʻo meili"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Malo e lelei ${ name }"
 
@@ -422,8 +452,9 @@ msgid "Or by copying following url:"
 msgstr "Pe hiki tatau ʻa e URL ko ʻeni:"
 
 #: src/core/MailProvider.js:69
+#, fuzzy
 msgid ""
-"Have fun and don't hesitate to contact us if you encouter any problems :)"
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
 "Fiefia pea ʻoua naʻa ke momou ke fetuʻutaki mai kiate kimautolu kapau te ke "
 "e encouter ha faʻahinga palopalema :)"

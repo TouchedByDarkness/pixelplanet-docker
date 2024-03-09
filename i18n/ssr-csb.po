@@ -93,6 +93,14 @@ msgstr "Ùdało sã zmienic parolã."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Lëchi lënk :( Sprôwdzë le swòjégò e-maila jesz rôz."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
+
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3DGlobe"
@@ -109,19 +117,11 @@ msgstr "Przëcesni zemską kùglã dwakroc żebë copnąc."
 msgid "Loading..."
 msgstr "Ładowanie..."
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
-
-#: src/ssr/Main.jsx:58
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:59
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Stawiôj farwné piksele na kôrtowatëch płótnach z jinszima graczama online"
@@ -354,12 +354,12 @@ msgid "Top10"
 msgstr "Top10"
 
 #: src/canvasesDesc.js:28
-msgid "Thoia"
-msgstr "Thoia"
-
-#: src/canvasesDesc.js:29
 msgid "2bit"
 msgstr "2bit"
+
+#: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
@@ -404,16 +404,14 @@ msgstr ""
 "òdnôwiô ò 00:00 UTC."
 
 #: src/canvasesDesc.js:40
-msgid ""
-"Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon the "
-"old world and all it entails."
-msgstr ""
-"Płótno Swiata Thoia. Złożoné ùsadzywanié fikcjowégò swiata i kùńsztu. Òstawi "
-"stôri swiat ze wazëtczima jegòznama."
-
-#: src/canvasesDesc.js:41
 msgid "Only four colors. Same rules as moon."
 msgstr "Leno czterë farwë. Taczé same regle jak na miesądzu."
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
 
 #: src/core/MailProvider.js:66
 #, javascript-format
@@ -500,3 +498,13 @@ msgstr ""
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"
 msgstr "Nie ùdało sã nalezc ti adrésë w naji baze dónëch"
+
+#~ msgid "Thoia"
+#~ msgstr "Thoia"
+
+#~ msgid ""
+#~ "Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon "
+#~ "the old world and all it entails."
+#~ msgstr ""
+#~ "Płótno Swiata Thoia. Złożoné ùsadzywanié fikcjowégò swiata i kùńsztu. "
+#~ "Òstawi stôri swiat ze wazëtczima jegòznama."

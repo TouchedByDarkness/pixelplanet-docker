@@ -94,6 +94,14 @@ msgstr "Jelszó sikeresen megváltoztatva."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Érvénytelen link :( Kérjük, ellenőrizd újra a leveled."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun felugró"
+
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3D földgömb"
@@ -110,19 +118,11 @@ msgstr "Kattints duplán a földgömbre a visszatéréshez."
 msgid "Loading..."
 msgstr "Betöltés..."
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun felugró"
-
-#: src/ssr/Main.jsx:62
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:63
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Helyezz el pixeleket egy hatalmas online vásznon más játékosokkal együtt"

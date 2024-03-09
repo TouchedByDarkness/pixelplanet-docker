@@ -11,155 +11,164 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: src/controls/keypress.js:41
+#: src/controls/keypress.js:99
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "Пераключана на ${ canvasName }"
 
-#: src/controls/keypress.js:64
+#: src/controls/keypress.js:184
 msgid "Grid ON"
 msgstr "Сетка Укл"
 
-#: src/controls/keypress.js:65
+#: src/controls/keypress.js:185
 msgid "Grid OFF"
 msgstr "Сетка Выкл"
 
-#: src/controls/keypress.js:75
+#: src/controls/keypress.js:195
 msgid "Pixel Notify ON"
 msgstr "Піксельныя Апавяшчэнні Укл"
 
-#: src/controls/keypress.js:76
+#: src/controls/keypress.js:196
 msgid "Pixel Notify OFF"
 msgstr "Піксельныя Апавяшчэнні Выкл"
 
-#: src/controls/keypress.js:81
+#: src/controls/keypress.js:201
 msgid "Muted Sound"
 msgstr "Гукі Укл"
 
-#: src/controls/keypress.js:82
+#: src/controls/keypress.js:202
 msgid "Unmuted Sound"
 msgstr "Гукі Выкл"
 
-#: src/components/CoordinatesBox.jsx:28 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:88
+#: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
+#: src/controls/keypress.js:211
 msgid "Copied!"
 msgstr "Скапіявана!"
 
-#: src/controls/keypress.js:94
-msgid "Show Hidden Canvases"
-msgstr "Паказаць Схаваныя Палотны"
+#: src/controls/keypress.js:217
+msgid "Overlay ON"
+msgstr ""
 
-#: src/controls/keypress.js:95
-msgid "Hide Hidden Canvases"
-msgstr "Схаваць Схаваныя Палотны"
+#: src/controls/keypress.js:218
+msgid "Overlay OFF"
+msgstr ""
 
-#: src/ui/PixelTransferController.js:63
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
+msgid "Easter Egg ON"
+msgstr ""
+
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
+msgid "Easter Egg OFF"
+msgstr ""
+
+#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
+#: src/ui/templateLoader.js:256
 msgid "Error :("
 msgstr "Памылка :("
 
-#: src/ui/PixelTransferController.js:64
+#: src/ui/PixelTransferController.js:71
 msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 msgstr "Няма адказу ад Pixelplanet. Паспрабуйце абнавіць старонку."
 
-#: src/ui/PixelTransferController.js:96
+#: src/ui/PixelTransferController.js:103
 msgid "Invalid Canvas"
 msgstr "Няправільнае Палатно"
 
-#: src/ui/PixelTransferController.js:97
+#: src/ui/PixelTransferController.js:104
 msgid "This canvas doesn't exist"
 msgstr "Такога палатна не існуе"
 
-#: src/ui/PixelTransferController.js:100 src/ui/PixelTransferController.js:104
-#: src/ui/PixelTransferController.js:108
+#: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
+#: src/ui/PixelTransferController.js:115
 msgid "Invalid Coordinates"
 msgstr "Няправільныя каардынаты"
 
-#: src/ui/PixelTransferController.js:101
+#: src/ui/PixelTransferController.js:108
 msgid "x out of bounds"
 msgstr "x каардыната па-за межамі"
 
-#: src/ui/PixelTransferController.js:105
+#: src/ui/PixelTransferController.js:112
 msgid "y out of bounds"
 msgstr "y каардыната па-за межамі"
 
-#: src/ui/PixelTransferController.js:109
+#: src/ui/PixelTransferController.js:116
 msgid "z out of bounds"
 msgstr "z каардыната па-за межамі"
 
-#: src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:119
 msgid "Wrong Color"
 msgstr "Няправільны Колер"
 
-#: src/ui/PixelTransferController.js:113
+#: src/ui/PixelTransferController.js:120
 msgid "Invalid color selected"
 msgstr "Выбраны няправільны колер"
 
-#: src/ui/PixelTransferController.js:116
+#: src/ui/PixelTransferController.js:123
 msgid "Just for registered Users"
 msgstr "Толькі для зарэгістраваных карыстальнікаў"
 
-#: src/ui/PixelTransferController.js:117
+#: src/ui/PixelTransferController.js:124
 msgid "You have to be logged in to place on this canvas"
 msgstr "Вам трэба ўвайсці каб маляваць на гэтым палатне"
 
-#: src/ui/PixelTransferController.js:120
+#: src/ui/PixelTransferController.js:127
 msgid "Place more :)"
 msgstr "Малюйце больш :)"
 
-#: src/ui/PixelTransferController.js:122
+#: src/ui/PixelTransferController.js:129
 msgid "You can not access this canvas yet. You need to place more pixels"
 msgstr "У вас пакуль што няма доступа да гэтага палатна. Стаўце больш пікселяў"
 
-#: src/ui/PixelTransferController.js:125
+#: src/ui/PixelTransferController.js:132
 msgid "Pixel protected!"
 msgstr "Піксель абаронены!"
 
-#: src/ui/PixelTransferController.js:132
+#: src/ui/PixelTransferController.js:139
 msgid "Please prove that you are human"
 msgstr "Калі ласка, дакажыце, што Вы чалавек"
 
-#: src/ui/PixelTransferController.js:136
+#: src/ui/PixelTransferController.js:143
 msgid "No Proxies Allowed :("
 msgstr "Проксі забароненыя :("
 
-#: src/ui/PixelTransferController.js:137
+#: src/ui/PixelTransferController.js:144
 msgid "You are using a Proxy."
 msgstr "Вы выкарыстоўваеце проксі."
 
-#: src/ui/PixelTransferController.js:140
+#: src/ui/PixelTransferController.js:147
 msgid "Not allowed"
 msgstr "Забаронена"
 
-#: src/ui/PixelTransferController.js:141
+#: src/ui/PixelTransferController.js:148
 msgid "Just the Top10 of yesterday can place here"
 msgstr "Толькі людзі з учорашняга топ-10 могуць маляваць тут"
 
-#: src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:151
 msgid "You are weird"
 msgstr "Вы агентура"
 
-#: src/ui/PixelTransferController.js:146
+#: src/ui/PixelTransferController.js:153
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr "Сервер збянтэжаны ад вашых пікселяю. Вы гуляеце з некалькіх прыладаў?"
 
-#: src/ui/PixelTransferController.js:149
+#: src/ui/PixelTransferController.js:156
 msgid "Banned"
 msgstr "Вы забанены"
 
-#: src/ui/PixelTransferController.js:153
+#: src/ui/PixelTransferController.js:160
 msgid "Range Banned"
 msgstr "Вы забанены у гэтай вобласці"
 
-#: src/ui/PixelTransferController.js:154
+#: src/ui/PixelTransferController.js:161
 msgid "Your Internet Provider is banned from playing this game"
 msgstr "Ваш інтэрнэт-правайдэр азабанены"
 
-#: src/ui/PixelTransferController.js:157
+#: src/ui/PixelTransferController.js:164
 msgid "Timeout"
 msgstr "Перапынак"
 
-#: src/ui/PixelTransferController.js:159
+#: src/ui/PixelTransferController.js:166
 msgid ""
 "Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
 "persists?"
@@ -167,26 +176,34 @@ msgstr ""
 "Няма адказу ад Pixelplanet. Паспрабуйце абнавіць старонку, калі праблема не "
 "знікае"
 
-#: src/ui/PixelTransferController.js:162
+#: src/ui/PixelTransferController.js:169
 msgid "Weird"
 msgstr "Дзіўна"
 
-#: src/ui/PixelTransferController.js:163
+#: src/ui/PixelTransferController.js:170
 msgid "Couldn't set Pixel"
 msgstr "Не атрымалася паставіць піксель"
 
-#: src/ui/PixelTransferController.js:168
+#: src/ui/PixelTransferController.js:175
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr "Памылка ${ retCode }"
 
-#: src/ui/renderer.js:35
+#: src/ui/rendererFactory.js:31
 msgid "Canvas Error"
 msgstr "Памылка палатна"
 
-#: src/ui/renderer.js:36
+#: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "Немагыма адлюстраваць 3D палатно. Ці ўключаны ў вас WebGL2?"
+
+#: src/ui/templateLoader.js:231
+msgid "Can not export more than 20 or no template!"
+msgstr ""
+
+#: src/ui/templateLoader.js:257
+msgid "Can not import more than 20 or no template!"
+msgstr ""
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -202,6 +219,7 @@ msgid "try again after ${ ti }min"
 msgstr "паспрабуйце праз ${ ti }хвілін"
 
 #: src/store/actions/fetch.js:70
+#, javascript-format
 msgid "Connection error ${ code } :("
 msgstr "Памылка злучэння ${ code } :("
 
@@ -235,8 +253,8 @@ msgstr "згадаў вас"
 msgid "You have new messages in chat"
 msgstr "Ёсць новыя паведамленні ў чаце"
 
-#: src/components/Converter.jsx:561 src/components/CoordinatesBox.jsx:31
-#: src/components/ModWatchtools.jsx:371
+#: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
+#: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
 msgid "Copy to Clipboard"
 msgstr "Скапіяваць у Буфер Абмену"
 
@@ -252,6 +270,11 @@ msgstr "Усяго Карыстачоў Анлайн"
 msgid "Pixels placed"
 msgstr "Пікселяў пастаўлена"
 
+#: src/components/buttons/CanvasSwitchButton.jsx:20
+#: src/components/windows/index.js:19
+msgid "Canvas Selection"
+msgstr "Выбар Палатна"
+
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Close Chat"
 msgstr "Закрыць Чат"
@@ -259,11 +282,6 @@ msgstr "Закрыць Чат"
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Open Chat"
 msgstr "Адкрыць Чат"
-
-#: src/components/buttons/CanvasSwitchButton.jsx:20
-#: src/components/windows/index.js:19
-msgid "Canvas Selection"
-msgstr "Выбар Палатна"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Close Menu"
@@ -273,16 +291,16 @@ msgstr "Закрыць Меню"
 msgid "Open Menu"
 msgstr "Адкрыць Меню"
 
-#: src/components/HistorySelect.jsx:144
+#: src/components/HistorySelect.jsx:146
 msgid "Loading"
 msgstr "Загрузка"
 
-#: src/components/HistorySelect.jsx:145
+#: src/components/HistorySelect.jsx:147
 msgid "Select Date above"
 msgstr "Абярыце дату"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:222
-#: src/components/ModWatchtools.jsx:118 src/components/Window.jsx:157
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
+#: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
@@ -312,26 +330,6 @@ msgstr "Максімальна Павялічыць"
 msgid "Resize"
 msgstr "Змяніць Памер"
 
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "Зрабіць Скрыншот"
-
-#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:15
-msgid "User Area"
-msgstr "Кабінет Карыстальніка"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr "Закрыць Палітру"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr "Адкрыць Палітру"
-
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Выгяд Глобуса"
-
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
 #: src/components/windows/index.js:13
 msgid "Help"
@@ -341,6 +339,51 @@ msgstr "Дапамога"
 #: src/components/windows/index.js:14
 msgid "Settings"
 msgstr "Налады"
+
+#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:15
+msgid "User Area"
+msgstr "Кабінет Карыстальніка"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "Зрабіць Скрыншот"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Выгяд Глобуса"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr "Закрыць Палітру"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
+msgstr "Адкрыць Палітру"
+
+#: src/components/buttons/PencilButton.jsx:32
+msgid "History Pencil ON"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:38
+msgid "Overlay Pencil ON"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:65
+msgid "Enable Pencil"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:69
+#, fuzzy
+msgid "Disable Pencil"
+msgstr "Адклюцыць Гукі ў Гульне"
+
+#: src/components/buttons/PencilButton.jsx:73
+msgid "Disable History Pencil"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:77
+msgid "Disable Overlay Pencil"
+msgstr ""
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -358,47 +401,6 @@ msgstr "Чат"
 msgid "Canvas Archive"
 msgstr "Архіў Палотнаў"
 
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Вам спатрэбілася занадта многа часу, паспрабуйце яшчэ раз."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Вы не прайшлі капчу"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Тэкст няправільны або адсутнічае"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Не дадзены id капчы"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Невядомая Памылка Капчы"
-
-#: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:77
-#: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
-#: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
-#: src/components/windows/ForgotPassword.jsx:73
-#: src/components/windows/Register.jsx:89
-msgid "Error"
-msgstr "Памылка"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Адмена"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Адправіць"
-
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
 msgstr "Вы забанены. Лічыце, што гэта неапраўдана? Прачытайце "
@@ -406,6 +408,15 @@ msgstr "Вы забанены. Лічыце, што гэта неапраўда�
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
 msgstr " як падаць апеляцыю."
+
+#: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
+#: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
+#: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
+#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/windows/ForgotPassword.jsx:73
+#: src/components/windows/Register.jsx:89
+msgid "Error"
+msgstr "Памылка"
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -439,11 +450,43 @@ msgstr "Калі Вы бачыце гэта паведамленне, Вы бо�
 msgid "Why?"
 msgstr "Чаму?"
 
-#: src/components/windows/Help.jsx:42
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Вам спатрэбілася занадта многа часу, паспрабуйце яшчэ раз."
+
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Вы не прайшлі капчу"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Тэкст няправільны або адсутнічае"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Не дадзены id капчы"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Невядомая Памылка Капчы"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Адмена"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Адправіць"
+
+#: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
 msgstr "Малюйце пікселямі разам з іншымі людзьмі анлайн!"
 
-#: src/components/windows/Help.jsx:43
+#: src/components/windows/Help.jsx:66
 msgid ""
 "Our main canvas is a huge worldmap, you can place wherever you like, but you "
 "will have to wait a specific Cooldown between pixels. You can check out the "
@@ -459,7 +502,7 @@ msgstr ""
 "для пустых піскеляў і пікселяў, на якіх ужо малявалі іншыя людзі, розны: 4 і "
 "7 сек."
 
-#: src/components/windows/Help.jsx:47
+#: src/components/windows/Help.jsx:67
 msgid ""
 "Higher zoomlevels take some time to update, the 3D globe gets updated at "
 "least once per day."
@@ -467,23 +510,23 @@ msgstr ""
 "Вялізныя ўзроўні аддалення ад мапы патрабаюць час каб абнавіцца,а 3D глобус "
 "абнаўляецца прынамсі 1 раз ў дзень."
 
-#: src/components/windows/Help.jsx:48
+#: src/components/windows/Help.jsx:68
 msgid "Have fun!"
 msgstr "Гоооойда!"
 
-#: src/components/windows/Help.jsx:50
+#: src/components/windows/Help.jsx:70
 msgid "recommended"
 msgstr "рэкамендавана"
 
-#: src/components/windows/Help.jsx:51
+#: src/components/windows/Help.jsx:71
 msgid "Source on "
 msgstr "Крыніца на "
 
-#: src/components/windows/Help.jsx:52
+#: src/components/windows/Help.jsx:72
 msgid "Map Data"
 msgstr "Дадзеныя Мапы"
 
-#: src/components/windows/Help.jsx:53
+#: src/components/windows/Help.jsx:73
 msgid ""
 "The bare map data that we use, together with converted OpenStreetMap tiles "
 "for orientation, can be downloaded from mega.nz here: "
@@ -491,11 +534,11 @@ msgstr ""
 "Пустыя мапы разам з іхнімі канвертаванымі OpenStreetMap пліткамі для "
 "арыентацыі можна спампаваць на mega.nz: "
 
-#: src/components/windows/Help.jsx:55
+#: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
 msgstr "Вы забанены, бо ў вас выяўлена проксі?"
 
-#: src/components/windows/Help.jsx:57
+#: src/components/windows/Help.jsx:76
 #, javascript-format
 msgid ""
 "If you got detected as proxy, but you are none, or think that you got "
@@ -506,44 +549,46 @@ msgstr ""
 "форуме ${ guildedLink }, альбо адпраўце пісьмо на нашу электронную пошту "
 "${ mailLink }, указаўшы гэты IID:"
 
-#: src/components/windows/Help.jsx:60 src/components/windows/Help.jsx:77
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
 msgstr "Кіраванне"
 
-#: src/components/windows/Help.jsx:62
+#: src/components/windows/Help.jsx:81
 msgid "Click a color in palette to select it"
 msgstr "Націсніце на колер на палітры, каб яго выбраць"
 
-#: src/components/windows/Help.jsx:63
+#: src/components/windows/Help.jsx:82
 #, javascript-format
 msgid "Press ${ bindG } to toggle grid"
 msgstr "Націсніце на ${ bindG }, каб укл/выкл сетку"
 
-#: src/components/windows/Help.jsx:64
+#: src/components/windows/Help.jsx:83
+#, javascript-format
 msgid "Press ${ bindX } to toggle showing of pixel activity"
 msgstr "Націсніце на ${ bindX }, каб укл/выкл апавяшчэні пастаноўкі пікселяў"
 
-#: src/components/windows/Help.jsx:65
+#: src/components/windows/Help.jsx:84
 #, javascript-format
 msgid "Press ${ bindH } to toggle historical view"
 msgstr "Націсніце на ${ bindH }, каб укл/выкл гістарычны выгляд"
 
-#: src/components/windows/Help.jsx:66
+#: src/components/windows/Help.jsx:85
+#, javascript-format
 msgid "Press ${ bindR } to copy coordinates"
 msgstr "Націсніце на ${ bindR }, каб скапіяваць каардынаты"
 
-#: src/components/windows/Help.jsx:67
+#: src/components/windows/Help.jsx:86
 #, javascript-format
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr "Націсніце на ${ bindQ } або ${ bindE } для аддалення/набліжэння"
 
-#: src/components/windows/Help.jsx:68 src/components/windows/Help.jsx:79
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr ""
 "Націсніце на ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } для перамяшчэння"
 
-#: src/components/windows/Help.jsx:69 src/components/windows/Help.jsx:80
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -551,23 +596,25 @@ msgstr ""
 "Націсніце на ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } "
 "для перамяшчэння"
 
-#: src/components/windows/Help.jsx:70
+#: src/components/windows/Help.jsx:89
+#, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
 msgstr "Рухайце мышкай ${ mouseSymbol } або ${ touchSymbol } для перамяшчэння"
 
-#: src/components/windows/Help.jsx:71
+#: src/components/windows/Help.jsx:90
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
 "Круціце колца мышкі ${ mouseSymbol } або шчыпайце ${ touchSymbol } для "
 "аддалення/набліжэння"
 
-#: src/components/windows/Help.jsx:72
+#: src/components/windows/Help.jsx:91
+#, javascript-format
 msgid "Hold left ${ bindShift } for placing while moving mouse"
 msgstr ""
 "Зацісніце левы ${ bindShift } для таго, каб ставіць піксель падчас руху мышкі"
 
-#: src/components/windows/Help.jsx:73
+#: src/components/windows/Help.jsx:92
 #, javascript-format
 msgid ""
 "Hold right ${ bindShift } for placing while moving mouse according to "
@@ -576,14 +623,15 @@ msgstr ""
 "Зацісніце правы ${ bindShift } для таго, каб маляваць падчас руху мышкі "
 "паводле гістарычнага выгляду"
 
-#: src/components/windows/Help.jsx:74 src/components/windows/Help.jsx:85
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "Націсніце на левую кнопку мышкі ${ mouseSymbol } або на ${ touchSymbol } каб "
 "паставіць піксель"
 
-#: src/components/windows/Help.jsx:75 src/components/windows/Help.jsx:87
+#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
+#, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
 "select current hovering color"
@@ -591,16 +639,17 @@ msgstr ""
 "Націсніце на ${ mouseSymbol } сярэднюю кнопку мышкі або зацісніце "
 "${ touchSymbol } каб выбраць колер, на які вы навялі курсор"
 
-#: src/components/windows/Help.jsx:81
-msgid "Press ${ bindE } and ${ bindC } to fly up and down"
+#: src/components/windows/Help.jsx:100
+#, fuzzy, javascript-format
+msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Націсніце на ${ bindE } ці ${ bindC } каб ляцець уверх ці ўніз"
 
-#: src/components/windows/Help.jsx:82
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr "${ mouseSymbol } Зацісніце левую кнопку мышкі каб круціцца"
 
-#: src/components/windows/Help.jsx:83
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -609,12 +658,13 @@ msgstr ""
 "${ mouseSymbol } Круціце колца ці зацісніце ${ mouseSymbol } сярэднюю кнопку "
 "мышкі і рухайце яе, каб наблізіцца/аддаліцца"
 
-#: src/components/windows/Help.jsx:84
+#: src/components/windows/Help.jsx:103
+#, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
 "${ mouseSymbol } Зацісніце правую кнопку мышкі і рухаце яе, каб перамяшчацца"
 
-#: src/components/windows/Help.jsx:86
+#: src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -622,21 +672,131 @@ msgstr ""
 "${ mouseSymbol } Націсніце на правую кнопку мышкі ці ${ touchSymbol } двойчы "
 "націсніце каб выдаліць піксель"
 
-#: src/components/windows/Help.jsx:91
+#: src/components/windows/Help.jsx:110
 msgid ""
 "We thanks those artists very much, they offered their palettes to the public "
 "on"
 msgstr ""
 "Мы вельмі ўдзячныя гэтым мастакам, якія прапанавалі свае паітры публіцы на"
 
-#: src/components/windows/Help.jsx:94
+#: src/components/windows/Help.jsx:113
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "Дзякуй за палітру Луны ${ starhouseLink }."
 
-#: src/components/windows/Help.jsx:97
+#: src/components/windows/Help.jsx:116
+#, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Дзякуй за палітру палатна Top10 ${ vinikLink }."
+
+#: src/components/windows/Help.jsx:119
+#, fuzzy, javascript-format
+msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
+msgstr "Дзякуй за палітру палатна Top10 ${ vinikLink }."
+
+#: src/components/windows/Settings.jsx:91
+msgid "Show Grid"
+msgstr "Паказаць Сетку"
+
+#: src/components/windows/Settings.jsx:96
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Уключыце сетку, каб вылучыць межы пікселяў."
+
+#: src/components/windows/Settings.jsx:99
+msgid "Show Pixel Activity"
+msgstr "Паказваць Пастаноўку Пікселяў"
+
+#: src/components/windows/Settings.jsx:104
+msgid "Show circles where pixels are placed."
+msgstr "Паказвае чырвоны круг там, дзе нехта паставіў піксель."
+
+#: src/components/windows/Settings.jsx:107
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:112
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:115
+msgid "Disable Game Sounds"
+msgstr "Адклюцыць Гукі ў Гульне"
+
+#: src/components/windows/Settings.jsx:121
+msgid "All sound effects will be disabled."
+msgstr "Усе гукавыя эфекты будуць выключаны."
+
+#: src/components/windows/Settings.jsx:125
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Ваш браўзер не дазваляе выкарыстоўваць AudioContext каб прайграваць гукі. Ці "
+"ёсць у вас нейкая функцыя прыватнасці, якая блакуе гэта?"
+
+#: src/components/windows/Settings.jsx:131
+msgid "Enable chat notifications"
+msgstr "Уключыць паведамленні ў чаце"
+
+#: src/components/windows/Settings.jsx:135
+msgid "Play a sound when new chat messages arrive"
+msgstr "Гукавое апавяшчэнне, калі ў чаце з'яўляецца новае паведамленне"
+
+#: src/components/windows/Settings.jsx:138
+msgid "Auto Zoom In"
+msgstr "Аўтаматычнае Набліжэнне"
+
+#: src/components/windows/Settings.jsx:143
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Калі ваш маштаб маленькі, вы набліжаецеся замест таго, каб ставіць пікселі, "
+"калі вы націскаеце на палатно."
+
+#: src/components/windows/Settings.jsx:146
+msgid "Compact Palette"
+msgstr "Кампактная Палітра"
+
+#: src/components/windows/Settings.jsx:151
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Палітра займае менш месца на экране."
+
+#: src/components/windows/Settings.jsx:154
+msgid "Potato Mode"
+msgstr "Рэжым Бульбы"
+
+#: src/components/windows/Settings.jsx:158
+msgid "For when you are playing on a potato."
+msgstr "Для тых, хто гуляе з прыборнай панэлі Пасата."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
+msgid "Light Grid"
+msgstr "Светлая Сетка"
+
+#: src/components/windows/Settings.jsx:165
+msgid "Show Grid in white instead of black."
+msgstr "Сетка будзе белай, а не чорнай."
+
+#: src/components/windows/Settings.jsx:169
+msgid "Historical View"
+msgstr "Гістарычны Выгляд"
+
+#: src/components/windows/Settings.jsx:174
+msgid "Check out past versions of the canvas."
+msgstr "Праверыць мінулыя версіі палатна."
+
+#: src/components/windows/Settings.jsx:179
+msgid "Themes"
+msgstr "Тэмы"
+
+#: src/components/windows/Settings.jsx:184
+msgid "How pixelplanet should look like."
+msgstr "Як мусіць выглядаць pixelplanet."
+
+#: src/components/windows/Settings.jsx:191
+msgid "Select Language"
+msgstr "Выбраць Мову"
 
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
@@ -694,115 +854,21 @@ msgid "Captcha"
 msgstr "Captcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:302 src/components/ModCanvastools.jsx:382
-#: src/components/ModCanvastools.jsx:455 src/components/ModCanvastools.jsx:546
+#: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
+#: src/components/ModCanvastools.jsx:486 src/components/ModCanvastools.jsx:587
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Пацвердзіць"
 
-#: src/components/windows/Settings.jsx:86
-msgid "Show Grid"
-msgstr "Паказаць Сетку"
-
-#: src/components/windows/Settings.jsx:91
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Уключыце сетку, каб вылучыць межы пікселяў."
-
-#: src/components/windows/Settings.jsx:94
-msgid "Show Pixel Activity"
-msgstr "Паказваць Пастаноўку Пікселяў"
-
-#: src/components/windows/Settings.jsx:99
-msgid "Show circles where pixels are placed."
-msgstr "Паказвае чырвоны круг там, дзе нехта паставіў піксель."
-
-#: src/components/windows/Settings.jsx:102
-msgid "Disable Game Sounds"
-msgstr "Адклюцыць Гукі ў Гульне"
-
-#: src/components/windows/Settings.jsx:108
-msgid "All sound effects will be disabled."
-msgstr "Усе гукавыя эфекты будуць выключаны."
-
-#: src/components/windows/Settings.jsx:112
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"Ваш браўзер не дазваляе выкарыстоўваць AudioContext каб прайграваць гукі. Ці "
-"ёсць у вас нейкая функцыя прыватнасці, якая блакуе гэта?"
-
-#: src/components/windows/Settings.jsx:118
-msgid "Enable chat notifications"
-msgstr "Уключыць паведамленні ў чаце"
-
-#: src/components/windows/Settings.jsx:122
-msgid "Play a sound when new chat messages arrive"
-msgstr "Гукавое апавяшчэнне, калі ў чаце з'яўляецца новае паведамленне"
-
-#: src/components/windows/Settings.jsx:125
-msgid "Auto Zoom In"
-msgstr "Аўтаматычнае Набліжэнне"
-
-#: src/components/windows/Settings.jsx:130
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Калі ваш маштаб маленькі, вы набліжаецеся замест таго, каб ставіць пікселі, "
-"калі вы націскаеце на палатно."
-
-#: src/components/windows/Settings.jsx:133
-msgid "Compact Palette"
-msgstr "Кампактная Палітра"
-
-#: src/components/windows/Settings.jsx:138
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Палітра займае менш месца на экране."
-
-#: src/components/windows/Settings.jsx:141
-msgid "Potato Mode"
-msgstr "Рэжым Бульбы"
-
-#: src/components/windows/Settings.jsx:145
-msgid "For when you are playing on a potato."
-msgstr "Для тых, хто гуляе з прыборнай панэлі Пасата."
-
-#: src/components/Converter.jsx:376 src/components/windows/Settings.jsx:148
-msgid "Light Grid"
-msgstr "Светлая Сетка"
-
-#: src/components/windows/Settings.jsx:152
-msgid "Show Grid in white instead of black."
-msgstr "Сетка будзе белай, а не чорнай."
-
-#: src/components/windows/Settings.jsx:156
-msgid "Historical View"
-msgstr "Гістарычны Выгляд"
-
-#: src/components/windows/Settings.jsx:161
-msgid "Check out past versions of the canvas."
-msgstr "Праверыць мінулыя версіі палатна."
-
-#: src/components/windows/Settings.jsx:166
-msgid "Themes"
-msgstr "Тэмы"
-
-#: src/components/windows/Settings.jsx:171
-msgid "How pixelplanet should look like."
-msgstr "Як мусіць выглядаць pixelplanet."
-
-#: src/components/windows/Settings.jsx:178
-msgid "Select Language"
-msgstr "Выбраць Мову"
-
 #: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
 msgid ""
-"Select the canvas you want to use.  Every canvas is unique and has different "
-"palettes, cooldown and requirements.  Archive of closed canvases can be "
-"accessed here:"
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archive of removed canvases can be accessed here:"
 msgstr ""
 "Выберыце палатно, на яком хочаце маляваць.  Кожнае з іх унікальнае і мае "
 "розныя палітры, кд і патрабаванні. Архіў закрытых палотнаў можна прагледзець "
@@ -812,12 +878,17 @@ msgstr ""
 msgid "Archive"
 msgstr "Архіў"
 
-#: src/components/windows/Archive.jsx:16
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
+
+#: src/components/windows/Archive.jsx:9
+#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who currently like a meme. Those canvases can get "
 "boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active, we decide to remove them."
+"aren't worth being kept active."
 msgstr ""
 "Хоць мы, звычайна, не выдаляем палотны, некаторыя палотны запускаюцца дзеля "
 "забавы або па просьбе карыстальнікаў, якім спадабаўся нейкі мем. Гэтыя "
@@ -825,19 +896,20 @@ msgstr ""
 "змен мы вырашаем выдаліць іх, калі яны не вартыя таго, каб заставацца "
 "адкрытымі."
 
-#: src/components/windows/Archive.jsx:18
+#: src/components/windows/Archive.jsx:10
+#, fuzzy
 msgid ""
-"Here we collect those canvases to archive them in a proper way (which is "
-"currently just one)."
+"Here we collect removed canvases to archive them in a proper way. Which is "
+"currently only one."
 msgstr ""
 "Тут мы збіраем такія палотны, каб архіваваць іх належным чынам (зараз ёсць "
 "толькі адно такое палатно)"
 
-#: src/components/windows/Archive.jsx:20
+#: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
 msgstr "Палатно Палітычны Компас"
 
-#: src/components/windows/Archive.jsx:27
+#: src/components/windows/Archive.jsx:21
 msgid ""
 "This canvas got requested during a time of political conflicts on the main "
 "Earth canvas. It was a 1024x1024 representation of the political compass "
@@ -850,7 +922,7 @@ msgstr ""
 "мая 2020 года і заставалася актыўным на працягу месяцаў, пакуль не было "
 "закрыта 30-га лістапада таго ж року."
 
-#: src/components/windows/Archive.jsx:28
+#: src/components/windows/Archive.jsx:22
 msgid ""
 "We decided to archive it as a timelapse with lossless encoded webm. Taking a "
 "screenshot from the timelapse results in a perfect 1:1 representation of how "
@@ -884,87 +956,39 @@ msgstr "Адправіць пісьмо з інструкцыяй па скід�
 msgid "Enter your mail address and we will send you a new password:"
 msgstr "Увядзіце свой адрас электроннай пошты, каб выслаць Вам новы пароль:"
 
-#: src/components/Captcha.jsx:51 src/components/Captcha.jsx:105
+#: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
 msgstr "Не ўдалося загрузіць капчу"
 
-#: src/components/Captcha.jsx:69
+#: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
 msgstr "Увядзіце сімвалы з наступнай карцінкі:"
 
-#: src/components/Captcha.jsx:72
+#: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
 msgstr ""
 "Парада: Няма розніцы паміж вялікімі ды маленькімі літарамі, паміж I(i) ды "
 "l(L)"
 
-#: src/components/Captcha.jsx:114
+#: src/components/Captcha.jsx:116
 msgid "Load Captcha"
 msgstr "Загрузіць Капчу"
 
-#: src/components/Captcha.jsx:119
+#: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
 msgstr "Націсніце каб загрузіць капчу"
 
-#: src/components/Captcha.jsx:124
+#: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
 msgstr "Перазгрузіце яе, калі ня можаце прачытаць:"
 
-#: src/components/Captcha.jsx:128
+#: src/components/Captcha.jsx:130
 msgid "Reload"
 msgstr "Перазагрузіць"
 
-#: src/components/Captcha.jsx:138
+#: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Увядзіце Сімвалы"
-
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "Пошта ня можа быць пустой."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "Пошта павінна быць не менш за 5 сімвалаў."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "Пошта павінна быць не больш за 40 сімвалаў."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "Пошта павінна змяшчаць у сабе прынамсі адну кропку"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "Эл. Пошта павінна змяшчаць у сабе @"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "Імя не можа быць пустым."
-
-#: src/utils/validation.js:30
-msgid "Name must be at least 2 characters long"
-msgstr "Імя павінна быць не менш за 2 сімвалы"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "Імя павінна быць не больш за 26 сімвалаў"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Імя змяшчае недапушчальныя сімвалы, такія як: @, /, \\, #"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "Не ўказаны пароль."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "Пароль павінен быць не менш за 6 сімвалаў."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "Пароль павінен быць не больш за 60 сімвалаў."
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
@@ -973,6 +997,75 @@ msgstr "Атрымаць IID"
 #: src/components/GetIID.jsx:53
 msgid "Copy"
 msgstr "Капіяваць"
+
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Захаваць"
+
+#: src/components/TemplateSettings.jsx:57
+#, fuzzy
+msgid "Templates"
+msgstr "Спампаваць Шаблон"
+
+#: src/components/TemplateSettings.jsx:61
+msgid ""
+"Tired of always spaming one single color? Want to create art instead, but "
+"you have to count pixels from some other image? Templates can help you with "
+"that! Templates can show as overlay and you can draw over them. One pixel on "
+"the template, should be one pixel on the canvas."
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:65
+msgid "Enable Overlay"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:70
+msgid "Show templates as overlays ingame."
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:73
+msgid "Small Pixels Zoom"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:78
+msgid "Show overlay as small individual pixels on high zoomlevels."
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:85
+msgid "Overlay Opacity"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:99
+msgid "Opacity of Overlay in percent."
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:105
+msgid "Right-Shift Auto-Color"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:110
+msgid "Place pixels from overlay on right-shift, instead of history."
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:149
+#, fuzzy
+msgid "Cancel adding Template"
+msgstr "Спампаваць Шаблон"
+
+#: src/components/TemplateSettings.jsx:156
+#, fuzzy
+msgid "Add Template"
+msgstr "Спампаваць Шаблон"
+
+#: src/components/TemplateSettings.jsx:173
+msgid "Export enabled templates"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:182
+msgid "Import templates"
+msgstr ""
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1043,80 +1136,80 @@ msgstr "Выдаліць Акаўнт"
 msgid "Social Settings"
 msgstr "Сацыяльныя Налады"
 
-#: src/components/Converter.jsx:190 src/components/ModCanvastools.jsx:226
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
 msgstr "Выбар Палатна"
 
-#: src/components/Converter.jsx:216
+#: src/components/Converter.jsx:218
 msgid "Palette Download"
 msgstr "Спампаваць Палітру"
 
-#: src/components/Converter.jsx:218
+#: src/components/Converter.jsx:220
 #, javascript-format
 msgid "Palette for ${ gimpLink }"
 msgstr "Палітра для ${ gimpLink }"
 
-#: src/components/Converter.jsx:236
+#: src/components/Converter.jsx:241
 msgid "Image Converter"
 msgstr "Канвертар Відарысаў"
 
-#: src/components/Converter.jsx:237
+#: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
 msgstr "Канвертаваць відарыс у колеры палатна"
 
-#: src/components/Converter.jsx:256
+#: src/components/Converter.jsx:261
 msgid "Choose Strategy"
 msgstr "Выбраць Стратэгію"
 
-#: src/components/Converter.jsx:294
+#: src/components/Converter.jsx:299
 msgid "Serpentine"
 msgstr "Серпантын"
 
-#: src/components/Converter.jsx:296
+#: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
 msgstr "Мнімальна дыстанцыя паміж колерамі"
 
-#: src/components/Converter.jsx:323
+#: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
 msgstr "Вылічваць як GIMP"
 
-#: src/components/Converter.jsx:327
+#: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
 msgstr "Выбраць Рэжым Колераў"
 
-#: src/components/Converter.jsx:356
+#: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
 msgstr "Дадаць сетку (зняміце галачку, калі вам патрэбен шаблон 1:1)"
 
-#: src/components/Converter.jsx:378 src/components/Converter.jsx:394
+#: src/components/Converter.jsx:383 src/components/Converter.jsx:399
 msgid "Offset"
 msgstr "Зрушэнне"
 
-#: src/components/Converter.jsx:423
+#: src/components/Converter.jsx:428
 msgid "Scale Image"
 msgstr "Маштаб Відарыса"
 
-#: src/components/Converter.jsx:434
+#: src/components/Converter.jsx:439
 msgid "Width"
 msgstr "Шырыня"
 
-#: src/components/Converter.jsx:465
+#: src/components/Converter.jsx:470
 msgid "Height"
 msgstr "Даўжыня"
 
-#: src/components/Converter.jsx:504
+#: src/components/Converter.jsx:509
 msgid "Keep Ratio"
 msgstr "Захоўваць Прапорцыі"
 
-#: src/components/Converter.jsx:517
+#: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
 msgstr "Згладжванне"
 
-#: src/components/Converter.jsx:531
+#: src/components/Converter.jsx:536
 msgid "Reset"
 msgstr "Перазагрузіць"
 
-#: src/components/Converter.jsx:549
+#: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr "Спампаваць Шаблон"
 
@@ -1155,10 +1248,53 @@ msgstr ""
 "Рэйтынг абнаўляецца кожны 5 хвілін. Штодзённы рэйтынг абнаўляецца апоўначы "
 "па UTC."
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:80
-msgid "Save"
-msgstr "Захаваць"
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "Пошта ня можа быць пустой."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "Пошта павінна быць не менш за 5 сімвалаў."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "Пошта павінна быць не больш за 40 сімвалаў."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "Пошта павінна змяшчаць у сабе прынамсі адну кропку"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "Эл. Пошта павінна змяшчаць у сабе @"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "Імя не можа быць пустым."
+
+#: src/utils/validation.js:30
+msgid "Name must be at least 2 characters long"
+msgstr "Імя павінна быць не менш за 2 сімвалы"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "Імя павінна быць не больш за 26 сімвалаў"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Імя змяшчае недапушчальныя сімвалы, такія як: @, /, \\, #"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "Не ўказаны пароль."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "Пароль павінен быць не менш за 6 сімвалаў."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "Пароль павінен быць не больш за 60 сімвалаў."
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
@@ -1201,7 +1337,8 @@ msgstr "і ${ canvas.req } пікселяў пастаўлена"
 msgid "Top 10 Daily Ranking"
 msgstr "Штодзённы Рэйтынг Топ 10"
 
-#: src/components/CanvasItem.jsx:64
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Памеры"
 
@@ -1221,9 +1358,41 @@ msgstr "Топ 10 Гульцоў [пікселі за дзень]"
 msgid "Countries by Pixels Today"
 msgstr "Краіны па Пікселям за Сёння"
 
-#: src/core/chartSettings.js:352
+#: src/core/chartSettings.js:351
 msgid "Total Pixels placed per day"
 msgstr "Усяго пікселяў пастаўлена за дзень"
+
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "Палатно"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+#, fuzzy
+msgid "Coordinates"
+msgstr "Няправільныя каардынаты"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "Выбраць Мову"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:174
+#, fuzzy
+msgid "Delete"
+msgstr "Выдаліць Акаўнт"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1232,6 +1401,22 @@ msgstr "Імя або Эл. Пошта"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Увайсці"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Калі ласка, верыфіцыруйце адрас электроннай пошты, іначай ваш акаўнт будзе "
+"выдалены праз некалькі дзён."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Новае верыфікацыйнае пісьмо адпраўлена вам на пошту."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Націсніце, каб даслаць новае верыфікацыйнае пісьмо."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1253,21 +1438,9 @@ msgstr "Новы Пароль"
 msgid "Confirm New Password"
 msgstr "Пацвердзіць Новы Пароль"
 
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Калі ласка, верыфіцыруйце адрас электроннай пошты, іначай ваш акаўнт будзе "
-"выдалены праз некалькі дзён."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Новае верыфікацыйнае пісьмо адпраўлена вам на пошту."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Націсніце, каб даслаць новае верыфікацыйнае пісьмо."
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "Новае Імя Карыстальніка"
 
 #: src/components/ChangeMail.jsx:59
 msgid ""
@@ -1281,13 +1454,33 @@ msgstr ""
 msgid "New Mail"
 msgstr "Новая Пошта"
 
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "Новае Імя Карыстальніка"
-
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
 msgstr "Так, Выдаліць Мой Акаўнт!"
+
+#: src/components/SocialSettings.jsx:35
+msgid "Block DMs"
+msgstr "Адключыць АП"
+
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "Заблакаваць ўсі прыватныя паведамленні"
+
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
+msgstr "Прыватны Рэжым"
+
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr "Не паказваць мяне ў глабальнай статыстыцы"
+
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "Разблакаваць Карыстальнікаў"
+
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "У вас няма заблакаваных карыстальнікаў"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1320,67 +1513,75 @@ msgstr ""
 "Ачысціць пікселі, якія акружаны пустысмі або аднакаляровымі "
 "пікселямі(АГРЭСІЎНА ПРАЦУЕ НА ПАЛОТНАХ, ДЗЕ ЁСЦЬ 2 ЗНАЧЭННЯ КД!)"
 
-#: src/components/ModCanvastools.jsx:203
+#: src/components/ModCanvastools.jsx:196
+msgid ""
+"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
+"ISN'T ALREADY MOSTLY 0)"
+msgstr ""
+
+#: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
 msgstr "Статус: Не працуе"
 
-#: src/components/ModCanvastools.jsx:245
+#: src/components/ModCanvastools.jsx:249
 msgid "Image Upload"
 msgstr "Загрузіць Відарыс"
 
-#: src/components/ModCanvastools.jsx:246
+#: src/components/ModCanvastools.jsx:250
 msgid "Upload images to canvas"
 msgstr "Загрузіць відарыс на палатно"
 
-#: src/components/ModCanvastools.jsx:248
+#: src/components/ModCanvastools.jsx:252
 msgid "File"
 msgstr "Файл"
 
-#: src/components/ModCanvastools.jsx:269
-msgid "Coordinates in X_Y format:"
-msgstr "Каардынаты ў фармаце X_Y:"
+#: src/components/ModCanvastools.jsx:273
+#, fuzzy
+msgid "Coordinates:"
+msgstr "Няправільныя каардынаты"
 
-#: src/components/ModCanvastools.jsx:307
+#: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
 msgstr "Абарона Пікселяў"
 
-#: src/components/ModCanvastools.jsx:309
+#: src/components/ModCanvastools.jsx:321
+#, fuzzy
 msgid ""
-"Set protection of areas         (if you need finer grained control,         "
-"use protect with image upload and alpha layers)"
+"Set protection of areas (if you need finer grained control, use protect with "
+"image upload and alpha layers)"
 msgstr ""
 "Абараніць участак         (калі вам патрэбен больш дакладны "
 "кантроль,         выкарыстоўвайце абарону з загрузкай відарыса ды альфа-"
 "пластамі)"
 
-#: src/components/ModCanvastools.jsx:330 src/components/ModCanvastools.jsx:403
-#: src/components/ModCanvastools.jsx:486 src/components/ModWatchtools.jsx:174
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
 msgstr "Верхні левы кут"
 
-#: src/components/ModCanvastools.jsx:347 src/components/ModCanvastools.jsx:420
-#: src/components/ModCanvastools.jsx:503 src/components/ModWatchtools.jsx:191
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
 msgstr "Ніжні правы кут"
 
-#: src/components/ModCanvastools.jsx:388
+#: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Адкаціць да Даты"
 
-#: src/components/ModCanvastools.jsx:390
+#: src/components/ModCanvastools.jsx:411
 msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
 msgstr "Адкаціць участак палатна да зададзенай даты (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:461
+#: src/components/ModCanvastools.jsx:492
 msgid "Canvas Cleaner"
 msgstr "Ачысціць Палатно"
 
-#: src/components/ModCanvastools.jsx:463
+#: src/components/ModCanvastools.jsx:494
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr ""
 "Выкарыстоўвайце фільтр, каб ачысціць ад смецця вялізныя участкі палатна."
 
-#: src/components/ModCanvastools.jsx:564
+#: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
 msgstr "Спыніць Ачытску"
 
@@ -1416,29 +1617,29 @@ msgstr "Увядзіце Імя новага Мадэратара"
 msgid "User Name"
 msgstr "Імя Карыстальніка"
 
-#: src/components/SocialSettings.jsx:35
-msgid "Block DMs"
-msgstr "Адключыць АП"
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr "Няправільны інтэрвал"
 
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "Заблакаваць ўсі прыватныя паведамленні"
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr "Праверыць, хто маляваў на ўчастку"
 
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr "Прыватны Рэжым"
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr "Інтэрвал"
 
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr "Не паказваць мяне ў глабальнай статыстыцы"
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr "IID (апцыянальна)"
 
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "Разблакаваць Карыстальнікаў"
+#: src/components/ModWatchtools.jsx:249
+msgid "Get Pixels"
+msgstr "Атрымаць Пікселі"
 
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "У вас няма заблакаваных карыстальнікаў"
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
+msgstr "Атрымаць Карыстальнікаў"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1460,34 +1661,6 @@ msgstr "Увядзіце прычыну"
 msgid "(0 = infinite)"
 msgstr "(0 = бясконцасць)"
 
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
-msgstr "Няправільны інтэрвал"
-
-#: src/components/ModWatchtools.jsx:122
-msgid "Check who placed in an area"
-msgstr "Праверыць, хто маляваў на ўчастку"
-
-#: src/components/ModWatchtools.jsx:123
-msgid "Canvas"
-msgstr "Палатно"
-
-#: src/components/ModWatchtools.jsx:142
-msgid "Interval"
-msgstr "Інтэрвал"
-
-#: src/components/ModWatchtools.jsx:157
-msgid "IID (optional)"
-msgstr "IID (апцыянальна)"
-
-#: src/components/ModWatchtools.jsx:236
-msgid "Get Pixels"
-msgstr "Атрымаць Пікселі"
-
-#: src/components/ModWatchtools.jsx:267
-msgid "Get Users"
-msgstr "Атрымаць Карыстальнікаў"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Пінг"
@@ -1504,67 +1677,86 @@ msgstr "Заблакаваць"
 msgid "Mute"
 msgstr "Зам'юціць"
 
-#: src/components/windows/Help.jsx:15 src/components/windows/Settings.jsx:87
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:16 src/components/windows/Settings.jsx:95
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:17 src/components/windows/Settings.jsx:158
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
 
-#: src/components/windows/Help.jsx:18
+#: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
 msgid "R"
 msgstr "R"
 
-#: src/components/windows/Help.jsx:19
+#: src/components/windows/Help.jsx:23
 msgctxt "keybinds"
 msgid "Q"
 msgstr "Q"
 
-#: src/components/windows/Help.jsx:20
+#: src/components/windows/Help.jsx:24
 msgctxt "keybinds"
 msgid "E"
 msgstr "E"
 
-#: src/components/windows/Help.jsx:21
+#: src/components/windows/Help.jsx:25
 msgctxt "keybinds"
 msgid "W"
 msgstr "W"
 
-#: src/components/windows/Help.jsx:22
+#: src/components/windows/Help.jsx:26
 msgctxt "keybinds"
 msgid "A"
 msgstr "A"
 
-#: src/components/windows/Help.jsx:23
+#: src/components/windows/Help.jsx:27
 msgctxt "keybinds"
 msgid "S"
 msgstr "S"
 
-#: src/components/windows/Help.jsx:24
+#: src/components/windows/Help.jsx:28
 msgctxt "keybinds"
 msgid "D"
 msgstr "D"
 
-#: src/components/windows/Help.jsx:31
+#: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
 
-#: src/components/windows/Help.jsx:32
+#: src/components/windows/Settings.jsx:108
+#, fuzzy
 msgctxt "keybinds"
-msgid "C"
-msgstr "C"
+msgid "N"
+msgstr "Не"
 
-#: src/components/windows/Settings.jsx:103
+#: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
 msgid "M"
 msgstr "M"
+
+#: src/components/TemplateSettings.jsx:66
+msgctxt "keybinds"
+msgid "T"
+msgstr ""
+
+#~ msgid "Show Hidden Canvases"
+#~ msgstr "Паказаць Схаваныя Палотны"
+
+#~ msgid "Hide Hidden Canvases"
+#~ msgstr "Схаваць Схаваныя Палотны"
+
+#~ msgid "Coordinates in X_Y format:"
+#~ msgstr "Каардынаты ў фармаце X_Y:"
+
+#~ msgctxt "keybinds"
+#~ msgid "C"
+#~ msgstr "C"

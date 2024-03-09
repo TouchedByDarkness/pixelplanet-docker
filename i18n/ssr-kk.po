@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Language-Team: \n"
-"MIME-Version: 1.0\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
 "Last-Translator: Fontan 030 <pomanfedurin@gmail.com>\n"
+"Language-Team: \n"
 "Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -40,6 +40,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "Жазу рұқсатыңыз тағы ${ timeMin } минутқа шектелген"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "Жазу рұқсатыңыз тағы ${ ttl } секундқа шектелген"
 
@@ -53,19 +54,19 @@ msgstr ""
 msgid "You don't have access to this channel"
 msgstr "Бұл арнаны көруге рұқсатыңыз жоқ"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Чатта жазу үшін эл. поштаңызды растау қажет"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Сондай ұзын хат жібере алмайсыз :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "int арнасында жазыңызшы"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Флудты доғарыңыз."
 
@@ -93,35 +94,35 @@ msgstr "Құпиясөз сәтті өзгертілді."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Жарамсыз URL :( Эл. поштаңызды қайта тексеріңіз."
 
-#: src/ssr/Globe.jsx:32
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3D-глобусы"
-
-#: src/ssr/Globe.jsx:33
-msgid "A 3D globe of our whole map"
-msgstr "Бүкіл картамыздың 3D-глобусы"
-
-#: src/ssr/Globe.jsx:46
-msgid "Double click on globe to go back."
-msgstr "Оралу үшін глобусқа екі рет басыңыз."
-
-#: src/ssr/Globe.jsx:47
-msgid "Loading..."
-msgstr "Жүктелуде..."
-
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun қалқымалы терезесі"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3D-глобусы"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "Бүкіл картамыздың 3D-глобусы"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Оралу үшін глобусқа екі рет басыңыз."
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Жүктелуде..."
+
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Басқа желідегі ойыншылармен бірге түрлі-түсті пикселдерді карта стиліндегі "
@@ -175,24 +176,20 @@ msgstr "Құпиясөз кемінде 6 таңбадан тұруы керек
 msgid "Password must be shorter than 60 characters."
 msgstr "Құпиясөз 60 таңбадан аспауы керек."
 
-#: src/ssr/PasswordReset.jsx:20
-#: src/ssr/PasswordReset.jsx:40
+#: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
 msgstr "PixelPlanet.fun құпиясөзін арылту"
 
-#: src/ssr/PasswordReset.jsx:21
-#: src/ssr/PasswordReset.jsx:41
+#: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
 msgstr "Кұпиясөзіңізді осында арылта аласыз"
 
-#: src/core/MailProvider.js:105
-#: src/ssr/PasswordReset.jsx:28
+#: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
 msgstr "Құпиясөзді арылту"
 
-#: src/ssr/PasswordReset.jsx:30
-#: src/ssr/RedirectionPage.jsx:12
+#: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
 msgstr "Осында басыңыз"
 
@@ -233,8 +230,7 @@ msgstr "Мына әрекетті әкімшілер ғана жасай ала�
 msgid "You are not banned"
 msgstr "Сіз бұғаттауда емессіз"
 
-#: src/routes/api/auth/change_mail.js:21
-#: src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Осы эл. пошта сервисіне тыйым салынған"
 
@@ -270,29 +266,7 @@ msgstr "Жаңа тіркелгі жасау мүмкін емес :("
 msgid "Failed to establish session after register :("
 msgstr "Тіркелуден кейінгі сессияны орнату мүмкін емес :("
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Сіз тіпті жүйеге кірмедіңіз."
-
-#: src/routes/api/auth/delete_account.js:55
-#: src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Жүйеден шыққанда сервер қатесі орын алды."
-
-#: src/routes/api/auth/change_mail.js:43
-#: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
-msgid "You are not authenticated."
-msgstr "Аутентификациядан өтпедіңіз."
-
-#: src/routes/api/auth/change_mail.js:52
-#: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
-msgid "Incorrect password!"
-msgstr "Құпиясөз дұрыс емес!"
-
-#: src/routes/api/auth/verify.js:26
-#: src/routes/api/auth/verify.js:35
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Эл. пошта растау"
 
@@ -308,6 +282,34 @@ msgstr ""
 "Эл. пошта растау кодыңыз жарамсыз немесе оның мерзімі өтіп кетті :(, жаңа "
 "растау кодын сұратыңыз."
 
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Сіз тіпті жүйеге кірмедіңіз."
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Жүйеден шыққанда сервер қатесі орын алды."
+
+#: src/routes/api/auth/change_mail.js:44
+#: src/routes/api/auth/change_passwd.js:34
+#: src/routes/api/auth/delete_account.js:36
+msgid "You are not authenticated."
+msgstr "Аутентификациядан өтпедіңіз."
+
+#: src/routes/api/auth/change_mail.js:53
+#: src/routes/api/auth/change_passwd.js:43
+#: src/routes/api/auth/delete_account.js:55
+msgid "Incorrect password!"
+msgstr "Құпиясөз дұрыс емес!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr ""
+
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
 msgstr "PixelPlanet.fun тіркелгілері"
@@ -321,43 +323,51 @@ msgstr "15 секундтан кейін сізді автоматты түрд�
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Немесе pixelplanet-ке оралу үшін ${ clickHere }"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Жер"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Ай"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D-кенеп"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Коронавирус"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "PixelZone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1 битті"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Топ-10"
 
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
+
 #: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr "Басты кенебіміз, үлкен әлем картасы. Кез келген жерде сурет салыңыз"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -366,27 +376,27 @@ msgstr ""
 "үлкен мәтін және өлшемі 1,5 мың x 1,5 мың пикселден асатын суреттерді салуға "
 "болмайды."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Басқалармен бірге вокселдерді 3D-кенепке салыңыз"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "SARS-CoV2 туралы хабардарлықты арттыруға арналған арнайы кенеп"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "PixelZone айнасы"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "PixelCanvas айнасы"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Ақ-қара кенеп"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
@@ -394,12 +404,23 @@ msgstr ""
 "Кеше ең белсенді болған ойыншыларға арналған кенеп. Күнделікті рейтиң UTC "
 "бойынша түн ортасында арылтады."
 
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr "${ name }, PixelPlanet-ке қош келдіңіз, эл. поштаңызды растаңыз"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Сәлем, ${ name }"
 
@@ -415,8 +436,7 @@ msgstr ""
 msgid "Click to Verify"
 msgstr "Растау үшін басыңыз"
 
-#: src/core/MailProvider.js:68
-#: src/core/MailProvider.js:105
+#: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
 msgstr "Немесе осы сілтемені көшіріп алыңыз:"
 
@@ -427,16 +447,15 @@ msgstr ""
 "Уақытты жақсы өткізуіңізді тілейміз! Қандай да бір мәселелер болса, бізге "
 "қысылмай хабарласыңыз :)"
 
-#: src/core/MailProvider.js:70
-#: src/core/MailProvider.js:107
+#: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"
 msgstr "Рахмет"
 
 #: src/core/MailProvider.js:87
 #, javascript-format
 msgid ""
-"We already sent you a verification mail, you can request another one in ${ "
-"minLeft } minutes."
+"We already sent you a verification mail, you can request another one in "
+"${ minLeft } minutes."
 msgstr ""
 "Біз сізге растау хатын жіберіп қойдық, жаңасын ${ minLeft } минуттан кейін "
 "сұрай аласыз."

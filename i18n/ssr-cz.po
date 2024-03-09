@@ -21,7 +21,8 @@ msgid "Your country is temporary muted from this chat channel"
 msgstr "Tvůj stát je prozatím mutelej z tohodle chat kanálů"
 
 #: src/core/ChatProvider.js:439
-msgid "You are permanently muted, join our guilded to apppeal the mute"
+#, fuzzy
+msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
 "Jseš permanentně mutelej, připoj se na náš guilded aby sis mohl appealnout "
 "mute"
@@ -40,6 +41,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "Jseš mutelej na dalších ${ timeMin } minut"
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr "Jseš mutelej na dalších ${ ttl } sekund"
 
@@ -52,19 +54,19 @@ msgstr "Posíláš zprávy příliš rychlo, musíš počkat ${ waitTime }s :("
 msgid "You don't have access to this channel"
 msgstr "Nemáš přístup na tenhle kanál"
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr "Tvůj email musí bejt ověřen aby ses mohl bavit"
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr "Nemůžeš posílat zprávy takhle dlouhý :("
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr "Prosím použíj int kanál"
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr "Přestaň spamovat."
 
@@ -85,42 +87,43 @@ msgid "User doesn't exist in our database :("
 msgstr "Uživatelské jméno neexistuje v naší database :("
 
 #: src/routes/reset_password.js:89
-msgid "Passowrd successfully changed."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Heslo úspěšně změněno."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
 msgstr "Neplatný URL :( Prosím zkontroluj svůj mail zase."
 
-#: src/ssr/Globe.jsx:32
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3DGlobe"
-
-#: src/ssr/Globe.jsx:33
-msgid "A 3D globe of our whole map"
-msgstr "3D mapa naší celej mapy"
-
-#: src/ssr/Globe.jsx:46
-msgid "Double click on globe to go back."
-msgstr "Dvakrát klikní na globus aby si šel zpátky"
-
-#: src/ssr/Globe.jsx:47
-msgid "Loading..."
-msgstr "Načítaní..."
-
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3DGlobe"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "3D mapa naší celej mapy"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Dvakrát klikní na globus aby si šel zpátky"
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Načítaní..."
+
+#: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Polož barevné pixely na mapově stylované plátno s ostatníma online hráčema"
@@ -227,30 +230,7 @@ msgstr "Pouze admini to můžou dělat"
 msgid "You are not banned"
 msgstr "Nejste zabanován"
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr "Nejste ani přihlášen"
-
-#: src/routes/api/auth/delete_account.js:55 src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr "Serverová chyba při odhlašování"
-
-#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
-msgid "Mail verification"
-msgstr "Ověřování mailu"
-
-#: src/routes/api/auth/verify.js:27
-msgid "You are now verified :)"
-msgstr "Od teď jste ověřen"
-
-#: src/routes/api/auth/verify.js:35
-msgid ""
-"Your mail verification code is invalid or already expired :(, please request "
-"a new one."
-msgstr ""
-"Váš mailovej ověřující kód je již neplatný :(, prosím poproste o novej."
-
-#: src/routes/api/auth/change_mail.js:21 src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "Tenhle email dodavatel tu není povolen"
 
@@ -286,17 +266,48 @@ msgstr "Nepodařilo se udělat nového uživatele :("
 msgid "Failed to establish session after register :("
 msgstr "Nepodařilo se vytvořit schůzi hned po registraci :("
 
-#: src/routes/api/auth/change_mail.js:43
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
+msgid "Mail verification"
+msgstr "Ověřování mailu"
+
+#: src/routes/api/auth/verify.js:27
+msgid "You are now verified :)"
+msgstr "Od teď jste ověřen"
+
+#: src/routes/api/auth/verify.js:35
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"Váš mailovej ověřující kód je již neplatný :(, prosím poproste o novej."
+
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr "Nejste ani přihlášen"
+
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr "Serverová chyba při odhlašování"
+
+#: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
+#: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
 msgstr "Nejste ověřený"
 
-#: src/routes/api/auth/change_mail.js:52
+#: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
+#: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
 msgstr "Nesprávné heslo!"
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
+msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -311,43 +322,51 @@ msgstr "Budete automaticky přesměrováný po 15s"
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Nebo ${ clickHere } aby ses dostal zpátky na pixelplanet"
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Zem"
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr "Měsíc"
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr "3D Plátno"
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr "Coronavirus"
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr "Pixelzone"
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr "PixelCanvas"
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr "1bit"
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr "Top10"
 
+#: src/canvasesDesc.js:28
+msgid "2bit"
+msgstr ""
+
 #: src/canvasesDesc.js:29
+msgid "Minimap"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr "Naše hlavní plátno, velká mapa země. Pokládejte kde chcete"
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
@@ -355,27 +374,27 @@ msgstr ""
 "Plátno měsíce. Bezpečný místo pro obrazy. Žádné vlajky nebo velký texty "
 "(pouze jestli to není část obrazu) nebo obrazy větší jak 1,5k x 1,5k pixelu."
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr "Polož Voxely na 3D plátno s ostatníma"
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr "Speciální plátno pro zvýšení pozornosti o SARS-CoV2"
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr "Zrcadlo PixelZone"
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr "Zrcadlo PixelCanvasu"
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr "Černo-Bíle plátno"
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
@@ -383,12 +402,23 @@ msgstr ""
 "Plátno pro nejvíc aktivní hráče ze včerejška. Denní hodnocení se aktualizuje "
 "v 00:00 UTC."
 
+#: src/canvasesDesc.js:40
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas."
+msgstr ""
+
 #: src/core/MailProvider.js:66
-#, javascript-format
-msgid "Welcome ${ name } to PixelPlanet, plese verify your mail"
+#, fuzzy, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr "Vítej ${ name } na PixelPlanet, prosím ověř svůj mail"
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr "Ahoj ${ name }"
 
@@ -409,8 +439,9 @@ msgid "Or by copying following url:"
 msgstr "Nebo zkopírůj tohle URL:"
 
 #: src/core/MailProvider.js:69
+#, fuzzy
 msgid ""
-"Have fun and don't hesitate to contact us if you encouter any problems :)"
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr "Měj zábavů a neboj se nás kontaktovat jestli najdeš nějaký problémy :)"
 
 #: src/core/MailProvider.js:70 src/core/MailProvider.js:107
