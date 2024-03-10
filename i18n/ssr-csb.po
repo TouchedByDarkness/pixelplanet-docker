@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-10 19:37+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"Language-Team: Kashubian <https://hosted.weblate.org/projects/pixelplanet/"
+"server/csb/>\n"
 "Language: csb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -115,7 +116,7 @@ msgstr "Przëcesni zemską kùglã dwakroc żebë copnąc."
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
-msgstr "Ładowanie..."
+msgstr "Ładowónié..."
 
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
@@ -140,7 +141,7 @@ msgstr "E-mail ni mòże miec wicy jak 40 merków."
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr "E-mail mùszi miec w sobie co nômni jeden póńkt."
+msgstr "E-mail mùszi miec w sobie co nômni jeden póńkt"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
@@ -168,7 +169,7 @@ msgstr "Të nie pòdôł parolë."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr "Parola mùszi miec bënômni 6 znaków."
+msgstr "Paróla mùszi miec co nômni 6 merków."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
@@ -222,7 +223,7 @@ msgstr "Të ni môsz ùdowierzeniô do przistãpù do ti starnë"
 
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
-msgstr "Leno sprôwnicë mògą to robic "
+msgstr "Leno sprôwnicë mògą to robic"
 
 #: src/routes/api/baninfo.js:32
 msgid "You are not banned"
@@ -250,7 +251,7 @@ msgstr "To za wiele zeszło, spróbùj jesz rôz."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
-msgstr "Nie weszło cë z Captchą"
+msgstr "Nie przeszedł jes testu captcha"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"
@@ -286,13 +287,13 @@ msgstr "Të nawetka zalogòwóny nie jes."
 
 #: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
-msgstr "Fela serwera w czasu wëlogòwiwóniégò"
+msgstr "Fela serwera w czasu wëlogòwiwóniégò."
 
 #: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
 #: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
-msgstr "Të nie przeszedł aùtentikacje"
+msgstr "Të nie przeszedł aùtentikacje."
 
 #: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
@@ -359,7 +360,7 @@ msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "Minimap"
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
@@ -373,7 +374,7 @@ msgid ""
 msgstr ""
 "Miesądzowé płótno. Bezpiecznô rëmiô dlô malënków. Niżôdnëch fanów ani "
 "wiôldżich nôpisów (chëba że jakno part malënkù) ani malënków wikszich jak "
-"1.5 tës. x 1.5. tës. pikselów!"
+"1.5 tës. x 1.5. tës. pikselów."
 
 #: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
@@ -417,7 +418,7 @@ msgstr ""
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr ""
-"Witôj na PixelPlanet, ${ name }! Proszã, dôj  sprawdzëc swòjã adrésã e-mail"
+"Witôj na PixelPlanet, ${ name }! Proszã, dôj sprawdzëc swòjã adrésã e-mail"
 
 #: src/core/MailProvider.js:67
 #, javascript-format
@@ -430,7 +431,7 @@ msgid ""
 "have to verify your mail. You can do that here: "
 msgstr ""
 "Witôj w naji môłi spòleznie pikslostôwków. Żebë ùżëwac swòjégò kònta, "
-"mùszisz dac adrésã e-mail do sprôwdzeniô. Mòżesz to zrobic tuwò:"
+"mùszisz dac adrésã e-mail do sprôwdzeniô. Mòżesz to zrobic tuwò: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
@@ -473,7 +474,7 @@ msgid ""
 "next 30min here: "
 msgstr ""
 "Të pòprosył ò ùdostónié nowi parólë. Mòżesz zmienic so parólã w pòstãpnëch "
-"trzëdzescë minutach tuwò:"
+"trzëdzescë minutach tuwò: "
 
 #: src/core/MailProvider.js:106
 #, javascript-format
@@ -493,7 +494,7 @@ msgid ""
 "We already sent you a mail with instructions. Please wait before requesting "
 "another mail."
 msgstr ""
-"Më cë ju sélele e-maila ze wskôzama. Pòżdżë le nigle mdzes prosył ò drëdżégò"
+"Më cë ju sélele e-maila ze wskôzama. Pòżdżë le nigle mdzes prosył ò drëdżégò."
 
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"

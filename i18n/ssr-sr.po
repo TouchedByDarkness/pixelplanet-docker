@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: sr_RS@latin\n"
+"PO-Revision-Date: 2024-03-10 19:38+0000\n"
+"Last-Translator: Маткеез <matejaintro12@gmail.com>\n"
+"Language-Team: Serbian <https://hosted.weblate.org/projects/pixelplanet/"
+"server/sr/>\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.1.1\n"
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -39,9 +40,9 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr "Nemo ste za ${ timeMin } minuta"
 
 #: src/core/ChatProvider.js:450
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Nemo ste za ${ ttl } sekundi"
+msgstr "Utišani ste za ${ ttl } sekundi"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
@@ -94,7 +95,7 @@ msgstr "Nevažeći url :( Molimo vas da proverite e-mail opet."
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
-msgstr ""
+msgstr "ppzabava"
 
 #: src/ssr/PopUp.jsx:48
 #, fuzzy
@@ -231,7 +232,7 @@ msgstr "Niste banovani"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
-msgstr ""
+msgstr "Ovaj e-mail provajder nije dostupan"
 
 #: src/routes/api/auth/register.js:31
 msgid "No Captcha given"
@@ -247,15 +248,15 @@ msgstr "Ime je već u koristi."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr "Previše dugo vam je trebalo, pokušajte opet."
+msgstr "Trebalo ti je previše vremena,probaj opet."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
-msgstr "Niste uspeli da uradite verifikaciju"
+msgstr "Neuspela verifikacija"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"
-msgstr "Nepoznata greška sa verifikacijom"
+msgstr "Nepoznata verifikacijska greška"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
@@ -303,11 +304,11 @@ msgstr "Neispravna lozinka!"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted users can not delete their account."
-msgstr ""
+msgstr "Utišani korisnici ne mogu da obrišu svoj račun."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted users can not do this."
-msgstr ""
+msgstr "Utišani korisnici ne mogu uraditi to."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -356,11 +357,11 @@ msgstr "Top10"
 
 #: src/canvasesDesc.js:28
 msgid "2bit"
-msgstr ""
+msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "Mini-mapa"
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
@@ -403,13 +404,15 @@ msgstr ""
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon."
-msgstr ""
+msgstr "Samo četiri boje.Važe ista pravila kao i na mesecu."
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas."
 msgstr ""
+"Osvajaj teritorije na manjoj mapi sa zaštićenim okeanom.Tajmer piksela je "
+"isti kao na Zemlji."
 
 #: src/core/MailProvider.js:66
 #, javascript-format

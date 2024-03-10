@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-10 19:37+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"Language-Team: Kashubian <https://hosted.weblate.org/projects/pixelplanet/"
+"client/csb/>\n"
 "Language: csb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
@@ -505,8 +506,8 @@ msgstr ""
 "òpòzdzeniégò dlô pikselów. Mòżesz sprawdzëc ten cząd i wëmôgania w Menu "
 "Wëbiérkù Płótnów (knąpa zemsczi kùglë na górze). Na niechtërnëch płótnach je "
 "jiny cząd òpòzdzeniégò jak sã zamieniwô chtëren z ju wstôwionëch pikselów, a "
-"jak sã stôwiô na pùsti môl, np. 4s/7s znaczi 4s  dlô nowëch pikselów, a 7s "
-"na zamieniwanié tich ju pòstôwionëch."
+"jak sã stôwiô na pùsti môl, np. 4s/7s znaczi 4s dlô nowëch pikselów, a 7s na "
+"zamieniwanié tich ju pòstôwionëch."
 
 #: src/components/windows/Help.jsx:67
 msgid ""
@@ -867,7 +868,7 @@ msgstr "Captcha"
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
-msgstr "Złożë"
+msgstr "Przeslë"
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
@@ -1059,7 +1060,7 @@ msgstr ""
 
 #: src/components/TemplateSettings.jsx:149
 msgid "Cancel adding Template"
-msgstr "Anuluj dodôwanié mòdła."
+msgstr "Anuluj dodôwanié mòdła"
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Add Template"
@@ -1267,11 +1268,11 @@ msgstr "E-mail ni mòże miec wicy jak 40 merków."
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr "E-mail mùszi miec w sobie co nômni jeden póńkt."
+msgstr "E-mail mùszi miec w sobie co nômni jeden póńkt"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "E-mail mùszi miec w sobie merk @."
+msgstr "E-mail mùszi miec w sobie merk @"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
@@ -1279,11 +1280,11 @@ msgstr "Pòle na pòzwã ni mòże òstac pùsté."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr "Pòzwa mùszi miec co nômni 2 merczi."
+msgstr "Pòzwa mùszi miec co nômni 2 merczi"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr "Pòzwa ni mòże miec wicy jak 26 merków."
+msgstr "Pòzwa ni mòże miec wicy jak 26 merków"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"

@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-10 16:43+0000\n"
+"Last-Translator: Antonio <srbomrz@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/pixelplanet/"
+"server/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.4.2\n"
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -181,12 +182,12 @@ msgstr "PixelPlanet.fun Ponovno postavljanje lozinke"
 
 #: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
-msgstr "Ponovno postavite lozinku ovdje."
+msgstr "Ponovno postavite lozinku ovdje"
 
 #: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
-msgstr "Ponovno postavite lozinku."
+msgstr "Ponovno postavite lozinku"
 
 #: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
@@ -227,7 +228,7 @@ msgstr "To mogu samo administratori"
 
 #: src/routes/api/baninfo.js:32
 msgid "You are not banned"
-msgstr "Niste banani."
+msgstr "Niste banani"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
@@ -355,11 +356,11 @@ msgstr "Top10"
 
 #: src/canvasesDesc.js:28
 msgid "2bit"
-msgstr ""
+msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "Minimapa"
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
@@ -403,13 +404,15 @@ msgstr ""
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon."
-msgstr ""
+msgstr "Samo četiri boje. Ista pravila kao i mjesec."
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas."
 msgstr ""
+"Osvojite zemlju na manjoj zemlji sa zaštićenim oceanom. Dijeli hlađenje sa "
+"zemljanim platnom."
 
 #: src/core/MailProvider.js:66
 #, javascript-format
@@ -427,7 +430,7 @@ msgid ""
 "have to verify your mail. You can do that here: "
 msgstr ""
 "dobrodošli u našu malu zajednicu postavljača pixela (pičkovca), da biste "
-"koristili svoj račun, morate potvrditi svoju poštu. To možete učiniti ovdje:"
+"koristili svoj račun, morate potvrditi svoju poštu. To možete učiniti ovdje: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
@@ -470,7 +473,7 @@ msgid ""
 "next 30min here: "
 msgstr ""
 "Zatražili ste novu lozinku. Svoju lozinku možete promijeniti u sljedećih 30 "
-"minuta ovdje:"
+"minuta ovdje: "
 
 #: src/core/MailProvider.js:106
 #, javascript-format

@@ -2,120 +2,116 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: ro_RO\n"
+"PO-Revision-Date: 2024-03-10 17:53+0000\n"
+"Last-Translator: N Transylvania <transylvanianationalist@gmail.com>\n"
+"Language-Team: Romanian <https://hosted.weblate.org/projects/pixelplanet/"
+"server/ro/>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && "
-"n%100<=19) ? 1 : 2);\n"
-"X-Generator: Poedit 3.3.1\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
-msgstr ""
+msgstr "Nu poți trimite mesaje în chat folosind proxy"
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr ""
+msgstr "Țara ta este temporar dezactivată de pe acest canal de chat"
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
-msgstr ""
+msgstr "Ești dezactivat permanent, intră în guilded pentru a face apel"
 
 #: src/core/ChatProvider.js:441
-#, fuzzy
 msgid "You are banned"
-msgstr "Ești ciudat"
+msgstr "Ești banat"
 
 #: src/core/ChatProvider.js:443
-#, fuzzy
 msgid "Your Internet Provider is banned"
-msgstr "Furnizorul tău de internet este interzis din a juca acest joc"
+msgstr "Furnizorul tău de internet este banat"
 
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr ""
+msgstr "Ești desconectat pentu încă ${timpMin} minute"
 
 #: src/core/ChatProvider.js:450
 #, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr ""
+msgstr "Ești desconectat pentru încă ${ttl} secunde"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
 msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
-msgstr ""
+msgstr "Trimiți mesaje prea repede, trebuie să aștepți ${ waitTime }s :("
 
 #: src/core/ChatProvider.js:471
 msgid "You don't have access to this channel"
-msgstr ""
+msgstr "Nu ai acces la acest canal"
 
 #: src/core/ChatProvider.js:490
-#, fuzzy
 msgid "Your mail has to be verified in order to chat"
-msgstr "Trebuie să fi logat pentru a vorbi"
+msgstr "Mailul tău trebuie să fie verificat pentru a vorbi în chat"
 
 #: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
-msgstr ""
+msgstr "Nu poți trimite un mesaj atât de lung :("
 
 #: src/core/ChatProvider.js:504
 msgid "Please use int channel"
-msgstr ""
+msgstr "Te rog să folosești canalul int"
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
-msgstr ""
+msgstr "Oprește inundarea."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr ""
+msgstr "Nu poți seta o parolă goală sau invalidă :("
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr ""
+msgstr "Acest parolă-reset link deja nu este valid :("
 
 #: src/routes/reset_password.js:62
-#, fuzzy
 msgid "Your passwords do not match :("
-msgstr "Parolele nu sunt aceleași."
+msgstr "Parolele nu sunt identifice :("
 
 #: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
-msgstr ""
+msgstr "Utilizatorul nu există în datele noastre de bază :("
 
 #: src/routes/reset_password.js:89
-#, fuzzy
 msgid "Password successfully changed."
-msgstr "Schimbat parola cu success."
+msgstr "Parola schimbată cu success."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr ""
+msgstr "Url invalid :( Te rog verifică mailul din nou."
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
-msgstr ""
+msgstr "ppfun"
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
-msgstr ""
+msgstr "PixelPlanet.Fun PopUp"
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
-msgstr ""
+msgstr "3DGlob PixelPlanet.Fun"
 
 #: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
-msgstr ""
+msgstr "Un glob 3D despre toată harta"
 
 #: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
-msgstr ""
+msgstr "Apasă de două ori globul pentru a merge înapoi."
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
@@ -123,12 +119,12 @@ msgstr "Se încarcă..."
 
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
-msgstr ""
+msgstr "PixelPlanet.Fun"
 
 #: src/ssr/Main.jsx:66
-#, fuzzy
 msgid "Place color pixels on an map styled canvas with other players online"
-msgstr "Pune pixeli colorați pe un canvas mare cu alți jucători online!"
+msgstr ""
+"Pune pixeli de culoare pe un Convas în stil hartă cu alți jucători online"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -148,7 +144,7 @@ msgstr "Emailul trebuie să conțină cel puțin un punct"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "Emailul trebuie să conțină un @"
+msgstr "Emailul trebuie să conțină un \"@\""
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
@@ -180,31 +176,29 @@ msgstr "Parola trebuie să aibă mai puțin de 60 de litere."
 
 #: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
-msgstr ""
+msgstr "PixelPlanet.fun Resetare Parolă"
 
 #: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
-msgstr ""
+msgstr "Resetează-ți parola aici"
 
 #: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
-#, fuzzy
 msgid "Reset Password"
-msgstr "Parola Nouă"
+msgstr "Resetează Parola"
 
 #: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
-#, fuzzy
 msgid "Click here"
-msgstr "Vorbește aici"
+msgstr "Apasă aici"
 
 #: src/ssr/PasswordReset.jsx:30
 msgid "to go back to pixelplanet"
-msgstr ""
+msgstr "Pentru a merge înapoi pe pixelplanet"
 
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
 msgid "Hello ${ name }, you can set your new password here:"
-msgstr ""
+msgstr "Bună ${ nume }, poți să-ți setezi o parolă nouă aici:"
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
@@ -219,40 +213,36 @@ msgid "Submit"
 msgstr "Încarcă"
 
 #: src/routes/api/modtools.js:53
-#, fuzzy
 msgid "You are not logged in"
-msgstr "Nu ai niciun utilizator blocat"
+msgstr "Nu ești conectat"
 
 #: src/routes/api/modtools.js:65
-#, fuzzy
 msgid "You are not allowed to access this page"
-msgstr "Trebuie să fii logat pentru a pune pe acest canvas"
+msgstr "Nu ai voie să accesezi această pagină"
 
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
-msgstr ""
+msgstr "Numai admini pot face asta"
 
 #: src/routes/api/baninfo.js:32
-#, fuzzy
 msgid "You are not banned"
-msgstr "Ești ciudat"
+msgstr "Nu ești banat"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
-msgstr ""
+msgstr "Acest furnizor de mail nu este permis"
 
 #: src/routes/api/auth/register.js:31
-#, fuzzy
 msgid "No Captcha given"
-msgstr "Niciun id captcha primit"
+msgstr "Niciun captcha dat"
 
 #: src/routes/api/auth/register.js:34
 msgid "E-Mail already in use."
-msgstr ""
+msgstr "E-Mailul este deja înregistrat."
 
 #: src/routes/api/auth/register.js:36
 msgid "Username already in use."
-msgstr ""
+msgstr "Numele de utiizator este deja folosită."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
@@ -268,192 +258,196 @@ msgstr "Eroare de Captcha necunoscută"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
-msgstr ""
+msgstr "Nu s-a putut crea un utilizator nou :("
 
 #: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
-msgstr ""
+msgstr "Nu s-a putut stabili sesiunea după înregistrare :("
 
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
-msgstr ""
+msgstr "Mail verificat"
 
 #: src/routes/api/auth/verify.js:27
-#, fuzzy
 msgid "You are now verified :)"
-msgstr "Ești ciudat"
+msgstr "Acum ești verificat :)"
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
 "Your mail verification code is invalid or already expired :(, please request "
 "a new one."
 msgstr ""
+"Codul tău de verificare a e-mailului este invalid sau a expirat deja :(, te "
+"rog să solicitezi unul nou."
 
 #: src/routes/api/auth/logout.js:11
-#, fuzzy
 msgid "You are not even logged in."
-msgstr "Nu ai niciun utilizator blocat"
+msgstr "Nici nu ești conectat."
 
 #: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
-msgstr ""
+msgstr "Erroare de servăr când desconectare."
 
 #: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
 #: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
-msgstr ""
+msgstr "Nu ești autentificat."
 
 #: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
 #: src/routes/api/auth/delete_account.js:55
-#, fuzzy
 msgid "Incorrect password!"
-msgstr "Uitat Parola"
+msgstr "Parolă incorrectă!"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted users can not delete their account."
-msgstr ""
+msgstr "Utilizator desconectat nu își poate șterge contul."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted users can not do this."
-msgstr ""
+msgstr "Utilizatorul desconectat nu poate face asta."
 
 #: src/ssr/RedirectionPage.jsx:19
-#, fuzzy
 msgid "PixelPlanet.fun Accounts"
-msgstr "Șterge Contul"
+msgstr "Conturi PixelPlanet.fun"
 
 #: src/ssr/RedirectionPage.jsx:29
 msgid "You will be automatically redirected after 15s"
-msgstr ""
+msgstr "Vei fi redirecționat automatic după 15 secunde"
 
 #: src/ssr/RedirectionPage.jsx:30
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr ""
+msgstr "Sau ${ apasăAici } pentru a merge înapoi la pixelplanet"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
-msgstr ""
+msgstr "Pământ"
 
 #: src/canvasesDesc.js:21
 msgid "Moon"
-msgstr ""
+msgstr "Lună"
 
 #: src/canvasesDesc.js:22
-#, fuzzy
 msgid "3D Canvas"
-msgstr "Canvas"
+msgstr "Canvas 3D"
 
 #: src/canvasesDesc.js:23
 msgid "Coronavirus"
-msgstr ""
+msgstr "Coronavirus"
 
 #: src/canvasesDesc.js:24
 msgid "PixelZone"
-msgstr ""
+msgstr "PixelZone"
 
 #: src/canvasesDesc.js:25
-#, fuzzy
 msgid "PixelCanvas"
-msgstr "Canvas"
+msgstr "PixelCanvas"
 
 #: src/canvasesDesc.js:26
 msgid "1bit"
-msgstr ""
+msgstr "1bit"
 
 #: src/canvasesDesc.js:27
 msgid "Top10"
-msgstr ""
+msgstr "Top10"
 
 #: src/canvasesDesc.js:28
 msgid "2bit"
-msgstr ""
+msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "Minimap"
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
-msgstr ""
+msgstr "Convasul nostru principal, o hartă imensă a lumii. Pune oriunde dorești"
 
 #: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
 msgstr ""
+"Convas de Lună. Spațiu sigur pentru artă. Fără steaguri sau texte mari (cu "
+"excepția cazului în care face parte din artă) sau artă mai mare de 1,5k x "
+"1,5k pixeli."
 
 #: src/canvasesDesc.js:34
-#, fuzzy
 msgid "Place Voxels on a 3D canvas with others"
-msgstr "Pune pixeli colorați pe un canvas mare cu alți jucători online!"
+msgstr "Pune pixeli colorați pe un canvas 3D cu alți jucători"
 
 #: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
-msgstr ""
+msgstr "Convas special pentru a răspândi conștientizarea SARS-CoV2"
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
-msgstr ""
+msgstr "Oglindă pentru PixelZone"
 
 #: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
-msgstr ""
+msgstr "Oglinda pentru PixelConvas"
 
 #: src/canvasesDesc.js:38
 msgid "Black and White canvas"
-msgstr ""
+msgstr "Convas negru-alb"
 
 #: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
+"Un convas pentru cei mai activi jucători din ziua precedentă. Actualizări "
+"zilnice de clasare la 00:00 UTC."
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon."
-msgstr ""
+msgstr "Numai patru culoare. Același reguli ca pe Lună."
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas."
 msgstr ""
+"Cucerește pământ pe un pământ mai mic cu ocean protejat. Cooldown potrivit "
+"cu Convasul pământului."
 
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr ""
+msgstr "Bine ai venit ${ nume } la PixelPlanet, te rog verifică-ți mailul"
 
 #: src/core/MailProvider.js:67
 #, javascript-format
 msgid "Hello ${ name }"
-msgstr ""
+msgstr "Bună ${ nume }"
 
 #: src/core/MailProvider.js:68
 msgid ""
 "welcome to our little community of pixelplacers, to use your account, you "
 "have to verify your mail. You can do that here: "
 msgstr ""
+"Bine ai venit în mica noastră comunitate de pixelplacers, pentru a-ți folosi "
+"contul, trebuie să-ți verifici e-mailul. Poți face asta aici: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
-msgstr ""
+msgstr "Apasă pentru a verifica"
 
 #: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
-msgstr ""
+msgstr "Sau prin copierea următoarei adrese URL:"
 
 #: src/core/MailProvider.js:69
 msgid ""
 "Have fun and don't hesitate to contact us if you encounter any problems :)"
-msgstr ""
+msgstr "Distrează-te și nu ezita să ne contactezi dacă găsești probleme :)"
 
 #: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"
-msgstr ""
+msgstr "Mulțumim"
 
 #: src/core/MailProvider.js:87
 #, javascript-format
@@ -461,20 +455,24 @@ msgid ""
 "We already sent you a verification mail, you can request another one in "
 "${ minLeft } minutes."
 msgstr ""
+"Deja ți-am trimis un mail de verificare, poți cere încă una în ${ minRămase }"
+" minute."
 
 #: src/core/MailProvider.js:103
 msgid "You forgot your password for PixelPlanet? Get a new one here"
-msgstr ""
+msgstr "Ți-ai uitat parola pentru PixelPlanet? Fă-ți una nouă aici"
 
 #: src/core/MailProvider.js:104
 msgid "Hello"
-msgstr ""
+msgstr "Bună"
 
 #: src/core/MailProvider.js:105
 msgid ""
 "You requested to get a new password. You can change your password within the "
 "next 30min here: "
 msgstr ""
+"Ai cerut să îți faci o parolă nouă. Poți să-ți schimbi parola în următoarele "
+"30 de minute aici: "
 
 #: src/core/MailProvider.js:106
 #, javascript-format
@@ -482,21 +480,24 @@ msgid ""
 "If you did not request this mail, please just ignore it (the ip that "
 "requested this mail was ${ ip })."
 msgstr ""
+"Dacă nu ai cerut acest mail, te rog să îl ignorezi (IP-ul care a cerut acest "
+"mail era ${ ip })."
 
 #: src/core/MailProvider.js:114
 msgid "Mail is not configured on the server"
-msgstr ""
+msgstr "Mail nu este configurat pe server"
 
 #: src/core/MailProvider.js:122
-#, fuzzy
 msgid ""
 "We already sent you a mail with instructions. Please wait before requesting "
 "another mail."
-msgstr "Ți-am trimis un mail cu instrucțiuni ca să îți resetezi parola."
+msgstr ""
+"Ți-am trimis deja un mail cu instrucțiuni. Te rog să aștepți înainte să ceri "
+"un mail nou."
 
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"
-msgstr ""
+msgstr "Nu am putut găsi acest mail în datele noastre de bază"
 
 #, javascript-format
 #~ msgid "Switched to ${ canvasName }"

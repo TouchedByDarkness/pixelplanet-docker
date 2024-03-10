@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-10 21:36+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"Language-Team: Azerbaijani <https://hosted.weblate.org/projects/pixelplanet/"
+"server/az/>\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -138,7 +139,7 @@ msgstr "Email 40 simvoldan uzun olabilməz."
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr "Email ən az 1 nöqtə içərməlidir."
+msgstr "Email ən az 1 nöqtə içərməlidir"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
@@ -208,7 +209,7 @@ msgstr "Yeni Parolu Doğrulayın"
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr "təqdim edin"
+msgstr "Təqdim edin"
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
@@ -376,7 +377,7 @@ msgstr ""
 
 #: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
-msgstr " başqaları ilə birlikdə 3D lövhə üzərinə kub pixellər yerləşdirin"
+msgstr "Başqaları ilə birlikdə 3D lövhə üzərinə kub pixellər yerləşdirin"
 
 #: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
@@ -415,7 +416,7 @@ msgstr ""
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr "PixelPlanetə xoş gəldin  ${ name },Zəhmət olmasa emailini doğrula"
+msgstr "PixelPlanetə xoş gəldin ${ name }, Zəhmət olmasa emailini doğrula"
 
 #: src/core/MailProvider.js:67
 #, javascript-format
@@ -428,7 +429,7 @@ msgid ""
 "have to verify your mail. You can do that here: "
 msgstr ""
 "kiçik pixelplacers icmamıza xoş gəlmisiniz, hesabınızdan istifadə etmək üçün "
-"emailinizi doğrulamalısınız. Bunu burada edə bilərsiniz:"
+"emailinizi doğrulamalısınız. Bunu burada edə bilərsiniz: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
@@ -472,7 +473,7 @@ msgid ""
 "next 30min here: "
 msgstr ""
 "Siz yeni parol əldə etməyi tələb etdiniz. Növbəti 30 dəqiqə ərzində "
-"parolunuzu burada dəyişə bilərsiniz:"
+"parolunuzu burada dəyişə bilərsiniz: "
 
 #: src/core/MailProvider.js:106
 #, javascript-format

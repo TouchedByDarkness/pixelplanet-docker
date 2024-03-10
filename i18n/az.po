@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-10 21:36+0000\n"
+"Last-Translator: serdar <muradovsrdar@gmail.com>\n"
+"Language-Team: Azerbaijani <https://hosted.weblate.org/projects/pixelplanet/"
+"client/az/>\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
@@ -48,19 +49,19 @@ msgstr "Kopyalandı!"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr ""
+msgstr "Şablon açıqdır"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Şablon bağlıdır"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "Easter Egg açıqdır"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Easter Egg bağlıdır"
 
 #: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
 #: src/ui/templateLoader.js:256
@@ -118,7 +119,7 @@ msgstr "Daha çox qoyun :)"
 
 #: src/ui/PixelTransferController.js:129
 msgid "You can not access this canvas yet. You need to place more pixels"
-msgstr "Bu löhvəyə hələlik ərişəbilməziniz.Daha çox pixel qoymalısınız."
+msgstr "Bu löhvəyə hələlik ərişəbilməziniz. Daha çox pixel qoymalısınız"
 
 #: src/ui/PixelTransferController.js:132
 msgid "Pixel protected!"
@@ -161,11 +162,11 @@ msgstr "Banlandın"
 
 #: src/ui/PixelTransferController.js:160
 msgid "Range Banned"
-msgstr "Banlandın"
+msgstr "Sahə Olaraq Banlandınız"
 
 #: src/ui/PixelTransferController.js:161
 msgid "Your Internet Provider is banned from playing this game"
-msgstr "Sənin internet provayderin oyundan banlandı."
+msgstr "Sənin internet provayderin oyundan banlandı"
 
 #: src/ui/PixelTransferController.js:164
 msgid "Timeout"
@@ -200,11 +201,11 @@ msgstr "3D löhvə renderlənəbilmədi,sizdə WebGL2 bağlıdır?"
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "20-dən çox və ya heç olmayan şablon xaric edilə bilməz!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr ""
+msgstr "20-dən çox və ya heç olmayan şablon daxil edilə bilməz!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -222,7 +223,7 @@ msgstr "${ ti }dəqiqə sonra yenidən dənəyin"
 #: src/store/actions/fetch.js:70
 #, javascript-format
 msgid "Connection error ${ code } :("
-msgstr "Bağlantı xətası  ${ code } :("
+msgstr "Bağlantı xətası ${ code } :("
 
 #: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
@@ -363,28 +364,27 @@ msgstr "Palitranı bağla"
 
 #: src/components/buttons/PencilButton.jsx:32
 msgid "History Pencil ON"
-msgstr ""
+msgstr "Tarix qələmi açıqdır"
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr ""
+msgstr "Şablon qələmi açıqdır"
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
-msgstr ""
+msgstr "Qələmi Aç"
 
 #: src/components/buttons/PencilButton.jsx:69
-#, fuzzy
 msgid "Disable Pencil"
-msgstr "Səs Effektlərini bağla"
+msgstr "Qələmi Bağla"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
-msgstr ""
+msgstr "Tarix Qələmini Bağla"
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "Şablon Qələmini Bağla"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -404,11 +404,11 @@ msgstr "Löhvə Arxivi"
 
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Banlandınız.Bunun haqsız olduğunu düşünürsünüz?Bura baxın"
+msgstr "Banlandınız. Bunun haqsız olduğunu düşünürsünüz? Bura baxın "
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
-msgstr "necə müraciət edəbiləcəyiniz barədə."
+msgstr " necə müraciət edəbiləcəyiniz barədə."
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -433,11 +433,11 @@ msgstr "Müddət"
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
-msgstr "Sizin banınız bu müddətdə bitir"
+msgstr "Sizin banınız bu müddətdə bitir "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr "O da "
+msgstr " O da "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
@@ -465,7 +465,7 @@ msgstr "captcha mətni yoxdur və ya etibarsızdır"
 
 #: src/components/GlobalCaptcha.jsx:56
 msgid "No captcha id given"
-msgstr "Heçbir captcha idsi verilmədi."
+msgstr "Heçbir captcha idsi verilmədi"
 
 #: src/components/GlobalCaptcha.jsx:59
 msgid "Unknown Captcha Error"
@@ -527,7 +527,7 @@ msgstr "tövsiyyə edilir"
 
 #: src/components/windows/Help.jsx:71
 msgid "Source on "
-msgstr "mənbə aktivdir"
+msgstr "Mənbə aktivdir "
 
 #: src/components/windows/Help.jsx:72
 msgid "Map Data"
@@ -540,7 +540,7 @@ msgid ""
 msgstr ""
 "İstifadə etdiyimiz xəritə məlumatları, oriyentasiya üçün çevrilmiş "
 "OpenStreetMap plitələri ilə birlikdə buradan mega.nz saytından endirilə "
-"bilər:"
+"bilər: "
 
 #: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
@@ -555,7 +555,7 @@ msgid ""
 msgstr ""
 "Əgər proxy olaraq alğılandınızsa,amma deyilsənizsə,vəya səhvliklə "
 "banlandığınızı düşünürsünüzsə,Zəhmət olmasa bizim ${ guildedLink }'ə baxın "
-"vəya bizə IIDniz ilə birliktə mail göndərin  ${ mailLink }:"
+"vəya bizə IIDniz ilə birliktə mail göndərin ${ mailLink }:"
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
@@ -609,14 +609,14 @@ msgstr ""
 #, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
 msgstr ""
-"Siçanınızı basılı tutub dartaraq  ${ mouseSymbol } vəya ${ touchSymbol } "
+"Siçanınızı basılı tutub dartaraq ${ mouseSymbol } vəya ${ touchSymbol } "
 "ekrana basılı tutub hərəkət ettirərək lövhədə gəzinin"
 
 #: src/components/windows/Help.jsx:90
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
-"Siçanınızın  təkərləyini ${ mouseSymbol } döndürərək vəya ${ touchSymbol } "
+"Siçanınızın təkərləyini ${ mouseSymbol } döndürərək vəya ${ touchSymbol } "
 "iki barmağınızı istifadə edərək yaxınlaşın vəya uzaqlaşın"
 
 #: src/components/windows/Help.jsx:91
@@ -652,7 +652,7 @@ msgstr ""
 "toxunaraq rəngi kopyalayın"
 
 #: src/components/windows/Help.jsx:100
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Yuxarı və aşağı getmək üçün ${ bindQ } və ${ bindE } düymələrini basın"
 
@@ -703,9 +703,9 @@ msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Top10 Lövhə palitrası üçün kredit ${ vinikLink }-ə gedir."
 
 #: src/components/windows/Help.jsx:119
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Top10 Lövhə palitrası üçün kredit ${ donendoLink }-ə gedir."
+msgstr "Top10 Lövhəsinin palitrası üçün kredit ${ donendoLink }-ə gedir."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
@@ -725,11 +725,11 @@ msgstr "Pixellər qoyulan yerlərdə dairələr göstər."
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Həmişə Hərəkət Kontrollarını göstər"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Həmişə hərəkət düymələrini göstər"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
@@ -875,16 +875,16 @@ msgid "Submit"
 msgstr "Təqdim edin"
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Archive of removed canvases can be accessed here:"
 msgstr ""
-"İstifadə etmək istədiyiniz lövhəni seçin.  Hər bir lövhə unikaldır və "
-"müxtəlif palitraları, gözləmə müddəti və tələbləri var. Qapalı lövhələrin "
-"arxivinə buradan daxil olmaq olar:"
+"İstifadə etmək istədiyiniz lövhəni seçin.\n"
+"Hər bir lövhə yeganədir və cürbəcür palitraları, gözləmə müddəti və "
+"tələbləri var.\n"
+"Qapalı lövhələrin arxivinə buradan daxil olmaq olar:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -892,10 +892,9 @@ msgstr "Arxiv"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Ayrı Lövhələr (tək tarix)"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who currently like a meme. Those canvases can get "
@@ -903,19 +902,18 @@ msgid ""
 "aren't worth being kept active."
 msgstr ""
 "Biz lövhələri silməməyə meylli olsaq da, bəzi lövhələr əylənmək üçün və ya "
-"hazırda mem bəyənən istifadəçilərin xahişi ilə başlayır. Bu lövhələr bir "
-"müddət sonra və həftələrlə heç bir əsas dəyişikliyin olmamasından sonra "
-"cansıxıcı ola bilər və əgər onlar həqiqətən aktiv saxlanılmağa dəyməzsə, biz "
-"onları silmək qərarına gəlirik."
+"istifadəçilərin istəyi ilə meme kimi yaradılır. Bu lövhələr bir müddət sonra "
+"və həftələrlə heç bir əsas dəyişikliyin olmamasından sonra cansıxıcı ola "
+"bilər və əgər onlar həqiqətən aktiv saxlanılmağa dəyməzsə, biz onları silmək "
+"qərarına gəlirik."
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them in a proper way. Which is "
 "currently only one."
 msgstr ""
-"Burada biz həmin lövhələri düzgün şəkildə arxivləşdirmək üçün toplayırıq "
-"(bu, hazırda yalnız biridir)."
+"Burada biz silinən lövhələri düzgün bir şəkildə arxivləmək üçün yığırıq. "
+"Burada yalnız biridir."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -961,7 +959,7 @@ msgstr "Kanal ayarları"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
-msgstr "Sizə parolunuzu sıfırlamaq üçün təlimatlar olan bir email göndərdik"
+msgstr "Sizə parolunuzu sıfırlamaq üçün təlimatlar olan bir email göndərdik."
 
 #: src/components/windows/ForgotPassword.jsx:69
 msgid "Enter your mail address and we will send you a new password:"
@@ -1014,9 +1012,8 @@ msgid "Save"
 msgstr "Yadda saxla"
 
 #: src/components/TemplateSettings.jsx:57
-#, fuzzy
 msgid "Templates"
-msgstr "Template yüklə"
+msgstr "Şablonlar"
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
@@ -1025,56 +1022,59 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"Sadəcə bir rəng ilə boyamaqdan bezmədiniz mi? Onun yerinə sənət yaradmaq "
+"istəyirsiniz, amma ayrı bir rəsmdən pikselləri saymalısınız? Şablonlar bunda "
+"sizə kömək edə bilər! Şablonlar üst-üstə düşmə kimi görünə bilər və siz do "
+"onların üzərindən çəkə bilərsiniz. Şablonun üzərindəki 1 piksel lövhənin "
+"üzərindəki bir piksel olmalıdır."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Şablonu aç"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Şablonları oyun içində üst-üstə düşmə kimi göstər."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels Zoom"
-msgstr ""
+msgstr "Böyüdəndə Kiçik Piksellər"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
-msgstr ""
+msgstr "Şablonu yüsək böyüdülmədə kiçik fərdi piksellər kimi göstər."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Şablon Şəffaflığı"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Şablonun faiz olaraq şəffaflığı."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "Sağ-Shift Avto-Rəngləmə"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
+msgstr "Tarix yerinə şablondan pikselləri sağ-shift ilə qoy."
 
 #: src/components/TemplateSettings.jsx:149
-#, fuzzy
 msgid "Cancel adding Template"
-msgstr "Template yüklə"
+msgstr "Şablon əlavə etməyi ləğv et"
 
 #: src/components/TemplateSettings.jsx:156
-#, fuzzy
 msgid "Add Template"
-msgstr "Template yüklə"
+msgstr "Şablon əlavə et"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Açıq şablonları xaric et"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr ""
+msgstr "Şablonları daxil et"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1098,7 +1098,7 @@ msgstr "vəya burdan qeydiyyatdan keçin:"
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
-msgstr "Qeydiyyat"
+msgstr "Qeydiyyatdan keçin"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
@@ -1119,7 +1119,7 @@ msgstr "Toplam Sıralama"
 #: src/components/UserAreaContent.jsx:80
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr "Sənin adın :  ${ name }dir"
+msgstr "Sənin adın: ${ name }dir"
 
 #: src/components/UserAreaContent.jsx:86
 msgid "Log out"
@@ -1212,7 +1212,7 @@ msgstr "Nisbəti Qoru"
 
 #: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
-msgstr "Anti Aliasing"
+msgstr "Kənar Yumuşaldma"
 
 #: src/components/Converter.jsx:536
 msgid "Reset"
@@ -1245,7 +1245,7 @@ msgstr "Qrafiklər"
 #: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
 #: src/components/Rankings.jsx:219
 msgid "User"
-msgstr "İstifadəçi "
+msgstr "İstifadəçi"
 
 #: src/components/Rankings.jsx:226
 msgid "Country"
@@ -1375,31 +1375,28 @@ msgid "Canvas"
 msgstr "Löhvə"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
 msgid "Coordinates"
-msgstr "Keçərsiz koordinatlar"
+msgstr "Koordinatlar"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Redaktə et"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Get"
 
 #: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
 msgid "Select File"
-msgstr "Dili seçin"
+msgstr "Faylı seçin"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Şablon Adı"
 
 #: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
 msgid "Delete"
-msgstr "Hesabı silin"
+msgstr "Silin"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1439,7 +1436,7 @@ msgstr "Köhnə parol"
 
 #: src/components/ChangePassword.jsx:96
 msgid "New Password"
-msgstr "Yeni parol"
+msgstr "Yeni Parol"
 
 #: src/components/ChangePassword.jsx:103
 msgid "Confirm New Password"
@@ -1447,7 +1444,7 @@ msgstr "Yeni parolu doğrulayın"
 
 #: src/components/ChangeName.jsx:64
 msgid "New Username"
-msgstr "Yeni ad "
+msgstr "Yeni ad"
 
 #: src/components/ChangeMail.jsx:59
 msgid ""
@@ -1528,10 +1525,12 @@ msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"Hər piksel ərazisini 0-a çevirin (SİZ BUNU ƏSASƏN 0 OLMAYAN ƏRAZİDƏ "
+"ETMƏMƏLİSİNİZ)"
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
-msgstr "Status: İşləmir "
+msgstr "Status: İşləmir"
 
 #: src/components/ModCanvastools.jsx:249
 msgid "Image Upload"
@@ -1546,22 +1545,20 @@ msgid "File"
 msgstr "Fayl"
 
 #: src/components/ModCanvastools.jsx:273
-#, fuzzy
 msgid "Coordinates:"
-msgstr "Keçərsiz koordinatlar"
+msgstr "Koordinatlar:"
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
 msgstr "Pixel Qoruması"
 
 #: src/components/ModCanvastools.jsx:321
-#, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
-"Qoruma sahələrini ayarla         (daha yaxşı dənələnmiş kontrola ehtiyacın "
-"varsa,         şəkil yükləmə vəya alfa qatları ilə qoruma istifadə et)"
+"Qoruma sahələrini ayarla (daha yaxşı dənələnmiş kontrola ehtiyacın varsa, "
+"şəkil yükləmə və alfa qatları ilə qorumadan istifadə et)"
 
 #: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
 #: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
@@ -1743,10 +1740,9 @@ msgid "Shift"
 msgstr "Shift"
 
 #: src/components/windows/Settings.jsx:108
-#, fuzzy
 msgctxt "keybinds"
 msgid "N"
-msgstr "Yox"
+msgstr "N"
 
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
@@ -1756,7 +1752,7 @@ msgstr "M"
 #: src/components/TemplateSettings.jsx:66
 msgctxt "keybinds"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "Gizli Löhvələri göstərin"

@@ -2,17 +2,22 @@
 
 The easiets way to help translate the game is with weblate. Simply use [hosted.weblate.org/projects/pixelplanet](https://hosted.weblate.org/projects/pixelplanet/). Feel free to ask in the Translation section in [our Discord](https://pixelplanet.fun/guilded) if you need help.
 
+Tips for Weblate:
+
+- `Ctrl + Enter` is the shortcut for `Save and Continue` while translationg
+- Manual with a list of shortcuts [is here](https://docs.weblate.org/en/latest/user/translating.html)
+
 If a language code differs from the country code of a wanted flag, it can be defined in the `i18n/lccc.json` file. In example `{ "en": "gb" }` maps the english language to the flag of Great Britain.
 
-[![Translation status](https://hosted.weblate.org/widget/pixelplanet/open-graph.png)](https://hosted.weblate.org/engage/pixelplanet/)
+All translated languages get an own chat channel that just people who use this language can access.
+
+[![Translation status](https://hosted.weblate.org/widget/pixelplanet/multi-auto.svg)](https://hosted.weblate.org/engage/pixelplanet/)
 
 # Translating Offline
 
 Two translation files for each language are needed, `ssr-[locale].po` and `[locale].pb` (i.e. `ssr-de.po` and `de.po`).
 
 Translation files can be created out of the templates [template.pot](https://git.pixelplanet.fun/ppfun/translations/raw/branch/master/template.pot) and [template-ssr.pot](https://git.pixelplanet.fun/ppfun/translations/raw/branch/master/template-ssr.pot). They are standard GNU gettext files and can be edited in any ordinary texteditor or po-Editor.
-
-All translated languages get an own chat channel that just people who use this language can access.
 
 ## With poedit
 

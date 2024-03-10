@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-09 11:55+0000\n"
-"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"PO-Revision-Date: 2024-03-10 21:36+0000\n"
+"Last-Translator: TCr3 <tcreeper.earth@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/tr/>\n"
 "Language: tr\n"
@@ -20,19 +20,19 @@ msgstr "${ canvasName } tuvaline geçildi"
 
 #: src/controls/keypress.js:184
 msgid "Grid ON"
-msgstr "Izgara Açık"
+msgstr "Izgara AÇIK"
 
 #: src/controls/keypress.js:185
 msgid "Grid OFF"
-msgstr "Izgara Kapalı"
+msgstr "Izgara KAPALI"
 
 #: src/controls/keypress.js:195
 msgid "Pixel Notify ON"
-msgstr "Piksel Bildirimi Açık"
+msgstr "Piksel Bildirimleri AÇIK"
 
 #: src/controls/keypress.js:196
 msgid "Pixel Notify OFF"
-msgstr "Piksel Bildirimi Kapalı"
+msgstr "Piksel Bildirimleri KAPALI"
 
 #: src/controls/keypress.js:201
 msgid "Muted Sound"
@@ -49,19 +49,19 @@ msgstr "Kopyalandı!"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr ""
+msgstr "Şablon AÇIK"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Şablon KAPALI"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "Easter Egg AÇIK"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Easter Egg KAPALI"
 
 #: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
 #: src/ui/templateLoader.js:256
@@ -70,7 +70,7 @@ msgstr "Hata :("
 
 #: src/ui/PixelTransferController.js:71
 msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-msgstr "Pixelplanet'den yanıt alınamadı. Sayfayı yenilemeyi deneyebilirsin?"
+msgstr "Pixelplanet'ten yanıt alınamadı. Sayfayı yenilemeyi deneyebilirsin?"
 
 #: src/ui/PixelTransferController.js:103
 msgid "Invalid Canvas"
@@ -107,11 +107,11 @@ msgstr "Geçersiz renk seçildi"
 
 #: src/ui/PixelTransferController.js:123
 msgid "Just for registered Users"
-msgstr "Sadece giriş yapmış üyeler için"
+msgstr "Yalnız giriş yapmış üyeler için"
 
 #: src/ui/PixelTransferController.js:124
 msgid "You have to be logged in to place on this canvas"
-msgstr "Bu tuvalde piksel atabilmek için giriş yapman gerekiyor"
+msgstr "Bu tuvalde çizebilmek için giriş yapmanız gerekiyor"
 
 #: src/ui/PixelTransferController.js:127
 msgid "Place more :)"
@@ -119,7 +119,7 @@ msgstr "Biraz daha piksel at :)"
 
 #: src/ui/PixelTransferController.js:129
 msgid "You can not access this canvas yet. You need to place more pixels"
-msgstr "Henüz bu canvasa erişimin"
+msgstr "Şu anda bu tuvale erişiminiz yok. Daha çok piksel atmanız gerekiyor"
 
 #: src/ui/PixelTransferController.js:132
 msgid "Pixel protected!"
@@ -127,7 +127,7 @@ msgstr "Piksel korunuyor!"
 
 #: src/ui/PixelTransferController.js:139
 msgid "Please prove that you are human"
-msgstr "Lütfen insan olduğunu kanıtla"
+msgstr "Lütfen insan olduğunuzu kanıtlayın"
 
 #: src/ui/PixelTransferController.js:143
 msgid "No Proxies Allowed :("
@@ -143,11 +143,11 @@ msgstr "İzin yok"
 
 #: src/ui/PixelTransferController.js:148
 msgid "Just the Top10 of yesterday can place here"
-msgstr "Sadece dünün en iyi 10 oyuncusu buraya piksel atabilir"
+msgstr "Yalnızca dünün ilk 10 oyuncusu buraya piksel atabilir"
 
 #: src/ui/PixelTransferController.js:151
 msgid "You are weird"
-msgstr "Garipsin"
+msgstr "Değişiksiniz"
 
 #: src/ui/PixelTransferController.js:153
 msgid ""
@@ -158,15 +158,15 @@ msgstr ""
 
 #: src/ui/PixelTransferController.js:156
 msgid "Banned"
-msgstr "Banlandı"
+msgstr "Yasaklandınız"
 
 #: src/ui/PixelTransferController.js:160
 msgid "Range Banned"
-msgstr "Alan banlandı"
+msgstr "Alan Yasaklısınız"
 
 #: src/ui/PixelTransferController.js:161
 msgid "Your Internet Provider is banned from playing this game"
-msgstr "İnternet sağlayıcın oyundan banlandı"
+msgstr "İnternet sağlayıcınız oyundan yasaklandı"
 
 #: src/ui/PixelTransferController.js:164
 msgid "Timeout"
@@ -177,8 +177,8 @@ msgid ""
 "Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
 "persists?"
 msgstr ""
-"Pixelplanet'den yanıt alınamadı. Problem devam ediyorsa sayfayı yenilemeyi "
-"deneyebilirsin."
+"Pixelplanet'ten yanıt alınamadı. Sorun devam ederse sayfayı yenilemeyi "
+"deneyebilirsiniz."
 
 #: src/ui/PixelTransferController.js:169
 msgid "Weird"
@@ -199,7 +199,7 @@ msgstr "Tuval Hatası"
 
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
-msgstr "3 boyutlu tuval işlenemedi, WebGL2 devre dışı mı?"
+msgstr "3D tuval çizilemedi, WebGL2 devre dışı mı?"
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -215,12 +215,12 @@ msgstr "Tamam"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
-msgstr "Çok fazla istek gönderdin"
+msgstr "Çok fazla istek gönderdiniz"
 
 #: src/store/actions/fetch.js:59
 #, javascript-format
 msgid "try again after ${ ti }min"
-msgstr "${ ti }min sonra tekrar deneyin"
+msgstr "${ ti } dakika sonra tekrar deneyin"
 
 #: src/store/actions/fetch.js:70
 #, javascript-format
@@ -229,7 +229,7 @@ msgstr "Bağlantı hatası ${ code } :("
 
 #: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
-msgstr "Sunucuya bağlanılamadı, lütfen tekrar deneyin :("
+msgstr "Sunucuya bağlanılamadı, lütfen daha sonra tekrar deneyiniz :("
 
 #: src/store/actions/fetch.js:151 src/store/actions/fetch.js:170
 #: src/store/actions/fetch.js:189 src/store/actions/fetch.js:208
@@ -239,11 +239,11 @@ msgstr "Bilinmeyen Hata"
 
 #: src/store/actions/fetch.js:237
 msgid "Server answered with gibberish :("
-msgstr "Sunucu anlamsız cevap verdi :("
+msgstr "Sunucu anlamsız yanıt verdi :("
 
 #: src/store/middleware/notifications.js:33
 msgid "Your next pixels are ready"
-msgstr "Sıradaki piksellerin hazır"
+msgstr "Sıradaki pikselleriniz hazır"
 
 #: src/store/middleware/notifications.js:37
 msgid "You can now place more on pixelplanet.fun :)"
@@ -255,24 +255,24 @@ msgstr "senden bahsetti"
 
 #: src/store/middleware/notifications.js:58
 msgid "You have new messages in chat"
-msgstr "Sohbette yeni mesajların var"
+msgstr "Sohbette yeni mesajlarınız var"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
 #: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
 msgid "Copy to Clipboard"
-msgstr "Panoya kopyala"
+msgstr "Panoya Kopyala"
 
 #: src/components/OnlineBox.jsx:40
 msgid "Online Users on Canvas"
-msgstr "Tuvaldeki çevrimiçi oyuncular"
+msgstr "Tuvaldeki Çevrim İçi Oyuncular"
 
 #: src/components/OnlineBox.jsx:47
 msgid "Total Online Users"
-msgstr "Toplam Çevrimiçi Oyuncu"
+msgstr "Toplam Çevrim İçi Oyuncular"
 
 #: src/components/OnlineBox.jsx:55
 msgid "Pixels placed"
-msgstr "Atılan Pikseller"
+msgstr "Atılan pikseller"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -301,7 +301,7 @@ msgstr "Yükleniyor"
 
 #: src/components/HistorySelect.jsx:147
 msgid "Select Date above"
-msgstr "Tarih Giriniz"
+msgstr "Tarih Seçiniz"
 
 #: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
@@ -312,15 +312,15 @@ msgstr "Kapat"
 
 #: src/components/Window.jsx:173
 msgid "PopUp"
-msgstr "PopUp"
+msgstr "Açılır Pencere"
 
 #: src/components/Window.jsx:184
 msgid "Restore"
-msgstr "Yenile"
+msgstr "Geri Getir"
 
 #: src/components/Window.jsx:221
 msgid "Clone"
-msgstr "Klon"
+msgstr "Klonla"
 
 #: src/components/Window.jsx:229
 msgid "Move"
@@ -328,7 +328,7 @@ msgstr "Taşı"
 
 #: src/components/Window.jsx:252
 msgid "Maximize"
-msgstr "Maksimize Et"
+msgstr "Büyüt"
 
 #: src/components/Window.jsx:268
 msgid "Resize"
@@ -366,36 +366,35 @@ msgstr "Paleti Aç"
 
 #: src/components/buttons/PencilButton.jsx:32
 msgid "History Pencil ON"
-msgstr ""
+msgstr "Geçmiş Kalemi AKTİF"
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr ""
+msgstr "Overlay Kalemi AKTİF"
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
-msgstr ""
+msgstr "Kalemi Aktifleştir"
 
 #: src/components/buttons/PencilButton.jsx:69
-#, fuzzy
 msgid "Disable Pencil"
-msgstr "Oyun Seslerini Kapat"
+msgstr "Kalemi Devre Dışı Bırak"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
-msgstr ""
+msgstr "Geçmiş Kalemini Devre Dışı Bırak"
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "Şablon Kalemini Devre Dışı Bırak"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
-msgstr "Üyelik"
+msgstr "Kayıt"
 
 #: src/components/windows/index.js:17
 msgid "Forgot Password"
-msgstr "Parolayı Unut"
+msgstr "Parolamı Unuttum"
 
 #: src/components/windows/index.js:18
 msgid "Chat"
@@ -407,11 +406,11 @@ msgstr "Tuval Arşivi"
 
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Banlandın. Adil olmadığını mı düşünüyorsun? "
+msgstr "Yasaklandınız. Doğru olmadığını mı düşünüyorsunuz? "
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
-msgstr " sayfasını kontrol et."
+msgstr " 'da başvuruda bulunun."
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -424,7 +423,7 @@ msgstr "Hata"
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
-msgstr "Sebep"
+msgstr "Neden"
 
 #: src/components/BanInfo.jsx:91
 msgid "By Mod"
@@ -436,19 +435,19 @@ msgstr "Süre"
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
-msgstr "Banın şu zaman açılıyor "
+msgstr "Yasağınızın kalkacağı zaman "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr " yani kanal süre"
+msgstr " ki bu da şu tarihte "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
-msgstr "Ban kaldırıldı"
+msgstr "Yasak Kaldırıldı"
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."
-msgstr "Bu mesajı gördüğünüze göre artık banlı değilsiniz."
+msgstr "Bu iletiyi gördüğünüze göre artık yasaklı değilsiniz."
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
@@ -456,11 +455,11 @@ msgstr "Neden?"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
-msgstr "Çözmen fazla uzun sürdü, tekrar dene."
+msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
 
 #: src/components/GlobalCaptcha.jsx:50
 msgid "You failed your captcha"
-msgstr "Captcha'yı yanlış çözdün"
+msgstr "Doğrulamayı yanlış çözdünüz"
 
 #: src/components/GlobalCaptcha.jsx:53
 msgid "No or invalid captcha text"
@@ -480,7 +479,7 @@ msgstr "Bilinmeyen Captcha Hatası"
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
-msgstr "İptal Et"
+msgstr "Geri Dön"
 
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
@@ -489,7 +488,7 @@ msgstr "Gönder"
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
 msgstr ""
-"Diğer oyuncularla beraber devasa dünya haritasına renkli pikseller atın!"
+"Diğer oyuncularla beraber büyük bir Dünya haritasında renkli pikseller atın!"
 
 #: src/components/windows/Help.jsx:66
 msgid ""
@@ -617,8 +616,8 @@ msgstr ""
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
-"Farenizin  tekerleğini ${ mouseSymbol } döndürerek veya ${ touchSymbol } iki "
-"parmağınızı kullanarak ile yakınlaşın veya uzaklaşın"
+"Fare tekerini ${ mouseSymbol } veya ${ touchSymbol } iki parmağınızı "
+"kullanarak yakınlaştırın"
 
 #: src/components/windows/Help.jsx:91
 #, javascript-format
@@ -653,9 +652,9 @@ msgstr ""
 "ekrana basılı tutarak orada bulunan pikselin rengini kopyalayın"
 
 #: src/components/windows/Help.jsx:100
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "${ bindQ } veya ${ bindE }'ye tıklayarak yükselin ve alçalın"
+msgstr "${ bindQ } ve ${ bindE } basarak yukarı aşağı gidin"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -706,9 +705,9 @@ msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Top10 paletinin sahibi ${ vinikLink }'dir."
 
 #: src/components/windows/Help.jsx:119
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Top10 paletinin sahibi ${ donendoLink }'dir."
+msgstr "2bit tuvalinin renk paletini ${ donendoLink }'e borçluyuz."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
@@ -730,11 +729,11 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Her Zaman Hareket Kontrollerini Göster"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Her zaman hareket tuşlarını göster"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
@@ -758,7 +757,7 @@ msgstr "Sohbet Bildirimlerini Aç"
 
 #: src/components/windows/Settings.jsx:135
 msgid "Play a sound when new chat messages arrive"
-msgstr "Yeni mesajlar atıldığı zaman bildirim gelmesini sağlar."
+msgstr "Sohbette yeni iletilerde sesle uyar"
 
 #: src/components/windows/Settings.jsx:138
 msgid "Auto Zoom In"
@@ -881,16 +880,16 @@ msgid "Submit"
 msgstr "Onayla"
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Archive of removed canvases can be accessed here:"
 msgstr ""
-"Oynamak istediğin tuvali buradan seçebilirsin. Her tuval farklıdır ve "
-"değişik renk paletlerine, bekleme sürelerine ve gereksinimlere sahiptir. "
-"Kapatılmış tuvallerin arşivine buradan ulaşabilirsiniz:"
+"Kullanmak istediğiniz tuvali buradan seçiniz.\n"
+"Her tuval özgün olup farklı renk paletleri, bekleme süreleri ve "
+"gereksinimleri vardır.\n"
+"Kaldırılmış tuvallerin arşivine buradan ulaşabilirsiniz:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -898,29 +897,27 @@ msgstr "Arşiv"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Eski Tuvaller (yalnız geçmiş)"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who currently like a meme. Those canvases can get "
 "boring after a while and after weeks of no major change and if they really "
 "aren't worth being kept active."
 msgstr ""
-"Bazı tuvaller eğlence amaçlı başlar ve oyuncular tarafından büyük ilgi "
-"görür. Bu tuvaller bir süre sonra sıkıcı olmaya başlar ve daha az oynanır, "
-"böyle olduğu zaman tuvalleri devre dışı bırakırız. Devre dışı bıraktığımız "
-"tuvalleri silmek yerine onları burada arşivleriz."
+"Tuvalleri genelde kaldırmayız, ancak bazı eğlence amaçlı çıkarılan veya "
+"mevcut bir akımdan dolayı kullanıcıların isteğiyle açılan tuvaller bir süre "
+"sonra sıkıcı hale gelebilir ve haftalarca önemli bir değişiklik yaşanmadan "
+"durabilir. Bu tuvalleri ise biz oyundan kaldırırız."
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them in a proper way. Which is "
 "currently only one."
 msgstr ""
-"İşte burada tuvalleri oldukları gibi arşivliyoruz (şimdilik sadece bir tane "
-"arşivlenmiş tuvalimiz var)."
+"Burada kaldırılan tuvallerimizin arşivleri mevcuttur (ki şimdilik yalnzıca "
+"bir tane vardır)."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -1022,9 +1019,8 @@ msgid "Save"
 msgstr "Kaydet"
 
 #: src/components/TemplateSettings.jsx:57
-#, fuzzy
 msgid "Templates"
-msgstr "Şablonu İndir"
+msgstr "Şablonlar"
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
@@ -1033,48 +1029,51 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"Sürekli tek bir renk atmaktan sıkıldın mı? Bir çizim yapmak istedin ancak "
+"piksel sayarak çizmek istemiyor musun? Şablonlar sana bu konuda yardım "
+"olacak! Şablonlar tuvalin üzerinde istediğiniz resmi koymanızı ve böylece "
+"rahatlıkla çizim yapmanızı sağlar. Şablondaki bir piksel tuvaldeki bir "
+"piksele denk gelecektir."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Overlay'i Etkinleştir"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Şablonları tuval üzerinde göster."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels Zoom"
-msgstr ""
+msgstr "Yakınlaştırmada Pikselleri Küçült"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
-msgstr ""
+msgstr "Büyük ölçeklerde şablonun piksellerini küçük kareler halinde göster."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Overlay Opaklığı"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Overlay'in yüzde olarak opaklığı."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "Sağ-Shift ile Otomatik Boyama"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
+msgstr "Sağ-shift ile şablondan otomatik boya, geçmiş yerine."
 
 #: src/components/TemplateSettings.jsx:149
-#, fuzzy
 msgid "Cancel adding Template"
-msgstr "Şablonu İndir"
+msgstr "Şablon Eklemekten Vazgeç"
 
 #: src/components/TemplateSettings.jsx:156
-#, fuzzy
 msgid "Add Template"
-msgstr "Şablonu İndir"
+msgstr "Şablon Ekle"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
@@ -1172,7 +1171,7 @@ msgstr "Resim Dönüştürücüsü"
 
 #: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
-msgstr "Yüklediğiniz resimdeki renkleri oyuna uygun renklere dönüştürür."
+msgstr "Bir çizimi tuval renklerine çevir"
 
 #: src/components/Converter.jsx:261
 msgid "Choose Strategy"
@@ -1220,7 +1219,7 @@ msgstr "Oranı Koru"
 
 #: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
-msgstr "Anti Aliasing"
+msgstr "Kenar Yumuşatma"
 
 #: src/components/Converter.jsx:536
 msgid "Reset"
@@ -1385,9 +1384,8 @@ msgid "Canvas"
 msgstr "Tuval"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
 msgid "Coordinates"
-msgstr "Geçersiz Koordinatlar"
+msgstr "Kordinatlar"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
@@ -1398,18 +1396,16 @@ msgid "Go to"
 msgstr "Git"
 
 #: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
 msgid "Select File"
-msgstr "Dil Seç"
+msgstr "Dosya Seç"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
 msgstr "Şablon Adı"
 
 #: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
 msgid "Delete"
-msgstr "Hesabı Sil"
+msgstr "Sil"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1538,6 +1534,8 @@ msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"Bir bölgedeki bütün pikselleri 0'a çevir. (BUNU ZATEN ÇOĞUNLUKLA 0 OLMAYAN "
+"BİR BÖLGEDE YAPMAMALISIN)"
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
@@ -1556,22 +1554,20 @@ msgid "File"
 msgstr "Dosya"
 
 #: src/components/ModCanvastools.jsx:273
-#, fuzzy
 msgid "Coordinates:"
-msgstr "Geçersiz Koordinatlar"
+msgstr "Kordinatlar:"
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
 msgstr "Piksel Koruması"
 
 #: src/components/ModCanvastools.jsx:321
-#, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
-"Koruma alanlarını ayarla         (eğer daha iyi tanelenmiş kontrole "
-"ihtiyacın varsa,         resim yükleme ve alfa katmanlarla koruma kullan)"
+"Alanları korumaya ayarla (eğer daha hassas kontrole ihtiyacın varsa, resim "
+"yüklemeyle ve alfa katmanlarıyla korumayı kullan)"
 
 #: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
 #: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
@@ -1751,10 +1747,9 @@ msgid "Shift"
 msgstr "Shift"
 
 #: src/components/windows/Settings.jsx:108
-#, fuzzy
 msgctxt "keybinds"
 msgid "N"
-msgstr "Hayır"
+msgstr "N"
 
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"

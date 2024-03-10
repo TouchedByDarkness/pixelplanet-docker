@@ -2,21 +2,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: ro_RO\n"
+"PO-Revision-Date: 2024-03-10 19:37+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"Language-Team: Romanian <https://hosted.weblate.org/projects/pixelplanet/"
+"client/ro/>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && "
-"n%100<=19) ? 1 : 2);\n"
-"X-Generator: Poedit 3.3.1\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
 msgid "Switched to ${ canvasName }"
-msgstr "Schimbat canvasul la ${ canvasName }"
+msgstr "Schimbat canvasul la ${ numeleConvasului }"
 
 #: src/controls/keypress.js:184
 msgid "Grid ON"
@@ -49,19 +50,19 @@ msgstr "Copiat!"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr ""
+msgstr "Overlay Activat"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Overlay Dezactivat"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "Caracteristici Ascunse Activat"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Caracteristici Ascunse Dezactivat"
 
 #: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
 #: src/ui/templateLoader.js:256
@@ -80,7 +81,7 @@ msgstr "Canvas Invalid"
 
 #: src/ui/PixelTransferController.js:104
 msgid "This canvas doesn't exist"
-msgstr "Acest Canvas nu există."
+msgstr "Acest Canvas nu există"
 
 #: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
 #: src/ui/PixelTransferController.js:115
@@ -113,7 +114,7 @@ msgstr "Doar pentru Utilizatorii înregistrați"
 
 #: src/ui/PixelTransferController.js:124
 msgid "You have to be logged in to place on this canvas"
-msgstr "Trebuie să fii logat pentru a pune pe acest canvas"
+msgstr "Trebuie să fii conectat pentru a pune pe acest canvas"
 
 #: src/ui/PixelTransferController.js:127
 msgid "Place more :)"
@@ -203,11 +204,11 @@ msgstr "Nu s-a putut face canvasul 3D, ai WebGL2 oprit?"
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "Nu se poate exporta mai mult de 20 sau nici una de șablon(e)!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr ""
+msgstr "Nu se pot importa mai mult de 20 sau niciun șablon(e)!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -366,28 +367,27 @@ msgstr "Deschide Paleta"
 
 #: src/components/buttons/PencilButton.jsx:32
 msgid "History Pencil ON"
-msgstr ""
+msgstr "Creion de istorie Activat"
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr ""
+msgstr "Creion de Overlay Activat"
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
-msgstr ""
+msgstr "Activează Creaionul"
 
 #: src/components/buttons/PencilButton.jsx:69
-#, fuzzy
 msgid "Disable Pencil"
-msgstr "Oprește suntelele jocului"
+msgstr "Dezactivează Creionul"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
-msgstr ""
+msgstr "Creion de istorie Dezactivat"
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "Dezactivează Creion de Overlay"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -407,11 +407,11 @@ msgstr "Arhivă de canvas"
 
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Ești banat. Crezi că este nejustificată? Intră pe "
+msgstr "Ești banat. Crezi că este nejustificată? Intră pe . "
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
-msgstr " la cum să dai appeal."
+msgstr " •la cum să dai appeal."
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -436,11 +436,11 @@ msgstr "Durata"
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
-msgstr "Banul tău expiră la "
+msgstr "Banul tău expiră la• "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr " care este în "
+msgstr " •care este în• "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
@@ -524,7 +524,7 @@ msgstr "recomandat"
 
 #: src/components/windows/Help.jsx:71
 msgid "Source on "
-msgstr "Sursă pe "
+msgstr "Sursă pe• "
 
 #: src/components/windows/Help.jsx:72
 msgid "Map Data"
@@ -644,9 +644,9 @@ msgstr ""
 "${ touchSymbol } apasă lung pentru a selecta culoarea unde este cursorul"
 
 #: src/components/windows/Help.jsx:100
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Apasă ${ bindQ } și ${ bindE } pentru a da zoom în sus și în jos"
+msgstr "Apasă ${ bindQ } și ${ bindE } pentru a zbura în sus și în jos"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -696,9 +696,9 @@ msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Credit pentru Paleta de pe Top10 se duce la ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:119
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Credit pentru Paleta de pe Top10 se duce la ${ donendoLink }."
+msgstr "Credit pentru Paleta de pe 2bit se duce la ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
@@ -718,11 +718,11 @@ msgstr "Arată cercurile unde pixelii sunt puși."
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Totdeauna arată Controalele de Mișcare"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Totdeauna arată butoanele Controalelor de Mișcare"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
@@ -869,16 +869,15 @@ msgid "Submit"
 msgstr "Încarcă"
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Archive of removed canvases can be accessed here:"
 msgstr ""
-"Selectează canvasul pe care vrei să îl folosești. Fiecare canvas este unic "
-"și are palete diferite, cooldownuri și obligații. Arhiva canvasurilor "
-"închise poate fi accesată aici:"
+"Selectează canvasul pe care vrei să îl folosești. \n"
+"Fiecare canvas este unic și are palete diferite, cooldownuri și obligații. \n"
+"Arhiva canvasurilor închise poate fi accesată aici:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -886,30 +885,27 @@ msgstr "Arhivă"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Convasuri retrase (doar istorie)"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who currently like a meme. Those canvases can get "
 "boring after a while and after weeks of no major change and if they really "
 "aren't worth being kept active."
 msgstr ""
-"Deși avem tendința de a nu șterge canvasurile, unele canvasuri sunt pornite "
-"pentru distracție sau ca o solicitare a utilizatorilor cărora le place în "
-"prezent un meme. Acele canvasuri pot deveni plictisitoare după un timp și "
-"după săptămâni fără schimbări majore și dacă într-adevăr nu merită să fie "
-"menținute active, decidem să le eliminăm."
+"Deși avem tendința de a nu șterge pânzele, unele pânze sunt pornite pentru "
+"distracție sau ca o solicitare a utilizatorilor cărora le place în prezent "
+"un meme. Acele pânze pot deveni plictisitoare după un timp și după săptămâni "
+"fără schimbări majore și dacă într-adevăr nu merită să fie menținute active."
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them in a proper way. Which is "
 "currently only one."
 msgstr ""
-"Aici colectăm toate canvasurile pentru a le arhiva într-o cale ca lumea "
-"(care este momentan doar una)."
+"Aici colectăm toate canvasurile pentru a le arhiva într-o cale ca lumea ("
+"care este momentan doar una)."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -1008,9 +1004,8 @@ msgid "Save"
 msgstr "Salvează"
 
 #: src/components/TemplateSettings.jsx:57
-#, fuzzy
 msgid "Templates"
-msgstr "Descarcă Templateul"
+msgstr "Șabloane"
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
@@ -1019,56 +1014,59 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"V-ați săturat să trimiteți întotdeauna spam la o singură culoare? În schimb, "
+"doriți să creați artă, dar trebuie să numărați pixelii din altă imagine? "
+"Șabloanele vă pot ajuta cu asta! Șabloanele se pot afișa ca suprapunere și "
+"puteți desena peste ele. Un pixel pe șablon, ar trebui să fie un pixel pe "
+"pânză."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Activează Overlay-ul"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Arată șablonul ca Overlay ingame."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels Zoom"
-msgstr ""
+msgstr "Zoom cu Pixeli Mici"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
-msgstr ""
+msgstr "Arată Overlay-ul ca pixeli individuali mici la niveluri mari de zoom."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Opacitate de Overlay"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Opacitate de Overlay în procente."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "Schift-Dreapta Auto-colorare"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
+msgstr "Pune pixeli de pe Overlay pe shift-dreapta, în loc de istoric."
 
 #: src/components/TemplateSettings.jsx:149
-#, fuzzy
 msgid "Cancel adding Template"
-msgstr "Descarcă Templateul"
+msgstr "Anulează adăugarea șablonului"
 
 #: src/components/TemplateSettings.jsx:156
-#, fuzzy
 msgid "Add Template"
-msgstr "Descarcă Templateul"
+msgstr "Încarcă Templateul"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Exportă șabloanele activate"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr ""
+msgstr "Iportează șabloane"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1269,7 +1267,7 @@ msgstr "Emailul trebuie să conțină cel puțin un punct"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "Emailul trebuie să conțină un @"
+msgstr "Emailul trebuie să conțină un \"@\""
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
@@ -1371,31 +1369,28 @@ msgid "Canvas"
 msgstr "Canvas"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
 msgid "Coordinates"
-msgstr "Coordonate invalide"
+msgstr "Coordonate"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Schimbă"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Mergi la"
 
 #: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
 msgid "Select File"
-msgstr "Selectează limba"
+msgstr "Selectează Fișier"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Numele Șablon"
 
 #: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
 msgid "Delete"
-msgstr "Șterge Contul"
+msgstr "Șterge"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1450,8 +1445,8 @@ msgid ""
 "Changed Mail successfully. We sent you a verification mail,             "
 "please verify your new mail address."
 msgstr ""
-"Schimbat Mailul cu success. Am trimis un mail de verificare,             te "
-"rog să îți verifici noua adresă de mail."
+"Schimbat Mailul cu success. Am trimis un mail de verificare,………… te rog să "
+"îți verifici noua adresă de mail."
 
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
@@ -1525,6 +1520,8 @@ msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"Întoarce fiecare pixel din zonă la 0 (CHIAR NU TREBUIE SĂ FACI ASTA ÎN NICIO "
+"ZONA CARE NU ESTE DEJA 0)"
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
@@ -1543,23 +1540,20 @@ msgid "File"
 msgstr "Filă"
 
 #: src/components/ModCanvastools.jsx:273
-#, fuzzy
 msgid "Coordinates:"
-msgstr "Coordonate invalide"
+msgstr "Coordonate:"
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
 msgstr "Protejare de Pixeli"
 
 #: src/components/ModCanvastools.jsx:321
-#, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
-"Setați protecția zonelor          (dacă ai nevoie de un control cu ​"
-"granulație mai fină,          utilizați protecția cu încărcarea imaginilor "
-"și straturi alpha)"
+"Setați protecția zonelor (dacă ai nevoie de un control cu granulație mai "
+"fină, utilizați protecția cu încărcarea imaginilor și straturi alpha)"
 
 #: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
 #: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
@@ -1739,10 +1733,9 @@ msgid "Shift"
 msgstr "Shift"
 
 #: src/components/windows/Settings.jsx:108
-#, fuzzy
 msgctxt "keybinds"
 msgid "N"
-msgstr "Nu"
+msgstr "N"
 
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
@@ -1752,7 +1745,7 @@ msgstr "M"
 #: src/components/TemplateSettings.jsx:66
 msgctxt "keybinds"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "Arată Canvasurile Ascunse"

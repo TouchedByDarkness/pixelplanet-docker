@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-10 17:53+0000\n"
+"Last-Translator: Ahoura <ahoura053@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/pixelplanet/"
+"client/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
@@ -19,27 +20,27 @@ msgstr ""
 
 #: src/controls/keypress.js:184
 msgid "Grid ON"
-msgstr ""
+msgstr "Cuadrícula activa"
 
 #: src/controls/keypress.js:185
 msgid "Grid OFF"
-msgstr ""
+msgstr "cuadrícula apagada"
 
 #: src/controls/keypress.js:195
 msgid "Pixel Notify ON"
-msgstr ""
+msgstr "Notificación de píxeles activada"
 
 #: src/controls/keypress.js:196
 msgid "Pixel Notify OFF"
-msgstr ""
+msgstr "Notificación de píxeles desactivada"
 
 #: src/controls/keypress.js:201
 msgid "Muted Sound"
-msgstr ""
+msgstr "Sonido silenciado"
 
 #: src/controls/keypress.js:202
 msgid "Unmuted Sound"
-msgstr ""
+msgstr "Sonido no silenciado"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
@@ -48,19 +49,19 @@ msgstr "¡Copiado!"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr ""
+msgstr "Superposición activada"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Superposición desactivada"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "Huevo de Pascua encendido"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Huevo de Pascua APAGADO"
 
 #: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
 #: src/ui/templateLoader.js:256
@@ -138,36 +139,38 @@ msgstr "Estas usando un Proxy."
 
 #: src/ui/PixelTransferController.js:147
 msgid "Not allowed"
-msgstr ""
+msgstr "No permitido"
 
 #: src/ui/PixelTransferController.js:148
 msgid "Just the Top10 of yesterday can place here"
-msgstr ""
+msgstr "Sólo el Top10 de ayer puede situarse aquí."
 
 #: src/ui/PixelTransferController.js:151
 msgid "You are weird"
-msgstr ""
+msgstr "Eres raro"
 
 #: src/ui/PixelTransferController.js:153
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
+"El servidor se confundió con tus píxeles. ¿Estás jugando en varios "
+"dispositivos?"
 
 #: src/ui/PixelTransferController.js:156
 msgid "Banned"
-msgstr ""
+msgstr "Prohibido"
 
 #: src/ui/PixelTransferController.js:160
 msgid "Range Banned"
-msgstr ""
+msgstr "Rango prohibido"
 
 #: src/ui/PixelTransferController.js:161
 msgid "Your Internet Provider is banned from playing this game"
-msgstr ""
+msgstr "Su proveedor de Internet tiene prohibido jugar a este juego."
 
 #: src/ui/PixelTransferController.js:164
 msgid "Timeout"
-msgstr ""
+msgstr "Se acabó el tiempo"
 
 #: src/ui/PixelTransferController.js:166
 #, fuzzy
@@ -187,7 +190,7 @@ msgstr "No se pudo colocar el Píxel"
 #: src/ui/PixelTransferController.js:175
 #, javascript-format
 msgid "Error ${ retCode }"
-msgstr "Error  ${ retCode }"
+msgstr "Error ${ retCode }"
 
 #: src/ui/rendererFactory.js:31
 #, fuzzy
@@ -196,11 +199,11 @@ msgstr "Archivo de Lienzos"
 
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
-msgstr ""
+msgstr "No se puede renderizar el lienzo 3D. ¿Tienes WebGL2 deshabilitado?"
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "¡No se pueden exportar más de 20 o ninguna plantilla!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
@@ -241,19 +244,19 @@ msgstr "El servidor ha respondido con sinsentido :("
 
 #: src/store/middleware/notifications.js:33
 msgid "Your next pixels are ready"
-msgstr ""
+msgstr "Tus próximos píxeles están listos"
 
 #: src/store/middleware/notifications.js:37
 msgid "You can now place more on pixelplanet.fun :)"
-msgstr ""
+msgstr "Ahora puedes colocar más en pixelplanet.fun :)"
 
 #: src/store/middleware/notifications.js:54
 msgid "mentioned you"
-msgstr ""
+msgstr "te mencionó"
 
 #: src/store/middleware/notifications.js:58
 msgid "You have new messages in chat"
-msgstr ""
+msgstr "Tienes nuevos mensajes en el chat."
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
 #: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
@@ -262,11 +265,11 @@ msgstr "Copia al Portapapeles"
 
 #: src/components/OnlineBox.jsx:40
 msgid "Online Users on Canvas"
-msgstr ""
+msgstr "Usuarios en línea en Canvas"
 
 #: src/components/OnlineBox.jsx:47
 msgid "Total Online Users"
-msgstr ""
+msgstr "Total de usuarios en línea"
 
 #: src/components/OnlineBox.jsx:55
 msgid "Pixels placed"
@@ -312,19 +315,19 @@ msgstr "Cerrar"
 
 #: src/components/Window.jsx:173
 msgid "PopUp"
-msgstr ""
+msgstr "Surgir"
 
 #: src/components/Window.jsx:184
 msgid "Restore"
-msgstr ""
+msgstr "Restaurar"
 
 #: src/components/Window.jsx:221
 msgid "Clone"
-msgstr ""
+msgstr "Clon"
 
 #: src/components/Window.jsx:229
 msgid "Move"
-msgstr ""
+msgstr "Mover"
 
 #: src/components/Window.jsx:252
 #, fuzzy
@@ -333,7 +336,7 @@ msgstr "maximizar"
 
 #: src/components/Window.jsx:268
 msgid "Resize"
-msgstr ""
+msgstr "Cambiar tamaño"
 
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
 #: src/components/windows/index.js:13
@@ -513,7 +516,7 @@ msgstr ""
 "globo en la parte superior). Algunos lienzos tienen un enfriamiento "
 "diferente para reemplazar píxeles colocados por jugadores que para "
 "reemplazar píxeles nuevos, por ejemplo 4s/7s significa 4s para píxeles "
-"frescos y 7s en  píxeles ya colocados."
+"frescos y 7s en píxeles ya colocados."
 
 #: src/components/windows/Help.jsx:67
 msgid ""
@@ -593,7 +596,7 @@ msgstr "Presiona ${ bindR } para copiar las coordenadas"
 #: src/components/windows/Help.jsx:86
 #, javascript-format
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
-msgstr "Presiona ${ bindQ } o ${ bindE } para cambiar  el zoom"
+msgstr "Presiona ${ bindQ } o ${ bindE } para cambiar el zoom"
 
 #: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
 #, javascript-format
@@ -1162,7 +1165,7 @@ msgstr "Descarga de Paleta"
 #: src/components/Converter.jsx:220
 #, javascript-format
 msgid "Palette for ${ gimpLink }"
-msgstr "Paleta para  ${ gimpLink }"
+msgstr "Paleta para ${ gimpLink }"
 
 #: src/components/Converter.jsx:241
 msgid "Image Converter"
@@ -1574,8 +1577,8 @@ msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
-"Configurar protección de áreas         (si necesitas control granular más "
-"fino,         utiliza la protección con subida de imagen y capas alpha)"
+"Configurar protección de áreas (si necesitas control granular más fino, "
+"utiliza la protección con subida de imagen y capas alpha)"
 
 #: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
 #: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176

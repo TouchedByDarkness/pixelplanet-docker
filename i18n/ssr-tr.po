@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-09 11:55+0000\n"
-"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"PO-Revision-Date: 2024-03-10 21:36+0000\n"
+"Last-Translator: TCr3 <tcreeper.earth@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "server/tr/>\n"
 "Language: tr\n"
@@ -209,7 +209,7 @@ msgstr "Yeni Parolayı Onayla"
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr "Gönder"
+msgstr "Onayla"
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
@@ -245,11 +245,11 @@ msgstr "Kullanıcı adı kullanımda."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr "Fazla uzun sürdü, tekrar dene."
+msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
-msgstr "Captcha'yı yanlış girdin"
+msgstr "Doğrulamayı yanlış çözdünüz"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"

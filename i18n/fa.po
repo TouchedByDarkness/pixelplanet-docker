@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-10 17:53+0000\n"
+"Last-Translator: Ahoura <ahoura053@gmail.com>\n"
+"Language-Team: Persian <https://hosted.weblate.org/projects/pixelplanet/"
+"client/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
@@ -48,29 +49,28 @@ msgstr "کپی شد!"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr ""
+msgstr "اورلی روشن است"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr ""
+msgstr "اورلی خاموش است"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "حالت ایستر اگ روشن است"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "ایستر اگ خاموش است"
 
 #: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
 #: src/ui/templateLoader.js:256
 msgid "Error :("
-msgstr "نشد :("
+msgstr "ارور داد سید"
 
 #: src/ui/PixelTransferController.js:71
 msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-msgstr ""
-"انگاری هیچ پاسخی از خود سایت نیومده. نظرت چیه که سایت رو دوباره باز کنی؟"
+msgstr "سید توطئه کردی؟ از سایت جوابی نگرفتیم سید، فکر کنم رفرش کنی درست بشه"
 
 #: src/ui/PixelTransferController.js:103
 msgid "Invalid Canvas"
@@ -125,42 +125,45 @@ msgstr ""
 
 #: src/ui/PixelTransferController.js:132
 msgid "Pixel protected!"
-msgstr "این پیکسل تحت حفاظت است!"
+msgstr "ادمین ها بهت اجازه نمیدند اینجا پیکسل بذاری، محافظت شده"
 
 #: src/ui/PixelTransferController.js:139
 msgid "Please prove that you are human"
-msgstr "خواهش میکنم که ثابت کن که انسان هستی سید"
+msgstr "اثبات کن که انسان هستی سید"
 
 #: src/ui/PixelTransferController.js:143
 msgid "No Proxies Allowed :("
-msgstr "داداش فیلترشکنت رو خاموش کن :("
+msgstr ""
+"مگه تورکی پروکسی میزنی؟ اگر وی پی انت روشنه یا پروکسیت روشنه خاموش کن سریع"
 
 #: src/ui/PixelTransferController.js:144
 msgid "You are using a Proxy."
-msgstr "داری از فیلترشکن استفاده میکنی؟ نگران نباش سایت فیلتر نیست :)"
+msgstr ""
+"داری از فیلترشکن استفاده میکنی؟ نگران نباش سایت فیلتر نیست، البته نمیدونم "
+"فردا فیلتره یا نه"
 
 #: src/ui/PixelTransferController.js:147
 msgid "Not allowed"
-msgstr "قابل قبول نیست"
+msgstr "قابل قبول نیست سید"
 
 #: src/ui/PixelTransferController.js:148
 msgid "Just the Top10 of yesterday can place here"
-msgstr "فقط تاپ 10 ها میتونن اینجا پیکسل بزارن"
+msgstr "فقط تاپ 10 ها میتونن اینجا فعالیت کنند سید"
 
 #: src/ui/PixelTransferController.js:151
 msgid "You are weird"
-msgstr "عجیب بازی در نیار"
+msgstr "سید داری یاهود بازی در میاری؟"
 
 #: src/ui/PixelTransferController.js:153
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
-"انقدر پیکسل های قاطی پاتی گذاشتی سایت هنگ کرد. داری از چندتا دستگاه استفاده "
-"میکنی؟"
+"انقدر پیکسل گذاشتی سایت به خاک رفت سید، داری از چندتا گوشی استفاده میکنی؟ "
+"اگر کیا داره اینو میخونه باید بگم هنوز کونی هستی سید"
 
 #: src/ui/PixelTransferController.js:156
 msgid "Banned"
-msgstr "بن شدی سید"
+msgstr "بن شدی سید، بهت گفتیم یاهود بازی در نیار"
 
 #: src/ui/PixelTransferController.js:160
 msgid "Range Banned"
@@ -168,19 +171,17 @@ msgstr "رنج بن شدی سید"
 
 #: src/ui/PixelTransferController.js:161
 msgid "Your Internet Provider is banned from playing this game"
-msgstr "ارائه دهنده اینترنت تو حق بازی این سایت رو نداره"
+msgstr "اینترنت و آیپی تو حق بازی نداره"
 
 #: src/ui/PixelTransferController.js:164
 msgid "Timeout"
-msgstr "تایم اوت خوردی سید"
+msgstr "سید سایتو پاره کردی تابم اوت خوردی، رفرش کن"
 
 #: src/ui/PixelTransferController.js:166
 msgid ""
 "Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
 "persists?"
-msgstr ""
-"جوابی از سایت بهمون نرسیده. ببین اگر این مشکل باز تکرار شد سایت رو ببند "
-"دوباره باز کن؟"
+msgstr "هیچ جوابی از سایت نگرفتیم ، رفرش کن"
 
 #: src/ui/PixelTransferController.js:169
 msgid "Weird"
@@ -205,7 +206,7 @@ msgstr "داداش بوم سه بعدی رندر نشد. WebGL2 رو غیر فع
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "نمی توان بیش از 20 یا بدون قالب صادر کرد!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
@@ -274,7 +275,7 @@ msgstr "تمام یوزر های آنلاین"
 
 #: src/components/OnlineBox.jsx:55
 msgid "Pixels placed"
-msgstr "پیکسل ها گذاشته شد"
+msgstr "تعداد پیکسل هایی که گذاشتی"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19

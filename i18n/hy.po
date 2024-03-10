@@ -2,65 +2,66 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-10 20:10+0000\n"
+"Last-Translator: Alen <alen.mankyan7@gmail.com>\n"
+"Language-Team: Armenian <https://hosted.weblate.org/projects/pixelplanet/"
+"client/hy/>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
 msgid "Switched to ${ canvasName }"
-msgstr ""
+msgstr "Տեղափոխվեց ${ canvasName } կտավին"
 
 #: src/controls/keypress.js:184
 msgid "Grid ON"
-msgstr ""
+msgstr "Ցանցը միացված է"
 
 #: src/controls/keypress.js:185
 msgid "Grid OFF"
-msgstr ""
+msgstr "Ցանցը անջատված է"
 
 #: src/controls/keypress.js:195
 msgid "Pixel Notify ON"
-msgstr ""
+msgstr "Պիքսելի ակտիվությունը միացված է"
 
 #: src/controls/keypress.js:196
 msgid "Pixel Notify OFF"
-msgstr ""
+msgstr "Պիքսելի ակտիվությունը անջատված է"
 
 #: src/controls/keypress.js:201
 msgid "Muted Sound"
-msgstr ""
+msgstr "Ձայնը անջատված է"
 
 #: src/controls/keypress.js:202
 msgid "Unmuted Sound"
-msgstr ""
+msgstr "Ձայնը միացված է"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
 msgid "Copied!"
-msgstr "Պատճենված է"
+msgstr "Պատճենվա՛ծ է:"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr ""
+msgstr "Օվերլայը միացված է"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Օվերլայը անջատված է"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "Հուշումները միացված են"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Հուշումները անջատված են"
 
 #: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
 #: src/ui/templateLoader.js:256
@@ -70,11 +71,11 @@ msgstr "Սխալ :("
 # Թարքմանել է Նարեկ Ադամյանը ։)
 #: src/ui/PixelTransferController.js:71
 msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-msgstr "Pixelplanet-ից պատասխան չկա: Գուցե փորձե՞ք թարմացնել էջը:"
+msgstr "Pixelplanet-ը չի արձագանքում: Գուցե փորձեք թարմացնել էջը:"
 
 #: src/ui/PixelTransferController.js:103
 msgid "Invalid Canvas"
-msgstr "Անվավեր կտավ"
+msgstr "Սխալ կտավ"
 
 #: src/ui/PixelTransferController.js:104
 msgid "This canvas doesn't exist"
@@ -99,7 +100,7 @@ msgstr "z սահմաններից դուրս է"
 
 #: src/ui/PixelTransferController.js:119
 msgid "Wrong Color"
-msgstr "Սխալ գույն է"
+msgstr "Սխալ գույն"
 
 #: src/ui/PixelTransferController.js:120
 msgid "Invalid color selected"
@@ -107,15 +108,15 @@ msgstr "Ընտրված է անվավեր գույն"
 
 #: src/ui/PixelTransferController.js:123
 msgid "Just for registered Users"
-msgstr "Մենակ գրանցված օգտվողների համար"
+msgstr "Միայն գրանցված օգտատերերի համար"
 
 #: src/ui/PixelTransferController.js:124
 msgid "You have to be logged in to place on this canvas"
-msgstr "Այս կտավի վրա պիքսել տղադրելու համար հարկավոր է մուտք գործել համակարգ"
+msgstr "Այս կտավի վրա պիքսել տեղադրելու համար հարկավոր է մուտք գործել համակարգ"
 
 #: src/ui/PixelTransferController.js:127
 msgid "Place more :)"
-msgstr "Տեղադրել ավելին :)"
+msgstr "Տեղադրեք ավելին :)"
 
 #: src/ui/PixelTransferController.js:129
 msgid "You can not access this canvas yet. You need to place more pixels"
@@ -125,60 +126,59 @@ msgstr ""
 
 #: src/ui/PixelTransferController.js:132
 msgid "Pixel protected!"
-msgstr "Պիքսելը պաշտպանված է՛"
+msgstr "Պիքսելը պաշտպանվա՜ծ է:"
 
 #: src/ui/PixelTransferController.js:139
 msgid "Please prove that you are human"
-msgstr ""
+msgstr "Հաստատեք, որ մարդ եք"
 
 #: src/ui/PixelTransferController.js:143
 msgid "No Proxies Allowed :("
-msgstr "Պրոքսի թույլատրված չէ :("
+msgstr "Proxy թույլատրված չէ :("
 
 #: src/ui/PixelTransferController.js:144
 msgid "You are using a Proxy."
-msgstr "Դուք օգտագործում եք պրոքսի"
+msgstr "Դուք օգտագործում եք Proxy:"
 
 #: src/ui/PixelTransferController.js:147
 msgid "Not allowed"
-msgstr ""
+msgstr "Թույլատրված չէ"
 
 #: src/ui/PixelTransferController.js:148
 msgid "Just the Top10 of yesterday can place here"
-msgstr ""
+msgstr "Միայն երեկվա թոփ 10-ը կարող են այստեղ պիքսել դնել"
 
 #: src/ui/PixelTransferController.js:151
 msgid "You are weird"
-msgstr ""
+msgstr "Դուք տարօրինակ եք"
 
 #: src/ui/PixelTransferController.js:153
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
-msgstr ""
+msgstr "Սերվերը ձեր պիքսելներից շփոթվել: է Դուք մի քանի սարքով ե՞ք խաղում:"
 
 #: src/ui/PixelTransferController.js:156
 msgid "Banned"
-msgstr ""
+msgstr "Դուք արգելափակված եք"
 
 #: src/ui/PixelTransferController.js:160
 msgid "Range Banned"
-msgstr ""
+msgstr "Ձեր տարածքն արգելված է"
 
 #: src/ui/PixelTransferController.js:161
 msgid "Your Internet Provider is banned from playing this game"
-msgstr ""
+msgstr "Ձեր ինտերնետ պրովայդեռը խաղում արգելափակված է"
 
 #: src/ui/PixelTransferController.js:164
 msgid "Timeout"
-msgstr ""
+msgstr "Ընդմիջում"
 
 # Թարքմանել է Նարեկ Ադամյանը ։)
 #: src/ui/PixelTransferController.js:166
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
 "persists?"
-msgstr "Pixelplanet-ից պատասխան չկա: Գուցե փորձե՞ք թարմացնել էջը:"
+msgstr "Pixelplanet-ից պատասխան չկա։ Փորձեք թարմացնել էջը, եթե խնդիրը չվերանա:"
 
 #: src/ui/PixelTransferController.js:169
 msgid "Weird"
@@ -194,21 +194,20 @@ msgid "Error ${ retCode }"
 msgstr "Սխալ ${ retCode }"
 
 #: src/ui/rendererFactory.js:31
-#, fuzzy
 msgid "Canvas Error"
-msgstr "Կտավի արխիվ"
+msgstr "Կտավի Սխալ"
 
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
-msgstr ""
+msgstr "Չեք կարողանում 3D կտավը ներկայացնել, WebGL2-ն անջատված ունե՞ք:"
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "Չեք կարող արտահանել 20-ից ավել կամ 0 շաբլոն:"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr ""
+msgstr "Չեք կարող ներմուծել 20-ից ավել կամ 0 շաբլոն"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -216,17 +215,17 @@ msgstr "Լավ"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
-msgstr ""
+msgstr "Դուք շա՜տ փորձեր եք իրականացրել"
 
 #: src/store/actions/fetch.js:59
 #, javascript-format
 msgid "try again after ${ ti }min"
-msgstr ""
+msgstr "Փորձեք կրկին ${ ti } րոպեից"
 
 #: src/store/actions/fetch.js:70
 #, javascript-format
 msgid "Connection error ${ code } :("
-msgstr ""
+msgstr "Միացման սխալ ${ code } :("
 
 #: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
@@ -236,27 +235,27 @@ msgstr "Հնարավոր չէ միանալ սերվերին, փորձեք մի �
 #: src/store/actions/fetch.js:189 src/store/actions/fetch.js:208
 #: src/store/actions/fetch.js:227
 msgid "Unknown Error"
-msgstr ""
+msgstr "Անհայտ սխալ"
 
 #: src/store/actions/fetch.js:237
 msgid "Server answered with gibberish :("
-msgstr ""
+msgstr "Սերվերը պատասխանեց խաբեությամբ"
 
 #: src/store/middleware/notifications.js:33
 msgid "Your next pixels are ready"
-msgstr ""
+msgstr "Ձեր հաջորդ պիքսելները պատրաստ են"
 
 #: src/store/middleware/notifications.js:37
 msgid "You can now place more on pixelplanet.fun :)"
-msgstr ""
+msgstr "Դուք արդեն կարող եք տեղադրել ավելին pixelplanet.fun-ում"
 
 #: src/store/middleware/notifications.js:54
 msgid "mentioned you"
-msgstr ""
+msgstr "Դուք հիշատակված եք"
 
 #: src/store/middleware/notifications.js:58
 msgid "You have new messages in chat"
-msgstr ""
+msgstr "Դուք ունեք նոր նամակներ չատում"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
 #: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
@@ -265,15 +264,15 @@ msgstr "Պատճենեք սեղմատախտակին"
 
 #: src/components/OnlineBox.jsx:40
 msgid "Online Users on Canvas"
-msgstr ""
+msgstr "Օնլայն օգտատերեր կտավում"
 
 #: src/components/OnlineBox.jsx:47
 msgid "Total Online Users"
-msgstr ""
+msgstr "Ընդհանուր օնլայն օգտատերեր"
 
 #: src/components/OnlineBox.jsx:55
 msgid "Pixels placed"
-msgstr "Պիքսելը պաշտպանված է՛"
+msgstr "Պիքսելը պաշտպանվա՛ծ է"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -282,11 +281,11 @@ msgstr "Կտավի ընտրություն"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Close Chat"
-msgstr "Փակել զրույցը"
+msgstr "Փակել չատը"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Open Chat"
-msgstr "Բացել զրույցը"
+msgstr "Բացել չատը"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Close Menu"
@@ -297,13 +296,12 @@ msgid "Open Menu"
 msgstr "Բացել ընտրացանկը"
 
 #: src/components/HistorySelect.jsx:146
-#, fuzzy
 msgid "Loading"
-msgstr "Բեռնվում է..."
+msgstr "Բեռնում"
 
 #: src/components/HistorySelect.jsx:147
 msgid "Select Date above"
-msgstr ""
+msgstr "Ընտրեք ամսաթիվ վերևում"
 
 #: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
@@ -314,28 +312,27 @@ msgstr "Փակել"
 
 #: src/components/Window.jsx:173
 msgid "PopUp"
-msgstr ""
+msgstr "PopUp"
 
 #: src/components/Window.jsx:184
 msgid "Restore"
-msgstr ""
+msgstr "Վերականգնել"
 
 #: src/components/Window.jsx:221
 msgid "Clone"
-msgstr ""
+msgstr "Կրկնօրինակ"
 
 #: src/components/Window.jsx:229
 msgid "Move"
-msgstr ""
+msgstr "Տեղափոխել"
 
 #: src/components/Window.jsx:252
-#, fuzzy
 msgid "Maximize"
-msgstr "առավելագույնի մեծացնել "
+msgstr "Առավելագույնի մեծացնել"
 
 #: src/components/Window.jsx:268
 msgid "Resize"
-msgstr ""
+msgstr "Փոխել չափը"
 
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
 #: src/components/windows/index.js:13
@@ -369,38 +366,35 @@ msgstr "Բացել ներկապնակը"
 
 #: src/components/buttons/PencilButton.jsx:32
 msgid "History Pencil ON"
-msgstr ""
+msgstr "Պատմական տեսակետի մատիտը ՄԻԱՑՎԱԾ"
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr ""
+msgstr "Overlay-ի մատիտը ՄԻԱՑՎԱԾ"
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
-msgstr ""
+msgstr "Միացնել մատիտը"
 
 #: src/components/buttons/PencilButton.jsx:69
-#, fuzzy
 msgid "Disable Pencil"
-msgstr "Անջատել խաղի հնչյունները"
+msgstr "Անջատել Մատիտը"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
-msgstr ""
+msgstr "Անջատել պատմական տեսակետի մատիտը"
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "Անջատել Overlay-ի մատիտը"
 
 #: src/components/windows/index.js:16
-#, fuzzy
 msgid "Registration"
-msgstr "Գրանցվել"
+msgstr "Գրանցում"
 
 #: src/components/windows/index.js:17
-#, fuzzy
 msgid "Forgot Password"
-msgstr "Ես մոռացել եմ իմ գաղտնաբառը։"
+msgstr "Մոռացել եմ գաղտնաբառը"
 
 #: src/components/windows/index.js:18
 msgid "Chat"
@@ -412,11 +406,11 @@ msgstr "Կտավի արխիվ"
 
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
-msgstr ""
+msgstr "Դուք արգելափակված եք: Կարծում եք անարռա՞ռ է, ստուգեք "
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
-msgstr ""
+msgstr " ինչպես բողոքարկել արդելափակումը."
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -429,56 +423,55 @@ msgstr "Սխալ :("
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
-msgstr ""
+msgstr "Պատճառ"
 
 #: src/components/BanInfo.jsx:91
 msgid "By Mod"
-msgstr ""
+msgstr "Մոդերատոր"
 
 #: src/components/BanInfo.jsx:97 src/components/ModIIDtools.jsx:84
 msgid "Duration"
-msgstr ""
+msgstr "Տևողություն"
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
-msgstr ""
+msgstr "Ձեր արգելափակումը լռանում է "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr ""
+msgstr " ժամանակից "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
-msgstr ""
+msgstr "Արդելախակումից հանած"
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."
-msgstr ""
+msgstr "Հիմա երբ արդեն դու տեսար այս նամակը, դու այլևս արդելափակման տակ չես:"
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
-msgstr ""
+msgstr "Ինչու՞"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
-msgstr ""
+msgstr "Շատ երկար էր, նորից փորձեք:"
 
 #: src/components/GlobalCaptcha.jsx:50
 msgid "You failed your captcha"
-msgstr ""
+msgstr "Դուք ձեր captcha-ն ձախողեցիք"
 
 #: src/components/GlobalCaptcha.jsx:53
 msgid "No or invalid captcha text"
-msgstr ""
+msgstr "Սխալ կամ բացակայող captcha-ի տեքս"
 
 #: src/components/GlobalCaptcha.jsx:56
-#, fuzzy
 msgid "No captcha id given"
-msgstr "Գաղտնաբառ չի տրվել:"
+msgstr "Captcha ID-ն տրված չէ"
 
 #: src/components/GlobalCaptcha.jsx:59
 msgid "Unknown Captcha Error"
-msgstr ""
+msgstr "Captcha-ի Անհայտ Սխալ"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
@@ -490,7 +483,7 @@ msgstr "Չեղարկել"
 
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
-msgstr ""
+msgstr "Ուղարկել"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -505,13 +498,14 @@ msgid ""
 "pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
 "and 7s on already set pixels."
 msgstr ""
-"Մեր հիմնական կտավը հսկայական աշխարհի քարտեզ է, դուք կարող եք տեղադրել պիքսել "
-"որտեղ ցանկանում եք, բայց դուք պետք է սպասեք որոշակի վերալիցքավորում: Դուք "
-"կարող եք ստուգել վերալիցքավորումը և պահանջները կտավների ընտրության "
-"ընտրացանկում (վերևում գլոբուսով կոճակ): Որոշ կտավներ ունեն տարբեր "
-"լիցքավորում ՝ օգտագործողների կողմից արդեն մատակարարված պիքսելները "
-"փոխարինելու և անձեռնմխելի պիքսելների համար: 4 վրկ / 7 վրկ նշանակում է, որ\n"
-"4 վրկ անձեռնմխելի պիքսելների համար և 7 վրկ արդեն մատակարարվածների համար:"
+"Մեր հիմնական կտավը հսկայական աշխարհի քարտեզ է, որը կարող եք տեղադրել "
+"ցանկացած վայրում, բայց դուք պետք է սպասեք պիքսելների միջև որոշակի "
+"վերականգնման ժամանակի: Վերականգնման ժամանակը և պահանջները կարող եք ստուգել "
+"կտավի ընտրության ընտրացանկում (վերևում գտնվող գլոբուսի կոճակը): Որոշ կտավներ "
+"ունեն տարբեր վերականգնման ժամանակ ՝ օգտագործողի կողմից սահմանված պիքսելները "
+"փոխարինելու համար, քան դրանք տեղադրելու համար չսահմանված պիքսելում: այսինքն ՝"
+" 4s / 7s նշանակում է 4s նոր պիքսելների վրա և 7s արդեն տեղադրված պիքսելների "
+"վրա:"
 
 #: src/components/windows/Help.jsx:67
 msgid ""
@@ -531,7 +525,7 @@ msgstr "Առաջարկվում է"
 
 #: src/components/windows/Help.jsx:71
 msgid "Source on "
-msgstr "ակըն-աղբյուրը"
+msgstr "Աղբյուր կոդ -ի վրա "
 
 #: src/components/windows/Help.jsx:72
 msgid "Map Data"
@@ -542,22 +536,25 @@ msgid ""
 "The bare map data that we use, together with converted OpenStreetMap tiles "
 "for orientation, can be downloaded from mega.nz here: "
 msgstr ""
-"Քարտեզի մերկ տվյալները, որոնք մենք օգտագործում ենք, կողմնորոշման համար "
-"վերափոխված OpenStreetMap սալիկների հետ միասին, կարող եք ներբեռնել mega.nz "
-"կայքից այստեղ ՝"
+"Սկզբնական քարտեզագրման տվյալները, որոնք մենք օգտագործում ենք, ինչպես նաև "
+"OpenStreetMap-ի վերափոխված հատվածները կողմնորոշման համար, կարելի է ներբեռնել "
+"այստեղից mega.nz այստեղ` "
 
 #: src/components/windows/Help.jsx:74
-#, fuzzy
 msgid "Banned? Detected as Proxy?"
-msgstr "Հայտնաբերվա՞ծ է պրոքսի:"
+msgstr "Արգելվա՞ծ եք: Հայտնաբերվե՞լ եք Proxy օգդագործելու՞ց:"
 
 #: src/components/windows/Help.jsx:76
-#, fuzzy, javascript-format
+#, javascript-format
 msgid ""
 "If you got detected as proxy, but you are none, or think that you got "
 "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
 "${ mailLink } and include the following IID:"
 msgstr ""
+"Եթե դուք հայնաբերվել եք proxy օգտագործելուց, սակայն դուք այն չեք օգտագորխել, "
+"և կարծում եք որ դուք անհիմն եք արգելափակվել, կխնդրեինք գնալ մեր ${ "
+"guildedLink } կամ մեզ ուղարկել էլեկտորնային հաղորդագրություն ${ mailLink } "
+"էլ. փոստին, ներառելով ձեր IID-ն."
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
@@ -648,7 +645,7 @@ msgstr ""
 "հպմանը ՝ սավառնելու ընթացիկ գույնը ընտրելու համար"
 
 #: src/components/windows/Help.jsx:100
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Սեղմեք ${ bindQ } և ${ bindE } ՝ վեր ու վար թռչելու համար"
 
@@ -685,6 +682,8 @@ msgid ""
 "We thanks those artists very much, they offered their palettes to the public "
 "on"
 msgstr ""
+"Մենք շնորհակալություն ենք հայտնում այն առտիստներին, որոնք առաջարկեցին իրենց "
+"գունապնակը բացահայտ միացված մնալուն"
 
 #: src/components/windows/Help.jsx:113
 #, javascript-format
@@ -692,14 +691,14 @@ msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "Լուսնի ներկապնակի վարկը տրամադրվում է ${ starhouseLink }:"
 
 #: src/components/windows/Help.jsx:116
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr "Լուսնի ներկապնակի վարկը տրամադրվում է ${ vinikLink }:"
+msgstr "Թոփ10-ի ներկապնակի վարկը տրամադրվում է ${ vinikLink }:"
 
 #: src/components/windows/Help.jsx:119
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Լուսնի ներկապնակի վարկը տրամադրվում է ${ donendoLink }:"
+msgstr "2բիտի ներկապնակի վարկը տրամադրվում է ${ donendoLink }:"
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
@@ -719,11 +718,11 @@ msgstr "Ցույց է տալիս կարմիր օղակներ, այնտեղ որ�
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Միշտ ցույց տալ տեղաշարժման կառավարումը"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Միշտ ցույց տալ տեղաշարժման կառավարման կոճակները"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
@@ -738,6 +737,8 @@ msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
 msgstr ""
+"Ձեր բրաուզերը չի թույլատրում օգտագործել AudioContext ձայներ արտահանելու "
+"համար: Դուք ոնե՞ք մեզ արգելափակող գաղտնիության որևէ գործառույթ:"
 
 #: src/components/windows/Settings.jsx:131
 msgid "Enable chat notifications"
@@ -801,7 +802,7 @@ msgstr "Ինչպես պետք է լինի pixelplanet-ը:"
 
 #: src/components/windows/Settings.jsx:191
 msgid "Select Language"
-msgstr ""
+msgstr "Ընտրեք լեզուն"
 
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
@@ -810,7 +811,7 @@ msgstr "Պրոֆիլ"
 
 #: src/components/windows/UserArea.jsx:59
 msgid "Statistics"
-msgstr ""
+msgstr "Ստատիստիկա"
 
 #: src/components/windows/UserArea.jsx:64
 msgid "Converter"
@@ -822,11 +823,11 @@ msgstr "Մոդերատորի գործիքներ"
 
 #: src/components/windows/UserArea.jsx:71
 msgid "Loading..."
-msgstr "Բեռնվում է..."
+msgstr "Բեռնում..."
 
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
-msgstr "Մտածեք Guilded- ում մեզ միանալու մասին."
+msgstr "Միացեք մեզ Guilded-ում`"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -856,7 +857,7 @@ msgstr "Հաստատել գաղտնաբառը"
 
 #: src/components/windows/Register.jsx:124
 msgid "Captcha"
-msgstr ""
+msgstr "Captcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
 #: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
@@ -868,16 +869,16 @@ msgid "Submit"
 msgstr "Ներկայացնել"
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Archive of removed canvases can be accessed here:"
 msgstr ""
-"Ընտրեք կտավը, որը ցանկանում եք օգտագործել: Յուրաքանչյուր կտավ եզակի է և ունի "
-"տարբեր ներկապնակներ, սառեցում և պահանջներ: Փակ կտավների արխիվը հասանելի է "
-"այստեղ."
+"Ընտրեք կտավը, որը ցանկանում եք օգտագործել:\n"
+"Յուրաքանչյուր կտավ եզակի է և ունի տարբեր գունապնակներ, վերականգնման ժամանակ "
+"և պահանջներ:\n"
+"Հեռացված կտավների արխիվը կարելի է մուտք գործել այստեղ:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -885,10 +886,9 @@ msgstr "Արխիվ"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Չօգտագործվող կտավներ (Միայն պատմական տեսակետ)"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who currently like a meme. Those canvases can get "
@@ -897,18 +897,17 @@ msgid ""
 msgstr ""
 "Չնայած մենք հակված ենք կտավները չջնջելուն, որոշ կտավներ սկսվում են զվարճանքի "
 "համար կամ որպես խնդրանք այն օգտվողների կողմից, ովքեր ներկայումս սիրում են "
-"մեմեր: Այդ կտավները կարող են ձանձրալի լինել որոշ ժամանակ անց և առանց լուրջ "
-"փոփոխությունների անցնելուց հետո, և եթե իսկապես արժե ակտիվ չլինել, մենք "
-"որոշում ենք հեռացնել դրանք:"
+"մեմեր: Այդ կտավները կարող են ձանձրալի լինել որոշ ժամանակ անց առանց լուրջ "
+"փոփոխություններ ունենալուց հետո, և եթե իսկապես այն չարժե լինել, մենք որոշում "
+"ենք հեռացնել դրանք:"
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them in a proper way. Which is "
 "currently only one."
 msgstr ""
-"Այստեղ մենք հավաքում ենք այդ կտավները պատշաճ կերպով արխիվացնելու համար (որը "
-"ներկայումս ընդամենը մեկն է):"
+"Այստեղ մենք հավաքում ենք հեռացված կտավները՝ պատշաճ կերպով արխիվացնելու համար "
+"(որը ներկայումս ընդամենը մեկն է):"
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -922,8 +921,8 @@ msgid ""
 "remained active for months till it got shut down on November 30th."
 msgstr ""
 "Այս կտավը պահանջվել է Երկրի գլխավոր կտավի վրա քաղաքական բախումների ժամանակ: "
-"Դա քաղաքական կողմնացույցի 1024x1024 ներկայացում էր ՝ 5 վրկ վերալիցքավորմամբ "
-"և 60-ականների դասախցիկներով: Այն մեկնարկեց մայիսի 11-ին և ամիսներ շարունակ "
+"Դա քաղաքական կողմնացույցի 1024x1024 ներկայացում էր` 5 վրկ վերալիցքավորմամբ և "
+"60-ականների դասախցիկներով: Այն մեկնարկվեց մայիսի 11-ին և ամիսներ շարունակ "
 "ակտիվ մնաց, մինչև այն դադարեցվեց նոյեմբերի 30-ին:"
 
 #: src/components/windows/Archive.jsx:22
@@ -933,7 +932,7 @@ msgid ""
 "the canvas was at that time."
 msgstr ""
 "Մենք որոշեցինք արխիվացնել այն որպես պատմական տեսանյութ ՝ առանց կորուստների "
-"կոդավորված վեբ-կայքերի: ժամանակահատվածից սքրինշոթ վերցնելը բերում է կատարյալ "
+"կոդավորված վեբ-կայքերի: Ժամանակահատվածից սքրինշոթ վերցնելը բերում է կատարյալ "
 "1:1 ներկայացման այն մասին, թե ինչպես էր այդ ժամանակ կտավը:"
 
 #: src/components/windows/Chat.jsx:180
@@ -942,7 +941,7 @@ msgstr "Սկսեք զրուցել այստեղ"
 
 #: src/components/windows/Chat.jsx:217
 msgid "Chat here"
-msgstr "զրուցեք այստեղ"
+msgstr "Զրուցեք այստեղ"
 
 #: src/components/windows/Chat.jsx:243
 msgid "You must be logged in to chat"
@@ -950,66 +949,67 @@ msgstr "Դուք պետք է մուտք գործեք զրուցելու համա
 
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
-msgstr "Ալիքի կարգավորումները"
+msgstr "Ալիքի կարգավորումներ"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
-msgstr "Ձեզ գաղտնաբառի վերակայման համար հրահանգներով նամակ է ուղարկվել:"
+msgstr "Ձեր mail-ին գաղտնաբառի վերակայման համար հրահանգներով նամակ է ուղարկվել:"
 
 #: src/components/windows/ForgotPassword.jsx:69
 msgid "Enter your mail address and we will send you a new password:"
-msgstr "Մուտքագրեք ձեր փոստի հասցեն, և մենք ձեզ նոր գաղտնաբառ կուղարկենք."
+msgstr ""
+"Մուտքագրեք ձեր էլեկտրոնային փոստի հասցեն, և մենք ձեզ նոր գաղտնաբառ "
+"կուղարկենք:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
-msgstr ""
+msgstr "Չհաջողվեց բեռնել captcha-ն"
 
 #: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
-msgstr ""
+msgstr "Գրեք այն նշանները, որը տեսնում եք տվյալ նկարի մեջ."
 
 #: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
-msgstr ""
+msgstr "Հուշում. մեծատառ կամ փոքրատառ կապ չունի; I և l նույնն են"
 
 #: src/components/Captcha.jsx:116
 msgid "Load Captcha"
-msgstr ""
+msgstr "Բեռնել Captcha-ն"
 
 #: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
-msgstr ""
+msgstr "Սեղմե՛ք Captcha-ն բեռնելու համար"
 
 #: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
-msgstr ""
+msgstr "Չե՞ք կարողանում կարդալ. Թարմացրե՛ք:"
 
 #: src/components/Captcha.jsx:130
 msgid "Reload"
-msgstr ""
+msgstr "Թարմացնել"
 
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
-msgstr ""
+msgstr "Մուտքագրեք նշանները"
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
-msgstr ""
+msgstr "Ստանալ IID-ն"
 
 #: src/components/GetIID.jsx:53
 msgid "Copy"
-msgstr ""
+msgstr "Պատճենել"
 
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
 msgid "Save"
-msgstr "Խնայել"
+msgstr "Պահպանել"
 
 #: src/components/TemplateSettings.jsx:57
-#, fuzzy
 msgid "Templates"
-msgstr "Ներբեռնման ձևանմուշ"
+msgstr "Կաղապարներ"
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
@@ -1018,65 +1018,70 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"Հոգնե՞լ եք անընդհատ ինչ-որ գույն սպան անելուց: Ցանկանում եք ստեղծել "
+"պատկերներ, բայց ստիպված եք հաշվել պիքսելները մեկ այլ նկարի՞ց: Կաղապարները "
+"ձոզ կօգնեն այդ հարցում: Կաղապարները կարող են ցույց տալ պատկերը տվյալ "
+"վայրում, որոնց վրայով դուք կարող եք նկարել ձեր ցանկացած պատկերը: Կաղապարի 1 "
+"պիքսելը պետք է հավասար լինի կտավի 1 պիքսելին:"
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Միացնել Overlay-ը"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Ցույց տալ կաղապարը ինչպես Overlay խաղի մեջ:"
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels Zoom"
-msgstr ""
+msgstr "Փոքր պիքսելների խոշորացում"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
+"Ցույց տալ overlay-ը որպես փոքր առանձին պիքսելներ բարձր խոշորացման ժամանակ:"
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Overlay-ի թափանցիկությունը"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Overlay-ի թափանցիկությունը տոկոսներով"
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "Աջ Shift սեղմելու դեպքում տեղի կունենա պատկերի ավտոմատ նկարում"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
+msgstr "Տեղադրեք պիքսելներ overlay-ից աջ shift-ով, պատմական տեսակետի փոխարեն:"
 
 #: src/components/TemplateSettings.jsx:149
-#, fuzzy
 msgid "Cancel adding Template"
-msgstr "Ներբեռնման ձևանմուշ"
+msgstr "Չեղարկել Կաղապարի ավելացումը"
 
 #: src/components/TemplateSettings.jsx:156
-#, fuzzy
 msgid "Add Template"
-msgstr "Ներբեռնման ձևանմուշ"
+msgstr "Ավելացնել Կաղապար"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Արտահանել միացված կաղապարները"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr ""
+msgstr "Ներմուծել կաղապարներ"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
 msgstr ""
-"Մուտք գործեք ձեր հաշիվ ՝ վիճակագրության և այլ հնարավորություն ստանալու համար։"
+"Մուտք գործեք ձեր հաշիվ ՝ վիճակագրության և այլ հնարավորություններ ստանալու "
+"համար։"
 
 #: src/components/LogInArea.jsx:21
 msgid "Login with Name or Mail:"
-msgstr "Մուտք գործեք անունով կամ փոստով."
+msgstr "Մուտք գործեք անունով կամ էլ. փոստով."
 
 #: src/components/LogInArea.jsx:28
 msgid "I forgot my Password."
@@ -1084,11 +1089,11 @@ msgstr "Ես մոռացել եմ իմ գաղտնաբառը։"
 
 #: src/components/LogInArea.jsx:29
 msgid "or login with:"
-msgstr "կամ մուտք գործել հետևյալով ՝"
+msgstr "կամ մուտք գործեք հետևյալով ."
 
 #: src/components/LogInArea.jsx:70
 msgid "or register here:"
-msgstr "Մենակ գրանցված օգտվողների համար"
+msgstr "կամ գրանցվեք այստեղ."
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
@@ -1096,7 +1101,7 @@ msgstr "Գրանցվել"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
-msgstr "Այսօր տեղադրված պիքսելներ"
+msgstr "Այսօր տեղադրված պիքսելները"
 
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
@@ -1108,12 +1113,12 @@ msgstr "Տեղադրված պիքսելներ"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
-msgstr "Ընդհանուր կոչում"
+msgstr "Ընդհանուր դասակարգ"
 
 #: src/components/UserAreaContent.jsx:80
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr "Ձեր անունն ${ name } է"
+msgstr "Ձեր անունը ${ name } է"
 
 #: src/components/UserAreaContent.jsx:86
 msgid "Log out"
@@ -1121,11 +1126,11 @@ msgstr "Դուրս գալ"
 
 #: src/components/UserAreaContent.jsx:93
 msgid "Change Username"
-msgstr "Փոխել Մականունը"
+msgstr "Փոխել Օգտանունը"
 
 #: src/components/UserAreaContent.jsx:103
 msgid "Change Mail"
-msgstr "Փոխել փոստը"
+msgstr "Փոխել էլ. փոստը"
 
 #: src/components/UserAreaContent.jsx:112
 msgid "Change Password"
@@ -1133,7 +1138,7 @@ msgstr "Փոխել գաղտնաբառը"
 
 #: src/components/UserAreaContent.jsx:119
 msgid "Delete Account"
-msgstr "Ջնջել հաշիվը"
+msgstr "Ջնջել օգտահաշիվը"
 
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
@@ -1158,7 +1163,7 @@ msgstr "Պատկերի փոխարկիչ"
 
 #: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
-msgstr "Պատկերը փոխեք կտավի գույների"
+msgstr "Պատկերը փոխեք կտավի գույներով"
 
 #: src/components/Converter.jsx:261
 msgid "Choose Strategy"
@@ -1166,15 +1171,15 @@ msgstr "Ընտրեք ռազմավարությունը"
 
 #: src/components/Converter.jsx:299
 msgid "Serpentine"
-msgstr ""
+msgstr "Օձային"
 
 #: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
-msgstr ""
+msgstr "Նվազագույն գույների հեռավորություն"
 
 #: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
-msgstr ""
+msgstr "Հաշվել որպես GIMP"
 
 #: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
@@ -1182,7 +1187,7 @@ msgstr "Ընտրեք գունային ռեժիմ"
 
 #: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
-msgstr "Ավելացրեք ցանց (ապանշեք, եթե ձեզ հարկավոր է 1: 1 ձևանմուշ)"
+msgstr "Ավելացնել ցանց (ապանշեք, եթե ձեզ հարկավոր է 1: 1 ձևանմուշը)"
 
 #: src/components/Converter.jsx:383 src/components/Converter.jsx:399
 msgid "Offset"
@@ -1194,15 +1199,15 @@ msgstr "Փոխել պատկերի չափը"
 
 #: src/components/Converter.jsx:439
 msgid "Width"
-msgstr "Լայնությունը"
+msgstr "Լայնություն"
 
 #: src/components/Converter.jsx:470
 msgid "Height"
-msgstr "Բարձրությունը"
+msgstr "Բարձրություն"
 
 #: src/components/Converter.jsx:509
 msgid "Keep Ratio"
-msgstr "Պահպանեք հարաբերակցությունը"
+msgstr "Պահպանել հարաբերակցությունը"
 
 #: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
@@ -1210,11 +1215,11 @@ msgstr "Հակասել"
 
 #: src/components/Converter.jsx:536
 msgid "Reset"
-msgstr "Վերականգնել"
+msgstr "Վերակայել"
 
 #: src/components/Converter.jsx:554
 msgid "Download Template"
-msgstr "Ներբեռնման ձևանմուշ"
+msgstr "Ներբեռնել ձևանմուշը"
 
 #: src/components/Rankings.jsx:147
 msgid "Total"
@@ -1222,64 +1227,62 @@ msgstr "Ընդհանուր"
 
 #: src/components/Rankings.jsx:156
 msgid "Today"
-msgstr ""
+msgstr "Այսօր"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
-msgstr ""
+msgstr "Երեկ"
 
 #: src/components/Rankings.jsx:174
 msgid "Countries Today"
-msgstr ""
+msgstr "Երկրները այսօր"
 
 #: src/components/Rankings.jsx:183
 msgid "Charts"
-msgstr ""
+msgstr "Ստատիստիկայի ծապատկերներ"
 
 #: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
 #: src/components/Rankings.jsx:219
-#, fuzzy
 msgid "User"
-msgstr "Օգտագործողի տարածք"
+msgstr "Օգտատեր"
 
 #: src/components/Rankings.jsx:226
 msgid "Country"
-msgstr ""
+msgstr "Երկիր"
 
 #: src/components/Rankings.jsx:286
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
-"Ամեն 5 րոպեն մեկ թարմացումները դասակարգելու համար: Ամենօրյա վարկանիշները "
+"Դասակարգումը թարմացվում է ամեն 5 րոպեն մեկ: Ամենօրյա վարկանիշները "
 "վերակայվում են UTC- ի կեսգիշերին:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Փոստը չի կարող դատարկ լինել:"
+msgstr "Էլ. փոստը չի կարող դատարկ լինել:"
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr "Փոստը պետք է կազմի առնվազն 5 նիշ:"
+msgstr "Էլ. փոստը պետք է կազմված լինի առնվազն 5 նիշից:"
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr "Փոստը չի կարող 40 նիշից ավելի լինել:"
+msgstr "Էլ. փոստը չի կարող 40 նիշից ավելի լինել:"
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr "Փոստը առնվազն կետ պետք է պարունակի"
+msgstr "Էլ. փոստը պետք է առնվազն պարունակի կետ"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "Փոստը պետք է պարունակի @"
+msgstr "Էլ. փոստը պետք է պարունակի @"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
 msgstr "Անունը չի կարող դատարկ լինել:"
 
 #: src/utils/validation.js:30
-#, fuzzy
 msgid "Name must be at least 2 characters long"
-msgstr "Անունը պետք է կազմի առնվազն 4 նիշ"
+msgstr "Անունը պետք է կազմի առնվազն 2 նիշ"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
@@ -1302,9 +1305,8 @@ msgid "Password must be shorter than 60 characters."
 msgstr "Գաղտնաբառը պետք է լինի 60 նիշից կարճ:"
 
 #: src/components/CanvasItem.jsx:29
-#, fuzzy
 msgid "Online Users"
-msgstr "Անարգելափակել օգտվողներին"
+msgstr "Առցանց Օգտատերեր"
 
 #: src/components/CanvasItem.jsx:34
 msgid "Cooldown"
@@ -1320,11 +1322,11 @@ msgstr "Դասակարգված"
 
 #: src/components/CanvasItem.jsx:44
 msgid "Yes"
-msgstr ""
+msgstr "Այո"
 
 #: src/components/CanvasItem.jsx:44
 msgid "No"
-msgstr ""
+msgstr "Ոչ"
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
@@ -1340,9 +1342,8 @@ msgid "and ${ canvas.req } Pixels set"
 msgstr "և ${ canvas.req } պիքսելը սահմանված է"
 
 #: src/components/CanvasItem.jsx:58
-#, fuzzy
 msgid "Top 10 Daily Ranking"
-msgstr "Օրվա դասակարգ"
+msgstr "Թոփ 10 օրական վարկանիշ"
 
 #: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
 #: src/components/TemplateItemEdit.jsx:160
@@ -1351,78 +1352,72 @@ msgstr "Չափերը"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
-msgstr ""
+msgstr "Թոփ 10 երկրներ [պիքսելներ / օր]"
 
 #: src/core/chartSettings.js:127
-#, fuzzy
 msgid "Players and Pixels per hour"
-msgstr "Տեղադրված պիքսելներ"
+msgstr "Խաղացողներ և Պիքսելներ ժամում"
 
 #: src/core/chartSettings.js:221
 msgid "Top 10 Players [pxls / day]"
-msgstr ""
+msgstr "Թոփ 10 խաղացողներ [պիքսելներ/օր]"
 
 #: src/core/chartSettings.js:294
 msgid "Countries by Pixels Today"
-msgstr ""
+msgstr "Երկրները իրենց այսօրվա տեղադրած պիքսելներով"
 
 #: src/core/chartSettings.js:351
-#, fuzzy
 msgid "Total Pixels placed per day"
-msgstr "Պիքսելը պաշտպանված է՛"
+msgstr "Օրական տեղադրված պիքսելների ընդհանուր քանակը"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
-#, fuzzy
 msgid "Canvas"
-msgstr "Ընտրեք կտավ"
+msgstr "Կտավ"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
 msgid "Coordinates"
-msgstr "Անվավեր կոորդինատներ"
+msgstr "Կոորդինատներ"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Խմբագրել"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Գնալ"
 
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
-msgstr ""
+msgstr "Ընտրել ֆայլ"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Կաղապարի անուն"
 
 #: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
 msgid "Delete"
-msgstr "Ջնջել հաշիվը"
+msgstr "Ջնջել"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
-msgstr "Անուն կամ փոստ"
+msgstr "Անուն կամ էլ. փոստ"
 
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Մուտք"
 
 #: src/components/UserMessages.jsx:28
-#, fuzzy
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
 "few days."
 msgstr ""
-"Խնդրում ենք ստուգել ձեր փոստային հասցեն&nbsp;\n"
-"կամ մի քանի օր անց ձեր հաշիվը կարող է ջնջվել:"
+"Խնդրում ենք հաստատել ձեր փոստի հասցեն, այլապես ձեր հաշիվը կարող է ջնջվել մի "
+"քանի օր անց:"
 
 #: src/components/UserMessages.jsx:49
 msgid "A new verification mail is getting sent to you."
-msgstr "Ձեզ է ուղարկվում ստուգման նոր նամակ:"
+msgstr "Ձեզ ուղարկվել է ստուգման նոր նամակ:"
 
 #: src/components/UserMessages.jsx:53
 msgid "Click here to request a new verification mail."
@@ -1434,7 +1429,7 @@ msgstr "Գաղտնաբառերը չեն համապատասխանում."
 
 #: src/components/ChangePassword.jsx:44
 msgid "Changed Password successfully."
-msgstr "Հաջողությամբ փոխվեց գաղտնաբառը:"
+msgstr "Գաղտնաբառը հաջողությամբ փոխվեց:"
 
 #: src/components/ChangePassword.jsx:88
 msgid "Old Password"
@@ -1442,7 +1437,7 @@ msgstr "Հին Գաղտնաբառ"
 
 #: src/components/ChangePassword.jsx:96
 msgid "New Password"
-msgstr "նոր ծածկագիր"
+msgstr "Նոր գաղտնաբառ"
 
 #: src/components/ChangePassword.jsx:103
 msgid "Confirm New Password"
@@ -1450,29 +1445,27 @@ msgstr "Հաստատեք նոր գաղտնաբառը"
 
 #: src/components/ChangeName.jsx:64
 msgid "New Username"
-msgstr "Նոր Մականուն"
+msgstr "Նոր օգտանուն"
 
 #: src/components/ChangeMail.jsx:59
-#, fuzzy
 msgid ""
 "Changed Mail successfully. We sent you a verification mail,             "
 "please verify your new mail address."
 msgstr ""
-"Փոստը հաջողությամբ փոխվեց: Մենք ձեզ ստուգիչ նամակ ենք "
-"ուղարկել,               ստուգեք ձեր նոր Փոստի հասցեն:"
+"Փոստը հաջողությամբ փոխվեց: Մենք ձեզ հաստատման նամակ ուղարկել ենք, խնդրում "
+"ենք հաստատել Ձեր նոր փոստի հասցեն:"
 
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
-msgstr "Նոր փոստ"
+msgstr "Նոր էլ. փոստ"
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
-msgstr "Այո, ջնջիր իմ հաշիվը: Նարեկը խնդրում է դա չանել ♰"
+msgstr "Այո, ջնջե՛ք իմ հաշիվը:"
 
 #: src/components/SocialSettings.jsx:35
-#, fuzzy
 msgid "Block DMs"
-msgstr "Արգելափակել"
+msgstr "Արգելափակել անձնական նամակները"
 
 #: src/components/SocialSettings.jsx:42
 msgid "Block all Private Messages"
@@ -1480,19 +1473,19 @@ msgstr "Արգելափակել բոլոր անձնական հաղորդագրո�
 
 #: src/components/SocialSettings.jsx:44
 msgid "Private"
-msgstr ""
+msgstr "Անձնական"
 
 #: src/components/SocialSettings.jsx:51
 msgid "Don't show me in global stats"
-msgstr ""
+msgstr "Ցույց չտալ ինձ դասակարգման մեջ"
 
 #: src/components/SocialSettings.jsx:57
 msgid "Unblock Users"
-msgstr "Անարգելափակել օգտվողներին"
+msgstr "Արգելափակումից հանել օգտատիրոջը"
 
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"
-msgstr "Դուք արգելափակված օգտվողներ չունեք"
+msgstr "Դուք արգելափակված օգտատերեր չունեք"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1505,18 +1498,20 @@ msgstr "Կառուցեք պատկեր և դրեք նրա վրա պաշտպանո
 #: src/components/ModCanvastools.jsx:174
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr ""
-"Կառուցեք պատկեր, բայց վերափոխեք վերալիցքավորումը ՝ նախքան անձեռնմխելի պիքսել "
-"վերբեռնումը"
+"Ստեղծեք պատկերը, բայց վերակայեք վերականգնման ժամանակը չդրված պիքսելների "
+"վերականգնման ժամանակին:"
 
 #: src/components/ModCanvastools.jsx:184
 msgid "Clean spare pixels that are surrounded by unset pixels"
-msgstr ""
+msgstr "Մաքրել ավելորդ պիքսելները, որոնք շրջապատված են չտեղադրված պիքսելներով"
 
 #: src/components/ModCanvastools.jsx:188
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
 msgstr ""
+"Մաքրել ավելորդ պիքսելները, որոնք շրջապատված են չտեղադրված պիքսելներով մինչև "
+"նույնիսկ 1 այլ տեղադրված պիքսել"
 
 #: src/components/ModCanvastools.jsx:192
 msgid ""
@@ -1524,16 +1519,21 @@ msgid ""
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
 "two cooldowns)!)"
 msgstr ""
+"Մաքրել ավելորդ պիքսելները, որոնք շրջապատված են մեկ այլ գունային պիքսելով կամ "
+"չտեղադրված պիքսելով (ՇԱՏ ԱԳՐԵՍԻՎ Է ԿՏԱՎՆԵՐԻ ՎՐԱ, ՈՐՈՆՔ ԹՈՒՅԼՈՒՄ ԵՆ ՉՏԵՂԱԴՐԱԾ "
+"ՊԻՔՍԵԼՆԵՐ (որտեղ կան երկու ժամանակային կառավարում)):"
 
 #: src/components/ModCanvastools.jsx:196
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"Զրոյացնել տարածքի պիքսելները (ԴՈՒ ԻՍԿԱՊԵՍ ԴԱ ՉՊԵՏՔ Է ԱՆԵՍ ԱՅՆ ՏԱՐԱԾՔԵՐՈՒՄ, "
+"ՈՐՏԵՂ ՄԵԾԱՄԱՍՆՈՒԹՅՈՒՆԸ ԱՐԴԵՆ 0 ՉԷ):"
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
-msgstr ""
+msgstr "Կարգավիճակը. Չի աշխատում"
 
 #: src/components/ModCanvastools.jsx:249
 msgid "Image Upload"
@@ -1548,33 +1548,30 @@ msgid "File"
 msgstr "Ֆայլ"
 
 #: src/components/ModCanvastools.jsx:273
-#, fuzzy
 msgid "Coordinates:"
-msgstr "Անվավեր կոորդինատներ"
+msgstr "Կոորդինատներ."
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
-msgstr "Պիքսելը պաշտպանված է՛"
+msgstr "Պիքսելի պաշտպանություն"
 
 #: src/components/ModCanvastools.jsx:321
-#, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
-"Սահմանեք տարածքների պաշտպանություն         (եթե ձեզ ավելի մանրակրկիտ "
-"հսկողություն է պետք,          օգտագործեք պաշտպանել պատկերի վերբեռնումով և "
-"ալֆա շերտերով)"
+"Սահմանել տարածքների պաշտպանություն (եթե ձեզ ավելի մանրակրկիտ հսկողություն է "
+"պետք, օգտագործեք պատկերի պաշտպանումը վերբեռնումով և ալֆա շերտերով)"
 
 #: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
 #: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
-msgstr ""
+msgstr "Վերևի ձախ անկյուն"
 
 #: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
 #: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
-msgstr ""
+msgstr "Ներքևի աջ անկյուն"
 
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
@@ -1582,20 +1579,19 @@ msgstr "Վերադարձ դեպի ամսաթիվ"
 
 #: src/components/ModCanvastools.jsx:411
 msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
-msgstr "Կտավի տարածքը հետ բերեք սահմանված ամսաթվով (00:00 UTC)"
+msgstr "Կտավի տարածքը հետ բերել սահմանված ամսաթվով (00:00 UTC)"
 
 #: src/components/ModCanvastools.jsx:492
-#, fuzzy
 msgid "Canvas Cleaner"
-msgstr "Կտավի ընտրություն"
+msgstr "Կտավ մաքրիչ"
 
 #: src/components/ModCanvastools.jsx:494
 msgid "Apply a filter to clean trash in large canvas areas."
-msgstr ""
+msgstr "Դնել ֆիլտր մեծ տարածքներից աղբը մաքրելու համար:"
 
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
-msgstr ""
+msgstr "Դադարեցնել մաքրիչը"
 
 #: src/components/Admintools.jsx:109
 msgid "IP Actions"
@@ -1603,11 +1599,11 @@ msgstr "IP գործողություններ"
 
 #: src/components/Admintools.jsx:111
 msgid "Do stuff with IPs (one IP per line)"
-msgstr "Իրականացրեք IP- ներով (մեկ տող IP մեկ տողում)"
+msgstr "Իրականացրեք IP- ներով (մեկ IP մեկ տողում)"
 
 #: src/components/Admintools.jsx:158
 msgid "Manage Moderators"
-msgstr "Կառավարեք մոդերատորներին"
+msgstr "Կառավարել մոդերատորներին"
 
 #: src/components/Admintools.jsx:160
 msgid "Remove Moderator"
@@ -1615,66 +1611,63 @@ msgstr "Հեռացնել մոդերատորին"
 
 #: src/components/Admintools.jsx:193
 msgid "There are no mods"
-msgstr "Չկան ՊՆ"
+msgstr "Չկա մոդերատոր"
 
 #: src/components/Admintools.jsx:198
 msgid "Assign new Mod"
-msgstr "Նոր ՊՆ նշանակեք"
+msgstr "Նոր մոդերատոր նշանակեք"
 
 #: src/components/Admintools.jsx:201
 msgid "Enter UserName of new Mod"
-msgstr "Մուտքագրեք նոր ՊՆ օգտվողի անունը"
+msgstr "Մուտքագրեք նոր մոդերատորի օգտատիրոջ անունը"
 
 #: src/components/Admintools.jsx:210
 msgid "User Name"
 msgstr "Օգտագործողի անունը"
 
 #: src/components/ModWatchtools.jsx:48
-#, fuzzy
 msgid "Interval is invalid"
-msgstr "Անվավեր կտավ"
+msgstr "Անվավեր ընդմիջում"
 
 #: src/components/ModWatchtools.jsx:124
 msgid "Check who placed in an area"
-msgstr ""
+msgstr "Ստուգել թե որ է տեղադրել տվյալ վայրում"
 
 #: src/components/ModWatchtools.jsx:144
 msgid "Interval"
-msgstr ""
+msgstr "Ընդիջում"
 
 #: src/components/ModWatchtools.jsx:159
 msgid "IID (optional)"
-msgstr ""
+msgstr "IID (ըստ ցանկության)"
 
 #: src/components/ModWatchtools.jsx:249
-#, fuzzy
 msgid "Get Pixels"
-msgstr "Տեղադրված պիքսելներ"
+msgstr "Ստանալ պիքսելներ"
 
 #: src/components/ModWatchtools.jsx:281
 msgid "Get Users"
-msgstr ""
+msgstr "Ստանալ օգտատերեր"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
-msgstr ""
+msgstr "Դուք պետք է մուտքագրեք տևողություն"
 
 #: src/components/ModIIDtools.jsx:24
 msgid "You must enter an IID"
-msgstr ""
+msgstr "Դուք պետք է մուտքագրեք IID"
 
 #: src/components/ModIIDtools.jsx:53
-#, fuzzy
 msgid "IID Actions"
-msgstr "IP գործողություններ"
+msgstr "IID գործողություններ"
 
 #: src/components/ModIIDtools.jsx:80
 msgid "Enter Reason"
-msgstr ""
+msgstr "Գրեք պատճառը"
 
 #: src/components/ModIIDtools.jsx:97
 msgid "(0 = infinite)"
-msgstr ""
+msgstr "(0 = անվերջություն)"
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
@@ -1682,7 +1675,7 @@ msgstr "Պինգ"
 
 #: src/components/contextmenus/UserContextMenu.jsx:75
 msgid "DM"
-msgstr "ԱԶ"
+msgstr "Անձնական հաղորդակցություն"
 
 #: src/components/contextmenus/UserContextMenu.jsx:86
 msgid "Block"
@@ -1690,7 +1683,7 @@ msgstr "Արգելափակել"
 
 #: src/components/contextmenus/ChannelContextMenu.jsx:46
 msgid "Mute"
-msgstr "Խլացնել "
+msgstr "Լռեցնել"
 
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
@@ -1750,7 +1743,7 @@ msgstr "Shift"
 #: src/components/windows/Settings.jsx:108
 msgctxt "keybinds"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
@@ -1760,7 +1753,7 @@ msgstr "M"
 #: src/components/TemplateSettings.jsx:66
 msgctxt "keybinds"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #~ msgid "User online"
 #~ msgstr "Օգտագործողը առցանց"

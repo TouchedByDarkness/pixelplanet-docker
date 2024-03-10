@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-10 19:37+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"Language-Team: Georgian <https://hosted.weblate.org/projects/pixelplanet/"
+"client/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
@@ -48,19 +49,19 @@ msgstr "დაკოპირდა!"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr ""
+msgstr "ოვერლეი ჩართულია"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr ""
+msgstr "ოვერლეი გამორთულია"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "სააღდგომო კვერცხი ჩართულია"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "სააღდგომო კვერცხი გამორთულია"
 
 #: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
 #: src/ui/templateLoader.js:256
@@ -198,11 +199,11 @@ msgstr "3D კანვასის რენდერი ვერ ხერხ
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "არ შეგიძლიათ დააექსპორტოთ 20-ზე მეტი თემფლეითი!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr ""
+msgstr "არ შეგიძლიათ დააექსპორტოთ 20-ზე მეტი თემფლეითი!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -361,15 +362,15 @@ msgstr "გააღეთ პალიტრა"
 
 #: src/components/buttons/PencilButton.jsx:32
 msgid "History Pencil ON"
-msgstr ""
+msgstr "ისტორიული ფანქარი ჩართულია"
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr ""
+msgstr "ოვერლეის ფანქარი ჩართულია"
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
-msgstr ""
+msgstr "ფანქრის ჩართვა"
 
 #: src/components/buttons/PencilButton.jsx:69
 #, fuzzy
@@ -378,11 +379,11 @@ msgstr "თამაშის ხმების გამორთვა"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
-msgstr ""
+msgstr "გამორთეთ ისტორიული ფანქარი"
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "გამორთეთ ოვერლეის ფანქარი"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -436,7 +437,7 @@ msgstr "თქვენი აკრძალვა იწურება "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr " რომელიც არის  "
+msgstr " რომელიც არის "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
@@ -717,11 +718,11 @@ msgstr "აჩვენეთ წრეები, სადაც პიქს�
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "მოძრაობის კონტროლის სულ ჩვენება"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "მოძრაობის კონტროლის ღილაკების ყოველთვის ჩვენება"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
@@ -869,16 +870,16 @@ msgid "Submit"
 msgstr "გაგზავნა"
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Archive of removed canvases can be accessed here:"
 msgstr ""
-"აირჩიეთ კანვასი, რომლის გამოყენებაც გსურთ. ყველა კანვასი უნიკალურია და აქვს "
-"სხვადასხვა პალიტრა, დროს მოცდა და მოთხოვნები. დახურული კანვასის არქივი "
-"შეგიძლიათ ნახოთ აქ:"
+"აირჩიეთ კანვასი, რომლის გამოყენებაც გსურთ. \n"
+"ყველა კანვასი უნიკალურია და აქვს სხვადასხვა პალიტრა, დროს მოცდა და "
+"მოთხოვნები. \n"
+"დახურული კანვასის არქივი შეგიძლიათ ნახოთ აქ:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -886,7 +887,7 @@ msgstr "არქივი"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "პენსიონერი ჩარჩო (მხოლოდ ისტორია)"
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -1019,38 +1020,42 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"დაიღალეთ ყოველთვის ერთი ფერის სპამვუთ? გინდათ არტი შექმნათ, მაგრამ "
+"პიქსელების დათვლა გჭირდებათ სხვა ფოტოდან? თემფლეითმა შეგიძლიათ დაგეხმაროთ "
+"მაგაში! თემფლეითებს შეუძლიათ გამოაჩინონ ოვერლეიდა მარტო თქვენ შეგიძლიათ მათ "
+"ზემოდან დახატვა. ერთი პიქსელი თემფლეითზე, უნდა იყოს ერთი პიქსელი ჩარჩოზე."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "ოვერლეის ჩართვა"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "თემფლეითების ოვერლეად გამოჩენა თამაშში."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels Zoom"
-msgstr ""
+msgstr "პატარა პიქსელების ზუმი"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
-msgstr ""
+msgstr "ოვერლეის პატარა ინდივიდუალურ პიქსელებად გამოჩენა შორი ზუმიდან."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "ოვერლეის გამჭვირვალობა"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "ოვერლეის გამჭვირვალობა პროცენტებში."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "მარჯვენა-შიფტი აუტო-ფერი"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
+msgstr "დასვით პიქსელები ივერლეიდან მარჯვენა შიფტით, ისტორიის ნაცვლად."
 
 #: src/components/TemplateSettings.jsx:149
 #, fuzzy
@@ -1064,11 +1069,11 @@ msgstr "ჩამოტვირთეთ შაბლონი"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr ""
+msgstr "ჩართული თემფლეითების დაექსპორტება"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr ""
+msgstr "თემფლეითების იმპორტირება"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1378,11 +1383,11 @@ msgstr "არასწორი კორდინატები"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "დაედითება"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "წასვლა"
 
 #: src/components/TemplateItemEdit.jsx:97
 #, fuzzy
@@ -1391,7 +1396,7 @@ msgstr "Აირჩიეთ ენა"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "თემფლეითის სახელი"
 
 #: src/components/TemplateItemEdit.jsx:174
 #, fuzzy
@@ -1527,6 +1532,8 @@ msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"ყველა პიქსელის ზონაში გადაქცევა 0-ზე (ეს ნამდვილად არ უნდა გააკეთო არცერთ "
+"უბანზე, რომელიც უკვე არ არის ძირითადად 0)"
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
@@ -1554,13 +1561,12 @@ msgid "Pixel Protection"
 msgstr "პიქსელის დაცვა"
 
 #: src/components/ModCanvastools.jsx:321
-#, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
-"დააყენეთ უბნების დაცვა         (თუ გჭირდებათ უფრო წვრილმარცვლოვანი "
-"კონტროლი,         გამოიყენეთ დაცვა სურათის ატვირთვით და ალფა შრეებით)"
+"დააყენეთ უბნების დაცვა (თუ გჭირდებათ უფრო წვრილმარცვლოვანი კონტროლი, "
+"გამოიყენეთ დაცვა სურათის ატვირთვით და ალფა შრეებით)"
 
 #: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
 #: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
@@ -1687,57 +1693,57 @@ msgstr "დადუმება"
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "G"
-msgstr ""
+msgstr "გ"
 
 #: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
 msgctxt "keybinds"
 msgid "X"
-msgstr ""
+msgstr "ხ"
 
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
 msgctxt "keybinds"
 msgid "H"
-msgstr ""
+msgstr "ჰ"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
 msgid "R"
-msgstr ""
+msgstr "რ"
 
 #: src/components/windows/Help.jsx:23
 msgctxt "keybinds"
 msgid "Q"
-msgstr ""
+msgstr "ქ"
 
 #: src/components/windows/Help.jsx:24
 msgctxt "keybinds"
 msgid "E"
-msgstr ""
+msgstr "ე"
 
 #: src/components/windows/Help.jsx:25
 msgctxt "keybinds"
 msgid "W"
-msgstr ""
+msgstr "წ"
 
 #: src/components/windows/Help.jsx:26
 msgctxt "keybinds"
 msgid "A"
-msgstr ""
+msgstr "ა"
 
 #: src/components/windows/Help.jsx:27
 msgctxt "keybinds"
 msgid "S"
-msgstr ""
+msgstr "ს"
 
 #: src/components/windows/Help.jsx:28
 msgctxt "keybinds"
 msgid "D"
-msgstr ""
+msgstr "დ"
 
 #: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
-msgstr ""
+msgstr "შიფტი"
 
 #: src/components/windows/Settings.jsx:108
 #, fuzzy
@@ -1748,12 +1754,12 @@ msgstr "არა"
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
 msgid "M"
-msgstr ""
+msgstr "მ"
 
 #: src/components/TemplateSettings.jsx:66
 msgctxt "keybinds"
 msgid "T"
-msgstr ""
+msgstr "ტ"
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "დამალული კანვასის ჩვენება"
