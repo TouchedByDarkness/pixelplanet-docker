@@ -37,7 +37,7 @@ msgstr "Furnizorul tău de internet este banat"
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr "Ești desconectat pentu încă ${timpMin} minute"
+msgstr "Ești desconectat pentu încă ${ timeMin } minute"
 
 #: src/core/ChatProvider.js:450
 #, javascript-format
@@ -198,7 +198,7 @@ msgstr "Pentru a merge înapoi pe pixelplanet"
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
 msgid "Hello ${ name }, you can set your new password here:"
-msgstr "Bună ${ nume }, poți să-ți setezi o parolă nouă aici:"
+msgstr "Bună ${ name }, poți să-ți setezi o parolă nouă aici:"
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
@@ -319,7 +319,7 @@ msgstr "Vei fi redirecționat automatic după 15 secunde"
 #: src/ssr/RedirectionPage.jsx:30
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Sau ${ apasăAici } pentru a merge înapoi la pixelplanet"
+msgstr "Sau ${ clickHere } pentru a merge înapoi la pixelplanet"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
@@ -417,12 +417,12 @@ msgstr ""
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr "Bine ai venit ${ nume } la PixelPlanet, te rog verifică-ți mailul"
+msgstr "Bine ai venit ${ name } la PixelPlanet, te rog verifică-ți mailul"
 
 #: src/core/MailProvider.js:67
 #, javascript-format
 msgid "Hello ${ name }"
-msgstr "Bună ${ nume }"
+msgstr "Bună ${ name }"
 
 #: src/core/MailProvider.js:68
 msgid ""
@@ -455,7 +455,7 @@ msgid ""
 "We already sent you a verification mail, you can request another one in "
 "${ minLeft } minutes."
 msgstr ""
-"Deja ți-am trimis un mail de verificare, poți cere încă una în ${ minRămase }"
+"Deja ți-am trimis un mail de verificare, poți cere încă una în ${ minLeft }"
 " minute."
 
 #: src/core/MailProvider.js:103
