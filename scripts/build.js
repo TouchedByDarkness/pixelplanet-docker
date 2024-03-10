@@ -8,6 +8,7 @@ const fs = require('fs');
 const readline = require('readline');
 const { spawn } = require('child_process');
 const webpack = require('webpack');
+const validate = require("ttag-cli/dist/src/commands/validate").default;
 
 const minifyCss = require('./minifyCss');
 const serverConfig = require('../webpack.config.server.js');
@@ -18,6 +19,7 @@ let doBuildServer = false;
 let doBuildClient = false;
 let parallel = false;
 let recursion = false;
+let onlyValidate = false;
 for (let i = 0; i < process.argv.length; i += 1) {
   switch (process.argv[i]) {
     case '--langs': {
@@ -36,6 +38,9 @@ for (let i = 0; i < process.argv.length; i += 1) {
       break;
     case '--recursion':
       recursion = true;
+      break;
+    case '--validate':
+      onlyValidate = true;
       break;
     default:
       // nothing
@@ -127,6 +132,36 @@ async function filterLackingLocals(langs, percentage) {
     badLangs,
   };
 }
+
+/*
+ * check if language files contain errors
+ */
+function validateLangs(langs) {
+  console.log('Validating language files...');
+  const langDir = path.resolve(__dirname, '..', 'i18n');
+  const brokenLangs = [];
+  for (const lang of langs) {
+    const langFiles = [`${lang}.po`, `ssr-${lang}.po`];
+    for (const langFile of langFiles) {
+      process.stdout.clearLine(0);
+      process.stdout.cursorTo(0);
+      process.stdout.write(`i18n/${langFile} `);
+      filePath = path.join(langDir, langFile);
+      if (!fs.existsSync(filePath)) {
+        continue;
+      }
+      try {
+        validate(filePath);
+      } catch {
+        brokenLangs.push(langFile);
+      }
+    }
+  }
+  process.stdout.clearLine(0);
+  process.stdout.cursorTo(0);
+  return brokenLangs;
+}
+
 
 function compile(webpackConfig) {
   return new Promise((resolve, reject) => {
@@ -226,7 +261,7 @@ function buildClientsParallel(avlangs) {
   return Promise.all(promises);
 }
 
-async function buildProduction() {
+async function build() {
   const st = Date.now();
   // cleanup old files
   if (!recursion) {
@@ -256,6 +291,18 @@ async function buildProduction() {
     return;
   }
   console.log('Building', avlangs.length, 'locales:', avlangs);
+
+  const brokenLangs = validateLangs(avlangs);
+  if (brokenLangs.length) {
+    console.error('ERROR: Translation files', brokenLangs, 'contain errors.');
+    process.exit(2);
+    return;
+  }
+  if (onlyValidate) {
+    console.log('Validation complete, everything is fine.');
+    process.exit(0);
+    return;
+  }
 
   const promises = [];
 
@@ -296,4 +343,4 @@ async function buildProduction() {
   }
 }
 
-buildProduction();
+build();
