@@ -14,7 +14,7 @@ msgstr ""
 #: src/controls/keypress.js:99
 #, javascript-format
 msgid "Switched to ${ canvasName }"
-msgstr "Zmieniono na Ziemia"
+msgstr "Zmieniono na ${ canvasName }"
 
 #: src/controls/keypress.js:184
 msgid "Grid ON"
