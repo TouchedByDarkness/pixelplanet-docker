@@ -48,7 +48,7 @@ const GetIID = () => {
             type="button"
             onClick={() => {
               copyTextToClipboard(iid);
-              dispatch(notify(t`Copied!`));
+              dispatch(notify(t`Copied`));
             }}
           >{t`Copy`}</button>
         )}

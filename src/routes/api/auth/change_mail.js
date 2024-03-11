@@ -59,7 +59,7 @@ export default async (req, res) => {
   if (mutedTtl !== -2) {
     res.status(403);
     res.json({
-      errors: [t`Muted users can not do this.`],
+      errors: [t`Muted Users can not do this.`],
     });
     return;
   }

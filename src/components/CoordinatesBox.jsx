@@ -36,7 +36,7 @@ const CoordinatesBox = () => {
       className="coorbox"
       onClick={() => {
         copy(window.location.hash);
-        dispatch(notify(t`Copied!`));
+        dispatch(notify(t`Copied`));
       }}
       role="button"
       title={t`Copy to Clipboard`}

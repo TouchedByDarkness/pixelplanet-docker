@@ -208,7 +208,7 @@ export function createKeyDownHandler(store) {
         const { hover } = store.getState().canvas;
         const text = hover.join('_');
         copy(text);
-        store.dispatch(notify(t`Copied!`));
+        store.dispatch(notify(t`Copied`));
         return;
       }
       case 't': {

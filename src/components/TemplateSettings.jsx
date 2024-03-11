@@ -70,7 +70,7 @@ const TemplateSettings = () => {
         {t`Show templates as overlays ingame.`}
       </SettingsItem>
       <SettingsItem
-        title={t`Small Pixels Zoom`}
+        title={t`Small Pixels When Zoomed`}
         value={oSmallPxls}
         onToggle={() => dispatch(toggleSmallPxls())}
       >

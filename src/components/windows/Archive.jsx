@@ -6,8 +6,8 @@ import { t } from 'ttag';
 const Archive = () => (
   <div className="content">
     <p>
-      {t`While we tend to not delete canvases, some canvases are started for fun or as a request by users who currently like a meme. Those canvases can get boring after a while and after weeks of no major change and if they really aren't worth being kept active.`}<br />
-      {t`Here we collect removed canvases to archive them in a proper way. Which is currently only one.`}
+      {t`While we tend to not delete canvases, some canvases are started for fun or as a request by users who like a currently popular meme. Those canvases can become dull and inactive after a while, at which point there is no reason to keep them and we may decide to remove them.`}<br />
+      {t`Here we collect removed canvases to archive them properly. Which is currently only one.`}
     </p>
     <h3>{t`Political Compass Canvas`}</h3>
     <img

@@ -29,16 +29,16 @@ function getCanvases(t) {
     11: t`Minimap`,
   };
   const canvasDesc = {
-    0: t`Our main canvas, a huge map of the world. Place everywhere you like`,
+    0: t`Our main canvas, a huge map of the world. Place anywhere you like!`,
     1: t`Moon canvas. Safe space for art. No flags or large text (unless part of art) or art larger than 1.5k x 1.5k pixels.`,
-    2: t`Place Voxels on a 3D canvas with others`,
-    3: t`Special canvas to spread awareness of SARS-CoV2`,
+    2: t`Place Voxels on a 3D canvas with others.`,
+    3: t`Special canvas to spread awareness of SARS-CoV2 (take the vax).`,
     5: t`Mirror of PixelZone`,
     6: t`Mirror of PixelCanvas`,
     7: t`Black and White canvas`,
     8: t`A canvas for the most active players from the the previous day. Daily ranking updates at 00:00 UTC.`,
-    10: t`Only four colors. Same rules as moon.`,
-    11: t`Conquer land on a smaller earth with protected ocean. Shares cooldown with earth canvas.`,
+    10: t`Only four colors. Same rules as moon!`,
+    11: t`Conquer land on a smaller earth with protected ocean. Shares cooldown with earth canvas!`,
   };
   /*
    * no edit below here needed when adding/removing canvas

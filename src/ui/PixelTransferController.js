@@ -67,8 +67,9 @@ class PixelTransferController {
         pxlCnt: 0,
       };
       store.dispatch(pAlert(
-        t`Error :(`,
-        t`Didn't get an answer from pixelplanet. Maybe try to refresh?`,
+        t`Timeout`,
+        // eslint-disable-next-line max-len
+        t`Didn't get an answer from pixelplanet. Try to refresh if this problem persists.`,
         'error',
       ));
     }
@@ -124,12 +125,12 @@ class PixelTransferController {
         msg = t`You have to be logged in to place on this canvas`;
         break;
       case 7:
-        errorTitle = t`Place more :)`;
+        errorTitle = t`Not allowed`;
         // eslint-disable-next-line max-len
-        msg = t`You can not access this canvas yet. You need to place more pixels`;
+        msg = t`You can not access this canvas yet, because your pixel score is too low`;
         break;
       case 8:
-        store.dispatch(notify(t`Pixel protected!`));
+        store.dispatch(notify(t`Pixel protected`));
         break;
       case 9:
         // pixelstack used up
@@ -140,7 +141,7 @@ class PixelTransferController {
         type = 'captcha';
         break;
       case 11:
-        errorTitle = t`No Proxies Allowed :(`;
+        errorTitle = t`Not allowed`;
         msg = t`You are using a Proxy.`;
         break;
       case 12:
@@ -158,12 +159,12 @@ class PixelTransferController {
         break;
       case 15:
         errorTitle = t`Range Banned`;
-        msg = t`Your Internet Provider is banned from playing this game`;
+        msg = t`Your Internet Provider is banned from this game`;
         break;
       case 16:
         errorTitle = t`Timeout`;
         // eslint-disable-next-line max-len
-        msg = t`Didn't get an answer from pixelplanet. Maybe try to refresh if problem persists?`;
+        msg = t`Didn't get an answer from pixelplanet. Try to refresh if this problem persists.`;
         break;
       default:
         errorTitle = t`Weird`;

@@ -43,7 +43,7 @@ export default async (req, res) => {
   if (mutedTtl !== -2) {
     res.status(403);
     res.json({
-      errors: [t`Muted users can not delete their account.`],
+      errors: [t`Muted Users can not delete their account.`],
     });
     return;
   }

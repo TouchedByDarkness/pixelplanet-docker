@@ -431,7 +431,7 @@ export class ChatProvider {
           `${name} / ${user.ip} tried to send chat message but is not allowed`,
         );
         if (allowed === 1) {
-          return t`You can not send chat messages with proxy`;
+          return t`You can not send chat messages while using a proxy`;
         } if (allowed === 100 && user.userlvl === 0) {
           return t`Your country is temporary muted from this chat channel`;
         } if (allowed === 101) {

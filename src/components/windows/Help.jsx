@@ -107,7 +107,7 @@ const Help = () => {
       </div>
       <h3>Palette Credits</h3>
       <div>
-        {jt`We thanks those artists very much, they offered their palettes to the public on`}&nbsp;
+        {jt`We thank the following artists, who made their palettes available to the public on`}&nbsp;
         <a href="https://lospec.com/">lospec.com</a>
         <p>
           {jt`Credit for the Palette of the Moon goes to ${starhouseLink}.`}

@@ -41,7 +41,7 @@ const ChangePassword = ({ done }) => {
   if (success) {
     return (
       <div className="inarea">
-        <p className="modalmessage">{t`Changed Password successfully.`}</p>
+        <p className="modalmessage">{t`Password successfully changed.`}</p>
         <button type="button" onClick={done}>Close</button>
       </div>
     );
