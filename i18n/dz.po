@@ -824,7 +824,7 @@ msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Achieved canvases can be accessed here:"
+"Archived canvases can be accessed here:"
 msgstr ""
 
 #: src/components/windows/CanvasSelect.jsx:37

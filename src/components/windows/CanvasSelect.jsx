@@ -28,7 +28,7 @@ const CanvasSelect = () => {
       <p>
         {t`Select the canvas you want to use.
 Every canvas is unique and has different palettes, cooldown and requirements.
-Achieved canvases can be accessed here:`}&nbsp;
+Archived canvases can be accessed here:`}&nbsp;
         <span
           role="button"
           tabIndex={0}
