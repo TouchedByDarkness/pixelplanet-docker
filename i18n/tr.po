@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 21:36+0000\n"
+"PO-Revision-Date: 2024-03-11 17:01+0000\n"
 "Last-Translator: TCr3 <tcreeper.earth@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/tr/>\n"
@@ -44,8 +44,8 @@ msgstr "Ses Açıldı"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-msgid "Copied!"
-msgstr "Kopyalandı!"
+msgid "Copied"
+msgstr "Kopyalandı"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
@@ -63,132 +63,116 @@ msgstr "Easter Egg AÇIK"
 msgid "Easter Egg OFF"
 msgstr "Easter Egg KAPALI"
 
-#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
-#: src/ui/templateLoader.js:256
-msgid "Error :("
-msgstr "Hata :("
+#: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
+msgid "Timeout"
+msgstr "Zaman aşımı"
 
-#: src/ui/PixelTransferController.js:71
-msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-msgstr "Pixelplanet'ten yanıt alınamadı. Sayfayı yenilemeyi deneyebilirsin?"
+#: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
+msgstr ""
+"Pixelplanet'ten yanıt alınamadı. Sorun devam ederse sayfayı yenilemeyi "
+"deneyebilirsiniz."
 
-#: src/ui/PixelTransferController.js:103
+#: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
 msgstr "Geçersiz Tuval"
 
-#: src/ui/PixelTransferController.js:104
+#: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
 msgstr "Böyle bir tuval yok"
 
-#: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
-#: src/ui/PixelTransferController.js:115
+#: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
 msgstr "Geçersiz Koordinatlar"
 
-#: src/ui/PixelTransferController.js:108
+#: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
 msgstr "x sınırların dışında"
 
-#: src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
 msgstr "y sınıralrın dışında"
 
-#: src/ui/PixelTransferController.js:116
+#: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
 msgstr "z sınırların dışında"
 
-#: src/ui/PixelTransferController.js:119
+#: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
 msgstr "Yanlış Renk"
 
-#: src/ui/PixelTransferController.js:120
+#: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
 msgstr "Geçersiz renk seçildi"
 
-#: src/ui/PixelTransferController.js:123
+#: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
 msgstr "Yalnız giriş yapmış üyeler için"
 
-#: src/ui/PixelTransferController.js:124
+#: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
 msgstr "Bu tuvalde çizebilmek için giriş yapmanız gerekiyor"
 
-#: src/ui/PixelTransferController.js:127
-msgid "Place more :)"
-msgstr "Biraz daha piksel at :)"
-
-#: src/ui/PixelTransferController.js:129
-msgid "You can not access this canvas yet. You need to place more pixels"
-msgstr "Şu anda bu tuvale erişiminiz yok. Daha çok piksel atmanız gerekiyor"
-
-#: src/ui/PixelTransferController.js:132
-msgid "Pixel protected!"
-msgstr "Piksel korunuyor!"
-
-#: src/ui/PixelTransferController.js:139
-msgid "Please prove that you are human"
-msgstr "Lütfen insan olduğunuzu kanıtlayın"
-
-#: src/ui/PixelTransferController.js:143
-msgid "No Proxies Allowed :("
-msgstr "Proxylere İzin Verilmiyor :("
-
-#: src/ui/PixelTransferController.js:144
-msgid "You are using a Proxy."
-msgstr "Proxy kullanıyorsun."
-
-#: src/ui/PixelTransferController.js:147
+#: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:148
 msgid "Not allowed"
 msgstr "İzin yok"
 
-#: src/ui/PixelTransferController.js:148
+#: src/ui/PixelTransferController.js:130
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr "Piksel sayınız yetersiz olduğu için şu anda bu tuvale erişiminiz yok"
+
+#: src/ui/PixelTransferController.js:133
+msgid "Pixel protected"
+msgstr "Piksel korunuyor"
+
+#: src/ui/PixelTransferController.js:140
+msgid "Please prove that you are human"
+msgstr "Lütfen insan olduğunuzu kanıtlayın"
+
+#: src/ui/PixelTransferController.js:145
+msgid "You are using a Proxy."
+msgstr "Proxy kullanıyorsun."
+
+#: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
 msgstr "Yalnızca dünün ilk 10 oyuncusu buraya piksel atabilir"
 
-#: src/ui/PixelTransferController.js:151
+#: src/ui/PixelTransferController.js:152
 msgid "You are weird"
 msgstr "Değişiksiniz"
 
-#: src/ui/PixelTransferController.js:153
+#: src/ui/PixelTransferController.js:154
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
 "Piksellerin sunucunun kafasını karıştırdı. Birden fazla cihazda mı "
 "oynuyorsun?"
 
-#: src/ui/PixelTransferController.js:156
+#: src/ui/PixelTransferController.js:157
 msgid "Banned"
 msgstr "Yasaklandınız"
 
-#: src/ui/PixelTransferController.js:160
+#: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
 msgstr "Alan Yasaklısınız"
 
-#: src/ui/PixelTransferController.js:161
-msgid "Your Internet Provider is banned from playing this game"
-msgstr "İnternet sağlayıcınız oyundan yasaklandı"
+#: src/ui/PixelTransferController.js:162
+msgid "Your Internet Provider is banned from this game"
+msgstr "İnternet sağlayıcınız oyundan yasaklı"
 
-#: src/ui/PixelTransferController.js:164
-msgid "Timeout"
-msgstr "Zaman aşımı"
-
-#: src/ui/PixelTransferController.js:166
-msgid ""
-"Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
-"persists?"
-msgstr ""
-"Pixelplanet'ten yanıt alınamadı. Sorun devam ederse sayfayı yenilemeyi "
-"deneyebilirsiniz."
-
-#: src/ui/PixelTransferController.js:169
+#: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "Garip"
 
-#: src/ui/PixelTransferController.js:170
+#: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
 msgstr "Piksel ayarlanamadı"
 
-#: src/ui/PixelTransferController.js:175
+#: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr "Hata ${ retCode }"
@@ -200,6 +184,10 @@ msgstr "Tuval Hatası"
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "3D tuval çizilemedi, WebGL2 devre dışı mı?"
+
+#: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
+msgid "Error :("
+msgstr "Hata :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -348,13 +336,13 @@ msgstr "Ayarlar"
 msgid "User Area"
 msgstr "Kullanıcı Alanı"
 
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "Ekran Görüntüsü Al"
-
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
 msgstr "Küresel Görünüm"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "Ekran Görüntüsü Al"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -404,13 +392,25 @@ msgstr "Sohbet"
 msgid "Canvas Archive"
 msgstr "Tuval Arşivi"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Yasaklandınız. Doğru olmadığını mı düşünüyorsunuz? "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " 'da başvuruda bulunun."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Doğrulamayı yanlış çözdünüz"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Olmayan veya yanlış captcha metni"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Captcha kimliği verilmedi"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Bilinmeyen Captcha Hatası"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -420,6 +420,26 @@ msgstr " 'da başvuruda bulunun."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Hata"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Geri Dön"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Gönder"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Yasaklandınız. Doğru olmadığını mı düşünüyorsunuz? "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " 'da başvuruda bulunun."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -452,38 +472,6 @@ msgstr "Bu iletiyi gördüğünüze göre artık yasaklı değilsiniz."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Neden?"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Doğrulamayı yanlış çözdünüz"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Olmayan veya yanlış captcha metni"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Captcha kimliği verilmedi"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Bilinmeyen Captcha Hatası"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Geri Dön"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Gönder"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -669,7 +657,8 @@ msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
 "button and drag to zoom"
 msgstr ""
-"${ mouseSymbol } Fare tekerleğini döndürerek uzaklaştırın veya yakınlaştırın"
+"${ mouseSymbol } Fare tekerleğini döndürerek veya ${ mouseSymbol } orta fare "
+"düğmesine basarak uzaklaştırın veya yakınlaştırın"
 
 #: src/components/windows/Help.jsx:103
 #, javascript-format
@@ -688,11 +677,9 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:110
 msgid ""
-"We thanks those artists very much, they offered their palettes to the public "
-"on"
-msgstr ""
-"Buradaki sanatçılara çok teşekkür ederiz, paletlerini herkesin kullanımına "
-"sunuyorlar"
+"We thank the following artists, who made their palettes available to the "
+"public on"
+msgstr "Renk paletlerini kamuya açan aşağıdaki sanatçılara teşekkür ederiz"
 
 #: src/components/windows/Help.jsx:113
 #, javascript-format
@@ -884,12 +871,12 @@ msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Archive of removed canvases can be accessed here:"
+"Achieved canvases can be accessed here:"
 msgstr ""
 "Kullanmak istediğiniz tuvali buradan seçiniz.\n"
 "Her tuval özgün olup farklı renk paletleri, bekleme süreleri ve "
 "gereksinimleri vardır.\n"
-"Kaldırılmış tuvallerin arşivine buradan ulaşabilirsiniz:"
+"Arşivlenmiş tuvallere buradan ulaşabilirsiniz:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -902,22 +889,23 @@ msgstr "Eski Tuvaller (yalnız geçmiş)"
 #: src/components/windows/Archive.jsx:9
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who currently like a meme. Those canvases can get "
-"boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active."
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
 msgstr ""
-"Tuvalleri genelde kaldırmayız, ancak bazı eğlence amaçlı çıkarılan veya "
-"mevcut bir akımdan dolayı kullanıcıların isteğiyle açılan tuvaller bir süre "
-"sonra sıkıcı hale gelebilir ve haftalarca önemli bir değişiklik yaşanmadan "
-"durabilir. Bu tuvalleri ise biz oyundan kaldırırız."
+"Tuvalleri genelde kaldırmasak da bazı eğlence amaçlı çıkarılan veya mevcut "
+"bir akımdan dolayı kullanıcıların isteğiyle açılan tuvaller bir süre sonra "
+"sıkıcı hale gelebilir ve haftalarca önemli bir değişiklik yaşanmadan "
+"durabilir, tutmamızın anlamsız olduğu bu tuvalleri ise oyundan kaldırma "
+"kararı alabiliriz."
 
 #: src/components/windows/Archive.jsx:10
 msgid ""
-"Here we collect removed canvases to archive them in a proper way. Which is "
+"Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
-"Burada kaldırılan tuvallerimizin arşivleri mevcuttur (ki şimdilik yalnzıca "
-"bir tane vardır)."
+"Burada kaldırılan tuvallerimizin arşivleri mevcuttur. Şu anda yalnızca bir "
+"tane vardır."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -1004,6 +992,54 @@ msgstr "Yenile"
 msgid "Enter Characters"
 msgstr "Karakterleri Gir"
 
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "E-posta adresi boş olamaz."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "E-Posta en az 5 karakterden oluşmalıdır."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "E-Posta 40 karakterden uzun olamaz."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "E-posta adresi içerisinde en az bir nokta bulundurmalıdır"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "E-posta adresi içerisinde @ bulundurmalıdır"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "Kullanıcı adı boş bırakılamaz."
+
+#: src/utils/validation.js:30
+msgid "Name must be at least 2 characters long"
+msgstr "Kullanıcı adı en az 2 karakterden oluşmalıdır"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "Kullanıcı adı 26 karakterden az olmalıdır"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Kullanıcı adı @, /, \\ veya # gibi geçersiz bir karakter kullanıyor"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "Parola girilmedi."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "Parola en az 6 karakterden oluşmalıdır."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "Parolan 60 karakteri geçemez."
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "IID Al"
@@ -1044,7 +1080,7 @@ msgid "Show templates as overlays ingame."
 msgstr "Şablonları tuval üzerinde göster."
 
 #: src/components/TemplateSettings.jsx:73
-msgid "Small Pixels Zoom"
+msgid "Small Pixels When Zoomed"
 msgstr "Yakınlaştırmada Pikselleri Küçült"
 
 #: src/components/TemplateSettings.jsx:78
@@ -1264,54 +1300,6 @@ msgstr ""
 "Sıralama her 5 dakikada bir güncellenir. Günlük sıralama UTC gece yarısında "
 "sıfırlanır."
 
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "E-posta adresi boş olamaz."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "E-Posta en az 5 karakterden oluşmalıdır."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "E-Posta 40 karakterden uzun olamaz."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "E-posta adresi içerisinde en az bir nokta bulundurmalıdır"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "E-posta adresi içerisinde @ bulundurmalıdır"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "Kullanıcı adı boş bırakılamaz."
-
-#: src/utils/validation.js:30
-msgid "Name must be at least 2 characters long"
-msgstr "Kullanıcı adı en az 2 karakterden oluşmalıdır"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "Kullanıcı adı 26 karakterden az olmalıdır"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Kullanıcı adı @, /, \\ veya # gibi geçersiz bir karakter kullanıyor"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "Parola girilmedi."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "Parola en az 6 karakterden oluşmalıdır."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "Parolan 60 karakteri geçemez."
-
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Çevrimiçi Kullanıcılar"
@@ -1357,26 +1345,6 @@ msgstr "Günlük Top10 Sıralaması"
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Boyutlar"
-
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "En Yüksek 10 Ülke [piksel / gün]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Saatlik oyuncu ve piksel sayısı"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "En Yüksek 10 Oyuncu [piksel / gün]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Bugünkü piksel sayılarına göre ülkeler"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Günlük atılan toplam piksel"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
@@ -1436,8 +1404,8 @@ msgid "Passwords do not match."
 msgstr "Parolalar uyuşmuyor."
 
 #: src/components/ChangePassword.jsx:44
-msgid "Changed Password successfully."
-msgstr "Parola başarılı bir şekilde değiştirildi."
+msgid "Password successfully changed."
+msgstr "Parolanız başarıyla değiştirildi."
 
 #: src/components/ChangePassword.jsx:88
 msgid "Old Password"
@@ -1675,6 +1643,26 @@ msgstr "Sebep Gir"
 msgid "(0 = infinite)"
 msgstr "(0 = sonsuz)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "En Yüksek 10 Ülke [piksel / gün]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Saatlik oyuncu ve piksel sayısı"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "En Yüksek 10 Oyuncu [piksel / gün]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Bugünkü piksel sayılarına göre ülkeler"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Günlük atılan toplam piksel"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Ping"
@@ -1760,6 +1748,15 @@ msgstr "M"
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr "Pixelplanet'ten yanıt alınamadı. Sayfayı yenilemeyi deneyebilirsin?"
+
+#~ msgid "Place more :)"
+#~ msgstr "Biraz daha piksel at :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr "Proxylere İzin Verilmiyor :("
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "Gizli Tuvalleri Göster"

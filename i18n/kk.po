@@ -44,7 +44,8 @@ msgstr "Дыбыс қосылды"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-msgid "Copied!"
+#, fuzzy
+msgid "Copied"
 msgstr "Көшірілді!"
 
 #: src/controls/keypress.js:217
@@ -63,131 +64,119 @@ msgstr ""
 msgid "Easter Egg OFF"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
-#: src/ui/templateLoader.js:256
-msgid "Error :("
-msgstr "Қате :("
+#: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
+msgid "Timeout"
+msgstr "Байланыс орнату уақыты бітті"
 
-#: src/ui/PixelTransferController.js:71
-msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-msgstr "Pixelplanet жауап бермейді. Бетті жаңартсаңыз қайтеді?"
+#: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
+#, fuzzy
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
+msgstr ""
+"Pixelplanet жауап бермейді. Мәселе шешілмесе, бәлкім бетті жаңартып көресіз?"
 
-#: src/ui/PixelTransferController.js:103
+#: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
 msgstr "Жарамсыз кенеп"
 
-#: src/ui/PixelTransferController.js:104
+#: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
 msgstr "Мұндай кенеп жоқ"
 
-#: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
-#: src/ui/PixelTransferController.js:115
+#: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
 msgstr "Жарамсыз координаттар"
 
-#: src/ui/PixelTransferController.js:108
+#: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
 msgstr "x шектен тыс"
 
-#: src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
 msgstr "y шектен тыс"
 
-#: src/ui/PixelTransferController.js:116
+#: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
 msgstr "z шектен тыс"
 
-#: src/ui/PixelTransferController.js:119
+#: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
 msgstr "Қате түс"
 
-#: src/ui/PixelTransferController.js:120
+#: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
 msgstr "Жарамсыз түс таңдалды"
 
-#: src/ui/PixelTransferController.js:123
+#: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
 msgstr "Тек тіркелген қолданушылар үшін"
 
-#: src/ui/PixelTransferController.js:124
+#: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
 msgstr "Осы кенепте салу үшін тіркелуіңіз керек"
 
-#: src/ui/PixelTransferController.js:127
-msgid "Place more :)"
-msgstr "Көбірек салыңыз :)"
-
-#: src/ui/PixelTransferController.js:129
-msgid "You can not access this canvas yet. You need to place more pixels"
-msgstr "Осы кенепте әзірше сала алмайсыз. Көбірек пиксел салуыңыз қажет"
-
-#: src/ui/PixelTransferController.js:132
-msgid "Pixel protected!"
-msgstr "Пиксел қорғалған!"
-
-#: src/ui/PixelTransferController.js:139
-msgid "Please prove that you are human"
-msgstr "Адам екеніңізді дәлелдеңіз"
-
-#: src/ui/PixelTransferController.js:143
-msgid "No Proxies Allowed :("
-msgstr "Прокси қолдануға тыйым салынған :("
-
-#: src/ui/PixelTransferController.js:144
-msgid "You are using a Proxy."
-msgstr "Прокси қолданып отырсыз."
-
-#: src/ui/PixelTransferController.js:147
+#: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:148
 msgid "Not allowed"
 msgstr "Рұқсат етілмеген"
 
-#: src/ui/PixelTransferController.js:148
+#: src/ui/PixelTransferController.js:130
+#, fuzzy
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr "Осы кенепте әзірше сала алмайсыз. Көбірек пиксел салуыңыз қажет"
+
+#: src/ui/PixelTransferController.js:133
+#, fuzzy
+msgid "Pixel protected"
+msgstr "Пиксел қорғалған!"
+
+#: src/ui/PixelTransferController.js:140
+msgid "Please prove that you are human"
+msgstr "Адам екеніңізді дәлелдеңіз"
+
+#: src/ui/PixelTransferController.js:145
+msgid "You are using a Proxy."
+msgstr "Прокси қолданып отырсыз."
+
+#: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
 msgstr "Кеше ең белсенді болған 10 ойыншы ғана мұнда сала алады"
 
-#: src/ui/PixelTransferController.js:151
+#: src/ui/PixelTransferController.js:152
 msgid "You are weird"
 msgstr "Сіз біртүрлісіз"
 
-#: src/ui/PixelTransferController.js:153
+#: src/ui/PixelTransferController.js:154
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
 "Пикселдерді тым тез салып серверді шатастырып жібердіңіз. Бірнеше құрылғыдан "
 "ойнап отырсыз ба?"
 
-#: src/ui/PixelTransferController.js:156
+#: src/ui/PixelTransferController.js:157
 msgid "Banned"
 msgstr "Бұғатталғансыз"
 
-#: src/ui/PixelTransferController.js:160
+#: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
 msgstr "Аймақта бұғатталғансыз"
 
-#: src/ui/PixelTransferController.js:161
-msgid "Your Internet Provider is banned from playing this game"
+#: src/ui/PixelTransferController.js:162
+#, fuzzy
+msgid "Your Internet Provider is banned from this game"
 msgstr "Интернет провайдеріңіз бұл ойында бұғатталған"
 
-#: src/ui/PixelTransferController.js:164
-msgid "Timeout"
-msgstr "Байланыс орнату уақыты бітті"
-
-#: src/ui/PixelTransferController.js:166
-msgid ""
-"Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
-"persists?"
-msgstr ""
-"Pixelplanet жауап бермейді. Мәселе шешілмесе, бәлкім бетті жаңартып көресіз?"
-
-#: src/ui/PixelTransferController.js:169
+#: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "Біртүрлі"
 
-#: src/ui/PixelTransferController.js:170
+#: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
 msgstr "Пиксел салу мүмкін емес"
 
-#: src/ui/PixelTransferController.js:175
+#: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr "Қате ${ retCode }"
@@ -199,6 +188,10 @@ msgstr "Кенеп қатесі"
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "3D-кенепті рендерлеу мүмкін емес, сізде WebGL2 өшірулі ме?"
+
+#: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
+msgid "Error :("
+msgstr "Қате :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -347,13 +340,13 @@ msgstr "Баптаулар"
 msgid "User Area"
 msgstr "Қолданушы аймағы"
 
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "Скриншот түсіру"
-
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
 msgstr "Глобус көрінісі"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "Скриншот түсіру"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -404,13 +397,25 @@ msgstr "Чат"
 msgid "Canvas Archive"
 msgstr "Кенептер мұрағаты"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Сіз бұғатталғансыз. Сізді әділетсіз бұғаттады деп ойласаңыз, "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Тым көп уақыт өтті, қайта байқап көріңіз."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " бетінде шағым бере аласыз."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Captcha-ны шешпедіңіз"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Бос немесе қате Captcha мәтіні"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Captcha ID берілмеген"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Белгісіз Captcha қатесі"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -420,6 +425,26 @@ msgstr " бетінде шағым бере аласыз."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Қате"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Болдырмау"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Жіберу"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Сіз бұғатталғансыз. Сізді әділетсіз бұғаттады деп ойласаңыз, "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " бетінде шағым бере аласыз."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -452,38 +477,6 @@ msgstr "Бұл хабарламаны көргеннен бері сіз енд�
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Не үшін?"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Тым көп уақыт өтті, қайта байқап көріңіз."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Captcha-ны шешпедіңіз"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Бос немесе қате Captcha мәтіні"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Captcha ID берілмеген"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Белгісіз Captcha қатесі"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Болдырмау"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Жіберу"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -681,9 +674,10 @@ msgstr ""
 "немесе ${ touchSymbol } екі рет түртіңіз"
 
 #: src/components/windows/Help.jsx:110
+#, fuzzy
 msgid ""
-"We thanks those artists very much, they offered their palettes to the public "
-"on"
+"We thank the following artists, who made their palettes available to the "
+"public on"
 msgstr ""
 "Бұл суретшілерге көп алғыс айтамыз, олар өз жасаған палитраларын осы сайтта "
 "жариялады"
@@ -876,7 +870,7 @@ msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Archive of removed canvases can be accessed here:"
+"Achieved canvases can be accessed here:"
 msgstr ""
 "Қолданғыңыз келетін кенепті таңдаңыз. Әр кенептің өз палитрасы, күту уақыты "
 "және талаптары бар. Жабылған кенептер мұрағатын мына жерден көре аласыз:"
@@ -893,9 +887,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who currently like a meme. Those canvases can get "
-"boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active."
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
 msgstr ""
 "Әдетте біз кенептерді жоймаймыз, бірақ олардың кейбірлері көңіл көтеру үшін "
 "немесе кезекті мемді ұнататын қолданушылардың өтініші бойынша жасалады. "
@@ -906,7 +900,7 @@ msgstr ""
 #: src/components/windows/Archive.jsx:10
 #, fuzzy
 msgid ""
-"Here we collect removed canvases to archive them in a proper way. Which is "
+"Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
 "Жойылған кенептерді оңтайлы түрде сақтау үшін біз оларды осында жинаймыз."
@@ -993,6 +987,54 @@ msgstr "Қайта жүктеу"
 msgid "Enter Characters"
 msgstr "Таңбаларды енгізіңіз"
 
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "Эл. пошта бос бола алмайды."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "Эл. пошта кемінде 5 таңбадан тұруы керек."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "Эл. пошта 40 таңбадан аспауы керек."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "Эл. поштада кемінде бір нүкте болуы керек"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "Эл. поштада @ болуы керек"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "Қолданушы аты бос бола алмайды."
+
+#: src/utils/validation.js:30
+msgid "Name must be at least 2 characters long"
+msgstr "Қолданушы аты кемінде 2 таңбадан тұруы керек"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "Қолданушы аты 26 таңбадан аспауы керек"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Қолданушы атында @, /, \\ немесе # сияқты жарамсыз таңбалар бар"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "Құпиясөз берілмеген."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "Құпиясөз кемінде 6 таңбадан тұруы керек."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "Құпиясөз 60 таңбадан аспауы керек."
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "IID алу"
@@ -1029,7 +1071,7 @@ msgid "Show templates as overlays ingame."
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:73
-msgid "Small Pixels Zoom"
+msgid "Small Pixels When Zoomed"
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:78
@@ -1251,54 +1293,6 @@ msgstr ""
 "Рейтиң 5 минут сайын жаңартылады. Күнделікті рейтиңдер UTC бойынша түн "
 "ортасында арылтады."
 
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "Эл. пошта бос бола алмайды."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "Эл. пошта кемінде 5 таңбадан тұруы керек."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "Эл. пошта 40 таңбадан аспауы керек."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "Эл. поштада кемінде бір нүкте болуы керек"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "Эл. поштада @ болуы керек"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "Қолданушы аты бос бола алмайды."
-
-#: src/utils/validation.js:30
-msgid "Name must be at least 2 characters long"
-msgstr "Қолданушы аты кемінде 2 таңбадан тұруы керек"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "Қолданушы аты 26 таңбадан аспауы керек"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Қолданушы атында @, /, \\ немесе # сияқты жарамсыз таңбалар бар"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "Құпиясөз берілмеген."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "Құпиясөз кемінде 6 таңбадан тұруы керек."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "Құпиясөз 60 таңбадан аспауы керек."
-
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Желідегі қолданушылар"
@@ -1344,26 +1338,6 @@ msgstr "Күнделікті рейтиңнің бірінші ондығына 
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Өлшемі"
-
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Ең белсенді 10 ел [пикс / күніне]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Сағатына ойыншылар мен пикселдер"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Ең белсенді 10 ойыншы [пикс / күніне]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Пикселдері бойынша бүгінгі елдер"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Күніне барлық пиксел саны"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
@@ -1425,7 +1399,8 @@ msgid "Passwords do not match."
 msgstr "Құпиясөздер бірдей емес."
 
 #: src/components/ChangePassword.jsx:44
-msgid "Changed Password successfully."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Құпиясөз сәтті өзгертілді."
 
 #: src/components/ChangePassword.jsx:88
@@ -1664,6 +1639,26 @@ msgstr "Себебін енгізіңіз"
 msgid "(0 = infinite)"
 msgstr "(0 = шексіз)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Ең белсенді 10 ел [пикс / күніне]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Сағатына ойыншылар мен пикселдер"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Ең белсенді 10 ойыншы [пикс / күніне]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Пикселдері бойынша бүгінгі елдер"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Күніне барлық пиксел саны"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Атап өту"
@@ -1750,6 +1745,15 @@ msgstr "M"
 msgctxt "keybinds"
 msgid "T"
 msgstr ""
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr "Pixelplanet жауап бермейді. Бетті жаңартсаңыз қайтеді?"
+
+#~ msgid "Place more :)"
+#~ msgstr "Көбірек салыңыз :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr "Прокси қолдануға тыйым салынған :("
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "Жасырын кенептерді көрсету"

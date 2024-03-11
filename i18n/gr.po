@@ -44,7 +44,8 @@ msgstr "Διακοπή σίγασης ήχου"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-msgid "Copied!"
+#, fuzzy
+msgid "Copied"
 msgstr "Αντιγράφηκε!"
 
 #: src/controls/keypress.js:217
@@ -63,135 +64,121 @@ msgstr "Πασχαλινό Αυγό Ενεργό"
 msgid "Easter Egg OFF"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
-#: src/ui/templateLoader.js:256
-msgid "Error :("
-msgstr "Κάτι πήγε λάθος:("
+#: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
+msgid "Timeout"
+msgstr "Τέλος χρόνου"
 
-#: src/ui/PixelTransferController.js:71
-msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
+#, fuzzy
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
 msgstr ""
 "Δεν λάβατε απάντηση από το pixelplanet; Ίσως προσπαθήσετε να ανανεώσετε την "
 "σελίδα;"
 
-#: src/ui/PixelTransferController.js:103
+#: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
 msgstr "Μη έγκυρος καμβάς"
 
-#: src/ui/PixelTransferController.js:104
+#: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
 msgstr "Αυτός ο καμβάς δεν υπάρχει"
 
-#: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
-#: src/ui/PixelTransferController.js:115
+#: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
 msgstr "Μη έγκυρες συντεταγμένες"
 
-#: src/ui/PixelTransferController.js:108
+#: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
 msgstr "x εκτός ορίων"
 
-#: src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
 msgstr "y εκτός ορίων"
 
-#: src/ui/PixelTransferController.js:116
+#: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
 msgstr "z εκτός ορίων"
 
-#: src/ui/PixelTransferController.js:119
+#: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
 msgstr "Λάθος χρώμα"
 
-#: src/ui/PixelTransferController.js:120
+#: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
 msgstr "Επιλέχθηκε μη έγκυρο χρώμα"
 
-#: src/ui/PixelTransferController.js:123
+#: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
 msgstr "Μόνο για εγγεγραμμένους χρήστες"
 
-#: src/ui/PixelTransferController.js:124
+#: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
 msgstr "Πρέπει να είστε συνδεδεμένοι για να τοποθετήσετε σε αυτόν τον καμβά"
 
-#: src/ui/PixelTransferController.js:127
-msgid "Place more :)"
-msgstr "Τοποθετήστε περισσότερα pixel :)"
+#: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:148
+msgid "Not allowed"
+msgstr "Δεν επιτρέπεται"
 
-#: src/ui/PixelTransferController.js:129
-msgid "You can not access this canvas yet. You need to place more pixels"
+#: src/ui/PixelTransferController.js:130
+#, fuzzy
+msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
 "Δεν μπορείτε ακόμη να αποκτήσετε πρόσβαση σε αυτόν τον καμβά. Πρέπει να "
 "τοποθετήσετε περισσότερα pixel"
 
-#: src/ui/PixelTransferController.js:132
-msgid "Pixel protected!"
+#: src/ui/PixelTransferController.js:133
+#, fuzzy
+msgid "Pixel protected"
 msgstr "Προστατευμένα pixel!"
 
-#: src/ui/PixelTransferController.js:139
+#: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
 msgstr "Παρακαλώ αποδείξτε ότι είστε άνθρωπος"
 
-#: src/ui/PixelTransferController.js:143
-msgid "No Proxies Allowed :("
-msgstr "Δεν επιτρέπονται proxies :("
-
-#: src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
 msgstr "Χρησιμοποιείτε Proxy."
 
-#: src/ui/PixelTransferController.js:147
-msgid "Not allowed"
-msgstr "Δεν επιτρέπεται"
-
-#: src/ui/PixelTransferController.js:148
+#: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
 msgstr "Μόνο το Top10 απο χθες μπορεί να τοποθετηθεί εδώ"
 
-#: src/ui/PixelTransferController.js:151
+#: src/ui/PixelTransferController.js:152
 msgid "You are weird"
 msgstr "Είσαι περίεργος"
 
-#: src/ui/PixelTransferController.js:153
+#: src/ui/PixelTransferController.js:154
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
 "Ο διακομιστής μπερδεύτηκε με τα pixel σας. Παίζετε απο πολλές συσκευές;"
 
-#: src/ui/PixelTransferController.js:156
+#: src/ui/PixelTransferController.js:157
 msgid "Banned"
 msgstr "Αποκλείστηκες"
 
-#: src/ui/PixelTransferController.js:160
+#: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
 msgstr "Απαγόρευση εύρους"
 
-#: src/ui/PixelTransferController.js:161
-msgid "Your Internet Provider is banned from playing this game"
+#: src/ui/PixelTransferController.js:162
+#, fuzzy
+msgid "Your Internet Provider is banned from this game"
 msgstr "Ο πάροχος Διαδικτύου σας έχει απαγορευτεί να παίξει αυτό το παιχνίδι"
 
-#: src/ui/PixelTransferController.js:164
-msgid "Timeout"
-msgstr "Τέλος χρόνου"
-
-#: src/ui/PixelTransferController.js:166
-msgid ""
-"Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
-"persists?"
-msgstr ""
-"Δεν λάβατε απάντηση από το pixelplanet; Ίσως προσπαθήσετε να ανανεώσετε την "
-"σελίδα;"
-
-#: src/ui/PixelTransferController.js:169
+#: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "Είσαι περίεργος"
 
-#: src/ui/PixelTransferController.js:170
+#: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
 msgstr "Ειδοποίηση Pixel Ενεργό"
 
-#: src/ui/PixelTransferController.js:175
+#: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr "Κάτι πήγε λάθος ${ retCode }"
@@ -205,6 +192,10 @@ msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr ""
 "Δεν είναι δυνατή η απόδοση του τρισδιάστατου καμβά, έχετε απενεργοποιήσει το "
 "WebGL2;"
+
+#: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
+msgid "Error :("
+msgstr "Κάτι πήγε λάθος:("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -354,13 +345,13 @@ msgstr "Ρυθμίσεις"
 msgid "User Area"
 msgstr "Περιοχή χρήστη"
 
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "Δημιουργία στιγμιότυπου οθόνης"
-
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
 msgstr "Προβολή Υδρόγειου"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "Δημιουργία στιγμιότυπου οθόνης"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -411,14 +402,25 @@ msgstr "Συνομιλία"
 msgid "Canvas Archive"
 msgstr "Αρχείο καμβά"
 
-#: src/components/BanInfo.jsx:66
-#, fuzzy
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Είστε απαγορευμένοι. Πιστεύετε ότι είναι αδικαιολόγητο; Ελέγξτε τo "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Χρειάστηκε πολύς χρόνος, δοκιμάστε ξανά."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " πώς να ασκήσετε έφεση."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Απέτυχες το captcha σου"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Χωρίς ή μη έγκυρο κείμενο captch"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Δεν δόθηκε αναγνωριστικό captcha"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Άγνωστο σφάλμα Captcha"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -428,6 +430,27 @@ msgstr " πώς να ασκήσετε έφεση."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Λάθος"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Ματαίωση"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Αποστολή"
+
+#: src/components/BanInfo.jsx:66
+#, fuzzy
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Είστε απαγορευμένοι. Πιστεύετε ότι είναι αδικαιολόγητο; Ελέγξτε τo "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " πώς να ασκήσετε έφεση."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -460,38 +483,6 @@ msgstr "Τώρα που είδατε αυτό το μήνυμα, δεν είστ
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Γιατί;"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Χρειάστηκε πολύς χρόνος, δοκιμάστε ξανά."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Απέτυχες το captcha σου"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Χωρίς ή μη έγκυρο κείμενο captch"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Δεν δόθηκε αναγνωριστικό captcha"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Άγνωστο σφάλμα Captcha"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Ματαίωση"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Αποστολή"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -692,9 +683,10 @@ msgstr ""
 "ένα Pixel"
 
 #: src/components/windows/Help.jsx:110
+#, fuzzy
 msgid ""
-"We thanks those artists very much, they offered their palettes to the public "
-"on"
+"We thank the following artists, who made their palettes available to the "
+"public on"
 msgstr ""
 "Ευχαριστούμε πολύ αυτούς τους καλλιτέχνες, που προσέφεραν τις παλέτες τους "
 "στο κοινό στις"
@@ -712,7 +704,8 @@ msgstr "Τα εύσημα για την Παλέτα του καμβά Top10 π�
 #: src/components/windows/Help.jsx:119
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Τα εύσημα για την Παλέτα του καμβά Top10 πηγαίνουν στο ${ donendoLink }."
+msgstr ""
+"Τα εύσημα για την Παλέτα του καμβά Top10 πηγαίνουν στο ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
@@ -890,7 +883,7 @@ msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Archive of removed canvases can be accessed here:"
+"Achieved canvases can be accessed here:"
 msgstr ""
 "Επιλέξτε τον καμβά που θέλετε να χρησιμοποιήσετε. Κάθε καμβάς είναι "
 "μοναδικός και έχει διαφορετικές παλέτες, cooldown και απαιτήσεις. Το αρχείο "
@@ -908,9 +901,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who currently like a meme. Those canvases can get "
-"boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active."
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
 msgstr ""
 "Αν και τείνουμε να μην διαγράφουμε καμβας, ορισμένοι καμβάδες ξεκινούν για "
 "διασκέδαση ή ως αίτημα από χρήστες που αυτή τη στιγμή τους αρέσει ένα "
@@ -921,7 +914,7 @@ msgstr ""
 #: src/components/windows/Archive.jsx:10
 #, fuzzy
 msgid ""
-"Here we collect removed canvases to archive them in a proper way. Which is "
+"Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
 "Εδώ συλλέγουμε αυτούς τους καμβάς για να τους αρχειοθετήσουμε με τον "
@@ -1014,6 +1007,54 @@ msgstr "Ξαναφώρτηση"
 msgid "Enter Characters"
 msgstr "Εισαγάγετε τον λόγο"
 
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "Το email δεν μπορεί να είναι κενό."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "Το email πρέπει να αποτελείται από τουλάχιστον 5 χαρακτήρες."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "Το email δεν μπορεί να είναι μεγαλύτερο από 40 χαρακτήρες."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "Το email πρέπει να περιέχει τουλάχιστον μια τελεία"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "Το email πρέπει να περιέχει ένα @"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "Το όνομα δεν μπορεί να είναι κενό."
+
+#: src/utils/validation.js:30
+msgid "Name must be at least 2 characters long"
+msgstr "Το όνομα πρέπει να αποτελείται από τουλάχιστον 2 χαρακτήρες"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "Το όνομα πρέπει να είναι μικρότερο από 26 χαρακτήρες"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Το όνομα περιέχει μη έγκυρο χαρακτήρα όπως @, /, \\ ή #"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "Δεν δόθηκε κωδικός πρόσβασης."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "Ο κωδικός θα πρέπει να είναι τουλάχιστον 6 χαρακτήρες."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "Ο κωδικός πρόσβασης πρέπει να είναι μικρότερος από 60 χαρακτήρες."
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "Παρε το iid"
@@ -1050,7 +1091,7 @@ msgid "Show templates as overlays ingame."
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:73
-msgid "Small Pixels Zoom"
+msgid "Small Pixels When Zoomed"
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:78
@@ -1275,54 +1316,6 @@ msgstr ""
 "Ενημερώσεις κατάταξης κάθε 5 λεπτά. Οι ημερήσιες κατατάξεις επαναφέρονται τα "
 "μεσάνυχτα UTC."
 
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "Το email δεν μπορεί να είναι κενό."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "Το email πρέπει να αποτελείται από τουλάχιστον 5 χαρακτήρες."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "Το email δεν μπορεί να είναι μεγαλύτερο από 40 χαρακτήρες."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "Το email πρέπει να περιέχει τουλάχιστον μια τελεία"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "Το email πρέπει να περιέχει ένα @"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "Το όνομα δεν μπορεί να είναι κενό."
-
-#: src/utils/validation.js:30
-msgid "Name must be at least 2 characters long"
-msgstr "Το όνομα πρέπει να αποτελείται από τουλάχιστον 2 χαρακτήρες"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "Το όνομα πρέπει να είναι μικρότερο από 26 χαρακτήρες"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Το όνομα περιέχει μη έγκυρο χαρακτήρα όπως @, /, \\ ή #"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "Δεν δόθηκε κωδικός πρόσβασης."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "Ο κωδικός θα πρέπει να είναι τουλάχιστον 6 χαρακτήρες."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "Ο κωδικός πρόσβασης πρέπει να είναι μικρότερος από 60 χαρακτήρες."
-
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Ενεργοί χρήστες"
@@ -1368,26 +1361,6 @@ msgstr "Top 10 Ημερήσια Κατάταξη"
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Διαστάσεις"
-
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Οι 10 κορυφαίες χώρες [pxls / ημέρα]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Παίκτες και pixel ανά ώρα"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Οι 10 κορυφαίοι παίκτες [pxls / ημέρα]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Χώρες ανά Pixels Σήμερα"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Σύνολο pixel που τοποθετούνται ανά ημέρα"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
@@ -1450,7 +1423,8 @@ msgid "Passwords do not match."
 msgstr "Οι κωδικοί πρόσβασης δεν ταιριάζουν."
 
 #: src/components/ChangePassword.jsx:44
-msgid "Changed Password successfully."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Ο κωδικός πρόσβασης άλλαξε με επιτυχία."
 
 #: src/components/ChangePassword.jsx:88
@@ -1692,6 +1666,26 @@ msgstr "Εισαγάγετε τον λόγο"
 msgid "(0 = infinite)"
 msgstr "(0 = άπειρο)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Οι 10 κορυφαίες χώρες [pxls / ημέρα]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Παίκτες και pixel ανά ώρα"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Οι 10 κορυφαίοι παίκτες [pxls / ημέρα]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Χώρες ανά Pixels Σήμερα"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Σύνολο pixel που τοποθετούνται ανά ημέρα"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Ανέφερε τον χρήστη (ping)"
@@ -1778,6 +1772,17 @@ msgstr ""
 msgctxt "keybinds"
 msgid "T"
 msgstr ""
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr ""
+#~ "Δεν λάβατε απάντηση από το pixelplanet; Ίσως προσπαθήσετε να ανανεώσετε "
+#~ "την σελίδα;"
+
+#~ msgid "Place more :)"
+#~ msgstr "Τοποθετήστε περισσότερα pixel :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr "Δεν επιτρέπονται proxies :("
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "Εμφάνιση κρυφών καμβάς"

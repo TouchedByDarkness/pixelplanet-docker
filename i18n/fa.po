@@ -44,7 +44,8 @@ msgstr "صدا ساکت نیست"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-msgid "Copied!"
+#, fuzzy
+msgid "Copied"
 msgstr "کپی شد!"
 
 #: src/controls/keypress.js:217
@@ -63,135 +64,122 @@ msgstr "حالت ایستر اگ روشن است"
 msgid "Easter Egg OFF"
 msgstr "ایستر اگ خاموش است"
 
-#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
-#: src/ui/templateLoader.js:256
-msgid "Error :("
-msgstr "ارور داد سید"
+#: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
+msgid "Timeout"
+msgstr "سید سایتو پاره کردی تابم اوت خوردی، رفرش کن"
 
-#: src/ui/PixelTransferController.js:71
-msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-msgstr "سید توطئه کردی؟ از سایت جوابی نگرفتیم سید، فکر کنم رفرش کنی درست بشه"
+#: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
+#, fuzzy
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
+msgstr "هیچ جوابی از سایت نگرفتیم ، رفرش کن"
 
-#: src/ui/PixelTransferController.js:103
+#: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
 msgstr "بوم پیدا نشد"
 
-#: src/ui/PixelTransferController.js:104
+#: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
 msgstr "این بوم وجود ندارد"
 
-#: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
-#: src/ui/PixelTransferController.js:115
+#: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
 msgstr "مختصات اشتباه است"
 
-#: src/ui/PixelTransferController.js:108
+#: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
 msgstr "ایکس خارج از محدوده است"
 
-#: src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
 msgstr "ایگرگ خارج از محدوده است"
 
-#: src/ui/PixelTransferController.js:116
+#: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
 msgstr "زد خارج از محدوده است"
 
-#: src/ui/PixelTransferController.js:119
+#: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
 msgstr "رنگ اشتباهی انتخاب کرده اید"
 
-#: src/ui/PixelTransferController.js:120
+#: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
 msgstr "سید رنگ نادرستی انتخاب کردین"
 
-#: src/ui/PixelTransferController.js:123
+#: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
 msgstr "فقط برای کاربران ثبت نام شده"
 
-#: src/ui/PixelTransferController.js:124
+#: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
 msgstr "باید توی سایت ثبت نام کنی که از این بوم بتونی استفاده کنی سید"
 
-#: src/ui/PixelTransferController.js:127
-msgid "Place more :)"
-msgstr "پیکسل های بیشتری بزار سید :)"
+#: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:148
+msgid "Not allowed"
+msgstr "قابل قبول نیست سید"
 
-#: src/ui/PixelTransferController.js:129
-msgid "You can not access this canvas yet. You need to place more pixels"
+#: src/ui/PixelTransferController.js:130
+#, fuzzy
+msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
 "سید پیکسل به اندازه کافی نزاشتی. بخاطر همین نمیتونی به این بوم دسترسی داشته "
 "باشی"
 
-#: src/ui/PixelTransferController.js:132
-msgid "Pixel protected!"
+#: src/ui/PixelTransferController.js:133
+#, fuzzy
+msgid "Pixel protected"
 msgstr "ادمین ها بهت اجازه نمیدند اینجا پیکسل بذاری، محافظت شده"
 
-#: src/ui/PixelTransferController.js:139
+#: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
 msgstr "اثبات کن که انسان هستی سید"
 
-#: src/ui/PixelTransferController.js:143
-msgid "No Proxies Allowed :("
-msgstr ""
-"مگه تورکی پروکسی میزنی؟ اگر وی پی انت روشنه یا پروکسیت روشنه خاموش کن سریع"
-
-#: src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
 msgstr ""
 "داری از فیلترشکن استفاده میکنی؟ نگران نباش سایت فیلتر نیست، البته نمیدونم "
 "فردا فیلتره یا نه"
 
-#: src/ui/PixelTransferController.js:147
-msgid "Not allowed"
-msgstr "قابل قبول نیست سید"
-
-#: src/ui/PixelTransferController.js:148
+#: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
 msgstr "فقط تاپ 10 ها میتونن اینجا فعالیت کنند سید"
 
-#: src/ui/PixelTransferController.js:151
+#: src/ui/PixelTransferController.js:152
 msgid "You are weird"
 msgstr "سید داری یاهود بازی در میاری؟"
 
-#: src/ui/PixelTransferController.js:153
+#: src/ui/PixelTransferController.js:154
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
 "انقدر پیکسل گذاشتی سایت به خاک رفت سید، داری از چندتا گوشی استفاده میکنی؟ "
 "اگر کیا داره اینو میخونه باید بگم هنوز کونی هستی سید"
 
-#: src/ui/PixelTransferController.js:156
+#: src/ui/PixelTransferController.js:157
 msgid "Banned"
 msgstr "بن شدی سید، بهت گفتیم یاهود بازی در نیار"
 
-#: src/ui/PixelTransferController.js:160
+#: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
 msgstr "رنج بن شدی سید"
 
-#: src/ui/PixelTransferController.js:161
-msgid "Your Internet Provider is banned from playing this game"
+#: src/ui/PixelTransferController.js:162
+#, fuzzy
+msgid "Your Internet Provider is banned from this game"
 msgstr "اینترنت و آیپی تو حق بازی نداره"
 
-#: src/ui/PixelTransferController.js:164
-msgid "Timeout"
-msgstr "سید سایتو پاره کردی تابم اوت خوردی، رفرش کن"
-
-#: src/ui/PixelTransferController.js:166
-msgid ""
-"Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
-"persists?"
-msgstr "هیچ جوابی از سایت نگرفتیم ، رفرش کن"
-
-#: src/ui/PixelTransferController.js:169
+#: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "عجیب"
 
-#: src/ui/PixelTransferController.js:170
+#: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
 msgstr "پیکسل گذاشته نشد"
 
-#: src/ui/PixelTransferController.js:175
+#: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr ""
@@ -203,6 +191,10 @@ msgstr "ارور بوم"
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "داداش بوم سه بعدی رندر نشد. WebGL2 رو غیر فعال کردی ناقلا؟"
+
+#: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
+msgid "Error :("
+msgstr "ارور داد سید"
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -351,13 +343,13 @@ msgstr "تنظیمات"
 msgid "User Area"
 msgstr "منطقه یوزر"
 
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "اسکرین شات بگیر"
-
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
 msgstr "بازدید از کل جهان"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "اسکرین شات بگیر"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -408,14 +400,25 @@ msgstr "چت"
 msgid "Canvas Archive"
 msgstr "آرشیو بوم"
 
-#: src/components/BanInfo.jsx:66
-#, fuzzy
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "بن شدی سید. فکر میکنی یه اشتباهی رخ داده؟ خب برو درخواست "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "خیلی کارت طول کشید. دوباره امتحان کن."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " بده که بنت برداشته بشه."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "کَپچا رو نتونستی جواب بدی"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "یا هیچ کلمه ای توی کپچا نیست یا اصن اونی که باید رو ننوشتی"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "هیچ آیدی کپچایی داده نشده"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "یه ارور نامعلومی این کپچای لامصب داده"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -425,6 +428,27 @@ msgstr " بده که بنت برداشته بشه."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "ارور"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "لغو"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "ارسال"
+
+#: src/components/BanInfo.jsx:66
+#, fuzzy
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "بن شدی سید. فکر میکنی یه اشتباهی رخ داده؟ خب برو درخواست "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " بده که بنت برداشته بشه."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -457,38 +481,6 @@ msgstr "خب الان که داری این پیامو میبینی، دیگه ب
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "چرا؟"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "خیلی کارت طول کشید. دوباره امتحان کن."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "کَپچا رو نتونستی جواب بدی"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "یا هیچ کلمه ای توی کپچا نیست یا اصن اونی که باید رو ننوشتی"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "هیچ آیدی کپچایی داده نشده"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "یه ارور نامعلومی این کپچای لامصب داده"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "لغو"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "ارسال"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -680,9 +672,10 @@ msgstr ""
 "پیکسل رو حرف کنی"
 
 #: src/components/windows/Help.jsx:110
+#, fuzzy
 msgid ""
-"We thanks those artists very much, they offered their palettes to the public "
-"on"
+"We thank the following artists, who made their palettes available to the "
+"public on"
 msgstr ""
 "ما از هنرمندانمون بسیار متشکر هستیم، اونا حتی از هنر هاشون رو به عموم معرفی "
 "کردن"
@@ -874,7 +867,7 @@ msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Archive of removed canvases can be accessed here:"
+"Achieved canvases can be accessed here:"
 msgstr ""
 "بوم مورد نظر برای استفاده را انتخاب کنید. هر بوم منحصر به فرد است و دارای "
 "جعبه رنگ ها،کولداون و الزامات متفاوتی است. آرشیو بوم های بسته را می توانید "
@@ -892,9 +885,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who currently like a meme. Those canvases can get "
-"boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active."
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
 msgstr ""
 "در حالی که ما تمایل داریم بوم‌ها را حذف نکنیم، برخی از بوم‌ها برای سرگرمی یا "
 "به‌عنوان درخواست کاربرانی که در حال حاضر یک میم را دوست دارند شروع می‌شوند. آن "
@@ -904,7 +897,7 @@ msgstr ""
 #: src/components/windows/Archive.jsx:10
 #, fuzzy
 msgid ""
-"Here we collect removed canvases to archive them in a proper way. Which is "
+"Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
 "در اینجا ما آن بوم‌ها را جمع‌آوری می‌کنیم تا آنها را به روشی مناسب بایگانی کنیم "
@@ -992,6 +985,54 @@ msgstr "بارگذاری جدید"
 msgid "Enter Characters"
 msgstr "کاراکترای جدید رو وارد کن"
 
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "سید ایمیل خالی نمیشه که بزاری."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "ایمیل باید حداقل پنج تا کلمه داشته باشه."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "نمیشه که ایمیل بیشتر از چهل تا کلمه داشته باشه."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "ایمیل باید نقطه داشته باشه"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "ایمیل باید حتما @ داشته باشه"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "اسم نمیشه که خالی باشه سید."
+
+#: src/utils/validation.js:30
+msgid "Name must be at least 2 characters long"
+msgstr "اسم باید بیشتر از دو تا کلمه داشته باشه"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "اسم باید کمتر از 26 تا کلمه باشه"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "اسم نباید @ یا # یا / از این چیزا داشته باشه"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "داداش رمز نزاشتی."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "رمز باید حداقل شیش تا کلمه داشته باشه."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "داداش چخبره باید کمتر از شصت تا کلمه باشه پسوردت."
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "آیدی بگیر"
@@ -1028,7 +1069,7 @@ msgid "Show templates as overlays ingame."
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:73
-msgid "Small Pixels Zoom"
+msgid "Small Pixels When Zoomed"
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:78
@@ -1251,54 +1292,6 @@ msgstr ""
 "به روز رسانی رتبه بندی هر 5 دقیقه. رتبه بندی روزانه در نیمه شب UTC بازنشانی "
 "می شود."
 
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "سید ایمیل خالی نمیشه که بزاری."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "ایمیل باید حداقل پنج تا کلمه داشته باشه."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "نمیشه که ایمیل بیشتر از چهل تا کلمه داشته باشه."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "ایمیل باید نقطه داشته باشه"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "ایمیل باید حتما @ داشته باشه"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "اسم نمیشه که خالی باشه سید."
-
-#: src/utils/validation.js:30
-msgid "Name must be at least 2 characters long"
-msgstr "اسم باید بیشتر از دو تا کلمه داشته باشه"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "اسم باید کمتر از 26 تا کلمه باشه"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "اسم نباید @ یا # یا / از این چیزا داشته باشه"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "داداش رمز نزاشتی."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "رمز باید حداقل شیش تا کلمه داشته باشه."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "داداش چخبره باید کمتر از شصت تا کلمه باشه پسوردت."
-
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "کاربران انلاین"
@@ -1344,26 +1337,6 @@ msgstr "10 رتبه برتر روزانه"
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "ابعاد"
-
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "10 کشور برتر [pxls/day]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "پخش کننده و پیکسل در ساعت"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "10 بازیکن برتر [pxls / day]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "کشورها بر اساس پیکسل امروز"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "مجموع پیکسل های قرار داده شده در روز"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
@@ -1426,7 +1399,8 @@ msgid "Passwords do not match."
 msgstr "رمزهای ورود مطابقت ندارند."
 
 #: src/components/ChangePassword.jsx:44
-msgid "Changed Password successfully."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "رمز عبور با موفقیت تغییر کرد."
 
 #: src/components/ChangePassword.jsx:88
@@ -1666,6 +1640,26 @@ msgstr "دلیل وارد کن"
 msgid "(0 = infinite)"
 msgstr ""
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "10 کشور برتر [pxls/day]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "پخش کننده و پیکسل در ساعت"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "10 بازیکن برتر [pxls / day]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "کشورها بر اساس پیکسل امروز"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "مجموع پیکسل های قرار داده شده در روز"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "پینگ"
@@ -1752,6 +1746,17 @@ msgstr ""
 msgctxt "keybinds"
 msgid "T"
 msgstr ""
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr ""
+#~ "سید توطئه کردی؟ از سایت جوابی نگرفتیم سید، فکر کنم رفرش کنی درست بشه"
+
+#~ msgid "Place more :)"
+#~ msgstr "پیکسل های بیشتری بزار سید :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr ""
+#~ "مگه تورکی پروکسی میزنی؟ اگر وی پی انت روشنه یا پروکسیت روشنه خاموش کن سریع"
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "بوم های مخفی را نشان بده"

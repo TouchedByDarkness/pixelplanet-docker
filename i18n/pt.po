@@ -44,7 +44,8 @@ msgstr "Som ATIVADO"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-msgid "Copied!"
+#, fuzzy
+msgid "Copied"
 msgstr "Copiado!"
 
 #: src/controls/keypress.js:217
@@ -63,133 +64,120 @@ msgstr "Easter Egg ATIVADO"
 msgid "Easter Egg OFF"
 msgstr "Easter Egg DESATIVADO"
 
-#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
-#: src/ui/templateLoader.js:256
-msgid "Error :("
-msgstr "Erro :("
+#: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
+msgid "Timeout"
+msgstr ""
 
-#: src/ui/PixelTransferController.js:71
-msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
+#, fuzzy
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
 msgstr ""
 "Não recebi nenhuma resposta do pixelplanet. Talvez tente atualizar a página?"
 
-#: src/ui/PixelTransferController.js:103
+#: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
 msgstr "Canvas inválido"
 
-#: src/ui/PixelTransferController.js:104
+#: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
 msgstr "Este canvas não existe"
 
-#: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
-#: src/ui/PixelTransferController.js:115
+#: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
 msgstr "Coordenadas inválidas"
 
-#: src/ui/PixelTransferController.js:108
+#: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
 msgstr "x fora dos limites"
 
-#: src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
 msgstr "y fora dos limites"
 
-#: src/ui/PixelTransferController.js:116
+#: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
 msgstr "z fora dos limites"
 
-#: src/ui/PixelTransferController.js:119
+#: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
 msgstr "Cor errada"
 
-#: src/ui/PixelTransferController.js:120
+#: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
 msgstr "Cor selecionada inválida"
 
-#: src/ui/PixelTransferController.js:123
+#: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
 msgstr "Apenas para usuários registrados"
 
-#: src/ui/PixelTransferController.js:124
+#: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
 msgstr "Você precisa estar logado para colocar píxeis neste canvas"
 
-#: src/ui/PixelTransferController.js:127
-msgid "Place more :)"
-msgstr "Coloque mais píxeis :)"
-
-#: src/ui/PixelTransferController.js:129
-msgid "You can not access this canvas yet. You need to place more pixels"
-msgstr ""
-"Você não tem acesso a esse canvas ainda. Você precisa colocar mais píxeis"
-
-#: src/ui/PixelTransferController.js:132
-msgid "Pixel protected!"
-msgstr "Pixel protegido!"
-
-#: src/ui/PixelTransferController.js:139
-msgid "Please prove that you are human"
-msgstr "Por favor prove que é um humano"
-
-#: src/ui/PixelTransferController.js:143
-msgid "No Proxies Allowed :("
-msgstr "Zeedy gosta de homens (proxies não são permitidos)"
-
-#: src/ui/PixelTransferController.js:144
-msgid "You are using a Proxy."
-msgstr "Você está usando um Proxy."
-
-#: src/ui/PixelTransferController.js:147
+#: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:148
 msgid "Not allowed"
 msgstr "Não é permitido"
 
-#: src/ui/PixelTransferController.js:148
+#: src/ui/PixelTransferController.js:130
+#, fuzzy
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr ""
+"Você não tem acesso a esse canvas ainda. Você precisa colocar mais píxeis"
+
+#: src/ui/PixelTransferController.js:133
+#, fuzzy
+msgid "Pixel protected"
+msgstr "Pixel protegido!"
+
+#: src/ui/PixelTransferController.js:140
+msgid "Please prove that you are human"
+msgstr "Por favor prove que é um humano"
+
+#: src/ui/PixelTransferController.js:145
+msgid "You are using a Proxy."
+msgstr "Você está usando um Proxy."
+
+#: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
 msgstr "Apenas os Top10 de ontem podem colocar píxeis aqui"
 
-#: src/ui/PixelTransferController.js:151
+#: src/ui/PixelTransferController.js:152
 msgid "You are weird"
 msgstr "Você é estranho"
 
-#: src/ui/PixelTransferController.js:153
+#: src/ui/PixelTransferController.js:154
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
 "O servidor ficou confuso com os seus píxeis. Por acaso está jogando em "
 "vários dispositivos?"
 
-#: src/ui/PixelTransferController.js:156
+#: src/ui/PixelTransferController.js:157
 msgid "Banned"
 msgstr "Banido"
 
-#: src/ui/PixelTransferController.js:160
+#: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:161
-msgid "Your Internet Provider is banned from playing this game"
+#: src/ui/PixelTransferController.js:162
+#, fuzzy
+msgid "Your Internet Provider is banned from this game"
 msgstr "O seu provedor de internet está banido deste jogo"
 
-#: src/ui/PixelTransferController.js:164
-msgid "Timeout"
-msgstr ""
-
-#: src/ui/PixelTransferController.js:166
-msgid ""
-"Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
-"persists?"
-msgstr ""
-"Não recebi nenhuma resposta do pixelplanet. Talvez tente atualizar a página?"
-
-#: src/ui/PixelTransferController.js:169
+#: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "Estranho"
 
-#: src/ui/PixelTransferController.js:170
+#: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
 msgstr "Não foi possível colocar o píxel"
 
-#: src/ui/PixelTransferController.js:175
+#: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr "Erro ${ retCode }"
@@ -203,6 +191,10 @@ msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr ""
 "Não foi possivel renderizar o canvas 3D, por acaso você tem o WebGL2 "
 "desativado?"
+
+#: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
+msgid "Error :("
+msgstr "Erro :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -352,13 +344,13 @@ msgstr "Configurações"
 msgid "User Area"
 msgstr "Área do Usuário"
 
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "Faça uma captura de tela"
-
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
 msgstr "Visão do Globo"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "Faça uma captura de tela"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -410,13 +402,25 @@ msgstr "Bate-Papo"
 msgid "Canvas Archive"
 msgstr "Arquivo do Canvas"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Você está banido. Gostaria de recorrer da decisão? Veja o "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Você demorou muito, tente novamente."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " em como pode recorrer."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Você errou o seu captcha"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Não ou texto de captcha inválido"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Nenhum id de captcha fornecido"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Erro de Captcha desconhecido"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -426,6 +430,26 @@ msgstr " em como pode recorrer."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Erro"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Enviar"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Você está banido. Gostaria de recorrer da decisão? Veja o "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " em como pode recorrer."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -458,38 +482,6 @@ msgstr "Agora que você viu esta mensagem, você já não se encontra banido."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Porque?"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Você demorou muito, tente novamente."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Você errou o seu captcha"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Não ou texto de captcha inválido"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Nenhum id de captcha fornecido"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Erro de Captcha desconhecido"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Enviar"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -558,8 +550,8 @@ msgid ""
 "${ mailLink } and include the following IID:"
 msgstr ""
 "Se você foi detectado como proxy, mas não é um, ou acredita ter sido banido "
-"incorretamente, acesse nosso ${ guildedLink } ou envie um e-mail para ${ "
-"mailLink } e inclua o seguinte IID:"
+"incorretamente, acesse nosso ${ guildedLink } ou envie um e-mail para "
+"${ mailLink } e inclua o seguinte IID:"
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
@@ -685,9 +677,10 @@ msgstr ""
 "vezes para remover um píxel"
 
 #: src/components/windows/Help.jsx:110
+#, fuzzy
 msgid ""
-"We thanks those artists very much, they offered their palettes to the public "
-"on"
+"We thank the following artists, who made their palettes available to the "
+"public on"
 msgstr ""
 "Agradecemos muito a esses artistas que disponibilizaram suas paletas ao "
 "público em"
@@ -877,11 +870,12 @@ msgid "Submit"
 msgstr "Enviar"
 
 #: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Archive of removed canvases can be accessed here:"
+"Achieved canvases can be accessed here:"
 msgstr ""
 "Selecione o canvas que você quer usar. \n"
 "Cada canvas é único e tem diferentes paletas, tempo de espera e "
@@ -900,9 +894,9 @@ msgstr "Canvas removidos (Apenas modo histórico)"
 #, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who currently like a meme. Those canvases can get "
-"boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active."
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
 msgstr ""
 "Enquanto a gente não costuma deletar os canvas, alguns canvas são feitos "
 "apenas como piada ou alguns usuários pedem porque gostam de um meme. Esses "
@@ -911,8 +905,9 @@ msgstr ""
 "ativos, nós decidimos removê-los."
 
 #: src/components/windows/Archive.jsx:10
+#, fuzzy
 msgid ""
-"Here we collect removed canvases to archive them in a proper way. Which is "
+"Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
 "Aqui nos coletamos esses canvas e arquivamos eles de uma forma própria (que "
@@ -1003,6 +998,55 @@ msgstr "Atualize"
 msgid "Enter Characters"
 msgstr "Digite os Caracteres"
 
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "E-mail não pode estar vazio."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "E-mail deve ter ao menos 5 caracteres."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "E-mail não pode ser maior que 40 caracteres."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "E-mail deve ter pelo menos um ponto"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "E-mail deve ter um @"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "Nome não pode estar vazio."
+
+#: src/utils/validation.js:30
+#, fuzzy
+msgid "Name must be at least 2 characters long"
+msgstr "Nome deve ter ao menos 4 caracteres"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "Nome deve ser menor que 26 caracteres"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Nome contem caractere invalido como @,/,\\ ou #"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "Nenhuma senha fornecida."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "A senha deve ter ao menos 6 caracteres."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "A senha deve ser menor que 60 caracteres."
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "Obter IID"
@@ -1043,7 +1087,8 @@ msgid "Show templates as overlays ingame."
 msgstr "Mostre templates como sobreposições no jogo."
 
 #: src/components/TemplateSettings.jsx:73
-msgid "Small Pixels Zoom"
+#, fuzzy
+msgid "Small Pixels When Zoomed"
 msgstr "Zoom Pixeis Pequenos"
 
 #: src/components/TemplateSettings.jsx:78
@@ -1267,55 +1312,6 @@ msgstr ""
 "Os ranques são atualizados de 5 em 5 minutos. Os ranques diários são "
 "reiniciados à meia-noite UTC."
 
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "E-mail não pode estar vazio."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "E-mail deve ter ao menos 5 caracteres."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "E-mail não pode ser maior que 40 caracteres."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "E-mail deve ter pelo menos um ponto"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "E-mail deve ter um @"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "Nome não pode estar vazio."
-
-#: src/utils/validation.js:30
-#, fuzzy
-msgid "Name must be at least 2 characters long"
-msgstr "Nome deve ter ao menos 4 caracteres"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "Nome deve ser menor que 26 caracteres"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Nome contem caractere invalido como @,/,\\ ou #"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "Nenhuma senha fornecida."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "A senha deve ter ao menos 6 caracteres."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "A senha deve ser menor que 60 caracteres."
-
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Usuários Online"
@@ -1361,26 +1357,6 @@ msgstr "Top 10 Ranque Diário"
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Dimensões"
-
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Top 10 Países [pxls / dia]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Jogadores e Pixeis por hora"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Top 10 Jogadores [pxls / dia]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Países por Pixeis Hoje"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Píxeis Totais colocados por dia"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
@@ -1443,7 +1419,8 @@ msgid "Passwords do not match."
 msgstr "As senhas não são iguais."
 
 #: src/components/ChangePassword.jsx:44
-msgid "Changed Password successfully."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Troquei de senha com sucesso."
 
 #: src/components/ChangePassword.jsx:88
@@ -1682,6 +1659,26 @@ msgstr "Digite uma Razão"
 msgid "(0 = infinite)"
 msgstr "(0 = infinito)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Top 10 Países [pxls / dia]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Jogadores e Pixeis por hora"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Top 10 Jogadores [pxls / dia]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Países por Pixeis Hoje"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Píxeis Totais colocados por dia"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Ping"
@@ -1767,6 +1764,17 @@ msgstr "M"
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr ""
+#~ "Não recebi nenhuma resposta do pixelplanet. Talvez tente atualizar a "
+#~ "página?"
+
+#~ msgid "Place more :)"
+#~ msgstr "Coloque mais píxeis :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr "Zeedy gosta de homens (proxies não são permitidos)"
 
 #~ msgid "User online"
 #~ msgstr "Usuários online"

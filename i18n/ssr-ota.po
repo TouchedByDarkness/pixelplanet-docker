@@ -1,12 +1,12 @@
 msgid ""
 msgstr ""
 "Language: ota\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
+msgid "You can not send chat messages while using a proxy"
 msgstr ""
 
 #: src/core/ChatProvider.js:436
@@ -84,14 +84,6 @@ msgstr ""
 msgid "Invalid url :( Please check your mail again."
 msgstr ""
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr ""
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr ""
-
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr ""
@@ -108,11 +100,19 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr ""
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr ""
+
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
 msgstr ""
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 
@@ -164,24 +164,20 @@ msgstr ""
 msgid "Password must be shorter than 60 characters."
 msgstr ""
 
-#: src/ssr/PasswordReset.jsx:20
-#: src/ssr/PasswordReset.jsx:40
+#: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
 msgstr ""
 
-#: src/ssr/PasswordReset.jsx:21
-#: src/ssr/PasswordReset.jsx:41
+#: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
 msgstr ""
 
-#: src/core/MailProvider.js:105
-#: src/ssr/PasswordReset.jsx:28
+#: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
 msgstr ""
 
-#: src/ssr/PasswordReset.jsx:30
-#: src/ssr/RedirectionPage.jsx:12
+#: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
 msgstr ""
 
@@ -222,8 +218,7 @@ msgstr ""
 msgid "You are not banned"
 msgstr ""
 
-#: src/routes/api/auth/change_mail.js:22
-#: src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr ""
 
@@ -259,8 +254,7 @@ msgstr ""
 msgid "Failed to establish session after register :("
 msgstr ""
 
-#: src/routes/api/auth/verify.js:26
-#: src/routes/api/auth/verify.js:35
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr ""
 
@@ -270,16 +264,15 @@ msgstr ""
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
-"Your mail verification code is invalid or already expired :(, please "
-"request a new one."
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
 msgstr ""
 
 #: src/routes/api/auth/logout.js:11
 msgid "You are not even logged in."
 msgstr ""
 
-#: src/routes/api/auth/delete_account.js:65
-#: src/routes/api/auth/logout.js:20
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
 msgstr ""
 
@@ -296,11 +289,11 @@ msgid "Incorrect password!"
 msgstr ""
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+msgid "Muted Users can not delete their account."
 msgstr ""
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
+msgid "Muted Users can not do this."
 msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -357,21 +350,21 @@ msgid "Minimap"
 msgstr ""
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
 
 #: src/canvasesDesc.js:33
 msgid ""
-"Moon canvas. Safe space for art. No flags or large text (unless part of "
-"art) or art larger than 1.5k x 1.5k pixels."
+"Moon canvas. Safe space for art. No flags or large text (unless part of art) "
+"or art larger than 1.5k x 1.5k pixels."
 msgstr ""
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
+msgid "Place Voxels on a 3D canvas with others."
 msgstr ""
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr ""
 
 #: src/canvasesDesc.js:36
@@ -393,13 +386,13 @@ msgid ""
 msgstr ""
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
+msgid "Only four colors. Same rules as moon!"
 msgstr ""
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
 
 #: src/core/MailProvider.js:66
@@ -422,25 +415,24 @@ msgstr ""
 msgid "Click to Verify"
 msgstr ""
 
-#: src/core/MailProvider.js:68
-#: src/core/MailProvider.js:105
+#: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
 msgstr ""
 
 #: src/core/MailProvider.js:69
-msgid "Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgid ""
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
 
-#: src/core/MailProvider.js:70
-#: src/core/MailProvider.js:107
+#: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"
 msgstr ""
 
 #: src/core/MailProvider.js:87
 #, javascript-format
 msgid ""
-"We already sent you a verification mail, you can request another one in ${ "
-"minLeft } minutes."
+"We already sent you a verification mail, you can request another one in "
+"${ minLeft } minutes."
 msgstr ""
 
 #: src/core/MailProvider.js:103
@@ -453,8 +445,8 @@ msgstr ""
 
 #: src/core/MailProvider.js:105
 msgid ""
-"You requested to get a new password. You can change your password within "
-"the next 30min here: "
+"You requested to get a new password. You can change your password within the "
+"next 30min here: "
 msgstr ""
 
 #: src/core/MailProvider.js:106

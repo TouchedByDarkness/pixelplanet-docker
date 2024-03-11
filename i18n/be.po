@@ -42,7 +42,8 @@ msgstr "Гукі Выкл"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-msgid "Copied!"
+#, fuzzy
+msgid "Copied"
 msgstr "Скапіявана!"
 
 #: src/controls/keypress.js:217
@@ -61,130 +62,118 @@ msgstr ""
 msgid "Easter Egg OFF"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
-#: src/ui/templateLoader.js:256
-msgid "Error :("
-msgstr "Памылка :("
-
-#: src/ui/PixelTransferController.js:71
-msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-msgstr "Няма адказу ад Pixelplanet. Паспрабуйце абнавіць старонку."
-
-#: src/ui/PixelTransferController.js:103
-msgid "Invalid Canvas"
-msgstr "Няправільнае Палатно"
-
-#: src/ui/PixelTransferController.js:104
-msgid "This canvas doesn't exist"
-msgstr "Такога палатна не існуе"
-
-#: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
-#: src/ui/PixelTransferController.js:115
-msgid "Invalid Coordinates"
-msgstr "Няправільныя каардынаты"
-
-#: src/ui/PixelTransferController.js:108
-msgid "x out of bounds"
-msgstr "x каардыната па-за межамі"
-
-#: src/ui/PixelTransferController.js:112
-msgid "y out of bounds"
-msgstr "y каардыната па-за межамі"
-
-#: src/ui/PixelTransferController.js:116
-msgid "z out of bounds"
-msgstr "z каардыната па-за межамі"
-
-#: src/ui/PixelTransferController.js:119
-msgid "Wrong Color"
-msgstr "Няправільны Колер"
-
-#: src/ui/PixelTransferController.js:120
-msgid "Invalid color selected"
-msgstr "Выбраны няправільны колер"
-
-#: src/ui/PixelTransferController.js:123
-msgid "Just for registered Users"
-msgstr "Толькі для зарэгістраваных карыстальнікаў"
-
-#: src/ui/PixelTransferController.js:124
-msgid "You have to be logged in to place on this canvas"
-msgstr "Вам трэба ўвайсці каб маляваць на гэтым палатне"
-
-#: src/ui/PixelTransferController.js:127
-msgid "Place more :)"
-msgstr "Малюйце больш :)"
-
-#: src/ui/PixelTransferController.js:129
-msgid "You can not access this canvas yet. You need to place more pixels"
-msgstr "У вас пакуль што няма доступа да гэтага палатна. Стаўце больш пікселяў"
-
-#: src/ui/PixelTransferController.js:132
-msgid "Pixel protected!"
-msgstr "Піксель абаронены!"
-
-#: src/ui/PixelTransferController.js:139
-msgid "Please prove that you are human"
-msgstr "Калі ласка, дакажыце, што Вы чалавек"
-
-#: src/ui/PixelTransferController.js:143
-msgid "No Proxies Allowed :("
-msgstr "Проксі забароненыя :("
-
-#: src/ui/PixelTransferController.js:144
-msgid "You are using a Proxy."
-msgstr "Вы выкарыстоўваеце проксі."
-
-#: src/ui/PixelTransferController.js:147
-msgid "Not allowed"
-msgstr "Забаронена"
-
-#: src/ui/PixelTransferController.js:148
-msgid "Just the Top10 of yesterday can place here"
-msgstr "Толькі людзі з учорашняга топ-10 могуць маляваць тут"
-
-#: src/ui/PixelTransferController.js:151
-msgid "You are weird"
-msgstr "Вы агентура"
-
-#: src/ui/PixelTransferController.js:153
-msgid ""
-"Server got confused by your pixels. Are you playing on multiple devices?"
-msgstr "Сервер збянтэжаны ад вашых пікселяю. Вы гуляеце з некалькіх прыладаў?"
-
-#: src/ui/PixelTransferController.js:156
-msgid "Banned"
-msgstr "Вы забанены"
-
-#: src/ui/PixelTransferController.js:160
-msgid "Range Banned"
-msgstr "Вы забанены у гэтай вобласці"
-
-#: src/ui/PixelTransferController.js:161
-msgid "Your Internet Provider is banned from playing this game"
-msgstr "Ваш інтэрнэт-правайдэр азабанены"
-
-#: src/ui/PixelTransferController.js:164
+#: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
 msgstr "Перапынак"
 
-#: src/ui/PixelTransferController.js:166
+#: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
+#, fuzzy
 msgid ""
-"Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
-"persists?"
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
 msgstr ""
 "Няма адказу ад Pixelplanet. Паспрабуйце абнавіць старонку, калі праблема не "
 "знікае"
 
-#: src/ui/PixelTransferController.js:169
+#: src/ui/PixelTransferController.js:104
+msgid "Invalid Canvas"
+msgstr "Няправільнае Палатно"
+
+#: src/ui/PixelTransferController.js:105
+msgid "This canvas doesn't exist"
+msgstr "Такога палатна не існуе"
+
+#: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:116
+msgid "Invalid Coordinates"
+msgstr "Няправільныя каардынаты"
+
+#: src/ui/PixelTransferController.js:109
+msgid "x out of bounds"
+msgstr "x каардыната па-за межамі"
+
+#: src/ui/PixelTransferController.js:113
+msgid "y out of bounds"
+msgstr "y каардыната па-за межамі"
+
+#: src/ui/PixelTransferController.js:117
+msgid "z out of bounds"
+msgstr "z каардыната па-за межамі"
+
+#: src/ui/PixelTransferController.js:120
+msgid "Wrong Color"
+msgstr "Няправільны Колер"
+
+#: src/ui/PixelTransferController.js:121
+msgid "Invalid color selected"
+msgstr "Выбраны няправільны колер"
+
+#: src/ui/PixelTransferController.js:124
+msgid "Just for registered Users"
+msgstr "Толькі для зарэгістраваных карыстальнікаў"
+
+#: src/ui/PixelTransferController.js:125
+msgid "You have to be logged in to place on this canvas"
+msgstr "Вам трэба ўвайсці каб маляваць на гэтым палатне"
+
+#: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:148
+msgid "Not allowed"
+msgstr "Забаронена"
+
+#: src/ui/PixelTransferController.js:130
+#, fuzzy
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr "У вас пакуль што няма доступа да гэтага палатна. Стаўце больш пікселяў"
+
+#: src/ui/PixelTransferController.js:133
+#, fuzzy
+msgid "Pixel protected"
+msgstr "Піксель абаронены!"
+
+#: src/ui/PixelTransferController.js:140
+msgid "Please prove that you are human"
+msgstr "Калі ласка, дакажыце, што Вы чалавек"
+
+#: src/ui/PixelTransferController.js:145
+msgid "You are using a Proxy."
+msgstr "Вы выкарыстоўваеце проксі."
+
+#: src/ui/PixelTransferController.js:149
+msgid "Just the Top10 of yesterday can place here"
+msgstr "Толькі людзі з учорашняга топ-10 могуць маляваць тут"
+
+#: src/ui/PixelTransferController.js:152
+msgid "You are weird"
+msgstr "Вы агентура"
+
+#: src/ui/PixelTransferController.js:154
+msgid ""
+"Server got confused by your pixels. Are you playing on multiple devices?"
+msgstr "Сервер збянтэжаны ад вашых пікселяю. Вы гуляеце з некалькіх прыладаў?"
+
+#: src/ui/PixelTransferController.js:157
+msgid "Banned"
+msgstr "Вы забанены"
+
+#: src/ui/PixelTransferController.js:161
+msgid "Range Banned"
+msgstr "Вы забанены у гэтай вобласці"
+
+#: src/ui/PixelTransferController.js:162
+#, fuzzy
+msgid "Your Internet Provider is banned from this game"
+msgstr "Ваш інтэрнэт-правайдэр азабанены"
+
+#: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "Дзіўна"
 
-#: src/ui/PixelTransferController.js:170
+#: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
 msgstr "Не атрымалася паставіць піксель"
 
-#: src/ui/PixelTransferController.js:175
+#: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr "Памылка ${ retCode }"
@@ -196,6 +185,10 @@ msgstr "Памылка палатна"
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "Немагыма адлюстраваць 3D палатно. Ці ўключаны ў вас WebGL2?"
+
+#: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
+msgid "Error :("
+msgstr "Памылка :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -344,13 +337,13 @@ msgstr "Налады"
 msgid "User Area"
 msgstr "Кабінет Карыстальніка"
 
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "Зрабіць Скрыншот"
-
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
 msgstr "Выгяд Глобуса"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "Зрабіць Скрыншот"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -401,13 +394,25 @@ msgstr "Чат"
 msgid "Canvas Archive"
 msgstr "Архіў Палотнаў"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Вы забанены. Лічыце, што гэта неапраўдана? Прачытайце "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Вам спатрэбілася занадта многа часу, паспрабуйце яшчэ раз."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " як падаць апеляцыю."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Вы не прайшлі капчу"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Тэкст няправільны або адсутнічае"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Не дадзены id капчы"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Невядомая Памылка Капчы"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -417,6 +422,26 @@ msgstr " як падаць апеляцыю."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Памылка"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Адмена"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Адправіць"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Вы забанены. Лічыце, што гэта неапраўдана? Прачытайце "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " як падаць апеляцыю."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -449,38 +474,6 @@ msgstr "Калі Вы бачыце гэта паведамленне, Вы бо�
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Чаму?"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Вам спатрэбілася занадта многа часу, паспрабуйце яшчэ раз."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Вы не прайшлі капчу"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Тэкст няправільны або адсутнічае"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Не дадзены id капчы"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Невядомая Памылка Капчы"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Адмена"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Адправіць"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -673,9 +666,10 @@ msgstr ""
 "націсніце каб выдаліць піксель"
 
 #: src/components/windows/Help.jsx:110
+#, fuzzy
 msgid ""
-"We thanks those artists very much, they offered their palettes to the public "
-"on"
+"We thank the following artists, who made their palettes available to the "
+"public on"
 msgstr ""
 "Мы вельмі ўдзячныя гэтым мастакам, якія прапанавалі свае паітры публіцы на"
 
@@ -868,7 +862,7 @@ msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Archive of removed canvases can be accessed here:"
+"Achieved canvases can be accessed here:"
 msgstr ""
 "Выберыце палатно, на яком хочаце маляваць.  Кожнае з іх унікальнае і мае "
 "розныя палітры, кд і патрабаванні. Архіў закрытых палотнаў можна прагледзець "
@@ -886,9 +880,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who currently like a meme. Those canvases can get "
-"boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active."
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
 msgstr ""
 "Хоць мы, звычайна, не выдаляем палотны, некаторыя палотны запускаюцца дзеля "
 "забавы або па просьбе карыстальнікаў, якім спадабаўся нейкі мем. Гэтыя "
@@ -899,7 +893,7 @@ msgstr ""
 #: src/components/windows/Archive.jsx:10
 #, fuzzy
 msgid ""
-"Here we collect removed canvases to archive them in a proper way. Which is "
+"Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
 "Тут мы збіраем такія палотны, каб архіваваць іх належным чынам (зараз ёсць "
@@ -990,6 +984,54 @@ msgstr "Перазагрузіць"
 msgid "Enter Characters"
 msgstr "Увядзіце Сімвалы"
 
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "Пошта ня можа быць пустой."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "Пошта павінна быць не менш за 5 сімвалаў."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "Пошта павінна быць не больш за 40 сімвалаў."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "Пошта павінна змяшчаць у сабе прынамсі адну кропку"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "Эл. Пошта павінна змяшчаць у сабе @"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "Імя не можа быць пустым."
+
+#: src/utils/validation.js:30
+msgid "Name must be at least 2 characters long"
+msgstr "Імя павінна быць не менш за 2 сімвалы"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "Імя павінна быць не больш за 26 сімвалаў"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Імя змяшчае недапушчальныя сімвалы, такія як: @, /, \\, #"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "Не ўказаны пароль."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "Пароль павінен быць не менш за 6 сімвалаў."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "Пароль павінен быць не больш за 60 сімвалаў."
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "Атрымаць IID"
@@ -1026,7 +1068,7 @@ msgid "Show templates as overlays ingame."
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:73
-msgid "Small Pixels Zoom"
+msgid "Small Pixels When Zoomed"
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:78
@@ -1248,54 +1290,6 @@ msgstr ""
 "Рэйтынг абнаўляецца кожны 5 хвілін. Штодзённы рэйтынг абнаўляецца апоўначы "
 "па UTC."
 
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "Пошта ня можа быць пустой."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "Пошта павінна быць не менш за 5 сімвалаў."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "Пошта павінна быць не больш за 40 сімвалаў."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "Пошта павінна змяшчаць у сабе прынамсі адну кропку"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "Эл. Пошта павінна змяшчаць у сабе @"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "Імя не можа быць пустым."
-
-#: src/utils/validation.js:30
-msgid "Name must be at least 2 characters long"
-msgstr "Імя павінна быць не менш за 2 сімвалы"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "Імя павінна быць не больш за 26 сімвалаў"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Імя змяшчае недапушчальныя сімвалы, такія як: @, /, \\, #"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "Не ўказаны пароль."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "Пароль павінен быць не менш за 6 сімвалаў."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "Пароль павінен быць не больш за 60 сімвалаў."
-
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Карыстачы Анлайн"
@@ -1341,26 +1335,6 @@ msgstr "Штодзённы Рэйтынг Топ 10"
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Памеры"
-
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Топ 10 Краін [пікселі за дзень]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Гульцы і Пікселі за гадзіну"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Топ 10 Гульцоў [пікселі за дзень]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Краіны па Пікселям за Сёння"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Усяго пікселяў пастаўлена за дзень"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
@@ -1423,7 +1397,8 @@ msgid "Passwords do not match."
 msgstr "Паролі не супадаюць."
 
 #: src/components/ChangePassword.jsx:44
-msgid "Changed Password successfully."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Пароль паспяхова зменены."
 
 #: src/components/ChangePassword.jsx:88
@@ -1661,6 +1636,26 @@ msgstr "Увядзіце прычыну"
 msgid "(0 = infinite)"
 msgstr "(0 = бясконцасць)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Топ 10 Краін [пікселі за дзень]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Гульцы і Пікселі за гадзіну"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Топ 10 Гульцоў [пікселі за дзень]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Краіны па Пікселям за Сёння"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Усяго пікселяў пастаўлена за дзень"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Пінг"
@@ -1747,6 +1742,15 @@ msgstr "M"
 msgctxt "keybinds"
 msgid "T"
 msgstr ""
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr "Няма адказу ад Pixelplanet. Паспрабуйце абнавіць старонку."
+
+#~ msgid "Place more :)"
+#~ msgstr "Малюйце больш :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr "Проксі забароненыя :("
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "Паказаць Схаваныя Палотны"

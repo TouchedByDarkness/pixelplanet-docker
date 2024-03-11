@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 00:54+0000\n"
+"PO-Revision-Date: 2024-03-11 16:27+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/et/>\n"
 "Language: et\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
@@ -33,170 +33,146 @@ msgstr "Piksli Teavitused VÄLJAS"
 
 #: src/controls/keypress.js:201
 msgid "Muted Sound"
-msgstr "Hääl Vaigistatud"
+msgstr "Heli Vaigistatud"
 
 #: src/controls/keypress.js:202
-#, fuzzy
 msgid "Unmuted Sound"
-msgstr "Hääl Käivitatud"
+msgstr "Heli Käivitatud"
 
-#: src/components/CoordinatesBox.jsx:39
-#: src/components/GetIID.jsx:51
+#: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-msgid "Copied!"
-msgstr "Kopeeritud!"
+msgid "Copied"
+msgstr "Kopeeritud"
 
 #: src/controls/keypress.js:217
-#, fuzzy
 msgid "Overlay ON"
 msgstr "Ülekate SEES"
 
 #: src/controls/keypress.js:218
-#, fuzzy
 msgid "Overlay OFF"
 msgstr "Ülekate VÄLJAS"
 
-#: src/components/windows/Help.jsx:50
-#: src/controls/keypress.js:224
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
 msgstr "Üllatusmuna SEES"
 
-#: src/components/windows/Help.jsx:49
-#: src/controls/keypress.js:225
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
 msgstr "Üllatusmune VÄLJAS"
 
-#: src/ui/PixelTransferController.js:70
-#: src/ui/templateLoader.js:230
-#: src/ui/templateLoader.js:256
-msgid "Error :("
-msgstr "Viga :("
-
-#: src/ui/PixelTransferController.js:71
-msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-msgstr "Pixelplanetilt ei saadud vastust. Proovi taaskäivitada lehekülg."
-
-#: src/ui/PixelTransferController.js:103
-msgid "Invalid Canvas"
-msgstr "Sobimatu Lõuend"
-
-#: src/ui/PixelTransferController.js:104
-msgid "This canvas doesn't exist"
-msgstr "Lõuendit ei eksisteeri"
-
-#: src/ui/PixelTransferController.js:107
-#: src/ui/PixelTransferController.js:111
-#: src/ui/PixelTransferController.js:115
-msgid "Invalid Coordinates"
-msgstr "Sobimatud Koordinaadid"
-
-#: src/ui/PixelTransferController.js:108
-msgid "x out of bounds"
-msgstr "Abtsiss on alalt väljas"
-
-#: src/ui/PixelTransferController.js:112
-msgid "y out of bounds"
-msgstr "Ordinaat on alalt väljas"
-
-#: src/ui/PixelTransferController.js:116
-msgid "z out of bounds"
-msgstr "Aplikaat on alalt väljas"
-
-#: src/ui/PixelTransferController.js:119
-msgid "Wrong Color"
-msgstr "Sobimatu Värv"
-
-#: src/ui/PixelTransferController.js:120
-msgid "Invalid color selected"
-msgstr "Valitud värv ei ole sobilik"
-
-#: src/ui/PixelTransferController.js:123
-msgid "Just for registered Users"
-msgstr "Ainult registreeritud Kasutajatele"
-
-#: src/ui/PixelTransferController.js:124
-msgid "You have to be logged in to place on this canvas"
-msgstr "Selleks, et sellele lõuendile joonistada, peab olema sisse logitud"
-
-#: src/ui/PixelTransferController.js:127
-msgid "Place more :)"
-msgstr "Joonista rohkem :)"
-
-#: src/ui/PixelTransferController.js:129
-msgid "You can not access this canvas yet. You need to place more pixels"
-msgstr "Sul puudub ligipääs sellele lõuendile. Sa pead rohkem piksleid panema"
-
-#: src/ui/PixelTransferController.js:132
-msgid "Pixel protected!"
-msgstr "Kaitstud Piksel!"
-
-#: src/ui/PixelTransferController.js:139
-msgid "Please prove that you are human"
-msgstr "Palus tõesta, et sa ei ole robot"
-
-#: src/ui/PixelTransferController.js:143
-#, fuzzy
-msgid "No Proxies Allowed :("
-msgstr "Puhverserverid ei ole lubatud :("
-
-#: src/ui/PixelTransferController.js:144
-#, fuzzy
-msgid "You are using a Proxy."
-msgstr "Sa kasutad Puhverserverit."
-
-#: src/ui/PixelTransferController.js:147
-msgid "Not allowed"
-msgstr "Ei ole lubatud"
-
-#: src/ui/PixelTransferController.js:148
-msgid "Just the Top10 of yesterday can place here"
-msgstr "Ainult eelmise päeva kümme parimat saavad siia joonistada"
-
-#: src/ui/PixelTransferController.js:151
-msgid "You are weird"
-msgstr "Sa oled imelik"
-
-#: src/ui/PixelTransferController.js:153
-msgid "Server got confused by your pixels. Are you playing on multiple devices?"
-msgstr "Su joonistamine ajas serveri segadusse. Kas sa kasutad mitut seadet?"
-
-#: src/ui/PixelTransferController.js:156
-#, fuzzy
-msgid "Banned"
-msgstr "Ligipääs Piiratud"
-
-#: src/ui/PixelTransferController.js:160
-#, fuzzy
-msgid "Range Banned"
-msgstr "Sinu piirkonnal on Ligipääs Piiratud"
-
-#: src/ui/PixelTransferController.js:161
-#, fuzzy
-msgid "Your Internet Provider is banned from playing this game"
-msgstr "Sinu Internetipakkujal on mängule Ligipääs Piiratud"
-
-#: src/ui/PixelTransferController.js:164
+#: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
 msgstr "Sessioon Aegus"
 
-#: src/ui/PixelTransferController.js:166
+#: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
+#, fuzzy
 msgid ""
-"Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
-"persists?"
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
 msgstr ""
 "Pixelplanetilt ei saadud vastust. Proovi taaskäivitada lehekülg kui problem "
 "ei lahene."
 
-#: src/ui/PixelTransferController.js:169
+#: src/ui/PixelTransferController.js:104
+msgid "Invalid Canvas"
+msgstr "Sobimatu Lõuend"
+
+#: src/ui/PixelTransferController.js:105
+msgid "This canvas doesn't exist"
+msgstr "Lõuendit ei eksisteeri"
+
+#: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:116
+msgid "Invalid Coordinates"
+msgstr "Sobimatud Koordinaadid"
+
+#: src/ui/PixelTransferController.js:109
+msgid "x out of bounds"
+msgstr "Abtsiss on alalt väljas"
+
+#: src/ui/PixelTransferController.js:113
+msgid "y out of bounds"
+msgstr "Ordinaat on alalt väljas"
+
+#: src/ui/PixelTransferController.js:117
+msgid "z out of bounds"
+msgstr "Aplikaat on alalt väljas"
+
+#: src/ui/PixelTransferController.js:120
+msgid "Wrong Color"
+msgstr "Sobimatu Värv"
+
+#: src/ui/PixelTransferController.js:121
+msgid "Invalid color selected"
+msgstr "Valitud värv ei ole sobilik"
+
+#: src/ui/PixelTransferController.js:124
+msgid "Just for registered Users"
+msgstr "Ainult registreeritud Kasutajatele"
+
+#: src/ui/PixelTransferController.js:125
+msgid "You have to be logged in to place on this canvas"
+msgstr "Selleks, et sellele lõuendile joonistada, peab olema sisse logitud"
+
+#: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:148
+msgid "Not allowed"
+msgstr "Ei ole lubatud"
+
+#: src/ui/PixelTransferController.js:130
+#, fuzzy
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr "Sul puudub ligipääs sellele lõuendile. Sa pead rohkem piksleid panema"
+
+#: src/ui/PixelTransferController.js:133
+msgid "Pixel protected"
+msgstr "Kaitstud Piksel"
+
+#: src/ui/PixelTransferController.js:140
+msgid "Please prove that you are human"
+msgstr "Palus tõesta, et sa ei ole robot"
+
+#: src/ui/PixelTransferController.js:145
+#, fuzzy
+msgid "You are using a Proxy."
+msgstr "Sa kasutad Puhverserverit."
+
+#: src/ui/PixelTransferController.js:149
+msgid "Just the Top10 of yesterday can place here"
+msgstr "Ainult eelmise päeva kümme parimat saavad siia joonistada"
+
+#: src/ui/PixelTransferController.js:152
+msgid "You are weird"
+msgstr "Sa oled imelik"
+
+#: src/ui/PixelTransferController.js:154
+msgid ""
+"Server got confused by your pixels. Are you playing on multiple devices?"
+msgstr "Su joonistamine ajas serveri segadusse. Kas sa kasutad mitut seadet?"
+
+#: src/ui/PixelTransferController.js:157
+msgid "Banned"
+msgstr "Ligipääs Piiratud"
+
+#: src/ui/PixelTransferController.js:161
+msgid "Range Banned"
+msgstr "Sinu piirkonnal on Ligipääs Piiratud"
+
+#: src/ui/PixelTransferController.js:162
+#, fuzzy
+msgid "Your Internet Provider is banned from this game"
+msgstr "Sinu Internetipakkujal on mängule Ligipääs Piiratud"
+
+#: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "Imelik"
 
-#: src/ui/PixelTransferController.js:170
+#: src/ui/PixelTransferController.js:171
 #, fuzzy
 msgid "Couldn't set Pixel"
 msgstr "Pikslit ei joonistatud"
 
-#: src/ui/PixelTransferController.js:175
+#: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr "Viga ${ retCode }"
@@ -208,6 +184,10 @@ msgstr "Lõuendi Viga"
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "3D lõuendit ei renderdatud, kas sul on WebGL2 välja lülitatud?"
+
+#: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
+msgid "Error :("
+msgstr "Viga :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -221,8 +201,7 @@ msgstr ""
 "Sa ei saa korraga importida rohkem kui 20 šablooni või sul pole ühtegi "
 "šablooni!"
 
-#: src/components/BanInfo.jsx:136
-#: src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
 msgstr "OK"
 
@@ -240,15 +219,12 @@ msgstr "proovi uuesti ${ ti } minuti pärast"
 msgid "Connection error ${ code } :("
 msgstr "Ühenduse viga ${ code } :("
 
-#: src/store/actions/fetch.js:103
-#: src/store/actions/fetch.js:129
+#: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
 msgstr "Ei leidnud serveriga ühendust, proovi hiljem uuesti :("
 
-#: src/store/actions/fetch.js:151
-#: src/store/actions/fetch.js:170
-#: src/store/actions/fetch.js:189
-#: src/store/actions/fetch.js:208
+#: src/store/actions/fetch.js:151 src/store/actions/fetch.js:170
+#: src/store/actions/fetch.js:189 src/store/actions/fetch.js:208
 #: src/store/actions/fetch.js:227
 msgid "Unknown Error"
 msgstr "Tundmatu Viga"
@@ -273,10 +249,8 @@ msgstr "mainis sind"
 msgid "You have new messages in chat"
 msgstr "Sul on jututoas uus sõnum"
 
-#: src/components/Converter.jsx:566
-#: src/components/CoordinatesBox.jsx:42
-#: src/components/ModWatchtools.jsx:390
-#: src/components/ModWatchtools.jsx:408
+#: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
+#: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
 msgid "Copy to Clipboard"
 msgstr "Kopeeri Lõikelauale"
 
@@ -321,10 +295,8 @@ msgstr "Laaditakse"
 msgid "Select Date above"
 msgstr "Vali Kuupäev"
 
-#: src/components/Admintools.jsx:103
-#: src/components/ModCanvastools.jsx:226
-#: src/components/ModWatchtools.jsx:120
-#: src/components/Window.jsx:157
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
+#: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
@@ -355,8 +327,7 @@ msgstr "Maksimeeri"
 msgid "Resize"
 msgstr "Muuda Suurust"
 
-#: src/components/BanInfo.jsx:75
-#: src/components/buttons/HelpButton.jsx:20
+#: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
 #: src/components/windows/index.js:13
 msgid "Help"
 msgstr "Abi"
@@ -366,18 +337,17 @@ msgstr "Abi"
 msgid "Settings"
 msgstr "Seaded"
 
-#: src/components/buttons/LogInButton.jsx:20
-#: src/components/windows/index.js:15
+#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:15
 msgid "User Area"
 msgstr "Kasutaja Ala"
-
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "Tee Kuvatõmmis"
 
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
 msgstr "Maakera Vaade"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "Tee Kuvatõmmis"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -396,13 +366,12 @@ msgid "Overlay Pencil ON"
 msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:65
-#, fuzzy
 msgid "Enable Pencil"
-msgstr "Käivita Pliiats"
+msgstr "Lülita Pliiats sisse"
 
 #: src/components/buttons/PencilButton.jsx:69
 msgid "Disable Pencil"
-msgstr ""
+msgstr "Lülita Pliiats välja"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
@@ -428,6 +397,47 @@ msgstr "Jututuba"
 msgid "Canvas Archive"
 msgstr "Lõuendi Arhiiv"
 
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Sul läks liiga kaua, proovi uuesti."
+
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Sa lahendasid captcha valesti"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Puudulik või sobimatu captcha tekst"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Captcha ID-d ei antud"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Tundmatu Captcha Viga"
+
+#: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
+#: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
+#: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
+#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/windows/ForgotPassword.jsx:73
+#: src/components/windows/Register.jsx:89
+msgid "Error"
+msgstr "Viga"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Tühista"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Saada"
+
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
 msgstr "Sinu ligipääs on piiratud. Arvad, et see on viga? Proovi "
@@ -436,21 +446,7 @@ msgstr "Sinu ligipääs on piiratud. Arvad, et see on viga? Proovi "
 msgid " on how to appeal."
 msgstr " , et otsus vaidlustada."
 
-#: src/components/BanInfo.jsx:80
-#: src/components/Captcha.jsx:79
-#: src/components/ChangeMail.jsx:72
-#: src/components/ChangeName.jsx:58
-#: src/components/ChangePassword.jsx:79
-#: src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71
-#: src/components/LogInForm.jsx:70
-#: src/components/windows/ForgotPassword.jsx:73
-#: src/components/windows/Register.jsx:89
-msgid "Error"
-msgstr "Viga"
-
-#: src/components/BanInfo.jsx:85
-#: src/components/ModIIDtools.jsx:73
+#: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
 msgstr "Põhjus"
 
@@ -458,8 +454,7 @@ msgstr "Põhjus"
 msgid "By Mod"
 msgstr "Seda Tegi Moderaator"
 
-#: src/components/BanInfo.jsx:97
-#: src/components/ModIIDtools.jsx:84
+#: src/components/BanInfo.jsx:97 src/components/ModIIDtools.jsx:84
 msgid "Duration"
 msgstr "Kestvus"
 
@@ -483,50 +478,15 @@ msgstr "Nüüd, mil sa näed seda sõnumit, su ligipääs ei ole enam piiratud."
 msgid "Why?"
 msgstr "Miks?"
 
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Sul läks liiga kaua, proovi uuesti."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Sa lahendasid captcha valesti"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Puudulik või sobimatu captcha tekst"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Captcha ID-d ei antud"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Tundmatu Captcha Viga"
-
-#: src/components/ChangeMail.jsx:93
-#: src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115
-#: src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80
-#: src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Tühista"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Saada"
-
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
 msgstr "Joonista piksleid suurele lõuendile koos teise inimestega!"
 
 #: src/components/windows/Help.jsx:66
 msgid ""
-"Our main canvas is a huge worldmap, you can place wherever you like, but "
-"you will have to wait a specific Cooldown between pixels. You can check out "
-"the cooldown and requirements on the Canvas Selection menu (globe button on "
+"Our main canvas is a huge worldmap, you can place wherever you like, but you "
+"will have to wait a specific Cooldown between pixels. You can check out the "
+"cooldown and requirements on the Canvas Selection menu (globe button on "
 "top). Some canvases have a different cooldown for replacing a user-set "
 "pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
 "and 7s on already set pixels."
@@ -575,12 +535,11 @@ msgstr "Ligipääs Piiratud? Tuvastatud kui Puhverserver?"
 #, javascript-format
 msgid ""
 "If you got detected as proxy, but you are none, or think that you got "
-"wrongfully banned, please go to our ${ guildedLink } or send us an e-mail "
-"to ${ mailLink } and include the following IID:"
+"wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
+"${ mailLink } and include the following IID:"
 msgstr ""
 
-#: src/components/windows/Help.jsx:79
-#: src/components/windows/Help.jsx:96
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
 msgstr "Juhtnupud"
 
@@ -591,7 +550,7 @@ msgstr "Vajuta värvile palettil, et see valida"
 #: src/components/windows/Help.jsx:82
 #, javascript-format
 msgid "Press ${ bindG } to toggle grid"
-msgstr "Vajuta ${ bindG }, et ruudustik ümberlülitada"
+msgstr "Vajuta ${ bindG }, et teljestik ümberlülitada"
 
 #: src/components/windows/Help.jsx:83
 #, javascript-format
@@ -613,16 +572,16 @@ msgstr "Vajuta ${ bindR }, et kopeerida koordinaadid"
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr ""
 
-#: src/components/windows/Help.jsx:87
-#: src/components/windows/Help.jsx:98
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
-msgstr "Vajuta ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD }, et ringi liikuda"
+msgstr ""
+"Vajuta ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD }, et ringi liikuda"
 
-#: src/components/windows/Help.jsx:88
-#: src/components/windows/Help.jsx:99
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
 #, javascript-format
-msgid "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
+msgid ""
+"Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
 msgstr ""
 "Vajuta ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight }, et "
 "ringi liikuda"
@@ -650,14 +609,12 @@ msgid ""
 "historical view"
 msgstr ""
 
-#: src/components/windows/Help.jsx:93
-#: src/components/windows/Help.jsx:104
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 
-#: src/components/windows/Help.jsx:94
-#: src/components/windows/Help.jsx:106
+#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -689,13 +646,12 @@ msgstr ""
 #: src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
-"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a "
-"pixel"
+"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
 msgstr ""
 
 #: src/components/windows/Help.jsx:110
 msgid ""
-"We thanks those artists very much, they offered their palettes to the "
+"We thank the following artists, who made their palettes available to the "
 "public on"
 msgstr ""
 
@@ -716,11 +672,11 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
-msgstr ""
+msgstr "Näita Teljestiku"
 
 #: src/components/windows/Settings.jsx:96
 msgid "Turn on grid to highlight pixel borders."
-msgstr ""
+msgstr "Lülita sisse teljestik, et näha pikslipiire."
 
 #: src/components/windows/Settings.jsx:99
 msgid "Show Pixel Activity"
@@ -740,17 +696,19 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
-msgstr ""
+msgstr "Vaigista Mängu Helid"
 
 #: src/components/windows/Settings.jsx:121
 msgid "All sound effects will be disabled."
-msgstr ""
+msgstr "Kõik heliefektid lülitatakse välja."
 
 #: src/components/windows/Settings.jsx:125
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
 msgstr ""
+"Sinu brauser ei võimalda meil helide tarvis kasutada AudioContext'i. Kas sul "
+"on mõni privaatsusfunktsioon, mis meid blokeerib?"
 
 #: src/components/windows/Settings.jsx:131
 msgid "Enable chat notifications"
@@ -758,7 +716,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:135
 msgid "Play a sound when new chat messages arrive"
-msgstr ""
+msgstr "Mängi heli kui jututuppa saabub uus sõnum"
 
 #: src/components/windows/Settings.jsx:138
 msgid "Auto Zoom In"
@@ -780,24 +738,23 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:154
 msgid "Potato Mode"
-msgstr ""
+msgstr "Kartulirežiim"
 
 #: src/components/windows/Settings.jsx:158
 msgid "For when you are playing on a potato."
 msgstr ""
 
-#: src/components/Converter.jsx:381
-#: src/components/windows/Settings.jsx:161
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
 msgid "Light Grid"
-msgstr ""
+msgstr "Valge Teljestik"
 
 #: src/components/windows/Settings.jsx:165
 msgid "Show Grid in white instead of black."
-msgstr ""
+msgstr "Näita Teljestiku musta asemel valgena."
 
 #: src/components/windows/Settings.jsx:169
 msgid "Historical View"
-msgstr ""
+msgstr "Ajalooline Vaade"
 
 #: src/components/windows/Settings.jsx:174
 msgid "Check out past versions of the canvas."
@@ -805,7 +762,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:179
 msgid "Themes"
-msgstr ""
+msgstr "Disain"
 
 #: src/components/windows/Settings.jsx:184
 msgid "How pixelplanet should look like."
@@ -813,24 +770,24 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:191
 msgid "Select Language"
-msgstr ""
+msgstr "Vali Keel"
 
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
-msgstr ""
+msgstr "Profiil"
 
 #: src/components/windows/UserArea.jsx:59
 msgid "Statistics"
-msgstr ""
+msgstr "Statistika"
 
 #: src/components/windows/UserArea.jsx:64
 msgid "Converter"
-msgstr ""
+msgstr "Pikselaator"
 
 #: src/components/windows/UserArea.jsx:70
 msgid "Modtools"
-msgstr ""
+msgstr "Modereerimine"
 
 #: src/components/windows/UserArea.jsx:71
 msgid "Loading..."
@@ -847,18 +804,16 @@ msgstr ""
 #: src/components/windows/Register.jsx:92
 #: src/components/windows/Register.jsx:98
 msgid "Name"
-msgstr ""
+msgstr "Nimi"
 
 #: src/components/windows/ForgotPassword.jsx:80
 #: src/components/windows/Register.jsx:100
 #: src/components/windows/Register.jsx:106
 msgid "Email"
-msgstr ""
+msgstr "Meil"
 
-#: src/components/ChangeMail.jsx:80
-#: src/components/DeleteAccount.jsx:62
-#: src/components/LogInForm.jsx:84
-#: src/components/windows/Register.jsx:108
+#: src/components/ChangeMail.jsx:80 src/components/DeleteAccount.jsx:62
+#: src/components/LogInForm.jsx:84 src/components/windows/Register.jsx:108
 #: src/components/windows/Register.jsx:114
 msgid "Password"
 msgstr "Salasõna"
@@ -870,14 +825,11 @@ msgstr "Kinnita Salasõna"
 
 #: src/components/windows/Register.jsx:124
 msgid "Captcha"
-msgstr ""
+msgstr "Captcha"
 
-#: src/components/Admintools.jsx:154
-#: src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:312
-#: src/components/ModCanvastools.jsx:403
-#: src/components/ModCanvastools.jsx:486
-#: src/components/ModCanvastools.jsx:587
+#: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
+#: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
+#: src/components/ModCanvastools.jsx:486 src/components/ModCanvastools.jsx:587
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
@@ -889,12 +841,12 @@ msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Archive of removed canvases can be accessed here:"
+"Achieved canvases can be accessed here:"
 msgstr ""
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
-msgstr ""
+msgstr "Arhiiv"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
@@ -903,14 +855,14 @@ msgstr ""
 #: src/components/windows/Archive.jsx:9
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who currently like a meme. Those canvases can get "
-"boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active."
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
 msgstr ""
 
 #: src/components/windows/Archive.jsx:10
 msgid ""
-"Here we collect removed canvases to archive them in a proper way. Which is "
+"Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
 
@@ -928,26 +880,26 @@ msgstr ""
 
 #: src/components/windows/Archive.jsx:22
 msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking "
-"a screenshot from the timelapse results in a perfect 1:1 representation of "
-"how the canvas was at that time."
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
 msgstr ""
 
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
-msgstr ""
+msgstr "Alusta vestlemisega siin"
 
 #: src/components/windows/Chat.jsx:217
 msgid "Chat here"
-msgstr ""
+msgstr "Vestle siin"
 
 #: src/components/windows/Chat.jsx:243
 msgid "You must be logged in to chat"
-msgstr ""
+msgstr "Sa pead olema sisse logitud, et vestelda"
 
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
-msgstr ""
+msgstr "Jututoa seadmed"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -957,8 +909,7 @@ msgstr "Sulle saadeti meil, milles on juhised salasõna vahetamiseks."
 msgid "Enter your mail address and we will send you a new password:"
 msgstr "Sisesta oma meil ja me saadame sulle uue salasõna:"
 
-#: src/components/Captcha.jsx:51
-#: src/components/Captcha.jsx:107
+#: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
 msgstr ""
 
@@ -972,7 +923,7 @@ msgstr ""
 
 #: src/components/Captcha.jsx:116
 msgid "Load Captcha"
-msgstr ""
+msgstr "Lae Captcha"
 
 #: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
@@ -984,50 +935,96 @@ msgstr ""
 
 #: src/components/Captcha.jsx:130
 msgid "Reload"
-msgstr ""
+msgstr "Laadi uuesti"
 
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
-msgstr ""
+msgstr "Sisesta Tähised"
+
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "Meil ei saa olla tühi."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "Meil peaks olema vähemalt 5 tähist."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "Meil ei tohiks olla pikem kui 40 tähist."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "Meil peaks sisaldama punkti"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "Meil peaks sisaldame @ tähist"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "Nimi ei saa olla tühi."
+
+#: src/utils/validation.js:30
+msgid "Name must be at least 2 characters long"
+msgstr "Nimi peab olema vähemalt 2 tähist pikk"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "Nimi peaks olema lühem kui 26 tähist"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Nimi sisaldab ebasobiliku tähist nagu @, /, \\ või #"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "Salasõna ei sisestatud."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "Salasõna peab olema vähemalt 6 tähist pikk."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "Salasõna ei tohi olla pikem kui 60 tähist."
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
-msgstr ""
+msgstr "Hangi IID"
 
 #: src/components/GetIID.jsx:53
 msgid "Copy"
-msgstr ""
+msgstr "Kopeeri"
 
-#: src/components/ChangeMail.jsx:91
-#: src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109
-#: src/components/LanguageSelect.jsx:79
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
 msgid "Save"
-msgstr ""
+msgstr "Salvesta"
 
 #: src/components/TemplateSettings.jsx:57
 msgid "Templates"
-msgstr ""
+msgstr "Šabloonid"
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
 "Tired of always spaming one single color? Want to create art instead, but "
 "you have to count pixels from some other image? Templates can help you with "
-"that! Templates can show as overlay and you can draw over them. One pixel "
-"on the template, should be one pixel on the canvas."
+"that! Templates can show as overlay and you can draw over them. One pixel on "
+"the template, should be one pixel on the canvas."
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Lülita Ülekate sisse"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:73
-msgid "Small Pixels Zoom"
+msgid "Small Pixels When Zoomed"
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:78
@@ -1036,7 +1033,7 @@ msgstr ""
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Ülekatte Läbipaistvus"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
@@ -1088,7 +1085,7 @@ msgstr ""
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
-msgstr ""
+msgstr "Registreeri"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
@@ -1135,8 +1132,7 @@ msgstr ""
 msgid "Social Settings"
 msgstr ""
 
-#: src/components/Converter.jsx:191
-#: src/components/ModCanvastools.jsx:230
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
 msgstr ""
 
@@ -1151,19 +1147,19 @@ msgstr ""
 
 #: src/components/Converter.jsx:241
 msgid "Image Converter"
-msgstr ""
+msgstr "Pildi Pikselaator"
 
 #: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
-msgstr ""
+msgstr "Pikseleeri pilt lõuendi värvidesse"
 
 #: src/components/Converter.jsx:261
 msgid "Choose Strategy"
-msgstr ""
+msgstr "Vali Strateegia"
 
 #: src/components/Converter.jsx:299
 msgid "Serpentine"
-msgstr ""
+msgstr "Serpentiin"
 
 #: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
@@ -1179,12 +1175,12 @@ msgstr ""
 
 #: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
-msgstr ""
+msgstr "Lisa Teljestik (eemalda märge, kui vajad 1:1 šablooni)"
 
-#: src/components/Converter.jsx:383
-#: src/components/Converter.jsx:399
+#: src/components/Converter.jsx:383 src/components/Converter.jsx:399
+#, fuzzy
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #: src/components/Converter.jsx:428
 msgid "Scale Image"
@@ -1207,8 +1203,9 @@ msgid "Anti Aliasing"
 msgstr ""
 
 #: src/components/Converter.jsx:536
+#, fuzzy
 msgid "Reset"
-msgstr ""
+msgstr "Taasta"
 
 #: src/components/Converter.jsx:554
 msgid "Download Template"
@@ -1232,10 +1229,9 @@ msgstr "Riigid Täna"
 
 #: src/components/Rankings.jsx:183
 msgid "Charts"
-msgstr ""
+msgstr "Graafikud"
 
-#: src/components/Rankings.jsx:201
-#: src/components/Rankings.jsx:210
+#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
 #: src/components/Rankings.jsx:219
 msgid "User"
 msgstr "Kasutaja"
@@ -1247,54 +1243,6 @@ msgstr "Riik"
 #: src/components/Rankings.jsx:286
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
-
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "Meil ei saa olla tühi."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "Meil peaks olema vähemalt 5 tähist."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "Meil ei tohiks olla pikem kui 40 tähist."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "Meil peaks sisaldama punkti"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "Meil peaks sisaldame @ tähist"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "Nimi ei saa olla tühi."
-
-#: src/utils/validation.js:30
-msgid "Name must be at least 2 characters long"
-msgstr "Nimi peab olema vähemalt 2 tähist pikk"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "Nimi peaks olema lühem kui 26 tähist"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Nimi sisaldab ebasobiliku tähist nagu @, /, \\ või #"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "Salasõna ei sisestatud."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "Salasõna peab olema vähemalt 6 tähist pikk."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "Salasõna ei tohi olla pikem kui 60 tähist."
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
@@ -1310,7 +1258,7 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:42
 msgid "Ranked"
-msgstr ""
+msgstr "Loeb Edetabelis"
 
 #: src/components/CanvasItem.jsx:44
 msgid "Yes"
@@ -1322,7 +1270,7 @@ msgstr "Ei"
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
-msgstr ""
+msgstr "Nõuded"
 
 #: src/components/CanvasItem.jsx:53
 msgid "User Account"
@@ -1337,40 +1285,17 @@ msgstr ""
 msgid "Top 10 Daily Ranking"
 msgstr ""
 
-#: src/components/CanvasItem.jsx:64
-#: src/components/TemplateItem.jsx:60
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
-msgstr ""
+msgstr "Mõõtmed"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr ""
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr ""
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:125
-#: src/components/TemplateItem.jsx:54
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
 msgstr "Lõuend"
 
-#: src/components/TemplateItem.jsx:57
-#: src/components/TemplateItemEdit.jsx:141
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "Koordinaadid"
 
@@ -1400,7 +1325,7 @@ msgstr ""
 
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
-msgstr ""
+msgstr "Logi Sisse"
 
 #: src/components/UserMessages.jsx:28
 msgid ""
@@ -1421,7 +1346,8 @@ msgid "Passwords do not match."
 msgstr "Salasõnad ei ole samad."
 
 #: src/components/ChangePassword.jsx:44
-msgid "Changed Password successfully."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Salasõna muudetud."
 
 #: src/components/ChangePassword.jsx:88
@@ -1496,21 +1422,21 @@ msgstr ""
 
 #: src/components/ModCanvastools.jsx:188
 msgid ""
-"Clean spare pixels that are surrounded by unset pixels and up to 1 other "
-"set pixels"
+"Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
+"pixels"
 msgstr ""
 
 #: src/components/ModCanvastools.jsx:192
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
-"pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there "
-"are two cooldowns)!)"
+"pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
+"two cooldowns)!)"
 msgstr ""
 
 #: src/components/ModCanvastools.jsx:196
 msgid ""
-"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA "
-"THAT ISN'T ALREADY MOSTLY 0)"
+"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
+"ISN'T ALREADY MOSTLY 0)"
 msgstr ""
 
 #: src/components/ModCanvastools.jsx:207
@@ -1539,23 +1465,19 @@ msgstr "Pikslite Kaitsmine"
 
 #: src/components/ModCanvastools.jsx:321
 msgid ""
-"Set protection of areas (if you need finer grained control, use protect "
-"with image upload and alpha layers)"
+"Set protection of areas (if you need finer grained control, use protect with "
+"image upload and alpha layers)"
 msgstr ""
 "Kaitse teatud alas piksleid (kui sa vajad kindlat kujundit siis lisa pilt "
 "valikuga \"Kaitstud\")"
 
-#: src/components/ModCanvastools.jsx:341
-#: src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517
-#: src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
 msgstr "Ülemine vasak nurk"
 
-#: src/components/ModCanvastools.jsx:363
-#: src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539
-#: src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
 msgstr "Alumine parem nurk"
 
@@ -1655,6 +1577,26 @@ msgstr "Sisesta Põhjus"
 msgid "(0 = infinite)"
 msgstr "(0 = lõppematu)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr ""
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr ""
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr ""
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Teavita"
@@ -1671,20 +1613,17 @@ msgstr "Blokeeri"
 msgid "Mute"
 msgstr "Vaigista"
 
-#: src/components/windows/Help.jsx:19
-#: src/components/windows/Settings.jsx:92
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20
-#: src/components/windows/Settings.jsx:100
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21
-#: src/components/windows/Settings.jsx:171
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
@@ -1743,3 +1682,13 @@ msgstr "M"
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr "Pixelplanetilt ei saadud vastust. Proovi taaskäivitada lehekülg."
+
+#~ msgid "Place more :)"
+#~ msgstr "Joonista rohkem :)"
+
+#, fuzzy
+#~ msgid "No Proxies Allowed :("
+#~ msgstr "Puhverserverid ei ole lubatud :("

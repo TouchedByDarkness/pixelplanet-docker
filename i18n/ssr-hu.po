@@ -14,7 +14,8 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
+#, fuzzy
+msgid "You can not send chat messages while using a proxy"
 msgstr "Proxyval nem küldhetsz üzenetet"
 
 #: src/core/ChatProvider.js:436
@@ -95,14 +96,6 @@ msgstr "Jelszó sikeresen megváltoztatva."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Érvénytelen link :( Kérjük, ellenőrizd újra a leveled."
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun felugró"
-
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3D földgömb"
@@ -119,11 +112,19 @@ msgstr "Kattints duplán a földgömbre a visszatéréshez."
 msgid "Loading..."
 msgstr "Betöltés..."
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun felugró"
+
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Helyezz el pixeleket egy hatalmas online vásznon más játékosokkal együtt"
@@ -302,11 +303,13 @@ msgid "Incorrect password!"
 msgstr "Hibás jelszó!"
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+#, fuzzy
+msgid "Muted Users can not delete their account."
 msgstr "A némított felhasználók nem törölhetik fiókjukat."
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
+#, fuzzy
+msgid "Muted Users can not do this."
 msgstr "A némított felhasználók nem tehetik meg ezt."
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -363,7 +366,8 @@ msgid "Minimap"
 msgstr "Kistérkép"
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
+#, fuzzy
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr "A fő vásznunk egy hatalmas világtérkép. Azt rajzolsz rá, amit akarsz"
 
 #: src/canvasesDesc.js:33
@@ -376,11 +380,13 @@ msgstr ""
 "nagyobb rajz."
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
+#, fuzzy
+msgid "Place Voxels on a 3D canvas with others."
 msgstr "Helyezz el voxeleket egy 3D-s vászonra, másokkal együtt"
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
+#, fuzzy
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr "Speciális vászon a SARS-CoV2 terjesztésére"
 
 #: src/canvasesDesc.js:36
@@ -404,13 +410,15 @@ msgstr ""
 "00:00-kor frissül."
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
+#, fuzzy
+msgid "Only four colors. Same rules as moon!"
 msgstr "Csak négy szín. Ugyanazok a szabályok, mint a holdnál."
 
 #: src/canvasesDesc.js:41
+#, fuzzy
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
 "Hódítsd meg a területet egy kisebb földön, védett óceánnal. Közös töltési "
 "idővel rendelkezik a földvászonnal."

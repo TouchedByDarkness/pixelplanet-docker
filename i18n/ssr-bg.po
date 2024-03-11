@@ -13,7 +13,8 @@ msgstr ""
 "X-Generator: Poedit 3.4.2\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
+#, fuzzy
+msgid "You can not send chat messages while using a proxy"
 msgstr "Не можете да пращате съобщения с proxy"
 
 #: src/core/ChatProvider.js:436
@@ -92,14 +93,6 @@ msgstr "Паролата Ви е успешно променена."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Невалиден URL адрес :( Моля проверете си имейла отново."
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun изкачащ прозорец"
-
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3DГлобус"
@@ -116,11 +109,19 @@ msgstr "Кликнете два пъти на глобуса, за да се в�
 msgid "Loading..."
 msgstr "Зарежда се..."
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun изкачащ прозорец"
+
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr "Слагайте цветни пиксели на платно в стил карта с други играчи онлайн"
 
@@ -299,11 +300,13 @@ msgid "Incorrect password!"
 msgstr "Грешна парола!"
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+#, fuzzy
+msgid "Muted Users can not delete their account."
 msgstr "Заглушени потребители не могат да изтрият техния профил."
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
+#, fuzzy
+msgid "Muted Users can not do this."
 msgstr "Заглушени потребители не могат да правят това."
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -360,7 +363,8 @@ msgid "Minimap"
 msgstr ""
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
+#, fuzzy
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
 "Нашето главно платно, огромна карта на света. Поставяйте навсякъде, където "
 "желаете"
@@ -374,11 +378,13 @@ msgstr ""
 "(освен част от рисунка) или рисунка по-голяма от 1.5хил x 1.5хил пиксели."
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
+#, fuzzy
+msgid "Place Voxels on a 3D canvas with others."
 msgstr "Слагайте воксели на 3D платно с други"
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
+#, fuzzy
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr "Специално платно за разпространяване на информация за SARS-CoV2"
 
 #: src/canvasesDesc.js:36
@@ -402,13 +408,13 @@ msgstr ""
 "класирането в 00:00 UTC."
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
+msgid "Only four colors. Same rules as moon!"
 msgstr ""
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
 
 #: src/core/MailProvider.js:66

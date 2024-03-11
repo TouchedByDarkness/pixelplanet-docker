@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 20:10+0000\n"
-"Last-Translator: ok what <dhyrbfytyreal123@gmail.com>\n"
+"PO-Revision-Date: 2024-03-11 17:01+0000\n"
+"Last-Translator: asd <petr.pesek.99@seznam.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/pixelplanet/server/"
 "cs/>\n"
 "Language: cz\n"
@@ -14,12 +14,12 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
-msgstr "Nemůžeš posílat zprávy do chatu s proxy"
+msgid "You can not send chat messages while using a proxy"
+msgstr "Nemůžeš posílat zprávy do chatu se zapnutou proxy"
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr "Tvůj stát je prozatím mutelej z tohodle chat kanálů"
+msgstr "Tvůj stát je prozatím umlčený z tohoto chat kanálu"
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
@@ -38,12 +38,12 @@ msgstr "Tvůj poskytovatel internetu je zabanován"
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr "Jseš mutelej na dalších ${ timeMin } minut"
+msgstr "Jseš umlčený na dalších ${ timeMin } minut"
 
 #: src/core/ChatProvider.js:450
 #, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Jseš mutelej na dalších ${ ttl } sekund"
+msgstr "Jsi umlčený na dalších ${ ttl } sekund"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
@@ -56,11 +56,11 @@ msgstr "Nemáš přístup na tenhle kanál"
 
 #: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
-msgstr "Tvůj email musí být ověřen aby jsi mohl povídat"
+msgstr "Tvůj email musí být ověřen aby jsi mohl psát do chatu"
 
 #: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
-msgstr "Nemůžeš posílat takhle dlouhý zprávy :("
+msgstr "Nemůžeš posílat takhle dlouhé zprávy :("
 
 #: src/core/ChatProvider.js:504
 msgid "Please use int channel"
@@ -72,11 +72,11 @@ msgstr "Přestaň spamovat."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr "Poslal jsi prázdné heslo nebo chybné data :("
+msgstr "Poslal jsi prázdné heslo nebo chybná data :("
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr "Tenhle heslo-resetující odkaz už je neplatný :("
+msgstr "Tento heslo-reset odkaz už je neplatný :("
 
 #: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
@@ -84,7 +84,7 @@ msgstr "Tvoje hesla nejsou stejná :("
 
 #: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
-msgstr "Uživatelské jméno neexistuje v naší databáze :("
+msgstr "Uživatelské jméno neexistuje v naší databázi :("
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
@@ -92,7 +92,23 @@ msgstr "Heslo úspěšně změněno."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr "Neplatný URL :( Prosím zkontroluj svůj mail zase."
+msgstr "Neplatná URL :( Prosím znovu zkontroluj svůj email."
+
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3D planeta"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "3D mapa celé naší mapy"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Dvakrát klikni na glóbus aby jsi šel zpátky na plátno."
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Načítaní..."
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
@@ -102,27 +118,11 @@ msgstr "ppfun"
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Globe.jsx:37
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3DGlóbus"
-
-#: src/ssr/Globe.jsx:38
-msgid "A 3D globe of our whole map"
-msgstr "3D mapa celé naší mapy"
-
-#: src/ssr/Globe.jsx:51
-msgid "Double click on globe to go back."
-msgstr "Dvakrát klikni na glóbus aby jsi šel zpátky."
-
-#: src/ssr/Globe.jsx:52
-msgid "Loading..."
-msgstr "Načítaní..."
-
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Polož barevné pixely na mapově stylovaném plátnem s ostatníma online hráčema"
@@ -300,12 +300,12 @@ msgid "Incorrect password!"
 msgstr "Nesprávné heslo!"
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+msgid "Muted Users can not delete their account."
 msgstr "Ztlumení uživatelé nemohou si odstranit účet."
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
-msgstr "Ztlumení hráči nemůžou tohle udělat."
+msgid "Muted Users can not do this."
+msgstr "Ztlumění hráči toto udělat nemohou."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -361,24 +361,25 @@ msgid "Minimap"
 msgstr "Minimapa"
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
-msgstr "Naše hlavní plátno, velká mapa země. Pokládejte kde chcete"
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
+msgstr "Naše hlavní plátno, obří mapa světa. Pokládejte kde budete chtít!"
 
 #: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
 msgstr ""
-"Plátno měsíce. Bezpečný místo pro obrazy. Žádné vlajky nebo velký texty ("
-"pouze jestli to není část obrazu) nebo obrazy větší jak 1,5k x 1,5k pixelů."
+"Plátno měsíce. Bezpečný místo pro obrazy. Žádné vlajky nebo velký texty "
+"(pouze jestli to není část obrazu) nebo obrazy větší jak 1,5k x 1,5k pixelů."
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
-msgstr "Polož Voxely na 3D plátno s ostatníma"
+msgid "Place Voxels on a 3D canvas with others."
+msgstr "Polož Voxely na 3D plátno s ostatními."
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
-msgstr "Speciální plátno pro zvýšení pozornosti o SARS-CoV2"
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
+msgstr ""
+"Speciální plátno pro zvýšení pozornosti o SARS-CoV2 (nechte se očkovat)."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -401,15 +402,15 @@ msgstr ""
 "aktualizuje v 00:00 UTC."
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
-msgstr "Pouze 4 barvy. Stejné pravidla jako na měsíci."
+msgid "Only four colors. Same rules as moon!"
+msgstr "Pouze 4 barvy. Stejná pravidla jako na měsíci."
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
-"Obsaďte území na menší zemi s chráněným oceánem. Sděluje cooldown s plátnem "
+"Obsazujte území na menší zemi s chráněným oceánem. Sdílí cooldown s plátnem "
 "země."
 
 #: src/core/MailProvider.js:66

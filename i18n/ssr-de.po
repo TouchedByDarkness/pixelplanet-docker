@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 22:16+0000\n"
+"PO-Revision-Date: 2024-03-11 16:27+0000\n"
 "Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/pixelplanet/"
 "server/de/>\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
-msgstr "Du kannst keine Nachrichten senden wenn du ein Proxy benutzt"
+msgid "You can not send chat messages while using a proxy"
+msgstr "Du kannst keine Nachrichten senden während du ein Proxy benutzt"
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
@@ -94,14 +94,6 @@ msgstr "Passwort erfolgreich geändert."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Ungültige Adresse :( Bitte kontrolliere die Mail nochmal."
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
-
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3D Globus"
@@ -118,11 +110,19 @@ msgstr "Doppelklick um zurück zu gehen."
 msgid "Loading..."
 msgstr "Lade..."
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
+
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr "Zeichne mit farbigen Pixel auf einer Weltkarte mit anderen Spielern"
 
@@ -301,11 +301,11 @@ msgid "Incorrect password!"
 msgstr "Falsches Passwort!"
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+msgid "Muted Users can not delete their account."
 msgstr "Stumme Spieler sind nicht erlaubt, ihre Konto zu löschen."
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
+msgid "Muted Users can not do this."
 msgstr "Stumme Spieler können das nicht tun."
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -362,9 +362,9 @@ msgid "Minimap"
 msgstr "Kleine Karte"
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
-"Unsere Hauptleinwand, eine große Weltkarte. Zeichnen ist überall möglich"
+"Unsere Hauptleinwand, eine große Weltkarte. Zeichnen ist überall möglich!"
 
 #: src/canvasesDesc.js:33
 msgid ""
@@ -375,12 +375,12 @@ msgstr ""
 "Teil von Kunst und nicht größer als 1,5k x 1,5k pixels."
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
-msgstr "Zeichne mit Voxeln in einer 3D Umgebung"
+msgid "Place Voxels on a 3D canvas with others."
+msgstr "Zeichne mit Voxel in einer 3D Umgebung."
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
-msgstr "Kleine Leinwand im SARS-CoV2 Thema"
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
+msgstr "Kleine Leinwand im SARS-CoV2 Thema."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -403,16 +403,16 @@ msgstr ""
 "wird um 00:00 UTC aktualisiert."
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
-msgstr "Nur vier Farben. Gleiche Regeln wie auf Mond."
+msgid "Only four colors. Same rules as moon!"
+msgstr "Nur vier Farben. Gleiche Regeln wie auf Mond!"
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
 "Erobere Land auf einer kleineren Erde mit beschützten Ozeanen. Teilt seine "
-"Abklingzeit mit Erde."
+"Abklingzeit mit Erde!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

@@ -43,7 +43,8 @@ msgstr ""
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-msgid "Copied!"
+#, fuzzy
+msgid "Copied"
 msgstr "Къопи ис!"
 
 #: src/controls/keypress.js:217
@@ -62,131 +63,117 @@ msgstr ""
 msgid "Easter Egg OFF"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
-#: src/ui/templateLoader.js:256
-msgid "Error :("
-msgstr "Рæдыд :("
+#: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
+msgid "Timeout"
+msgstr ""
 
-#: src/ui/PixelTransferController.js:71
-msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
+#, fuzzy
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
 msgstr "Pixelplanet'мæ дзуаппы райс нæй? Чи зоны бафæлвар сног кæнын?"
 
-#: src/ui/PixelTransferController.js:103
+#: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
 msgstr "Æнæраст Четæн"
 
-#: src/ui/PixelTransferController.js:104
+#: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
 msgstr "Четæны ай æнæ фæлдис"
 
-#: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
-#: src/ui/PixelTransferController.js:115
+#: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
 msgstr "Æнæраст Координаттæ"
 
-#: src/ui/PixelTransferController.js:108
+#: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
 msgstr "x арæн æддейы"
 
-#: src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
 msgstr "y арæн æддейы"
 
-#: src/ui/PixelTransferController.js:116
+#: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
 msgstr "z арæн æддейы"
 
-#: src/ui/PixelTransferController.js:119
+#: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
 msgstr "Æнæраст хуыз"
 
-#: src/ui/PixelTransferController.js:120
+#: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
 msgstr "Æнæраст хуыз равзарон"
 
-#: src/ui/PixelTransferController.js:123
+#: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
 msgstr "Регистрацион пайдагæнæгæн æрмæст"
 
-#: src/ui/PixelTransferController.js:124
+#: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
 msgstr "Ды системы бацу дарын, цæмæй бынæттæ скæн чатæны ай"
 
-#: src/ui/PixelTransferController.js:127
-msgid "Place more :)"
-msgstr "Стылдæр равæрын :)"
+#: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:148
+msgid "Not allowed"
+msgstr ""
 
-#: src/ui/PixelTransferController.js:129
-msgid "You can not access this canvas yet. You need to place more pixels"
+#: src/ui/PixelTransferController.js:130
+#, fuzzy
+msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
 "Нæй гæнæн дæ бацæуæн райсын четæнмæ ай. Сымахæн хъæуы бынæттæ скæн стылдæр "
 "пиксел"
 
-#: src/ui/PixelTransferController.js:132
-msgid "Pixel protected!"
+#: src/ui/PixelTransferController.js:133
+#, fuzzy
+msgid "Pixel protected"
 msgstr "Пиксел хъахъхъæн у!"
 
-#: src/ui/PixelTransferController.js:139
+#: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
 msgstr "Табуафси, равдис ма цы адæймаг дæ"
 
-#: src/ui/PixelTransferController.js:143
-msgid "No Proxies Allowed :("
-msgstr "Прокситæ æнæ бар :("
-
-#: src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
 msgstr "Дæ прокси спайда."
 
-#: src/ui/PixelTransferController.js:147
-msgid "Not allowed"
-msgstr ""
-
-#: src/ui/PixelTransferController.js:148
+#: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:151
+#: src/ui/PixelTransferController.js:152
 msgid "You are weird"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:153
+#: src/ui/PixelTransferController.js:154
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:156
+#: src/ui/PixelTransferController.js:157
 msgid "Banned"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:160
+#: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:161
-msgid "Your Internet Provider is banned from playing this game"
+#: src/ui/PixelTransferController.js:162
+msgid "Your Internet Provider is banned from this game"
 msgstr ""
 
-#: src/ui/PixelTransferController.js:164
-msgid "Timeout"
-msgstr ""
-
-#: src/ui/PixelTransferController.js:166
-#, fuzzy
-msgid ""
-"Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
-"persists?"
-msgstr "Pixelplanet'мæ дзуаппы райс нæй? Чи зоны бафæлвар сног кæнын?"
-
-#: src/ui/PixelTransferController.js:169
+#: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "Диссаг"
 
-#: src/ui/PixelTransferController.js:170
+#: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
 msgstr "Æнæ рауади пикселы равæрыв"
 
-#: src/ui/PixelTransferController.js:175
+#: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr "Рæдыд ${ retCode }"
@@ -199,6 +186,10 @@ msgstr "Четæны Архив"
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr ""
+
+#: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
+msgid "Error :("
+msgstr "Рæдыд :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -350,13 +341,13 @@ msgstr "Рæвдзгæнæнтæ"
 msgid "User Area"
 msgstr "Пайдагæнæджы Облæст"
 
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "Скриншоты Саразын"
-
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
 msgstr "Глобалон бакаст"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "Скриншоты Саразын"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -409,13 +400,28 @@ msgstr "Чат"
 msgid "Canvas Archive"
 msgstr "Четæны Архив"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
 msgstr ""
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
+#: src/components/GlobalCaptcha.jsx:50
+#, fuzzy
+msgid "You failed your captcha"
+msgstr "Captcha байдзаг бантыс ма"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
 msgstr ""
+
+#: src/components/GlobalCaptcha.jsx:56
+#, fuzzy
+msgid "No captcha id given"
+msgstr "Парол æнæ бацамон."
+
+#: src/components/GlobalCaptcha.jsx:59
+#, fuzzy
+msgid "Unknown Captcha Error"
+msgstr "Æнæхъуыст Рæдыд"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -425,6 +431,26 @@ msgstr ""
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Рæдыд"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Аивын"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Арвитын"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr ""
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr ""
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -457,41 +483,6 @@ msgstr ""
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:50
-#, fuzzy
-msgid "You failed your captcha"
-msgstr "Captcha байдзаг бантыс ма"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:56
-#, fuzzy
-msgid "No captcha id given"
-msgstr "Парол æнæ бацамон."
-
-#: src/components/GlobalCaptcha.jsx:59
-#, fuzzy
-msgid "Unknown Captcha Error"
-msgstr "Æнæхъуыст Рæдыд"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Аивын"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Арвитын"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -551,7 +542,7 @@ msgid "Banned? Detected as Proxy?"
 msgstr "Прокси куыд равдис?"
 
 #: src/components/windows/Help.jsx:76
-#, fuzzy, javascript-format
+#, javascript-format
 msgid ""
 "If you got detected as proxy, but you are none, or think that you got "
 "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
@@ -680,8 +671,8 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:110
 msgid ""
-"We thanks those artists very much, they offered their palettes to the public "
-"on"
+"We thank the following artists, who made their palettes available to the "
+"public on"
 msgstr ""
 
 #: src/components/windows/Help.jsx:113
@@ -871,7 +862,7 @@ msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Archive of removed canvases can be accessed here:"
+"Achieved canvases can be accessed here:"
 msgstr ""
 "Четæны равзар кæцы спайда фæнды дæ. Алы четæн уникал æмæ алы палитрытæ ис, "
 "рæстæг сфидар æмæ домæн. Архив æхгæд кæттаг ам ис:"
@@ -888,9 +879,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who currently like a meme. Those canvases can get "
-"boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active."
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
 msgstr ""
 "Кæд мах куыд уагæвæрд,четæнтæ хай нæй, кæцыдæр фæлдыст ивхæрсæнæн кæнæ "
 "курдиаты пайдагæнæг,кæцы абоны бон рæстæг мем зæрдæмæ. Четæны ай чи схъыг "
@@ -900,7 +891,7 @@ msgstr ""
 #: src/components/windows/Archive.jsx:10
 #, fuzzy
 msgid ""
-"Here we collect removed canvases to archive them in a proper way. Which is "
+"Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
 "Мах ам хи рæвдз четæны ай, цæмæй аккаг фæлгонц архив кæнын уыдон (абоны бон "
@@ -989,6 +980,55 @@ msgstr "Бавдзаг кæн"
 msgid "Enter Characters"
 msgstr "Символы Бакæн кæн"
 
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "Електроны пост æнæ чи зоны афтид уын."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "Електроны пост дары у æнæ къаддæр цæмæй 5 символæй."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "Електроны пост æнæ чи зоны даргъ 40 символы."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "Електронон пост дары хæссын уæд та тæпп"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "Електронон пост дары хæссын @"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "Ном æнæ чи зоны афтид."
+
+#: src/utils/validation.js:30
+#, fuzzy
+msgid "Name must be at least 2 characters long"
+msgstr "Ном дарын у æнæ къаддæр цæмæй 4 символæй"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "Ном дарын у цыбыр 26 символы"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Ном хæссы æнæруадзгæ символ, дæнцæн @, /, \\ кæнæ #"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "Парол æнæ бацамон."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "Парол дарын у æнæ къаддæр цæмæй 6 символæй."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "Парол дарын у цыбыр 60 символы."
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr ""
@@ -1025,7 +1065,7 @@ msgid "Show templates as overlays ingame."
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:73
-msgid "Small Pixels Zoom"
+msgid "Small Pixels When Zoomed"
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:78
@@ -1248,55 +1288,6 @@ msgstr ""
 "Рейтинг ногæй алы 5 минуты. Æрвылбойнон рейтингтæ æппар æмбисæхсæвы "
 "æппæтдунеон координаты рæстæджыл."
 
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "Електроны пост æнæ чи зоны афтид уын."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "Електроны пост дары у æнæ къаддæр цæмæй 5 символæй."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "Електроны пост æнæ чи зоны даргъ 40 символы."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "Електронон пост дары хæссын уæд та тæпп"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "Електронон пост дары хæссын @"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "Ном æнæ чи зоны афтид."
-
-#: src/utils/validation.js:30
-#, fuzzy
-msgid "Name must be at least 2 characters long"
-msgstr "Ном дарын у æнæ къаддæр цæмæй 4 символæй"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "Ном дарын у цыбыр 26 символы"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Ном хæссы æнæруадзгæ символ, дæнцæн @, /, \\ кæнæ #"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "Парол æнæ бацамон."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "Парол дарын у æнæ къаддæр цæмæй 6 символæй."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "Парол дарын у цыбыр 60 символы."
-
 #: src/components/CanvasItem.jsx:29
 #, fuzzy
 msgid "Online Users"
@@ -1344,28 +1335,6 @@ msgstr "Алыбоны Рейтинг"
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Бæрцтæ"
-
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:127
-#, fuzzy
-msgid "Players and Pixels per hour"
-msgstr "Равæрды Пикселтæ"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr ""
-
-#: src/core/chartSettings.js:351
-#, fuzzy
-msgid "Total Pixels placed per day"
-msgstr "Æрбынтон пикселтæ"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
@@ -1430,7 +1399,8 @@ msgid "Passwords do not match."
 msgstr "Парол æнæ аккаг у."
 
 #: src/components/ChangePassword.jsx:44
-msgid "Changed Password successfully."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Парол æнтыстджынæй раив."
 
 #: src/components/ChangePassword.jsx:88
@@ -1671,6 +1641,28 @@ msgstr ""
 msgid "(0 = infinite)"
 msgstr ""
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:127
+#, fuzzy
+msgid "Players and Pixels per hour"
+msgstr "Равæрды Пикселтæ"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr ""
+
+#: src/core/chartSettings.js:351
+#, fuzzy
+msgid "Total Pixels placed per day"
+msgstr "Æрбынтон пикселтæ"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Пинг"
@@ -1756,6 +1748,15 @@ msgstr "M"
 msgctxt "keybinds"
 msgid "T"
 msgstr ""
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr "Pixelplanet'мæ дзуаппы райс нæй? Чи зоны бафæлвар сног кæнын?"
+
+#~ msgid "Place more :)"
+#~ msgstr "Стылдæр равæрын :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr "Прокситæ æнæ бар :("
 
 #~ msgid "User online"
 #~ msgstr "Пайдагæнæг онлайн"

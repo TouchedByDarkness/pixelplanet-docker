@@ -44,7 +44,8 @@ msgstr "Hang"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-msgid "Copied!"
+#, fuzzy
+msgid "Copied"
 msgstr "Másolva!"
 
 #: src/controls/keypress.js:217
@@ -63,131 +64,118 @@ msgstr "Easter Egg bekapcsolva"
 msgid "Easter Egg OFF"
 msgstr "Easter Egg kikapcsolva"
 
-#: src/ui/PixelTransferController.js:70 src/ui/templateLoader.js:230
-#: src/ui/templateLoader.js:256
-msgid "Error :("
-msgstr "Hiba :("
-
-#: src/ui/PixelTransferController.js:71
-msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-msgstr ""
-"Nem érkezett válasz a PixelPlanettől. Próbáld meg frissíteni az oldalt."
-
-#: src/ui/PixelTransferController.js:103
-msgid "Invalid Canvas"
-msgstr "Érvénytelen vászon"
-
-#: src/ui/PixelTransferController.js:104
-msgid "This canvas doesn't exist"
-msgstr "Ez a vászon nem létezik"
-
-#: src/ui/PixelTransferController.js:107 src/ui/PixelTransferController.js:111
-#: src/ui/PixelTransferController.js:115
-msgid "Invalid Coordinates"
-msgstr "Érvénytelen koordináták"
-
-#: src/ui/PixelTransferController.js:108
-msgid "x out of bounds"
-msgstr "Érvénytelen x koordináta"
-
-#: src/ui/PixelTransferController.js:112
-msgid "y out of bounds"
-msgstr "Érvénytelen y koordináta"
-
-#: src/ui/PixelTransferController.js:116
-msgid "z out of bounds"
-msgstr "Érvénytelen z koordináta"
-
-#: src/ui/PixelTransferController.js:119
-msgid "Wrong Color"
-msgstr "Nem megfelelő szín"
-
-#: src/ui/PixelTransferController.js:120
-msgid "Invalid color selected"
-msgstr "A kiválasztott szín nem megfelelő"
-
-#: src/ui/PixelTransferController.js:123
-msgid "Just for registered Users"
-msgstr "Kizárólag regisztrált felhasználók számára"
-
-#: src/ui/PixelTransferController.js:124
-msgid "You have to be logged in to place on this canvas"
-msgstr "A vászon használatához be kell jelentkezned"
-
-#: src/ui/PixelTransferController.js:127
-msgid "Place more :)"
-msgstr "Rajzolj többet :)"
-
-#: src/ui/PixelTransferController.js:129
-msgid "You can not access this canvas yet. You need to place more pixels"
-msgstr "Ehhez a vászonhoz még nem férsz hozzá. Több pixelt kell elhelyezned"
-
-#: src/ui/PixelTransferController.js:132
-msgid "Pixel protected!"
-msgstr "Védett pixel!"
-
-#: src/ui/PixelTransferController.js:139
-msgid "Please prove that you are human"
-msgstr "Kérlek, bizonyítsd be, hogy ember vagy"
-
-#: src/ui/PixelTransferController.js:143
-msgid "No Proxies Allowed :("
-msgstr "A proxy használata tiltott :("
-
-#: src/ui/PixelTransferController.js:144
-msgid "You are using a Proxy."
-msgstr "Proxyt használsz."
-
-#: src/ui/PixelTransferController.js:147
-msgid "Not allowed"
-msgstr "Nem megengedett"
-
-#: src/ui/PixelTransferController.js:148
-msgid "Just the Top10 of yesterday can place here"
-msgstr "Csak az előző nap Top10 játékosa rajzolhat itt"
-
-#: src/ui/PixelTransferController.js:151
-msgid "You are weird"
-msgstr "Furcsa vagy"
-
-#: src/ui/PixelTransferController.js:153
-msgid ""
-"Server got confused by your pixels. Are you playing on multiple devices?"
-msgstr "A szervert összezavarták a pixeleid. Több eszközön is játszol?"
-
-#: src/ui/PixelTransferController.js:156
-msgid "Banned"
-msgstr "Kitiltva"
-
-#: src/ui/PixelTransferController.js:160
-msgid "Range Banned"
-msgstr "Tiltott tartomány"
-
-#: src/ui/PixelTransferController.js:161
-msgid "Your Internet Provider is banned from playing this game"
-msgstr "Az internetszolgáltatód nem játszhat ezzel a játékkal"
-
-#: src/ui/PixelTransferController.js:164
+#: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
 msgstr "Időtúllépés"
 
-#: src/ui/PixelTransferController.js:166
+#: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
+#, fuzzy
 msgid ""
-"Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
-"persists?"
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
 msgstr ""
 "Nem érkezett válasz a PixelPlanettől. Próbáld meg frissíteni az oldalt, ha a "
 "probléma továbbra is fennáll."
 
-#: src/ui/PixelTransferController.js:169
+#: src/ui/PixelTransferController.js:104
+msgid "Invalid Canvas"
+msgstr "Érvénytelen vászon"
+
+#: src/ui/PixelTransferController.js:105
+msgid "This canvas doesn't exist"
+msgstr "Ez a vászon nem létezik"
+
+#: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
+#: src/ui/PixelTransferController.js:116
+msgid "Invalid Coordinates"
+msgstr "Érvénytelen koordináták"
+
+#: src/ui/PixelTransferController.js:109
+msgid "x out of bounds"
+msgstr "Érvénytelen x koordináta"
+
+#: src/ui/PixelTransferController.js:113
+msgid "y out of bounds"
+msgstr "Érvénytelen y koordináta"
+
+#: src/ui/PixelTransferController.js:117
+msgid "z out of bounds"
+msgstr "Érvénytelen z koordináta"
+
+#: src/ui/PixelTransferController.js:120
+msgid "Wrong Color"
+msgstr "Nem megfelelő szín"
+
+#: src/ui/PixelTransferController.js:121
+msgid "Invalid color selected"
+msgstr "A kiválasztott szín nem megfelelő"
+
+#: src/ui/PixelTransferController.js:124
+msgid "Just for registered Users"
+msgstr "Kizárólag regisztrált felhasználók számára"
+
+#: src/ui/PixelTransferController.js:125
+msgid "You have to be logged in to place on this canvas"
+msgstr "A vászon használatához be kell jelentkezned"
+
+#: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
+#: src/ui/PixelTransferController.js:148
+msgid "Not allowed"
+msgstr "Nem megengedett"
+
+#: src/ui/PixelTransferController.js:130
+#, fuzzy
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr "Ehhez a vászonhoz még nem férsz hozzá. Több pixelt kell elhelyezned"
+
+#: src/ui/PixelTransferController.js:133
+#, fuzzy
+msgid "Pixel protected"
+msgstr "Védett pixel!"
+
+#: src/ui/PixelTransferController.js:140
+msgid "Please prove that you are human"
+msgstr "Kérlek, bizonyítsd be, hogy ember vagy"
+
+#: src/ui/PixelTransferController.js:145
+msgid "You are using a Proxy."
+msgstr "Proxyt használsz."
+
+#: src/ui/PixelTransferController.js:149
+msgid "Just the Top10 of yesterday can place here"
+msgstr "Csak az előző nap Top10 játékosa rajzolhat itt"
+
+#: src/ui/PixelTransferController.js:152
+msgid "You are weird"
+msgstr "Furcsa vagy"
+
+#: src/ui/PixelTransferController.js:154
+msgid ""
+"Server got confused by your pixels. Are you playing on multiple devices?"
+msgstr "A szervert összezavarták a pixeleid. Több eszközön is játszol?"
+
+#: src/ui/PixelTransferController.js:157
+msgid "Banned"
+msgstr "Kitiltva"
+
+#: src/ui/PixelTransferController.js:161
+msgid "Range Banned"
+msgstr "Tiltott tartomány"
+
+#: src/ui/PixelTransferController.js:162
+#, fuzzy
+msgid "Your Internet Provider is banned from this game"
+msgstr "Az internetszolgáltatód nem játszhat ezzel a játékkal"
+
+#: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "Furcsa"
 
-#: src/ui/PixelTransferController.js:170
+#: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
 msgstr "Nem sikerült kiválasztani a pixelt"
 
-#: src/ui/PixelTransferController.js:175
+#: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
 msgstr "Hiba ${ retCode }"
@@ -199,6 +187,10 @@ msgstr "Vászon hiba"
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "Nem képes a 3D vászon megjelenítésére, a WebGL2 ki van kapcsolva?"
+
+#: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
+msgid "Error :("
+msgstr "Hiba :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
@@ -347,13 +339,13 @@ msgstr "Beállítások"
 msgid "User Area"
 msgstr "Felhasználói terület"
 
-#: src/components/buttons/DownloadButton.jsx:36
-msgid "Make Screenshot"
-msgstr "Képernyőkép készítése"
-
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
 msgstr "Földgömb nézet"
+
+#: src/components/buttons/DownloadButton.jsx:36
+msgid "Make Screenshot"
+msgstr "Képernyőkép készítése"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -403,13 +395,25 @@ msgstr "Chat"
 msgid "Canvas Archive"
 msgstr "Vászonarchívum"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Ki lettél tiltva. Szerinted ez indokolatlan? Nézd meg a "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Túl sokáig próbáltad, próbáld újra."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " fület a fellebbezés módjáról."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Nem sikerült a captcha"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Nincs vagy érvénytelen captcha szöveg"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Nincs megadva captcha-azonosító"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Ismeretlen Captcha hiba"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -419,6 +423,26 @@ msgstr " fület a fellebbezés módjáról."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Hiba"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Küldés"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Ki lettél tiltva. Szerinted ez indokolatlan? Nézd meg a "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " fület a fellebbezés módjáról."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -451,38 +475,6 @@ msgstr "Most, hogy láttad ezt az üzenetet, már nem vagy kitiltva."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Miért?"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Túl sokáig próbáltad, próbáld újra."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Nem sikerült a captcha"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Nincs vagy érvénytelen captcha szöveg"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Nincs megadva captcha-azonosító"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Ismeretlen Captcha hiba"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Mégse"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Küldés"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -681,9 +673,10 @@ msgstr ""
 "érintőpadra ${ touchSymbol } a pixel eltávolításához"
 
 #: src/components/windows/Help.jsx:110
+#, fuzzy
 msgid ""
-"We thanks those artists very much, they offered their palettes to the public "
-"on"
+"We thank the following artists, who made their palettes available to the "
+"public on"
 msgstr ""
 "Köszönetet szeretnénk mondani azoknak a művészeknek, akik felajánlották "
 "palettáikat a közönségnek:"
@@ -872,11 +865,12 @@ msgid "Submit"
 msgstr "Küldés"
 
 #: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
-"Archive of removed canvases can be accessed here:"
+"Achieved canvases can be accessed here:"
 msgstr ""
 "Válaszd ki a használni kívánt vásznat.\n"
 "Minden vászon egyedi, és sajátos színpalettával, töltési idővel illetve "
@@ -892,11 +886,12 @@ msgid "Retired Canvases (history only)"
 msgstr "Nyugdíjazott vásznak (csak történelmi nézet)"
 
 #: src/components/windows/Archive.jsx:9
+#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who currently like a meme. Those canvases can get "
-"boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active."
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
 msgstr ""
 "Bár általában nem törlünk vásznakat, ám néhány vásznat csak szórakozásból "
 "vagy olyan felhasználók kérésére indítottunk, akiknek éppen tetszett egy "
@@ -904,8 +899,9 @@ msgstr ""
 "történik nagyobb változás, akkor már tényleg nem érdemes őket fenntartani."
 
 #: src/components/windows/Archive.jsx:10
+#, fuzzy
 msgid ""
-"Here we collect removed canvases to archive them in a proper way. Which is "
+"Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
 "Itt gyűjtjük össze az eltávolított vásznakat, hogy megfelelő módon "
@@ -995,6 +991,54 @@ msgstr "Újra"
 msgid "Enter Characters"
 msgstr "Ide írj"
 
+#: src/utils/validation.js:17
+msgid "Email can't be empty."
+msgstr "Az e-mail cím nem lehet üres."
+
+#: src/utils/validation.js:18
+msgid "Email should be at least 5 characters long."
+msgstr "Az e-mail címnek legalább 5 karakterből kell állnia."
+
+#: src/utils/validation.js:19
+msgid "Email can't be longer than 40 characters."
+msgstr "Az e-mail cím nem lehet hosszabb 40 karakternél."
+
+#: src/utils/validation.js:20
+msgid "Email should at least contain a dot"
+msgstr "Az e-mail címnek legalább egy pontot tartalmaznia kell"
+
+#: src/utils/validation.js:22
+msgid "Email should contain a @"
+msgstr "Az e-mail címnek tartalmaznia kell egy @-t"
+
+#: src/utils/validation.js:29
+msgid "Name can't be empty."
+msgstr "A név nem lehet üres."
+
+#: src/utils/validation.js:30
+msgid "Name must be at least 2 characters long"
+msgstr "A névnek legalább 2 karakterből kell állnia"
+
+#: src/utils/validation.js:31
+msgid "Name must be shorter than 26 characters"
+msgstr "A név nem lehet hosszabb 26 karakternél"
+
+#: src/utils/validation.js:38
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "A név érvénytelen karaktereket tartalmaz mint például: @, /, \\ vagy #"
+
+#: src/utils/validation.js:53
+msgid "No password given."
+msgstr "Nem adtál meg jelszót."
+
+#: src/utils/validation.js:56
+msgid "Password must be at least 6 characters long."
+msgstr "A jelszónak legalább 6 karakter hosszúságúnak kell lennie."
+
+#: src/utils/validation.js:59
+msgid "Password must be shorter than 60 characters."
+msgstr "A jelszónak 60 karakternél rövidebbnek kell lennie."
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "IID lekérése"
@@ -1035,7 +1079,8 @@ msgid "Show templates as overlays ingame."
 msgstr "Sablonok megjelenítése overlay-ként a játékban."
 
 #: src/components/TemplateSettings.jsx:73
-msgid "Small Pixels Zoom"
+#, fuzzy
+msgid "Small Pixels When Zoomed"
 msgstr "Kis pixeles nagyítás"
 
 #: src/components/TemplateSettings.jsx:78
@@ -1257,54 +1302,6 @@ msgstr ""
 "A rangsor 5 percenként frissül. A napi ranglisták pedig UTC idő szerint "
 "éjfélkor."
 
-#: src/utils/validation.js:17
-msgid "Email can't be empty."
-msgstr "Az e-mail cím nem lehet üres."
-
-#: src/utils/validation.js:18
-msgid "Email should be at least 5 characters long."
-msgstr "Az e-mail címnek legalább 5 karakterből kell állnia."
-
-#: src/utils/validation.js:19
-msgid "Email can't be longer than 40 characters."
-msgstr "Az e-mail cím nem lehet hosszabb 40 karakternél."
-
-#: src/utils/validation.js:20
-msgid "Email should at least contain a dot"
-msgstr "Az e-mail címnek legalább egy pontot tartalmaznia kell"
-
-#: src/utils/validation.js:22
-msgid "Email should contain a @"
-msgstr "Az e-mail címnek tartalmaznia kell egy @-t"
-
-#: src/utils/validation.js:29
-msgid "Name can't be empty."
-msgstr "A név nem lehet üres."
-
-#: src/utils/validation.js:30
-msgid "Name must be at least 2 characters long"
-msgstr "A névnek legalább 2 karakterből kell állnia"
-
-#: src/utils/validation.js:31
-msgid "Name must be shorter than 26 characters"
-msgstr "A név nem lehet hosszabb 26 karakternél"
-
-#: src/utils/validation.js:38
-msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "A név érvénytelen karaktereket tartalmaz mint például: @, /, \\ vagy #"
-
-#: src/utils/validation.js:53
-msgid "No password given."
-msgstr "Nem adtál meg jelszót."
-
-#: src/utils/validation.js:56
-msgid "Password must be at least 6 characters long."
-msgstr "A jelszónak legalább 6 karakter hosszúságúnak kell lennie."
-
-#: src/utils/validation.js:59
-msgid "Password must be shorter than 60 characters."
-msgstr "A jelszónak 60 karakternél rövidebbnek kell lennie."
-
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Elérhető felhasználók"
@@ -1350,26 +1347,6 @@ msgstr "Top 10 napi rangsor"
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
 msgstr "Méretek"
-
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Top 10 ország [pixelek / nap]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Játékosok és pixelek óránként"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Top 10 játékos [pixelek / nap]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Országok napi helyezése"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Naponta elhelyezett pixelek száma"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
@@ -1429,7 +1406,8 @@ msgid "Passwords do not match."
 msgstr "A jelszó nem stimmel."
 
 #: src/components/ChangePassword.jsx:44
-msgid "Changed Password successfully."
+#, fuzzy
+msgid "Password successfully changed."
 msgstr "Sikeresen megváltoztattad a jelszót."
 
 #: src/components/ChangePassword.jsx:88
@@ -1671,6 +1649,26 @@ msgstr "Indoklás megadása"
 msgid "(0 = infinite)"
 msgstr "(0 = végtelen)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Top 10 ország [pixelek / nap]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Játékosok és pixelek óránként"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Top 10 játékos [pixelek / nap]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Országok napi helyezése"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Naponta elhelyezett pixelek száma"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Megemlítés"
@@ -1756,6 +1754,16 @@ msgstr "M"
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr ""
+#~ "Nem érkezett válasz a PixelPlanettől. Próbáld meg frissíteni az oldalt."
+
+#~ msgid "Place more :)"
+#~ msgstr "Rajzolj többet :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr "A proxy használata tiltott :("
 
 #~ msgid "Show Hidden Canvases"
 #~ msgstr "Rejtett vásznak megjelenítése"

@@ -13,7 +13,8 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
+#, fuzzy
+msgid "You can not send chat messages while using a proxy"
 msgstr "Du kan ikke sende chat beskeder med proxy"
 
 #: src/core/ChatProvider.js:436
@@ -93,14 +94,6 @@ msgstr "Adgangskode blev succesfuldt ændret."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Ugyldig url :( Venligst tjek din mail igen."
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
-
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3DGlobus"
@@ -117,11 +110,19 @@ msgstr "Dobbeltklik på kloden for at gå tilbage."
 msgid "Loading..."
 msgstr "Indlæser..."
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
+
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Placer farvede pixels på et kort-stilet kanvas med andre spillere online"
@@ -301,11 +302,11 @@ msgid "Incorrect password!"
 msgstr "Forkerte adgangskode!"
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+msgid "Muted Users can not delete their account."
 msgstr ""
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
+msgid "Muted Users can not do this."
 msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -362,7 +363,8 @@ msgid "Minimap"
 msgstr ""
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
+#, fuzzy
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr "Vores hovedkanvas, et kæmpe verdenskort. Placer hvor end du vil"
 
 #: src/canvasesDesc.js:33
@@ -374,11 +376,13 @@ msgstr ""
 "hvis del af kunst) eller større end 1,5k x 1,5k pixels."
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
+#, fuzzy
+msgid "Place Voxels on a 3D canvas with others."
 msgstr "Placer Voxels på et 3D kanvas med andre"
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
+#, fuzzy
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr "Specielt kanvas for at sprede viden om SARS-CoV2"
 
 #: src/canvasesDesc.js:36
@@ -402,13 +406,13 @@ msgstr ""
 "rangering opdaterer kl. 00:00 UTC."
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
+msgid "Only four colors. Same rules as moon!"
 msgstr ""
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
 
 #: src/core/MailProvider.js:66

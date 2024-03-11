@@ -13,7 +13,8 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
+#, fuzzy
+msgid "You can not send chat messages while using a proxy"
 msgstr "No pots enviar missatges al xat amb un proxy"
 
 #: src/core/ChatProvider.js:436
@@ -96,15 +97,6 @@ msgid "Invalid url :( Please check your mail again."
 msgstr ""
 "URL invàlida :( Si us plau comprova el teu correu electrònic un altre cop."
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr ""
-
-#: src/ssr/PopUp.jsx:48
-#, fuzzy
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.fun"
-
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun Món3D"
@@ -121,12 +113,21 @@ msgstr "Doble clic a la bola del món per tornar enrere."
 msgid "Loading..."
 msgstr "Carregant..."
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr ""
+
+#: src/ssr/PopUp.jsx:48
+#, fuzzy
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.fun"
+
+#: src/ssr/Main.jsx:62
 #, fuzzy
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Col·loca píxels de colors en un gran llenç amb altres jugadors en línia"
@@ -309,11 +310,11 @@ msgid "Incorrect password!"
 msgstr "Contrasenya incorrecta!"
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+msgid "Muted Users can not delete their account."
 msgstr ""
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
+msgid "Muted Users can not do this."
 msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -370,7 +371,8 @@ msgid "Minimap"
 msgstr ""
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
+#, fuzzy
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
 "El nostre llenç principal, un enorme mapa del món. Col·loca allà on vulguis"
 
@@ -384,11 +386,13 @@ msgstr ""
 "píxels."
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
+#, fuzzy
+msgid "Place Voxels on a 3D canvas with others."
 msgstr "Col·loca voxels en un llenç 3D amb altres jugadors"
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
+#, fuzzy
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr "Llenç especial per conscienciar sobre el SARS-CoV-2"
 
 #: src/canvasesDesc.js:36
@@ -412,13 +416,13 @@ msgstr ""
 "diària s'actualitza a les 00:00 UTC."
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
+msgid "Only four colors. Same rules as moon!"
 msgstr ""
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
 
 #: src/core/MailProvider.js:66

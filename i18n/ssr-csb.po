@@ -14,7 +14,8 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
+#, fuzzy
+msgid "You can not send chat messages while using a proxy"
 msgstr "Të ni mòżesz sélac wiadów czej môsz proxy"
 
 #: src/core/ChatProvider.js:436
@@ -94,14 +95,6 @@ msgstr "Ùdało sã zmienic parolã."
 msgid "Invalid url :( Please check your mail again."
 msgstr "Lëchi lënk :( Sprôwdzë le swòjégò e-maila jesz rôz."
 
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
-
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr "PixelPlanet.Fun 3DGlobe"
@@ -118,11 +111,19 @@ msgstr "Przëcesni zemską kùglã dwakroc żebë copnąc."
 msgid "Loading..."
 msgstr "Ładowónié..."
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
+
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Stawiôj farwné piksele na kôrtowatëch płótnach z jinszima graczama online"
@@ -302,11 +303,13 @@ msgid "Incorrect password!"
 msgstr "Złô parola!"
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+#, fuzzy
+msgid "Muted Users can not delete their account."
 msgstr "Wëcëszony brëkòwnicë ni mògą rëmnąc swòjégò kònta."
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
+#, fuzzy
+msgid "Muted Users can not do this."
 msgstr "Wëcëszony brëkòwnicë ni mògą tegò robic."
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -363,7 +366,8 @@ msgid "Minimap"
 msgstr "Minimap"
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
+#, fuzzy
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
 "Najé przédné płótno, stolëmnô kôrta Swiata. Stawiôj gdze le cë sã widzy"
 
@@ -377,11 +381,13 @@ msgstr ""
 "1.5 tës. x 1.5. tës. pikselów."
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
+#, fuzzy
+msgid "Place Voxels on a 3D canvas with others."
 msgstr "Stawiôj wòksele na płótnie 3D z jinszima"
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
+#, fuzzy
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr "Òsoblëwé płótno do rozkòscérzaniégò swiądë ò SARS-CoV2"
 
 #: src/canvasesDesc.js:36
@@ -405,13 +411,14 @@ msgstr ""
 "òdnôwiô ò 00:00 UTC."
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
+#, fuzzy
+msgid "Only four colors. Same rules as moon!"
 msgstr "Leno czterë farwë. Taczé same regle jak na miesądzu."
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
 
 #: src/core/MailProvider.js:66

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 09:27+0000\n"
-"Last-Translator: Alen <alen.mankyan7@gmail.com>\n"
+"PO-Revision-Date: 2024-03-11 16:27+0000\n"
+"Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: Armenian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/hy/>\n"
 "Language: hy\n"
@@ -14,7 +14,8 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
+#, fuzzy
+msgid "You can not send chat messages while using a proxy"
 msgstr "Դուք չեք կարող պռուկսիի միջոցով զրուցում հաղորդագրություն ուղարկել"
 
 #: src/core/ChatProvider.js:436
@@ -88,19 +89,11 @@ msgstr "Օգտագործողը գոյություն չունի մեր տվյալ
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr "Գաղտնաբառը հաջողությամբ փոխվեծ է:"
+msgstr "Գաղտնաբառը հաջողությամբ փոխվեց:"
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
 msgstr "Անվավեր url :( Խնդրում ենք կրկին ստուգել ձեր փոստը:"
-
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun-ի ելնող պատուհան"
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
@@ -118,11 +111,19 @@ msgstr "Կրկնակի կտտացրեք գլոբուսին ՝ վերադառնա
 msgid "Loading..."
 msgstr "Բեռնում..."
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun-ի ելնող պատուհան"
+
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr "Տեղադրեք գունավոր պիքսելներ քարտեզանման կտավի վրա այլ խաղացողների հետ"
 
@@ -301,11 +302,13 @@ msgid "Incorrect password!"
 msgstr "Սխալ գաղտնաբառ!"
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+#, fuzzy
+msgid "Muted Users can not delete their account."
 msgstr "Լռված օգտվողները չեն կարող ջնջել իրենց հաշիվը:"
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
+#, fuzzy
+msgid "Muted Users can not do this."
 msgstr "Լռված օգտվողները չեն կարող դա անել:"
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -362,7 +365,8 @@ msgid "Minimap"
 msgstr "Փոքր քարտեզ"
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
+#, fuzzy
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
 "Մեր գլխավոր կտավը ՝ աշխարհի հսկայական քարտեզն է: Տեղադրեք ամենուր, որտեղ ձեզ "
 "դուր է գալիս"
@@ -376,11 +380,13 @@ msgstr ""
 "դա արվեստի մաս չէ) կամ 1,5k x 1,5k պիքսելից մեծ արվեստ:"
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
+#, fuzzy
+msgid "Place Voxels on a 3D canvas with others."
 msgstr "Տեղադրեք ոկսելներն 3D կտավի վրա ուրիշների հետ"
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
+#, fuzzy
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr "Հատուկ կտավ `SARS-CoV2- ի իրազեկությունը տարածելու համար"
 
 #: src/canvasesDesc.js:36
@@ -404,13 +410,15 @@ msgstr ""
 "թարմացումները 00:00 UTC-ին:"
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
+#, fuzzy
+msgid "Only four colors. Same rules as moon!"
 msgstr "Ընդամենը չորս գույն: Նույն կանոնները, ինչպես լուսինում:"
 
 #: src/canvasesDesc.js:41
+#, fuzzy
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
 "Նվաճեք հողերը ավելի փոքր Երկրի վրա՝ պաշտպանված օվկիանոսով: Վերականգնման "
 "ժամանակը կապված է Երկրի կտավի հետ:"

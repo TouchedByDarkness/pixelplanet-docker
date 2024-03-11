@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 21:36+0000\n"
+"PO-Revision-Date: 2024-03-11 17:23+0000\n"
 "Last-Translator: TCr3 <tcreeper.earth@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "server/tr/>\n"
@@ -14,55 +14,56 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-msgid "You can not send chat messages with proxy"
-msgstr "Proxy ile mesaj gönderemezsin"
+msgid "You can not send chat messages while using a proxy"
+msgstr "Proxy kullanırken sohbete ileti yollayamazsın"
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr "Ülken geçici süreliğine susturuldu"
+msgstr "Ülkeniz geçici olarak susturuldu"
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
-msgstr "Kalıcı olarak susturuldun, kaldırılması için Guilded sunucumuza katıl"
+msgstr ""
+"Kalıcı olarak susturuldunuz, kaldırtılması için Guilded sunucumuza katılın"
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
-msgstr "Banlandın"
+msgstr "Yasaklısınız"
 
 #: src/core/ChatProvider.js:443
 msgid "Your Internet Provider is banned"
-msgstr "İnternet sağlayıcın banlandı"
+msgstr "İnternet sağlayıcınız yasaklı"
 
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr "${ timeMin } dakikalığına susturuldun"
+msgstr "${ timeMin } dakikalığına susturuldunuz"
 
 #: src/core/ChatProvider.js:450
 #, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "${ ttl } saniyeliğine susturuldun"
+msgstr "${ ttl } saniyeliğine susturuldunuz"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
 msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
-msgstr "Çok hızlı mesaj gönderiyorsun, ${ waitTime } saniye beklemen gerekiyor"
+msgstr "Çok hızlı ileti yolluyorsunuz, ${ waitTime }s beklemeniz gerekiyor :("
 
 #: src/core/ChatProvider.js:471
 msgid "You don't have access to this channel"
-msgstr "Bu kanala erişimin yok"
+msgstr "Bu kanala erişiminiz yok"
 
 #: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
-msgstr "Onaylı bir E-Posta adresin olmadan sohbete katılamazsın"
+msgstr "Sohbet edebilmek için e-posta adresinizi onaylamanız gerekiyor"
 
 #: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
-msgstr "Bu kadar uzun bir mesaj gönderemezsin :("
+msgstr "Bunca uzun bir ileti yollayamazsın :("
 
 #: src/core/ChatProvider.js:504
 msgid "Please use int channel"
-msgstr "Lütfen int sohbet kanalını kullanın"
+msgstr "Lütfen int kanalını kullanın"
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
@@ -70,27 +71,43 @@ msgstr "Flood yapmayı bırak."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr "Boş bir parola gönderdin veya geçersiz data :("
+msgstr "Boş parola ya da geçersiz veri yolladınız :("
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr "Parola değiştirme bağlantısı artık geçerli değil :("
+msgstr "Bu parola değiştirme bağlantısı artık geçerli değil :("
 
 #: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
-msgstr "Parolaların uyuşmuyor"
+msgstr "Parolalarınız uyuşmuyor :("
 
 #: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
-msgstr "Kullanıcı veri tabanımızda bulunamadı :("
+msgstr "Kullanıcı, veritabanımızda bulunamadı :("
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr "Parolanız başarılı bir şekilde değiştirildi."
+msgstr "Parolanız başarıyla değiştirildi."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr "Geçersiz bağlantı :( Lütfen postanızı tekrar kontrol ediniz."
+msgstr "Geçersiz bağlantı :( Lütfen e-postanızı yeniden kontrol ediniz."
+
+#: src/ssr/Globe.jsx:37
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3BKüre"
+
+#: src/ssr/Globe.jsx:38
+msgid "A 3D globe of our whole map"
+msgstr "Tüm haritamızın 3 boyutlu küresi"
+
+#: src/ssr/Globe.jsx:51
+msgid "Double click on globe to go back."
+msgstr "Küreye çift tıklayarak geri dönün."
+
+#: src/ssr/Globe.jsx:52
+msgid "Loading..."
+msgstr "Yükleniyor..."
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
@@ -98,29 +115,13 @@ msgstr "ppfun"
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Globe.jsx:37
-msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun 3BKüresel"
-
-#: src/ssr/Globe.jsx:38
-msgid "A 3D globe of our whole map"
-msgstr "Tüm haritamızın 3 boyutlu küreseli"
-
-#: src/ssr/Globe.jsx:51
-msgid "Double click on globe to go back."
-msgstr "Küreye çift tıklayarak geri dön."
-
-#: src/ssr/Globe.jsx:52
-msgid "Loading..."
-msgstr "Yükleniyor..."
-
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
-msgstr "PixelPlanet.fun"
+msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Diğer oyuncularla beraber harita tarzı tuvallerde renkli pikseller atın"
@@ -299,11 +300,11 @@ msgid "Incorrect password!"
 msgstr "Yanlış parola!"
 
 #: src/routes/api/auth/delete_account.js:46
-msgid "Muted users can not delete their account."
+msgid "Muted Users can not delete their account."
 msgstr "Susturulan kullanıcılar hesaplarını silemez."
 
 #: src/routes/api/auth/change_mail.js:62
-msgid "Muted users can not do this."
+msgid "Muted Users can not do this."
 msgstr "Susturulan kullanıcılar bunu yapamaz."
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -357,11 +358,11 @@ msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr "Küçük harita"
+msgstr "Küçük Harita"
 
 #: src/canvasesDesc.js:32
-msgid "Our main canvas, a huge map of the world. Place everywhere you like"
-msgstr "Ana tuvalimiz devasa dünya haritası. İstediğin yere piksel atabilirsin"
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
+msgstr "Ana tuvalimiz devasa dünya haritası. İstediğin yere piksel atabilirsin!"
 
 #: src/canvasesDesc.js:33
 msgid ""
@@ -372,12 +373,12 @@ msgstr ""
 "(eserin parçası değilse) veya 1.5k x 1.5k pikselden oluşan eserler yasaktır."
 
 #: src/canvasesDesc.js:34
-msgid "Place Voxels on a 3D canvas with others"
-msgstr "3B tuvalde diğer oyuncularla birlikte küp pikseller at"
+msgid "Place Voxels on a 3D canvas with others."
+msgstr "3B tuvalde diğer oyuncularla birlikte küp pikseller at."
 
 #: src/canvasesDesc.js:35
-msgid "Special canvas to spread awareness of SARS-CoV2"
-msgstr "Koronavirüs farkındalığını yaymak için özel olarak yapılan tuval"
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
+msgstr "Koronavirüs farkındalığını yaymak için özel olarak yapılan tuval."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -400,16 +401,16 @@ msgstr ""
 "UTC'da güncellenir."
 
 #: src/canvasesDesc.js:40
-msgid "Only four colors. Same rules as moon."
-msgstr "Yalnızca dört renk. Ay ile aynı kurallar."
+msgid "Only four colors. Same rules as moon!"
+msgstr "Yalnızca dört renk. Ay ile aynı kurallar!"
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
-"earth canvas."
+"earth canvas!"
 msgstr ""
-"Korumalı okyanus ile daha küçük bir dünya üzerinde toprak fethedin. Toprak "
-"tuvali ile bekleme süresini paylaşır."
+"Okyanusun korunduğu bu küçük dünyada fetihler yapın. Bu tuval Dünya tuvali "
+"ile bekleme süresini paylaşır!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

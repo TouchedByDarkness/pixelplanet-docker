@@ -1,422 +1,418 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 19:37+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
-"Language-Team: Kashubian <https://hosted.weblate.org/projects/pixelplanet/"
-"client/csb/>\n"
-"Language: csb\n"
-"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2024-03-11 17:25+0000\n"
+"Last-Translator: Ghskrs Tankumz <asalsuprag@gmail.com>\n"
+"Language-Team: Kurdish (Northern) <https://hosted.weblate.org/projects/"
+"pixelplanet/client/kmr/>\n"
+"Language: kmr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
 msgid "Switched to ${ canvasName }"
-msgstr "Je przełączoné na ${ canvasName }"
+msgstr "${ canvasName } re derbas bû"
 
 #: src/controls/keypress.js:184
 msgid "Grid ON"
-msgstr "Séc włączonô"
+msgstr "Tor VEKIRÎ"
 
 #: src/controls/keypress.js:185
 msgid "Grid OFF"
-msgstr "Séc wëłączonô"
+msgstr "Tor GIRTÎ"
 
 #: src/controls/keypress.js:195
 msgid "Pixel Notify ON"
-msgstr "Pòwiadomienié ò Pikselach włączone"
+msgstr "Agahdarkirina Pixel Vekirî"
 
 #: src/controls/keypress.js:196
 msgid "Pixel Notify OFF"
-msgstr "Pòwiadomienié ò Pikselach wëłączone"
+msgstr "Agahdarkirina Pixelê GIRTÎ"
 
 #: src/controls/keypress.js:201
 msgid "Muted Sound"
-msgstr "Wëcëszono zwãczi"
+msgstr "Bêdengî"
 
 #: src/controls/keypress.js:202
 msgid "Unmuted Sound"
-msgstr "Òdcëszono zwãczi"
+msgstr "Bidengî"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-#, fuzzy
 msgid "Copied"
-msgstr "Je skòpiérowóné!"
+msgstr "Kopî bu"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr "Pòdkłôd włączony"
+msgstr "Overlay vekirî"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr "Pòdkłôd wëłączony"
+msgstr "Overlay girtî"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr "Easter Egg Włączony"
+msgstr "Easter Egg VEKIRÎ"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr "Easter Egg Wëłączony"
+msgstr "Easter Egg GIRTÎ"
 
 #: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
-msgstr "Kùńc czasu"
+msgstr "bêdeng kirin"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
-"Òd pixelplanet ni ma òdpòwiescë. Mòżesz spróbòwac òdswiéżec jakbë tôkel dali "
-"béł?"
+"Ji pixelplanet cewab nehat. Ger ev pirsgirêk berdewam bike, malpera nûjen "
+"bikin."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
-msgstr "Lëché płótno"
+msgstr "Kanvas ne rast e"
 
 #: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
-msgstr "Taczé płótno nie jistnieje"
+msgstr "Ev kanvas tûne ye"
 
 #: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
 #: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
-msgstr "Złe kòordinatë"
+msgstr "Koordînatên ne rast e"
 
 #: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
-msgstr "x bùten grańców"
+msgstr "x, ji sînor re dûr ket"
 
 #: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
-msgstr "y bùten grańców"
+msgstr "y, ji sînor re dûr ket"
 
 #: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
-msgstr "z bùten grańców"
+msgstr "z, ji sînor re dûr ket"
 
 #: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
-msgstr "Złô farwa"
+msgstr "Rengê şaş"
 
 #: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
-msgstr "Złô farwa òsta wëbrónô"
+msgstr "Rengê nederbasdar hat hilbijartin"
 
 #: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
-msgstr "Leno dlô zaregistrowónëch brëkòwników"
+msgstr "Tenê ji bo Bikarhênerên qeydkirî"
 
 #: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
-msgstr "Mùszisz bëc wlogòwóny żebë stawiac na płótnie"
+msgstr "Divê hûn têketî bin ku hûn li ser vê pixel avêtin"
 
 #: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
 #: src/ui/PixelTransferController.js:148
 msgid "Not allowed"
-msgstr "Nie dozwòloné"
+msgstr "Destûr nayê dayîn"
 
 #: src/ui/PixelTransferController.js:130
-#, fuzzy
 msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
-"Të jesz ni môsz przistãpù do tegó płótna. Brëkùjesz pòstawic wicy pikselów"
+"Hûn hîn nikarin xwe bigihînin vê kanavê. Pêdivî ye ku hûn pixelên bêtir bi "
+"cîh bikin"
 
 #: src/ui/PixelTransferController.js:133
-#, fuzzy
 msgid "Pixel protected"
-msgstr "Piksel barniony!"
+msgstr "Pixel parastîye"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
-msgstr "Proszã ùdowodnic że jes lëdzã"
+msgstr "Ji xwe îspat bikin ku hûn mirov in"
 
 #: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
-msgstr "Të ùżiwôsz proksów."
+msgstr "Tu Proxyê bikar tînin."
 
 #: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
-msgstr "Blós Top10 z wczorô mòże tuwò stawiac"
+msgstr ""
+"Tenê 10 kesên ku duh herî zêde pixel şandine dikarin pixelan li vir bixin"
 
 #: src/ui/PixelTransferController.js:152
 msgid "You are weird"
-msgstr "Të jes òbarchniałi"
+msgstr "Tu xerîb î"
 
 #: src/ui/PixelTransferController.js:154
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
-"Serwer je zdostóny z turu przez twòje pikselë. Czë të grajesz na wiele "
-"ùrządzeniach?"
+"Server ji hêla pixelên we ve tevlihev bû. Ma hûn li ser gelek cîhazan "
+"dilîzin?"
 
 #: src/ui/PixelTransferController.js:157
 msgid "Banned"
-msgstr "Wënëkóny"
+msgstr "Tu Qedexeyî"
 
 #: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
-msgstr "Zakôzóny syg"
+msgstr "Qedexeyê Range"
 
 #: src/ui/PixelTransferController.js:162
-#, fuzzy
 msgid "Your Internet Provider is banned from this game"
-msgstr "Twój dotëgòwôcz Jinternetu nie zezwôlô na granié w tã jigrã"
+msgstr "Pêşkêşvanê internetê ya we ji vê lîstikê qedexe ye"
 
 #: src/ui/PixelTransferController.js:170
 msgid "Weird"
-msgstr "Òbarchnialc"
+msgstr "Xerîb e"
 
 #: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
-msgstr "Nie ùdało sã wstawic piksela"
+msgstr "Pixel nehat danîn"
 
 #: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
-msgstr "Error ${ retCode }"
+msgstr "Şaşîyê ${ retCode }"
 
 #: src/ui/rendererFactory.js:31
 msgid "Canvas Error"
-msgstr "Błãd płótna"
+msgstr "Şaşîye Kanvas"
 
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
-msgstr "To ni mòże zrendérowac płótnów 3D. Nie môsz të WebGL2 wëłączoné?"
+msgstr ""
+"Hûn nikarin kanvase (qada lîstikê) 3D pêşkêş bikin, we WebGL2 neçalak kiriye?"
 
 #: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
 msgid "Error :("
-msgstr "Błąd :("
+msgstr "Şaşî :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr "To ni mòże ekspòrtowac wicy jak 20 abò niżôdnëch szablónów!"
+msgstr "Zêdetirî 20 şablon an yek nayê derxistin!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr "To ni mòże jimpòrtowac wicy jak 20 abò niżôdnëch szablónów!"
+msgstr "Zêdetirî 20 şablon an yek nayê derxistin!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
-msgstr "OK"
+msgstr "Belê"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
-msgstr "Të jes zrobił za wiele zapëtaniów"
+msgstr "Te gelek serlêdan kir"
 
 #: src/store/actions/fetch.js:59
 #, javascript-format
 msgid "try again after ${ ti }min"
-msgstr "spróbùj jesz rôz pò ${ ti }min"
+msgstr "Piştî ${ ti } deqîqeyan dîsa biceribîne"
 
 #: src/store/actions/fetch.js:70
 #, javascript-format
 msgid "Connection error ${ code } :("
-msgstr "Błãd sparłãczëniégò ${ code } :("
+msgstr "Şaşîyê girêdanê ${ code } :("
 
 #: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
-msgstr "To sã nie dało pòłączec ze serwerã, spróbùj pòzdze :("
+msgstr ""
+"Nekarî bi serverê ve were girêdan, ji kerema xwe paşê dîsa biceribîne :("
 
 #: src/store/actions/fetch.js:151 src/store/actions/fetch.js:170
 #: src/store/actions/fetch.js:189 src/store/actions/fetch.js:208
 #: src/store/actions/fetch.js:227
 msgid "Unknown Error"
-msgstr "Nieznónô fela"
+msgstr "Şaşîyê Nenas"
 
 #: src/store/actions/fetch.js:237
 msgid "Server answered with gibberish :("
-msgstr "Serwer òdpòwiédzôł w skôżony gôdce :("
+msgstr "Server bi bêdengî cewab da :("
 
 #: src/store/middleware/notifications.js:33
 msgid "Your next pixels are ready"
-msgstr "Twòje pòstãpné piksele są fardëch"
+msgstr "Pixelên weya paşîn amade ne"
 
 #: src/store/middleware/notifications.js:37
 msgid "You can now place more on pixelplanet.fun :)"
-msgstr "Terô mòżesz stawiac wicy na pixelplanet.fun :)"
+msgstr "Niha hûn dikarin zêdetir li ser pixelplanet.fun bi cîh bikin :)"
 
 #: src/store/middleware/notifications.js:54
 msgid "mentioned you"
-msgstr "wspòmniôł ce"
+msgstr "Behsa te kir"
 
 #: src/store/middleware/notifications.js:58
 msgid "You have new messages in chat"
-msgstr "Môsz nowé wiadë na czace"
+msgstr "Di suhbetê de peyamên nû hene"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
 #: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
 msgid "Copy to Clipboard"
-msgstr "Skòpieruj do Tacnika"
+msgstr "Kopî li Clipboardê"
 
 #: src/components/OnlineBox.jsx:40
 msgid "Online Users on Canvas"
-msgstr "Aktiwni brëkòwnicë na Płótnie"
+msgstr "Bikarhênerên Online li ser Canvas"
 
 #: src/components/OnlineBox.jsx:47
 msgid "Total Online Users"
-msgstr "Całownô lëczba Aktiwnëch Brëkòwników"
+msgstr "Hemû Bikarhênerên Online"
 
 #: src/components/OnlineBox.jsx:55
 msgid "Pixels placed"
-msgstr "Piksele pòstawióné"
+msgstr "Pîxelên danî"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
 msgid "Canvas Selection"
-msgstr "Wëbór Płótna"
+msgstr "Hilbijartina Kanvas"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Close Chat"
-msgstr "Zamkni Czat"
+msgstr "Suhbetê Bigire"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Open Chat"
-msgstr "Òdemkni Czat"
+msgstr "Suhbetê Veke"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Close Menu"
-msgstr "Zamkni Menu"
+msgstr "Menûyê Bigire"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Open Menu"
-msgstr "Òdemkni Menu"
+msgstr "Menûyê Veke"
 
 #: src/components/HistorySelect.jsx:146
 msgid "Loading"
-msgstr "Ładowónié"
+msgstr "Bar dike, bisekine"
 
 #: src/components/HistorySelect.jsx:147
 msgid "Select Date above"
-msgstr "Wëbierzë datã na górze"
+msgstr "Dîroka Jorîn hilbijêrin"
 
 #: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
-msgstr "Zamkni"
+msgstr "Bigire"
 
 #: src/components/Window.jsx:173
 msgid "PopUp"
-msgstr "Wëskakùjącé òczenko"
+msgstr "PopUp"
 
 #: src/components/Window.jsx:184
 msgid "Restore"
-msgstr "Przëwarcë"
+msgstr ""
 
 #: src/components/Window.jsx:221
 msgid "Clone"
-msgstr "Zdëbeltni"
+msgstr ""
 
 #: src/components/Window.jsx:229
 msgid "Move"
-msgstr "Przeniesë"
+msgstr ""
 
 #: src/components/Window.jsx:252
 msgid "Maximize"
-msgstr "Zmaksymalizuj"
+msgstr ""
 
 #: src/components/Window.jsx:268
 msgid "Resize"
-msgstr "Zmieni rozmiôr"
+msgstr ""
 
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
 #: src/components/windows/index.js:13
 msgid "Help"
-msgstr "Pòmoc"
+msgstr ""
 
 #: src/components/buttons/SettingsButton.jsx:21
 #: src/components/windows/index.js:14
 msgid "Settings"
-msgstr "Nastôwë"
+msgstr ""
 
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:15
 msgid "User Area"
-msgstr "Òbrëmienié Brëkòwnika"
+msgstr ""
 
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
-msgstr "Globalny pòzdrzatk"
+msgstr ""
 
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
-msgstr "Zrobi Zdrzucënk ekrana"
+msgstr ""
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
-msgstr "Wëłączë palétã"
+msgstr ""
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
-msgstr "Włączë palétã"
+msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:32
 msgid "History Pencil ON"
-msgstr "Historiô òłówka włączonô"
+msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr "Nakłôdkòwi òłówk włączony"
+msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
-msgstr "Włączë òłówk"
+msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:69
 msgid "Disable Pencil"
-msgstr "Wëłączë òłówk"
+msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
-msgstr "Wëłączë historią òłówka"
+msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
-msgstr "Wëłączë nakłôdkã òłówka"
+msgstr ""
 
 #: src/components/windows/index.js:16
 msgid "Registration"
-msgstr "Registrowanié"
+msgstr ""
 
 #: src/components/windows/index.js:17
 msgid "Forgot Password"
-msgstr "Zapòmniôł jem parolã"
+msgstr ""
 
 #: src/components/windows/index.js:18
 msgid "Chat"
-msgstr "Czat"
+msgstr ""
 
 #: src/components/windows/index.js:20
 msgid "Canvas Archive"
-msgstr "Archiwùm płótnów"
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
-msgstr "To za wiele zaderało, spróbùj jesz rôz."
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:50
 msgid "You failed your captcha"
-msgstr "Nie przeszedł jes testu captcha"
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:53
 msgid "No or invalid captcha text"
-msgstr "Felënk abò lëchi tekst captcha"
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:56
 msgid "No captcha id given"
-msgstr "Felënk ID testu captcha"
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:59
 msgid "Unknown Captcha Error"
-msgstr "Nieznónô fela captcha"
+msgstr ""
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -425,7 +421,7 @@ msgstr "Nieznónô fela captcha"
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
-msgstr "Błãd"
+msgstr ""
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
@@ -433,55 +429,55 @@ msgstr "Błãd"
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
-msgstr "Òprzestóń"
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
-msgstr "Wëslë"
+msgstr ""
 
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Òstôł jes zbanowóny? Pòdle ce to niesprawiedlëwé? Sprawdzë jak. "
+msgstr ""
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
-msgstr " sã òdezwac."
+msgstr ""
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
-msgstr "Pòwód"
+msgstr ""
 
 #: src/components/BanInfo.jsx:91
 msgid "By Mod"
-msgstr "Przez mòderatora"
+msgstr ""
 
 #: src/components/BanInfo.jsx:97 src/components/ModIIDtools.jsx:84
 msgid "Duration"
-msgstr "Na cząd"
+msgstr ""
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
-msgstr "Twój ban sã kùńczi "
+msgstr ""
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr " wcyg "
+msgstr ""
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
-msgstr "Òdbanowóny"
+msgstr ""
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."
-msgstr "Żelë widzysz tą wiadã, twój ban sã skùńcził."
+msgstr ""
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
-msgstr "Dlôcze?"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
-msgstr "Stawiôj farwné piksele na wiôldżich płótnach z jinyma grôczama online!"
+msgstr ""
 
 #: src/components/windows/Help.jsx:66
 msgid ""
@@ -492,49 +488,38 @@ msgid ""
 "pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
 "and 7s on already set pixels."
 msgstr ""
-"Najim przédnym płótnã je wiôlgô kôrta Swiata. Të mòżesz stawiac piksele "
-"gdzelebądz cë sã widzy, równak bãdzesz mùszôł pòżdac wëznaczony cząd "
-"òpòzdzeniégò dlô pikselów. Mòżesz sprawdzëc ten cząd i wëmôgania w Menu "
-"Wëbiérkù Płótnów (knąpa zemsczi kùglë na górze). Na niechtërnëch płótnach je "
-"jiny cząd òpòzdzeniégò jak sã zamieniwô chtëren z ju wstôwionëch pikselów, a "
-"jak sã stôwiô na pùsti môl, np. 4s/7s znaczi 4s dlô nowëch pikselów, a 7s na "
-"zamieniwanié tich ju pòstôwionëch."
 
 #: src/components/windows/Help.jsx:67
 msgid ""
 "Higher zoomlevels take some time to update, the 3D globe gets updated at "
 "least once per day."
 msgstr ""
-"Wëższé stãpnie przëblëżeniégò zabiérają drobkã czasu żebë sã ùternic. Zemskô "
-"kùgla 3D je ùterniwónô co nômni rôz na dzéń."
 
 #: src/components/windows/Help.jsx:68
 msgid "Have fun!"
-msgstr "Dobri zabôwë!"
+msgstr ""
 
 #: src/components/windows/Help.jsx:70
 msgid "recommended"
-msgstr "bédowóné"
+msgstr ""
 
 #: src/components/windows/Help.jsx:71
 msgid "Source on "
-msgstr "Pòkòn na "
+msgstr ""
 
 #: src/components/windows/Help.jsx:72
 msgid "Map Data"
-msgstr "Dóné kôrtë"
+msgstr ""
 
 #: src/components/windows/Help.jsx:73
 msgid ""
 "The bare map data that we use, together with converted OpenStreetMap tiles "
 "for orientation, can be downloaded from mega.nz here: "
 msgstr ""
-"Czësté dóné kôrtë w grëpie z przekònwertowónyma tôflama OpenStreetMaps dlô "
-"wërozmieniô mòżesz scygnąc z mega.nz tuwò: "
 
 #: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
-msgstr "Zbanowóny? Rozpòznóny jakno brëkòwnik Proxy?"
+msgstr ""
 
 #: src/components/windows/Help.jsx:76
 #, javascript-format
@@ -543,73 +528,65 @@ msgid ""
 "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
 "${ mailLink } and include the following IID:"
 msgstr ""
-"Żelë òstôł jes rozpòznóny jakno brëkòwnik Proxy abò mëslisz że òstôł jes "
-"zbanowóny niesprawiedlëwie, òdwiedzë proszã najé ${ guildedLink } abò pòslë "
-"nóm e-maila na ${ mailLink } i pòdôj henen IID:"
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
-msgstr "Czérowanié"
+msgstr ""
 
 #: src/components/windows/Help.jsx:81
 msgid "Click a color in palette to select it"
-msgstr "Cësni farwã na paléce żebë to wëbrac"
+msgstr ""
 
 #: src/components/windows/Help.jsx:82
 #, javascript-format
 msgid "Press ${ bindG } to toggle grid"
-msgstr "Wcësni ${ bindG } bë przełączëc jadro"
+msgstr ""
 
 #: src/components/windows/Help.jsx:83
 #, javascript-format
 msgid "Press ${ bindX } to toggle showing of pixel activity"
-msgstr "Wcësni ${ bindX } bë przełączëc pòkôzywónié aktiwnoscë piksela"
+msgstr ""
 
 #: src/components/windows/Help.jsx:84
 #, javascript-format
 msgid "Press ${ bindH } to toggle historical view"
-msgstr "Wcësni ${ bindH } bë przëłączëc historiczny wezdrzatk"
+msgstr ""
 
 #: src/components/windows/Help.jsx:85
 #, javascript-format
 msgid "Press ${ bindR } to copy coordinates"
-msgstr "Wcësni ${ bindR } żebë skòpiérowac wespółrzãdné"
+msgstr ""
 
 #: src/components/windows/Help.jsx:86
 #, javascript-format
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
-msgstr "Wcësni ${ bindQ } abò ${ bindE} bë przëblëżëc"
+msgstr ""
 
 #: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
-msgstr "Wcësni ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } żebë sã rëchac"
+msgstr ""
 
 #: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
 msgstr ""
-"Wcësni ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } żebë sã "
-"rëchac"
 
 #: src/components/windows/Help.jsx:89
 #, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
 msgstr ""
-"Przecygni mëszą ${ mouseSymbol } abò ${ touchSymbol } przesëni żebë sã rëchac"
 
 #: src/components/windows/Help.jsx:90
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
-"Przewini mëszą ${ mouseSymbol } abò ${ touchSymbol } rozsëni pôlce żebë "
-"przëblëżec"
 
 #: src/components/windows/Help.jsx:91
 #, javascript-format
 msgid "Hold left ${ bindShift } for placing while moving mouse"
-msgstr "Przetrzëmôj lewi ${ bindShift } żebë stawiac rëchającë mëszą"
+msgstr ""
 
 #: src/components/windows/Help.jsx:92
 #, javascript-format
@@ -617,15 +594,11 @@ msgid ""
 "Hold right ${ bindShift } for placing while moving mouse according to "
 "historical view"
 msgstr ""
-"Przetrzëmôj prawi ${ bindShift } żebë stawiac rëchającë mëszą pòdle "
-"historicznégò wezdrzatkù"
 
 #: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
-"Wcësni lewą knąpã mëszë ${ mouseSymbol } abò ${ touchSymbol } dotkni ekranu "
-"żebë pòstawic piksel"
 
 #: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
 #, javascript-format
@@ -633,18 +606,16 @@ msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
 "select current hovering color"
 msgstr ""
-"Wcësni strzódkòwą knąpã mëszë ${ mouseSymbol } abò ${ touchSymbol } "
-"przëtrzëmôj pôlc żebë pòbrac farwã"
 
 #: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Wcësni ${ bindQ } a ${ bindE } bë latac w górã i w dół"
+msgstr ""
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
-msgstr "Przetrzëmôj lewą knąpã mëszë ${ mouseSymbol } i przecygni żebë òbrócëc"
+msgstr ""
 
 #: src/components/windows/Help.jsx:102
 #, javascript-format
@@ -652,206 +623,193 @@ msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
 "button and drag to zoom"
 msgstr ""
-"Przewini meszą ${ mouseSymbol } abò przetrzëmôj strzódkòwą knąpã mëszë "
-"${ mouseSymbol } i przesëni żebë przeblëżëc"
 
 #: src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
-"Wcësni prawą knąpã mëszë ${ mouseSymbol } i przesëni mëszą bë przesënąc "
-"pòzdrzatk"
 
 #: src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
 msgstr ""
-"Wcësni prawą knąpã mëszë ${ mouseSymbol } abò ${ touchSymbol } dotkni ekranu "
-"dwakroc żebë rëmnąc piksel"
 
 #: src/components/windows/Help.jsx:110
-#, fuzzy
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
 msgstr ""
-"Baro dzãkùjemë tim twórcóm, jaczi pùbliczno ùprzëstãpnilë swòje palétë!"
 
 #: src/components/windows/Help.jsx:113
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
-msgstr "Dzãka za Miesądzową Palétã słëchô ${ starhouseLink }."
+msgstr ""
 
 #: src/components/windows/Help.jsx:116
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr "Dzãka za Palétã Top10 Płótnów słëchô ${ vinikLink }."
+msgstr ""
 
 #: src/components/windows/Help.jsx:119
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Dzãka za 2-bitową Palétã słëchô ${ donendoLink }."
+msgstr ""
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
-msgstr "Pòkôżë Séc"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:96
 msgid "Turn on grid to highlight pixel borders."
-msgstr "Włączë satkã żébë pòdswiecëc grańce pikselów."
+msgstr ""
 
 #: src/components/windows/Settings.jsx:99
 msgid "Show Pixel Activity"
-msgstr "Pòkôżë Rësznosc Pikselów"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:104
 msgid "Show circles where pixels are placed."
-msgstr "Pòkażë kòła tam gdze piksele są stôwióné."
+msgstr ""
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr "Wiedno pòkazuj czerowónié rëchã"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr "Wiedno pòkazuj knąpë czerowaniô rëchã"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
-msgstr "Wëłączë Zwãczi z Jigrë"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:121
 msgid "All sound effects will be disabled."
-msgstr "Wszëtczé zwãkòwé efektë bãdą wëłączony."
+msgstr ""
 
 #: src/components/windows/Settings.jsx:125
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
 msgstr ""
-"Twój przezérnik nie pòzwôlô nóm na ùżëcé AudioContext do òdgriwaniô zwãków. "
-"Sprawdzë, czë nie blokùją naju twòje nastôwë priwatnoscë."
 
 #: src/components/windows/Settings.jsx:131
 msgid "Enable chat notifications"
-msgstr "Włączë wiadła z czatu"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:135
 msgid "Play a sound when new chat messages arrive"
-msgstr "Zagrôj zwãk czedë przińdą nowe wiadła"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:138
 msgid "Auto Zoom In"
-msgstr "Aùtomaticzné przëblëżenié"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:143
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
 msgstr ""
-"Przëblëżë miast stawiania pikseli czedë cëskasz płótna ë twòje przëblëżenië "
-"je małé."
 
 #: src/components/windows/Settings.jsx:146
 msgid "Compact Palette"
-msgstr "Kòmpaktowô Paléta"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:151
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr ""
-"Wëskrzëni Palétã w kòmpaktowi fòrmie chtërna zajimô mni placu na ekranie."
 
 #: src/components/windows/Settings.jsx:154
 msgid "Potato Mode"
-msgstr "Trib bùlwë"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:158
 msgid "For when you are playing on a potato."
-msgstr "Czej grasz na bùlwie."
+msgstr ""
 
 #: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
 msgid "Light Grid"
-msgstr "Letkô séc"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:165
 msgid "Show Grid in white instead of black."
-msgstr "Pòkôżë Séc na biało miast na czôrno."
+msgstr ""
 
 #: src/components/windows/Settings.jsx:169
 msgid "Historical View"
-msgstr "Widok historëczny"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:174
 msgid "Check out past versions of the canvas."
-msgstr "Sprôwdzë Pòprzédnô wersijã płótna."
+msgstr ""
 
 #: src/components/windows/Settings.jsx:179
 msgid "Themes"
-msgstr "Témë"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:184
 msgid "How pixelplanet should look like."
-msgstr "Jak pixelplanet pòwinno wëzdrzëc."
+msgstr ""
 
 #: src/components/windows/Settings.jsx:191
 msgid "Select Language"
-msgstr "Wëbierzë jãzëk"
+msgstr ""
 
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
-msgstr "Profil"
+msgstr ""
 
 #: src/components/windows/UserArea.jsx:59
 msgid "Statistics"
-msgstr "Statystyczi"
+msgstr ""
 
 #: src/components/windows/UserArea.jsx:64
 msgid "Converter"
-msgstr "Kònwerter"
+msgstr ""
 
 #: src/components/windows/UserArea.jsx:70
 msgid "Modtools"
-msgstr "Nôrzãdzé dlô Szandrë"
+msgstr ""
 
 #: src/components/windows/UserArea.jsx:71
 msgid "Loading..."
-msgstr "Ładowónié..."
+msgstr ""
 
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
-msgstr "Rozwôżë nad dołączenim do najégò Guilded:"
+msgstr ""
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
-msgstr "Zaregistruj nowé kònto tuwò"
+msgstr ""
 
 #: src/components/windows/Register.jsx:92
 #: src/components/windows/Register.jsx:98
 msgid "Name"
-msgstr "Pòzwa"
+msgstr ""
 
 #: src/components/windows/ForgotPassword.jsx:80
 #: src/components/windows/Register.jsx:100
 #: src/components/windows/Register.jsx:106
 msgid "Email"
-msgstr "Email"
+msgstr ""
 
 #: src/components/ChangeMail.jsx:80 src/components/DeleteAccount.jsx:62
 #: src/components/LogInForm.jsx:84 src/components/windows/Register.jsx:108
 #: src/components/windows/Register.jsx:114
 msgid "Password"
-msgstr "Parola"
+msgstr ""
 
 #: src/components/windows/Register.jsx:116
 #: src/components/windows/Register.jsx:122
 msgid "Confirm Password"
-msgstr "Pòcwierdzë Parolã"
+msgstr ""
 
 #: src/components/windows/Register.jsx:124
 msgid "Captcha"
-msgstr "Captcha"
+msgstr ""
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
 #: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
@@ -860,53 +818,41 @@ msgstr "Captcha"
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
-msgstr "Przeslë"
+msgstr ""
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Achieved canvases can be accessed here:"
 msgstr ""
-"Wëbierzë płótno jaczégò chcesz ùżëc.\n"
-"Kòżdé płótno je òsoblëwé i mô jiné palétë, cząd òpòzdzeniégò a wëmôgania.\n"
-"Archiwùm rëmniãtëch płótnów nalézesz tuwò:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
-msgstr "Archiwùm"
+msgstr ""
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr "Stôré płótna (leno historiô)"
+msgstr ""
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who like a currently popular meme. Those canvases can "
 "become dull and inactive after a while, at which point there is no reason to "
 "keep them and we may decide to remove them."
 msgstr ""
-"Chòcô ni mómë w zwëkù rëmac płótna, niechtërné są twòrzoné dlô fifu abò na "
-"prosbã brëkòwników co jim sã widzy jaczi mem. Te płótna mògą sã przikrzëc za "
-"jaczi czas, pò tidzéniach bez wikszich zjinaków, tak tej nie są ju wôrt żebë "
-"pòdtrzëmiwac je jakno aktiwné."
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
-"Tuwò gromadzëmë rëmniãté płótna żebë je archiwòwac na nôleżny ôrt. Terô je "
-"tu leno jedno płótno."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
-msgstr "Płótno Pòliticznégò Kòmpasu"
+msgstr ""
 
 #: src/components/windows/Archive.jsx:21
 msgid ""
@@ -915,11 +861,6 @@ msgid ""
 "with a 5s cooldown and 60s stacking. It got launched on May 11th and "
 "remained active for months till it got shut down on November 30th."
 msgstr ""
-"To płótno òstało ùsôdzoné òb pòliticzné sztridë na przédnym płótnie Zemi. To "
-"bëło przëdstôwienié pòliticznégò kòmpasu w miarze 1024x1024, z "
-"piãcsekùndowim cządã òpòzdzeniégò i szescdzesątsekùndowim kòpkòwanim. Òstało "
-"włączoné 11-tégò maja òstôwało aktiwné przez miesące, jaż mùszało bëc zamkłé "
-"30-tégò smùtana."
 
 #: src/components/windows/Archive.jsx:22
 msgid ""
@@ -927,131 +868,128 @@ msgid ""
 "screenshot from the timelapse results in a perfect 1:1 representation of how "
 "the canvas was at that time."
 msgstr ""
-"Zdecydérowelë jesmë je zarchiwizowac jakno zapisënk mijóniégò czasu z "
-"bezstratno zakòdowónym webm. Zdrzucënk ekranu z zapisënkù perfektno 1:1 "
-"òddôwô jak płótno wëzdrzało w dónym sztërkù."
 
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
-msgstr "Zaczni czatowac tuwò"
+msgstr ""
 
 #: src/components/windows/Chat.jsx:217
 msgid "Chat here"
-msgstr "Czatuj tuwò"
+msgstr ""
 
 #: src/components/windows/Chat.jsx:243
 msgid "You must be logged in to chat"
-msgstr "Mùszisz bëc zalogòwóny żebë czatowac"
+msgstr ""
 
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
-msgstr "Nastôwë karnôlu"
+msgstr ""
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
-msgstr "Pòsélelë cë jesmë maila z jinstrukcjama jak zresetowac parólã."
+msgstr ""
 
 #: src/components/windows/ForgotPassword.jsx:69
 msgid "Enter your mail address and we will send you a new password:"
-msgstr "Wpiszë twòjégò maila ë më wëslëmë cë nową parolã:"
+msgstr ""
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
-msgstr "Nie szło zaladowac Captcha'ë"
+msgstr ""
 
 #: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
-msgstr "Wëpiszë merczi z tegò wej òbrôzka:"
+msgstr ""
 
 #: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
-msgstr "Bôczë: Nie rozapartniwô sã wiôlgòscë lëtrów; I a l to mdze jedno"
+msgstr ""
 
 #: src/components/Captcha.jsx:116
 msgid "Load Captcha"
-msgstr "Włôduj Captcha"
+msgstr ""
 
 #: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
-msgstr "Wcësni, żebë zaladowac Captchã"
+msgstr ""
 
 #: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
-msgstr "Nie jidze przeczëtac? Zaladuj zôs:"
+msgstr ""
 
 #: src/components/Captcha.jsx:130
 msgid "Reload"
-msgstr "Przeładuj"
+msgstr ""
 
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
-msgstr "Wprowadzë merczi"
+msgstr ""
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Pòle na e-mail ni mòże òstac pùsté."
+msgstr ""
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr "E-mail mùszi miec co nômni 5 merków."
+msgstr ""
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr "E-mail ni mòże miec wicy jak 40 merków."
+msgstr ""
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr "E-mail mùszi miec w sobie co nômni jeden póńkt"
+msgstr ""
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "E-mail mùszi miec w sobie merk @"
+msgstr ""
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr "Pòle na pòzwã ni mòże òstac pùsté."
+msgstr ""
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr "Pòzwa mùszi miec co nômni 2 merczi"
+msgstr ""
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr "Pòzwa ni mòże miec wicy jak 26 merków"
+msgstr ""
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Pòzwa mô niedozwòloné merczi, jak @, /, \\ abò #"
+msgstr ""
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr "Nie pòdano parolë."
+msgstr ""
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr "Paróla mùszi miec co nômni 6 merków."
+msgstr ""
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr "Paróla ni mòże miec wicy jak 60 merków."
+msgstr ""
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
-msgstr "Krëgni IID"
+msgstr ""
 
 #: src/components/GetIID.jsx:53
 msgid "Copy"
-msgstr "Kòpieruj"
+msgstr ""
 
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
 msgid "Save"
-msgstr "Zapiszë"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:57
 msgid "Templates"
-msgstr "Nakłôdczi"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
@@ -1060,432 +998,414 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
-"Zmãtłi spamòwanim wiedno jedną farwą? Chcesz dokazéwac bëlny kùńszt, ale "
-"mùszisz wcyg rechòwac pikselë z jinszégò òbrôzka? Pòmògą cë w tim mòdła! "
-"Mòdła mògą bëc wëskrzëniwóné jakno nakłôdk jaczi të mdzesz mógł òdéchòwiwac. "
-"Jeden piksel na mòdle mô òdpòwiadac jednémù pikselowi na płótnie."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr "Włączë nakłôdkã"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr "Wëskrzëniwôj mòdła jakno nakłôdczi òb granié."
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:73
-#, fuzzy
 msgid "Small Pixels When Zoomed"
-msgstr "Przëblëżënié môłëch piskelów"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
-"Wëskrzëniwôj nakłôdczi jakno môłé, apartné piksele na wësoczich niwlach "
-"pòwikszeniégò."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr "Widzawnosc nakłôdkù"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr "Widzawnosc nakłôdków w procentach."
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr "Prawi shift dlô aùtomaticznégò farwòwaniô"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
 msgstr ""
-"Stôwiôj piksele z nakłôdczi miast w tribie historie, brëkùjącë prawégò "
-"shifta."
 
 #: src/components/TemplateSettings.jsx:149
 msgid "Cancel adding Template"
-msgstr "Anuluj dodôwanié mòdła"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Add Template"
-msgstr "Dodaj Nakłôdkã"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr "Ekspòrtuj włączoné mòdła"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr "Impòrtuj mòdła"
+msgstr ""
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
-msgstr "Zalogùj sã bë ùdostac przistãp do wicy òpcjów i statistików."
+msgstr ""
 
 #: src/components/LogInArea.jsx:21
 msgid "Login with Name or Mail:"
-msgstr "Zalogùj sã brëkùjącë pòzwë abò e-maila:"
+msgstr ""
 
 #: src/components/LogInArea.jsx:28
 msgid "I forgot my Password."
-msgstr "Zabôcził jem parolë."
+msgstr ""
 
 #: src/components/LogInArea.jsx:29
 msgid "or login with:"
-msgstr "abò zalogùj sã przez:"
+msgstr ""
 
 #: src/components/LogInArea.jsx:70
 msgid "or register here:"
-msgstr "abò zaregistéruj sã tuwò:"
+msgstr ""
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
-msgstr "Zaregistruj sã"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
-msgstr "Piksele pòstôwioné dzysô"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
-msgstr "Codniowô ranga"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:71
 msgid "Placed Pixels"
-msgstr "Pòstawióné piksele"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
-msgstr "Òglowô ranga"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:80
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr "Twòjô pòzwa to: ${ name }"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:86
 msgid "Log out"
-msgstr "Wëlogùj sã"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:93
 msgid "Change Username"
-msgstr "Zmieni pòzwã brëkòwnika"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:103
 msgid "Change Mail"
-msgstr "Zmieni parólã"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:112
 msgid "Change Password"
-msgstr "Spòleznowé nastôwë"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:119
 msgid "Delete Account"
-msgstr "Ùsuń Kònto"
+msgstr ""
 
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
-msgstr "Spòleznowé nastôwë"
+msgstr ""
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
-msgstr "Wëbierzë płótna"
+msgstr ""
 
 #: src/components/Converter.jsx:218
 msgid "Palette Download"
-msgstr "Scyganié palétë"
+msgstr ""
 
 #: src/components/Converter.jsx:220
 #, javascript-format
 msgid "Palette for ${ gimpLink }"
-msgstr "Paléta dlô ${ gimpLink }"
+msgstr ""
 
 #: src/components/Converter.jsx:241
 msgid "Image Converter"
-msgstr "Kònwerter òbrazów"
+msgstr ""
 
 #: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
-msgstr "Przekònwertéruj òbrôzk na farwë płótna"
+msgstr ""
 
 #: src/components/Converter.jsx:261
 msgid "Choose Strategy"
-msgstr "Wëbierzë strategią"
+msgstr ""
 
 #: src/components/Converter.jsx:299
 msgid "Serpentine"
-msgstr "Serpentina"
+msgstr ""
 
 #: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
-msgstr "Minimalnô dôlëzna farwów"
+msgstr ""
 
 #: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
-msgstr "Przerechòwiwùj jak GIMP"
+msgstr ""
 
 #: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
-msgstr "Wëbierzë trib farwów"
+msgstr ""
 
 #: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
-msgstr "Dodôj mrzéżkã (òdmerkôj żelë brëkùjesz mòdła 1:1)"
+msgstr ""
 
 #: src/components/Converter.jsx:383 src/components/Converter.jsx:399
 msgid "Offset"
-msgstr "Wërównôj"
+msgstr ""
 
 #: src/components/Converter.jsx:428
 msgid "Scale Image"
-msgstr "Skaluj òbrôzk"
+msgstr ""
 
 #: src/components/Converter.jsx:439
 msgid "Width"
-msgstr "Szerzawa"
+msgstr ""
 
 #: src/components/Converter.jsx:470
 msgid "Height"
-msgstr "Wëszawa"
+msgstr ""
 
 #: src/components/Converter.jsx:509
 msgid "Keep Ratio"
-msgstr "Ùchòwôj proporcje"
+msgstr ""
 
 #: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
-msgstr "Anti-Aliasing"
+msgstr ""
 
 #: src/components/Converter.jsx:536
 msgid "Reset"
-msgstr "Resetuj"
+msgstr ""
 
 #: src/components/Converter.jsx:554
 msgid "Download Template"
-msgstr "Pòbierzë pòdkłôdë"
+msgstr ""
 
 #: src/components/Rankings.jsx:147
 msgid "Total"
-msgstr "Òglowò"
+msgstr ""
 
 #: src/components/Rankings.jsx:156
 msgid "Today"
-msgstr "Dzysô"
+msgstr ""
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
-msgstr "Wczorô"
+msgstr ""
 
 #: src/components/Rankings.jsx:174
 msgid "Countries Today"
-msgstr "Kraje dzysô"
+msgstr ""
 
 #: src/components/Rankings.jsx:183
 msgid "Charts"
-msgstr "Dijagram"
+msgstr ""
 
 #: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
 #: src/components/Rankings.jsx:219
 msgid "User"
-msgstr "Brëkòwnik"
+msgstr ""
 
 #: src/components/Rankings.jsx:226
 msgid "Country"
-msgstr "Krôj"
+msgstr ""
 
 #: src/components/Rankings.jsx:286
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
-"Ranking zmieniwô sã co 5 min. Codniowé rankindżi resetëją sã ò północë UTC."
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
-msgstr "Aktiwni Brëkòwnicë"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:34
 msgid "Cooldown"
-msgstr "Cooldown"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:40
 msgid "Stacking till"
-msgstr "Kòpicuj do"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:42
 msgid "Ranked"
-msgstr "Ranga"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:44
 msgid "Yes"
-msgstr "Jo"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:44
 msgid "No"
-msgstr "Nie"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
-msgstr "Wëmôgania"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:53
 msgid "User Account"
-msgstr "Kònto Brëkòwnika"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:55
 #, javascript-format
 msgid "and ${ canvas.req } Pixels set"
-msgstr "i zestôwk pikselów ${ canvas.req }"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:58
 msgid "Top 10 Daily Ranking"
-msgstr "Codniowi ranking Top 10"
+msgstr ""
 
 #: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
-msgstr "Wëmiôrë"
+msgstr ""
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
-msgstr "Płótna"
+msgstr ""
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
-msgstr "Wespółrzãdné"
+msgstr ""
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr "Edituj"
+msgstr ""
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr "Jidzë do"
+msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
-msgstr "Wëbierzë lópk"
+msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr "Pòzwa mòdła"
+msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
-msgstr "Ùsuń"
+msgstr ""
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
-msgstr "Pòzwa abò Email"
+msgstr ""
 
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
-msgstr "Login"
+msgstr ""
 
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
 "few days."
 msgstr ""
-"Sprawdzë swòjã adrésã e-mail. Jinaczi twòje kònto òstónié rëmniãté pò czile "
-"dniach."
 
 #: src/components/UserMessages.jsx:49
 msgid "A new verification mail is getting sent to you."
-msgstr "Sélómë do cebie nowi sprôwdzënkòwi e-mail."
+msgstr ""
 
 #: src/components/UserMessages.jsx:53
 msgid "Click here to request a new verification mail."
-msgstr "Nacësni tuwò żebë pòprosëc ò nowi sprôwdzënkòwi e-mail."
+msgstr ""
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
-msgstr "Paróle nie są zgódné."
+msgstr ""
 
 #: src/components/ChangePassword.jsx:44
-#, fuzzy
 msgid "Password successfully changed."
-msgstr "Paróla ùdało zmienionô."
+msgstr ""
 
 #: src/components/ChangePassword.jsx:88
 msgid "Old Password"
-msgstr "Starô Parola"
+msgstr ""
 
 #: src/components/ChangePassword.jsx:96
 msgid "New Password"
-msgstr "Nowô Parola"
+msgstr ""
 
 #: src/components/ChangePassword.jsx:103
 msgid "Confirm New Password"
-msgstr "Pòcwierdzë nową parólã"
+msgstr ""
 
 #: src/components/ChangeName.jsx:64
 msgid "New Username"
-msgstr "Nowô Pòzwa"
+msgstr ""
 
 #: src/components/ChangeMail.jsx:59
 msgid ""
 "Changed Mail successfully. We sent you a verification mail,             "
 "please verify your new mail address."
 msgstr ""
-"Adrésa e-mail ùdało zmienionô. Mómë cë sélóny nowi sprôwdzënkòwi e-mail. "
-"Sprawdzë swòją nową adrésã."
 
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
-msgstr "Nowi e-mail"
+msgstr ""
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
-msgstr "Jo, ùsuń mòje kònto!"
+msgstr ""
 
 #: src/components/SocialSettings.jsx:35
 msgid "Block DMs"
-msgstr "Blokùj PW"
+msgstr ""
 
 #: src/components/SocialSettings.jsx:42
 msgid "Block all Private Messages"
-msgstr "Blokùj wszëtczé Priwatné Wiadë"
+msgstr ""
 
 #: src/components/SocialSettings.jsx:44
 msgid "Private"
-msgstr "Priwatné"
+msgstr ""
 
 #: src/components/SocialSettings.jsx:51
 msgid "Don't show me in global stats"
-msgstr "Nie pòkôzuj mie na swiatowëch statistikach"
+msgstr ""
 
 #: src/components/SocialSettings.jsx:57
 msgid "Unblock Users"
-msgstr "Òdblokùj brëkòwników"
+msgstr ""
 
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"
-msgstr "Môsz niżôdnëch brëkòwników zablokòwónëch"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
-msgstr "Bùduj céchùnk na płótnié."
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:171
 msgid "Build image and set it to protected."
-msgstr "Zbùduj òbrôzk i nastawi gò na barniony."
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:174
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr ""
-"Zbùduj òbrôzk, ale zresetuj cząd òpòzdzeniégò na cząd nieùstôwionégò piksela."
 
 #: src/components/ModCanvastools.jsx:184
 msgid "Clean spare pixels that are surrounded by unset pixels"
-msgstr "Wëczëscë wòlné pikselë òbtoczoné pikselama nieùstôwionyma"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:188
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
 msgstr ""
-"WWëczëscë wòlné pikselë òbtoczoné pikselama nieùstôwionyma i nôwëżi jednym "
-"jinym ùstôwionym"
 
 #: src/components/ModCanvastools.jsx:192
 msgid ""
@@ -1493,9 +1413,6 @@ msgid ""
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
 "two cooldowns)!)"
 msgstr ""
-"Wëczëscë wòlné pikselë òbtoczoné pòjedińczną jiną farwą abò nieùstôwionyma "
-"pikselama (TRËCHELNÉ NA PŁÓTNACH DOPÙSZCZIWAJĄCËCH NIEÙSTÔWIONÉ PIKSELE "
-"(tam, gdze są dwa cządë òpòzdzeniégò)!)"
 
 #: src/components/ModCanvastools.jsx:196
 msgid ""
@@ -1505,255 +1422,248 @@ msgstr ""
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
-msgstr "Stón: Nie chòdzy"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:249
 msgid "Image Upload"
-msgstr "Wcygniãcé òbrazu"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:250
 msgid "Upload images to canvas"
-msgstr "Wcygôj òbrazë na płótna"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:252
 msgid "File"
-msgstr "Lópk"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:273
 msgid "Coordinates:"
-msgstr "Wespółrzãdné:"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
-msgstr "Òbarna pikselów"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:321
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
-"Nastôwi òbarnã dlô òbéńdów (żelë brëkùjesz barżi szczegółowi kòntrolë, ùżij "
-"òbarnë w grëpie ze wcygniãcym òbrazu i wiôrztama alfa)"
 
 #: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
 #: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
-msgstr "Lewi górny nórt"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
 #: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
-msgstr "Prawy dolny nórt"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
-msgstr "Przëwócë céchùnk dlô datë"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:411
 msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
-msgstr "Przewrócë òbéńdã płôtna do nastôwiony datë (00:00 UTC)"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:492
 msgid "Canvas Cleaner"
-msgstr "Czëszczenié płótna"
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:494
 msgid "Apply a filter to clean trash in large canvas areas."
-msgstr "Ùżij filtra bë òczëscëc kòsz we wiôldżich òbéńdach płótna."
+msgstr ""
 
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
-msgstr "Zatrzëmôj czëszczenié"
+msgstr ""
 
 #: src/components/Admintools.jsx:109
 msgid "IP Actions"
-msgstr "Dzejania na IP"
+msgstr ""
 
 #: src/components/Admintools.jsx:111
 msgid "Do stuff with IPs (one IP per line)"
-msgstr "Dzejôj na IP (jedno IP na lënią)"
+msgstr ""
 
 #: src/components/Admintools.jsx:158
 msgid "Manage Moderators"
-msgstr "Zarządzôj szandarama"
+msgstr ""
 
 #: src/components/Admintools.jsx:160
 msgid "Remove Moderator"
-msgstr "Rëmni szandarã"
+msgstr ""
 
 #: src/components/Admintools.jsx:193
 msgid "There are no mods"
-msgstr "Ni ma niżôdnégò Szandarë"
+msgstr ""
 
 #: src/components/Admintools.jsx:198
 msgid "Assign new Mod"
-msgstr "Przëpiszë nową Szandarã"
+msgstr ""
 
 #: src/components/Admintools.jsx:201
 msgid "Enter UserName of new Mod"
-msgstr "Wpiszë pòzwã nowi Szandarë"
+msgstr ""
 
 #: src/components/Admintools.jsx:210
 msgid "User Name"
-msgstr "Pòzwa brëkòwnika"
+msgstr ""
 
 #: src/components/ModWatchtools.jsx:48
 msgid "Interval is invalid"
-msgstr "Interwala je lëchô"
+msgstr ""
 
 #: src/components/ModWatchtools.jsx:124
 msgid "Check who placed in an area"
-msgstr "Sprôwdzë chto pòstawił wew dónym môlu"
+msgstr ""
 
 #: src/components/ModWatchtools.jsx:144
 msgid "Interval"
-msgstr "Interwala"
+msgstr ""
 
 #: src/components/ModWatchtools.jsx:159
 msgid "IID (optional)"
-msgstr "IID (òptacëjno)"
+msgstr ""
 
 #: src/components/ModWatchtools.jsx:249
 msgid "Get Pixels"
-msgstr "Krëgni piksele"
+msgstr ""
 
 #: src/components/ModWatchtools.jsx:281
 msgid "Get Users"
-msgstr "Krëgni brëkòwników"
+msgstr "Bikarhêneran bistînin"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
-msgstr "Mùszisz wprowadzëc czas derowaniô"
+msgstr "Divê tu demek binivîsin"
 
 #: src/components/ModIIDtools.jsx:24
 msgid "You must enter an IID"
-msgstr "Mùszisz wprowadzëc IID"
+msgstr "divê hûn IID bikevin"
 
 #: src/components/ModIIDtools.jsx:53
 msgid "IID Actions"
-msgstr "Dzejônia IID"
+msgstr "IID Çalakiyên"
 
 #: src/components/ModIIDtools.jsx:80
 msgid "Enter Reason"
-msgstr "Wpiszë Pòwód"
+msgstr "Sedemek Têkevin"
 
 #: src/components/ModIIDtools.jsx:97
 msgid "(0 = infinite)"
-msgstr "(0 = nieskùńczoné)"
+msgstr "(0 = herdem)"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
-msgstr "Top 10 Krôjów [pxls / day]"
+msgstr "Top 10 welatên [pxls / roj]"
 
 #: src/core/chartSettings.js:127
 msgid "Players and Pixels per hour"
-msgstr "Grôcz ë Piksele na gòdzynã"
+msgstr "Oyunciyan û Pixels serê saetekê"
 
 #: src/core/chartSettings.js:221
 msgid "Top 10 Players [pxls / day]"
-msgstr "Top 10 grôczów [pxls / day]"
+msgstr ""
 
 #: src/core/chartSettings.js:294
 msgid "Countries by Pixels Today"
-msgstr "Kraje pòdług Pikselów Dzysô"
+msgstr ""
 
 #: src/core/chartSettings.js:351
 msgid "Total Pixels placed per day"
-msgstr "Cawnô lëczba pikselów pòstôwionëch na dzéń"
+msgstr ""
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
-msgstr "Pingùj"
+msgstr ""
 
 #: src/components/contextmenus/UserContextMenu.jsx:75
 msgid "DM"
-msgstr "PW"
+msgstr ""
 
 #: src/components/contextmenus/UserContextMenu.jsx:86
 msgid "Block"
-msgstr "Blokùj"
+msgstr ""
 
 #: src/components/contextmenus/ChannelContextMenu.jsx:46
 msgid "Mute"
-msgstr "Wëcëszë"
+msgstr ""
 
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "G"
-msgstr "G"
+msgstr ""
 
 #: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
 msgctxt "keybinds"
 msgid "X"
-msgstr "X"
+msgstr ""
 
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
 msgctxt "keybinds"
 msgid "H"
-msgstr "H"
+msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
 msgid "R"
-msgstr "R"
+msgstr ""
 
 #: src/components/windows/Help.jsx:23
 msgctxt "keybinds"
 msgid "Q"
-msgstr "Q"
+msgstr ""
 
 #: src/components/windows/Help.jsx:24
 msgctxt "keybinds"
 msgid "E"
-msgstr "E"
+msgstr ""
 
 #: src/components/windows/Help.jsx:25
 msgctxt "keybinds"
 msgid "W"
-msgstr "W"
+msgstr ""
 
 #: src/components/windows/Help.jsx:26
 msgctxt "keybinds"
 msgid "A"
-msgstr "A"
+msgstr ""
 
 #: src/components/windows/Help.jsx:27
 msgctxt "keybinds"
 msgid "S"
-msgstr "S"
+msgstr ""
 
 #: src/components/windows/Help.jsx:28
 msgctxt "keybinds"
 msgid "D"
-msgstr "D"
+msgstr ""
 
 #: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
-msgstr "Shift"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:108
 msgctxt "keybinds"
 msgid "N"
-msgstr "N"
+msgstr ""
 
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
 msgid "M"
-msgstr "M"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:66
 msgctxt "keybinds"
 msgid "T"
-msgstr "T"
-
-#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
-#~ msgstr ""
-#~ "Òd pixelplanet ni ma òdpòwiescë. Mòżesz spróbòwac òdswiéżec jakbë tôkel "
-#~ "dali béł?"
+msgstr ""
 
 #~ msgid "Place more :)"
-#~ msgstr "Pòstawi wicy :)"
+#~ msgstr "Bêtir cîh :)"
 
 #~ msgid "No Proxies Allowed :("
-#~ msgstr "Proxy nie są dozwòloné :("
+#~ msgstr "Bikaranîna proxy nayê destûr kirin :("
