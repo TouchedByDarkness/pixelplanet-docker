@@ -1,9 +1,14 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-03-11 18:57+0000\n"
+"Last-Translator: Şêr kuh <buzaarq@gmail.com>\n"
+"Language-Team: Kurdish (Northern) <https://hosted.weblate.org/projects/"
+"pixelplanet/server/kmr/>\n"
 "Language: kmr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -236,11 +241,11 @@ msgstr ""
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr ""
+msgstr "Te pir dirêj kir, careke din biceribîne."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
-msgstr ""
+msgstr "Te captcha xwe bi ser neket"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"

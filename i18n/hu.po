@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 19:37+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"PO-Revision-Date: 2024-03-11 18:56+0000\n"
+"Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hu/>\n"
 "Language: hu\n"
@@ -44,9 +44,8 @@ msgstr "Hang"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-#, fuzzy
 msgid "Copied"
-msgstr "Másolva!"
+msgstr "Másolva"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
@@ -129,9 +128,8 @@ msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr "Ehhez a vászonhoz még nem férsz hozzá. Több pixelt kell elhelyezned"
 
 #: src/ui/PixelTransferController.js:133
-#, fuzzy
 msgid "Pixel protected"
-msgstr "Védett pixel!"
+msgstr "Védett pixel"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"

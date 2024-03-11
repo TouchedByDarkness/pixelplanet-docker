@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 16:27+0000\n"
+"PO-Revision-Date: 2024-03-11 20:59+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/et/>\n"
@@ -11,7 +11,6 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-#, fuzzy
 msgid "You can not send chat messages while using a proxy"
 msgstr "Sa ei saa puhverserveriga sõnumeid saata"
 
@@ -20,7 +19,6 @@ msgid "Your country is temporary muted from this chat channel"
 msgstr "Su riik ei ole hetkel siia jututuppa lubatud"
 
 #: src/core/ChatProvider.js:439
-#, fuzzy
 msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
 "Sa oled vaigistatud igaveseks, ühine meie Guided'iga, et otsus vaidlustada"
@@ -65,7 +63,6 @@ msgid "Please use int channel"
 msgstr "Palun kasuta int jututuba"
 
 #: src/core/ChatProvider.js:512
-#, fuzzy
 msgid "Stop flooding."
 msgstr "Ära tee niimoodi."
 
@@ -301,14 +298,12 @@ msgid "Incorrect password!"
 msgstr "Vale salasõna!"
 
 #: src/routes/api/auth/delete_account.js:46
-#, fuzzy
 msgid "Muted Users can not delete their account."
-msgstr "Vaigistatud kasutajad ei saa oma kontot kustutada."
+msgstr "Vaigistatud Kasutajad ei saa oma kontot kustutada."
 
 #: src/routes/api/auth/change_mail.js:62
-#, fuzzy
 msgid "Muted Users can not do this."
-msgstr "Vaigistatud kasutajad ei saa seda teha."
+msgstr "Vaigistatud Kasutajad ei saa seda teha."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"

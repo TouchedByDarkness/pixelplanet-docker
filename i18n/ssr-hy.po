@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 16:27+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-03-11 18:56+0000\n"
+"Last-Translator: Alen <alen.mankyan7@gmail.com>\n"
 "Language-Team: Armenian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/hy/>\n"
 "Language: hy\n"
@@ -14,9 +14,8 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-#, fuzzy
 msgid "You can not send chat messages while using a proxy"
-msgstr "Դուք չեք կարող պռուկսիի միջոցով զրուցում հաղորդագրություն ուղարկել"
+msgstr "Դուք չեք կարող proxy օգտագործելու ժամանակ հաղորդագրություն ուղարկել"
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
@@ -302,14 +301,12 @@ msgid "Incorrect password!"
 msgstr "Սխալ գաղտնաբառ!"
 
 #: src/routes/api/auth/delete_account.js:46
-#, fuzzy
 msgid "Muted Users can not delete their account."
-msgstr "Լռված օգտվողները չեն կարող ջնջել իրենց հաշիվը:"
+msgstr "Լռեցված օգտատերերը չեն կարող ջնջել իրենց հաշիվը:"
 
 #: src/routes/api/auth/change_mail.js:62
-#, fuzzy
 msgid "Muted Users can not do this."
-msgstr "Լռված օգտվողները չեն կարող դա անել:"
+msgstr "Լռեցված օգտատերերը չեն կարող դա անել:"
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -365,11 +362,10 @@ msgid "Minimap"
 msgstr "Փոքր քարտեզ"
 
 #: src/canvasesDesc.js:32
-#, fuzzy
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
 "Մեր գլխավոր կտավը ՝ աշխարհի հսկայական քարտեզն է: Տեղադրեք ամենուր, որտեղ ձեզ "
-"դուր է գալիս"
+"դուր է գալիս:"
 
 #: src/canvasesDesc.js:33
 msgid ""
@@ -380,18 +376,16 @@ msgstr ""
 "դա արվեստի մաս չէ) կամ 1,5k x 1,5k պիքսելից մեծ արվեստ:"
 
 #: src/canvasesDesc.js:34
-#, fuzzy
 msgid "Place Voxels on a 3D canvas with others."
-msgstr "Տեղադրեք ոկսելներն 3D կտավի վրա ուրիշների հետ"
+msgstr "Տեղադրեք ոքսելներ 3D կտավի վրա ուրիշների հետ:"
 
 #: src/canvasesDesc.js:35
-#, fuzzy
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
-msgstr "Հատուկ կտավ `SARS-CoV2- ի իրազեկությունը տարածելու համար"
+msgstr "Հատուկ կտավ `SARS-CoV2- ի իրազեկությունը տարածելու համար:"
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
-msgstr "ՊիքսելԳոտիի հայելին"
+msgstr "ՊիքսելԳոտի-ի հայելին"
 
 #: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
@@ -410,12 +404,10 @@ msgstr ""
 "թարմացումները 00:00 UTC-ին:"
 
 #: src/canvasesDesc.js:40
-#, fuzzy
 msgid "Only four colors. Same rules as moon!"
-msgstr "Ընդամենը չորս գույն: Նույն կանոնները, ինչպես լուսինում:"
+msgstr "Ընդամենը չորս գույն: Նույն կանոնները, ինչպես լուսնում:"
 
 #: src/canvasesDesc.js:41
-#, fuzzy
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
@@ -426,7 +418,7 @@ msgstr ""
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr "Բարի գալուստ ${name} PixelPlanet, խնդրում ենք ստուգել ձեր փոստը"
+msgstr "Բարի գալուստ ${name} PixelPlanet, խնդրում ենք ստուգել ձեր էլ. փոստը"
 
 # Թառքմանել է Նարեկ Ադամյանը ։)
 #: src/core/MailProvider.js:67
@@ -439,12 +431,13 @@ msgid ""
 "welcome to our little community of pixelplacers, to use your account, you "
 "have to verify your mail. You can do that here: "
 msgstr ""
-"բարի գալուստ մեր pixelplacers-ի փոքրիկ համայնք, ձեր հաշիվն օգտագործելու "
-"համար դուք պետք է հաստատեք ձեր փոստը: Դուք կարող եք դա անել այստեղ՝ "
+"Բարի գալուստ մեր պիքսել տեափղադրողների փոքրիկ համայնք, ձեր հաշիվն "
+"օգտագործելու համար դուք պետք է հաստատեք ձեր փոստը: Դուք կարող եք դա անել "
+"այստեղ՝ "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
-msgstr "Սեղմեք ՝ Ստուգելու համար"
+msgstr "Սեղմեք, հաստատվելու համար"
 
 #: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
@@ -453,8 +446,7 @@ msgstr "Կամ պատճենելով հետևյալ url- ը ՝"
 #: src/core/MailProvider.js:69
 msgid ""
 "Have fun and don't hesitate to contact us if you encounter any problems :)"
-msgstr ""
-"Զվարճացեք և մի ամոթ արեք կապնվել մեզ հետ, եթե խրախուսում եք որևէ խնդիր :)"
+msgstr "Զվարճացեք և մի ամաչեք կապնվել մեզ հետ, եթե տեսնում եք որևէ խնդիր :)"
 
 #: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"
@@ -467,7 +459,7 @@ msgid ""
 "${ minLeft } minutes."
 msgstr ""
 "Մենք ձեզ արդեն ուղարկել ենք ստուգման նամակ, ${minLeft} րոպեից կարող եք "
-"պահանջել մեկ այլ:"
+"պահանջել մեկ այլ նամակ:"
 
 #: src/core/MailProvider.js:103
 msgid "You forgot your password for PixelPlanet? Get a new one here"
@@ -482,7 +474,7 @@ msgid ""
 "You requested to get a new password. You can change your password within the "
 "next 30min here: "
 msgstr ""
-"Դուք պահանջել եք ստանալ նոր գաղտնաբառը: Հաջորդ 30 րոպեի ընթացքում կարող եք "
+"Դուք հայցել եք ստանալ նոր գաղտնաբառը: Հաջորդ 30 րոպեի ընթացքում կարող եք "
 "փոխել ձեր գաղտնաբառը այստեղ` "
 
 #: src/core/MailProvider.js:106
@@ -504,7 +496,7 @@ msgid ""
 "another mail."
 msgstr ""
 "Մենք ձեզ արդեն նամակ ենք ուղարկել ՝ հրահանգներով: Խնդրում ենք սպասել, նախքան "
-"մեկ այլ նամակ խնդրեք:"
+"մեկ այլ նամակ հայցելը:"
 
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"

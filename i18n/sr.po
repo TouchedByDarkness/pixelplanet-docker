@@ -938,7 +938,8 @@ msgstr "Podešavanja kanala"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
-msgstr "Poslali ti smo e-mail sa instrukcijama kako bi resetovao svoju lozinku."
+msgstr ""
+"Poslali ti smo e-mail sa instrukcijama kako bi resetovao svoju lozinku."
 
 #: src/components/windows/ForgotPassword.jsx:69
 msgid "Enter your mail address and we will send you a new password:"

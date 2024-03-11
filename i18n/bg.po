@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 20:10+0000\n"
+"PO-Revision-Date: 2024-03-11 20:59+0000\n"
 "Last-Translator: \"Д. Савовъ\" <bofondido@gmail.com>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/bg/>\n"
@@ -44,9 +44,8 @@ msgstr "Включен звук"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-#, fuzzy
 msgid "Copied"
-msgstr "Копирано!"
+msgstr "Копирано"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
@@ -69,13 +68,12 @@ msgid "Timeout"
 msgstr "Таймаут"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
 "Няма получен отговор от pixelplanet. Може би пробвайте да refresh-нете, ако "
-"проблемът продължава?"
+"проблемът продължава."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
@@ -124,14 +122,14 @@ msgid "Not allowed"
 msgstr "Не е разрешено"
 
 #: src/ui/PixelTransferController.js:130
-#, fuzzy
 msgid "You can not access this canvas yet, because your pixel score is too low"
-msgstr "Нямате право до това платно все още. Трябва да сложете повече пиксели"
+msgstr ""
+"Нямате достъп до това платно все още, защото вашите пиксели са прекалено "
+"малко"
 
 #: src/ui/PixelTransferController.js:133
-#, fuzzy
 msgid "Pixel protected"
-msgstr "Пиксел защитено!"
+msgstr "Пиксел защитено"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
@@ -165,7 +163,6 @@ msgid "Range Banned"
 msgstr "Верижно баннат"
 
 #: src/ui/PixelTransferController.js:162
-#, fuzzy
 msgid "Your Internet Provider is banned from this game"
 msgstr "Вашият интернет доставчик е забранен да играе тази игра"
 
@@ -370,9 +367,8 @@ msgid "Enable Pencil"
 msgstr "Включи молив"
 
 #: src/components/buttons/PencilButton.jsx:69
-#, fuzzy
 msgid "Disable Pencil"
-msgstr "Деактивирайте звуците на играта"
+msgstr "Деактивиране на молива"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
@@ -380,7 +376,7 @@ msgstr "Изключи историческият молив"
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "Изключване на Овърлей молива"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -641,7 +637,7 @@ msgstr ""
 "задръжте, за да изберете текущ надвиснал цвят"
 
 #: src/components/windows/Help.jsx:100
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Натиснете ${ bindQ } и ${ bindE }, за да летите нагоре и надолу"
 
@@ -673,7 +669,6 @@ msgstr ""
 "премахне пиксел"
 
 #: src/components/windows/Help.jsx:110
-#, fuzzy
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
@@ -692,9 +687,9 @@ msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Заслугата за палитрата на платното Топ10 е на ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:119
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Заслугата за палитрата на платното Топ10 е на ${ donendoLink }."
+msgstr "Заслугата за палитрата на платното 2bit е на ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
@@ -714,11 +709,11 @@ msgstr "Покажи кръгчета, където се поставят пик
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Винаги покзвай контроли за Движение"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Винаги показвай бутони за контрол на Движение"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
@@ -866,16 +861,16 @@ msgid "Submit"
 msgstr "Изпращане"
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Archived canvases can be accessed here:"
 msgstr ""
-"Изберете платното, което искате да използвате. Всяко платно е единствено по "
-"рода си и има различни палитри, cooldown-ове и изисквания. Архивът на "
-"затворените платна, може да бъде достъпен тук:"
+"Изберете платното, което искате да използвате.\n"
+"Всяко платно е единствено по рода си и има различни палитри, cooldown-ове и "
+"изисквания.\n"
+"Архивът на затворените платна, може да бъде достъпен тук:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -883,30 +878,28 @@ msgstr "Архив"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Пенсионирани платна (исторически изглед само)"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who like a currently popular meme. Those canvases can "
 "become dull and inactive after a while, at which point there is no reason to "
 "keep them and we may decide to remove them."
 msgstr ""
-"Въпреки че сме склонни да не изтриваме платна, някои платна се стартират за "
+"Въпреки, че сме склонни да не изтриваме платна, някои платна се стартират за "
 "забавление или като заявка от потребители, които в момента харесват "
 "определено меме. Тези платна могат да станат скучни след известно време и "
 "след седмици без значителна промяна и ако наистина не си струва да бъдат "
 "поддържани, ние решаваме да ги премахнем."
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
-"Тук събираме тези платна, за да ги архивираме по подходящ начин (който в "
-"момента е само един)."
+"Тук събираме премахнати платна, за да ги архивираме по подходящ начин (който "
+"в момента е само един)."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -992,7 +985,7 @@ msgstr "Въведете знаци"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Имейлът не може да е празен."
+msgstr "Имейлът не може да бъде празен."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
@@ -1024,7 +1017,7 @@ msgstr "Името трябва да е по-кратко от 26 знака"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Името съдържа невалидни знаци, като @, /, \\\\ или #"
+msgstr "Името съдържа невалидни знаци, като @, /, \\ или #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
@@ -1053,9 +1046,8 @@ msgid "Save"
 msgstr "Запази"
 
 #: src/components/TemplateSettings.jsx:57
-#, fuzzy
 msgid "Templates"
-msgstr "Изтегли шаблон"
+msgstr "Шаблони"
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
@@ -1064,56 +1056,61 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"Изморени от спамене на един и същи цвят? Искате да правите рисунки вместо "
+"това, но трябва да броите пиксели от някое друго изображение? Шаблоните "
+"могат да Ви помогнат с това! Шаблоните може да се показват като овърлей и да "
+"се рисува върху тях. Един пиксел на темплейт, трябва да бъде един пиксел на "
+"платното."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Включване на овърлей"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Покажи шаблоните като овърлейове в в играта."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels When Zoomed"
-msgstr ""
+msgstr "Показване на малки пиксели, когато оголемено"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
+"Показване на овърлей като индивидуални пиксели при високи нива на "
+"оголемяване."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Овърлей прозрачност"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Прозрачност на овърлей в проценти."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "Десен shift автоматично оцветяване"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
+msgstr "Слагане на пиксели от овърлей с десен shift, вместо от историята."
 
 #: src/components/TemplateSettings.jsx:149
-#, fuzzy
 msgid "Cancel adding Template"
-msgstr "Изтегли шаблон"
+msgstr "Отказване на добавяне на шаблон"
 
 #: src/components/TemplateSettings.jsx:156
-#, fuzzy
 msgid "Add Template"
-msgstr "Изтегли шаблон"
+msgstr "Добавяне на шаблон"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Експортиране на включени темплейтове"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr ""
+msgstr "Вмъкване на темплейтове"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1137,7 +1134,7 @@ msgstr "или се регистрирайте тук:"
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
-msgstr "Регистрация"
+msgstr "Регистриране"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
@@ -1251,7 +1248,7 @@ msgstr "Запази съотношението"
 
 #: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
-msgstr "Anti Aliasing"
+msgstr "Anti-Aliasing"
 
 #: src/components/Converter.jsx:536
 msgid "Reset"
@@ -1302,7 +1299,7 @@ msgstr "Онлайн потребители"
 
 #: src/components/CanvasItem.jsx:34
 msgid "Cooldown"
-msgstr "Cooldown"
+msgstr "Cool-down"
 
 #: src/components/CanvasItem.jsx:40
 msgid "Stacking till"
@@ -1348,31 +1345,28 @@ msgid "Canvas"
 msgstr "Платно"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
 msgid "Coordinates"
-msgstr "Невалидни координати"
+msgstr "Координати"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Редактиране"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Отиване в"
 
 #: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
 msgid "Select File"
-msgstr "Избиране на език"
+msgstr "Избиране на файл"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Име на темплейт"
 
 #: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
 msgid "Delete"
-msgstr "Изтриване на акаунт"
+msgstr "Изтриване"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1403,7 +1397,6 @@ msgid "Passwords do not match."
 msgstr "Паролите Ви не съвпадат."
 
 #: src/components/ChangePassword.jsx:44
-#, fuzzy
 msgid "Password successfully changed."
 msgstr "Паролата е сменена успешно."
 
@@ -1502,6 +1495,8 @@ msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"Променяне на всеки пиксел в зоната на 0 (НАИСТИНА НЕ ТРЯБВА ДА ПРАВИТЕ ТОВА "
+"НА НИКОЯ ЗОНА, КОЯТО ВЕЧЕ НЕ Е ПОЧТИ НА 0)"
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
@@ -1520,16 +1515,14 @@ msgid "File"
 msgstr "Файл"
 
 #: src/components/ModCanvastools.jsx:273
-#, fuzzy
 msgid "Coordinates:"
-msgstr "Невалидни координати"
+msgstr "Координати:"
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
 msgstr "Пиксел защита"
 
 #: src/components/ModCanvastools.jsx:321
-#, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
@@ -1682,73 +1675,72 @@ msgstr "Заглуши"
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "G"
-msgstr ""
+msgstr "G"
 
 #: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
 msgctxt "keybinds"
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
 msgctxt "keybinds"
 msgid "H"
-msgstr ""
+msgstr "H"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
 msgid "R"
-msgstr ""
+msgstr "R"
 
 #: src/components/windows/Help.jsx:23
 msgctxt "keybinds"
 msgid "Q"
-msgstr ""
+msgstr "Q"
 
 #: src/components/windows/Help.jsx:24
 msgctxt "keybinds"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 #: src/components/windows/Help.jsx:25
 msgctxt "keybinds"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #: src/components/windows/Help.jsx:26
 msgctxt "keybinds"
 msgid "A"
-msgstr ""
+msgstr "A"
 
 #: src/components/windows/Help.jsx:27
 msgctxt "keybinds"
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #: src/components/windows/Help.jsx:28
 msgctxt "keybinds"
 msgid "D"
-msgstr ""
+msgstr "D"
 
 #: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 #: src/components/windows/Settings.jsx:108
-#, fuzzy
 msgctxt "keybinds"
 msgid "N"
-msgstr "Не"
+msgstr "N"
 
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: src/components/TemplateSettings.jsx:66
 msgctxt "keybinds"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 #~ msgstr "Няма отговор от pixelplanet. Може би refresh-нете?"

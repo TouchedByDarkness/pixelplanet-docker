@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 16:27+0000\n"
+"PO-Revision-Date: 2024-03-11 20:59+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/et/>\n"
@@ -11,9 +11,9 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Switched to ${ canvasName }"
-msgstr "Vahetatud ${ canvasName }le"
+msgstr "Vahetatud lõuendile ${ canvasName }"
 
 #: src/controls/keypress.js:184
 msgid "Grid ON"
@@ -65,7 +65,6 @@ msgid "Timeout"
 msgstr "Sessioon Aegus"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
@@ -120,9 +119,10 @@ msgid "Not allowed"
 msgstr "Ei ole lubatud"
 
 #: src/ui/PixelTransferController.js:130
-#, fuzzy
 msgid "You can not access this canvas yet, because your pixel score is too low"
-msgstr "Sul puudub ligipääs sellele lõuendile. Sa pead rohkem piksleid panema"
+msgstr ""
+"Sul puudub ligipääs sellele lõuendile, sest sa oled liiga vähe piksleid "
+"joonistanud"
 
 #: src/ui/PixelTransferController.js:133
 msgid "Pixel protected"
@@ -133,7 +133,6 @@ msgid "Please prove that you are human"
 msgstr "Palus tõesta, et sa ei ole robot"
 
 #: src/ui/PixelTransferController.js:145
-#, fuzzy
 msgid "You are using a Proxy."
 msgstr "Sa kasutad Puhverserverit."
 
@@ -159,16 +158,14 @@ msgid "Range Banned"
 msgstr "Sinu piirkonnal on Ligipääs Piiratud"
 
 #: src/ui/PixelTransferController.js:162
-#, fuzzy
 msgid "Your Internet Provider is banned from this game"
-msgstr "Sinu Internetipakkujal on mängule Ligipääs Piiratud"
+msgstr "Sinu Internetipakkujal on mängule ligipääs piiratud"
 
 #: src/ui/PixelTransferController.js:170
 msgid "Weird"
 msgstr "Imelik"
 
 #: src/ui/PixelTransferController.js:171
-#, fuzzy
 msgid "Couldn't set Pixel"
 msgstr "Pikslit ei joonistatud"
 
@@ -363,7 +360,7 @@ msgstr "Ajaloo Pliiats SEES"
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr ""
+msgstr "Ülekatte Pliiats SEES"
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
@@ -379,7 +376,7 @@ msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "Lülita Ülekatte Pliiats välja"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -1014,6 +1011,10 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"Oled väsinud alati üheainsa värvi spämmimisest? Tahad hoopis luua kunsti, "
+"kuid pead käsitsi pildilt piksleid kopeerima? Šabloonid võivad sind sellega "
+"aidata! Šabloone saab näidata ülekattes ja sa saad nende abil lihtsamini "
+"joonistada. Üks piksel šabloonil, peaks olema üks piksel lõuendil."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
@@ -1021,7 +1022,7 @@ msgstr "Lülita Ülekate sisse"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Näita šabloone mängus ülekattena."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels When Zoomed"
@@ -1029,7 +1030,7 @@ msgstr ""
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
-msgstr ""
+msgstr "Näita ülekatet väikeste pikslitena kõrgel suumitasemel."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
@@ -1037,7 +1038,7 @@ msgstr "Ülekatte Läbipaistvus"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Ülekatte läbipaistvus protsendina."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
@@ -1045,7 +1046,7 @@ msgstr ""
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
+msgstr "Joonista piksleid ajaloo asemel ülekattelt parempoolse Shift'iga."
 
 #: src/components/TemplateSettings.jsx:149
 msgid "Cancel adding Template"

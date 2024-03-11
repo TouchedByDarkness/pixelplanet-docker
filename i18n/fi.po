@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 16:05+0000\n"
+"PO-Revision-Date: 2024-03-11 18:56+0000\n"
 "Last-Translator: Onni <onni.ma.jaakkola@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/fi/>\n"
@@ -1307,92 +1307,94 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:42
 msgid "Ranked"
-msgstr ""
+msgstr "Rankattu"
 
 #: src/components/CanvasItem.jsx:44
 msgid "Yes"
-msgstr ""
+msgstr "Kyllä"
 
 #: src/components/CanvasItem.jsx:44
 msgid "No"
-msgstr ""
+msgstr "Ei"
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
-msgstr ""
+msgstr "Vaatimukset"
 
 #: src/components/CanvasItem.jsx:53
 msgid "User Account"
-msgstr ""
+msgstr "Käyttäjä"
 
 #: src/components/CanvasItem.jsx:55
 #, javascript-format
 msgid "and ${ canvas.req } Pixels set"
-msgstr ""
+msgstr "ja ${ canvas.req } pikseliä asetettu"
 
 #: src/components/CanvasItem.jsx:58
 msgid "Top 10 Daily Ranking"
-msgstr ""
+msgstr "Top 10 Päivittäinen listaus"
 
 #: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
-msgstr ""
+msgstr "Ulottovuudet"
 
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
-msgstr ""
+msgstr "Kehys"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
-msgstr ""
+msgstr "Koordinaatit"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Muokkaa"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Mene"
 
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
-msgstr ""
+msgstr "Valitse Tiedosto"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "sapluunan nimi"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
-msgstr ""
+msgstr "Poista"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
-msgstr ""
+msgstr "Nimi tai Sähköposti"
 
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
-msgstr ""
+msgstr "Kirjaudu sisään"
 
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
 "few days."
 msgstr ""
+"Vahvista sähköpostiosoitteesi tai tilisi voidaan poistaa muutaman päivän "
+"kuluttua."
 
 #: src/components/UserMessages.jsx:49
 msgid "A new verification mail is getting sent to you."
-msgstr ""
+msgstr "Sinulle lähetetään uusi vahvistusviesti."
 
 #: src/components/UserMessages.jsx:53
 msgid "Click here to request a new verification mail."
-msgstr ""
+msgstr "Napsauta tätä pyytääksesi uutta vahvistussähköpostia."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
-msgstr ""
+msgstr "Salasanat eivät täsmää."
 
 #: src/components/ChangePassword.jsx:44
 msgid "Password successfully changed."

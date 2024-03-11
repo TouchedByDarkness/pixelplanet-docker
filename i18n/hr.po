@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 15:19+0000\n"
-"Last-Translator: Antonio <tony50zg@gmail.com>\n"
+"PO-Revision-Date: 2024-03-11 18:56+0000\n"
+"Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hr/>\n"
 "Language: hr\n"
@@ -45,9 +45,8 @@ msgstr "Upaljen zvuk"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-#, fuzzy
 msgid "Copied"
-msgstr "Kopirano!"
+msgstr "Kopirano"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
@@ -130,9 +129,8 @@ msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr "Još ne možete pristupiti ovom platnu. Morate postaviti više piksela"
 
 #: src/ui/PixelTransferController.js:133
-#, fuzzy
 msgid "Pixel protected"
-msgstr "Pixel zaštićen!"
+msgstr "Pixel zaštićen"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 17:01+0000\n"
+"PO-Revision-Date: 2024-03-11 20:59+0000\n"
 "Last-Translator: asd <petr.pesek.99@seznam.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/pixelplanet/server/"
 "cs/>\n"
@@ -247,7 +247,7 @@ msgstr "Jméno je už používáno."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr "Trvalo vám to až moc dlouho, zkuste znovu."
+msgstr "Trvalo vám to příliš dlouho, zkuste znovu."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"

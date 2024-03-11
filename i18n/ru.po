@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-11 18:56+0000\n"
+"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/pixelplanet/"
+"client/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.4.2\n"
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
@@ -44,9 +45,8 @@ msgstr "Звук включен"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-#, fuzzy
 msgid "Copied"
-msgstr "Скопировано!"
+msgstr "Скопировано"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
@@ -131,9 +131,8 @@ msgstr ""
 "больше пикселей"
 
 #: src/ui/PixelTransferController.js:133
-#, fuzzy
 msgid "Pixel protected"
-msgstr "Пиксель защищён!"
+msgstr "Пиксель защищён"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"

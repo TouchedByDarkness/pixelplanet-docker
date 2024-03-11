@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 09:27+0000\n"
-"Last-Translator: Giorgi <giorezo@icloud.com>\n"
+"PO-Revision-Date: 2024-03-11 20:59+0000\n"
+"Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/ka/>\n"
 "Language: ka\n"
@@ -44,9 +44,8 @@ msgstr "ხმა ჩართულია"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-#, fuzzy
 msgid "Copied"
-msgstr "დაკოპირდა!"
+msgstr "დაკოპირდა"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
@@ -127,9 +126,8 @@ msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr "ჯერ ამ კანვასზე არ შეგიძლია შესვლა. უნდა დასვა მეტი პიქსელი"
 
 #: src/ui/PixelTransferController.js:133
-#, fuzzy
 msgid "Pixel protected"
-msgstr "პიქსელი დაპროტექტებულია!"
+msgstr "პიქსელი დაპროტექტებულია"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"

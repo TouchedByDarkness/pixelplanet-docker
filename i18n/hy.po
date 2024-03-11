@@ -72,7 +72,8 @@ msgstr "Ընդմիջում"
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
-msgstr "Pixelplanet-ը չի արձագանքում։ Փորձեք թարմացնել էջը, եթե խնդիրը չվերանա:"
+msgstr ""
+"Pixelplanet-ը չի արձագանքում։ Փորձեք թարմացնել էջը, եթե խնդիրը չվերանա:"
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"

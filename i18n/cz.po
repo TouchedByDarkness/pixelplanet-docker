@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 17:01+0000\n"
+"PO-Revision-Date: 2024-03-11 20:59+0000\n"
 "Last-Translator: asd <petr.pesek.99@seznam.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/pixelplanet/client/"
 "cs/>\n"
@@ -28,11 +28,11 @@ msgstr "Mřížka Vypnuta"
 
 #: src/controls/keypress.js:195
 msgid "Pixel Notify ON"
-msgstr "Oznámení na Pixely Zapnuto"
+msgstr "Zapnuto oznámení na pixely"
 
 #: src/controls/keypress.js:196
 msgid "Pixel Notify OFF"
-msgstr "Oznámení na Pixely Vypnuty"
+msgstr "Vypnuty oznámení na pixely"
 
 #: src/controls/keypress.js:201
 msgid "Muted Sound"
@@ -40,7 +40,7 @@ msgstr "Zvuk Ztlumený"
 
 #: src/controls/keypress.js:202
 msgid "Unmuted Sound"
-msgstr "Zvuk Zaplý"
+msgstr "Zvuk Zapnutý"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
@@ -65,15 +65,15 @@ msgstr "Easter Egg Vypnutý"
 
 #: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
-msgstr "Čas vypršel"
+msgstr "Spojení se serverem zaniklo"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
-"Nezískali jsme odpověď od pixelplanet. Zkuste obnovit stránku jestli se "
-"problém bude opakovat."
+"Nezískali jsme odpověď od pixelplanet. Zkuste obnovit stránku jestli bude "
+"problém přetrvávat."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
@@ -90,31 +90,31 @@ msgstr "Neplatné Souřadnice"
 
 #: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
-msgstr "x mimo meze"
+msgstr "x je mimo meze"
 
 #: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
-msgstr "y mimo meze"
+msgstr "y je mimo meze"
 
 #: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
-msgstr "z mimo meze"
+msgstr "z je mimo meze"
 
 #: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
-msgstr "Špatná Barva"
+msgstr "Neplatná Barva"
 
 #: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
-msgstr "Neplatná barva vybrána"
+msgstr "Byla vybrána neplatná barva"
 
 #: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
-msgstr "Pouze pro registrovaný uživatele"
+msgstr "Pouze pro registrované uživatele"
 
 #: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
-msgstr "Musíte být přihlášení abyste mohli pokládat na tomhle plátnu"
+msgstr "Musíte být přihlášeni, abyste mohli pokládat na tomto plátnu"
 
 #: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
 #: src/ui/PixelTransferController.js:148
@@ -123,7 +123,7 @@ msgstr "Nepovoleno"
 
 #: src/ui/PixelTransferController.js:130
 msgid "You can not access this canvas yet, because your pixel score is too low"
-msgstr "Na toto plátno se ještě nedostaneš. Musíš položit více pixelů"
+msgstr "Na toto plátno se ještě nemůžeš dostat. Musíš položit více pixelů"
 
 #: src/ui/PixelTransferController.js:133
 msgid "Pixel protected"
@@ -131,7 +131,7 @@ msgstr "Chráněný pixel"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
-msgstr "Prosím potvrďte že jste člověk"
+msgstr "Potvrďte prosím, že jste člověk"
 
 #: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
@@ -139,7 +139,7 @@ msgstr "Používáš proxy."
 
 #: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
-msgstr "Pouze top 10 ze včerejška můžou tady pokládat"
+msgstr "Pouze Top 10 lidi ze včerejška zde mohou pokládat"
 
 #: src/ui/PixelTransferController.js:152
 msgid "You are weird"
@@ -156,15 +156,15 @@ msgstr "Zabanován"
 
 #: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
-msgstr "Tvůj rozsah byl zabanován"
+msgstr "Rozsahově zabanován"
 
 #: src/ui/PixelTransferController.js:162
 msgid "Your Internet Provider is banned from this game"
-msgstr "Váš poskytovatel internetu byl zabanován"
+msgstr "Váš internetový poskytovatel byl zablokován"
 
 #: src/ui/PixelTransferController.js:170
 msgid "Weird"
-msgstr "Podivný"
+msgstr "Zvláštní"
 
 #: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
@@ -189,11 +189,11 @@ msgstr "Chyba :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr "Nemožno exportovat více jak 20 nebo žádnej template!"
+msgstr "Není možné exportovat více než 20 nebi žádný template!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr "Nemožno importovat více jak 20 nebo žádnej template!"
+msgstr "Není možné importovat více jak 20 nebo žádnej template!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -201,7 +201,7 @@ msgstr "OK"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
-msgstr "Udělali jste až moc požadavek"
+msgstr "Udělali jste až moc požadavků"
 
 #: src/store/actions/fetch.js:59
 #, javascript-format
@@ -215,7 +215,7 @@ msgstr "Chyba připojení ${ code } :("
 
 #: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
-msgstr "Nemohlo se připojit na server, zkuste znovu později :("
+msgstr "Nelze se připojit na server, zkuste znovu později :("
 
 #: src/store/actions/fetch.js:151 src/store/actions/fetch.js:170
 #: src/store/actions/fetch.js:189 src/store/actions/fetch.js:208
@@ -229,11 +229,11 @@ msgstr "Server odpověděl nesmyslem :("
 
 #: src/store/middleware/notifications.js:33
 msgid "Your next pixels are ready"
-msgstr "Tvoje další pixely jsou připraveny"
+msgstr "Tvoje další dávka pixelů je připravena"
 
 #: src/store/middleware/notifications.js:37
 msgid "You can now place more on pixelplanet.fun :)"
-msgstr "Už můžete pokládat víc na pixelplanet.fun :)"
+msgstr "Už můžete pokládat více pixelů na pixelplanet.fun :)"
 
 #: src/store/middleware/notifications.js:54
 msgid "mentioned you"
@@ -258,7 +258,7 @@ msgstr "Celkem online uživatelů"
 
 #: src/components/OnlineBox.jsx:55
 msgid "Pixels placed"
-msgstr "Pixelů položeno"
+msgstr "Položeno pixelů"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -352,11 +352,11 @@ msgstr "Otevřít Paletu"
 
 #: src/components/buttons/PencilButton.jsx:32
 msgid "History Pencil ON"
-msgstr "Historická Tužka Zapnutá"
+msgstr "Historická Tužka Zapnuta"
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr "Overlay pokládání zapnuto"
+msgstr "Pokládání podle overlaye zapnuto"
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
@@ -388,11 +388,11 @@ msgstr "Chat"
 
 #: src/components/windows/index.js:20
 msgid "Canvas Archive"
-msgstr "Archiv Plochy"
+msgstr "Archiv Pláten"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
-msgstr "Trvalo vám to až moc dlouho, zkuste znovu."
+msgstr "Trvalo vám to příliš dlouho, zkuste znovu."
 
 #: src/components/GlobalCaptcha.jsx:50
 msgid "You failed your captcha"
@@ -400,7 +400,7 @@ msgstr "Nepodařila se vám captcha"
 
 #: src/components/GlobalCaptcha.jsx:53
 msgid "No or invalid captcha text"
-msgstr "Žádnej nebo neplatný captcha text"
+msgstr "Žádný nebo neplatný captcha text"
 
 #: src/components/GlobalCaptcha.jsx:56
 msgid "No captcha id given"
@@ -433,8 +433,7 @@ msgstr "Poslat"
 
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
-msgstr ""
-"Byli jste zabanovaný. Myslíte si že si to nezasloužíte? Podívejte se na "
+msgstr "Byli jste zabanovaný. Myslíte si že neprávem?? Podívejte se na "
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
@@ -466,7 +465,7 @@ msgstr "Váš ban byl odvolán"
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."
-msgstr "Teď jak vidíte tuhle zprávu, už nemáte ban."
+msgstr "Pokud uvidíte tuto zprávu, už nemáte ban."
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
@@ -474,7 +473,7 @@ msgstr "Proč?"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
-msgstr "Položte barevný pixely na velkém plátnu s ostatními online hráči!"
+msgstr "Položte barevné pixely na velkém plátnu s ostatními online hráči!"
 
 #: src/components/windows/Help.jsx:66
 msgid ""
@@ -485,12 +484,12 @@ msgid ""
 "pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
 "and 7s on already set pixels."
 msgstr ""
-"Naše hlavní Plátno je velká mapa země, můžete pokládat kde chcete, ale "
-"budete muset počkat konkrétní cooldown mezi pixelama. Můžete se podívat na "
-"cooldown a požadavky na nabídce výběru pláten (tlačítko zeměkoule nahoře). "
-"Nějaký plátna mají jinačí cooldown pro nahrazení uživatelem položených "
-"pixelů než umístění na nepoložených pixel. Což znamená že 4s/7s znamená 4s "
-"na čerstvých pixelech a 7s na pixely kde už někdo něco položil."
+"Naším hlavním plátnem je obrovská mapa světa, kterou můžete umístit, kamkoli "
+"chcete, ale mezi jednotlivými pixely musíte počkat určitou dobu cooldownu. "
+"Cooldown a požadavky můžete zjistit v nabídce Výběr plátna (tlačítko globus "
+"nahoře). Některá plátna mají jiný cooldown pro nahrazení uživatelem "
+"nastavených pixelů než pro umístění na nenastavený pixel. tj. 4s/7s znamená "
+"4s na čerstvé pixely a 7s na již nastavené pixely."
 
 #: src/components/windows/Help.jsx:67
 msgid ""
@@ -506,7 +505,7 @@ msgstr "Bavte se!"
 
 #: src/components/windows/Help.jsx:70
 msgid "recommended"
-msgstr "doporučene"
+msgstr "doporučené"
 
 #: src/components/windows/Help.jsx:71
 msgid "Source on "
@@ -514,7 +513,7 @@ msgstr "Zdroj zapnutý "
 
 #: src/components/windows/Help.jsx:72
 msgid "Map Data"
-msgstr "Mapové data"
+msgstr "Mapová data"
 
 #: src/components/windows/Help.jsx:73
 msgid ""
@@ -545,7 +544,7 @@ msgstr "Ovládaní"
 
 #: src/components/windows/Help.jsx:81
 msgid "Click a color in palette to select it"
-msgstr "Klikněte na barvu v paletě aby jste si jí vybrali"
+msgstr "Klikněte na barvu v paletě aby jste jí vybral"
 
 #: src/components/windows/Help.jsx:82
 #, javascript-format
@@ -576,7 +575,7 @@ msgstr "Stiskněte ${ bindQ } nebo ${ bindE } pro přiblížení"
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr ""
-"Stiskněte ${ bindW }, ${ bindA } ${ bindS }, ${ bindD } pro pohyb na mapě"
+"Stiskněte ${ bindW }, ${ bindA } ${ bindS }, ${ bindD } pro pohyb po mapě"
 
 #: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
 #, javascript-format
@@ -584,24 +583,24 @@ msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
 msgstr ""
 "Stiskněte ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } pro "
-"pohyb na mapě"
+"pohyb pomapě"
 
 #: src/components/windows/Help.jsx:89
 #, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
-msgstr "Táhněte ${ mouseSymbol } myší nebo ${ touchSymbol } pro pohyb na mapě"
+msgstr "Táhněte ${ mouseSymbol } myší nebo ${ touchSymbol } pro pohyb po mapě"
 
 #: src/components/windows/Help.jsx:90
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
-"Skrolujte ${ mouseSymbol } myšové kolečko nebo ${ touchSymbol } zatáhněte "
-"pro přiblížení"
+"Rolujte ${ mouseSymbol } kolečko na myši nebo ${ touchSymbol } zatáhněte pro "
+"přiblížení"
 
 #: src/components/windows/Help.jsx:91
 #, javascript-format
 msgid "Hold left ${ bindShift } for placing while moving mouse"
-msgstr "Držte levej ${ bindShift } pro pokládaní pixelu při pohybu myši"
+msgstr "Držte leveý ${ bindShift } pro pokládaní pixelu při pohybu myši"
 
 #: src/components/windows/Help.jsx:92
 #, javascript-format
@@ -609,7 +608,7 @@ msgid ""
 "Hold right ${ bindShift } for placing while moving mouse according to "
 "historical view"
 msgstr ""
-"Držte pravej ${ bindShift } pro pokládaní při pohybování myši podle "
+"Držte pravý ${ bindShift } pro pokládaní při pohybování myši podle "
 "historického pohledu"
 
 #: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
@@ -626,7 +625,7 @@ msgid ""
 "select current hovering color"
 msgstr ""
 "Klikněte ${ mouseSymbol } střední tlačítko na myši nebo ${ touchSymbol } "
-"dlouhej potisk aby jste si vybrali barvu na kterej máte myš"
+"dlouhý potisk abyste si vybrali barvu na kterej máte myš"
 
 #: src/components/windows/Help.jsx:100
 #, javascript-format
@@ -638,7 +637,7 @@ msgstr "Stiskněte ${ bindQ } a ${ bindE } aby jste letěli nahoru a dolu"
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
 "${ mouseSymbol } Držte levé tlačítko myši a tahejte myš proto aby jste se "
-"točili"
+"otáčeli"
 
 #: src/components/windows/Help.jsx:102
 #, javascript-format
@@ -653,7 +652,8 @@ msgstr ""
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
-"${ mouseSymbol } Pravým klikněte a tahejte myš aby jste sledovali kamerou"
+"${ mouseSymbol } Pravým tlačítkem klikněte a tahejte myší aby jste sledovali "
+"kamerou"
 
 #: src/components/windows/Help.jsx:105
 #, javascript-format
@@ -888,12 +888,12 @@ msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
-"Tady zbíráme plátna pro to abychom je mohli archivovat ve správným způsobu ("
+"Tady sbíráme plátna pro to abychom je mohli archivovat ve správným způsobu ("
 "Což je zatím jenom jeden)."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
-msgstr "Politický Kompas Plátno"
+msgstr "Plátno Politického Kompasu"
 
 #: src/components/windows/Archive.jsx:21
 msgid ""
