@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-10 21:36+0000\n"
+"PO-Revision-Date: 2024-03-11 00:54+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/et/>\n"
@@ -531,6 +531,13 @@ msgid ""
 "pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
 "and 7s on already set pixels."
 msgstr ""
+"Meie põhiline lõuend on hiiglaslik maailmakaart, kus sa saad joonistada kuhu "
+"iganes sa tahad, aga sa pead ootama teatud aja pikslite panemise vahel. Sa "
+"saad näha selle jahutusaja pikkust ja nõudeid erinevatele lõuenditele "
+"ligipääsu saamiseks Lõuendi Valiku menüüst (gloobuse nupp ekraani tipus). "
+"Mõnedel lõuenditel on erinev jahtumisaeg nendel pikslitel, kuhu keegi teine "
+"ei ole veel joonistanud. Näiteks Maal on uute pikslite jahtumisaeg 4s, kuid "
+"juba joonistatud pikslite oma 7s."
 
 #: src/components/windows/Help.jsx:67
 msgid ""
@@ -540,19 +547,19 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:68
 msgid "Have fun!"
-msgstr ""
+msgstr "Lõbutse!"
 
 #: src/components/windows/Help.jsx:70
 msgid "recommended"
-msgstr ""
+msgstr "soovitatud"
 
 #: src/components/windows/Help.jsx:71
 msgid "Source on "
-msgstr ""
+msgstr "Allikas: "
 
 #: src/components/windows/Help.jsx:72
 msgid "Map Data"
-msgstr ""
+msgstr "Kaardi Andmed"
 
 #: src/components/windows/Help.jsx:73
 msgid ""
@@ -562,7 +569,7 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
-msgstr ""
+msgstr "Ligipääs Piiratud? Tuvastatud kui Puhverserver?"
 
 #: src/components/windows/Help.jsx:76
 #, javascript-format
@@ -575,31 +582,31 @@ msgstr ""
 #: src/components/windows/Help.jsx:79
 #: src/components/windows/Help.jsx:96
 msgid "Controls"
-msgstr ""
+msgstr "Juhtnupud"
 
 #: src/components/windows/Help.jsx:81
 msgid "Click a color in palette to select it"
-msgstr ""
+msgstr "Vajuta värvile palettil, et see valida"
 
 #: src/components/windows/Help.jsx:82
 #, javascript-format
 msgid "Press ${ bindG } to toggle grid"
-msgstr ""
+msgstr "Vajuta ${ bindG }, et ruudustik ümberlülitada"
 
 #: src/components/windows/Help.jsx:83
 #, javascript-format
 msgid "Press ${ bindX } to toggle showing of pixel activity"
-msgstr ""
+msgstr "Vajuta ${ bindX }, et pikslite näitamine ümberlülitada"
 
 #: src/components/windows/Help.jsx:84
 #, javascript-format
 msgid "Press ${ bindH } to toggle historical view"
-msgstr ""
+msgstr "Vajuta ${ bindH },et ajaloo vaade ümberlülitada"
 
 #: src/components/windows/Help.jsx:85
 #, javascript-format
 msgid "Press ${ bindR } to copy coordinates"
-msgstr ""
+msgstr "Vajuta ${ bindR }, et kopeerida koordinaadid"
 
 #: src/components/windows/Help.jsx:86
 #, javascript-format
@@ -610,18 +617,21 @@ msgstr ""
 #: src/components/windows/Help.jsx:98
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
-msgstr ""
+msgstr "Vajuta ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD }, et ringi liikuda"
 
 #: src/components/windows/Help.jsx:88
 #: src/components/windows/Help.jsx:99
 #, javascript-format
 msgid "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
 msgstr ""
+"Vajuta ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight }, et "
+"ringi liikuda"
 
 #: src/components/windows/Help.jsx:89
 #, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
 msgstr ""
+"Lohista ${ mouseSymbol } hiirt või tõmba ${ touchSymbol } näpuga, et liikuda"
 
 #: src/components/windows/Help.jsx:90
 #, javascript-format
@@ -1182,11 +1192,11 @@ msgstr ""
 
 #: src/components/Converter.jsx:439
 msgid "Width"
-msgstr ""
+msgstr "Laius"
 
 #: src/components/Converter.jsx:470
 msgid "Height"
-msgstr ""
+msgstr "Kõrgus"
 
 #: src/components/Converter.jsx:509
 msgid "Keep Ratio"
@@ -1206,19 +1216,19 @@ msgstr ""
 
 #: src/components/Rankings.jsx:147
 msgid "Total"
-msgstr ""
+msgstr "Kokku"
 
 #: src/components/Rankings.jsx:156
 msgid "Today"
-msgstr ""
+msgstr "Täna"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
-msgstr ""
+msgstr "Eile"
 
 #: src/components/Rankings.jsx:174
 msgid "Countries Today"
-msgstr ""
+msgstr "Riigid Täna"
 
 #: src/components/Rankings.jsx:183
 msgid "Charts"
@@ -1228,11 +1238,11 @@ msgstr ""
 #: src/components/Rankings.jsx:210
 #: src/components/Rankings.jsx:219
 msgid "User"
-msgstr ""
+msgstr "Kasutaja"
 
 #: src/components/Rankings.jsx:226
 msgid "Country"
-msgstr ""
+msgstr "Riik"
 
 #: src/components/Rankings.jsx:286
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
@@ -1292,7 +1302,7 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:34
 msgid "Cooldown"
-msgstr ""
+msgstr "Jahtumisaeg"
 
 #: src/components/CanvasItem.jsx:40
 msgid "Stacking till"
@@ -1304,11 +1314,11 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:44
 msgid "Yes"
-msgstr ""
+msgstr "Jah"
 
 #: src/components/CanvasItem.jsx:44
 msgid "No"
-msgstr ""
+msgstr "Ei"
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
@@ -1357,32 +1367,32 @@ msgstr ""
 #: src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
-msgstr ""
+msgstr "Lõuend"
 
 #: src/components/TemplateItem.jsx:57
 #: src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
-msgstr ""
+msgstr "Koordinaadid"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Muuda"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Mine"
 
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
-msgstr ""
+msgstr "Vali Fail"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Šablooni Nimi"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
-msgstr ""
+msgstr "Kustuta"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1428,7 +1438,7 @@ msgstr "Kinnita Uus Salasõna"
 
 #: src/components/ChangeName.jsx:64
 msgid "New Username"
-msgstr ""
+msgstr "Uus Kasutajanimi"
 
 #: src/components/ChangeMail.jsx:59
 msgid ""
@@ -1454,7 +1464,7 @@ msgstr ""
 
 #: src/components/SocialSettings.jsx:44
 msgid "Private"
-msgstr ""
+msgstr "Privaatne"
 
 #: src/components/SocialSettings.jsx:51
 msgid "Don't show me in global stats"
@@ -1505,151 +1515,153 @@ msgstr ""
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
-msgstr ""
+msgstr "Staatus: Seiskunud"
 
 #: src/components/ModCanvastools.jsx:249
 msgid "Image Upload"
-msgstr ""
+msgstr "Pildi Lisamine"
 
 #: src/components/ModCanvastools.jsx:250
 msgid "Upload images to canvas"
-msgstr ""
+msgstr "Lisa lõuendile pilte"
 
 #: src/components/ModCanvastools.jsx:252
 msgid "File"
-msgstr ""
+msgstr "Fail"
 
 #: src/components/ModCanvastools.jsx:273
 msgid "Coordinates:"
-msgstr ""
+msgstr "Koordinaadid:"
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
-msgstr ""
+msgstr "Pikslite Kaitsmine"
 
 #: src/components/ModCanvastools.jsx:321
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect "
 "with image upload and alpha layers)"
 msgstr ""
+"Kaitse teatud alas piksleid (kui sa vajad kindlat kujundit siis lisa pilt "
+"valikuga \"Kaitstud\")"
 
 #: src/components/ModCanvastools.jsx:341
 #: src/components/ModCanvastools.jsx:424
 #: src/components/ModCanvastools.jsx:517
 #: src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
-msgstr ""
+msgstr "Ülemine vasak nurk"
 
 #: src/components/ModCanvastools.jsx:363
 #: src/components/ModCanvastools.jsx:446
 #: src/components/ModCanvastools.jsx:539
 #: src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
-msgstr ""
+msgstr "Alumine parem nurk"
 
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
-msgstr ""
+msgstr "Keera tagasi Kuupäevale"
 
 #: src/components/ModCanvastools.jsx:411
 msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
-msgstr ""
+msgstr "Keera tagasi ala lõuendil kindlale kuupäevale (00:00 UTC)"
 
 #: src/components/ModCanvastools.jsx:492
 msgid "Canvas Cleaner"
-msgstr ""
+msgstr "Lõuendi Puhastaja"
 
 #: src/components/ModCanvastools.jsx:494
 msgid "Apply a filter to clean trash in large canvas areas."
-msgstr ""
+msgstr "Lisa filter, et puhastada suur lõuendi osa prügist."
 
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
-msgstr ""
+msgstr "Peata Puhastaja"
 
 #: src/components/Admintools.jsx:109
 msgid "IP Actions"
-msgstr ""
+msgstr "IP-Tegevused"
 
 #: src/components/Admintools.jsx:111
 msgid "Do stuff with IPs (one IP per line)"
-msgstr ""
+msgstr "Tee asju IP-dega (üks IP rea kohta)"
 
 #: src/components/Admintools.jsx:158
 msgid "Manage Moderators"
-msgstr ""
+msgstr "Halda Moderaatoreid"
 
 #: src/components/Admintools.jsx:160
 msgid "Remove Moderator"
-msgstr ""
+msgstr "Eemalda Moderaator"
 
 #: src/components/Admintools.jsx:193
 msgid "There are no mods"
-msgstr ""
+msgstr "Moderaatoreid ei ole"
 
 #: src/components/Admintools.jsx:198
 msgid "Assign new Mod"
-msgstr ""
+msgstr "Lisa uus Moderaator"
 
 #: src/components/Admintools.jsx:201
 msgid "Enter UserName of new Mod"
-msgstr ""
+msgstr "Sisesta uue Moderaatori Kasutajanimi"
 
 #: src/components/Admintools.jsx:210
 msgid "User Name"
-msgstr ""
+msgstr "Kasutajanimi"
 
 #: src/components/ModWatchtools.jsx:48
 msgid "Interval is invalid"
-msgstr ""
+msgstr "Vahemik ei sobi"
 
 #: src/components/ModWatchtools.jsx:124
 msgid "Check who placed in an area"
-msgstr ""
+msgstr "Vaata, kes alale joonistas"
 
 #: src/components/ModWatchtools.jsx:144
 msgid "Interval"
-msgstr ""
+msgstr "Vahemik"
 
 #: src/components/ModWatchtools.jsx:159
 msgid "IID (optional)"
-msgstr ""
+msgstr "IID (valikuline)"
 
 #: src/components/ModWatchtools.jsx:249
 msgid "Get Pixels"
-msgstr ""
+msgstr "Hangi Pikslid"
 
 #: src/components/ModWatchtools.jsx:281
 msgid "Get Users"
-msgstr ""
+msgstr "Hangi Kasutajad"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
-msgstr ""
+msgstr "Sa pead sisestama kestvuse"
 
 #: src/components/ModIIDtools.jsx:24
 msgid "You must enter an IID"
-msgstr ""
+msgstr "Sa pead sisestama IID"
 
 #: src/components/ModIIDtools.jsx:53
 msgid "IID Actions"
-msgstr ""
+msgstr "IID-Tegevused"
 
 #: src/components/ModIIDtools.jsx:80
 msgid "Enter Reason"
-msgstr ""
+msgstr "Sisesta Põhjus"
 
 #: src/components/ModIIDtools.jsx:97
 msgid "(0 = infinite)"
-msgstr ""
+msgstr "(0 = lõppematu)"
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
-msgstr ""
+msgstr "Teavita"
 
 #: src/components/contextmenus/UserContextMenu.jsx:75
 msgid "DM"
-msgstr ""
+msgstr "Saada Sõnum"
 
 #: src/components/contextmenus/UserContextMenu.jsx:86
 msgid "Block"

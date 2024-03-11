@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 21:36+0000\n"
+"PO-Revision-Date: 2024-03-10 22:16+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Azerbaijani <https://hosted.weblate.org/projects/pixelplanet/"
 "server/az/>\n"
@@ -127,7 +127,7 @@ msgstr ""
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Email boş olabilməz."
+msgstr "Email boş ola bilməz."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
@@ -143,7 +143,7 @@ msgstr "Email ən az 1 nöqtə içərməlidir"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "Emaildə @ işarəsi olmaldır"
+msgstr "Email-də @ simvolu olmalıdır"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
@@ -249,7 +249,7 @@ msgstr "Bu çox vaxt aldı,təkrar yoxla."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
-msgstr "Captchayı səhv girdin"
+msgstr "Captchanızı düzgün yerinə yetirmədiniz"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"
@@ -301,11 +301,11 @@ msgstr "Səhv Parol!"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted users can not delete their account."
-msgstr ""
+msgstr "Susdurulmuş istifadəçilər öz hesablarını silə bilməzlər."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted users can not do this."
-msgstr ""
+msgstr "Susdurulmuş istifadəçilər bunu edə bilməzlər."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -354,11 +354,11 @@ msgstr "Top10"
 
 #: src/canvasesDesc.js:28
 msgid "2bit"
-msgstr ""
+msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "Mini xəritə"
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
@@ -405,13 +405,15 @@ msgstr ""
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon."
-msgstr ""
+msgstr "Yalnız 4 rəng. Ay ilə eyni qaydalar."
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas."
 msgstr ""
+"Daha kiçik bir dünyada qorunmuş okean ilə torpaq işğal et. Dünya lövhəsi ilə "
+"gözləmə müddəti paylaşır."
 
 #: src/core/MailProvider.js:66
 #, javascript-format

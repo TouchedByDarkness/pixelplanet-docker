@@ -1,9 +1,14 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-03-11 00:54+0000\n"
+"Last-Translator: be de <debe24112@gmail.com>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/pixelplanet/"
+"server/fi/>\n"
 "Language: fi\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages with proxy"
@@ -118,51 +123,53 @@ msgstr ""
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr ""
+msgstr "Sähköposti-osio ei voi olla tyhjä."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr ""
+msgstr "Sähköpostin tulee olla vähintään 5 kirjainta pitkä."
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr ""
+msgstr "Sähköpostit eivät voi olla yli 40 kirjainta pidempiä."
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr ""
+msgstr "Sähköpostissa tulee olla vähintään yksi piste"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr ""
+msgstr "Sähköpostissa tulee olla @-symboli"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr ""
+msgstr "Nimi ei voi olla tyhjä."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
 msgstr ""
+"Nimen tulee olla vähintään 2 kirjainta pitkä saatanan runkkari, eli nimesi "
+"ei saa olla kyrpäsi pituinen"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr ""
+msgstr "Nimen tulee olla lyhyempi kuin 26 kirjainta"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr ""
+msgstr "Nimi sisältää kelvottomia merkkejä kuten @,/,\\ tai #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr ""
+msgstr "Salasana jäi nyt antamatta jätkällä."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr ""
+msgstr "salasanan tulee olla yli 6 merkkiä pidempi."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr ""
+msgstr "Salasanan tulee olla 60 merkkiä lyhyempi."
 
 #: src/ssr/PasswordReset.jsx:20
 #: src/ssr/PasswordReset.jsx:40

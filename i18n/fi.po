@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-10 16:43+0000\n"
-"Last-Translator: Puskajussi <pikapottu@gmail.com>\n"
+"PO-Revision-Date: 2024-03-11 00:54+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/fi/>\n"
 "Language: fi\n"
@@ -1042,292 +1042,305 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel "
 "on the template, should be one pixel on the canvas."
 msgstr ""
+"Oletko kyllästynyt vain yhden värin käyttämiseen? Haluatko tehdä taidetta "
+"sen sijaan, mutta joudut laskemaan pikseleitä jostain muusta kuvasta? "
+"Mallineet voi auttaa sinua sen kanssa! Mallineita voi käyttää päällystyksenä "
+"ja voit piirtää niiden päällä. Yksi pikseli mallineella pitäisi olla yksi "
+"pikseli kanvaasilla."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Ota käyttöön päällystys"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Näytä mallineet päällysteinä pelissä."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels Zoom"
-msgstr ""
+msgstr "Näytä Pienet Pikselit Zoomatessa"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
+"Näytä päällystys pienienä yksittäisinä pikseleinä korkeilla zoomitasoilla."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Päällysteen läpinäkymättömyys"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Päällysteen läpinäkymättömyys prosenteissa."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "Right-Shift Automaattinen väritys"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
 msgstr ""
+"Aseta pikseleitä päällystyksestä painamalla Oikeaa shiftiä pohjaan, "
+"historian tilalta. Painamalla oikeaa shiftiä pohjassa, peli valitsee värit "
+"automaattisesti päällystystä käytettäessä."
 
 #: src/components/TemplateSettings.jsx:149
 msgid "Cancel adding Template"
-msgstr ""
+msgstr "Peru mallineen lisääminen"
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Add Template"
-msgstr ""
+msgstr "Lisää malline"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Vie käytössä olevat mallineet"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr ""
+msgstr "Tuo mallineita"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
-msgstr ""
+msgstr "Kirjaudu sisään käyttääksesi lisää toimintoja ja tilastoja."
 
 #: src/components/LogInArea.jsx:21
 msgid "Login with Name or Mail:"
-msgstr ""
+msgstr "Kirjaudu sisään Nimellä tai sähköpostilla:"
 
 #: src/components/LogInArea.jsx:28
 msgid "I forgot my Password."
-msgstr ""
+msgstr "Unohdin salasanani."
 
 #: src/components/LogInArea.jsx:29
 msgid "or login with:"
-msgstr ""
+msgstr "Tai kirjaudu:"
 
 #: src/components/LogInArea.jsx:70
 msgid "or register here:"
-msgstr ""
+msgstr "tai rekisteröidy täällä:"
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
-msgstr ""
+msgstr "rekisteröidy"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
-msgstr ""
+msgstr "Tänään laitetut pikselit"
 
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
-msgstr ""
+msgstr "Päivän sijoitukset"
 
 #: src/components/UserAreaContent.jsx:71
 msgid "Placed Pixels"
-msgstr ""
+msgstr "Laitetut pikselit"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
-msgstr ""
+msgstr "Kokonaissijoitukset"
 
 #: src/components/UserAreaContent.jsx:80
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr ""
+msgstr "Nimesi on: ${ name }"
 
 #: src/components/UserAreaContent.jsx:86
 msgid "Log out"
-msgstr ""
+msgstr "Kirjaudu ulos"
 
 #: src/components/UserAreaContent.jsx:93
 msgid "Change Username"
-msgstr ""
+msgstr "Vaihda nimi"
 
 #: src/components/UserAreaContent.jsx:103
 msgid "Change Mail"
-msgstr ""
+msgstr "Vaihda sähköposti"
 
 #: src/components/UserAreaContent.jsx:112
 msgid "Change Password"
-msgstr ""
+msgstr "Vaihda salasana"
 
 #: src/components/UserAreaContent.jsx:119
 msgid "Delete Account"
-msgstr ""
+msgstr "Poista käyttäjä"
 
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
-msgstr ""
+msgstr "Sosiaaliset asetukset"
 
 #: src/components/Converter.jsx:191
 #: src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
-msgstr ""
+msgstr "Valitse kanvaasi"
 
 #: src/components/Converter.jsx:218
 msgid "Palette Download"
-msgstr ""
+msgstr "Lataa väripaletti"
 
 #: src/components/Converter.jsx:220
 #, javascript-format
 msgid "Palette for ${ gimpLink }"
-msgstr ""
+msgstr "Väripaletti ${ gimpLink }:kiä varten"
 
 #: src/components/Converter.jsx:241
 msgid "Image Converter"
-msgstr ""
+msgstr "Kuvien muuntaja"
 
 #: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
-msgstr ""
+msgstr "Muunna kuva kanvaasin väreihin"
 
 #: src/components/Converter.jsx:261
 msgid "Choose Strategy"
-msgstr ""
+msgstr "Valitse strategia"
 
 #: src/components/Converter.jsx:299
 msgid "Serpentine"
-msgstr ""
+msgstr "Serpentine"
 
 #: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
-msgstr ""
+msgstr "Minimi värien etäisyys"
 
 #: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
-msgstr ""
+msgstr "Laske kuin GIMP"
 
 #: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
-msgstr ""
+msgstr "Valitse väritystapa"
 
 #: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
-msgstr ""
+msgstr "Lisää Ruudukko (Jätä rastittamatta jos tarvitset 1:1 mallikkeen)"
 
 #: src/components/Converter.jsx:383
 #: src/components/Converter.jsx:399
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #: src/components/Converter.jsx:428
 msgid "Scale Image"
-msgstr ""
+msgstr "Muunna kuvan kokoa"
 
 #: src/components/Converter.jsx:439
 msgid "Width"
-msgstr ""
+msgstr "Leveys"
 
 #: src/components/Converter.jsx:470
 msgid "Height"
-msgstr ""
+msgstr "Pituus"
 
 #: src/components/Converter.jsx:509
 msgid "Keep Ratio"
-msgstr ""
+msgstr "Pidä suhdeluku"
 
 #: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
-msgstr ""
+msgstr "Anti aliasing"
 
 #: src/components/Converter.jsx:536
 msgid "Reset"
-msgstr ""
+msgstr "Nollaa muunnokset"
 
 #: src/components/Converter.jsx:554
 msgid "Download Template"
-msgstr ""
+msgstr "Lataa Malline"
 
 #: src/components/Rankings.jsx:147
 msgid "Total"
-msgstr ""
+msgstr "kokonaisuus"
 
 #: src/components/Rankings.jsx:156
 msgid "Today"
-msgstr ""
+msgstr "Tänään"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
-msgstr ""
+msgstr "Eilen"
 
 #: src/components/Rankings.jsx:174
 msgid "Countries Today"
-msgstr ""
+msgstr "Maat tänään"
 
 #: src/components/Rankings.jsx:183
 msgid "Charts"
-msgstr ""
+msgstr "Kaaviot"
 
 #: src/components/Rankings.jsx:201
 #: src/components/Rankings.jsx:210
 #: src/components/Rankings.jsx:219
 msgid "User"
-msgstr ""
+msgstr "Käyttäjä"
 
 #: src/components/Rankings.jsx:226
 msgid "Country"
-msgstr ""
+msgstr "Maa"
 
 #: src/components/Rankings.jsx:286
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
+"Sijoitukset päivittyvät viiden minuutin välein. Päivän sijoitukset nollataan "
+"kahdelta suomen aikaan."
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr ""
+msgstr "Sähköposti-osio ei voi olla tyhjä."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr ""
+msgstr "Sähköpostin tulee olla vähintään 5 kirjainta pitkä."
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr ""
+msgstr "Sähköpostit eivät voi olla yli 40 kirjainta pidempiä."
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr ""
+msgstr "Sähköpostissa tulee olla vähintään yksi piste"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr ""
+msgstr "Sähköpostissa tulee olla @-symboli"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr ""
+msgstr "Nimi ei voi olla tyhjä."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
 msgstr ""
+"Nimen tulee olla vähintään 2 kirjainta pitkä saatanan runkkari, eli nimesi "
+"ei saa olla kyrpäsi pituinen"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr ""
+msgstr "Nimen tulee olla lyhyempi kuin 26 kirjainta"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr ""
+msgstr "Nimi sisältää kelvottomia merkkejä kuten @,/,\\ tai #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr ""
+msgstr "Salasana jäi nyt antamatta jätkällä."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr ""
+msgstr "salasanan tulee olla yli 6 merkkiä pidempi."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr ""
+msgstr "Salasanan tulee olla 60 merkkiä lyhyempi."
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
-msgstr ""
+msgstr "Käyttäjiä onlinessa"
 
 #: src/components/CanvasItem.jsx:34
 msgid "Cooldown"
-msgstr ""
+msgstr "Jäähdytys"
 
 #: src/components/CanvasItem.jsx:40
 msgid "Stacking till"
@@ -1698,71 +1711,71 @@ msgstr ""
 #: src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "G"
-msgstr ""
+msgstr "G"
 
 #: src/components/windows/Help.jsx:20
 #: src/components/windows/Settings.jsx:100
 msgctxt "keybinds"
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: src/components/windows/Help.jsx:21
 #: src/components/windows/Settings.jsx:171
 msgctxt "keybinds"
 msgid "H"
-msgstr ""
+msgstr "H"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
 msgid "R"
-msgstr ""
+msgstr "R"
 
 #: src/components/windows/Help.jsx:23
 msgctxt "keybinds"
 msgid "Q"
-msgstr ""
+msgstr "Q"
 
 #: src/components/windows/Help.jsx:24
 msgctxt "keybinds"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 #: src/components/windows/Help.jsx:25
 msgctxt "keybinds"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #: src/components/windows/Help.jsx:26
 msgctxt "keybinds"
 msgid "A"
-msgstr ""
+msgstr "A"
 
 #: src/components/windows/Help.jsx:27
 msgctxt "keybinds"
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #: src/components/windows/Help.jsx:28
 msgctxt "keybinds"
 msgid "D"
-msgstr ""
+msgstr "D"
 
 #: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 #: src/components/windows/Settings.jsx:108
 msgctxt "keybinds"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: src/components/TemplateSettings.jsx:66
 msgctxt "keybinds"
 msgid "T"
-msgstr ""
+msgstr "T"

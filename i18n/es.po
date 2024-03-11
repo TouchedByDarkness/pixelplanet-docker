@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 17:53+0000\n"
-"Last-Translator: Ahoura <ahoura053@gmail.com>\n"
+"PO-Revision-Date: 2024-03-10 22:16+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/es/>\n"
 "Language: es\n"
@@ -315,7 +315,7 @@ msgstr "Cerrar"
 
 #: src/components/Window.jsx:173
 msgid "PopUp"
-msgstr "Surgir"
+msgstr "Ventana emergente"
 
 #: src/components/Window.jsx:184
 msgid "Restore"

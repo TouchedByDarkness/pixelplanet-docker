@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 19:37+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"PO-Revision-Date: 2024-03-10 22:16+0000\n"
+"Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/pixelplanet/"
 "client/de/>\n"
 "Language: de\n"
@@ -1267,7 +1267,7 @@ msgstr ""
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Email Feld kann nicht leer sein."
+msgstr "E-Mail Feld kann nicht leer sein."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
@@ -1287,7 +1287,7 @@ msgstr "E-Mail sollte ein @ beinhalten"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr "Email Feld kann nicht leer sein."
+msgstr "Name kann nicht leer sein."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"

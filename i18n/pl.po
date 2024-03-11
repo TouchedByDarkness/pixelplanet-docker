@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-10 21:36+0000\n"
+"PO-Revision-Date: 2024-03-11 00:54+0000\n"
 "Last-Translator: 5794 <Zemsterrr@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/pl/>\n"
@@ -340,7 +340,7 @@ msgstr "Przenieś"
 
 #: src/components/Window.jsx:252
 msgid "Maximize"
-msgstr "maksymalizuj"
+msgstr "Maksymalizuj"
 
 #: src/components/Window.jsx:268
 msgid "Resize"
@@ -630,14 +630,14 @@ msgstr ""
 #, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
 msgstr ""
-"Przeciągnij myszką ${ MouseSymbol } lub ${ touchSymbol } przesuń palcem aby "
+"Przeciągnij myszką ${ mouseSymbol } lub ${ touchSymbol } przesuń palcem aby "
 "się poruszyć"
 
 #: src/components/windows/Help.jsx:90
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
-"Przewijaj scrollem ${ MouseSymbol } lub ${ touchSymbol } rozsuń palce aby "
+"Przewijaj scrollem ${ mouseSymbol } lub ${ touchSymbol } rozsuń palce aby "
 "powiększyć lub pomniejszyć"
 
 #: src/components/windows/Help.jsx:91
@@ -659,7 +659,7 @@ msgstr ""
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
-"${ MouseSymbol } Kliknij lewym przyciskiem myszy lub ${ touchSymbol } "
+"${ mouseSymbol } Kliknij lewym przyciskiem myszy lub ${ touchSymbol } "
 "dotknij palcem aby umieścić piksel"
 
 #: src/components/windows/Help.jsx:94
@@ -669,7 +669,7 @@ msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
 "select current hovering color"
 msgstr ""
-"Kliknij ${ MouseSymbol } środkowy przycisk myszy lub ${ touchSymbol } i "
+"Kliknij ${ mouseSymbol } środkowy przycisk myszy lub ${ touchSymbol } i "
 "przytrzymaj, aby wybrać bieżący kolor na który kieruje twój kursor"
 
 #: src/components/windows/Help.jsx:100
@@ -681,7 +681,7 @@ msgstr "Naciśnij ${ bindQ } i ${ bindE }, aby przysunąć w wewnątrz i zewnąt
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
-"${ MouseSymbol } Przytrzymaj lewy przycisk myszy i przeciągaj myszą, aby "
+"${ mouseSymbol } Przytrzymaj lewy przycisk myszy i przeciągaj myszą, aby "
 "obrócić"
 
 #: src/components/windows/Help.jsx:102
@@ -690,14 +690,14 @@ msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
 "button and drag to zoom"
 msgstr ""
-"${ MouseSymbol } Scrolluj lub przytrzymaj ${ MouseSymbol } środkowy przycisk "
+"${ mouseSymbol } Scrolluj lub przytrzymaj ${ mouseSymbol } środkowy przycisk "
 "myszy i przeciągnij, aby powiększyć"
 
 #: src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
-"${ MouseSymbol } Kliknij prawym przyciskiem myszy i przeciągnij myszą, aby "
+"${ mouseSymbol } Kliknij prawym przyciskiem myszy i przeciągnij myszą, aby "
 "przesuwać"
 
 #: src/components/windows/Help.jsx:105
@@ -706,145 +706,152 @@ msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a "
 "pixel"
 msgstr ""
+"${ mouseSymbol } Prawy przycisk myszy lub ${ touchSymbol } naciśnij "
+"podwójnie aby usunąć pixela"
 
 #: src/components/windows/Help.jsx:110
 msgid ""
 "We thanks those artists very much, they offered their palettes to the "
 "public on"
 msgstr ""
+"Jesteśmy wdzięczni tym artystom, zaoferowali oni ich palety kolorów publice"
 
 #: src/components/windows/Help.jsx:113
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
-msgstr ""
+msgstr "zaszczyt za palete kolorów księżyca idzie do ${ starhouseLink }."
 
 #: src/components/windows/Help.jsx:116
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr ""
+msgstr "Zaszczyt za palete kolorów płótna top 10 idzie do ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:119
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr ""
+msgstr "Zaszczyt za palete kolorów płótna 2bit idzie do${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
-msgstr ""
+msgstr "Pokaż siatkę"
 
 #: src/components/windows/Settings.jsx:96
 msgid "Turn on grid to highlight pixel borders."
-msgstr ""
+msgstr "Włącz siatkę aby ujawnić kontury pixeli."
 
 #: src/components/windows/Settings.jsx:99
 msgid "Show Pixel Activity"
-msgstr ""
+msgstr "Pokaż aktywność pixeli"
 
 #: src/components/windows/Settings.jsx:104
 msgid "Show circles where pixels are placed."
-msgstr ""
+msgstr "pokaż okręgi gdzie pixele są stawiane."
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "zawsze pokazuj kontrolki ruchu"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "zawsze pokazuj klawisze ruchu"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
-msgstr ""
+msgstr "Wyłącz dźwięk gry"
 
 #: src/components/windows/Settings.jsx:121
 msgid "All sound effects will be disabled."
-msgstr ""
+msgstr "wszystkie efekty dźwiękowe będą wyłączone."
 
 #: src/components/windows/Settings.jsx:125
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
 msgstr ""
+"Twoja przeglądarka nie zezwala nam na użycie AudioContext'u audio aby zagrać "
+"dźwięki. Czy masz jakieś funkcje prywatności które nas blokują?"
 
 #: src/components/windows/Settings.jsx:131
 msgid "Enable chat notifications"
-msgstr ""
+msgstr "Włącz powiadomienia czatu"
 
 #: src/components/windows/Settings.jsx:135
 msgid "Play a sound when new chat messages arrive"
-msgstr ""
+msgstr "Zagraj dźwięk kiedy pojawią się nowe wiadomości na czacie"
 
 #: src/components/windows/Settings.jsx:138
 msgid "Auto Zoom In"
-msgstr ""
+msgstr "Automatyczne przybliżenie"
 
 #: src/components/windows/Settings.jsx:143
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
-msgstr ""
+msgstr "Kiedy masz oddalone płótno kliknij raz aby przybliżyć."
 
 #: src/components/windows/Settings.jsx:146
 msgid "Compact Palette"
-msgstr ""
+msgstr "Kompaktowa paleta kolorów"
 
 #: src/components/windows/Settings.jsx:151
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr ""
+"Pokaż palete kolorów w kompaktowej formie która zajmuje mniej miejsca na "
+"ekranie."
 
 #: src/components/windows/Settings.jsx:154
 msgid "Potato Mode"
-msgstr ""
+msgstr "Tryb Ziemniaka (wydajny)"
 
 #: src/components/windows/Settings.jsx:158
 msgid "For when you are playing on a potato."
-msgstr ""
+msgstr "Jeśli masz chujowego kompa."
 
 #: src/components/Converter.jsx:381
 #: src/components/windows/Settings.jsx:161
 msgid "Light Grid"
-msgstr ""
+msgstr "Jasna siatka"
 
 #: src/components/windows/Settings.jsx:165
 msgid "Show Grid in white instead of black."
-msgstr ""
+msgstr "Pokaż jasną siatkę zamiast ciemnej."
 
 #: src/components/windows/Settings.jsx:169
 msgid "Historical View"
-msgstr ""
+msgstr "Wgląd na historie"
 
 #: src/components/windows/Settings.jsx:174
 msgid "Check out past versions of the canvas."
-msgstr ""
+msgstr "Sprawdź poprzednie wersje płótna."
 
 #: src/components/windows/Settings.jsx:179
 msgid "Themes"
-msgstr ""
+msgstr "Motywy"
 
 #: src/components/windows/Settings.jsx:184
 msgid "How pixelplanet should look like."
-msgstr ""
+msgstr "Jak pixelplanet powinien wyglądać."
 
 #: src/components/windows/Settings.jsx:191
 msgid "Select Language"
-msgstr ""
+msgstr "Wybierz język"
 
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 #: src/components/windows/UserArea.jsx:59
 msgid "Statistics"
-msgstr ""
+msgstr "Statystyki"
 
 #: src/components/windows/UserArea.jsx:64
 msgid "Converter"
-msgstr ""
+msgstr "Konwerter"
 
 #: src/components/windows/UserArea.jsx:70
 msgid "Modtools"
-msgstr ""
+msgstr "Narzędzia moderacji"
 
 #: src/components/windows/UserArea.jsx:71
 msgid "Loading..."
@@ -852,22 +859,22 @@ msgstr "Ładowanie..."
 
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
-msgstr ""
+msgstr "Rozważ dołączenie do nas na Guilded:"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
-msgstr ""
+msgstr "Zarejestruj nowe konto tutaj"
 
 #: src/components/windows/Register.jsx:92
 #: src/components/windows/Register.jsx:98
 msgid "Name"
-msgstr ""
+msgstr "Pseudonim"
 
 #: src/components/windows/ForgotPassword.jsx:80
 #: src/components/windows/Register.jsx:100
 #: src/components/windows/Register.jsx:106
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: src/components/ChangeMail.jsx:80
 #: src/components/DeleteAccount.jsx:62
@@ -875,16 +882,16 @@ msgstr ""
 #: src/components/windows/Register.jsx:108
 #: src/components/windows/Register.jsx:114
 msgid "Password"
-msgstr ""
+msgstr "Hasło"
 
 #: src/components/windows/Register.jsx:116
 #: src/components/windows/Register.jsx:122
 msgid "Confirm Password"
-msgstr ""
+msgstr "Potwierdź hasło"
 
 #: src/components/windows/Register.jsx:124
 msgid "Captcha"
-msgstr ""
+msgstr "Captcha"
 
 #: src/components/Admintools.jsx:154
 #: src/components/Admintools.jsx:238
@@ -905,14 +912,18 @@ msgid ""
 "requirements.\n"
 "Archive of removed canvases can be accessed here:"
 msgstr ""
+"Wybierz płótno które chcesz użyć.\n"
+"Każde płótno jest wyjątkowe i ma wiele różnych palet kolorów, cooldown'u "
+"pixeli i wymagań.\n"
+"Archiwa usuniętych płócien mogą być znalezione tutaj:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
-msgstr ""
+msgstr "Archiwa"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Zlikwidowane Płótna (Tylko wgląd historyczny)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -921,16 +932,22 @@ msgid ""
 "boring after a while and after weeks of no major change and if they really "
 "aren't worth being kept active."
 msgstr ""
+"Kiedy nie jesteśmy skłonni do usuwania płócien, niektóre płótna są "
+"zapoczątkowane dla zabawy albo jako prośba od użytkowników którzy aktualnie "
+"lubią dany mem. Te płótna mogą stać się nudne po kilku tygodniach i jeśli "
+"nie są warte utrzymywania będą usuwane."
 
 #: src/components/windows/Archive.jsx:10
 msgid ""
 "Here we collect removed canvases to archive them in a proper way. Which is "
 "currently only one."
 msgstr ""
+"Tutaj zbieramy usunięte płótna aby zarchiwizować we właściwy sposób. "
+"Aktualnie jest tylko jedno."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
-msgstr ""
+msgstr "Płótno Kompasu Politycznego"
 
 #: src/components/windows/Archive.jsx:21
 msgid ""
@@ -939,6 +956,11 @@ msgid ""
 "with a 5s cooldown and 60s stacking. It got launched on May 11th and "
 "remained active for months till it got shut down on November 30th."
 msgstr ""
+"To płótno zostało stworzone na prośbę w czasach politycznych konfliktów na "
+"głównym płótnie Ziemi. Było ono reprezentacją kompasu politycznego w skali "
+"1024x1024 z 5s cooldown'em i 60s limitem. Aktywowane było ono 11 Maja i "
+"utrzymywało swoją aktywność przez miesiąc dopóki nie zostało wyłączone 30 "
+"listopada."
 
 #: src/components/windows/Archive.jsx:22
 msgid ""
@@ -946,71 +968,75 @@ msgid ""
 "a screenshot from the timelapse results in a perfect 1:1 representation of "
 "how the canvas was at that time."
 msgstr ""
+"Zadecydowaliśmy aby zarchiwizować je jako timelapse z bezstratnie "
+"zakodowanym materiałem webm. Zrobienie screenshot'a timelapse'u skutkuje "
+"wykonaniem perfekcyjnej reprezentacji płótna w skali 1:1 jak wyglądał w "
+"tamtym czasie."
 
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
-msgstr ""
+msgstr "Zacznij czatować tutaj"
 
 #: src/components/windows/Chat.jsx:217
 msgid "Chat here"
-msgstr ""
+msgstr "Czatuj tutaj"
 
 #: src/components/windows/Chat.jsx:243
 msgid "You must be logged in to chat"
-msgstr ""
+msgstr "Musisz być zalogowany aby czatować"
 
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
-msgstr ""
+msgstr "ustawienia kanału"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
-msgstr ""
+msgstr "wysłano email z instrukcjami jak zresetować twoje hasło."
 
 #: src/components/windows/ForgotPassword.jsx:69
 msgid "Enter your mail address and we will send you a new password:"
-msgstr ""
+msgstr "Wpisz swój adres mailowy i wyślemy ci twoje nowe hasło:"
 
 #: src/components/Captcha.jsx:51
 #: src/components/Captcha.jsx:107
 msgid "Could not load captcha"
-msgstr ""
+msgstr "Nie byliśmy w stanie załadować Captch'y"
 
 #: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
-msgstr ""
+msgstr "Wypisz znaki znajdujące się na obrazie poniżej:"
 
 #: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
-msgstr ""
+msgstr "Wskazówka: Nie uwzględnia wielkości liter; I i l to te same znaki"
 
 #: src/components/Captcha.jsx:116
 msgid "Load Captcha"
-msgstr ""
+msgstr "Załaduj captch'e"
 
 #: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
-msgstr ""
+msgstr "Kliknij aby załadować Captch'e"
 
 #: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
-msgstr ""
+msgstr "Nie możesz rozczytać? załaduj ponownie:"
 
 #: src/components/Captcha.jsx:130
 msgid "Reload"
-msgstr ""
+msgstr "Załaduj ponownie"
 
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
-msgstr ""
+msgstr "Wpisz znaki"
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
-msgstr ""
+msgstr "otrzymaj IID"
 
 #: src/components/GetIID.jsx:53
 msgid "Copy"
-msgstr ""
+msgstr "Kopiuj"
 
 #: src/components/ChangeMail.jsx:91
 #: src/components/ChangeName.jsx:68
@@ -1018,11 +1044,11 @@ msgstr ""
 #: src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
 msgid "Save"
-msgstr ""
+msgstr "Zapisz"
 
 #: src/components/TemplateSettings.jsx:57
 msgid "Templates"
-msgstr ""
+msgstr "Szablony"
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
@@ -1031,165 +1057,170 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel "
 "on the template, should be one pixel on the canvas."
 msgstr ""
+"zmęczony spamowaniem jednym kolorem? Chcesz zamiast tego stworzyć art'a, ale "
+"musisz spoglądać za każdym razem na inny obraz? Szablony mogą ci z tym "
+"pomóc! Szablony mogą pokazać się jako przezroczysty obraz na płótnie przez "
+"które możesz rysować. Jeden pixel na szablonie powinien być jednym pixelem "
+"na płótnie."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Włącz nakładkę"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Pokaż szablony jako nakładki w grze."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels Zoom"
-msgstr ""
+msgstr "Małe pixele"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
-msgstr ""
+msgstr "Pokaż nakładkę jako indywidualne małe pixele."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Przezroczystość nakładki"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "przezroczystość nakładki w procentach."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "Prawy-Shift automatyczny kolor"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
+msgstr "Stawiaj pixele z nakładki klikając prawy-shift, zamiast z pamięci."
 
 #: src/components/TemplateSettings.jsx:149
 msgid "Cancel adding Template"
-msgstr ""
+msgstr "Anuluj dodawanie szablonu"
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Add Template"
-msgstr ""
+msgstr "dodaj szablon"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Eksportuj włączone szablony"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr ""
+msgstr "importuj szablony"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
-msgstr ""
+msgstr "Zaloguj się aby uzyskać dostęp do większej ilości funkcji i statystyk."
 
 #: src/components/LogInArea.jsx:21
 msgid "Login with Name or Mail:"
-msgstr ""
+msgstr "Zaloguj się Pseudonimem lub Mailem:"
 
 #: src/components/LogInArea.jsx:28
 msgid "I forgot my Password."
-msgstr ""
+msgstr "Zapomniałem swoje hasło."
 
 #: src/components/LogInArea.jsx:29
 msgid "or login with:"
-msgstr ""
+msgstr "Lub zaloguj się z:"
 
 #: src/components/LogInArea.jsx:70
 msgid "or register here:"
-msgstr ""
+msgstr "Lub zarejestruj się tutaj:"
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
-msgstr ""
+msgstr "rejestracja"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
-msgstr ""
+msgstr "Pixele postawione dzisiaj"
 
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
-msgstr ""
+msgstr "Dzienny Ranking"
 
 #: src/components/UserAreaContent.jsx:71
 msgid "Placed Pixels"
-msgstr ""
+msgstr "Postawione pixele"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
-msgstr ""
+msgstr "Podsumowana ranga"
 
 #: src/components/UserAreaContent.jsx:80
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr ""
+msgstr "Twoja nazwa to: ${ name }"
 
 #: src/components/UserAreaContent.jsx:86
 msgid "Log out"
-msgstr ""
+msgstr "Wyloguj się"
 
 #: src/components/UserAreaContent.jsx:93
 msgid "Change Username"
-msgstr ""
+msgstr "Zmień pseudonim"
 
 #: src/components/UserAreaContent.jsx:103
 msgid "Change Mail"
-msgstr ""
+msgstr "zmień adres mailowy"
 
 #: src/components/UserAreaContent.jsx:112
 msgid "Change Password"
-msgstr ""
+msgstr "zmień hasło"
 
 #: src/components/UserAreaContent.jsx:119
 msgid "Delete Account"
-msgstr ""
+msgstr "usuń konto"
 
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
-msgstr ""
+msgstr "ustawienia prywatności"
 
 #: src/components/Converter.jsx:191
 #: src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
-msgstr ""
+msgstr "Wybierz płótno"
 
 #: src/components/Converter.jsx:218
 msgid "Palette Download"
-msgstr ""
+msgstr "Pobierz palete kolorów"
 
 #: src/components/Converter.jsx:220
 #, javascript-format
 msgid "Palette for ${ gimpLink }"
-msgstr ""
+msgstr "Paleta kolorów ${ gimpLink }"
 
 #: src/components/Converter.jsx:241
 msgid "Image Converter"
-msgstr ""
+msgstr "Konwerter obrazów"
 
 #: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
-msgstr ""
+msgstr "Konwertuj obraz w kolory płótna"
 
 #: src/components/Converter.jsx:261
 msgid "Choose Strategy"
-msgstr ""
+msgstr "Wybierz strategie"
 
 #: src/components/Converter.jsx:299
 msgid "Serpentine"
-msgstr ""
+msgstr "Serpentynowy"
 
 #: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
-msgstr ""
+msgstr "minimalny dystans malowania"
 
 #: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
-msgstr ""
+msgstr "Wylicz jako GIMP"
 
 #: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
-msgstr ""
+msgstr "Wybierz tryb koloru"
 
 #: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
@@ -1202,65 +1233,67 @@ msgstr ""
 
 #: src/components/Converter.jsx:428
 msgid "Scale Image"
-msgstr ""
+msgstr "Wyskaluj obraz"
 
 #: src/components/Converter.jsx:439
 msgid "Width"
-msgstr ""
+msgstr "Szerokość"
 
 #: src/components/Converter.jsx:470
 msgid "Height"
-msgstr ""
+msgstr "Wysokość"
 
 #: src/components/Converter.jsx:509
 msgid "Keep Ratio"
-msgstr ""
+msgstr "Zachowaj proporcje"
 
 #: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
-msgstr ""
+msgstr "anti aliasing"
 
 #: src/components/Converter.jsx:536
 msgid "Reset"
-msgstr ""
+msgstr "Resetuj"
 
 #: src/components/Converter.jsx:554
 msgid "Download Template"
-msgstr ""
+msgstr "Pobierz szablon"
 
 #: src/components/Rankings.jsx:147
 msgid "Total"
-msgstr ""
+msgstr "w sumie"
 
 #: src/components/Rankings.jsx:156
 msgid "Today"
-msgstr ""
+msgstr "dzisiaj"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
-msgstr ""
+msgstr "wczoraj"
 
 #: src/components/Rankings.jsx:174
 msgid "Countries Today"
-msgstr ""
+msgstr "Państwa dzisiaj"
 
 #: src/components/Rankings.jsx:183
 msgid "Charts"
-msgstr ""
+msgstr "Wykresy"
 
 #: src/components/Rankings.jsx:201
 #: src/components/Rankings.jsx:210
 #: src/components/Rankings.jsx:219
 msgid "User"
-msgstr ""
+msgstr "Użytkownik"
 
 #: src/components/Rankings.jsx:226
 msgid "Country"
-msgstr ""
+msgstr "kraj"
 
 #: src/components/Rankings.jsx:286
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
+"Ranking aktualizuje się co 5 minut. Dzienne rankingi resetują się o północy "
+"czasu uniwersalnego."
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1312,11 +1345,11 @@ msgstr "Hasło musi być krótsze niż 60 znaków."
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
-msgstr ""
+msgstr "aktywni użytkownicy"
 
 #: src/components/CanvasItem.jsx:34
 msgid "Cooldown"
-msgstr ""
+msgstr "cooldown"
 
 #: src/components/CanvasItem.jsx:40
 msgid "Stacking till"
@@ -1328,19 +1361,19 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:44
 msgid "Yes"
-msgstr ""
+msgstr "Tak"
 
 #: src/components/CanvasItem.jsx:44
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
-msgstr ""
+msgstr "Wymagania"
 
 #: src/components/CanvasItem.jsx:53
 msgid "User Account"
-msgstr ""
+msgstr "Konto użytkownika"
 
 #: src/components/CanvasItem.jsx:55
 #, javascript-format
@@ -1355,15 +1388,15 @@ msgstr ""
 #: src/components/TemplateItem.jsx:60
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
-msgstr ""
+msgstr "Wymiary"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
-msgstr ""
+msgstr "Top 10 państw [pixeli na dzień]"
 
 #: src/core/chartSettings.js:127
 msgid "Players and Pixels per hour"
-msgstr ""
+msgstr "Gracze i pixele na godzine"
 
 #: src/core/chartSettings.js:221
 msgid "Top 10 Players [pxls / day]"
@@ -1381,40 +1414,40 @@ msgstr ""
 #: src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
-msgstr ""
+msgstr "Płótno"
 
 #: src/components/TemplateItem.jsx:57
 #: src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
-msgstr ""
+msgstr "Koordynaty"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Edytuj"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Idź do"
 
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
-msgstr ""
+msgstr "Wybierz plik"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Nazwa szablonu"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
-msgstr ""
+msgstr "usuń"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
-msgstr ""
+msgstr "Pseudonim lub adres mailowy"
 
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
-msgstr ""
+msgstr "zaloguj się"
 
 #: src/components/UserMessages.jsx:28
 msgid ""
