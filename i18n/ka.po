@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 19:37+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"PO-Revision-Date: 2024-03-11 09:27+0000\n"
+"Last-Translator: Giorgi <giorezo@icloud.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/ka/>\n"
 "Language: ka\n"
@@ -373,9 +373,8 @@ msgid "Enable Pencil"
 msgstr "ფანქრის ჩართვა"
 
 #: src/components/buttons/PencilButton.jsx:69
-#, fuzzy
 msgid "Disable Pencil"
-msgstr "თამაშის ხმების გამორთვა"
+msgstr "ფანქრის გამორთვა"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
@@ -402,7 +401,6 @@ msgid "Canvas Archive"
 msgstr "კანვასის არქივი"
 
 #: src/components/BanInfo.jsx:66
-#, fuzzy
 msgid "You are banned. You think it is unjustified? Check out the "
 msgstr "აკრძალული ხარ. თქვენ ფიქრობთ, რომ ეს გაუმართლებელია? შეამოწმეთ "
 
@@ -515,7 +513,7 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:68
 msgid "Have fun!"
-msgstr "Have fun!"
+msgstr "გაერთე!"
 
 #: src/components/windows/Help.jsx:70
 msgid "recommended"
@@ -643,7 +641,7 @@ msgstr ""
 "ხანგრძლივად შეეხეთ ამჟამინდელი რა ფერიც დევს კანვასზე მაგის ასარჩევად"
 
 #: src/components/windows/Help.jsx:100
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "დააჭირეთ ${ bindQ } და ${ bindE } ზევით და ქვევით ფრენისთვის"
 
@@ -696,7 +694,7 @@ msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "ტოპ10 ტილოს პალიტრის კრედიტი გადადის ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:119
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "ტოპ10 ტილოს პალიტრის კრედიტი გადადის ${ donendoLink }."
 
@@ -890,7 +888,6 @@ msgid "Retired Canvases (history only)"
 msgstr "პენსიონერი ჩარჩო (მხოლოდ ისტორია)"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who currently like a meme. Those canvases can get "
@@ -904,13 +901,12 @@ msgstr ""
 "ისინი ნამდვილად არ ღირს აქტიური შენარჩუნება, ჩვენ გადავწყვიტეთ მათი ამოღება."
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them in a proper way. Which is "
 "currently only one."
 msgstr ""
-"აქ ჩვენ ვაგროვებთ ამ კანვასებს, რათა დაარქივოთ ისინი სათანადო გზით (რომელიც "
-"ამჟამად მხოლოდ ერთია)."
+"აქ ჩვენ ვაგროვებთ ამ კანვასებს, რათა დავაარქივოთ ისინი სათანადო გზით ("
+"რომელიც ამჟამად მხოლოდ ერთია)."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -1009,9 +1005,8 @@ msgid "Save"
 msgstr "შენახვა"
 
 #: src/components/TemplateSettings.jsx:57
-#, fuzzy
 msgid "Templates"
-msgstr "ჩამოტვირთეთ შაბლონი"
+msgstr "თემფლეითები"
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
@@ -1020,10 +1015,10 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
-"დაიღალეთ ყოველთვის ერთი ფერის სპამვუთ? გინდათ არტი შექმნათ, მაგრამ "
+"დაიღალეთ ყოველთვის ერთი ფერის სპამვით? გინდათ არტი შექმნათ, მაგრამ "
 "პიქსელების დათვლა გჭირდებათ სხვა ფოტოდან? თემფლეითმა შეგიძლიათ დაგეხმაროთ "
-"მაგაში! თემფლეითებს შეუძლიათ გამოაჩინონ ოვერლეიდა მარტო თქვენ შეგიძლიათ მათ "
-"ზემოდან დახატვა. ერთი პიქსელი თემფლეითზე, უნდა იყოს ერთი პიქსელი ჩარჩოზე."
+"მაგაში! თემფლეითებს შეუძლიათ გამოაჩინონ ოვერლეი და მარტო თქვენ შეგიძლიათ მათ "
+"ზემოდან დახატვა. ერთი პიქსელი თემფლეითზე, უნდა იყოს ერთი პიქსელი კანვასზე."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
@@ -1058,14 +1053,12 @@ msgid "Place pixels from overlay on right-shift, instead of history."
 msgstr "დასვით პიქსელები ივერლეიდან მარჯვენა შიფტით, ისტორიის ნაცვლად."
 
 #: src/components/TemplateSettings.jsx:149
-#, fuzzy
 msgid "Cancel adding Template"
-msgstr "ჩამოტვირთეთ შაბლონი"
+msgstr "თემფლეითის დამატების შეწყვეტა"
 
 #: src/components/TemplateSettings.jsx:156
-#, fuzzy
 msgid "Add Template"
-msgstr "ჩამოტვირთეთ შაბლონი"
+msgstr "თემფლეითის დამატება"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
@@ -1100,7 +1093,6 @@ msgid "Register"
 msgstr "რეგისტრაცია"
 
 #: src/components/UserAreaContent.jsx:62
-#, fuzzy
 msgid "Today Placed Pixels"
 msgstr "დღეს დასმული პიქსელები"
 
@@ -1377,9 +1369,8 @@ msgid "Canvas"
 msgstr "კანვასი"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
 msgid "Coordinates"
-msgstr "არასწორი კორდინატები"
+msgstr "კორდინატები"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
@@ -1390,18 +1381,16 @@ msgid "Go to"
 msgstr "წასვლა"
 
 #: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
 msgid "Select File"
-msgstr "Აირჩიეთ ენა"
+msgstr "აირჩიეთ ფაილი"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
 msgstr "თემფლეითის სახელი"
 
 #: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
 msgid "Delete"
-msgstr "Ანგარიშის წაშლა"
+msgstr "წაშლა"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1441,7 +1430,7 @@ msgstr "ძველი პაროლი"
 
 #: src/components/ChangePassword.jsx:96
 msgid "New Password"
-msgstr "New Password"
+msgstr "ახალი პაროლი"
 
 #: src/components/ChangePassword.jsx:103
 msgid "Confirm New Password"
@@ -1552,9 +1541,8 @@ msgid "File"
 msgstr "ფაილი"
 
 #: src/components/ModCanvastools.jsx:273
-#, fuzzy
 msgid "Coordinates:"
-msgstr "არასწორი კორდინატები"
+msgstr "კორდინატები:"
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
@@ -1746,10 +1734,9 @@ msgid "Shift"
 msgstr "შიფტი"
 
 #: src/components/windows/Settings.jsx:108
-#, fuzzy
 msgctxt "keybinds"
 msgid "N"
-msgstr "არა"
+msgstr "ნ"
 
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"

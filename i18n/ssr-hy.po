@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 19:37+0000\n"
+"PO-Revision-Date: 2024-03-11 09:27+0000\n"
 "Last-Translator: Alen <alen.mankyan7@gmail.com>\n"
 "Language-Team: Armenian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/hy/>\n"
@@ -210,7 +210,7 @@ msgstr "Հաստատեք նոր գաղտնաբառը"
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr "Ներկայացնել"
+msgstr "Հաստատել"
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 20:10+0000\n"
+"PO-Revision-Date: 2024-03-11 09:27+0000\n"
 "Last-Translator: Alen <alen.mankyan7@gmail.com>\n"
 "Language-Team: Armenian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hy/>\n"
@@ -49,11 +49,11 @@ msgstr "Պատճենվա՛ծ է:"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr "Օվերլայը միացված է"
+msgstr "Overlay-ը միացված է"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr "Օվերլայը անջատված է"
+msgstr "Overlay-ը անջատված է"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
@@ -178,7 +178,7 @@ msgstr "Ընդմիջում"
 msgid ""
 "Didn't get an answer from pixelplanet. Maybe try to refresh if problem "
 "persists?"
-msgstr "Pixelplanet-ից պատասխան չկա։ Փորձեք թարմացնել էջը, եթե խնդիրը չվերանա:"
+msgstr "Pixelplanet-ը չի արձագանքում։ Փորձեք թարմացնել էջը, եթե խնդիրը չվերանա:"
 
 #: src/ui/PixelTransferController.js:169
 msgid "Weird"
@@ -354,7 +354,7 @@ msgstr "Անել սքրինշոթ"
 
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
-msgstr "Տեսնել գլոբուսը"
+msgstr "Մոլորակային տեսանկյուն"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -398,7 +398,7 @@ msgstr "Մոռացել եմ գաղտնաբառը"
 
 #: src/components/windows/index.js:18
 msgid "Chat"
-msgstr "Զրուցել"
+msgstr "Չատ"
 
 #: src/components/windows/index.js:20
 msgid "Canvas Archive"
@@ -439,15 +439,15 @@ msgstr "Ձեր արգելափակումը լռանում է "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr " ժամանակից "
+msgstr " , որը "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
-msgstr "Արդելախակումից հանած"
+msgstr "Արգելափակումից հանած"
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."
-msgstr "Հիմա երբ արդեն դու տեսար այս նամակը, դու այլևս արդելափակման տակ չես:"
+msgstr "Հիմա, երբ արդեն դու տեսար այս նամակը, դու այլևս արգելափակման տակ չես:"
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
@@ -463,7 +463,7 @@ msgstr "Դուք ձեր captcha-ն ձախողեցիք"
 
 #: src/components/GlobalCaptcha.jsx:53
 msgid "No or invalid captcha text"
-msgstr "Սխալ կամ բացակայող captcha-ի տեքս"
+msgstr "Սխալ կամ բացակայող captcha-ի տեքստ"
 
 #: src/components/GlobalCaptcha.jsx:56
 msgid "No captcha id given"
@@ -498,21 +498,20 @@ msgid ""
 "pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
 "and 7s on already set pixels."
 msgstr ""
-"Մեր հիմնական կտավը հսկայական աշխարհի քարտեզ է, որը կարող եք տեղադրել "
-"ցանկացած վայրում, բայց դուք պետք է սպասեք պիքսելների միջև որոշակի "
+"Մեր հիմնական կտավը հսկայական աշխարհի քարտեզ է, որտեղ կարող եք տեղադրել "
+"ցանկացած վայրում, բայց դուք պետք է սպասեք միչև պիքսելների որոշակի "
 "վերականգնման ժամանակի: Վերականգնման ժամանակը և պահանջները կարող եք ստուգել "
 "կտավի ընտրության ընտրացանկում (վերևում գտնվող գլոբուսի կոճակը): Որոշ կտավներ "
-"ունեն տարբեր վերականգնման ժամանակ ՝ օգտագործողի կողմից սահմանված պիքսելները "
-"փոխարինելու համար, քան դրանք տեղադրելու համար չսահմանված պիքսելում: այսինքն ՝"
-" 4s / 7s նշանակում է 4s նոր պիքսելների վրա և 7s արդեն տեղադրված պիքսելների "
-"վրա:"
+"ունեն տարբեր վերականգնման ժամանակ արդեն ներկած և չներկաց հատվածների համար: "
+"Այսինքն օրինակ՝ 4s / 7s նշանակում է 4s ազատ(չտեղադրված/չզբաղեցրած) "
+"պիքսելների վրա և 7s արդեն տեղադրված պիքսելների վրա:"
 
 #: src/components/windows/Help.jsx:67
 msgid ""
 "Higher zoomlevels take some time to update, the 3D globe gets updated at "
 "least once per day."
 msgstr ""
-"Ավելի ուժեղ մեծացնելու մակարդակի թարմացումը որոշ ժամանակ է պահանջում, և 3D "
+"Ավելի շատ մեծացնելու մակարդակի թարմացումը որոշ ժամանակ է պահանջում, 3D "
 "գլոբուսը թարմացվում է օրական առնվազն մեկ անգամ:"
 
 #: src/components/windows/Help.jsx:68
@@ -542,7 +541,7 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
-msgstr "Արգելվա՞ծ եք: Հայտնաբերվե՞լ եք Proxy օգդագործելու՞ց:"
+msgstr "Արգելափակվա՞ծ եք: Հայտնաբերվե՞լ եք Proxy օգտագործելու՞ց:"
 
 #: src/components/windows/Help.jsx:76
 #, javascript-format
@@ -552,7 +551,7 @@ msgid ""
 "${ mailLink } and include the following IID:"
 msgstr ""
 "Եթե դուք հայնաբերվել եք proxy օգտագործելուց, սակայն դուք այն չեք օգտագորխել, "
-"և կարծում եք որ դուք անհիմն եք արգելափակվել, կխնդրեինք գնալ մեր ${ "
+"և կարծում եք որ դուք անհիմն եք արգելափակվել, կխնդրենք գնալ մեր ${ "
 "guildedLink } կամ մեզ ուղարկել էլեկտորնային հաղորդագրություն ${ mailLink } "
 "էլ. փոստին, ներառելով ձեր IID-ն."
 
@@ -562,7 +561,7 @@ msgstr "Վերահսկում"
 
 #: src/components/windows/Help.jsx:81
 msgid "Click a color in palette to select it"
-msgstr "Կտտացրեք մի գույն ներկապնակի վրա այն ընտրելու համար"
+msgstr "Կտտացրեք մի գույնի ներկապնակի վրա, այն ընտրելու համար"
 
 #: src/components/windows/Help.jsx:82
 #, javascript-format
@@ -641,8 +640,8 @@ msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
 "select current hovering color"
 msgstr ""
-"Կտտացրեք ${ mouseSymbol } մկնիկի միջին կոճակին կամ ${ touchSymbol } երկարատև "
-"հպմանը ՝ սավառնելու ընթացիկ գույնը ընտրելու համար"
+"Սեղմեք ${ mouseSymbol } մկնիկի միջին կոճակին կամ երկար սեղմած պահեք ${ "
+"touchSymbol } -ը՝ ընթացիկ գույնը ընտրելու համար"
 
 #: src/components/windows/Help.jsx:100
 #, javascript-format
@@ -682,13 +681,13 @@ msgid ""
 "We thanks those artists very much, they offered their palettes to the public "
 "on"
 msgstr ""
-"Մենք շնորհակալություն ենք հայտնում այն առտիստներին, որոնք առաջարկեցին իրենց "
-"գունապնակը բացահայտ միացված մնալուն"
+"Մենք շնորհակալություն ենք հայտնում այն արտիստներին, որոնք առաջարկեցին իրենց "
+"գունապնակը բացահայտ միացված լինել"
 
 #: src/components/windows/Help.jsx:113
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
-msgstr "Լուսնի ներկապնակի վարկը տրամադրվում է ${ starhouseLink }:"
+msgstr "Լուսնի ներկապնակի տրամադրում է ${ starhouseLink }:"
 
 #: src/components/windows/Help.jsx:116
 #, javascript-format
@@ -706,19 +705,19 @@ msgstr "Ցույց տալ ցանցը"
 
 #: src/components/windows/Settings.jsx:96
 msgid "Turn on grid to highlight pixel borders."
-msgstr "Միացրեք ցանցը ՝ պիքսելների սահմանները լուսաբանելու համար:"
+msgstr "Միացրեք ցանցը ՝ պիքսելների սահմանները ընդգծելու համար:"
 
 #: src/components/windows/Settings.jsx:99
 msgid "Show Pixel Activity"
-msgstr "Ցույց տալ պիքսելների գործողությունը"
+msgstr "Ցույց տալ պիքսելների ակտիվությունը"
 
 #: src/components/windows/Settings.jsx:104
 msgid "Show circles where pixels are placed."
-msgstr "Ցույց է տալիս կարմիր օղակներ, այնտեղ որտեղ տեղադրվեց պիքսել:"
+msgstr "Ցույց տալ կարմիր օղակներ այնտեղ, որտեղ տեղադրվեց պիքսել:"
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr "Միշտ ցույց տալ տեղաշարժման կառավարումը"
+msgstr "Միշտ ցույց տալ տեղաշարժման կառավարման վահանակը"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
@@ -742,23 +741,25 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:131
 msgid "Enable chat notifications"
-msgstr "Միացնել զրույցի ծանուցումները"
+msgstr "Միացնել զրույցի(չատի) ծանուցումները"
 
 #: src/components/windows/Settings.jsx:135
 msgid "Play a sound when new chat messages arrive"
-msgstr "Հնչեք ձայն, երբ գալիս են նոր զրույցի հաղորդագրություններ"
+msgstr ""
+"Հնչեցնել ձայն, երբ զրույցում(չատում) ուղարկվում են նոր հաղորդագրություններ"
 
 #: src/components/windows/Settings.jsx:138
 msgid "Auto Zoom In"
-msgstr "Ավտոմատ մեծացում"
+msgstr "Ավտոմատ խոշորացում"
 
 #: src/components/windows/Settings.jsx:143
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
 msgstr ""
-"Կտավին թակելիս փիքսել տեղադրելու փոխարեն, խոշորացրեք այն, իսկ փոքրացումը "
-"փոքր է:"
+"Կտավին սեղմելիս ավտոմատ խոշորացնել այն, պիքսել դրվելու փոխարեն այն դեպքում, "
+"երբ կտավը նայում եք հեռվից, որպեսզի լինի բավականաչափ հեռավորություն պիքսել "
+"դնելու համար:"
 
 #: src/components/windows/Settings.jsx:146
 msgid "Compact Palette"
@@ -766,15 +767,16 @@ msgstr "Կոմպակտ ներկապնակ"
 
 #: src/components/windows/Settings.jsx:151
 msgid "Display Palette in a compact form that takes less screen space."
-msgstr "դարցնել պալիտրան կոմպակտ ձևով, որը էկրանի ավելի քիչ տարածք է խլում:"
+msgstr ""
+"Ցուցադրել ներկապնակը կոմպակտ ձևով, որը էկրանի ավելի քիչ տարածք է զբաղեցնում:"
 
 #: src/components/windows/Settings.jsx:154
 msgid "Potato Mode"
-msgstr "Թույլ համակարգիչի ռեժիմ"
+msgstr "Թույլ համակարգչի ռեժիմ"
 
 #: src/components/windows/Settings.jsx:158
 msgid "For when you are playing on a potato."
-msgstr "Նրա համար, երբ թույլ համակարգիչով եք խաղում:"
+msgstr "Նրա համար, երբ թույլ համակարգչով եք խաղում:"
 
 #: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
 msgid "Light Grid"
@@ -782,7 +784,7 @@ msgstr "Լուսավոր ցանց"
 
 #: src/components/windows/Settings.jsx:165
 msgid "Show Grid in white instead of black."
-msgstr "Ցույց տալ սևի փոխարեն սպիտակ ցանց:"
+msgstr "Ցույց տալ սպիտակ ցանց սևի փոխարեն:"
 
 #: src/components/windows/Settings.jsx:169
 msgid "Historical View"
@@ -790,7 +792,7 @@ msgstr "Պատմական տեսակետ"
 
 #: src/components/windows/Settings.jsx:174
 msgid "Check out past versions of the canvas."
-msgstr "Դիտեք կտավի անցած տարբերակները:"
+msgstr "Նայեք կտավի տեսքին անցյալ ժամանակի որևէ կետում:"
 
 #: src/components/windows/Settings.jsx:179
 msgid "Themes"
@@ -866,7 +868,7 @@ msgstr "Captcha"
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
-msgstr "Ներկայացնել"
+msgstr "Հաստատել"
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
@@ -1018,11 +1020,11 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
-"Հոգնե՞լ եք անընդհատ ինչ-որ գույն սպան անելուց: Ցանկանում եք ստեղծել "
+"Հոգնե՞լ եք անընդհատ ինչ-որ գույն սպամ անելուց: Ցանկանում եք ստեղծել "
 "պատկերներ, բայց ստիպված եք հաշվել պիքսելները մեկ այլ նկարի՞ց: Կաղապարները "
-"ձոզ կօգնեն այդ հարցում: Կաղապարները կարող են ցույց տալ պատկերը տվյալ "
-"վայրում, որոնց վրայով դուք կարող եք նկարել ձեր ցանկացած պատկերը: Կաղապարի 1 "
-"պիքսելը պետք է հավասար լինի կտավի 1 պիքսելին:"
+"ձեզ կօգնեն այդ հարցում: Կաղապարները կարող են ցույց տալ պատկերը ձեր նշած "
+"վայրում, որոնց վրայով դուք կարող եք նկարել ձեր ցանկացած պատկերը(դրանք "
+"կոչվում են overlay): Կաղապարի 1 պիքսելը պետք է հավասար լինի կտավի 1 պիքսելին:"
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
@@ -1385,7 +1387,7 @@ msgstr "Խմբագրել"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr "Գնալ"
+msgstr "Գնալ դեպի"
 
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
