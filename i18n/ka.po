@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 20:59+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
+"Last-Translator: Giorgi <giorezo@icloud.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/ka/>\n"
 "Language: ka\n"
@@ -121,7 +121,6 @@ msgid "Not allowed"
 msgstr "არ შეიძლება"
 
 #: src/ui/PixelTransferController.js:130
-#, fuzzy
 msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr "ჯერ ამ კანვასზე არ შეგიძლია შესვლა. უნდა დასვა მეტი პიქსელი"
 
@@ -159,7 +158,6 @@ msgid "Range Banned"
 msgstr "აკრძალული"
 
 #: src/ui/PixelTransferController.js:162
-#, fuzzy
 msgid "Your Internet Provider is banned from this game"
 msgstr "თქვენს ინტერნეტ პროვაიდერს აეკრძალა ამ თამაშის თამაში"
 
@@ -667,7 +665,6 @@ msgstr ""
 "შეეხეთ პიქსელის მოსაშორებლად"
 
 #: src/components/windows/Help.jsx:110
-#, fuzzy
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
@@ -860,7 +857,6 @@ msgid "Submit"
 msgstr "გაგზავნა"
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
@@ -881,7 +877,6 @@ msgid "Retired Canvases (history only)"
 msgstr "პენსიონერი ჩარჩო (მხოლოდ ისტორია)"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who like a currently popular meme. Those canvases can "
@@ -895,13 +890,12 @@ msgstr ""
 "ისინი ნამდვილად არ ღირს აქტიური შენარჩუნება, ჩვენ გადავწყვიტეთ მათი ამოღება."
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
-"აქ ჩვენ ვაგროვებთ ამ კანვასებს, რათა დავაარქივოთ ისინი სათანადო გზით "
-"(რომელიც ამჟამად მხოლოდ ერთია)."
+"აქ ჩვენ ვაგროვებთ ამ კანვასებს, რათა დავაარქივოთ ისინი სათანადო გზით ("
+"რომელიც ამჟამად მხოლოდ ერთია)."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -1059,9 +1053,9 @@ msgid ""
 "the template, should be one pixel on the canvas."
 msgstr ""
 "დაიღალეთ ყოველთვის ერთი ფერის სპამვით? გინდათ არტი შექმნათ, მაგრამ "
-"პიქსელების დათვლა გჭირდებათ სხვა ფოტოდან? თემფლეითმა შეგიძლიათ დაგეხმაროთ "
-"მაგაში! თემფლეითებს შეუძლიათ გამოაჩინონ ოვერლეი და მარტო თქვენ შეგიძლიათ მათ "
-"ზემოდან დახატვა. ერთი პიქსელი თემფლეითზე, უნდა იყოს ერთი პიქსელი კანვასზე."
+"პიქსელების დათვლა გჭირდებათ სხვა ფოტოდან?! თემფლეითები დაგეხმარებათ ამაში! "
+"თემფლეითებს შეუძლიათ გამოაჩინონ ოვერლეი და მარტო თქვენ შეგიძლიათ მათ ზემოდან "
+"დახატვა. ერთი პიქსელი თემფლეითზე, უნდა იყოს ერთი პიქსელი კანვასზე."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
@@ -1072,7 +1066,6 @@ msgid "Show templates as overlays ingame."
 msgstr "თემფლეითების ოვერლეად გამოჩენა თამაშში."
 
 #: src/components/TemplateSettings.jsx:73
-#, fuzzy
 msgid "Small Pixels When Zoomed"
 msgstr "პატარა პიქსელების ზუმი"
 
@@ -1397,7 +1390,6 @@ msgid "Passwords do not match."
 msgstr "Პაროლები არ ემთხვევა."
 
 #: src/components/ChangePassword.jsx:44
-#, fuzzy
 msgid "Password successfully changed."
 msgstr "პაროლი წარმატებით შეიცვალა."
 

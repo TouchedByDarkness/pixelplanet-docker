@@ -2,18 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
+"Last-Translator: Rasmus Emil Rattanamongkut Seitzberg "
+"<Rasmusemilseitz@outlook.dk>\n"
+"Language-Team: Danish <https://hosted.weblate.org/projects/pixelplanet/"
+"server/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-#, fuzzy
 msgid "You can not send chat messages while using a proxy"
 msgstr "Du kan ikke sende chat beskeder med proxy"
 
@@ -88,7 +89,7 @@ msgstr "Bruger eksisterer ikke i vores database :("
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr "Adgangskode blev succesfuldt ændret."
+msgstr "Ændrede Adgangskode succesfuldt."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
@@ -303,11 +304,11 @@ msgstr "Forkerte adgangskode!"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr ""
+msgstr "Stummet brugere kan ikke slette deres konto."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr ""
+msgstr "Stummet brugere kan ikke gøre dette."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -356,16 +357,15 @@ msgstr "Top10"
 
 #: src/canvasesDesc.js:28
 msgid "2bit"
-msgstr ""
+msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "Minikort"
 
 #: src/canvasesDesc.js:32
-#, fuzzy
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
-msgstr "Vores hovedkanvas, et kæmpe verdenskort. Placer hvor end du vil"
+msgstr "Vores hovedkanvas, et kæmpe verdenskort. Placer hvor end du vil!"
 
 #: src/canvasesDesc.js:33
 msgid ""
@@ -376,14 +376,12 @@ msgstr ""
 "hvis del af kunst) eller større end 1,5k x 1,5k pixels."
 
 #: src/canvasesDesc.js:34
-#, fuzzy
 msgid "Place Voxels on a 3D canvas with others."
 msgstr "Placer Voxels på et 3D kanvas med andre"
 
 #: src/canvasesDesc.js:35
-#, fuzzy
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
-msgstr "Specielt kanvas for at sprede viden om SARS-CoV2"
+msgstr "Specielt kanvas for at sprede viden om SARS-CoV2 (tag vaccinen)."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -407,13 +405,15 @@ msgstr ""
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr ""
+msgstr "Kun fire farver. Samme regler som måne!"
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
+"Erobrer land på et mindrere verdenskort med beskyttet hav. Deler nedkøling "
+"med kanvasset Jorden!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

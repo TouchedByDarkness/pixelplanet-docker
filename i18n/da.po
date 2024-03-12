@@ -2,15 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
+"Last-Translator: Rasmus Emil Rattanamongkut Seitzberg "
+"<Rasmusemilseitz@outlook.dk>\n"
+"Language-Team: Danish <https://hosted.weblate.org/projects/pixelplanet/"
+"client/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
@@ -43,37 +45,35 @@ msgstr "Ustummet Lyd"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-#, fuzzy
 msgid "Copied"
 msgstr "Kopieret!"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr ""
+msgstr "Overlejring på"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Overlejring af"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "Hemmelighed på"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Hemmelighed af"
 
 #: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
 msgstr "Timeout"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
-"Fik ikke et svar fra pixelplanet. Måske prøv at genindlæse hvis problemet "
+"Fik ikke et svar fra pixelplanet. Prøv måske at genindlæse hvis problemet "
 "vedvarer?"
 
 #: src/ui/PixelTransferController.js:104
@@ -123,16 +123,14 @@ msgid "Not allowed"
 msgstr "Ikke tilladt"
 
 #: src/ui/PixelTransferController.js:130
-#, fuzzy
 msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
-"Du kan ikke få adgang til dette kanvas endnu. Du har brug for at placere "
+"Du kan ikke få adgang til dette kanvas endnu, du har brug for at placere "
 "flere pixels"
 
 #: src/ui/PixelTransferController.js:133
-#, fuzzy
 msgid "Pixel protected"
-msgstr "Pixel beskyttet!"
+msgstr "Pixel beskyttet"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
@@ -164,9 +162,8 @@ msgid "Range Banned"
 msgstr "Rækkevide Forbudt"
 
 #: src/ui/PixelTransferController.js:162
-#, fuzzy
 msgid "Your Internet Provider is banned from this game"
-msgstr "Din Internetudbyder er forbudt for at spille dette spil"
+msgstr "Din internetudbyder er forbudt for at spille dette spil"
 
 #: src/ui/PixelTransferController.js:170
 msgid "Weird"
@@ -195,11 +192,11 @@ msgstr "Fejl :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "Kan ikke eksportere mere end 20 eller ingen skabelon!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr ""
+msgstr "Kan ikke importere mere end 20 eller ingen skabelon!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -358,28 +355,27 @@ msgstr "Åben"
 
 #: src/components/buttons/PencilButton.jsx:32
 msgid "History Pencil ON"
-msgstr ""
+msgstr "Historie-blyant på"
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr ""
+msgstr "Overlejring-blyant på"
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
-msgstr ""
+msgstr "Aktiver blyant"
 
 #: src/components/buttons/PencilButton.jsx:69
-#, fuzzy
 msgid "Disable Pencil"
 msgstr "Deaktiver Spil Lyde"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
-msgstr ""
+msgstr "Deaktivér historie-blyant"
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "Deaktivér overlejring-blyant"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -634,7 +630,7 @@ msgstr ""
 "at vælge farven af pixellen som du rør"
 
 #: src/components/windows/Help.jsx:100
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Tryk ${ bindQ } og ${ bindE } for at flyve op og ned"
 
@@ -666,7 +662,6 @@ msgstr ""
 "en pixel"
 
 #: src/components/windows/Help.jsx:110
-#, fuzzy
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
@@ -685,7 +680,7 @@ msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Kredit til paletten for Top10 Kanvasset går til ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:119
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Kredit til paletten for Top10 Kanvasset går til ${ donendoLink }."
 
@@ -707,11 +702,11 @@ msgstr "Vis cirkler hvor pixels er placeret."
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Vis altid bevægelseskontrollerne"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Vis altid bevægelseskontrollerne"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
@@ -858,16 +853,15 @@ msgid "Submit"
 msgstr "Indsend"
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Archived canvases can be accessed here:"
 msgstr ""
-"Vælg det kanvas som du vil gerne bruge.  Hvert kanvas er unikt og har "
-"forskellige paletter, nedkøling og krav.  Arkiv af lukkede kanvasser kan "
-"blive tilgået her:"
+"Vælg det kanvas som du vil gerne bruge. \n"
+"Hvert kanvas er unikt og har forskellige paletter, nedkøling og krav. \n"
+"Arkiv af lukkede kanvasser kan blive tilgået her:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -875,24 +869,22 @@ msgstr "Arkiv"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Gamle kanvasser (kun historie)"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who like a currently popular meme. Those canvases can "
 "become dull and inactive after a while, at which point there is no reason to "
 "keep them and we may decide to remove them."
 msgstr ""
-"Selvom vi plejer at ikke slette kanvasser, nogle kanvasser er started for "
+"Selvom vi plejer at ikke slette kanvasser, nogle kanvasser er begyndt for "
 "sjov, eller som en anmodning fra brugere som i øjeblikket kan lide et meme. "
 "De kanvasser kan blive kedelige efter noget tid og after uger med ingen stor "
-"forandring og hvis de virkelig ikke are værd at blive holdt aktive, vi "
+"forandring og hvis de virkelig ikke er værd at blive holdt aktive, vi "
 "beslutter at fjerne dem."
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
@@ -1047,9 +1039,8 @@ msgid "Save"
 msgstr "Gem"
 
 #: src/components/TemplateSettings.jsx:57
-#, fuzzy
 msgid "Templates"
-msgstr "Hent Template"
+msgstr "Skabeloner"
 
 #: src/components/TemplateSettings.jsx:61
 msgid ""
@@ -1058,56 +1049,58 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"Træt af at hele tiden skulle spamme én farve? Du vil lave kunst i stedet "
+"for, men du skal tælle pixels fra et andet billede? Skabeloner kan hjælpe "
+"dig med det! Skabeloner kan vises som overlejring og du kan tegne over dem. "
+"Én pixel på skabelonen, burde være én pixel på kanvasset."
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Aktivér overlejring"
 
 #: src/components/TemplateSettings.jsx:70
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Vis skabeloner som overlejring i spillet."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels When Zoomed"
-msgstr ""
+msgstr "Små pixels når zoomet"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
-msgstr ""
+msgstr "Vis overlejring som små individuelle pixels på høje zoomniveauer."
 
 #: src/components/TemplateSettings.jsx:85
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Overlejring gennemsigtighed"
 
 #: src/components/TemplateSettings.jsx:99
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Gennemsigtighed af Overlejring i procent."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "Højre-shift Auto-Farve"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
+msgstr "Placér pixels fra overlejring på højre-shift, i stedet for historie."
 
 #: src/components/TemplateSettings.jsx:149
-#, fuzzy
 msgid "Cancel adding Template"
-msgstr "Hent Template"
+msgstr "Annuller tilføjelsen af skabelon"
 
 #: src/components/TemplateSettings.jsx:156
-#, fuzzy
 msgid "Add Template"
-msgstr "Hent Template"
+msgstr "Tilføj skabelon"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Eksportér aktiverede skabeloner"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr ""
+msgstr "Importér skabeloner"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1342,31 +1335,28 @@ msgid "Canvas"
 msgstr "Kanvas"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
 msgid "Coordinates"
-msgstr "Ugyldige Koordinater"
+msgstr "Koordinater"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Redigér"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Gå til"
 
 #: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
 msgid "Select File"
-msgstr "Vælg Sprog"
+msgstr "Vælg fil"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Skabelon navn"
 
 #: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
 msgid "Delete"
-msgstr "Slet Konto"
+msgstr "Slet"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
@@ -1397,9 +1387,8 @@ msgid "Passwords do not match."
 msgstr "Adgangskoder matcher ikke."
 
 #: src/components/ChangePassword.jsx:44
-#, fuzzy
 msgid "Password successfully changed."
-msgstr "Ændrede Adgangskoder succesfuldt."
+msgstr "Ændrede Adgangskode succesfuldt."
 
 #: src/components/ChangePassword.jsx:88
 msgid "Old Password"
@@ -1495,6 +1484,8 @@ msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"Forvandl hver pixel i området til 0 (DU BURDE VIRKELIG IKKE GØRE DET PÅ HVER "
+"SOM HELST OMRÅDE SOM DER IKKE ALLEREDE ER FOR DET MESTE 0)"
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
@@ -1513,22 +1504,20 @@ msgid "File"
 msgstr "Fil"
 
 #: src/components/ModCanvastools.jsx:273
-#, fuzzy
 msgid "Coordinates:"
-msgstr "Ugyldige Koordinater"
+msgstr "Koordinater:"
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
 msgstr "Pixel Beskyttelse"
 
 #: src/components/ModCanvastools.jsx:321
-#, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
-"Set beskyttelse af områder         (hvis du får brug for mere finkornet "
-"kontrol,         brug beskyttelse med billedupload og alfalag)"
+"Set beskyttelse af områder (hvis du får brug for mere finkornet kontrol, "
+"brug beskyttelse med billedupload og alfalag)"
 
 #: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
 #: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
@@ -1728,10 +1717,9 @@ msgid "Shift"
 msgstr "Shift"
 
 #: src/components/windows/Settings.jsx:108
-#, fuzzy
 msgctxt "keybinds"
 msgid "N"
-msgstr "Nej"
+msgstr "N"
 
 #: src/components/windows/Settings.jsx:116
 msgctxt "keybinds"
@@ -1741,7 +1729,7 @@ msgstr "M"
 #: src/components/TemplateSettings.jsx:66
 msgctxt "keybinds"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 #~ msgstr "Fik ikke et svar fra pixelplanet. Måske prøv at genindlæse?"

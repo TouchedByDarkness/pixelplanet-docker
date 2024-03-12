@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 17:53+0000\n"
-"Last-Translator: N Transylvania <transylvanianationalist@gmail.com>\n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
+"Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/ro/>\n"
 "Language: ro\n"
@@ -88,7 +88,7 @@ msgstr "Utilizatorul nu există în datele noastre de bază :("
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr "Parola schimbată cu success."
+msgstr "Schimbat parola cu success."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 18:56+0000\n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
 "Last-Translator: Alen <alen.mankyan7@gmail.com>\n"
 "Language-Team: Armenian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/hy/>\n"
@@ -104,7 +104,7 @@ msgstr "Ամբողջ քարտեզի 3D գլոբուսը"
 
 #: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
-msgstr "Կրկնակի կտտացրեք գլոբուսին ՝ վերադառնալու համար:"
+msgstr "Կրկնակի կտտացրեք գնդին՝ հետ վերադառնալու համար:"
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."

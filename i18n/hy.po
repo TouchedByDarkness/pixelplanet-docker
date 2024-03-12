@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 16:27+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
+"Last-Translator: Alen <alen.mankyan7@gmail.com>\n"
 "Language-Team: Armenian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hy/>\n"
 "Language: hy\n"
@@ -525,7 +525,7 @@ msgid ""
 msgstr ""
 "Սկզբնական քարտեզագրման տվյալները, որոնք մենք օգտագործում ենք, ինչպես նաև "
 "OpenStreetMap-ի վերափոխված հատվածները կողմնորոշման համար, կարելի է ներբեռնել "
-"այստեղից mega.nz այստեղ` "
+"mega.nz այստեղ` "
 
 #: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
@@ -685,7 +685,7 @@ msgstr "Թոփ10-ի ներկապնակի վարկը տրամադրվում է ${
 #: src/components/windows/Help.jsx:119
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "2բիտի ներկապնակի վարկը տրամադրվում է ${ donendoLink }:"
+msgstr "2բիտի ներկապնակը տրամադրվում է ${ donendoLink } կողմից:"
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
@@ -868,7 +868,7 @@ msgstr ""
 "Ընտրեք կտավը, որը ցանկանում եք օգտագործել:\n"
 "Յուրաքանչյուր կտավ եզակի է և ունի տարբեր գունապնակներ, վերականգնման ժամանակ "
 "և պահանջներ:\n"
-"Հեռացված կտավների արխիվը կարելի է մուտք գործել այստեղ:"
+"Հեռացված կտավների արխիվ կարելի է մուտք գործել այստեղ."
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -887,9 +887,8 @@ msgid ""
 msgstr ""
 "Չնայած մենք հակված ենք կտավները չջնջելուն, որոշ կտավներ սկսվում են զվարճանքի "
 "համար կամ որպես խնդրանք այն օգտվողների կողմից, ովքեր ներկայումս սիրում են "
-"մեմեր: Այդ կտավները կարող են ձանձրալի լինել որոշ ժամանակ անց առանց լուրջ "
-"փոփոխություններ ունենալուց հետո, և եթե իսկապես այն չարժե լինել, մենք որոշում "
-"ենք հեռացնել դրանք:"
+"մեմեր: Այդ կտավները կարող են ձանձրալի լինել որոշ ժամանակ անց և իմաստ չի "
+"լինում դրանք պահելու, այդ պատճառով մենք որոշում ենք հեռացնել դրանց:"
 
 #: src/components/windows/Archive.jsx:10
 msgid ""
@@ -1330,7 +1329,7 @@ msgstr "Օգտագործողի հաշիվ"
 #: src/components/CanvasItem.jsx:55
 #, javascript-format
 msgid "and ${ canvas.req } Pixels set"
-msgstr "և ${ canvas.req } պիքսելը սահմանված է"
+msgstr "և առնվազն ${ canvas.req } պիքսել"
 
 #: src/components/CanvasItem.jsx:58
 msgid "Top 10 Daily Ranking"
@@ -1356,7 +1355,7 @@ msgstr "Խմբագրել"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr "Գնալ դեպի"
+msgstr "Գնալ"
 
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
@@ -1602,7 +1601,7 @@ msgstr "Անվավեր ընդմիջում"
 
 #: src/components/ModWatchtools.jsx:124
 msgid "Check who placed in an area"
-msgstr "Ստուգել թե որ է տեղադրել տվյալ վայրում"
+msgstr "Ստուգել, թե ով է տեղադրել տվյալ վայրում"
 
 #: src/components/ModWatchtools.jsx:144
 msgid "Interval"
@@ -1642,7 +1641,7 @@ msgstr "(0 = անվերջություն)"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
-msgstr "Թոփ 10 երկրներ [պիքսելներ / օր]"
+msgstr "Թոփ 10 երկրներ [պիքսել / օր]"
 
 #: src/core/chartSettings.js:127
 msgid "Players and Pixels per hour"
@@ -1650,11 +1649,11 @@ msgstr "Խաղացողներ և Պիքսելներ ժամում"
 
 #: src/core/chartSettings.js:221
 msgid "Top 10 Players [pxls / day]"
-msgstr "Թոփ 10 խաղացողներ [պիքսելներ/օր]"
+msgstr "Թոփ 10 խաղացողներ [պիքսել/օր]"
 
 #: src/core/chartSettings.js:294
 msgid "Countries by Pixels Today"
-msgstr "Երկրները իրենց այսօրվա տեղադրած պիքսելներով"
+msgstr "Երկրները, իրենց այսօրվա տեղադրած պիքսելներով"
 
 #: src/core/chartSettings.js:351
 msgid "Total Pixels placed per day"

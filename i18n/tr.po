@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 20:59+0000\n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
 "Last-Translator: TCr3 <tcreeper.earth@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/tr/>\n"
@@ -94,7 +94,7 @@ msgstr "x sınırların dışında"
 
 #: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
-msgstr "y sınıralrın dışında"
+msgstr "y sınırların dışında"
 
 #: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
@@ -106,7 +106,7 @@ msgstr "Yanlış Renk"
 
 #: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
-msgstr "Geçersiz renk seçildi"
+msgstr "Geçersiz renk seçili"
 
 #: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
@@ -203,7 +203,7 @@ msgstr "Tamam"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
-msgstr "Çok fazla istek gönderdiniz"
+msgstr "Çok fazla istekte bulundunuz"
 
 #: src/store/actions/fetch.js:59
 #, javascript-format
@@ -289,7 +289,7 @@ msgstr "Yükleniyor"
 
 #: src/components/HistorySelect.jsx:147
 msgid "Select Date above"
-msgstr "Tarih Seçiniz"
+msgstr "Tarih seçiniz"
 
 #: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
@@ -354,15 +354,15 @@ msgstr "Paleti Aç"
 
 #: src/components/buttons/PencilButton.jsx:32
 msgid "History Pencil ON"
-msgstr "Geçmiş Kalemi AKTİF"
+msgstr "Geçmiş Kalemi AÇIK"
 
 #: src/components/buttons/PencilButton.jsx:38
 msgid "Overlay Pencil ON"
-msgstr "Overlay Kalemi AKTİF"
+msgstr "Şablon Kalemi AÇIK"
 
 #: src/components/buttons/PencilButton.jsx:65
 msgid "Enable Pencil"
-msgstr "Kalemi Aktifleştir"
+msgstr "Kalemi Etkinleştir"
 
 #: src/components/buttons/PencilButton.jsx:69
 msgid "Disable Pencil"
@@ -702,25 +702,23 @@ msgstr "Izgarayı Göster"
 
 #: src/components/windows/Settings.jsx:96
 msgid "Turn on grid to highlight pixel borders."
-msgstr "Pikselleri ayrı olarak göstermek için aralarına sınır koyar."
+msgstr "Pikselleri ayırt edebilmeniz için piksel aralarına çizgi çizer."
 
 #: src/components/windows/Settings.jsx:99
 msgid "Show Pixel Activity"
-msgstr "Piksel Aktifliğini Gör"
+msgstr "Piksel Etkinliğini Göster"
 
 #: src/components/windows/Settings.jsx:104
 msgid "Show circles where pixels are placed."
-msgstr ""
-"Diğer oyuncuların piksel attığı yerde etrafa kırmızı bir daire yayılmasını "
-"sağlar."
+msgstr "Diğerlerini piksel attığı yerleri bir daire ile belli eder."
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr "Her Zaman Hareket Kontrollerini Göster"
+msgstr "Hareket Kontrollerini Her Zaman Göster"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr "Her zaman hareket tuşlarını göster"
+msgstr "Hareket tuşlarını sürekli olarak görünebilir tut"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
@@ -760,11 +758,11 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:146
 msgid "Compact Palette"
-msgstr "Sıkı Palet"
+msgstr "Sıklaştırılmış Palet"
 
 #: src/components/windows/Settings.jsx:151
 msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Ekranda daha fazla yer açmak için paleti dörtgen haline getirir."
+msgstr "Ekranda yer açmak için paleti küçük bir dörtgen haline getirir."
 
 #: src/components/windows/Settings.jsx:154
 msgid "Potato Mode"
@@ -772,7 +770,7 @@ msgstr "Patates Modu"
 
 #: src/components/windows/Settings.jsx:158
 msgid "For when you are playing on a potato."
-msgstr "Eğer patates ile oynuyorsanız seçin."
+msgstr "Bir patates üzerinden oynayanlar için."
 
 #: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
 msgid "Light Grid"
@@ -796,7 +794,7 @@ msgstr "Temalar"
 
 #: src/components/windows/Settings.jsx:184
 msgid "How pixelplanet should look like."
-msgstr "Oyunun temasını değiştirir."
+msgstr "Oyunun nasıl görüneceğidir."
 
 #: src/components/windows/Settings.jsx:191
 msgid "Select Language"
@@ -940,11 +938,11 @@ msgstr "Buradan sohbete katılın"
 
 #: src/components/windows/Chat.jsx:217
 msgid "Chat here"
-msgstr "Burada sohbet edilin"
+msgstr "Burada sohbet et"
 
 #: src/components/windows/Chat.jsx:243
 msgid "You must be logged in to chat"
-msgstr "Sohbete katılmak için giriş yapmalısınız"
+msgstr "Sohbete katılmak için giriş yapmanız gerekir"
 
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
@@ -962,7 +960,7 @@ msgstr ""
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
-msgstr "Captcha yüklenilemedi"
+msgstr "Captcha yüklenemedi"
 
 #: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
@@ -970,7 +968,7 @@ msgstr "Resimdeki karakterleri yazınız:"
 
 #: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
-msgstr "Tavsiye: Büyük/küçük harfe duyarlı değil. l ve I aynı"
+msgstr "İpucu: Büyük/küçük harfe duyarlı değil; l ve I aynı"
 
 #: src/components/Captcha.jsx:116
 msgid "Load Captcha"
@@ -978,7 +976,7 @@ msgstr "Captcha Yükle"
 
 #: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
-msgstr "Captcha Yüklemek İçin Tıklayınız"
+msgstr "Captcha'yı Yüklemek İçin Tıklayınız"
 
 #: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
@@ -1113,7 +1111,7 @@ msgstr "Şablon Ekle"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr "Etkinleştirilen şablonları dışa aktar"
+msgstr "Etkin olan şablonları dışa aktar"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
@@ -1149,7 +1147,7 @@ msgstr "Bugün Atılan Pikseller"
 
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
-msgstr "Günlük Sıralaman"
+msgstr "Günlük Sıralama"
 
 #: src/components/UserAreaContent.jsx:71
 msgid "Placed Pixels"
@@ -1157,12 +1155,12 @@ msgstr "Atılan Pikseller"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
-msgstr "Toplam Sıralaman"
+msgstr "Genel Sıralama"
 
 #: src/components/UserAreaContent.jsx:80
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr "Kullanıcı adın: ${ name }"
+msgstr "Kullanıcı adınız: ${ name }"
 
 #: src/components/UserAreaContent.jsx:86
 msgid "Log out"
@@ -1215,7 +1213,7 @@ msgstr "Strateji seç"
 
 #: src/components/Converter.jsx:299
 msgid "Serpentine"
-msgstr "Serpantine"
+msgstr "Serpantin"
 
 #: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
@@ -1223,7 +1221,7 @@ msgstr "Minimum Renk Farkı"
 
 #: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
-msgstr "GIMP Gibi Hesapla"
+msgstr "GIMP gibi hesapla"
 
 #: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
@@ -1235,7 +1233,7 @@ msgstr "Izgara ekle (eğer 1:1 bir şablon istiyorsanız bu seçeneği kapatın)
 
 #: src/components/Converter.jsx:383 src/components/Converter.jsx:399
 msgid "Offset"
-msgstr "Pay"
+msgstr "Ofset"
 
 #: src/components/Converter.jsx:428
 msgid "Scale Image"
@@ -1433,7 +1431,7 @@ msgstr ""
 
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
-msgstr "Yeni Posta"
+msgstr "Yeni E-posta"
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1449,7 +1447,7 @@ msgstr "Tüm Gizli Mesajları Engelle"
 
 #: src/components/SocialSettings.jsx:44
 msgid "Private"
-msgstr "Özel"
+msgstr "Gizli"
 
 #: src/components/SocialSettings.jsx:51
 msgid "Don't show me in global stats"
@@ -1465,27 +1463,28 @@ msgstr "Engellediğin kullanıcı yok"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
-msgstr "Tuvalde resim yarat."
+msgstr "Resmi tuvalde inşa et."
 
 #: src/components/ModCanvastools.jsx:171
 msgid "Build image and set it to protected."
-msgstr "Resim yarat ve koruma altına al."
+msgstr "Resim inşa et ve koruma altına al."
 
 #: src/components/ModCanvastools.jsx:174
 msgid "Build image, but reset cooldown to unset-pixel cd."
-msgstr "Resim yarat, ama piksel sürelerini sıfırla."
+msgstr ""
+"Resmi inşaa et, ama bekleme süresini dokunulmamış piksel süresi olacak "
+"şekilde ayarla."
 
 #: src/components/ModCanvastools.jsx:184
 msgid "Clean spare pixels that are surrounded by unset pixels"
-msgstr "Dokunulmamış pikseller ile kaplı olan spare pikselleri temizle"
+msgstr "Dokunulmamış pikseller ile çevrili yalnız pikselleri temizle"
 
 #: src/components/ModCanvastools.jsx:188
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
 msgstr ""
-"Dokunulmamış pikseller ile kaplı olan spare pikselleri temizle ve bire kadar "
-"pikselleri ayarla"
+"Dokunulmamış pikseller veya bir diğer piksel ile çevrili pikselleri temizle"
 
 #: src/components/ModCanvastools.jsx:192
 msgid ""
@@ -1493,9 +1492,9 @@ msgid ""
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
 "two cooldowns)!)"
 msgstr ""
-"Farklı bir renkteki veya dokunulmamış pikseller ile kaplı olan spare "
-"pikselleri temizle (FAZLA AGRESİF TUVALLERDE DOKUNULLMAMIŞ PİKSELLERE İZİN "
-"VERİR (iki tane bekleme süresi olanlardan)!)"
+"Farklı tek bir renkle veya dokunulmamış pikseller ile çevrili olan "
+"pikselleri temizle (DOKUNULLMAMIŞ PİKSELLERE İZİN VEREN TUVALLERDE FAZLA "
+"AGRESİFTİR (iki tür bekleme süresi olanlarda)!)"
 
 #: src/components/ModCanvastools.jsx:196
 msgid ""
@@ -1507,7 +1506,7 @@ msgstr ""
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
-msgstr "Statüler: Çalışmıyor"
+msgstr "Durum: Çalışmıyor"
 
 #: src/components/ModCanvastools.jsx:249
 msgid "Image Upload"
@@ -1549,11 +1548,11 @@ msgstr "Sağ alt köşe"
 
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
-msgstr "Tarihe rollbackle"
+msgstr "Tarihe geri al"
 
 #: src/components/ModCanvastools.jsx:411
 msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
-msgstr "Alanı belirli bir tuval tarihine rollbackle (00:00 UTC)"
+msgstr "Alanı tuvalin belirli bir tarihine geri al (UTC 00.00)"
 
 #: src/components/ModCanvastools.jsx:492
 msgid "Canvas Cleaner"
@@ -1569,15 +1568,15 @@ msgstr "Temizleyiciyi Durdur"
 
 #: src/components/Admintools.jsx:109
 msgid "IP Actions"
-msgstr "IP Hareketleri"
+msgstr "IP Eylemleri"
 
 #: src/components/Admintools.jsx:111
 msgid "Do stuff with IPs (one IP per line)"
-msgstr "IP'ler ile bir şeyler yap (her satıra bir IP)"
+msgstr "IP'ler ile bir şeyler yap (satır başı bir IP)"
 
 #: src/components/Admintools.jsx:158
 msgid "Manage Moderators"
-msgstr "Moderatörleri Düzenle"
+msgstr "Moderatörleri Yönet"
 
 #: src/components/Admintools.jsx:160
 msgid "Remove Moderator"
@@ -1589,11 +1588,11 @@ msgstr "Moderatör yok"
 
 #: src/components/Admintools.jsx:198
 msgid "Assign new Mod"
-msgstr "Yeni Bir Moderatör Al"
+msgstr "Yeni moderatör ata"
 
 #: src/components/Admintools.jsx:201
 msgid "Enter UserName of new Mod"
-msgstr "Yeni Moderatörün İsmini Gir"
+msgstr "Yeni moderatörün adını gir"
 
 #: src/components/Admintools.jsx:210
 msgid "User Name"
@@ -1605,7 +1604,7 @@ msgstr "Aralık geçersiz"
 
 #: src/components/ModWatchtools.jsx:124
 msgid "Check who placed in an area"
-msgstr "Bir alana kimlerin attığını gör"
+msgstr "Bir alanda kimlerin piksel attığını gör"
 
 #: src/components/ModWatchtools.jsx:144
 msgid "Interval"
@@ -1633,11 +1632,11 @@ msgstr "Bir IID girmelisin"
 
 #: src/components/ModIIDtools.jsx:53
 msgid "IID Actions"
-msgstr "IP Hareketleri"
+msgstr "IID Eylemleri"
 
 #: src/components/ModIIDtools.jsx:80
 msgid "Enter Reason"
-msgstr "Sebep Gir"
+msgstr "Nedeni Gir"
 
 #: src/components/ModIIDtools.jsx:97
 msgid "(0 = infinite)"

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 16:06+0000\n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
 "Last-Translator: TCr3 <tcreeper.earth@gmail.com>\n"
 "Language-Team: Turkish (Ottoman) <https://hosted.weblate.org/projects/"
 "pixelplanet/client/ota/>\n"
@@ -41,9 +41,8 @@ msgstr "صدا بارز ادیلدی"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
-#, fuzzy
 msgid "Copied"
-msgstr "!نسخه ادیلدی"
+msgstr "نسخه ادیلدی"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
@@ -74,14 +73,12 @@ msgstr ""
 "Pixelplanet bir cevâp irâd eylemedi. Sahife-i icticdad tecrübe eylediniz mi?"
 
 #: src/ui/PixelTransferController.js:104
-#, fuzzy
 msgid "Invalid Canvas"
-msgstr "Gayr-i Muteber Tuval"
+msgstr "غیر معتبر طوال"
 
 #: src/ui/PixelTransferController.js:105
-#, fuzzy
 msgid "This canvas doesn't exist"
-msgstr "Bu tuval a'dem"
+msgstr "بو طوال عدم"
 
 #: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
 #: src/ui/PixelTransferController.js:116
@@ -156,9 +153,8 @@ msgid "Just the Top10 of yesterday can place here"
 msgstr "Aşır-ı Aliyyü'l-a'lâ-ı dî bu tuvale resmedebilmektedir"
 
 #: src/ui/PixelTransferController.js:152
-#, fuzzy
 msgid "You are weird"
-msgstr "Acâyipsiniz"
+msgstr "عجایبسینیز"
 
 #: src/ui/PixelTransferController.js:154
 msgid ""

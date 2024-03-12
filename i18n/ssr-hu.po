@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-10 19:37+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
+"Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/hu/>\n"
 "Language: hu\n"
@@ -90,7 +90,7 @@ msgstr "A felhasználó nem létezik az adatbázisunkban :("
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr "Jelszó sikeresen megváltoztatva."
+msgstr "Sikeresen megváltoztattad a jelszót."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."

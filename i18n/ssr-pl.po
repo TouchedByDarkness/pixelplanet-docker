@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 17:23+0000\n"
-"Last-Translator: 5794 <Zemsterrr@gmail.com>\n"
+"PO-Revision-Date: 2024-03-12 19:57+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/pixelplanet/"
 "server/pl/>\n"
 "Language: pl\n"
@@ -12,7 +12,6 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-#, fuzzy
 msgid "You can not send chat messages while using a proxy"
 msgstr "Nie możesz wysyłać wiadomości na chat z proxy"
 
@@ -86,7 +85,6 @@ msgid "User doesn't exist in our database :("
 msgstr "Użytkownik nie istnieje w naszej bazie danych :("
 
 #: src/routes/reset_password.js:89
-#, fuzzy
 msgid "Password successfully changed."
 msgstr "Pomyślnie zmieniono hasło."
 
@@ -303,14 +301,12 @@ msgid "Incorrect password!"
 msgstr "Niepoprawne hasło!"
 
 #: src/routes/api/auth/delete_account.js:46
-#, fuzzy
 msgid "Muted Users can not delete their account."
-msgstr "Wyciszeni użytkownicy nie mogą usunąć swoich kont."
+msgstr "Wyciszeni Użytkownicy nie mogą usunąć swoich kont."
 
 #: src/routes/api/auth/change_mail.js:62
-#, fuzzy
 msgid "Muted Users can not do this."
-msgstr "Wyciszeni użytkownicy nie mogą tego zrobić."
+msgstr "Wyciszeni Użytkownicy nie mogą tego zrobić."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
