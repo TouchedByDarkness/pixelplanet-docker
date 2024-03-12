@@ -280,7 +280,7 @@ async function build() {
       console.log(
         'Skipping',
         badLangs.length,
-        'locals because of low completition:',
+        'locals because of low completion:',
         badLangs,
       );
     }
