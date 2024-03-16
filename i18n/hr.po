@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 22:53+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-03-15 20:29+0000\n"
+"Last-Translator: Antonio <srbomrz@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hr/>\n"
 "Language: hr\n"
@@ -69,13 +69,12 @@ msgid "Timeout"
 msgstr "Pauza"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
 "Nisam dobio odgovor od pixelplaneta. Možda pokušati osvježiti ako se problem "
-"nastavi?"
+"nastavi."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
@@ -133,7 +132,7 @@ msgstr "Pixel zaštićen"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
-msgstr "Моля докажете, че сте човекMolimo dokažite da ste čovjek"
+msgstr "Molimo dokažite da ste čovjek"
 
 #: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."

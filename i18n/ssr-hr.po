@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 22:53+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-03-15 20:29+0000\n"
+"Last-Translator: Antonio <srbomrz@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/hr/>\n"
 "Language: hr\n"
@@ -15,7 +15,6 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-#, fuzzy
 msgid "You can not send chat messages while using a proxy"
 msgstr "Ne možete slati chat poruke putem proxyja"
 
@@ -303,14 +302,12 @@ msgid "Incorrect password!"
 msgstr "Netočna lozinka!"
 
 #: src/routes/api/auth/delete_account.js:46
-#, fuzzy
 msgid "Muted Users can not delete their account."
-msgstr "Isključeni korisnici ne mogu izbrisati svoj račun."
+msgstr "Utišani korisnici ne mogu izbrisati svoj račun."
 
 #: src/routes/api/auth/change_mail.js:62
-#, fuzzy
 msgid "Muted Users can not do this."
-msgstr "Isključeni korisnici to ne mogu učiniti."
+msgstr "Utišani korisnici to ne mogu učiniti."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -366,9 +363,8 @@ msgid "Minimap"
 msgstr "Minimapa"
 
 #: src/canvasesDesc.js:32
-#, fuzzy
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
-msgstr "Naše glavno platno, ogromna karta svijeta. Stavite gdje god želite"
+msgstr "Naše glavno platno, ogromna karta svijeta. Stavljajte gdje god želite!"
 
 #: src/canvasesDesc.js:33
 msgid ""
@@ -379,14 +375,12 @@ msgstr ""
 "teksta (osim ako je dio slike) ili slike veće od 1,5k x 1,5k piksela."
 
 #: src/canvasesDesc.js:34
-#, fuzzy
 msgid "Place Voxels on a 3D canvas with others."
-msgstr "Postavite Voxele na 3D platno s drugima"
+msgstr "Postavite Voxele na 3D platno s drugima."
 
 #: src/canvasesDesc.js:35
-#, fuzzy
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
-msgstr "Posebno platno za širenje svijesti o SARS-CoV2"
+msgstr "Posebno platno za širenje svijesti o SARS-CoV2."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -409,18 +403,16 @@ msgstr ""
 "00:00 UTC."
 
 #: src/canvasesDesc.js:40
-#, fuzzy
 msgid "Only four colors. Same rules as moon!"
-msgstr "Samo četiri boje. Ista pravila kao i mjesec."
+msgstr "Samo četiri boje. Ista pravila kao i mjesec!"
 
 #: src/canvasesDesc.js:41
-#, fuzzy
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
 "Osvojite zemlju na manjoj zemlji sa zaštićenim oceanom. Dijeli hlađenje sa "
-"zemljanim platnom."
+"zemljanim platnom!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

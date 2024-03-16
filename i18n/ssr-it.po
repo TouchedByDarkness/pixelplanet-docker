@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 16:40+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"PO-Revision-Date: 2024-03-16 21:26+0000\n"
+"Last-Translator: PotRapid <pvprealminecraft@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/it/>\n"
 "Language: it\n"
@@ -304,11 +304,11 @@ msgstr "Password incorretta"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr ""
+msgstr "Un account mutato non puo essere eliminato"
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr ""
+msgstr "una persona mutata non puo fare quello che stai facendo, smettila!"
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -410,13 +410,15 @@ msgstr ""
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr ""
+msgstr "Solo quattro colori, Stesse regole del moon canvas!"
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
+"Colonizza la terra in un canvas piu piccolo con l'oceano protetto. Il "
+"cooldown è lo stesso del canvas normale!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

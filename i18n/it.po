@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 16:40+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"PO-Revision-Date: 2024-03-16 21:26+0000\n"
+"Last-Translator: PotRapid <pvprealminecraft@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/it/>\n"
 "Language: it\n"
@@ -50,11 +50,11 @@ msgstr "Copiato!"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr ""
+msgstr "Overlay in uso"
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Overlay Spento"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
 msgid "Easter Egg ON"
@@ -69,13 +69,12 @@ msgid "Timeout"
 msgstr "Connessione persa"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
-"Non è giunta una risposta da pixelplanet. Prova a ricaricare se il problema "
-"persiste"
+"Non è arrivata una risposta da pixelplanet. Prova a ricaricare se il "
+"problema persiste"
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
@@ -163,9 +162,8 @@ msgid "Range Banned"
 msgstr "Range Bannato"
 
 #: src/ui/PixelTransferController.js:162
-#, fuzzy
 msgid "Your Internet Provider is banned from this game"
-msgstr "Il tuo Internet Provider è bannato da questo gioco"
+msgstr "Il tuo Wifi è bannato da questo gioco"
 
 #: src/ui/PixelTransferController.js:170
 msgid "Weird"
@@ -369,9 +367,8 @@ msgid "Enable Pencil"
 msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:69
-#, fuzzy
 msgid "Disable Pencil"
-msgstr "DIsattiva tutti i suoni del Gioco"
+msgstr "DIsattiva la penna"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
@@ -710,7 +707,7 @@ msgstr "Mostra cerchi dove i pixel sono piazzati"
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Mostra sempre i movimenti controllati"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
@@ -879,7 +876,7 @@ msgstr "Archivio"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Canvas Archiviato (solo per la storia)"
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy

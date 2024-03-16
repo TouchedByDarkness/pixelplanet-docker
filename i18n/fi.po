@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 18:56+0000\n"
+"PO-Revision-Date: 2024-03-14 19:38+0000\n"
 "Last-Translator: Onni <onni.ma.jaakkola@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/fi/>\n"
@@ -394,11 +394,11 @@ msgstr "Kehysarkisto"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
-msgstr "Sinulla kesti liian kauan, yritä uudelleen."
+msgstr "Sinulla kesti liian kauan, kokeile uudestaan."
 
 #: src/components/GlobalCaptcha.jsx:50
 msgid "You failed your captcha"
-msgstr "Epäonnistuit Captchassa"
+msgstr "Sinä epäonnistuit captchassasi"
 
 #: src/components/GlobalCaptcha.jsx:53
 msgid "No or invalid captcha text"
@@ -410,7 +410,7 @@ msgstr "Ei Captcha-ID:tä annettu"
 
 #: src/components/GlobalCaptcha.jsx:59
 msgid "Unknown Captcha Error"
-msgstr "Tuntematon virhe Captchassa"
+msgstr "Tuntematon Captcha Virhe"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58

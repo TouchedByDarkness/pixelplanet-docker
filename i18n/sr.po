@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 16:46+0000\n"
-"Last-Translator: Маткеез <matejaintro12@gmail.com>\n"
+"PO-Revision-Date: 2024-03-13 17:22+0000\n"
+"Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: Serbian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/sr/>\n"
 "Language: sr\n"
@@ -46,7 +46,7 @@ msgstr "Audio nije nemo"
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
 msgid "Copied"
-msgstr "Kopirano!"
+msgstr "Kopirano"
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"

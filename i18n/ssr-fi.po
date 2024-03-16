@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 16:06+0000\n"
+"PO-Revision-Date: 2024-03-14 19:38+0000\n"
 "Last-Translator: Onni <onni.ma.jaakkola@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/pixelplanet/"
 "server/fi/>\n"
@@ -243,19 +243,19 @@ msgstr "Sähköposti on jo käytössä"
 
 #: src/routes/api/auth/register.js:36
 msgid "Username already in use."
-msgstr ""
+msgstr "Käyttäjänimi on jo käytössä."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr ""
+msgstr "Sinulla kesti liian kauan, kokeile uudestaan."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
-msgstr ""
+msgstr "Sinä epäonnistuit captchassasi"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"
-msgstr ""
+msgstr "Tuntematon Captcha Virhe"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
