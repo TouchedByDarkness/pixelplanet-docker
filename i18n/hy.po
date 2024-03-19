@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-12 19:57+0000\n"
+"PO-Revision-Date: 2024-03-18 19:50+0000\n"
 "Last-Translator: Alen <alen.mankyan7@gmail.com>\n"
 "Language-Team: Armenian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hy/>\n"
@@ -1277,7 +1277,7 @@ msgstr "Երկրները այսօր"
 
 #: src/components/Rankings.jsx:183
 msgid "Charts"
-msgstr "Ստատիստիկայի ծապատկերներ"
+msgstr "Ստատիստիկաների գծապատկերներ"
 
 #: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
 #: src/components/Rankings.jsx:219

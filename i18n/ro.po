@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-12 19:57+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-03-19 20:48+0000\n"
+"Last-Translator: Negru Berg <denisfagetan975@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/ro/>\n"
 "Language: ro\n"
@@ -69,13 +69,12 @@ msgid "Timeout"
 msgstr "Pauză"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
 "Nu am primit niciun răspuns de la pixelplanet. Încearcă să dai refresh daca "
-"problema persistă?"
+"problema persistă."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"

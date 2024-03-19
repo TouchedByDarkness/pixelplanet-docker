@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-12 19:57+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-03-19 23:04+0000\n"
+"Last-Translator: Negru Berg <denisfagetan975@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/ro/>\n"
 "Language: ro\n"
@@ -15,7 +15,6 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-#, fuzzy
 msgid "You can not send chat messages while using a proxy"
 msgstr "Nu poți trimite mesaje în chat folosind proxy"
 
@@ -302,12 +301,10 @@ msgid "Incorrect password!"
 msgstr "Parolă incorrectă!"
 
 #: src/routes/api/auth/delete_account.js:46
-#, fuzzy
 msgid "Muted Users can not delete their account."
 msgstr "Utilizator desconectat nu își poate șterge contul."
 
 #: src/routes/api/auth/change_mail.js:62
-#, fuzzy
 msgid "Muted Users can not do this."
 msgstr "Utilizatorul desconectat nu poate face asta."
 
@@ -365,10 +362,9 @@ msgid "Minimap"
 msgstr "Minimap"
 
 #: src/canvasesDesc.js:32
-#, fuzzy
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
-"Convasul nostru principal, o hartă imensă a lumii. Pune oriunde dorești"
+"Convasul nostru principal, o hartă imensă a lumii. Pune oriunde dorești!"
 
 #: src/canvasesDesc.js:33
 msgid ""
@@ -380,14 +376,12 @@ msgstr ""
 "1,5k pixeli."
 
 #: src/canvasesDesc.js:34
-#, fuzzy
 msgid "Place Voxels on a 3D canvas with others."
-msgstr "Pune pixeli colorați pe un canvas 3D cu alți jucători"
+msgstr "Pune pixeli colorați pe un canvas 3D cu alți jucători."
 
 #: src/canvasesDesc.js:35
-#, fuzzy
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
-msgstr "Convas special pentru a răspândi conștientizarea SARS-CoV2"
+msgstr "Convas special pentru a răspândi conștientizarea SARS-CoV2."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -410,18 +404,16 @@ msgstr ""
 "zilnice de clasare la 00:00 UTC."
 
 #: src/canvasesDesc.js:40
-#, fuzzy
 msgid "Only four colors. Same rules as moon!"
-msgstr "Numai patru culoare. Același reguli ca pe Lună."
+msgstr "Numai patru culoare. Același reguli ca pe Lună!"
 
 #: src/canvasesDesc.js:41
-#, fuzzy
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
 "Cucerește pământ pe un pământ mai mic cu ocean protejat. Cooldown potrivit "
-"cu Convasul pământului."
+"cu Convasul pământului!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format
