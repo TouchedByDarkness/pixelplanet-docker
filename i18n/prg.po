@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-19 23:04+0000\n"
+"PO-Revision-Date: 2024-03-21 04:54+0000\n"
 "Last-Translator: Negru Berg <denisfagetan975@gmail.com>\n"
 "Language-Team: Prussian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/prg/>\n"
@@ -405,11 +405,11 @@ msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
-msgstr ""
+msgstr "jūs izlaīdja pēr tūlan kērdā, bānda etkūmps."
 
 #: src/components/GlobalCaptcha.jsx:50
 msgid "You failed your captcha"
-msgstr ""
+msgstr "jūs praspīli twajs captcha"
 
 #: src/components/GlobalCaptcha.jsx:53
 msgid "No or invalid captcha text"
@@ -421,7 +421,7 @@ msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:59
 msgid "Unknown Captcha Error"
-msgstr ""
+msgstr "Niwaīsts Captcha Error"
 
 #: src/components/BanInfo.jsx:80
 #: src/components/Captcha.jsx:79
@@ -847,7 +847,7 @@ msgstr ""
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
-msgstr ""
+msgstr "paklusta"
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
@@ -981,27 +981,27 @@ msgstr "emmens ni mazzi bēi pāusts."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr ""
+msgstr "emmens papalla būtwei mazzais 2 dabbas ilgai"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr ""
+msgstr "emmens papalla būtwei mazzais nikāi 26 dabbas"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr ""
+msgstr "emmens turri inwalīdi dabbas tēt dīgi @,/,\\ adder #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr ""
+msgstr "ni kliptaswīrds dāts."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr ""
+msgstr "kliptaswīrds papalla ast mazzais 6 dabbas ilgai."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr ""
+msgstr "kliptaswīrds papalla ast mazzais nikāi 60 dabbas."
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
@@ -1375,11 +1375,11 @@ msgstr ""
 
 #: src/components/ChangePassword.jsx:96
 msgid "New Password"
-msgstr ""
+msgstr "nāuns kliptaswīrds"
 
 #: src/components/ChangePassword.jsx:103
 msgid "Confirm New Password"
-msgstr ""
+msgstr "padrūktina nāuns kliptaswīrds"
 
 #: src/components/ChangeName.jsx:64
 msgid "New Username"

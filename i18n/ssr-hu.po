@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-12 19:57+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-03-21 04:54+0000\n"
+"Last-Translator: Antonio <srbomrz@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/hu/>\n"
 "Language: hu\n"
@@ -14,7 +14,6 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-#, fuzzy
 msgid "You can not send chat messages while using a proxy"
 msgstr "Proxyval nem küldhetsz üzenetet"
 
@@ -70,7 +69,7 @@ msgstr "Kérjük, használd a nemzetközi csatornát"
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
-msgstr "Helyedre!"
+msgstr "Helyedre."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
@@ -303,12 +302,10 @@ msgid "Incorrect password!"
 msgstr "Hibás jelszó!"
 
 #: src/routes/api/auth/delete_account.js:46
-#, fuzzy
 msgid "Muted Users can not delete their account."
 msgstr "A némított felhasználók nem törölhetik fiókjukat."
 
 #: src/routes/api/auth/change_mail.js:62
-#, fuzzy
 msgid "Muted Users can not do this."
 msgstr "A némított felhasználók nem tehetik meg ezt."
 
@@ -366,9 +363,8 @@ msgid "Minimap"
 msgstr "Kistérkép"
 
 #: src/canvasesDesc.js:32
-#, fuzzy
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
-msgstr "A fő vásznunk egy hatalmas világtérkép. Azt rajzolsz rá, amit akarsz"
+msgstr "A fő vásznunk egy hatalmas világtérkép. Azt rajzolsz rá, amit akarsz!"
 
 #: src/canvasesDesc.js:33
 msgid ""
@@ -376,18 +372,16 @@ msgid ""
 "or art larger than 1.5k x 1.5k pixels."
 msgstr ""
 "Hold vászon. Biztonságos terület a művészet számára. Tiltott a zászló vagy "
-"nagyméretű szöveg (kivéve, ha az az alkotás része) vagy 1,5k x 1,5k pixelnél "
+"nagyméretű szöveg (kivéve, ha az alkotás része) vagy 1,5k x 1,5k pixelnél "
 "nagyobb rajz."
 
 #: src/canvasesDesc.js:34
-#, fuzzy
 msgid "Place Voxels on a 3D canvas with others."
-msgstr "Helyezz el voxeleket egy 3D-s vászonra, másokkal együtt"
+msgstr "Helyezz el voxeleket egy 3D-s vászonra, másokkal együtt."
 
 #: src/canvasesDesc.js:35
-#, fuzzy
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
-msgstr "Speciális vászon a SARS-CoV2 terjesztésére"
+msgstr "Speciális vászon a SARS-CoV2 terjesztésére."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -410,18 +404,16 @@ msgstr ""
 "00:00-kor frissül."
 
 #: src/canvasesDesc.js:40
-#, fuzzy
 msgid "Only four colors. Same rules as moon!"
-msgstr "Csak négy szín. Ugyanazok a szabályok, mint a holdnál."
+msgstr "Csak négy szín. Ugyanazok a szabályok, mint a holdnál!"
 
 #: src/canvasesDesc.js:41
-#, fuzzy
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
 "Hódítsd meg a területet egy kisebb földön, védett óceánnal. Közös töltési "
-"idővel rendelkezik a földvászonnal."
+"idővel rendelkezik a földvászonnal!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

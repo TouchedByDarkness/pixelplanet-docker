@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 16:27+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-03-21 18:40+0000\n"
+"Last-Translator: Luno <lunovitaredux@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/pixelplanet/"
 "client/de/>\n"
 "Language: de\n"
@@ -110,7 +110,7 @@ msgstr "Ungültige Farbe ausgewählt"
 
 #: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
-msgstr "Nur ür registrierte Spieler"
+msgstr "Nur für registrierte Spieler"
 
 #: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
@@ -125,7 +125,7 @@ msgstr "Nicht erlaubt"
 msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
 "Du kannst diese Leinwand noch nicht verwenden, weil dein Pixel Punktestand "
-"zu gering ist"
+"zu gering ist. Platziere mehr Pixel"
 
 #: src/ui/PixelTransferController.js:133
 msgid "Pixel protected"
@@ -133,7 +133,7 @@ msgstr "Pixel beschützt"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
-msgstr "Bitte beweiße dass du ein Mench bist"
+msgstr "Bitte beweise, dass du ein Mensch bist"
 
 #: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
@@ -151,7 +151,7 @@ msgstr "Du bist seltsam"
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
-"Server wurde von deinen Pixeln verwirrt. Spielst du auf mehreren Geräten?"
+"Der Server wurde von deinen Pixeln verwirrt. Spielst du auf mehreren Geräten?"
 
 #: src/ui/PixelTransferController.js:157
 msgid "Banned"
@@ -171,7 +171,7 @@ msgstr "Komisch"
 
 #: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
-msgstr "Konnte ein Pixel setzen"
+msgstr "Konnte kein Pixel setzen"
 
 #: src/ui/PixelTransferController.js:176
 #, javascript-format
@@ -219,7 +219,7 @@ msgstr "Verbindungsfehler ${ code } :("
 #: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
 msgstr ""
-"Kann nich zum Server verbinden, bitte versuche es später noch einmal :("
+"Kann nicht zum Server verbinden, bitte versuche es später noch einmal :("
 
 #: src/store/actions/fetch.js:151 src/store/actions/fetch.js:170
 #: src/store/actions/fetch.js:189 src/store/actions/fetch.js:208
@@ -245,7 +245,7 @@ msgstr "hat dich erwähnt"
 
 #: src/store/middleware/notifications.js:58
 msgid "You have new messages in chat"
-msgstr "Du hast neue Nachrichten im Chat"
+msgstr "Du hast neue Nachrichten in der Kommentarsektion"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
 #: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
@@ -271,11 +271,11 @@ msgstr "Leinwand auswahl"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Close Chat"
-msgstr "Schließe Chat"
+msgstr "Schließe Kommentarsektion"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Open Chat"
-msgstr "Öffne Chat"
+msgstr "Öffne Kommentarsektion"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Close Menu"
@@ -287,7 +287,7 @@ msgstr "Öffne Menü"
 
 #: src/components/HistorySelect.jsx:146
 msgid "Loading"
-msgstr "Lade"
+msgstr "Lädt"
 
 #: src/components/HistorySelect.jsx:147
 msgid "Select Date above"
@@ -388,7 +388,7 @@ msgstr "Passwort vergessen"
 
 #: src/components/windows/index.js:18
 msgid "Chat"
-msgstr "Unterhaltung"
+msgstr "Kommentarsektion"
 
 #: src/components/windows/index.js:20
 msgid "Canvas Archive"
@@ -396,7 +396,7 @@ msgstr "Leinwand Archiv"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
-msgstr "Du hast zu lange benötigt, versuche es noch einmal."
+msgstr "Du hast zu lange gebraucht, versuche es noch einmal."
 
 #: src/components/GlobalCaptcha.jsx:50
 msgid "You failed your captcha"
@@ -438,7 +438,7 @@ msgstr "Senden"
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
 msgstr ""
-"Du bist verbannt. Wenn du glaubst, dass dies ein Irrtum war, sehe in die "
+"Du bist gebannt. Wenn du glaubst, dass dies ein Irrtum war, sehe in die "
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
@@ -450,7 +450,7 @@ msgstr "Grund"
 
 #: src/components/BanInfo.jsx:91
 msgid "By Mod"
-msgstr "Vom Moderator"
+msgstr "Von Moderator"
 
 #: src/components/BanInfo.jsx:97 src/components/ModIIDtools.jsx:84
 msgid "Duration"
@@ -466,7 +466,7 @@ msgstr " was noch so lange dauert: "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
-msgstr "Wieder erlaubt"
+msgstr "Wieder entbannt"
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."

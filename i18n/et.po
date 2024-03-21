@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 20:59+0000\n"
+"PO-Revision-Date: 2024-03-21 19:01+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/et/>\n"
@@ -300,7 +300,6 @@ msgid "Close"
 msgstr "Sule"
 
 #: src/components/Window.jsx:173
-#, fuzzy
 msgid "PopUp"
 msgstr "PopUp"
 
@@ -372,7 +371,7 @@ msgstr "Lülita Pliiats välja"
 
 #: src/components/buttons/PencilButton.jsx:73
 msgid "Disable History Pencil"
-msgstr ""
+msgstr "Lülita Ajaloo Pliiats välja"
 
 #: src/components/buttons/PencilButton.jsx:77
 msgid "Disable Overlay Pencil"
@@ -727,7 +726,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:146
 msgid "Compact Palette"
-msgstr ""
+msgstr "Kompaktne Palett"
 
 #: src/components/windows/Settings.jsx:151
 msgid "Display Palette in a compact form that takes less screen space."
@@ -865,7 +864,7 @@ msgstr ""
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
-msgstr ""
+msgstr "Poliitilise Kompassi Lõuend"
 
 #: src/components/windows/Archive.jsx:21
 msgid ""
@@ -1042,7 +1041,7 @@ msgstr "Ülekatte läbipaistvus protsendina."
 
 #: src/components/TemplateSettings.jsx:105
 msgid "Right-Shift Auto-Color"
-msgstr ""
+msgstr "Automaatne Värvimine Parem-Shiftiga"
 
 #: src/components/TemplateSettings.jsx:110
 msgid "Place pixels from overlay on right-shift, instead of history."
@@ -1054,7 +1053,7 @@ msgstr ""
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Add Template"
-msgstr ""
+msgstr "Lisa Šabloon"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
@@ -1062,7 +1061,7 @@ msgstr ""
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
-msgstr ""
+msgstr "Impordi šabloone"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1094,15 +1093,15 @@ msgstr ""
 
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
-msgstr ""
+msgstr "Tänane Koht"
 
 #: src/components/UserAreaContent.jsx:71
 msgid "Placed Pixels"
-msgstr ""
+msgstr "Piksleid Joonistatud"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
-msgstr ""
+msgstr "Edetabeli Koht"
 
 #: src/components/UserAreaContent.jsx:80
 #, javascript-format
@@ -1111,15 +1110,15 @@ msgstr ""
 
 #: src/components/UserAreaContent.jsx:86
 msgid "Log out"
-msgstr ""
+msgstr "Logi välja"
 
 #: src/components/UserAreaContent.jsx:93
 msgid "Change Username"
-msgstr ""
+msgstr "Muuda Kasutajanime"
 
 #: src/components/UserAreaContent.jsx:103
 msgid "Change Mail"
-msgstr ""
+msgstr "Muuda Meili"
 
 #: src/components/UserAreaContent.jsx:112
 msgid "Change Password"
@@ -1127,19 +1126,19 @@ msgstr "Muuda Salasõna"
 
 #: src/components/UserAreaContent.jsx:119
 msgid "Delete Account"
-msgstr ""
+msgstr "Kustuta Kasutaja"
 
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
-msgstr ""
+msgstr "Sotsiaalseadmed"
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
-msgstr ""
+msgstr "Vali Lõuend"
 
 #: src/components/Converter.jsx:218
 msgid "Palette Download"
-msgstr ""
+msgstr "Paleti Allalaadimine"
 
 #: src/components/Converter.jsx:220
 #, javascript-format
@@ -1185,7 +1184,7 @@ msgstr "Offset"
 
 #: src/components/Converter.jsx:428
 msgid "Scale Image"
-msgstr ""
+msgstr "Muuda Pildi Suurust"
 
 #: src/components/Converter.jsx:439
 msgid "Width"
@@ -1197,20 +1196,19 @@ msgstr "Kõrgus"
 
 #: src/components/Converter.jsx:509
 msgid "Keep Ratio"
-msgstr ""
+msgstr "Hoia Suhet"
 
 #: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
-msgstr ""
+msgstr "Anti Aliasing"
 
 #: src/components/Converter.jsx:536
-#, fuzzy
 msgid "Reset"
-msgstr "Taasta"
+msgstr "Lähtesta"
 
 #: src/components/Converter.jsx:554
 msgid "Download Template"
-msgstr ""
+msgstr "Lae alla Šabloon"
 
 #: src/components/Rankings.jsx:147
 msgid "Total"
@@ -1247,7 +1245,7 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
-msgstr ""
+msgstr "Online Kasutajad"
 
 #: src/components/CanvasItem.jsx:34
 msgid "Cooldown"
@@ -1255,7 +1253,7 @@ msgstr "Jahtumisaeg"
 
 #: src/components/CanvasItem.jsx:40
 msgid "Stacking till"
-msgstr ""
+msgstr "Maksimaalne Jahtumine"
 
 #: src/components/CanvasItem.jsx:42
 msgid "Ranked"
@@ -1275,7 +1273,7 @@ msgstr "Nõuded"
 
 #: src/components/CanvasItem.jsx:53
 msgid "User Account"
-msgstr ""
+msgstr "Kasutajakonto"
 
 #: src/components/CanvasItem.jsx:55
 #, javascript-format
@@ -1375,7 +1373,7 @@ msgstr ""
 
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
-msgstr ""
+msgstr "Uus Meil"
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1383,7 +1381,7 @@ msgstr ""
 
 #: src/components/SocialSettings.jsx:35
 msgid "Block DMs"
-msgstr ""
+msgstr "Blokeeri Otsesõnumid"
 
 #: src/components/SocialSettings.jsx:42
 msgid "Block all Private Messages"
@@ -1399,7 +1397,7 @@ msgstr ""
 
 #: src/components/SocialSettings.jsx:57
 msgid "Unblock Users"
-msgstr ""
+msgstr "Eemalda Kasutaja Blokeeringud"
 
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"

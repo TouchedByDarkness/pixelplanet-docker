@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 20:59+0000\n"
+"PO-Revision-Date: 2024-03-21 18:40+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/et/>\n"
@@ -68,11 +68,11 @@ msgstr "Ära tee niimoodi."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr ""
+msgstr "Te saatsite tühja parooli või vigased andmed :("
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr ""
+msgstr "See parooli taastamise link pole enam kehtiv :("
 
 #: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
@@ -88,7 +88,7 @@ msgstr "Salasõna muudetud."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr ""
+msgstr "Vigane veebiaadress :( Palun kontrolli oma meili uuesti."
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
@@ -111,7 +111,6 @@ msgid "ppfun"
 msgstr "ppfun"
 
 #: src/ssr/PopUp.jsx:48
-#, fuzzy
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 

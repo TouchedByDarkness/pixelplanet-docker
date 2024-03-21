@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-19 23:04+0000\n"
+"PO-Revision-Date: 2024-03-21 04:54+0000\n"
 "Last-Translator: Negru Berg <denisfagetan975@gmail.com>\n"
 "Language-Team: Prussian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/prg/>\n"
@@ -150,290 +150,299 @@ msgstr "emmens ni mazzi bēi pāusts."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr ""
+msgstr "emmens papalla būtwei mazzais 2 dabbas ilgai"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr ""
+msgstr "emmens papalla būtwei mazzais nikāi 26 dabbas"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr ""
+msgstr "emmens turri inwalīdi dabbas tēt dīgi @,/,\\ adder #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr ""
+msgstr "ni kliptaswīrds dāts."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr ""
+msgstr "kliptaswīrds papalla ast mazzais 6 dabbas ilgai."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr ""
+msgstr "kliptaswīrds papalla ast mazzais nikāi 60 dabbas."
 
 #: src/ssr/PasswordReset.jsx:20
 #: src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
-msgstr ""
+msgstr "PixelPlanet.fun kliptaswīrds etkraūt"
 
 #: src/ssr/PasswordReset.jsx:21
 #: src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
-msgstr ""
+msgstr "etkraūtun twajs kliptaswīrds šāi"
 
 #: src/core/MailProvider.js:105
 #: src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
-msgstr ""
+msgstr "etkraūtun kliptaswīrds"
 
 #: src/ssr/PasswordReset.jsx:30
 #: src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
-msgstr ""
+msgstr "sprakstinna šāi"
 
 #: src/ssr/PasswordReset.jsx:30
 msgid "to go back to pixelplanet"
-msgstr ""
+msgstr "izēitwei iz pixelplanet"
 
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
 msgid "Hello ${ name }, you can set your new password here:"
-msgstr ""
+msgstr "kaīls ${ name }, jūsizklìptina sadinna twajs nāuns kliptaswīrds šāi:"
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
-msgstr ""
+msgstr "nāuns kliptaswīrds"
 
 #: src/ssr/PasswordReset.jsx:60
 msgid "Confirm New Password"
-msgstr ""
+msgstr "padrūktina nāuns kliptaswīrds"
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr ""
+msgstr "paklusta"
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
-msgstr ""
+msgstr "jūs ni ast senrissa"
 
 #: src/routes/api/modtools.js:65
 msgid "You are not allowed to access this page"
-msgstr ""
+msgstr "jūs assei ni preiwērpt prēi preiēisenis šis pāusan"
 
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
-msgstr ""
+msgstr "Ka tēr Deiwāi mazzi segēi stas"
 
 #: src/routes/api/baninfo.js:32
 msgid "You are not banned"
-msgstr ""
+msgstr "jūs assei ni ni preiwērpt"
 
 #: src/routes/api/auth/change_mail.js:22
 #: src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
-msgstr ""
+msgstr "šis pōstikastens ni ast preiwērpja"
 
 #: src/routes/api/auth/register.js:31
 msgid "No Captcha given"
-msgstr ""
+msgstr "Ni Captcha dāwusi"
 
 #: src/routes/api/auth/register.js:34
 msgid "E-Mail already in use."
-msgstr ""
+msgstr "Pōstikastens jāu tērpau."
 
 #: src/routes/api/auth/register.js:36
 msgid "Username already in use."
-msgstr ""
+msgstr "emmens jāu tērpau."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr ""
+msgstr "jūs izlaīdja pēr tūlan kērdā, bānda etkūmps."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
-msgstr ""
+msgstr "jūs praspīli twajs captcha"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"
-msgstr ""
+msgstr "Niwaīsts Captcha Error"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
-msgstr ""
+msgstr "praspīli kurtun nāuns tērpautajs :("
 
 #: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
-msgstr ""
+msgstr "praspīli gruntintun sīndausnā pa registrijja"
 
 #: src/routes/api/auth/verify.js:26
 #: src/routes/api/auth/verify.js:35
 msgid "Mail verification"
-msgstr ""
+msgstr "pōstikastens izbānda"
 
 #: src/routes/api/auth/verify.js:27
 msgid "You are now verified :)"
-msgstr ""
+msgstr "jūs ast teinū izbānda :)"
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
 "Your mail verification code is invalid or already expired :(, please "
 "request a new one."
 msgstr ""
+"twajs pōstikastens izbānda ast inwalīdi adder izdwesis:, madla nāuns ainā."
 
 #: src/routes/api/auth/logout.js:11
 msgid "You are not even logged in."
-msgstr ""
+msgstr "jūs ni ast īr sāitas."
 
 #: src/routes/api/auth/delete_account.js:65
 #: src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
-msgstr ""
+msgstr "sērweris blānda kaddan ausijjusi."
 
 #: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
 #: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
-msgstr ""
+msgstr "jūs ni ast izbānda."
 
 #: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
 #: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
-msgstr ""
+msgstr "blāndewingis kliptaswīrds!"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr ""
+msgstr "Dussaws tērpautajai ni izklìptina audrazza kōnts."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr ""
+msgstr "Dussaws tērpautajai ni izklìptina segēi šis."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
-msgstr ""
+msgstr "PixelPlanet.fun kōntai"
 
 #: src/ssr/RedirectionPage.jsx:29
 msgid "You will be automatically redirected after 15s"
-msgstr ""
+msgstr "jūs ast ēisei assei autōmatiska pabanginna pa 15s"
 
 #: src/ssr/RedirectionPage.jsx:30
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr ""
+msgstr "adder ${ clickHere } skassa pixelplanet"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
-msgstr ""
+msgstr "zemē"
 
 #: src/canvasesDesc.js:21
 msgid "Moon"
-msgstr ""
+msgstr "mēniks"
 
 #: src/canvasesDesc.js:22
 msgid "3D Canvas"
-msgstr ""
+msgstr "3D drābi"
 
 #: src/canvasesDesc.js:23
 msgid "Coronavirus"
-msgstr ""
+msgstr "Coronavirus"
 
 #: src/canvasesDesc.js:24
 msgid "PixelZone"
-msgstr ""
+msgstr "PikselanZōni"
 
 #: src/canvasesDesc.js:25
 msgid "PixelCanvas"
-msgstr ""
+msgstr "PikselanDrābi"
 
 #: src/canvasesDesc.js:26
 msgid "1bit"
-msgstr ""
+msgstr "1bit"
 
 #: src/canvasesDesc.js:27
 msgid "Top10"
-msgstr ""
+msgstr "Wīrss10"
 
 #: src/canvasesDesc.js:28
 msgid "2bit"
-msgstr ""
+msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "MiniTāutaskarti"
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
+"nūss gruntisks drābi, aīns spanga tāutaskarti pēr stā swētan. pastatinna "
+"wiskwēi!"
 
 #: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of "
 "art) or art larger than 1.5k x 1.5k pixels."
 msgstr ""
+"Mēniks drābi. Sārgus plattibi pēr kunsta. ni karjangus adder dabbars teksts "
+"adder kunsta māisess nikāi 1.5k x 1.5k pikselāi."
 
 #: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others."
-msgstr ""
+msgstr "deīktan 3D pikselāi aīns."
 
 #: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
-msgstr ""
+msgstr "Speciāls drābi paplattintun aumenewīngiskan pēr SARS-CoV2."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
-msgstr ""
+msgstr "Spīgelis pēr PixelZone"
 
 #: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
-msgstr ""
+msgstr "Spīgelis pēr PixelCanvas"
 
 #: src/canvasesDesc.js:38
 msgid "Black and White canvas"
-msgstr ""
+msgstr "aulaūwuns drābi"
 
 #: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
+"Drābi pēr stā māisisk aktīws spīleniks ezze stā pirzdaums dēinā. Dēinins "
+"wīrss ernaunīnusi prēi 00:00 UTC."
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr ""
+msgstr "Tēr ketturjai bārwis. Stawīds pat rēgulas kāigi mēniks, tēt dīgi!"
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
-msgstr ""
+msgstr "Erkarjaūwusi zemē na mazs zemē. Dalljawusi cd sēn spanga drābi!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr ""
+msgstr "Kaīls ${ name } prēi PixelPlanet, izbānda twajs pōstikastens"
 
 #: src/core/MailProvider.js:67
 #, javascript-format
 msgid "Hello ${ name }"
-msgstr ""
+msgstr "Kaīls ${ name }"
 
 #: src/core/MailProvider.js:68
 msgid ""
 "welcome to our little community of pixelplacers, to use your account, you "
 "have to verify your mail. You can do that here: "
 msgstr ""
+"Kaīls prēi nūss pērā pēr pikselan deiktammans, tērpautun twajs kōnts, jūs "
+"papalla izbāndātun twajs pōstikastens. jūs mazzi segēi stas šāi: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
-msgstr ""
+msgstr "sprakstinna prēi izbāndātun"
 
 #: src/core/MailProvider.js:68
 #: src/core/MailProvider.js:105
 msgid "Or by copying following url:"
-msgstr ""
+msgstr "Adder prēi kōpiwusi repīnts url:"
 
 #: src/core/MailProvider.js:69
 msgid "Have fun and don't hesitate to contact us if you encounter any problems :)"
