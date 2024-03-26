@@ -1,88 +1,101 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-03-26 10:13+0000\n"
+"Last-Translator: Elie Al Nasr <velir30058@fashlend.com>\n"
+"Language-Team: Sign Languages <https://hosted.weblate.org/projects/"
+"pixelplanet/server/sgn/>\n"
 "Language: sgn\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
-msgstr ""
+msgstr "👏👌🙌 🤘✌️👇 👇👌👋 🖖🤙👇🤚 🤘🖐✌️👋 👆🤙🖖🖖✌️🤛🤙🖖 👐🖐🤞👍🤙 🙌🖖🤞👇🤛 "
+"✌️ 👎☝️👌👉👏"
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr ""
+msgstr "👏👌🙌☝️ 🤘👌🙌👇👋☝️👏 🤞🖖 👋🤙👆👎👌☝️✌️☝️👏 👆🙌👋🤙🤚 ✋☝️👌👆 👋🖐🤞🖖 "
+"🤘🖐✌️👋 🤘🖐✌️👇👇🤙👍"
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👎🤙☝️👆✌️👇🤙👇👋👍👏 👆🙌👋🤙🤚, ✊👌🤞👇 👌🙌☝️ "
+"🤛🙌🤞👍🤚🤙🤚 👋👌 ✌️👎👎🤙✌️👍 👋🖐🤙 👆🙌👋🤙"
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👈✌️👇👇🤙🤚"
 
 #: src/core/ChatProvider.js:443
 msgid "Your Internet Provider is banned"
-msgstr ""
+msgstr "👏👌🙌☝️ 🤞👇👋🤙☝️👇🤙👋 👎☝️👌🤜🤞🤚🤙☝️ 🤞🖖 👈✌️👇👇🤙🤚"
 
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👆🙌👋🤙🤚 ✋👌☝️ ✌️👇👌👋🖐🤙☝️ ${ timeMin } 👆🤞👇🙌👋🤙🖖"
 
 #: src/core/ChatProvider.js:450
 #, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👆🙌👋🤙🤚 ✋👌☝️ ✌️👇👌👋🖐🤙☝️ ${ ttl } 🖖🤙🤘👌👇🤚🖖"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
 msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
 msgstr ""
+"👏👌🙌 ✌️☝️🤙 🖖🤙👇🤚🤞👇🤛 👆🤙🖖🖖✌️🤛🤙🖖 👋👌👌 ✋✌️🖖👋, 👏👌🙌 🖐✌️🤜🤙"
+" 👋👌 👐✌️🤞👋 ${ waitTime }🖖 😔"
 
 #: src/core/ChatProvider.js:471
 msgid "You don't have access to this channel"
-msgstr ""
+msgstr "👏👌🙌 🤚👌👇👋 🖐✌️🤜🤙 ✌️🤘🤘🤙🖖🖖 👋👌 👋🖐🤞🖖 🤘🖐✌️👇👇🤙👍"
 
 #: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
-msgstr ""
+msgstr "👏👌🙌☝️ 👆✌️🤞👍 🖐✌️🖖 👋👌 👈🤙 🤜🤙☝️🤞✋🤞🤙🤚 🤞👇 👌☝️🤚🤙☝️ 👋👌 "
+"🤘🖐✌️👋"
 
 #: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
-msgstr ""
+msgstr "👏👌🙌 🤘✌️👇👋 🖖🤙👇🤚 ✌️ 👆🤙🖖🖖✌️🤛🤙 👋🖐🤞🖖 👍👌👇🤛 😔"
 
 #: src/core/ChatProvider.js:504
 msgid "Please use int channel"
-msgstr ""
+msgstr "👎👍🤙✌️🖖🤙 🙌🖖🤙 🤞👇👋 🤘🖐✌️👇👇🤙👍"
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
-msgstr ""
+msgstr "🖖👋👌👎 ✋👍👌👌🤚🤞👇🤛."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr ""
+msgstr "👏👌🙌 🖖🤙👇👋 ✌️👇 🤙👆👎👋👏 👎✌️🖖🖖👐👌☝️🤚 👌☝️ 🤞👇🤜✌️👍🤞🤚 🤚✌️👋✌️"
+" 😔"
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr ""
+msgstr "👋🖐🤞🖖 👎✌️🖖🖖👐👌☝️🤚-☝️🤙🖖🤙👋 👍🤞👇👊 🤞🖖👇👋 🤜✌️👍🤞🤚 "
+"✌️👇👏👆👌☝️🤙 😔"
 
 #: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
-msgstr ""
+msgstr "👏👌🙌☝️ 👎✌️🖖🖖👐👌☝️🤚🖖 🤚👌 👇👌👋 👆✌️👋🤘🖐 😔"
 
 #: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
-msgstr ""
+msgstr "🙌🖖🤙☝️ 🤚👌🤙🖖👇👋 🤙👉🤞🖖👋 🤞👇 👌🙌☝️ 🤚✌️👋✌️👈✌️🖖🤙 😔"
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr ""
+msgstr "👎✌️🖖🖖👐👌☝️🤚 🖖🙌🤘🤘🤙🖖🖖✋🙌👍👍👏 🤘🖐✌️👇🤛🤙🤚."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr ""
+msgstr "🤞👇🤜✌️👍🤞🤚 🙌☝️👍 😔 👎👍🤙✌️🖖🤙 🤘🖐🤙🤘👊 👏👌🙌☝️ 👆✌️🤞👍 ✌️🤛✌️🤞👇."
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
@@ -94,31 +107,33 @@ msgstr ""
 
 #: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
-msgstr ""
+msgstr "🤚👌🙌👈👍🤙 🤘👍🤞🤘👊 👌👇 🤛👍👌👈🤙 👋👌 🤛👌 👈✌️🤘👊."
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
-msgstr ""
+msgstr "👍👌✌️🤚🤞👇🤛..."
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
-msgstr ""
+msgstr "👎👎✋🙌👇"
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
-msgstr ""
+msgstr "👎🤞👉🤙👍👎👍✌️👇🤙👋.✋🙌👇 👎👌👎🙌👎"
 
 #: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
-msgstr ""
+msgstr "👎🤞👉🤙👍👎👍✌️👇🤙👋.✋🙌👇"
 
 #: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
+"👎👍✌️🤘🤙 🤘👌👍👌☝️ 👎🤞👉🤙👍🖖 👌👇 ✌️👇 👆✌️👎 🖖👋👏👍🤙🤚 🤘✌️👇🤜✌️🖖"
+" 👐🤞👋🖐 👌👋🖐🤙☝️ 👎👍✌️👏🤙☝️🖖 👌👇👍🤞👇🤙"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr ""
+msgstr "🤙👆✌️🤞👍 🤘✌️👇👋 👈🤙 🤙👆👎👋👏."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
@@ -130,15 +145,15 @@ msgstr ""
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr ""
+msgstr "🤙👆✌️🤞👍 🖖🖐👌🙌👍🤚 ✌️👋 👍🤙✌️🖖👋 🤘👌👇👋✌️🤞👇 ✌️ 🤚👌👋"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr ""
+msgstr "🤙👆✌️🤞👍 🖖🖐👌🙌👍🤚 🤘👌👇👋✌️🤞👇 ✌️ @"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr ""
+msgstr "👇✌️👆🤙 🤘✌️👇👋 👈🤙 🤙👆👎👋👏."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
@@ -150,11 +165,12 @@ msgstr ""
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr ""
+msgstr "👇✌️👆🤙 🤘👌👇👋✌️🤞👇🖖 🤞👇🤜✌️👍🤞🤚 🤘🖐✌️☝️✌️🤘👋🤙☝️ 👍🤞👊🤙 @, /, \\ "
+"👌☝️ #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr ""
+msgstr "👇👌 👎✌️🖖🖖👐👌☝️🤚 🤛🤞🤜🤙👇."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
@@ -166,24 +182,24 @@ msgstr ""
 
 #: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
-msgstr ""
+msgstr "👎🤞👉🤙👍👎👍✌️👇🤙👋.✋🙌👇 👎✌️🖖🖖👐👌☝️🤚 ☝️🤙🖖🤙👋"
 
 #: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
-msgstr ""
+msgstr "☝️🤙🖖🤙👋 👏👌🙌☝️ 👎✌️🖖🖖👐👌☝️🤚 🖐🤙☝️🤙"
 
 #: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
-msgstr ""
+msgstr "☝️🤙🖖🤙👋 👎✌️🖖🖖👐👌☝️🤚"
 
 #: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
-msgstr ""
+msgstr "🤘👍🤞🤘👊 🖐🤙☝️🤙"
 
 #: src/ssr/PasswordReset.jsx:30
 msgid "to go back to pixelplanet"
-msgstr ""
+msgstr "👋👌 🤛👌 👈✌️🤘👊 👋👌 👎🤞👉🤙👍👎👍✌️👇🤙👋"
 
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
@@ -192,95 +208,99 @@ msgstr ""
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
-msgstr ""
+msgstr "👇🤙👐 👎✌️🖖🖖👐👌☝️🤚"
 
 #: src/ssr/PasswordReset.jsx:60
 msgid "Confirm New Password"
-msgstr ""
+msgstr "🤘👌👇✋🤞☝️👆 👇🤙👐 👎✌️🖖🖖👐👌☝️🤚"
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr ""
+msgstr "🖖🙌👈👆🤞👋"
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👇👌👋 👍👌🤛🤛🤙🤚 🤞👇"
 
 #: src/routes/api/modtools.js:65
 msgid "You are not allowed to access this page"
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👇👌👋 ✌️👍👍👌👐🤙🤚 👋👌 ✌️🤘🤘🤙🖖🖖 👋🖐🤞🖖 👎✌️🤛🤙"
 
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
-msgstr ""
+msgstr "✊🙌🖖👋 ✌️🤚👆🤞👇🖖 🤘✌️👇 🤚👌 👋🖐✌️👋"
 
 #: src/routes/api/baninfo.js:32
 msgid "You are not banned"
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👇👌👋 👈✌️👇👇🤙🤚"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
-msgstr ""
+msgstr "👋🖐🤞🖖 🤙👆✌️🤞👍 👎☝️👌🤜🤞🤚🤙☝️ 🤞🖖 👇👌👋 ✌️👍👍👌👐🤙🤚"
 
 #: src/routes/api/auth/register.js:31
 msgid "No Captcha given"
-msgstr ""
+msgstr "👇👌 🤘✌️👎👋🤘🖐✌️ 🤛🤞🤜🤙👇"
 
 #: src/routes/api/auth/register.js:34
 msgid "E-Mail already in use."
-msgstr ""
+msgstr "🤙-👆✌️🤞👍 ✌️👍☝️🤙✌️🤚👏 🤞👇 🙌🖖🤙."
 
 #: src/routes/api/auth/register.js:36
 msgid "Username already in use."
-msgstr ""
+msgstr "🙌🖖🤙☝️👇✌️👆🤙 ✌️👍☝️🤙✌️🤚👏 🤞👇 🙌🖖🤙."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr ""
+msgstr "👏👌🙌 👋👌👌👊 👋👌👌 👍👌👇🤛, 👋☝️👏 ✌️🤛✌️🤞👇."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
-msgstr ""
+msgstr "👏👌🙌 ✋✌️🤞👍🤙🤚 👏👌🙌☝️ 🤘✌️👎👋🤘🖐✌️"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"
-msgstr ""
+msgstr "🙌👇👊👇👌👐👇 🤘✌️👎👋🤘🖐✌️ 🤙☝️☝️👌☝️"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
-msgstr ""
+msgstr "✋✌️🤞👍🤙🤚 👋👌 🤘☝️🤙✌️👋🤙 👇🤙👐 🙌🖖🤙☝️ 😔"
 
 #: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
-msgstr ""
+msgstr "✋✌️🤞👍🤙🤚 👋👌 🤙🖖👋✌️👈👍🤞🖖🖐 🖖🤙🖖🖖🤞👌👇 ✌️✋👋🤙☝️ "
+"☝️🤙🤛🤞🖖👋🤙☝️ 😔"
 
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
-msgstr ""
+msgstr "👆✌️🤞👍 🤜🤙☝️🤞✋🤞🤘✌️👋🤞👌👇"
 
 #: src/routes/api/auth/verify.js:27
 msgid "You are now verified :)"
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👇👌👐 🤜🤙☝️🤞✋🤞🤙🤚 😊"
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
 "Your mail verification code is invalid or already expired :(, please request "
 "a new one."
 msgstr ""
+"👏👌🙌☝️ 👆✌️🤞👍 🤜🤙☝️🤞✋🤞🤘✌️👋🤞👌👇 🤘👌🤚🤙 🤞🖖 🤞👇🤜✌️👍🤞🤚 👌☝️ "
+"✌️👍☝️🤙✌️🤚👏 🤙👉👎🤞☝️🤙🤚 😔, 👎👍🤙✌️🖖🤙 ☝️🤙🤝🙌🤙🖖👋 ✌️ 👇🤙👐 "
+"👌👇🤙."
 
 #: src/routes/api/auth/logout.js:11
 msgid "You are not even logged in."
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👇👌👋 🤙🤜🤙👇 👍👌🤛🤛🤙🤚 🤞👇."
 
 #: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
-msgstr ""
+msgstr "🖖🤙☝️🤜🤙☝️ 🤙☝️☝️👌☝️ 👐🖐🤙👇 👍👌🤛🤛🤞👇🤛 👌🙌👋."
 
 #: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
 #: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
-msgstr ""
+msgstr "👏👌🙌 ✌️☝️🤙 👇👌👋 ✌️🙌👋🖐🤙👇👋🤞🤘✌️👋🤙🤚."
 
 #: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
@@ -290,15 +310,15 @@ msgstr ""
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr ""
+msgstr "👆🙌👋🤙🤚 🙌🖖🤙☝️🖖 🤘✌️👇 👇👌👋 🤚🤙👍🤙👋🤙 👋🖐🤙🤞☝️ ✌️🤘🤘👌🙌👇👋."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr ""
+msgstr "👆🙌👋🤙🤚 🙌🖖🤙☝️🖖 🤘✌️👇 👇👌👋 🤚👌 👋🖐🤞🖖."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
-msgstr ""
+msgstr "👎🤞👉🤙👍👎👍✌️👇🤙👋.✋🙌👇 ✌️🤘🤘👌🙌👇👋🖖"
 
 #: src/ssr/RedirectionPage.jsx:29
 msgid "You will be automatically redirected after 15s"
@@ -311,11 +331,11 @@ msgstr ""
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
-msgstr ""
+msgstr "🤙✌️☝️👋🖐"
 
 #: src/canvasesDesc.js:21
 msgid "Moon"
-msgstr ""
+msgstr "👆👌👌👇"
 
 #: src/canvasesDesc.js:22
 msgid "3D Canvas"
@@ -323,15 +343,15 @@ msgstr ""
 
 #: src/canvasesDesc.js:23
 msgid "Coronavirus"
-msgstr ""
+msgstr "🤘👌☝️👌👇✌️🤜🤞☝️🙌🖖"
 
 #: src/canvasesDesc.js:24
 msgid "PixelZone"
-msgstr ""
+msgstr "👎🤞👉🤙👍🙏👌👇🤙"
 
 #: src/canvasesDesc.js:25
 msgid "PixelCanvas"
-msgstr ""
+msgstr "👎🤞👉🤙👍🤘✌️👇🤜✌️🖖"
 
 #: src/canvasesDesc.js:26
 msgid "1bit"
@@ -347,7 +367,7 @@ msgstr ""
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "👆🤞👇🤞👆✌️👎"
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
@@ -369,15 +389,15 @@ msgstr ""
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
-msgstr ""
+msgstr "👆🤞☝️☝️👌☝️ 👌✋ 👎🤞👉🤙👍🙏👌👇🤙"
 
 #: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
-msgstr ""
+msgstr "👆🤞☝️☝️👌☝️ 👌✋ 👎🤞👉🤙👍🤘✌️👇🤜✌️🖖"
 
 #: src/canvasesDesc.js:38
 msgid "Black and White canvas"
-msgstr ""
+msgstr "👈👍✌️🤘👊 ✌️👇🤚 👐🖐🤞👋🤙 🤘✌️👇🤜✌️🖖"
 
 #: src/canvasesDesc.js:39
 msgid ""
@@ -403,21 +423,24 @@ msgstr ""
 #: src/core/MailProvider.js:67
 #, javascript-format
 msgid "Hello ${ name }"
-msgstr ""
+msgstr "🖐🤙👍👍👌 ${ name }"
 
 #: src/core/MailProvider.js:68
 msgid ""
 "welcome to our little community of pixelplacers, to use your account, you "
 "have to verify your mail. You can do that here: "
 msgstr ""
+"👐🤙👍🤘👌👆🤙 👋👌 👌🙌☝️ 👍🤞👋👋👍🤙 🤘👌👆👆🙌👇🤞👋👏 👌✋ "
+"👎🤞👉🤙👍👎👍✌️🤘🤙☝️🖖, 👋👌 🙌🖖🤙 👏👌🙌☝️ ✌️🤘🤘👌🙌👇👋, 👏👌🙌 🖐✌️🤜🤙"
+" 👋👌 🤜🤙☝️🤞✋👏 👏👌🙌☝️ 👆✌️🤞👍. 👏👌🙌 🤘✌️👇 🤚👌 👋🖐✌️👋 🖐🤙☝️🤙: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
-msgstr ""
+msgstr "🤘👍🤞🤘👊 👋👌 🤜🤙☝️🤞✋👏"
 
 #: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
-msgstr ""
+msgstr "👌☝️ 👈👏 🤘👌👎👏🤞👇🤛 ✋👌👍👍👌👐🤞👇🤛 🙌☝️👍:"
 
 #: src/core/MailProvider.js:69
 msgid ""
@@ -426,7 +449,7 @@ msgstr ""
 
 #: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"
-msgstr ""
+msgstr "👋🖐✌️👇👊🖖"
 
 #: src/core/MailProvider.js:87
 #, javascript-format
@@ -441,7 +464,7 @@ msgstr ""
 
 #: src/core/MailProvider.js:104
 msgid "Hello"
-msgstr ""
+msgstr "🖐🤙👍👍👌"
 
 #: src/core/MailProvider.js:105
 msgid ""
@@ -455,17 +478,23 @@ msgid ""
 "If you did not request this mail, please just ignore it (the ip that "
 "requested this mail was ${ ip })."
 msgstr ""
+"🤞✋ 👏👌🙌 🤚🤞🤚 👇👌👋 ☝️🤙🤝🙌🤙🖖👋 👋🖐🤞🖖 👆✌️🤞👍, 👎👍🤙✌️🖖🤙 "
+"✊🙌🖖👋 🤞🤛👇👌☝️🤙 🤞👋 (👋🖐🤙 🤞👎 👋🖐✌️👋 ☝️🤙🤝🙌🤙🖖👋🤙🤚 👋🖐🤞🖖 "
+"👆✌️🤞👍 👐✌️🖖 ${ ip })."
 
 #: src/core/MailProvider.js:114
 msgid "Mail is not configured on the server"
-msgstr ""
+msgstr "👆✌️🤞👍 🤞🖖 👇👌👋 🤘👌👇✋🤞🤛🙌☝️🤙🤚 👌👇 👋🖐🤙 🖖🤙☝️🤜🤙☝️"
 
 #: src/core/MailProvider.js:122
 msgid ""
 "We already sent you a mail with instructions. Please wait before requesting "
 "another mail."
 msgstr ""
+"👐🤙 ✌️👍☝️🤙✌️🤚👏 🖖🤙👇👋 👏👌🙌 ✌️ 👆✌️🤞👍 👐🤞👋🖐 "
+"🤞👇🖖👋☝️🙌🤘👋🤞👌👇🖖. 👎👍🤙✌️🖖🤙 👐✌️🤞👋 👈🤙✋👌☝️🤙 "
+"☝️🤙🤝🙌🤙🖖👋🤞👇🤛 ✌️👇👌👋🖐🤙☝️ 👆✌️🤞👍."
 
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"
-msgstr ""
+msgstr "🤘👌🙌👍🤚👇👋 ✋🤞👇🤚 👋🖐🤞🖖 👆✌️🤞👍 🤞👇 👌🙌☝️ 🤚✌️👋✌️👈✌️🖖🤙"

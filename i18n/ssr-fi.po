@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-14 19:38+0000\n"
+"PO-Revision-Date: 2024-03-24 14:49+0000\n"
 "Last-Translator: Onni <onni.ma.jaakkola@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/pixelplanet/"
 "server/fi/>\n"
@@ -259,25 +259,27 @@ msgstr "Tuntematon Captcha Virhe"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
-msgstr ""
+msgstr "Käyttäjän luonti epäonnistunut:("
 
 #: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
-msgstr ""
+msgstr "Istunnon perustaminen epäonnistui rekisteröinnin jälkeen :("
 
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
-msgstr ""
+msgstr "Sähköpostin vahvistaminen"
 
 #: src/routes/api/auth/verify.js:27
 msgid "You are now verified :)"
-msgstr ""
+msgstr "Olet nyt vahvistettu:)"
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
 "Your mail verification code is invalid or already expired :(, please request "
 "a new one."
 msgstr ""
+"Sinun sähköpostin vahvistus koodi on virheellinen tai se on jo vanhentunut:("
+", pyydä uutta koodia kiitos."
 
 #: src/routes/api/auth/logout.js:11
 msgid "You are not even logged in."

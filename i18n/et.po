@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-21 19:01+0000\n"
+"PO-Revision-Date: 2024-03-26 10:13+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/et/>\n"
@@ -500,6 +500,8 @@ msgid ""
 "Higher zoomlevels take some time to update, the 3D globe gets updated at "
 "least once per day."
 msgstr ""
+"Kõrgemad suumitasemed võtavad pisut kauem, et uuendada, 3D gloobus uuendub "
+"vähemalt üks kord päevas."
 
 #: src/components/windows/Help.jsx:68
 msgid "Have fun!"
@@ -534,6 +536,10 @@ msgid ""
 "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
 "${ mailLink } and include the following IID:"
 msgstr ""
+"Kui sind tuvastati puhverserveri kasutajana, kuid sa seda ei ole, või kui sa "
+"arvad, et sinu ligipääs on põhjuseta piiratud, siis palun ühine meie ${ "
+"guildedLink } või saada meile e-meil aadressile ${ mailLink } koos järgneva "
+"IID-ga:"
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
 msgid "Controls"
@@ -566,7 +572,7 @@ msgstr "Vajuta ${ bindR }, et kopeerida koordinaadid"
 #: src/components/windows/Help.jsx:86
 #, javascript-format
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
-msgstr ""
+msgstr "Vajuta ${ bindQ } või ${ bindE } nuppu, et suumida"
 
 #: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
 #, javascript-format
@@ -596,7 +602,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:91
 #, javascript-format
 msgid "Hold left ${ bindShift } for placing while moving mouse"
-msgstr ""
+msgstr "Hoia vasakut ${ bindShift }, et joonistada hiire liigutustega"
 
 #: src/components/windows/Help.jsx:92
 #, javascript-format
@@ -604,11 +610,15 @@ msgid ""
 "Hold right ${ bindShift } for placing while moving mouse according to "
 "historical view"
 msgstr ""
+"Hoia paremat ${ bindShift }, et joonistada ajaloo vaate põhjal hiirt "
+"liigutades"
 
 #: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
+"${ mouseSymbol } Vasak-kliki või ${ touchSymbol } vajuta ekraanile, et "
+"joonistada piksleid"
 
 #: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
 #, javascript-format
@@ -620,12 +630,12 @@ msgstr ""
 #: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr ""
+msgstr "Vajuta ${ bindQ } ja ${ bindE } nuppe, et lennata üles ja alla"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
-msgstr ""
+msgstr "${ mouseSymbol } Hoia hiirel vasakut nuppu ja lohista hiirt, et keerata"
 
 #: src/components/windows/Help.jsx:102
 #, javascript-format
@@ -637,7 +647,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
-msgstr ""
+msgstr "${ mouseSymbol } Parem-kliki ja liiguta hiirt, et pan'ida"
 
 #: src/components/windows/Help.jsx:105
 #, javascript-format
@@ -650,21 +660,23 @@ msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
 msgstr ""
+"Me täname järgnevaid kunstnike, kes tegid oma paletid tasuta kättesaadavaks "
+"saidil"
 
 #: src/components/windows/Help.jsx:113
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
-msgstr ""
+msgstr "Kuu lõuendi palett pärineb saidilt ${ starhouseLink }."
 
 #: src/components/windows/Help.jsx:116
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr ""
+msgstr "T10 lõuendi palett pärineb saidilt ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:119
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr ""
+msgstr "2bit'i lõuendi palett pärineb saidilt ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:91
 msgid "Show Grid"
@@ -676,19 +688,19 @@ msgstr "Lülita sisse teljestik, et näha pikslipiire."
 
 #: src/components/windows/Settings.jsx:99
 msgid "Show Pixel Activity"
-msgstr ""
+msgstr "Näita Pikslite Joonistamist"
 
 #: src/components/windows/Settings.jsx:104
 msgid "Show circles where pixels are placed."
-msgstr ""
+msgstr "Näita punaseid ringe joonistatud pikslite ümber."
 
 #: src/components/windows/Settings.jsx:107
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Näita alati Liikumiskontrolle"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Näita alati liikumiskontrolli nuppe"
 
 #: src/components/windows/Settings.jsx:115
 msgid "Disable Game Sounds"
@@ -708,7 +720,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:131
 msgid "Enable chat notifications"
-msgstr ""
+msgstr "Lülita jututoa märguanded sisse"
 
 #: src/components/windows/Settings.jsx:135
 msgid "Play a sound when new chat messages arrive"
@@ -716,13 +728,15 @@ msgstr "Mängi heli kui jututuppa saabub uus sõnum"
 
 #: src/components/windows/Settings.jsx:138
 msgid "Auto Zoom In"
-msgstr ""
+msgstr "Automaatselt Suumi Sisse"
 
 #: src/components/windows/Settings.jsx:143
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
 msgstr ""
+"Suumi sisse, piksli panemise asemel, kui sa vajutad lõuendile ja su "
+"suumitase on madal."
 
 #: src/components/windows/Settings.jsx:146
 msgid "Compact Palette"
@@ -730,7 +744,7 @@ msgstr "Kompaktne Palett"
 
 #: src/components/windows/Settings.jsx:151
 msgid "Display Palette in a compact form that takes less screen space."
-msgstr ""
+msgstr "Näita Paletti kompaktses vormis nii, et see võtab vähem ruumi ekraanil."
 
 #: src/components/windows/Settings.jsx:154
 msgid "Potato Mode"
@@ -738,7 +752,7 @@ msgstr "Kartulirežiim"
 
 #: src/components/windows/Settings.jsx:158
 msgid "For when you are playing on a potato."
-msgstr ""
+msgstr "Juhul kui sa mängid kartulil."
 
 #: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
 msgid "Light Grid"
@@ -754,7 +768,7 @@ msgstr "Ajalooline Vaade"
 
 #: src/components/windows/Settings.jsx:174
 msgid "Check out past versions of the canvas."
-msgstr ""
+msgstr "Vaata lõuendi vanemaid versioone."
 
 #: src/components/windows/Settings.jsx:179
 msgid "Themes"
@@ -762,7 +776,7 @@ msgstr "Disain"
 
 #: src/components/windows/Settings.jsx:184
 msgid "How pixelplanet should look like."
-msgstr ""
+msgstr "Kuidas pixelplanet peaks välja nägema."
 
 #: src/components/windows/Settings.jsx:191
 msgid "Select Language"
@@ -791,11 +805,11 @@ msgstr "Laadimine..."
 
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
-msgstr ""
+msgstr "Ühine meie Guilded'iga:"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
-msgstr ""
+msgstr "Registreeri uus kasutaja siin"
 
 #: src/components/windows/Register.jsx:92
 #: src/components/windows/Register.jsx:98
@@ -846,7 +860,7 @@ msgstr "Arhiiv"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Kunagised Lõuendid (ainult ajalugu)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -861,6 +875,7 @@ msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
+"Siin on kollektsioon eemaldatud lõuenditest. Praegu on selliseid ainult üks."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -907,15 +922,15 @@ msgstr "Sisesta oma meil ja me saadame sulle uue salasõna:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
-msgstr ""
+msgstr "Captcha't ei laetud"
 
 #: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
-msgstr ""
+msgstr "Trüki tähised sellelt pildilt:"
 
 #: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
-msgstr ""
+msgstr "Vihje: Mõlemad suured ja väiksed tähed sobivad; I ja l on samad"
 
 #: src/components/Captcha.jsx:116
 msgid "Load Captcha"
@@ -923,11 +938,11 @@ msgstr "Lae Captcha"
 
 #: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
-msgstr ""
+msgstr "Kliki, et laadida Captcha"
 
 #: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
-msgstr ""
+msgstr "Ei saa lugeda? Lae uuesti:"
 
 #: src/components/Captcha.jsx:130
 msgid "Reload"
@@ -1025,7 +1040,7 @@ msgstr "Näita šabloone mängus ülekattena."
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Small Pixels When Zoomed"
-msgstr ""
+msgstr "Väikesed Pikslid Kui Sisse Suumitud"
 
 #: src/components/TemplateSettings.jsx:78
 msgid "Show overlay as small individual pixels on high zoomlevels."
@@ -1049,7 +1064,7 @@ msgstr "Joonista piksleid ajaloo asemel ülekattelt parempoolse Shift'iga."
 
 #: src/components/TemplateSettings.jsx:149
 msgid "Cancel adding Template"
-msgstr ""
+msgstr "Tühista Šablooni lisamine"
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Add Template"
@@ -1057,7 +1072,7 @@ msgstr "Lisa Šabloon"
 
 #: src/components/TemplateSettings.jsx:173
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Ekspordi sisse lülitatud šabloonid"
 
 #: src/components/TemplateSettings.jsx:182
 msgid "Import templates"
@@ -1066,10 +1081,11 @@ msgstr "Impordi šabloone"
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
 msgstr ""
+"Logi sisse, et saada ligipääs rohkematele funktsioonidele ja statistikale."
 
 #: src/components/LogInArea.jsx:21
 msgid "Login with Name or Mail:"
-msgstr ""
+msgstr "Logi Sisse Nime või Meiliga:"
 
 #: src/components/LogInArea.jsx:28
 msgid "I forgot my Password."
@@ -1077,11 +1093,11 @@ msgstr "Unustasin Salasõna."
 
 #: src/components/LogInArea.jsx:29
 msgid "or login with:"
-msgstr ""
+msgstr "või logi sisse kasutades:"
 
 #: src/components/LogInArea.jsx:70
 msgid "or register here:"
-msgstr ""
+msgstr "või registreeri siin:"
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
@@ -1089,7 +1105,7 @@ msgstr "Registreeri"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
-msgstr ""
+msgstr "Täna Joonistatud Piksleid"
 
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
@@ -1106,7 +1122,7 @@ msgstr "Edetabeli Koht"
 #: src/components/UserAreaContent.jsx:80
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr ""
+msgstr "Su kasutajanimi on: ${ name }"
 
 #: src/components/UserAreaContent.jsx:86
 msgid "Log out"
@@ -1143,7 +1159,7 @@ msgstr "Paleti Allalaadimine"
 #: src/components/Converter.jsx:220
 #, javascript-format
 msgid "Palette for ${ gimpLink }"
-msgstr ""
+msgstr "Palett ${ gimpLink } jaoks"
 
 #: src/components/Converter.jsx:241
 msgid "Image Converter"
@@ -1163,24 +1179,23 @@ msgstr "Serpentiin"
 
 #: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
-msgstr ""
+msgstr "Minimaalne Värvikaugus"
 
 #: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
-msgstr ""
+msgstr "Kalkuleeri nagu GIMP"
 
 #: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
-msgstr ""
+msgstr "Vali Värvi Mood"
 
 #: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
 msgstr "Lisa Teljestik (eemalda märge, kui vajad 1:1 šablooni)"
 
 #: src/components/Converter.jsx:383 src/components/Converter.jsx:399
-#, fuzzy
 msgid "Offset"
-msgstr "Offset"
+msgstr "Nihe"
 
 #: src/components/Converter.jsx:428
 msgid "Scale Image"
@@ -1242,6 +1257,8 @@ msgstr "Riik"
 #: src/components/Rankings.jsx:286
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
+"Edetabeli värskendused iga 5 minuti järel. Päevased edetabelid lähtestatakse "
+"keskööl UTC."
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
@@ -1282,7 +1299,7 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:58
 msgid "Top 10 Daily Ranking"
-msgstr ""
+msgstr "Top 10 Igapäevane Edetabel"
 
 #: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
 #: src/components/TemplateItemEdit.jsx:160
@@ -1320,7 +1337,7 @@ msgstr "Kustuta"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
-msgstr ""
+msgstr "Nimi või E-meil"
 
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
@@ -1331,21 +1348,22 @@ msgid ""
 "Please verify your mail address or your account could get deleted after a "
 "few days."
 msgstr ""
+"Palun veriitseeri oma meiliaadress või su kasutaja võidakse kustutada paari "
+"päeva jooksul."
 
 #: src/components/UserMessages.jsx:49
 msgid "A new verification mail is getting sent to you."
-msgstr ""
+msgstr "Sulle saadetakse uus verifikatsioonimeil."
 
 #: src/components/UserMessages.jsx:53
 msgid "Click here to request a new verification mail."
-msgstr ""
+msgstr "Kliki siia, et taotleda uus verifikatsioonimeil."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
 msgstr "Salasõnad ei ole samad."
 
 #: src/components/ChangePassword.jsx:44
-#, fuzzy
 msgid "Password successfully changed."
 msgstr "Salasõna muudetud."
 
@@ -1377,7 +1395,7 @@ msgstr "Uus Meil"
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
-msgstr ""
+msgstr "Jah, Kustuta Mu Kasutaja!"
 
 #: src/components/SocialSettings.jsx:35
 msgid "Block DMs"
@@ -1385,7 +1403,7 @@ msgstr "Blokeeri Otsesõnumid"
 
 #: src/components/SocialSettings.jsx:42
 msgid "Block all Private Messages"
-msgstr ""
+msgstr "Blokeeri kõik Privaatsõnumid"
 
 #: src/components/SocialSettings.jsx:44
 msgid "Private"
@@ -1393,7 +1411,7 @@ msgstr "Privaatne"
 
 #: src/components/SocialSettings.jsx:51
 msgid "Don't show me in global stats"
-msgstr ""
+msgstr "Ära näita mind edetabelis"
 
 #: src/components/SocialSettings.jsx:57
 msgid "Unblock Users"
@@ -1401,29 +1419,31 @@ msgstr "Eemalda Kasutaja Blokeeringud"
 
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"
-msgstr ""
+msgstr "Sa ei ole blokeerinud ühtegi kasutajat"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
-msgstr ""
+msgstr "Ehitada pilt lõuendile."
 
 #: src/components/ModCanvastools.jsx:171
 msgid "Build image and set it to protected."
-msgstr ""
+msgstr "Ehita kaitstud pikslitega pilt lõuendile."
 
 #: src/components/ModCanvastools.jsx:174
 msgid "Build image, but reset cooldown to unset-pixel cd."
-msgstr ""
+msgstr "Ehitage pilt, kuid lähtestage jahtumisaeg määramata piksli omaks."
 
 #: src/components/ModCanvastools.jsx:184
 msgid "Clean spare pixels that are surrounded by unset pixels"
-msgstr ""
+msgstr "Puhasta üksikud pikslid, mis on ümbritsetud määramata pikslitega"
 
 #: src/components/ModCanvastools.jsx:188
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
 msgstr ""
+"Puhasta üksikud pikslid, mis on ümbritsetud määramata pikslitega ja veel "
+"kuni ühe paigutatud piksliga"
 
 #: src/components/ModCanvastools.jsx:192
 msgid ""
@@ -1431,12 +1451,17 @@ msgid ""
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
 "two cooldowns)!)"
 msgstr ""
+"Puhasta üksikud pikslid, mis on ümbritsetud ühe teise värviga või määramata "
+"pikslitega (VÄGA AGRESSIIVNE LÕUENDITEL, MIS VÕIMALDAVAD PAIGUTADA MÄÄRATA "
+"PIKSLEID (kui on kaks jahtumisaega)!)"
 
 #: src/components/ModCanvastools.jsx:196
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"Muuda iga piksel alas tagasi nulli (SA EI TOHIKS SEDA KASUTADA KUI ALA EI "
+"OLE JUBA SUURES OSAS NULLITUD)"
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
@@ -1578,27 +1603,27 @@ msgstr "(0 = lõppematu)"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
-msgstr ""
+msgstr "Top 10 Riiki [pikslit päevas]"
 
 #: src/core/chartSettings.js:127
 msgid "Players and Pixels per hour"
-msgstr ""
+msgstr "Mängijaid ja Piksleid tunni kaupa"
 
 #: src/core/chartSettings.js:221
 msgid "Top 10 Players [pxls / day]"
-msgstr ""
+msgstr "Top 10 Mängijat [pikslit päevas]"
 
 #: src/core/chartSettings.js:294
 msgid "Countries by Pixels Today"
-msgstr ""
+msgstr "Täna joonistatud Piksleid riigi kaupa"
 
 #: src/core/chartSettings.js:351
 msgid "Total Pixels placed per day"
-msgstr ""
+msgstr "Joonistatud Piklite arv päeva kaupa"
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
-msgstr "Teavita"
+msgstr "Maini"
 
 #: src/components/contextmenus/UserContextMenu.jsx:75
 msgid "DM"
