@@ -1,218 +1,206 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-01 07:50+0000\n"
-"Last-Translator: Jamie Fitzgerald <jamiefitzgerald2010@gmail.com>\n"
-"Language-Team: Irish <https://hosted.weblate.org/projects/pixelplanet/server/"
-"ga/>\n"
-"Language: ga\n"
+"Language: mk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :("
-"n>6 && n<11) ? 3 : 4;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"Plural-Forms: nplurals=2; plural=n==1 || n%10==1 ? 0 : 1;\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
-msgstr "Níl tú ábalta teachtaireacht a cuir amach ag úsáid seachfhreastalaí"
+msgstr ""
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr "Cuirtear balbh sealadach ar do Tír Ón ait caint seo"
+msgstr ""
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
-"Cuirtear balbh buan ort, dul istigh i n-ár guilded le cuir achomharc are an "
-"balbh"
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
-msgstr "Cuirtear cosc ort"
+msgstr ""
 
 #: src/core/ChatProvider.js:443
 msgid "Your Internet Provider is banned"
-msgstr "Cuirtear cosc ar do soláthraí idirlín"
+msgstr ""
 
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr "Cuirtear balbh ort do ${ timeMin } Bomaite"
+msgstr ""
 
 #: src/core/ChatProvider.js:450
 #, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Cuirtear balbh ort do ${ ttl } soicind eile"
+msgstr ""
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
 msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
 msgstr ""
-"sheolann tú teachtaireachtaí raibh giste, caithfidh tú fanacht do ${ "
-"waitTime } :("
 
 #: src/core/ChatProvider.js:471
 msgid "You don't have access to this channel"
-msgstr "Níl Cead agat sa cainéal seo"
+msgstr ""
 
 #: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
-msgstr "Caithfidh tú do phost a shocraigh le caint"
+msgstr ""
 
 #: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
-msgstr "Ní chúig leat teachtaireacht comh fhada le seo a cuir amach :("
+msgstr ""
 
 #: src/core/ChatProvider.js:504
 msgid "Please use int channel"
-msgstr "Baint úsáid as cainéal Idirnáisiúnta le do chul"
+msgstr ""
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
-msgstr "Stad ag Tuileadh"
+msgstr ""
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr "sheol tú pasfhocal folamh nó data Neamhbhailí :("
+msgstr ""
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr "Níl an pasfhocal-nasc a athshocrú bailí níos mó:("
+msgstr ""
 
 #: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
-msgstr "Ní mheaitseáileann do phasfhocail :("
+msgstr ""
 
 #: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
-msgstr "Níl an úsáideoir I n-ár bunachar sonraí :("
+msgstr ""
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr "Phasfhocal athraithe"
+msgstr ""
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr "URL neamhbhailí :( cuir seic ar do phost arís."
+msgstr ""
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun Cruinneog3T [3DGlobe]"
+msgstr ""
 
 #: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
-msgstr "cruinneog 3T do n-Ár léarscáil"
+msgstr ""
 
 #: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
-msgstr "Cuir cliceáil dúbailte ar an cruinneog le dul árais"
+msgstr ""
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
-msgstr "Ag Loadail..."
+msgstr ""
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
-msgstr "ppfun"
+msgstr ""
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
+msgstr ""
 
 #: src/ssr/Main.jsx:62
 msgid "PixelPlanet.Fun"
-msgstr "Pixelplanet.Fun"
+msgstr ""
 
 #: src/ssr/Main.jsx:63
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
-"Cuir picteilíní dathuil ar canbháis cosúil le léarscáil le daoine eile ar "
-"líne"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Caithfidh tú rud a cuir istigh Email ."
+msgstr ""
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr "Ba chóir Ríomhphost a bheith ar a laghad 5 carachtair fada."
+msgstr ""
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr "Ní féidir Ríomhphost a bheith níos faide ná 40 carachtair."
+msgstr ""
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr "Ba chóir go mbeadh ar a laghad ponc amhainn ann"
+msgstr ""
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "Ba chóir go mbeadh @"
+msgstr ""
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr "Ní féidir ainm a bheith folamh."
+msgstr ""
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr "Ní mór ainm a bheith ar a laghad 2 carachtair fada"
+msgstr ""
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr "Ní mór ainm a bheith níos giorra ná 26 carachtair"
+msgstr ""
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Tá charachtair neamhbhailí Ann mar shampla @,/,\\ nó #"
+msgstr ""
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr "Níor tabhar tu phasfhocal"
+msgstr ""
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr "Caithfidh an phasfhocal beidh 6+ charachtair"
+msgstr ""
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr "Caithfidh an phasfhocal beidh 60- charachtair"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:20
 #: src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
-msgstr "PixelPlanet.fun athshocrú pasfhocal"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:21
 #: src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
-msgstr "Athshocraigh do phasfhocal anseo"
+msgstr ""
 
 #: src/core/MailProvider.js:105
 #: src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
-msgstr "Athshocraigh Pasfhocal"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:30
 #: src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
-msgstr "Cliceáil anseo"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:30
 msgid "to go back to pixelplanet"
-msgstr "dul ar ais go dtí pixelplanet"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
 msgid "Hello ${ name }, you can set your new password here:"
-msgstr "Dia duit ${ name }, Is féidir leat phasfhocal nua a cuir anseo:"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
-msgstr "Phasfhocal nua"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:60
 msgid "Confirm New Password"
-msgstr "deimhnigh n phasfhocal nua"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"

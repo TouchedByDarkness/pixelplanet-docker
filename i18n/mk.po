@@ -1,73 +1,67 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-01 07:50+0000\n"
-"Last-Translator: Jamie Fitzgerald <jamiefitzgerald2010@gmail.com>\n"
-"Language-Team: Irish <https://hosted.weblate.org/projects/pixelplanet/client/"
-"ga/>\n"
-"Language: ga\n"
+"Language: mk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :("
-"n>6 && n<11) ? 3 : 4;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"Plural-Forms: nplurals=2; plural=n==1 || n%10==1 ? 0 : 1;\n"
 
 #: src/controls/keypress.js:99
 #, javascript-format
 msgid "Switched to ${ canvasName }"
-msgstr "athrú go dtí ${ canvasName }"
+msgstr ""
 
 #: src/controls/keypress.js:184
 msgid "Grid ON"
-msgstr "Cuirtear eangach ar"
+msgstr ""
 
 #: src/controls/keypress.js:185
 msgid "Grid OFF"
-msgstr "Múch an greille"
+msgstr ""
 
 #: src/controls/keypress.js:195
 msgid "Pixel Notify ON"
-msgstr "picteilin fógra a thabhairt"
+msgstr ""
 
 #: src/controls/keypress.js:196
 msgid "Pixel Notify OFF"
-msgstr "Múch an picteilin fógra a thabhairt"
+msgstr ""
 
 #: src/controls/keypress.js:201
 msgid "Muted Sound"
-msgstr "Balbh fuaim"
+msgstr ""
 
 #: src/controls/keypress.js:202
 msgid "Unmuted Sound"
-msgstr "fuaim neamhbhalbh"
+msgstr ""
 
 #: src/components/CoordinatesBox.jsx:39
 #: src/components/GetIID.jsx:51
 #: src/controls/keypress.js:211
 msgid "Copied"
-msgstr "Cóipeál"
+msgstr ""
 
 #: src/controls/keypress.js:217
 msgid "Overlay ON"
-msgstr "Tá forleagan ar"
+msgstr ""
 
 #: src/controls/keypress.js:218
 msgid "Overlay OFF"
-msgstr "Múch an forleagan"
+msgstr ""
 
 #: src/components/windows/Help.jsx:50
 #: src/controls/keypress.js:224
 msgid "Easter Egg ON"
-msgstr "Ubh Cháisc"
+msgstr ""
 
 #: src/components/windows/Help.jsx:49
 #: src/controls/keypress.js:225
 msgid "Easter Egg OFF"
-msgstr "Múch an Ubh Cháisc"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:70
 #: src/ui/PixelTransferController.js:165
 msgid "Timeout"
-msgstr "am istigh"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:72
 #: src/ui/PixelTransferController.js:167
@@ -75,152 +69,147 @@ msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
-"Ní bhfuair muid freagra ó pixelplanet. Déan iarracht athnuachan a dhéanamh "
-"má leanann an fhadhb seo"
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
-msgstr "chanbhás neamhbhailí"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
-msgstr "níl an chanbhás seo ann"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:108
 #: src/ui/PixelTransferController.js:112
 #: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
-msgstr "comhordaitheach neamhbhailí"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
-msgstr "x thar teorainn"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
-msgstr "y thar teorainn"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
-msgstr "z thar teorainn"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
-msgstr "níl an ceart dathanna"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
-msgstr "Ní dath ceart é seo"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
-msgstr "Ní ach do Úsáideoirí síneadh isteach"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
-msgstr "Caithfidh tú beidh síneadh isteach le baint úsáid as an Canbháis seo"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:128
 #: src/ui/PixelTransferController.js:144
 #: src/ui/PixelTransferController.js:148
 msgid "Not allowed"
-msgstr "Níl cead"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:130
 msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
-"Níl tú ábalta baint úsáid as an canbháis seo, mar níl do scóir mór go leor"
 
 #: src/ui/PixelTransferController.js:133
 msgid "Pixel protected"
-msgstr "picteilíní sabhailte"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
-msgstr "Tábhar fianaise gur é duine thú"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
-msgstr "Tá tú ag baint úsáide as Proxy."
+msgstr ""
 
 #: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
-msgstr "Is féidir an Barr10 Don la inné a cuir anseo"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:152
 msgid "You are weird"
-msgstr "Is duine aisteach tú"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:154
 msgid "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
-"Fuair an freastalaí mearbhall ar do picteilíní. An bhfuil tú ag imirt ar "
-"níos mó na gléas amhain?"
 
 #: src/ui/PixelTransferController.js:157
 msgid "Banned"
-msgstr "Cuirtear amach"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
-msgstr "Cuirtear amach mar gheal ar an raon"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:162
 msgid "Your Internet Provider is banned from this game"
-msgstr "Cuirtear cosc ar do soláthraí idirlín ón cliocha seo"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:170
 msgid "Weird"
-msgstr "Aisteach"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
-msgstr "Ní féidir picteilíní a cuir isteach"
+msgstr ""
 
 #: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
-msgstr "Earráid ${ retCode }"
+msgstr ""
 
 #: src/ui/rendererFactory.js:31
 msgid "Canvas Error"
-msgstr "earráid chanbhás"
+msgstr ""
 
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
-msgstr "Ní féidir chanbhás 3D a dhéanamh, an bhfuil WebGL2 agat faoi mhíchumas?"
+msgstr ""
 
 #: src/ui/templateLoader.js:230
 #: src/ui/templateLoader.js:256
 msgid "Error :("
-msgstr "earráid :("
+msgstr ""
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr "Ní féidir a onnmhairiú níos mó ná 20 nó Níl aon teimpléad!"
+msgstr ""
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr "Ní féidir a allmhairiú níos mó ná 20 nó Níl aon teimpléad!"
+msgstr ""
 
 #: src/components/BanInfo.jsx:136
 #: src/store/actions/index.js:7
 msgid "OK"
-msgstr "Maith go Leor"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
-msgstr "Rinne tú med raibh Mór don iarratais"
+msgstr ""
 
 #: src/store/actions/fetch.js:59
 #, javascript-format
 msgid "try again after ${ ti }min"
-msgstr "Cuirtear Tráil arís i ndiaidh ${ ti } Bom"
+msgstr ""
 
 #: src/store/actions/fetch.js:70
 #, javascript-format
 msgid "Connection error ${ code } :("
-msgstr "Earráid Ceangal ${ code }:("
+msgstr ""
 
 #: src/store/actions/fetch.js:103
 #: src/store/actions/fetch.js:129
@@ -804,7 +793,7 @@ msgstr ""
 
 #: src/components/windows/UserArea.jsx:71
 msgid "Loading..."
-msgstr "Ag Loadail..."
+msgstr ""
 
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
@@ -962,51 +951,51 @@ msgstr ""
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Caithfidh tú rud a cuir istigh Email ."
+msgstr ""
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr "Ba chóir Ríomhphost a bheith ar a laghad 5 carachtair fada."
+msgstr ""
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr "Ní féidir Ríomhphost a bheith níos faide ná 40 carachtair."
+msgstr ""
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr "Ba chóir go mbeadh ar a laghad ponc amhainn ann"
+msgstr ""
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "Ba chóir go mbeadh @"
+msgstr ""
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr "Ní féidir ainm a bheith folamh."
+msgstr ""
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr "Ní mór ainm a bheith ar a laghad 2 carachtair fada"
+msgstr ""
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr "Ní mór ainm a bheith níos giorra ná 26 carachtair"
+msgstr ""
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Tá charachtair neamhbhailí Ann mar shampla @,/,\\ nó #"
+msgstr ""
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr "Níor tabhar tu phasfhocal"
+msgstr ""
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr "Caithfidh an phasfhocal beidh 6+ charachtair"
+msgstr ""
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr "Caithfidh an phasfhocal beidh 60- charachtair"
+msgstr ""
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
@@ -1372,7 +1361,7 @@ msgstr ""
 
 #: src/components/ChangePassword.jsx:44
 msgid "Password successfully changed."
-msgstr "Phasfhocal athraithe"
+msgstr ""
 
 #: src/components/ChangePassword.jsx:88
 msgid "Old Password"
@@ -1380,11 +1369,11 @@ msgstr ""
 
 #: src/components/ChangePassword.jsx:96
 msgid "New Password"
-msgstr "Phasfhocal nua"
+msgstr ""
 
 #: src/components/ChangePassword.jsx:103
 msgid "Confirm New Password"
-msgstr "deimhnigh n phasfhocal nua"
+msgstr ""
 
 #: src/components/ChangeName.jsx:64
 msgid "New Username"
