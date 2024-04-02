@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-12 19:57+0000\n"
+"PO-Revision-Date: 2024-04-02 13:57+0000\n"
 "Last-Translator: TCr3 <tcreeper.earth@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/tr/>\n"
@@ -13,53 +13,69 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:99
+#: src/controls/keypress.js:62
+msgid "Pencil picks: "
+msgstr "Kalemin seçtiği: "
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+msgid "Selected Color"
+msgstr "Seçili Renk"
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+msgid "From Template"
+msgstr "Şablondan"
+
+#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+msgid "From History"
+msgstr "Geçmişten"
+
+#: src/controls/keypress.js:122
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "${ canvasName } tuvaline geçildi"
 
-#: src/controls/keypress.js:184
+#: src/controls/keypress.js:193
 msgid "Grid ON"
 msgstr "Izgara AÇIK"
 
-#: src/controls/keypress.js:185
+#: src/controls/keypress.js:194
 msgid "Grid OFF"
 msgstr "Izgara KAPALI"
 
-#: src/controls/keypress.js:195
+#: src/controls/keypress.js:204
 msgid "Pixel Notify ON"
 msgstr "Piksel Bildirimleri AÇIK"
 
-#: src/controls/keypress.js:196
+#: src/controls/keypress.js:205
 msgid "Pixel Notify OFF"
 msgstr "Piksel Bildirimleri KAPALI"
 
-#: src/controls/keypress.js:201
+#: src/controls/keypress.js:210
 msgid "Muted Sound"
 msgstr "Ses Kapatıldı"
 
-#: src/controls/keypress.js:202
+#: src/controls/keypress.js:211
 msgid "Unmuted Sound"
 msgstr "Ses Açıldı"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:220
 msgid "Copied"
 msgstr "Kopyalandı"
 
-#: src/controls/keypress.js:217
+#: src/controls/keypress.js:226
 msgid "Overlay ON"
 msgstr "Şablon AÇIK"
 
-#: src/controls/keypress.js:218
+#: src/controls/keypress.js:227
 msgid "Overlay OFF"
 msgstr "Şablon KAPALI"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
 msgid "Easter Egg ON"
 msgstr "Easter Egg AÇIK"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
 msgid "Easter Egg OFF"
 msgstr "Easter Egg KAPALI"
 
@@ -250,17 +266,25 @@ msgstr "Sohbette yeni mesajlarınız var"
 msgid "Copy to Clipboard"
 msgstr "Panoya Kopyala"
 
-#: src/components/OnlineBox.jsx:40
+#: src/components/OnlineBox.jsx:56
 msgid "Online Users on Canvas"
 msgstr "Tuvaldeki Çevrim İçi Oyuncular"
 
-#: src/components/OnlineBox.jsx:47
+#: src/components/OnlineBox.jsx:71
 msgid "Total Online Users"
 msgstr "Toplam Çevrim İçi Oyuncular"
 
-#: src/components/OnlineBox.jsx:55
-msgid "Pixels placed"
-msgstr "Atılan pikseller"
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+msgid "Placed Pixels"
+msgstr "Atılan Pikseller"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+msgid "Today"
+msgstr "Bugün"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+msgid "Total"
+msgstr "Toplam"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -336,13 +360,13 @@ msgstr "Ayarlar"
 msgid "User Area"
 msgstr "Kullanıcı Alanı"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Küresel Görünüm"
-
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
 msgstr "Ekran Görüntüsü Al"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Küresel Görünüm"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -352,27 +376,19 @@ msgstr "Paleti Kapat"
 msgid "Open Palette"
 msgstr "Paleti Aç"
 
-#: src/components/buttons/PencilButton.jsx:32
-msgid "History Pencil ON"
-msgstr "Geçmiş Kalemi AÇIK"
-
-#: src/components/buttons/PencilButton.jsx:38
-msgid "Overlay Pencil ON"
-msgstr "Şablon Kalemi AÇIK"
-
-#: src/components/buttons/PencilButton.jsx:65
+#: src/components/buttons/PencilButton.jsx:26
 msgid "Enable Pencil"
 msgstr "Kalemi Etkinleştir"
 
-#: src/components/buttons/PencilButton.jsx:69
+#: src/components/buttons/PencilButton.jsx:31
 msgid "Disable Pencil"
 msgstr "Kalemi Devre Dışı Bırak"
 
-#: src/components/buttons/PencilButton.jsx:73
+#: src/components/buttons/PencilButton.jsx:35
 msgid "Disable History Pencil"
 msgstr "Geçmiş Kalemini Devre Dışı Bırak"
 
-#: src/components/buttons/PencilButton.jsx:77
+#: src/components/buttons/PencilButton.jsx:39
 msgid "Disable Overlay Pencil"
 msgstr "Şablon Kalemini Devre Dışı Bırak"
 
@@ -542,7 +558,7 @@ msgstr ""
 "yasaklandığınızı düşünüyorsanız, lütfen ${ guildedLink } sunucumuza gidin "
 "veya da ${ mailLink } adresine aşağıdaki IID'yi içeren bir e-posta gönderin:"
 
-#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
 msgid "Controls"
 msgstr "Kontroller"
 
@@ -579,13 +595,13 @@ msgstr ""
 "${ bindQ } veya ${ bindE } tuşuna basarak tuvalden uzaklaşın veya tuvale "
 "yaklaşın"
 
-#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr ""
 "${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } tuşları ile tuvalde gezinin"
 
-#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -609,28 +625,19 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:91
 #, javascript-format
-msgid "Hold left ${ bindShift } for placing while moving mouse"
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr ""
-"Farenizi hareket ettirirken piksel atmak için sol ${ bindShift } tuşuna "
-"basılı tutun"
+"Kalem için sol ${ bindShift } tuşuna basılı tutun (farenizi hareket "
+"ettirirken piksel atmanızı sağlar)"
 
-#: src/components/windows/Help.jsx:92
-#, javascript-format
-msgid ""
-"Hold right ${ bindShift } for placing while moving mouse according to "
-"historical view"
-msgstr ""
-"Farenizi hareket ettirirken geçmiş görünümünden piksel atmak için sağ ${ "
-"bindShift } tuşuna basılı tutun"
-
-#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
+#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "${ mouseSymbol } Farenizin sol tuşuna basarak veya ${ touchSymbol } ekrana "
 "tıklayarak piksel atın"
 
-#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -639,19 +646,19 @@ msgstr ""
 "Farenizin tekerleğine ${ mouseSymbol } basarak veya ${ touchSymbol } ekrana "
 "basılı tutarak orada bulunan pikselin rengini kopyalayın"
 
-#: src/components/windows/Help.jsx:100
+#: src/components/windows/Help.jsx:99
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "${ bindQ } ve ${ bindE } basarak yukarı aşağı gidin"
 
-#: src/components/windows/Help.jsx:101
+#: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
 "${ mouseSymbol } Farenizin sol tuşuna basılı tutup farenizi kaydırarak "
 "gezinin"
 
-#: src/components/windows/Help.jsx:102
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -660,14 +667,14 @@ msgstr ""
 "${ mouseSymbol } Fare tekerleğini döndürerek veya ${ mouseSymbol } orta fare "
 "düğmesine basarak uzaklaştırın veya yakınlaştırın"
 
-#: src/components/windows/Help.jsx:103
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
 "${ mouseSymbol } Sağ tuşuna basılı tutup farenizi hareket ettirerek "
 "baktığınız konumu kaydırın"
 
-#: src/components/windows/Help.jsx:105
+#: src/components/windows/Help.jsx:104
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -675,60 +682,60 @@ msgstr ""
 "${ mouseSymbol } Farenizin sağ tuşuyla veya ${ touchSymbol } çift tıklayarak "
 "bir pikseli kaldırın"
 
-#: src/components/windows/Help.jsx:110
+#: src/components/windows/Help.jsx:109
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
 msgstr "Renk paletlerini kamuya açan aşağıdaki sanatçılara teşekkür ederiz"
 
-#: src/components/windows/Help.jsx:113
+#: src/components/windows/Help.jsx:112
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "Ay paletinin sahibi ${ starhouseLink }'dur."
 
-#: src/components/windows/Help.jsx:116
+#: src/components/windows/Help.jsx:115
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Top10 paletinin sahibi ${ vinikLink }'dir."
 
-#: src/components/windows/Help.jsx:119
+#: src/components/windows/Help.jsx:118
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "2bit tuvalinin renk paletini ${ donendoLink }'e borçluyuz."
 
-#: src/components/windows/Settings.jsx:91
+#: src/components/windows/Settings.jsx:67
 msgid "Show Grid"
 msgstr "Izgarayı Göster"
 
-#: src/components/windows/Settings.jsx:96
+#: src/components/windows/Settings.jsx:72
 msgid "Turn on grid to highlight pixel borders."
 msgstr "Pikselleri ayırt edebilmeniz için piksel aralarına çizgi çizer."
 
-#: src/components/windows/Settings.jsx:99
+#: src/components/windows/Settings.jsx:75
 msgid "Show Pixel Activity"
 msgstr "Piksel Etkinliğini Göster"
 
-#: src/components/windows/Settings.jsx:104
+#: src/components/windows/Settings.jsx:80
 msgid "Show circles where pixels are placed."
 msgstr "Diğerlerini piksel attığı yerleri bir daire ile belli eder."
 
-#: src/components/windows/Settings.jsx:107
+#: src/components/windows/Settings.jsx:83
 msgid "Always show Movement Controls"
 msgstr "Hareket Kontrollerini Her Zaman Göster"
 
-#: src/components/windows/Settings.jsx:112
+#: src/components/windows/Settings.jsx:88
 msgid "Always show movement control buttons"
 msgstr "Hareket tuşlarını sürekli olarak görünebilir tut"
 
-#: src/components/windows/Settings.jsx:115
+#: src/components/windows/Settings.jsx:91
 msgid "Disable Game Sounds"
 msgstr "Oyun Seslerini Kapat"
 
-#: src/components/windows/Settings.jsx:121
+#: src/components/windows/Settings.jsx:97
 msgid "All sound effects will be disabled."
 msgstr "Tüm ses efektleri devre dışı bırakır."
 
-#: src/components/windows/Settings.jsx:125
+#: src/components/windows/Settings.jsx:101
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
@@ -736,19 +743,19 @@ msgstr ""
 "Tarayıcınız ses oynatmamız için AudioContext'i kullanmamıza izin vermiyor. "
 "Bizi engelleyen bir gizlilik özelliğiniz mi var?"
 
-#: src/components/windows/Settings.jsx:131
+#: src/components/windows/Settings.jsx:107
 msgid "Enable chat notifications"
 msgstr "Sohbet Bildirimlerini Aç"
 
-#: src/components/windows/Settings.jsx:135
+#: src/components/windows/Settings.jsx:111
 msgid "Play a sound when new chat messages arrive"
 msgstr "Sohbette yeni iletilerde sesle uyar"
 
-#: src/components/windows/Settings.jsx:138
+#: src/components/windows/Settings.jsx:114
 msgid "Auto Zoom In"
 msgstr "Otomatik Yakınlaştırma"
 
-#: src/components/windows/Settings.jsx:143
+#: src/components/windows/Settings.jsx:119
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
@@ -756,47 +763,55 @@ msgstr ""
 "Bir yere tıkladığınız zaman eğer uzaklaştırılmışsa piksel atmak yerine "
 "yakınlaştırır."
 
-#: src/components/windows/Settings.jsx:146
+#: src/components/windows/Settings.jsx:122
 msgid "Compact Palette"
 msgstr "Sıklaştırılmış Palet"
 
-#: src/components/windows/Settings.jsx:151
+#: src/components/windows/Settings.jsx:127
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr "Ekranda yer açmak için paleti küçük bir dörtgen haline getirir."
 
-#: src/components/windows/Settings.jsx:154
+#: src/components/windows/Settings.jsx:130
 msgid "Potato Mode"
 msgstr "Patates Modu"
 
-#: src/components/windows/Settings.jsx:158
+#: src/components/windows/Settings.jsx:134
 msgid "For when you are playing on a potato."
 msgstr "Bir patates üzerinden oynayanlar için."
 
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
 msgid "Light Grid"
 msgstr "Beyaz Izgara"
 
-#: src/components/windows/Settings.jsx:165
+#: src/components/windows/Settings.jsx:141
 msgid "Show Grid in white instead of black."
 msgstr "Izgarayı siyah yerine beyaz olarak gösterir."
 
-#: src/components/windows/Settings.jsx:169
+#: src/components/windows/Settings.jsx:145
 msgid "Historical View"
 msgstr "Geçmiş Görünümü"
 
-#: src/components/windows/Settings.jsx:174
+#: src/components/windows/Settings.jsx:150
 msgid "Check out past versions of the canvas."
 msgstr "Tuvalin eskiden nasıl göründüğünü gösterir."
 
-#: src/components/windows/Settings.jsx:179
+#: src/components/windows/Settings.jsx:154
+msgid "Pencil Mode"
+msgstr "Kalem Modu"
+
+#: src/components/windows/Settings.jsx:162
+msgid "What the pencil should draw."
+msgstr "Kalemin ne çizeceği."
+
+#: src/components/windows/Settings.jsx:166
 msgid "Themes"
 msgstr "Temalar"
 
-#: src/components/windows/Settings.jsx:184
+#: src/components/windows/Settings.jsx:171
 msgid "How pixelplanet should look like."
 msgstr "Oyunun nasıl görüneceğidir."
 
-#: src/components/windows/Settings.jsx:191
+#: src/components/windows/Settings.jsx:178
 msgid "Select Language"
 msgstr "Dil Seç"
 
@@ -1024,7 +1039,8 @@ msgstr "Kullanıcı adınız 26 karakterden az olmalıdır"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Kullanıcı adınız @, /, \\ veya # gibi geçersiz karakterler bulunduruyor"
+msgstr ""
+"Kullanıcı adınız @, /, \\ veya # gibi geçersiz karakterler bulunduruyor"
 
 #: src/utils/validation.js:53
 msgid "No password given."
@@ -1052,11 +1068,11 @@ msgstr "Kopyala"
 msgid "Save"
 msgstr "Kaydet"
 
-#: src/components/TemplateSettings.jsx:57
+#: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr "Şablonlar"
 
-#: src/components/TemplateSettings.jsx:61
+#: src/components/TemplateSettings.jsx:56
 msgid ""
 "Tired of always spaming one single color? Want to create art instead, but "
 "you have to count pixels from some other image? Templates can help you with "
@@ -1069,51 +1085,43 @@ msgstr ""
 "rahatlıkla çizim yapmanızı sağlar. Şablondaki bir piksel tuvaldeki bir "
 "piksele denk gelecektir."
 
-#: src/components/TemplateSettings.jsx:65
+#: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
 msgstr "Overlay'i Etkinleştir"
 
-#: src/components/TemplateSettings.jsx:70
+#: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
 msgstr "Şablonları tuval üzerinde göster."
 
-#: src/components/TemplateSettings.jsx:73
+#: src/components/TemplateSettings.jsx:68
 msgid "Small Pixels When Zoomed"
 msgstr "Yakınlaştırmada Pikselleri Küçült"
 
-#: src/components/TemplateSettings.jsx:78
+#: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr "Büyük ölçeklerde şablonun piksellerini küçük kareler halinde göster."
 
-#: src/components/TemplateSettings.jsx:85
+#: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
 msgstr "Overlay Opaklığı"
 
-#: src/components/TemplateSettings.jsx:99
+#: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
 msgstr "Overlay'in yüzde olarak opaklığı."
 
-#: src/components/TemplateSettings.jsx:105
-msgid "Right-Shift Auto-Color"
-msgstr "Sağ-Shift ile Otomatik Boyama"
-
-#: src/components/TemplateSettings.jsx:110
-msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr "Sağ-shift ile şablondan otomatik boya, geçmiş yerine."
-
-#: src/components/TemplateSettings.jsx:149
+#: src/components/TemplateSettings.jsx:132
 msgid "Cancel adding Template"
 msgstr "Şablon Eklemekten Vazgeç"
 
-#: src/components/TemplateSettings.jsx:156
+#: src/components/TemplateSettings.jsx:139
 msgid "Add Template"
 msgstr "Şablon Ekle"
 
-#: src/components/TemplateSettings.jsx:173
+#: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
 msgstr "Etkin olan şablonları dışa aktar"
 
-#: src/components/TemplateSettings.jsx:182
+#: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr "Şablonları içe aktar"
 
@@ -1148,10 +1156,6 @@ msgstr "Bugün Atılan Pikseller"
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
 msgstr "Günlük Sıralama"
-
-#: src/components/UserAreaContent.jsx:71
-msgid "Placed Pixels"
-msgstr "Atılan Pikseller"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
@@ -1262,14 +1266,6 @@ msgstr "Sıfırla"
 #: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr "Şablonu İndir"
-
-#: src/components/Rankings.jsx:147
-msgid "Total"
-msgstr "Toplam"
-
-#: src/components/Rankings.jsx:156
-msgid "Today"
-msgstr "Bugün"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
@@ -1461,6 +1457,26 @@ msgstr "Kullanıcıların Engelini Kaldır"
 msgid "You have no users blocked"
 msgstr "Engellediğin kullanıcı yok"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "En Yüksek 10 Ülke [piksel / gün]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Saatlik oyuncu ve piksel sayısı"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "En Yüksek 10 Oyuncu [piksel / gün]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Bugünkü piksel sayılarına göre ülkeler"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Günlük atılan toplam piksel"
+
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
 msgstr "Resmi tuvalde inşa et."
@@ -1642,26 +1658,6 @@ msgstr "Nedeni Gir"
 msgid "(0 = infinite)"
 msgstr "(0 = sonsuz)"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "En Yüksek 10 Ülke [piksel / gün]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Saatlik oyuncu ve piksel sayısı"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "En Yüksek 10 Oyuncu [piksel / gün]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Bugünkü piksel sayılarına göre ülkeler"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Günlük atılan toplam piksel"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Ping"
@@ -1678,17 +1674,17 @@ msgstr "Engelle"
 msgid "Mute"
 msgstr "Sustur"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
@@ -1733,20 +1729,48 @@ msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
 
-#: src/components/windows/Settings.jsx:108
+#: src/components/windows/Settings.jsx:84
 msgctxt "keybinds"
 msgid "N"
 msgstr "N"
 
-#: src/components/windows/Settings.jsx:116
+#: src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "M"
 msgstr "M"
 
-#: src/components/TemplateSettings.jsx:66
+#: src/components/windows/Settings.jsx:157
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
+
+#: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Pixels placed"
+#~ msgstr "Atılan pikseller"
+
+#~ msgid "History Pencil ON"
+#~ msgstr "Geçmiş Kalemi AÇIK"
+
+#~ msgid "Overlay Pencil ON"
+#~ msgstr "Şablon Kalemi AÇIK"
+
+#, javascript-format
+#~ msgid ""
+#~ "Hold right ${ bindShift } for placing while moving mouse according to "
+#~ "historical view"
+#~ msgstr ""
+#~ "Farenizi hareket ettirirken geçmiş görünümünden piksel atmak için sağ "
+#~ "${ bindShift } tuşuna basılı tutun"
+
+#~ msgid "Right-Shift Auto-Color"
+#~ msgstr "Sağ-Shift ile Otomatik Boyama"
+
+#~ msgid "Place pixels from overlay on right-shift, instead of history."
+#~ msgstr "Sağ-shift ile şablondan otomatik boya, geçmiş yerine."
 
 #~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 #~ msgstr "Pixelplanet'ten yanıt alınamadı. Sayfayı yenilemeyi deneyebilirsin?"

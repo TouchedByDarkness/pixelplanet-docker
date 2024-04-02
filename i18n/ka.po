@@ -13,53 +13,71 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:99
+#: src/controls/keypress.js:62
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#, fuzzy
+msgid "Selected Color"
+msgstr "აირჩიეთ ფაილი"
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#, fuzzy
+msgid "From Template"
+msgstr "თემფლეითები"
+
+#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+msgid "From History"
+msgstr ""
+
+#: src/controls/keypress.js:122
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "გადაერთო ${ canvasName }-ზე"
 
-#: src/controls/keypress.js:184
+#: src/controls/keypress.js:193
 msgid "Grid ON"
 msgstr "ბადე ჩართულია"
 
-#: src/controls/keypress.js:185
+#: src/controls/keypress.js:194
 msgid "Grid OFF"
 msgstr "ბადე გამორთულია"
 
-#: src/controls/keypress.js:195
+#: src/controls/keypress.js:204
 msgid "Pixel Notify ON"
 msgstr "Pixel Notify ჩართულია"
 
-#: src/controls/keypress.js:196
+#: src/controls/keypress.js:205
 msgid "Pixel Notify OFF"
 msgstr "Pixel Notify გამორთულია"
 
-#: src/controls/keypress.js:201
+#: src/controls/keypress.js:210
 msgid "Muted Sound"
 msgstr "ხმა გამორთულია"
 
-#: src/controls/keypress.js:202
+#: src/controls/keypress.js:211
 msgid "Unmuted Sound"
 msgstr "ხმა ჩართულია"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:220
 msgid "Copied"
 msgstr "დაკოპირდა"
 
-#: src/controls/keypress.js:217
+#: src/controls/keypress.js:226
 msgid "Overlay ON"
 msgstr "ოვერლეი ჩართულია"
 
-#: src/controls/keypress.js:218
+#: src/controls/keypress.js:227
 msgid "Overlay OFF"
 msgstr "ოვერლეი გამორთულია"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
 msgid "Easter Egg ON"
 msgstr "სააღდგომო კვერცხი ჩართულია"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
 msgid "Easter Egg OFF"
 msgstr "სააღდგომო კვერცხი გამორთულია"
 
@@ -247,17 +265,25 @@ msgstr "თქვენ გაქვთ ახალი შეტყობინ
 msgid "Copy to Clipboard"
 msgstr "კოპირება კლიპბოარდზე"
 
-#: src/components/OnlineBox.jsx:40
+#: src/components/OnlineBox.jsx:56
 msgid "Online Users on Canvas"
 msgstr "ონლაინ ადამიანები კანვასზე"
 
-#: src/components/OnlineBox.jsx:47
+#: src/components/OnlineBox.jsx:71
 msgid "Total Online Users"
 msgstr "სულ ონლაინ მომხმარებლები"
 
-#: src/components/OnlineBox.jsx:55
-msgid "Pixels placed"
-msgstr "მოთავსებული პიქსელები"
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+msgid "Placed Pixels"
+msgstr "დასმული პიქსელები"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+msgid "Today"
+msgstr "დღეს"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+msgid "Total"
+msgstr "სულ"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -333,13 +359,13 @@ msgstr "სეთინგები"
 msgid "User Area"
 msgstr "მომხმარებლის ზონა"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "გლობუსის ნახვა"
-
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
 msgstr "სკრინშოტის გაკეთება"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "გლობუსის ნახვა"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -349,27 +375,19 @@ msgstr "დახურეთ პალიტრა"
 msgid "Open Palette"
 msgstr "გააღეთ პალიტრა"
 
-#: src/components/buttons/PencilButton.jsx:32
-msgid "History Pencil ON"
-msgstr "ისტორიული ფანქარი ჩართულია"
-
-#: src/components/buttons/PencilButton.jsx:38
-msgid "Overlay Pencil ON"
-msgstr "ოვერლეის ფანქარი ჩართულია"
-
-#: src/components/buttons/PencilButton.jsx:65
+#: src/components/buttons/PencilButton.jsx:26
 msgid "Enable Pencil"
 msgstr "ფანქრის ჩართვა"
 
-#: src/components/buttons/PencilButton.jsx:69
+#: src/components/buttons/PencilButton.jsx:31
 msgid "Disable Pencil"
 msgstr "ფანქრის გამორთვა"
 
-#: src/components/buttons/PencilButton.jsx:73
+#: src/components/buttons/PencilButton.jsx:35
 msgid "Disable History Pencil"
 msgstr "გამორთეთ ისტორიული ფანქარი"
 
-#: src/components/buttons/PencilButton.jsx:77
+#: src/components/buttons/PencilButton.jsx:39
 msgid "Disable Overlay Pencil"
 msgstr "გამორთეთ ოვერლეის ფანქარი"
 
@@ -539,7 +557,7 @@ msgstr ""
 "არასწორად აკრძალეს, გთხოვთ, გადახვიდეთ ჩვენს ${ guildedLink }-ზე ან "
 "გამოგვიგზავნოთ ელფოსტა ${ mailLink }-ზე და მიუთითოთ შემდეგი ID:"
 
-#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
 msgid "Controls"
 msgstr "კონტროლები"
 
@@ -572,13 +590,13 @@ msgstr "დააჭირეთ ${ bindR } კოორდინატები
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr "დააჭირეთ ${ bindQ } ან ${ bindE } გასადიდებლად"
 
-#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr ""
 "დააჭირეთ ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } გადასაადგილებლად"
 
-#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -600,27 +618,18 @@ msgstr ""
 "გასადიდებლად"
 
 #: src/components/windows/Help.jsx:91
-#, javascript-format
-msgid "Hold left ${ bindShift } for placing while moving mouse"
+#, fuzzy, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr "გეჭიროთ ${ bindShift } მარცხნივ დასაყენებლად მაუსის გადაადგილებისას"
 
-#: src/components/windows/Help.jsx:92
-#, javascript-format
-msgid ""
-"Hold right ${ bindShift } for placing while moving mouse according to "
-"historical view"
-msgstr ""
-"გეჭიროთ ${ bindShift } მაუსის გადაადგილებისას ისტორიული ხედის მიხედვით "
-"განთავსებისთვის"
-
-#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
+#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "${ mouseSymbol } მარცხენა მაუსის ღილაკს დააწკაპუნეთ ან ${ touchSymbol } "
 "პიქსელის დასაყენებლად"
 
-#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -629,19 +638,19 @@ msgstr ""
 "დააწკაპუნეთ ${ mouseSymbol } მაუსის შუა ღილაკზე ან ${ touchSymbol } "
 "ხანგრძლივად შეეხეთ ამჟამინდელი რა ფერიც დევს კანვასზე მაგის ასარჩევად"
 
-#: src/components/windows/Help.jsx:100
+#: src/components/windows/Help.jsx:99
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "დააჭირეთ ${ bindQ } და ${ bindE } ზევით და ქვევით ფრენისთვის"
 
-#: src/components/windows/Help.jsx:101
+#: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
 "${ mouseSymbol } ხანგრძლივად დააჭირეთ მაუსის მარცხენა ღილაკს და გადაიტანეთ "
 "მაუსი დასატრიალებლად"
 
-#: src/components/windows/Help.jsx:102
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -650,13 +659,13 @@ msgstr ""
 "${ mouseSymbol } გადაახვიეთ მაუსის ბორბალი ან ხანგრძლივად დააჭირეთ "
 "${ mouseSymbol } მაუსის შუა ღილაკს და გადაათრიეთ გასადიდებლად"
 
-#: src/components/windows/Help.jsx:103
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
 "${ mouseSymbol } დააწკაპუნეთ მარჯვენა ღილაკით და გადაიტანეთ მაუსი გადასატანად"
 
-#: src/components/windows/Help.jsx:105
+#: src/components/windows/Help.jsx:104
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -664,7 +673,7 @@ msgstr ""
 "${ mouseSymbol } დააწკაპუნეთ მარჯვენა ღილაკით ან ${ touchSymbol } ორჯერ "
 "შეეხეთ პიქსელის მოსაშორებლად"
 
-#: src/components/windows/Help.jsx:110
+#: src/components/windows/Help.jsx:109
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
@@ -672,54 +681,54 @@ msgstr ""
 "ჩვენ დიდ მადლობას ვუხდით ამ არტისტებს, მათ შესთავაზეს თავიანთი პალიტრები "
 "საზოგადოებას აქ"
 
-#: src/components/windows/Help.jsx:113
+#: src/components/windows/Help.jsx:112
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "მთვარის პალიტრის კრედიტი მიდის ${ starhouseLink }."
 
-#: src/components/windows/Help.jsx:116
+#: src/components/windows/Help.jsx:115
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "ტოპ10 ტილოს პალიტრის კრედიტი გადადის ${ vinikLink }."
 
-#: src/components/windows/Help.jsx:119
+#: src/components/windows/Help.jsx:118
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "ტოპ10 ტილოს პალიტრის კრედიტი გადადის ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:91
+#: src/components/windows/Settings.jsx:67
 msgid "Show Grid"
 msgstr "ბადის ჩვენება"
 
-#: src/components/windows/Settings.jsx:96
+#: src/components/windows/Settings.jsx:72
 msgid "Turn on grid to highlight pixel borders."
 msgstr "ჩართეთ ბადე პიქსელის საზღვრების გამოსაყოფად."
 
-#: src/components/windows/Settings.jsx:99
+#: src/components/windows/Settings.jsx:75
 msgid "Show Pixel Activity"
 msgstr "Pixel Activity-ის ჩვენება"
 
-#: src/components/windows/Settings.jsx:104
+#: src/components/windows/Settings.jsx:80
 msgid "Show circles where pixels are placed."
 msgstr "აჩვენეთ წრეები, სადაც პიქსელებია განთავსებული."
 
-#: src/components/windows/Settings.jsx:107
+#: src/components/windows/Settings.jsx:83
 msgid "Always show Movement Controls"
 msgstr "მოძრაობის კონტროლის სულ ჩვენება"
 
-#: src/components/windows/Settings.jsx:112
+#: src/components/windows/Settings.jsx:88
 msgid "Always show movement control buttons"
 msgstr "მოძრაობის კონტროლის ღილაკების ყოველთვის ჩვენება"
 
-#: src/components/windows/Settings.jsx:115
+#: src/components/windows/Settings.jsx:91
 msgid "Disable Game Sounds"
 msgstr "თამაშის ხმების გამორთვა"
 
-#: src/components/windows/Settings.jsx:121
+#: src/components/windows/Settings.jsx:97
 msgid "All sound effects will be disabled."
 msgstr "ყველა ხმოვანი ეფექტი გამორთული იქნება."
 
-#: src/components/windows/Settings.jsx:125
+#: src/components/windows/Settings.jsx:101
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
@@ -727,19 +736,19 @@ msgstr ""
 "თქვენი ბრაუზერი არ გვაძლევს საშუალებას გამოვიყენოთ AudioContext საუნდის "
 "ჩასართავათ. გაქვთ რაიმე კონფიდენციალურობის ფუნქცია, რომელიც გვბლოკავს?"
 
-#: src/components/windows/Settings.jsx:131
+#: src/components/windows/Settings.jsx:107
 msgid "Enable chat notifications"
 msgstr "ჩეთის შეტყობინებების ჩართვა"
 
-#: src/components/windows/Settings.jsx:135
+#: src/components/windows/Settings.jsx:111
 msgid "Play a sound when new chat messages arrive"
 msgstr "ახალი ჩეთის შეტყობინებების მოსვლისას ხმის დაკვრა"
 
-#: src/components/windows/Settings.jsx:138
+#: src/components/windows/Settings.jsx:114
 msgid "Auto Zoom In"
 msgstr "ავტომატური ზუმინგი"
 
-#: src/components/windows/Settings.jsx:143
+#: src/components/windows/Settings.jsx:119
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
@@ -747,48 +756,56 @@ msgstr ""
 "გაადიდეთ პიქსელის განთავსების ნაცვლად, როდესაც ტილოზე შეხებით და თქვენი "
 "მასშტაბირება მცირეა."
 
-#: src/components/windows/Settings.jsx:146
+#: src/components/windows/Settings.jsx:122
 msgid "Compact Palette"
 msgstr "კომპაქტური პალიტრა"
 
-#: src/components/windows/Settings.jsx:151
+#: src/components/windows/Settings.jsx:127
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr ""
 "ჩვენება პალიტრა კომპაქტური ფორმით, რომელიც ნაკლებ ადგილს იკავებს ეკრანზე."
 
-#: src/components/windows/Settings.jsx:154
+#: src/components/windows/Settings.jsx:130
 msgid "Potato Mode"
 msgstr "კარტოფილის რეჟიმი"
 
-#: src/components/windows/Settings.jsx:158
+#: src/components/windows/Settings.jsx:134
 msgid "For when you are playing on a potato."
 msgstr "როცა კარტოფილზე თამაშობ."
 
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
 msgid "Light Grid"
 msgstr "სინათლის ბადე"
 
-#: src/components/windows/Settings.jsx:165
+#: src/components/windows/Settings.jsx:141
 msgid "Show Grid in white instead of black."
 msgstr "აჩვენეთ ბადე თეთრად შავის ნაცვლად."
 
-#: src/components/windows/Settings.jsx:169
+#: src/components/windows/Settings.jsx:145
 msgid "Historical View"
 msgstr "ისტორიული ხედი"
 
-#: src/components/windows/Settings.jsx:174
+#: src/components/windows/Settings.jsx:150
 msgid "Check out past versions of the canvas."
 msgstr "შეამოწმეთ კანნვასის წარსული ვერსიები."
 
-#: src/components/windows/Settings.jsx:179
+#: src/components/windows/Settings.jsx:154
+msgid "Pencil Mode"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:162
+msgid "What the pencil should draw."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:166
 msgid "Themes"
 msgstr "თემები"
 
-#: src/components/windows/Settings.jsx:184
+#: src/components/windows/Settings.jsx:171
 msgid "How pixelplanet should look like."
 msgstr "როგორი უნდა გამოიყურებოდეს pixelplanet."
 
-#: src/components/windows/Settings.jsx:191
+#: src/components/windows/Settings.jsx:178
 msgid "Select Language"
 msgstr "Აირჩიეთ ენა"
 
@@ -894,8 +911,8 @@ msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
-"აქ ჩვენ ვაგროვებთ ამ კანვასებს, რათა დავაარქივოთ ისინი სათანადო გზით ("
-"რომელიც ამჟამად მხოლოდ ერთია)."
+"აქ ჩვენ ვაგროვებთ ამ კანვასებს, რათა დავაარქივოთ ისინი სათანადო გზით "
+"(რომელიც ამჟამად მხოლოდ ერთია)."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -1041,11 +1058,11 @@ msgstr "კოპირება"
 msgid "Save"
 msgstr "შენახვა"
 
-#: src/components/TemplateSettings.jsx:57
+#: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr "თემფლეითები"
 
-#: src/components/TemplateSettings.jsx:61
+#: src/components/TemplateSettings.jsx:56
 msgid ""
 "Tired of always spaming one single color? Want to create art instead, but "
 "you have to count pixels from some other image? Templates can help you with "
@@ -1057,51 +1074,43 @@ msgstr ""
 "თემფლეითებს შეუძლიათ გამოაჩინონ ოვერლეი და მარტო თქვენ შეგიძლიათ მათ ზემოდან "
 "დახატვა. ერთი პიქსელი თემფლეითზე, უნდა იყოს ერთი პიქსელი კანვასზე."
 
-#: src/components/TemplateSettings.jsx:65
+#: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
 msgstr "ოვერლეის ჩართვა"
 
-#: src/components/TemplateSettings.jsx:70
+#: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
 msgstr "თემფლეითების ოვერლეად გამოჩენა თამაშში."
 
-#: src/components/TemplateSettings.jsx:73
+#: src/components/TemplateSettings.jsx:68
 msgid "Small Pixels When Zoomed"
 msgstr "პატარა პიქსელების ზუმი"
 
-#: src/components/TemplateSettings.jsx:78
+#: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr "ოვერლეის პატარა ინდივიდუალურ პიქსელებად გამოჩენა შორი ზუმიდან."
 
-#: src/components/TemplateSettings.jsx:85
+#: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
 msgstr "ოვერლეის გამჭვირვალობა"
 
-#: src/components/TemplateSettings.jsx:99
+#: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
 msgstr "ოვერლეის გამჭვირვალობა პროცენტებში."
 
-#: src/components/TemplateSettings.jsx:105
-msgid "Right-Shift Auto-Color"
-msgstr "მარჯვენა-შიფტი აუტო-ფერი"
-
-#: src/components/TemplateSettings.jsx:110
-msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr "დასვით პიქსელები ივერლეიდან მარჯვენა შიფტით, ისტორიის ნაცვლად."
-
-#: src/components/TemplateSettings.jsx:149
+#: src/components/TemplateSettings.jsx:132
 msgid "Cancel adding Template"
 msgstr "თემფლეითის დამატების შეწყვეტა"
 
-#: src/components/TemplateSettings.jsx:156
+#: src/components/TemplateSettings.jsx:139
 msgid "Add Template"
 msgstr "თემფლეითის დამატება"
 
-#: src/components/TemplateSettings.jsx:173
+#: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
 msgstr "ჩართული თემფლეითების დაექსპორტება"
 
-#: src/components/TemplateSettings.jsx:182
+#: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr "თემფლეითების იმპორტირება"
 
@@ -1136,10 +1145,6 @@ msgstr "დღეს დასმული პიქსელები"
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
 msgstr "ყოველდღიური რანკი"
-
-#: src/components/UserAreaContent.jsx:71
-msgid "Placed Pixels"
-msgstr "დასმული პიქსელები"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
@@ -1250,14 +1255,6 @@ msgstr "გადატვირთვა"
 #: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr "ჩამოტვირთეთ შაბლონი"
-
-#: src/components/Rankings.jsx:147
-msgid "Total"
-msgstr "სულ"
-
-#: src/components/Rankings.jsx:156
-msgid "Today"
-msgstr "დღეს"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
@@ -1449,6 +1446,26 @@ msgstr "მომხმარებლების განბლოკვა"
 msgid "You have no users blocked"
 msgstr "თქვენ არ გაქვთ დაბლოკილი მომხმარებელი"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "ტოპ 10 ქვეყანა [pxls / day]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "მოთამაშეები და პიქსელები საათში"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "ტოპ 10 მოთამაშე [pxls / day]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "ქვეყნები პიქსელების მიხედვით დღეს"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "სულ პიქსელები განთავსებული დღეში"
+
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
 msgstr "სურათის აგება კანვასზე."
@@ -1631,26 +1648,6 @@ msgstr "შეიყვანეთ მიზეზი"
 msgid "(0 = infinite)"
 msgstr "(0 = უსასრულო)"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "ტოპ 10 ქვეყანა [pxls / day]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "მოთამაშეები და პიქსელები საათში"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "ტოპ 10 მოთამაშე [pxls / day]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "ქვეყნები პიქსელების მიხედვით დღეს"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "სულ პიქსელები განთავსებული დღეში"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "პინგი"
@@ -1667,17 +1664,17 @@ msgstr "დაბლოკვა"
 msgid "Mute"
 msgstr "დადუმება"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
 msgctxt "keybinds"
 msgid "G"
 msgstr "გ"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
 msgctxt "keybinds"
 msgid "X"
 msgstr "ხ"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
 msgctxt "keybinds"
 msgid "H"
 msgstr "ჰ"
@@ -1722,20 +1719,48 @@ msgctxt "keybinds"
 msgid "Shift"
 msgstr "შიფტი"
 
-#: src/components/windows/Settings.jsx:108
+#: src/components/windows/Settings.jsx:84
 msgctxt "keybinds"
 msgid "N"
 msgstr "ნ"
 
-#: src/components/windows/Settings.jsx:116
+#: src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "M"
 msgstr "მ"
 
-#: src/components/TemplateSettings.jsx:66
+#: src/components/windows/Settings.jsx:157
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"
 msgid "T"
 msgstr "ტ"
+
+#~ msgid "Pixels placed"
+#~ msgstr "მოთავსებული პიქსელები"
+
+#~ msgid "History Pencil ON"
+#~ msgstr "ისტორიული ფანქარი ჩართულია"
+
+#~ msgid "Overlay Pencil ON"
+#~ msgstr "ოვერლეის ფანქარი ჩართულია"
+
+#, javascript-format
+#~ msgid ""
+#~ "Hold right ${ bindShift } for placing while moving mouse according to "
+#~ "historical view"
+#~ msgstr ""
+#~ "გეჭიროთ ${ bindShift } მაუსის გადაადგილებისას ისტორიული ხედის მიხედვით "
+#~ "განთავსებისთვის"
+
+#~ msgid "Right-Shift Auto-Color"
+#~ msgstr "მარჯვენა-შიფტი აუტო-ფერი"
+
+#~ msgid "Place pixels from overlay on right-shift, instead of history."
+#~ msgstr "დასვით პიქსელები ივერლეიდან მარჯვენა შიფტით, ისტორიის ნაცვლად."
 
 #~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 #~ msgstr "არ მოვიდა პასუხი პიქსელპლანეტიდან, ცადე დარეფრეშება საიტის?"

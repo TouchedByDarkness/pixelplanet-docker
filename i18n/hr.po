@@ -14,53 +14,71 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:99
+#: src/controls/keypress.js:62
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#, fuzzy
+msgid "Selected Color"
+msgstr "Odaberi datoteku"
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#, fuzzy
+msgid "From Template"
+msgstr "Šabloni"
+
+#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+msgid "From History"
+msgstr ""
+
+#: src/controls/keypress.js:122
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "Prebačeno na ${ canvasName }"
 
-#: src/controls/keypress.js:184
+#: src/controls/keypress.js:193
 msgid "Grid ON"
 msgstr "Rešetka ON"
 
-#: src/controls/keypress.js:185
+#: src/controls/keypress.js:194
 msgid "Grid OFF"
 msgstr "Rešetka OFF"
 
-#: src/controls/keypress.js:195
+#: src/controls/keypress.js:204
 msgid "Pixel Notify ON"
 msgstr "Notifikacija za pixele ON"
 
-#: src/controls/keypress.js:196
+#: src/controls/keypress.js:205
 msgid "Pixel Notify OFF"
 msgstr "Notifikacija za pixele OFF"
 
-#: src/controls/keypress.js:201
+#: src/controls/keypress.js:210
 msgid "Muted Sound"
 msgstr "Ugašen zvuk"
 
-#: src/controls/keypress.js:202
+#: src/controls/keypress.js:211
 msgid "Unmuted Sound"
 msgstr "Upaljen zvuk"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:220
 msgid "Copied"
 msgstr "Kopirano"
 
-#: src/controls/keypress.js:217
+#: src/controls/keypress.js:226
 msgid "Overlay ON"
 msgstr "Ovеrlay ON"
 
-#: src/controls/keypress.js:218
+#: src/controls/keypress.js:227
 msgid "Overlay OFF"
 msgstr "Preklapanje OFF"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
 msgid "Easter Egg ON"
 msgstr "Tajna ON"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
 msgid "Easter Egg OFF"
 msgstr "Tajna OFF"
 
@@ -249,17 +267,25 @@ msgstr "Imate nove poruke u chatu"
 msgid "Copy to Clipboard"
 msgstr "Kopirati u međuspremnik"
 
-#: src/components/OnlineBox.jsx:40
+#: src/components/OnlineBox.jsx:56
 msgid "Online Users on Canvas"
 msgstr "Online korisnici na platnu"
 
-#: src/components/OnlineBox.jsx:47
+#: src/components/OnlineBox.jsx:71
 msgid "Total Online Users"
 msgstr "Ukupno online korisnika"
 
-#: src/components/OnlineBox.jsx:55
-msgid "Pixels placed"
-msgstr "Postavljeni pikseli"
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+msgid "Placed Pixels"
+msgstr "Postavljeni pixeli"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+msgid "Today"
+msgstr "Danas"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+msgid "Total"
+msgstr "Ukupno"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -335,13 +361,13 @@ msgstr "Postavke"
 msgid "User Area"
 msgstr "Korisničko područje"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Pogled na globus"
-
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
 msgstr "Napravite snimak zaslona"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Pogled na globus"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -351,27 +377,19 @@ msgstr "Zatvori paletu"
 msgid "Open Palette"
 msgstr "Otvorite paletu"
 
-#: src/components/buttons/PencilButton.jsx:32
-msgid "History Pencil ON"
-msgstr "Povijest Olovka ON"
-
-#: src/components/buttons/PencilButton.jsx:38
-msgid "Overlay Pencil ON"
-msgstr "Šablon Olovka ON"
-
-#: src/components/buttons/PencilButton.jsx:65
+#: src/components/buttons/PencilButton.jsx:26
 msgid "Enable Pencil"
 msgstr "Upali Olovku"
 
-#: src/components/buttons/PencilButton.jsx:69
+#: src/components/buttons/PencilButton.jsx:31
 msgid "Disable Pencil"
 msgstr "Ugasi Olovku"
 
-#: src/components/buttons/PencilButton.jsx:73
+#: src/components/buttons/PencilButton.jsx:35
 msgid "Disable History Pencil"
 msgstr "Ugasi Povijest Olovku"
 
-#: src/components/buttons/PencilButton.jsx:77
+#: src/components/buttons/PencilButton.jsx:39
 msgid "Disable Overlay Pencil"
 msgstr "Ugasi Šablon Olovku"
 
@@ -539,7 +557,7 @@ msgstr ""
 "zabranjeni, idite na naš ${ guildedLink } ili nam pošaljite e-poruku na "
 "${ mailLink } i uključite sljedeći IID:"
 
-#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
 msgid "Controls"
 msgstr "Kontrole"
 
@@ -574,12 +592,12 @@ msgstr "Pritisnite ${ bindR } za kopiranje koordinata"
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr "Pritisnite ${ bindQ } ili ${ bindE } za zumiranje"
 
-#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr "Pritisnite ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } za pomicanje"
 
-#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -600,27 +618,18 @@ msgstr ""
 "zumiranje"
 
 #: src/components/windows/Help.jsx:91
-#, javascript-format
-msgid "Hold left ${ bindShift } for placing while moving mouse"
+#, fuzzy, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr "Držite lijevo ${ bindShift } za postavljanje dok pomičete miš"
 
-#: src/components/windows/Help.jsx:92
-#, javascript-format
-msgid ""
-"Hold right ${ bindShift } for placing while moving mouse according to "
-"historical view"
-msgstr ""
-"Držite desno ${ bindShift } za postavljanje dok pomičete miš, prema "
-"povijesnom prikazu"
-
-#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
+#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "${ mouseSymbol } Lijevi klik ili ${ touchSymbol } dodirnite za postavljanje "
 "piksela"
 
-#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -629,17 +638,17 @@ msgstr ""
 "Kliknite ${ mouseSymbol } srednju tipku miša ili ${ touchSymbol } dugim "
 "dodirom za odabir trenutne boje lebdenja"
 
-#: src/components/windows/Help.jsx:100
+#: src/components/windows/Help.jsx:99
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Pritisnite ${ bindQ } i ${ bindE } za let gore i dolje"
 
-#: src/components/windows/Help.jsx:101
+#: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr "${ mouseSymbol } Držite lijevu tipku miša i povucite miš za rotiranje"
 
-#: src/components/windows/Help.jsx:102
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -648,12 +657,12 @@ msgstr ""
 "${ mouseSymbol } Pomaknite kotačić miša ili držite ${ mouseSymbol } srednju "
 "tipku miša i povucite za zumiranje"
 
-#: src/components/windows/Help.jsx:103
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr "${ mouseSymbol } Desni klik i povlačenje miša za pomicanje"
 
-#: src/components/windows/Help.jsx:105
+#: src/components/windows/Help.jsx:104
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -661,60 +670,60 @@ msgstr ""
 "${ mouseSymbol } Desni klik ili ${ touchSymbol } dvaput dodirnite za "
 "uklanjanje piksela"
 
-#: src/components/windows/Help.jsx:110
+#: src/components/windows/Help.jsx:109
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
 msgstr "Veliko hvala tim umjetnicima koji su ponudili svoje palete javnosti na"
 
-#: src/components/windows/Help.jsx:113
+#: src/components/windows/Help.jsx:112
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "Zasluge za paletu Mjeseca pripadaju ${ starhouseLink }."
 
-#: src/components/windows/Help.jsx:116
+#: src/components/windows/Help.jsx:115
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Zasluga za paletu Top10 pripada ${ vinikLink }."
 
-#: src/components/windows/Help.jsx:119
+#: src/components/windows/Help.jsx:118
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Zasluga za paletu Top10 pripada ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:91
+#: src/components/windows/Settings.jsx:67
 msgid "Show Grid"
 msgstr "Pokaži rešetku"
 
-#: src/components/windows/Settings.jsx:96
+#: src/components/windows/Settings.jsx:72
 msgid "Turn on grid to highlight pixel borders."
 msgstr "Uključite rešetku za označavanje granica piksela."
 
-#: src/components/windows/Settings.jsx:99
+#: src/components/windows/Settings.jsx:75
 msgid "Show Pixel Activity"
 msgstr "Prikaži aktivnost Pixela"
 
-#: src/components/windows/Settings.jsx:104
+#: src/components/windows/Settings.jsx:80
 msgid "Show circles where pixels are placed."
 msgstr "Prikažite krugove gdje su postavljeni pikseli."
 
-#: src/components/windows/Settings.jsx:107
+#: src/components/windows/Settings.jsx:83
 msgid "Always show Movement Controls"
 msgstr "Uvijek pokaži kontrole za kretnju"
 
-#: src/components/windows/Settings.jsx:112
+#: src/components/windows/Settings.jsx:88
 msgid "Always show movement control buttons"
 msgstr "Uvijek prikaži gumbe za kontrolu kretanja"
 
-#: src/components/windows/Settings.jsx:115
+#: src/components/windows/Settings.jsx:91
 msgid "Disable Game Sounds"
 msgstr "Onemogući zvukove igre"
 
-#: src/components/windows/Settings.jsx:121
+#: src/components/windows/Settings.jsx:97
 msgid "All sound effects will be disabled."
 msgstr "Svi zvučni efekti bit će onemogućeni."
 
-#: src/components/windows/Settings.jsx:125
+#: src/components/windows/Settings.jsx:101
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
@@ -722,19 +731,19 @@ msgstr ""
 "Vaš nam preglednik ne dopušta korištenje AudioContexta za reprodukciju "
 "zvukova. Imate li neku značajku privatnosti koja nas blokira?"
 
-#: src/components/windows/Settings.jsx:131
+#: src/components/windows/Settings.jsx:107
 msgid "Enable chat notifications"
 msgstr "Omogući obavijesti o chatu"
 
-#: src/components/windows/Settings.jsx:135
+#: src/components/windows/Settings.jsx:111
 msgid "Play a sound when new chat messages arrive"
 msgstr "Pusti zvuk kada stignu nove chat poruke"
 
-#: src/components/windows/Settings.jsx:138
+#: src/components/windows/Settings.jsx:114
 msgid "Auto Zoom In"
 msgstr "Automatsko povećanje"
 
-#: src/components/windows/Settings.jsx:143
+#: src/components/windows/Settings.jsx:119
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
@@ -742,48 +751,56 @@ msgstr ""
 "Povećajte umjesto postavljanja piksela kada dodirnete platno i vaše je "
 "zumiranje malo."
 
-#: src/components/windows/Settings.jsx:146
+#: src/components/windows/Settings.jsx:122
 msgid "Compact Palette"
 msgstr "Kompaktna paleta"
 
-#: src/components/windows/Settings.jsx:151
+#: src/components/windows/Settings.jsx:127
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr ""
 "Prikaži paletu u kompaktnom obliku koji zauzima manje prostora na zaslonu."
 
-#: src/components/windows/Settings.jsx:154
+#: src/components/windows/Settings.jsx:130
 msgid "Potato Mode"
 msgstr "Način krumpira"
 
-#: src/components/windows/Settings.jsx:158
+#: src/components/windows/Settings.jsx:134
 msgid "For when you are playing on a potato."
 msgstr "Jer kad igraš na krumpir."
 
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
 msgid "Light Grid"
 msgstr "Svijetla rešetka"
 
-#: src/components/windows/Settings.jsx:165
+#: src/components/windows/Settings.jsx:141
 msgid "Show Grid in white instead of black."
 msgstr "Pokaži rešetku u bijeloj umjesto u crnoj boji."
 
-#: src/components/windows/Settings.jsx:169
+#: src/components/windows/Settings.jsx:145
 msgid "Historical View"
 msgstr "Povijesni pogled"
 
-#: src/components/windows/Settings.jsx:174
+#: src/components/windows/Settings.jsx:150
 msgid "Check out past versions of the canvas."
 msgstr "Pogledajte prethodne verzije platna."
 
-#: src/components/windows/Settings.jsx:179
+#: src/components/windows/Settings.jsx:154
+msgid "Pencil Mode"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:162
+msgid "What the pencil should draw."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:166
 msgid "Themes"
 msgstr "Teme"
 
-#: src/components/windows/Settings.jsx:184
+#: src/components/windows/Settings.jsx:171
 msgid "How pixelplanet should look like."
 msgstr "Kako bi pixelplanet trebao izgledati."
 
-#: src/components/windows/Settings.jsx:191
+#: src/components/windows/Settings.jsx:178
 msgid "Select Language"
 msgstr "Izaberi jezik"
 
@@ -1035,11 +1052,11 @@ msgstr "Kopiraj"
 msgid "Save"
 msgstr "Spremi"
 
-#: src/components/TemplateSettings.jsx:57
+#: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr "Šabloni"
 
-#: src/components/TemplateSettings.jsx:61
+#: src/components/TemplateSettings.jsx:56
 msgid ""
 "Tired of always spaming one single color? Want to create art instead, but "
 "you have to count pixels from some other image? Templates can help you with "
@@ -1051,52 +1068,44 @@ msgstr ""
 "pomoći predlošci! Predlošci se mogu prikazati kao sloj i možete crtati preko "
 "njih. Jedan pixel na predlošku trebao bi biti jedan pixel na platnu."
 
-#: src/components/TemplateSettings.jsx:65
+#: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
 msgstr "Omogući preklapanje"
 
-#: src/components/TemplateSettings.jsx:70
+#: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
 msgstr "Prikaži šablone kao slojeve u igri."
 
-#: src/components/TemplateSettings.jsx:73
+#: src/components/TemplateSettings.jsx:68
 msgid "Small Pixels When Zoomed"
 msgstr "Zumiranje malih pixela"
 
-#: src/components/TemplateSettings.jsx:78
+#: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
 "Prikaži sloj kao male pojedinačne pixele na visokim razinama zumiranja."
 
-#: src/components/TemplateSettings.jsx:85
+#: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
 msgstr "Prozirnost sloja"
 
-#: src/components/TemplateSettings.jsx:99
+#: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
 msgstr "Neprozirnost sloja u postocima."
 
-#: src/components/TemplateSettings.jsx:105
-msgid "Right-Shift Auto-Color"
-msgstr "Right-Shift Auto-Color"
-
-#: src/components/TemplateSettings.jsx:110
-msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr "Postavite pixele iz sloja pomoću desnog shifta, umjesto povijesti."
-
-#: src/components/TemplateSettings.jsx:149
+#: src/components/TemplateSettings.jsx:132
 msgid "Cancel adding Template"
 msgstr "Otkaži dodavanje šablona"
 
-#: src/components/TemplateSettings.jsx:156
+#: src/components/TemplateSettings.jsx:139
 msgid "Add Template"
 msgstr "Dodaj šablon"
 
-#: src/components/TemplateSettings.jsx:173
+#: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
 msgstr "Izvoz omogućenih šablona"
 
-#: src/components/TemplateSettings.jsx:182
+#: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr "Uvoz šablona"
 
@@ -1131,10 +1140,6 @@ msgstr "Današnji postavljeni pikseli"
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
 msgstr "Dnevni rank"
-
-#: src/components/UserAreaContent.jsx:71
-msgid "Placed Pixels"
-msgstr "Postavljeni pixeli"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
@@ -1245,14 +1250,6 @@ msgstr "Resetiraj"
 #: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr "Preuzmite šablon"
-
-#: src/components/Rankings.jsx:147
-msgid "Total"
-msgstr "Ukupno"
-
-#: src/components/Rankings.jsx:156
-msgid "Today"
-msgstr "Danas"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
@@ -1443,6 +1440,26 @@ msgstr "Odblokiraj korisnike"
 msgid "You have no users blocked"
 msgstr "Nemate blokiranih korisnika"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "10 najboljih zemalja [pxls / dan]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Igrači i pikseli po satu"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "10 najboljih igrača [pxls / dan]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Države po postavljenim pixelima danas"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Ukupno postavljenih piksela po danu"
+
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
 msgstr "Izgradite sliku na platnu."
@@ -1623,26 +1640,6 @@ msgstr "Unesite razlog"
 msgid "(0 = infinite)"
 msgstr "(0 = beskonačno)"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "10 najboljih zemalja [pxls / dan]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Igrači i pikseli po satu"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "10 najboljih igrača [pxls / dan]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Države po postavljenim pixelima danas"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Ukupno postavljenih piksela po danu"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Ping"
@@ -1659,17 +1656,17 @@ msgstr "Blokiraj"
 msgid "Mute"
 msgstr "Isključi zvuk"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
@@ -1714,20 +1711,48 @@ msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
 
-#: src/components/windows/Settings.jsx:108
+#: src/components/windows/Settings.jsx:84
 msgctxt "keybinds"
 msgid "N"
 msgstr "N"
 
-#: src/components/windows/Settings.jsx:116
+#: src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "M"
 msgstr "M"
 
-#: src/components/TemplateSettings.jsx:66
+#: src/components/windows/Settings.jsx:157
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Pixels placed"
+#~ msgstr "Postavljeni pikseli"
+
+#~ msgid "History Pencil ON"
+#~ msgstr "Povijest Olovka ON"
+
+#~ msgid "Overlay Pencil ON"
+#~ msgstr "Šablon Olovka ON"
+
+#, javascript-format
+#~ msgid ""
+#~ "Hold right ${ bindShift } for placing while moving mouse according to "
+#~ "historical view"
+#~ msgstr ""
+#~ "Držite desno ${ bindShift } za postavljanje dok pomičete miš, prema "
+#~ "povijesnom prikazu"
+
+#~ msgid "Right-Shift Auto-Color"
+#~ msgstr "Right-Shift Auto-Color"
+
+#~ msgid "Place pixels from overlay on right-shift, instead of history."
+#~ msgstr "Postavite pixele iz sloja pomoću desnog shifta, umjesto povijesti."
 
 #~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 #~ msgstr "Nisam dobio odgovor od pixelplaneta. Možda probati osvježiti?"

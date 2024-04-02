@@ -13,54 +13,72 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:99
+#: src/controls/keypress.js:62
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#, fuzzy
+msgid "Selected Color"
+msgstr "زبانت رو انتخاب کن"
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#, fuzzy
+msgid "From Template"
+msgstr "دانلود قالب"
+
+#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+msgid "From History"
+msgstr ""
+
+#: src/controls/keypress.js:122
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr ""
 
-#: src/controls/keypress.js:184
+#: src/controls/keypress.js:193
 msgid "Grid ON"
 msgstr "شبکه  روشن است"
 
-#: src/controls/keypress.js:185
+#: src/controls/keypress.js:194
 msgid "Grid OFF"
 msgstr "شبکه  خاموش است"
 
-#: src/controls/keypress.js:195
+#: src/controls/keypress.js:204
 msgid "Pixel Notify ON"
 msgstr "هشدار دهنده پیکسل روشن است"
 
-#: src/controls/keypress.js:196
+#: src/controls/keypress.js:205
 msgid "Pixel Notify OFF"
 msgstr "هشدار دهنده پیکسل خاموش است"
 
-#: src/controls/keypress.js:201
+#: src/controls/keypress.js:210
 msgid "Muted Sound"
 msgstr "صدا ساکت است"
 
-#: src/controls/keypress.js:202
+#: src/controls/keypress.js:211
 msgid "Unmuted Sound"
 msgstr "صدا ساکت نیست"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:220
 #, fuzzy
 msgid "Copied"
 msgstr "کپی شد!"
 
-#: src/controls/keypress.js:217
+#: src/controls/keypress.js:226
 msgid "Overlay ON"
 msgstr "اورلی روشن است"
 
-#: src/controls/keypress.js:218
+#: src/controls/keypress.js:227
 msgid "Overlay OFF"
 msgstr "اورلی خاموش است"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
 msgid "Easter Egg ON"
 msgstr "حالت ایستر اگ روشن است"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
 msgid "Easter Egg OFF"
 msgstr "ایستر اگ خاموش است"
 
@@ -257,17 +275,25 @@ msgstr "توی چت پیام های حدید داری"
 msgid "Copy to Clipboard"
 msgstr "کپی شد سید"
 
-#: src/components/OnlineBox.jsx:40
+#: src/components/OnlineBox.jsx:56
 msgid "Online Users on Canvas"
 msgstr "یوزر های انلاین در بوم"
 
-#: src/components/OnlineBox.jsx:47
+#: src/components/OnlineBox.jsx:71
 msgid "Total Online Users"
 msgstr "تمام یوزر های آنلاین"
 
-#: src/components/OnlineBox.jsx:55
-msgid "Pixels placed"
-msgstr "تعداد پیکسل هایی که گذاشتی"
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+msgid "Placed Pixels"
+msgstr "پیکسل های گذاشته شده"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+msgid "Today"
+msgstr "امروز"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+msgid "Total"
+msgstr "جمع"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -343,13 +369,13 @@ msgstr "تنظیمات"
 msgid "User Area"
 msgstr "منطقه یوزر"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "بازدید از کل جهان"
-
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
 msgstr "اسکرین شات بگیر"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "بازدید از کل جهان"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -359,28 +385,20 @@ msgstr "جعبه رنگ ها رو ببند"
 msgid "Open Palette"
 msgstr "جعبه رنگ ها رو باز کن"
 
-#: src/components/buttons/PencilButton.jsx:32
-msgid "History Pencil ON"
-msgstr ""
-
-#: src/components/buttons/PencilButton.jsx:38
-msgid "Overlay Pencil ON"
-msgstr ""
-
-#: src/components/buttons/PencilButton.jsx:65
+#: src/components/buttons/PencilButton.jsx:26
 msgid "Enable Pencil"
 msgstr ""
 
-#: src/components/buttons/PencilButton.jsx:69
+#: src/components/buttons/PencilButton.jsx:31
 #, fuzzy
 msgid "Disable Pencil"
 msgstr "صدا های بازی رو غیرفعال کن"
 
-#: src/components/buttons/PencilButton.jsx:73
+#: src/components/buttons/PencilButton.jsx:35
 msgid "Disable History Pencil"
 msgstr ""
 
-#: src/components/buttons/PencilButton.jsx:77
+#: src/components/buttons/PencilButton.jsx:39
 msgid "Disable Overlay Pencil"
 msgstr ""
 
@@ -550,7 +568,7 @@ msgstr ""
 "شدی، پس برو به ${ guildedLink } یا یه ایمیل به ${ mailLink } بفرست و آیدی "
 "مورد نظر رو اضافه کن:"
 
-#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
 msgid "Controls"
 msgstr "کنترل ها"
 
@@ -583,13 +601,13 @@ msgstr "بزن روی ${ bindR } تا مختصات کپی بشه"
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr "بزن روی ${ bindE } ${ bindQ } تا زوم کنی"
 
-#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr ""
 "بزن روی ${ bindW } یا ${ bindA } یا ${ bindS } یا ${ bindD } تا جا به جا بشی"
 
-#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -609,28 +627,19 @@ msgstr ""
 "اسکرول ${ mouseSymbol } رول موس یا ${ touchSymbol } روی صفحه بکش تا زوم کنی"
 
 #: src/components/windows/Help.jsx:91
-#, javascript-format
-msgid "Hold left ${ bindShift } for placing while moving mouse"
+#, fuzzy, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr ""
 "شیفت چپ ${ bindShift } رو نگه دار تا موس وقتی که تکون میخوره، پیکسل گذاشته "
 "بشه"
 
-#: src/components/windows/Help.jsx:92
-#, javascript-format
-msgid ""
-"Hold right ${ bindShift } for placing while moving mouse according to "
-"historical view"
-msgstr ""
-"شیفت راست ${ bindShift } نگه دار تا وقتی موس تکون میخوره، توی دید تاریخی "
-"پیکسل گذاشته بشه"
-
-#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
+#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "${ mouseSymbol } کلیک چپ یا ${ touchSymbol } بزن روی صفحه تا پیکسل گذاشته بشه"
 
-#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -639,17 +648,17 @@ msgstr ""
 "کلیک ${ mouseSymbol } وسط موس رو بزن یا ${ touchSymbol } روی یک پیکسل نگه "
 "دار تا رنگ اون پیکسل گذاشته شده رو انتخاب کنی"
 
-#: src/components/windows/Help.jsx:100
+#: src/components/windows/Help.jsx:99
 #, fuzzy, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "بزن روی ${ bindQ } و ${ bindE } تا بالا و پایین بری"
 
-#: src/components/windows/Help.jsx:101
+#: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr "${ mouseSymbol } دکمه چپ موس رو نگه دار و موس رو حرکت بده تا بچرخی"
 
-#: src/components/windows/Help.jsx:102
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -658,12 +667,12 @@ msgstr ""
 "${ mouseSymbol } اسکرول موس یا ${ mouseSymbol } دکمه وسطی موس رو نگه دار و "
 "تکونش بده تا زوم کنی"
 
-#: src/components/windows/Help.jsx:103
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
 
-#: src/components/windows/Help.jsx:105
+#: src/components/windows/Help.jsx:104
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -671,7 +680,7 @@ msgstr ""
 "راست کلیک کن ${ mouseSymbol } یا ${ touchSymbol } دوبار روی پیکسل بزن تا "
 "پیکسل رو حرف کنی"
 
-#: src/components/windows/Help.jsx:110
+#: src/components/windows/Help.jsx:109
 #, fuzzy
 msgid ""
 "We thank the following artists, who made their palettes available to the "
@@ -680,54 +689,54 @@ msgstr ""
 "ما از هنرمندانمون بسیار متشکر هستیم، اونا حتی از هنر هاشون رو به عموم معرفی "
 "کردن"
 
-#: src/components/windows/Help.jsx:113
+#: src/components/windows/Help.jsx:112
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "فرد سازنده جعبه رنگ بوم ماه ${ starhouseLink }."
 
-#: src/components/windows/Help.jsx:116
+#: src/components/windows/Help.jsx:115
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "فرد سازنده بوم 10 نفر اول ${ vinikLink }."
 
-#: src/components/windows/Help.jsx:119
+#: src/components/windows/Help.jsx:118
 #, fuzzy, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "فرد سازنده بوم 10 نفر اول ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:91
+#: src/components/windows/Settings.jsx:67
 msgid "Show Grid"
 msgstr "شبکه رو نشون بده"
 
-#: src/components/windows/Settings.jsx:96
+#: src/components/windows/Settings.jsx:72
 msgid "Turn on grid to highlight pixel borders."
 msgstr "شبکه رو روشن کن که مرز های دور پیکسل ها نشون داده بشه."
 
-#: src/components/windows/Settings.jsx:99
+#: src/components/windows/Settings.jsx:75
 msgid "Show Pixel Activity"
 msgstr "فعالیت پیکسل ها رو نشون بده"
 
-#: src/components/windows/Settings.jsx:104
+#: src/components/windows/Settings.jsx:80
 msgid "Show circles where pixels are placed."
 msgstr "دور پیکسل هایی که گذاشته میشن دایره بزار."
 
-#: src/components/windows/Settings.jsx:107
+#: src/components/windows/Settings.jsx:83
 msgid "Always show Movement Controls"
 msgstr ""
 
-#: src/components/windows/Settings.jsx:112
+#: src/components/windows/Settings.jsx:88
 msgid "Always show movement control buttons"
 msgstr ""
 
-#: src/components/windows/Settings.jsx:115
+#: src/components/windows/Settings.jsx:91
 msgid "Disable Game Sounds"
 msgstr "صدا های بازی رو غیرفعال کن"
 
-#: src/components/windows/Settings.jsx:121
+#: src/components/windows/Settings.jsx:97
 msgid "All sound effects will be disabled."
 msgstr "تمامی افکت های صدا غیرفعال میشه."
 
-#: src/components/windows/Settings.jsx:125
+#: src/components/windows/Settings.jsx:101
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
@@ -735,65 +744,73 @@ msgstr ""
 "مرورگر شما به ما اجازه نمی دهد از AudioContext برای پخش صداها استفاده کنیم. "
 "آیا برخی از ویژگی های حفظ حریم خصوصی ما را مسدود می کند؟"
 
-#: src/components/windows/Settings.jsx:131
+#: src/components/windows/Settings.jsx:107
 msgid "Enable chat notifications"
 msgstr "نوتیفیکیشن های چت رو فعال کن"
 
-#: src/components/windows/Settings.jsx:135
+#: src/components/windows/Settings.jsx:111
 msgid "Play a sound when new chat messages arrive"
 msgstr "وقتی یه پیام جدید میاد یه صدایی بده"
 
-#: src/components/windows/Settings.jsx:138
+#: src/components/windows/Settings.jsx:114
 msgid "Auto Zoom In"
 msgstr "زوم اتوماتیک بزرگتر"
 
-#: src/components/windows/Settings.jsx:143
+#: src/components/windows/Settings.jsx:119
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
 msgstr "وقتی که بومت کوچیکه و میخوای پیکسل بزاری، بجای پیکسل گذاشتن زوم کن."
 
-#: src/components/windows/Settings.jsx:146
+#: src/components/windows/Settings.jsx:122
 msgid "Compact Palette"
 msgstr "حعبه رنگ فشرده"
 
-#: src/components/windows/Settings.jsx:151
+#: src/components/windows/Settings.jsx:127
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr "جعبه رنگ رو فشرده کن که فضای کمتری بگیره."
 
-#: src/components/windows/Settings.jsx:154
+#: src/components/windows/Settings.jsx:130
 msgid "Potato Mode"
 msgstr "حالت سیب زمینی"
 
-#: src/components/windows/Settings.jsx:158
+#: src/components/windows/Settings.jsx:134
 msgid "For when you are playing on a potato."
 msgstr "برای موقعی که داری روی ذغال بازی میکنی."
 
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
 msgid "Light Grid"
 msgstr "پس زمینه روشن"
 
-#: src/components/windows/Settings.jsx:165
+#: src/components/windows/Settings.jsx:141
 msgid "Show Grid in white instead of black."
 msgstr "پس زمینه رو بجای اینکه سفید نشون بده، سیاه نشون بده."
 
-#: src/components/windows/Settings.jsx:169
+#: src/components/windows/Settings.jsx:145
 msgid "Historical View"
 msgstr "حالت تاریخی"
 
-#: src/components/windows/Settings.jsx:174
+#: src/components/windows/Settings.jsx:150
 msgid "Check out past versions of the canvas."
 msgstr "نسخه های قدیمی این بوم رو نشون بده."
 
-#: src/components/windows/Settings.jsx:179
+#: src/components/windows/Settings.jsx:154
+msgid "Pencil Mode"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:162
+msgid "What the pencil should draw."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:166
 msgid "Themes"
 msgstr "تِم ها"
 
-#: src/components/windows/Settings.jsx:184
+#: src/components/windows/Settings.jsx:171
 msgid "How pixelplanet should look like."
 msgstr "پیکسل پلنت باید چطوری دیده بشه."
 
-#: src/components/windows/Settings.jsx:191
+#: src/components/windows/Settings.jsx:178
 msgid "Select Language"
 msgstr "زبانت رو انتخاب کن"
 
@@ -1047,12 +1064,12 @@ msgstr "کپی"
 msgid "Save"
 msgstr "ذخیره"
 
-#: src/components/TemplateSettings.jsx:57
+#: src/components/TemplateSettings.jsx:52
 #, fuzzy
 msgid "Templates"
 msgstr "دانلود قالب"
 
-#: src/components/TemplateSettings.jsx:61
+#: src/components/TemplateSettings.jsx:56
 msgid ""
 "Tired of always spaming one single color? Want to create art instead, but "
 "you have to count pixels from some other image? Templates can help you with "
@@ -1060,53 +1077,45 @@ msgid ""
 "the template, should be one pixel on the canvas."
 msgstr ""
 
-#: src/components/TemplateSettings.jsx:65
+#: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
 msgstr ""
 
-#: src/components/TemplateSettings.jsx:70
+#: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
 msgstr ""
 
-#: src/components/TemplateSettings.jsx:73
+#: src/components/TemplateSettings.jsx:68
 msgid "Small Pixels When Zoomed"
 msgstr ""
 
-#: src/components/TemplateSettings.jsx:78
+#: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
 
-#: src/components/TemplateSettings.jsx:85
+#: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
 msgstr ""
 
-#: src/components/TemplateSettings.jsx:99
+#: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
 msgstr ""
 
-#: src/components/TemplateSettings.jsx:105
-msgid "Right-Shift Auto-Color"
-msgstr ""
-
-#: src/components/TemplateSettings.jsx:110
-msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
-
-#: src/components/TemplateSettings.jsx:149
+#: src/components/TemplateSettings.jsx:132
 #, fuzzy
 msgid "Cancel adding Template"
 msgstr "دانلود قالب"
 
-#: src/components/TemplateSettings.jsx:156
+#: src/components/TemplateSettings.jsx:139
 #, fuzzy
 msgid "Add Template"
 msgstr "دانلود قالب"
 
-#: src/components/TemplateSettings.jsx:173
+#: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
 msgstr ""
 
-#: src/components/TemplateSettings.jsx:182
+#: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr ""
 
@@ -1142,10 +1151,6 @@ msgstr "پیکسل هایی که امروز گذاشتی"
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
 msgstr "رتبه روزانه"
-
-#: src/components/UserAreaContent.jsx:71
-msgid "Placed Pixels"
-msgstr "پیکسل های گذاشته شده"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
@@ -1256,14 +1261,6 @@ msgstr "بازنشانی کنین"
 #: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr "دانلود قالب"
-
-#: src/components/Rankings.jsx:147
-msgid "Total"
-msgstr "جمع"
-
-#: src/components/Rankings.jsx:156
-msgid "Today"
-msgstr "امروز"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
@@ -1459,6 +1456,26 @@ msgstr "کاربران رو غیر مسدود کن"
 msgid "You have no users blocked"
 msgstr "تو هیچ کاربر مسدود شده نداری"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "10 کشور برتر [pxls/day]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "پخش کننده و پیکسل در ساعت"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "10 بازیکن برتر [pxls / day]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "کشورها بر اساس پیکسل امروز"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "مجموع پیکسل های قرار داده شده در روز"
+
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
 msgstr "ساخت تصویر روی بوم."
@@ -1640,26 +1657,6 @@ msgstr "دلیل وارد کن"
 msgid "(0 = infinite)"
 msgstr ""
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "10 کشور برتر [pxls/day]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "پخش کننده و پیکسل در ساعت"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "10 بازیکن برتر [pxls / day]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "کشورها بر اساس پیکسل امروز"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "مجموع پیکسل های قرار داده شده در روز"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "پینگ"
@@ -1676,17 +1673,17 @@ msgstr "بلاک"
 msgid "Mute"
 msgstr "سکوت"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
 msgctxt "keybinds"
 msgid "G"
 msgstr ""
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
 msgctxt "keybinds"
 msgid "X"
 msgstr ""
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
 msgctxt "keybinds"
 msgid "H"
 msgstr ""
@@ -1731,21 +1728,37 @@ msgctxt "keybinds"
 msgid "Shift"
 msgstr ""
 
-#: src/components/windows/Settings.jsx:108
+#: src/components/windows/Settings.jsx:84
 #, fuzzy
 msgctxt "keybinds"
 msgid "N"
 msgstr "نه"
 
-#: src/components/windows/Settings.jsx:116
+#: src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "M"
 msgstr ""
 
-#: src/components/TemplateSettings.jsx:66
+#: src/components/windows/Settings.jsx:157
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"
 msgid "T"
 msgstr ""
+
+#~ msgid "Pixels placed"
+#~ msgstr "تعداد پیکسل هایی که گذاشتی"
+
+#, javascript-format
+#~ msgid ""
+#~ "Hold right ${ bindShift } for placing while moving mouse according to "
+#~ "historical view"
+#~ msgstr ""
+#~ "شیفت راست ${ bindShift } نگه دار تا وقتی موس تکون میخوره، توی دید تاریخی "
+#~ "پیکسل گذاشته بشه"
 
 #~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 #~ msgstr ""

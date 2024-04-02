@@ -106,6 +106,14 @@ msgstr "Topeltkliki gloobusel, et tagasi minna."
 msgid "Loading..."
 msgstr "Laadimine..."
 
+#: src/ssr/Main.jsx:65
+msgid "PixelPlanet.Fun"
+msgstr "PixelPlanet.Fun"
+
+#: src/ssr/Main.jsx:66
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr "Joonista piksleid maailmakaardile koos teiste inimestega"
+
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
@@ -113,14 +121,6 @@ msgstr "ppfun"
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
-
-#: src/ssr/Main.jsx:62
-msgid "PixelPlanet.Fun"
-msgstr "PixelPlanet.Fun"
-
-#: src/ssr/Main.jsx:63
-msgid "Place color pixels on an map styled canvas with other players online"
-msgstr "Joonista piksleid maailmakaardile koos teiste inimestega"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -208,6 +208,10 @@ msgstr "Kinnita Uus Salasõna"
 msgid "Submit"
 msgstr "Kinnita"
 
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Sinu ligipääs ei ole piiratud"
+
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Sa ei ole sisse logitud"
@@ -219,46 +223,6 @@ msgstr "Sul puudub sellele leheküljele ligipääs"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Ainult administraatorid saavad seda teha"
-
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Sinu ligipääs ei ole piiratud"
-
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "See meiliaadress ei ole lubatud"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Captcha't ei antud"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Meil on juba kasutuses."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Nimi on juba kasutuses."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Sul läks liiga kaua, proovi uuesti."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Sa lahendasid captcha valesti"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Tundmatu Captcha Viga"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Uue kasutaja loomine ebaõnnestus :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Sessiooni loomine ebaõnnestus peale registreerumist :("
 
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
@@ -300,22 +264,13 @@ msgstr "Vale salasõna!"
 msgid "Muted Users can not delete their account."
 msgstr "Vaigistatud Kasutajad ei saa oma kontot kustutada."
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "See meiliaadress ei ole lubatud"
+
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr "Vaigistatud Kasutajad ei saa seda teha."
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "PixelPlanet.fun Kontod"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "Sind suunatake automaatselt ümber 15 sekundi pärast"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Või ${ clickHere }, et minna tagasi pixelplanet'isse"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
@@ -377,7 +332,8 @@ msgstr "Joonista Voksleid 3D lõuendile koos teistega."
 
 #: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
-msgstr "Erilõuend, et levitada teadlikkust SARS-CoV2 kohta (vaksineeri ennast)."
+msgstr ""
+"Erilõuend, et levitada teadlikkust SARS-CoV2 kohta (vaksineeri ennast)."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -410,6 +366,51 @@ msgid ""
 msgstr ""
 "Valluta maad väiksemal maakaardil, kus ookeanid on kaitstud. Jagab "
 "jahtumisaega Maa lõuendiga!"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Captcha't ei antud"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Meil on juba kasutuses."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Nimi on juba kasutuses."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Sul läks liiga kaua, proovi uuesti."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Sa lahendasid captcha valesti"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Tundmatu Captcha Viga"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Uue kasutaja loomine ebaõnnestus :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Sessiooni loomine ebaõnnestus peale registreerumist :("
+
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "PixelPlanet.fun Kontod"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "Sind suunatake automaatselt ümber 15 sekundi pärast"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "Või ${ clickHere }, et minna tagasi pixelplanet'isse"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

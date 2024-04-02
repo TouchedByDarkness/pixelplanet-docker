@@ -10,54 +10,72 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:99
+#: src/controls/keypress.js:62
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#, fuzzy
+msgid "Selected Color"
+msgstr "Valitse Tiedosto"
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#, fuzzy
+msgid "From Template"
+msgstr "Mallit"
+
+#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+msgid "From History"
+msgstr ""
+
+#: src/controls/keypress.js:122
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "Vaihdettu ${ canvasName }"
 
-#: src/controls/keypress.js:184
+#: src/controls/keypress.js:193
 msgid "Grid ON"
 msgstr "Ruudukko PÄÄLLÄ"
 
-#: src/controls/keypress.js:185
+#: src/controls/keypress.js:194
 msgid "Grid OFF"
 msgstr "Ruudukko POIS"
 
-#: src/controls/keypress.js:195
+#: src/controls/keypress.js:204
 msgid "Pixel Notify ON"
 msgstr "Pikseliaktiivisuus PÄÄLLÄ"
 
-#: src/controls/keypress.js:196
+#: src/controls/keypress.js:205
 msgid "Pixel Notify OFF"
 msgstr "Pikseliaktiivisuus POIS"
 
-#: src/controls/keypress.js:201
+#: src/controls/keypress.js:210
 msgid "Muted Sound"
 msgstr "Äänet pois"
 
-#: src/controls/keypress.js:202
+#: src/controls/keypress.js:211
 msgid "Unmuted Sound"
 msgstr "Äänet päällä"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:220
 #, fuzzy
 msgid "Copied"
 msgstr "Kopioitu!"
 
-#: src/controls/keypress.js:217
+#: src/controls/keypress.js:226
 msgid "Overlay ON"
 msgstr "Peite PÄÄLLÄ"
 
-#: src/controls/keypress.js:218
+#: src/controls/keypress.js:227
 msgid "Overlay OFF"
 msgstr "Peite POIS"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
 msgid "Easter Egg ON"
 msgstr "Pääsiäismuna PÄÄLLÄ"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
 msgid "Easter Egg OFF"
 msgstr "Pääsiäismuna POIS"
 
@@ -250,17 +268,25 @@ msgstr "Sinulla on uusia viestejä keskustelussa"
 msgid "Copy to Clipboard"
 msgstr "Kopioi leikepöydälle"
 
-#: src/components/OnlineBox.jsx:40
+#: src/components/OnlineBox.jsx:56
 msgid "Online Users on Canvas"
 msgstr "Käyttäjiä kehyksessä"
 
-#: src/components/OnlineBox.jsx:47
+#: src/components/OnlineBox.jsx:71
 msgid "Total Online Users"
 msgstr "Kaikkiaan käyttäjiä paikalla"
 
-#: src/components/OnlineBox.jsx:55
-msgid "Pixels placed"
-msgstr "Pikseleitä asetettu"
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+msgid "Placed Pixels"
+msgstr "Laitetut pikselit"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+msgid "Today"
+msgstr "Tänään"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+msgid "Total"
+msgstr "kokonaisuus"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -336,13 +362,13 @@ msgstr "Asetukset"
 msgid "User Area"
 msgstr "Käyttäjäalue"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Maapallonäkymä"
-
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
 msgstr "Ota näyttökuva"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Maapallonäkymä"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -352,27 +378,19 @@ msgstr "Sulje väripaletti"
 msgid "Open Palette"
 msgstr "Avaa väripaletti"
 
-#: src/components/buttons/PencilButton.jsx:32
-msgid "History Pencil ON"
-msgstr "Historiakynä PÄÄLLÄ"
-
-#: src/components/buttons/PencilButton.jsx:38
-msgid "Overlay Pencil ON"
-msgstr "Päällyskynä PÄÄLLÄ"
-
-#: src/components/buttons/PencilButton.jsx:65
+#: src/components/buttons/PencilButton.jsx:26
 msgid "Enable Pencil"
 msgstr "Avaa kynä"
 
-#: src/components/buttons/PencilButton.jsx:69
+#: src/components/buttons/PencilButton.jsx:31
 msgid "Disable Pencil"
 msgstr "Sulje kynä"
 
-#: src/components/buttons/PencilButton.jsx:73
+#: src/components/buttons/PencilButton.jsx:35
 msgid "Disable History Pencil"
 msgstr "Sulje historiakynä"
 
-#: src/components/buttons/PencilButton.jsx:77
+#: src/components/buttons/PencilButton.jsx:39
 msgid "Disable Overlay Pencil"
 msgstr "Sulje päällyskynä"
 
@@ -542,7 +560,7 @@ msgstr ""
 "porttikiellon syyttä, mene meidän ${ guildedLink } tai lähetä meille viesti "
 "${ mailLink } jossa mainitset seuraavan IID:"
 
-#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
 msgid "Controls"
 msgstr "Näppäimet"
 
@@ -575,12 +593,12 @@ msgstr "Paina ${ bindR } kopioidaksesi koordinaatit"
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr "Paina ${ bindQ } tai ${ bindE } zoomataksesi"
 
-#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr "Paina ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } liikkuaksesi"
 
-#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -600,29 +618,20 @@ msgstr ""
 "Skrollaa ${ mouseSymbol } hiirellä tai ${ touchSymbol } nipistä zoomataksesi"
 
 #: src/components/windows/Help.jsx:91
-#, javascript-format
-msgid "Hold left ${ bindShift } for placing while moving mouse"
+#, fuzzy, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr ""
 "Pidä vasen ${ bindShift } pohjassa asettaaksesi pikseleitä liikuttaessa "
 "hiirtä"
 
-#: src/components/windows/Help.jsx:92
-#, javascript-format
-msgid ""
-"Hold right ${ bindShift } for placing while moving mouse according to "
-"historical view"
-msgstr ""
-"Pidä vasen ${ bindShift } pohjassa asettaaksesi pikseleitä liikuttaessa "
-"hiirtä historiallisen näkymän mukaan"
-
-#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
+#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "${ mouseSymbol } klikkaa vasemmalla tai ${ touchSymbol } napauta "
 "asettaaksesi pikseleitä"
 
-#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -631,18 +640,18 @@ msgstr ""
 "Klikkaa ${ mouseSymbol } hiiren keskinäppäintä tai ${ touchSymbol } paina "
 "pitkään valitaksesi osoittamasi värin"
 
-#: src/components/windows/Help.jsx:100
+#: src/components/windows/Help.jsx:99
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Paina ${ bindQ } ja ${ bindE } lentääksesi ylös ja alas"
 
-#: src/components/windows/Help.jsx:101
+#: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
 "${ mouseSymbol } Klikkaa vasenta hiirinäppäintä ja vedä hiirtä kääntääksesi"
 
-#: src/components/windows/Help.jsx:102
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -651,12 +660,12 @@ msgstr ""
 "${ mouseSymbol } Skrollaa hiirellä tai paina ${ mouseSymbol } hiiren "
 "keskinäppäintä pitkään ja vedä zoomataksesi"
 
-#: src/components/windows/Help.jsx:103
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr "${ mouseSymbol } Klikkaa oikealta ja vedä hiirtä panoroidaksesi"
 
-#: src/components/windows/Help.jsx:105
+#: src/components/windows/Help.jsx:104
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -664,7 +673,7 @@ msgstr ""
 "${ mouseSymbol } Klikkaa oikealta tai ${ touchSymbol } tuplaklikkaa "
 "poistaaksesi pikselin"
 
-#: src/components/windows/Help.jsx:110
+#: src/components/windows/Help.jsx:109
 #, fuzzy
 msgid ""
 "We thank the following artists, who made their palettes available to the "
@@ -672,54 +681,54 @@ msgid ""
 msgstr ""
 "Kiitämme näitä taiteilijoita, koska he tarjosivat väripalettinsa kaikille"
 
-#: src/components/windows/Help.jsx:113
+#: src/components/windows/Help.jsx:112
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "Kiitokset Kuu-kehyksen väripaletista menee ${ starhouseLink }."
 
-#: src/components/windows/Help.jsx:116
+#: src/components/windows/Help.jsx:115
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Kiitokset Top10-kehyksen väripaletista menee ${ vinikLink }."
 
-#: src/components/windows/Help.jsx:119
+#: src/components/windows/Help.jsx:118
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Kiitokset 2bit-kehyksen väripaletista menee ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:91
+#: src/components/windows/Settings.jsx:67
 msgid "Show Grid"
 msgstr "Näytä ruudukko"
 
-#: src/components/windows/Settings.jsx:96
+#: src/components/windows/Settings.jsx:72
 msgid "Turn on grid to highlight pixel borders."
 msgstr "Näyttää ruudukon nähdäksesi pikselien rajat."
 
-#: src/components/windows/Settings.jsx:99
+#: src/components/windows/Settings.jsx:75
 msgid "Show Pixel Activity"
 msgstr "Näytä pikseliaktiivisuus"
 
-#: src/components/windows/Settings.jsx:104
+#: src/components/windows/Settings.jsx:80
 msgid "Show circles where pixels are placed."
 msgstr "Näyttää punaisia palloja siellä, missä asetetaan pikseleitä."
 
-#: src/components/windows/Settings.jsx:107
+#: src/components/windows/Settings.jsx:83
 msgid "Always show Movement Controls"
 msgstr "Näytä aina kontrollit"
 
-#: src/components/windows/Settings.jsx:112
+#: src/components/windows/Settings.jsx:88
 msgid "Always show movement control buttons"
 msgstr "Näyttää kontrollit aina"
 
-#: src/components/windows/Settings.jsx:115
+#: src/components/windows/Settings.jsx:91
 msgid "Disable Game Sounds"
 msgstr "Mykistä pelin äänet"
 
-#: src/components/windows/Settings.jsx:121
+#: src/components/windows/Settings.jsx:97
 msgid "All sound effects will be disabled."
 msgstr "Kaikki äänet mykistetään."
 
-#: src/components/windows/Settings.jsx:125
+#: src/components/windows/Settings.jsx:101
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
@@ -727,65 +736,73 @@ msgstr ""
 "Selaimesi ei anna meidän käyttää AudioContextiä soittaaksemme ääniä. Onko "
 "sinulla jokin turvallisuustoiminto päällä, joka estää tämän?"
 
-#: src/components/windows/Settings.jsx:131
+#: src/components/windows/Settings.jsx:107
 msgid "Enable chat notifications"
 msgstr "Salli keskusteluilmoitukset"
 
-#: src/components/windows/Settings.jsx:135
+#: src/components/windows/Settings.jsx:111
 msgid "Play a sound when new chat messages arrive"
 msgstr "Soita ääni kun uusia viestejä tulee"
 
-#: src/components/windows/Settings.jsx:138
+#: src/components/windows/Settings.jsx:114
 msgid "Auto Zoom In"
 msgstr "Automaattinen zoomaus"
 
-#: src/components/windows/Settings.jsx:143
+#: src/components/windows/Settings.jsx:119
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
 msgstr "Zoomaa pikselin asettamisen sijasta."
 
-#: src/components/windows/Settings.jsx:146
+#: src/components/windows/Settings.jsx:122
 msgid "Compact Palette"
 msgstr "Pienempi väripaletti"
 
-#: src/components/windows/Settings.jsx:151
+#: src/components/windows/Settings.jsx:127
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr "Näyttää väripaletin pienempänä."
 
-#: src/components/windows/Settings.jsx:154
+#: src/components/windows/Settings.jsx:130
 msgid "Potato Mode"
 msgstr "Perunamuoto"
 
-#: src/components/windows/Settings.jsx:158
+#: src/components/windows/Settings.jsx:134
 msgid "For when you are playing on a potato."
 msgstr "Kun pelaat perunalla."
 
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
 msgid "Light Grid"
 msgstr "Vaalea ruudukko"
 
-#: src/components/windows/Settings.jsx:165
+#: src/components/windows/Settings.jsx:141
 msgid "Show Grid in white instead of black."
 msgstr "Näyttää ruudukon vaaleana mustan sijasta."
 
-#: src/components/windows/Settings.jsx:169
+#: src/components/windows/Settings.jsx:145
 msgid "Historical View"
 msgstr "Historiallinen näkymä"
 
-#: src/components/windows/Settings.jsx:174
+#: src/components/windows/Settings.jsx:150
 msgid "Check out past versions of the canvas."
 msgstr "Näyttää kehysten vanhat versiot."
 
-#: src/components/windows/Settings.jsx:179
+#: src/components/windows/Settings.jsx:154
+msgid "Pencil Mode"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:162
+msgid "What the pencil should draw."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:166
 msgid "Themes"
 msgstr "Teemat"
 
-#: src/components/windows/Settings.jsx:184
+#: src/components/windows/Settings.jsx:171
 msgid "How pixelplanet should look like."
 msgstr "Miltä pixelplanetin pitäisi näyttää."
 
-#: src/components/windows/Settings.jsx:191
+#: src/components/windows/Settings.jsx:178
 msgid "Select Language"
 msgstr "Valitse kieli"
 
@@ -1042,11 +1059,11 @@ msgstr "Kopioi"
 msgid "Save"
 msgstr "Tallenna"
 
-#: src/components/TemplateSettings.jsx:57
+#: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr "Mallit"
 
-#: src/components/TemplateSettings.jsx:61
+#: src/components/TemplateSettings.jsx:56
 msgid ""
 "Tired of always spaming one single color? Want to create art instead, but "
 "you have to count pixels from some other image? Templates can help you with "
@@ -1059,56 +1076,45 @@ msgstr ""
 "ja voit piirtää niiden päällä. Yksi pikseli mallineella pitäisi olla yksi "
 "pikseli kanvaasilla."
 
-#: src/components/TemplateSettings.jsx:65
+#: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
 msgstr "Ota käyttöön päällystys"
 
-#: src/components/TemplateSettings.jsx:70
+#: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
 msgstr "Näytä mallineet päällysteinä pelissä."
 
-#: src/components/TemplateSettings.jsx:73
+#: src/components/TemplateSettings.jsx:68
 #, fuzzy
 msgid "Small Pixels When Zoomed"
 msgstr "Näytä Pienet Pikselit Zoomatessa"
 
-#: src/components/TemplateSettings.jsx:78
+#: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
 "Näytä päällystys pienienä yksittäisinä pikseleinä korkeilla zoomitasoilla."
 
-#: src/components/TemplateSettings.jsx:85
+#: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
 msgstr "Päällysteen läpinäkymättömyys"
 
-#: src/components/TemplateSettings.jsx:99
+#: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
 msgstr "Päällysteen läpinäkymättömyys prosenteissa."
 
-#: src/components/TemplateSettings.jsx:105
-msgid "Right-Shift Auto-Color"
-msgstr "Right-Shift Automaattinen väritys"
-
-#: src/components/TemplateSettings.jsx:110
-msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
-"Aseta pikseleitä päällystyksestä painamalla Oikeaa shiftiä pohjaan, "
-"historian tilalta. Painamalla oikeaa shiftiä pohjassa, peli valitsee värit "
-"automaattisesti päällystystä käytettäessä."
-
-#: src/components/TemplateSettings.jsx:149
+#: src/components/TemplateSettings.jsx:132
 msgid "Cancel adding Template"
 msgstr "Peru mallineen lisääminen"
 
-#: src/components/TemplateSettings.jsx:156
+#: src/components/TemplateSettings.jsx:139
 msgid "Add Template"
 msgstr "Lisää malline"
 
-#: src/components/TemplateSettings.jsx:173
+#: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
 msgstr "Vie käytössä olevat mallineet"
 
-#: src/components/TemplateSettings.jsx:182
+#: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr "Tuo mallineita"
 
@@ -1143,10 +1149,6 @@ msgstr "Tänään laitetut pikselit"
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
 msgstr "Päivän sijoitukset"
-
-#: src/components/UserAreaContent.jsx:71
-msgid "Placed Pixels"
-msgstr "Laitetut pikselit"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
@@ -1257,14 +1259,6 @@ msgstr "Nollaa muunnokset"
 #: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr "Lataa Malline"
-
-#: src/components/Rankings.jsx:147
-msgid "Total"
-msgstr "kokonaisuus"
-
-#: src/components/Rankings.jsx:156
-msgid "Today"
-msgstr "Tänään"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
@@ -1454,6 +1448,26 @@ msgstr ""
 msgid "You have no users blocked"
 msgstr ""
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr ""
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr ""
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr ""
+
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
 msgstr ""
@@ -1625,26 +1639,6 @@ msgstr ""
 msgid "(0 = infinite)"
 msgstr ""
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr ""
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr ""
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr ""
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr ""
@@ -1661,17 +1655,17 @@ msgstr ""
 msgid "Mute"
 msgstr ""
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
@@ -1716,20 +1710,51 @@ msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
 
-#: src/components/windows/Settings.jsx:108
+#: src/components/windows/Settings.jsx:84
 msgctxt "keybinds"
 msgid "N"
 msgstr "N"
 
-#: src/components/windows/Settings.jsx:116
+#: src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "M"
 msgstr "M"
 
-#: src/components/TemplateSettings.jsx:66
+#: src/components/windows/Settings.jsx:157
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Pixels placed"
+#~ msgstr "Pikseleitä asetettu"
+
+#~ msgid "History Pencil ON"
+#~ msgstr "Historiakynä PÄÄLLÄ"
+
+#~ msgid "Overlay Pencil ON"
+#~ msgstr "Päällyskynä PÄÄLLÄ"
+
+#, javascript-format
+#~ msgid ""
+#~ "Hold right ${ bindShift } for placing while moving mouse according to "
+#~ "historical view"
+#~ msgstr ""
+#~ "Pidä vasen ${ bindShift } pohjassa asettaaksesi pikseleitä liikuttaessa "
+#~ "hiirtä historiallisen näkymän mukaan"
+
+#~ msgid "Right-Shift Auto-Color"
+#~ msgstr "Right-Shift Automaattinen väritys"
+
+#~ msgid "Place pixels from overlay on right-shift, instead of history."
+#~ msgstr ""
+#~ "Aseta pikseleitä päällystyksestä painamalla Oikeaa shiftiä pohjaan, "
+#~ "historian tilalta. Painamalla oikeaa shiftiä pohjassa, peli valitsee "
+#~ "värit automaattisesti päällystystä käytettäessä."
 
 #~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 #~ msgstr "PixelPlanet ei vastaa. Kokeile ladata sivu uudelleen?"

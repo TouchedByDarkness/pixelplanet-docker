@@ -109,6 +109,15 @@ msgstr "Apasă de două ori globul pentru a merge înapoi."
 msgid "Loading..."
 msgstr "Se încarcă..."
 
+#: src/ssr/Main.jsx:65
+msgid "PixelPlanet.Fun"
+msgstr "PixelPlanet.Fun"
+
+#: src/ssr/Main.jsx:66
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr ""
+"Pune pixeli de culoare pe un Convas în stil hartă cu alți jucători online"
+
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
@@ -116,15 +125,6 @@ msgstr "ppfun"
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
-
-#: src/ssr/Main.jsx:62
-msgid "PixelPlanet.Fun"
-msgstr "PixelPlanet.Fun"
-
-#: src/ssr/Main.jsx:63
-msgid "Place color pixels on an map styled canvas with other players online"
-msgstr ""
-"Pune pixeli de culoare pe un Convas în stil hartă cu alți jucători online"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -212,6 +212,10 @@ msgstr "Confirmă Parola Nouă"
 msgid "Submit"
 msgstr "Încarcă"
 
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Nu ești banat"
+
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Nu ești conectat"
@@ -223,46 +227,6 @@ msgstr "Nu ai voie să accesezi această pagină"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Numai admini pot face asta"
-
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Nu ești banat"
-
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Acest furnizor de mail nu este permis"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Niciun captcha dat"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "E-Mailul este deja înregistrat."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Numele de utiizator este deja folosită."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Ți-a luat prea mult, încearcă din nou."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Nu ai trecut captchaul tău"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Eroare de Captcha necunoscută"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Nu s-a putut crea un utilizator nou :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Nu s-a putut stabili sesiunea după înregistrare :("
 
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
@@ -304,22 +268,13 @@ msgstr "Parolă incorrectă!"
 msgid "Muted Users can not delete their account."
 msgstr "Utilizator desconectat nu își poate șterge contul."
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Acest furnizor de mail nu este permis"
+
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr "Utilizatorul desconectat nu poate face asta."
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "Conturi PixelPlanet.fun"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "Vei fi redirecționat automatic după 15 secunde"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Sau ${ clickHere } pentru a merge înapoi la pixelplanet"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
@@ -414,6 +369,51 @@ msgid ""
 msgstr ""
 "Cucerește pământ pe un pământ mai mic cu ocean protejat. Cooldown potrivit "
 "cu Convasul pământului!"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Niciun captcha dat"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "E-Mailul este deja înregistrat."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Numele de utiizator este deja folosită."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Ți-a luat prea mult, încearcă din nou."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Nu ai trecut captchaul tău"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Eroare de Captcha necunoscută"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Nu s-a putut crea un utilizator nou :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Nu s-a putut stabili sesiunea după înregistrare :("
+
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "Conturi PixelPlanet.fun"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "Vei fi redirecționat automatic după 15 secunde"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "Sau ${ clickHere } pentru a merge înapoi la pixelplanet"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

@@ -14,53 +14,71 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:99
+#: src/controls/keypress.js:62
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#, fuzzy
+msgid "Selected Color"
+msgstr "Selectează Fișier"
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#, fuzzy
+msgid "From Template"
+msgstr "Șabloane"
+
+#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+msgid "From History"
+msgstr ""
+
+#: src/controls/keypress.js:122
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "Schimbat canvasul la ${ canvasName }"
 
-#: src/controls/keypress.js:184
+#: src/controls/keypress.js:193
 msgid "Grid ON"
 msgstr "Grilă Pornită"
 
-#: src/controls/keypress.js:185
+#: src/controls/keypress.js:194
 msgid "Grid OFF"
 msgstr "Grilă Oprită"
 
-#: src/controls/keypress.js:195
+#: src/controls/keypress.js:204
 msgid "Pixel Notify ON"
 msgstr "Notificare Pixeli Pornită"
 
-#: src/controls/keypress.js:196
+#: src/controls/keypress.js:205
 msgid "Pixel Notify OFF"
 msgstr "Notificare Pixeli Oprită"
 
-#: src/controls/keypress.js:201
+#: src/controls/keypress.js:210
 msgid "Muted Sound"
 msgstr "Sunet Oprit"
 
-#: src/controls/keypress.js:202
+#: src/controls/keypress.js:211
 msgid "Unmuted Sound"
 msgstr "Sunet Pornit"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:220
 msgid "Copied"
 msgstr "Copiat"
 
-#: src/controls/keypress.js:217
+#: src/controls/keypress.js:226
 msgid "Overlay ON"
 msgstr "Overlay Activat"
 
-#: src/controls/keypress.js:218
+#: src/controls/keypress.js:227
 msgid "Overlay OFF"
 msgstr "Overlay Dezactivat"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
 msgid "Easter Egg ON"
 msgstr "Caracteristici Ascunse Activat"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
 msgid "Easter Egg OFF"
 msgstr "Caracteristici Ascunse Dezactivat"
 
@@ -249,17 +267,25 @@ msgstr "Ai mesaje noi pe chat"
 msgid "Copy to Clipboard"
 msgstr "Copiază către Clipboard"
 
-#: src/components/OnlineBox.jsx:40
+#: src/components/OnlineBox.jsx:56
 msgid "Online Users on Canvas"
 msgstr "Utilizatori online pe Canvas"
 
-#: src/components/OnlineBox.jsx:47
+#: src/components/OnlineBox.jsx:71
 msgid "Total Online Users"
 msgstr "Utilizatori Online în Total"
 
-#: src/components/OnlineBox.jsx:55
-msgid "Pixels placed"
-msgstr "Pixeli puși"
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+msgid "Placed Pixels"
+msgstr "Pixeli Puși în total"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+msgid "Today"
+msgstr "Azi"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+msgid "Total"
+msgstr "Total"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -335,13 +361,13 @@ msgstr "Setări"
 msgid "User Area"
 msgstr "Zonă de Utilizator"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Vedere de pe glob"
-
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
 msgstr "Fă un Screenshot"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Vedere de pe glob"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -351,27 +377,19 @@ msgstr "Închide Paleta"
 msgid "Open Palette"
 msgstr "Deschide Paleta"
 
-#: src/components/buttons/PencilButton.jsx:32
-msgid "History Pencil ON"
-msgstr "Creion de istorie Activat"
-
-#: src/components/buttons/PencilButton.jsx:38
-msgid "Overlay Pencil ON"
-msgstr "Creion de Overlay Activat"
-
-#: src/components/buttons/PencilButton.jsx:65
+#: src/components/buttons/PencilButton.jsx:26
 msgid "Enable Pencil"
 msgstr "Activează Creaionul"
 
-#: src/components/buttons/PencilButton.jsx:69
+#: src/components/buttons/PencilButton.jsx:31
 msgid "Disable Pencil"
 msgstr "Dezactivează Creionul"
 
-#: src/components/buttons/PencilButton.jsx:73
+#: src/components/buttons/PencilButton.jsx:35
 msgid "Disable History Pencil"
 msgstr "Creion de istorie Dezactivat"
 
-#: src/components/buttons/PencilButton.jsx:77
+#: src/components/buttons/PencilButton.jsx:39
 msgid "Disable Overlay Pencil"
 msgstr "Dezactivează Creion de Overlay"
 
@@ -540,7 +558,7 @@ msgstr ""
 "fost interzis în mod greșit, vă rugăm să accesați ${ guildedLink } sau "
 "trimiteți-ne un e-mail la ${ mailLink } și includeți următorul IID:"
 
-#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
 msgid "Controls"
 msgstr "Controale"
 
@@ -573,12 +591,12 @@ msgstr "Apasă ${ bindR } pentru a copia coordonatele"
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr "Apasă ${ bindQ } sau ${ bindE } pentru a da zoom"
 
-#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr "Apasă ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } pentru a te mișca"
 
-#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -600,27 +618,18 @@ msgstr ""
 "pentru a da zoom"
 
 #: src/components/windows/Help.jsx:91
-#, javascript-format
-msgid "Hold left ${ bindShift } for placing while moving mouse"
+#, fuzzy, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr "Ține ${ bindShift } din stânga pentru a pune cât timp miști mouseul"
 
-#: src/components/windows/Help.jsx:92
-#, javascript-format
-msgid ""
-"Hold right ${ bindShift } for placing while moving mouse according to "
-"historical view"
-msgstr ""
-"Ține ${ bindShift }ul din dreapta pentru a pune cu mouseul după vederea "
-"istorică"
-
-#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
+#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "${ mouseSymbol } Click stânga sau ${ touchSymbol } apasă pentru a pune un "
 "pixel"
 
-#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -629,19 +638,19 @@ msgstr ""
 "Click ${ mouseSymbol } pe butonul din mijloc de la mouse sau "
 "${ touchSymbol } apasă lung pentru a selecta culoarea unde este cursorul"
 
-#: src/components/windows/Help.jsx:100
+#: src/components/windows/Help.jsx:99
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Apasă ${ bindQ } și ${ bindE } pentru a zbura în sus și în jos"
 
-#: src/components/windows/Help.jsx:101
+#: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
 "${ mouseSymbol } Ține butonul din mouse din stânga și mișcă mouseul pentru a "
 "roti"
 
-#: src/components/windows/Help.jsx:102
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -650,12 +659,12 @@ msgstr ""
 "${ mouseSymbol } Scrolează rotița mouseului sau ține ${ mouseSymbol } "
 "butonul din mijloc al mouseului și mișcă mouseul pentru a da zoom"
 
-#: src/components/windows/Help.jsx:103
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr "${ mouseSymbol } Click dreapta și mișcă mouseul pentru a da pan"
 
-#: src/components/windows/Help.jsx:105
+#: src/components/windows/Help.jsx:104
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -663,7 +672,7 @@ msgstr ""
 "${ mouseSymbol } Click dreapta sau ${ touchSymbol } apasă de două ori pentru "
 "a scoate un pixel"
 
-#: src/components/windows/Help.jsx:110
+#: src/components/windows/Help.jsx:109
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
@@ -671,54 +680,54 @@ msgstr ""
 "Noi mulțumim acești artiști foarte mult, ei ne-au oferit palete către public "
 "pe"
 
-#: src/components/windows/Help.jsx:113
+#: src/components/windows/Help.jsx:112
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "Credit pentru Paleta de pe Moon se duce la ${ starhouseLink }."
 
-#: src/components/windows/Help.jsx:116
+#: src/components/windows/Help.jsx:115
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Credit pentru Paleta de pe Top10 se duce la ${ vinikLink }."
 
-#: src/components/windows/Help.jsx:119
+#: src/components/windows/Help.jsx:118
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Credit pentru Paleta de pe 2bit se duce la ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:91
+#: src/components/windows/Settings.jsx:67
 msgid "Show Grid"
 msgstr "Arată Grila"
 
-#: src/components/windows/Settings.jsx:96
+#: src/components/windows/Settings.jsx:72
 msgid "Turn on grid to highlight pixel borders."
 msgstr "Pornește grila pentru a marca marginea pixelilor."
 
-#: src/components/windows/Settings.jsx:99
+#: src/components/windows/Settings.jsx:75
 msgid "Show Pixel Activity"
 msgstr "Arată activitatea pixelilor"
 
-#: src/components/windows/Settings.jsx:104
+#: src/components/windows/Settings.jsx:80
 msgid "Show circles where pixels are placed."
 msgstr "Arată cercurile unde pixelii sunt puși."
 
-#: src/components/windows/Settings.jsx:107
+#: src/components/windows/Settings.jsx:83
 msgid "Always show Movement Controls"
 msgstr "Totdeauna arată Controalele de Mișcare"
 
-#: src/components/windows/Settings.jsx:112
+#: src/components/windows/Settings.jsx:88
 msgid "Always show movement control buttons"
 msgstr "Totdeauna arată butoanele Controalelor de Mișcare"
 
-#: src/components/windows/Settings.jsx:115
+#: src/components/windows/Settings.jsx:91
 msgid "Disable Game Sounds"
 msgstr "Oprește suntelele jocului"
 
-#: src/components/windows/Settings.jsx:121
+#: src/components/windows/Settings.jsx:97
 msgid "All sound effects will be disabled."
 msgstr "Toate sunetele jocului vor fi oprite."
 
-#: src/components/windows/Settings.jsx:125
+#: src/components/windows/Settings.jsx:101
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
@@ -726,19 +735,19 @@ msgstr ""
 "Browserul dvs. nu ne permite să folosim AudioContext pentru a reda sunete. "
 "Aveți vreo funcție de confidențialitate care ne blochează?"
 
-#: src/components/windows/Settings.jsx:131
+#: src/components/windows/Settings.jsx:107
 msgid "Enable chat notifications"
 msgstr "Permite notificările de chat"
 
-#: src/components/windows/Settings.jsx:135
+#: src/components/windows/Settings.jsx:111
 msgid "Play a sound when new chat messages arrive"
 msgstr "Redă un sunet atunci când sunt trimise mesaje noi pe chat"
 
-#: src/components/windows/Settings.jsx:138
+#: src/components/windows/Settings.jsx:114
 msgid "Auto Zoom In"
 msgstr "Zoom In automat"
 
-#: src/components/windows/Settings.jsx:143
+#: src/components/windows/Settings.jsx:119
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
@@ -746,47 +755,55 @@ msgstr ""
 "Zoom in în loc să pui in pixel atunci când apeși canvasul și zoomul tău este "
 "mic."
 
-#: src/components/windows/Settings.jsx:146
+#: src/components/windows/Settings.jsx:122
 msgid "Compact Palette"
 msgstr "Paletă Compactă"
 
-#: src/components/windows/Settings.jsx:151
+#: src/components/windows/Settings.jsx:127
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr "Arată Paleta într-o formă compactă ca să ocupe mai puțin spațiu."
 
-#: src/components/windows/Settings.jsx:154
+#: src/components/windows/Settings.jsx:130
 msgid "Potato Mode"
 msgstr "Modul Cartof"
 
-#: src/components/windows/Settings.jsx:158
+#: src/components/windows/Settings.jsx:134
 msgid "For when you are playing on a potato."
 msgstr "Pentru atunci când te joci pe un cartof."
 
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
 msgid "Light Grid"
 msgstr "Grilă Albă"
 
-#: src/components/windows/Settings.jsx:165
+#: src/components/windows/Settings.jsx:141
 msgid "Show Grid in white instead of black."
 msgstr "Arată Grila în alb în loc de negru."
 
-#: src/components/windows/Settings.jsx:169
+#: src/components/windows/Settings.jsx:145
 msgid "Historical View"
 msgstr "Vedere Istorică"
 
-#: src/components/windows/Settings.jsx:174
+#: src/components/windows/Settings.jsx:150
 msgid "Check out past versions of the canvas."
 msgstr "Vezi versiunile de trecut ale canvasului."
 
-#: src/components/windows/Settings.jsx:179
+#: src/components/windows/Settings.jsx:154
+msgid "Pencil Mode"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:162
+msgid "What the pencil should draw."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:166
 msgid "Themes"
 msgstr "Teme"
 
-#: src/components/windows/Settings.jsx:184
+#: src/components/windows/Settings.jsx:171
 msgid "How pixelplanet should look like."
 msgstr "Cum pixelplanet ar trebui să arate."
 
-#: src/components/windows/Settings.jsx:191
+#: src/components/windows/Settings.jsx:178
 msgid "Select Language"
 msgstr "Selectează limba"
 
@@ -890,8 +907,8 @@ msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
-"Aici colectăm toate canvasurile pentru a le arhiva într-o cale ca lumea ("
-"care este momentan doar una)."
+"Aici colectăm toate canvasurile pentru a le arhiva într-o cale ca lumea "
+"(care este momentan doar una)."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
@@ -1037,11 +1054,11 @@ msgstr "Copiază"
 msgid "Save"
 msgstr "Salvează"
 
-#: src/components/TemplateSettings.jsx:57
+#: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr "Șabloane"
 
-#: src/components/TemplateSettings.jsx:61
+#: src/components/TemplateSettings.jsx:56
 msgid ""
 "Tired of always spaming one single color? Want to create art instead, but "
 "you have to count pixels from some other image? Templates can help you with "
@@ -1054,51 +1071,43 @@ msgstr ""
 "puteți desena peste ele. Un pixel pe șablon, ar trebui să fie un pixel pe "
 "pânză."
 
-#: src/components/TemplateSettings.jsx:65
+#: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
 msgstr "Activează Overlay-ul"
 
-#: src/components/TemplateSettings.jsx:70
+#: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
 msgstr "Arată șablonul ca Overlay ingame."
 
-#: src/components/TemplateSettings.jsx:73
+#: src/components/TemplateSettings.jsx:68
 msgid "Small Pixels When Zoomed"
 msgstr "Zoom cu Pixeli Mici"
 
-#: src/components/TemplateSettings.jsx:78
+#: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr "Arată Overlay-ul ca pixeli individuali mici la niveluri mari de zoom."
 
-#: src/components/TemplateSettings.jsx:85
+#: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
 msgstr "Opacitate de Overlay"
 
-#: src/components/TemplateSettings.jsx:99
+#: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
 msgstr "Opacitate de Overlay în procente."
 
-#: src/components/TemplateSettings.jsx:105
-msgid "Right-Shift Auto-Color"
-msgstr "Schift-Dreapta Auto-colorare"
-
-#: src/components/TemplateSettings.jsx:110
-msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr "Pune pixeli de pe Overlay pe shift-dreapta, în loc de istoric."
-
-#: src/components/TemplateSettings.jsx:149
+#: src/components/TemplateSettings.jsx:132
 msgid "Cancel adding Template"
 msgstr "Anulează adăugarea șablonului"
 
-#: src/components/TemplateSettings.jsx:156
+#: src/components/TemplateSettings.jsx:139
 msgid "Add Template"
 msgstr "Încarcă Templateul"
 
-#: src/components/TemplateSettings.jsx:173
+#: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
 msgstr "Exportă șabloanele activate"
 
-#: src/components/TemplateSettings.jsx:182
+#: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr "Iportează șabloane"
 
@@ -1133,10 +1142,6 @@ msgstr "Pixeli Puși Azi"
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
 msgstr "Locul tău în clasament azi"
-
-#: src/components/UserAreaContent.jsx:71
-msgid "Placed Pixels"
-msgstr "Pixeli Puși în total"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
@@ -1247,14 +1252,6 @@ msgstr "Resetează"
 #: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr "Descarcă Templateul"
-
-#: src/components/Rankings.jsx:147
-msgid "Total"
-msgstr "Total"
-
-#: src/components/Rankings.jsx:156
-msgid "Today"
-msgstr "Azi"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
@@ -1446,6 +1443,26 @@ msgstr "Deblochează Utilizatori"
 msgid "You have no users blocked"
 msgstr "Nu ai niciun utilizator blocat"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Top 10 Țări[pixeli / zi]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Jucători și pixeli pe oră"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Top 10 Jucători [pixeli / zi]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Țări pe Pixeli Azi"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Pixeli puși în total pe zi"
+
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
 msgstr "Construiește imagine pe Canvas."
@@ -1627,26 +1644,6 @@ msgstr "Pune Motiv"
 msgid "(0 = infinite)"
 msgstr "(0 = infinit)"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Top 10 Țări[pixeli / zi]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Jucători și pixeli pe oră"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Top 10 Jucători [pixeli / zi]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Țări pe Pixeli Azi"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Pixeli puși în total pe zi"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Pingează"
@@ -1663,17 +1660,17 @@ msgstr "Blochează"
 msgid "Mute"
 msgstr "Mutează"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
@@ -1718,20 +1715,48 @@ msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
 
-#: src/components/windows/Settings.jsx:108
+#: src/components/windows/Settings.jsx:84
 msgctxt "keybinds"
 msgid "N"
 msgstr "N"
 
-#: src/components/windows/Settings.jsx:116
+#: src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "M"
 msgstr "M"
 
-#: src/components/TemplateSettings.jsx:66
+#: src/components/windows/Settings.jsx:157
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Pixels placed"
+#~ msgstr "Pixeli puși"
+
+#~ msgid "History Pencil ON"
+#~ msgstr "Creion de istorie Activat"
+
+#~ msgid "Overlay Pencil ON"
+#~ msgstr "Creion de Overlay Activat"
+
+#, javascript-format
+#~ msgid ""
+#~ "Hold right ${ bindShift } for placing while moving mouse according to "
+#~ "historical view"
+#~ msgstr ""
+#~ "Ține ${ bindShift }ul din dreapta pentru a pune cu mouseul după vederea "
+#~ "istorică"
+
+#~ msgid "Right-Shift Auto-Color"
+#~ msgstr "Schift-Dreapta Auto-colorare"
+
+#~ msgid "Place pixels from overlay on right-shift, instead of history."
+#~ msgstr "Pune pixeli de pe Overlay pe shift-dreapta, în loc de istoric."
 
 #~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 #~ msgstr ""

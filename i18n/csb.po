@@ -13,54 +13,72 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:99
+#: src/controls/keypress.js:62
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#, fuzzy
+msgid "Selected Color"
+msgstr "Wëbierzë lópk"
+
+#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#, fuzzy
+msgid "From Template"
+msgstr "Nakłôdczi"
+
+#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+msgid "From History"
+msgstr ""
+
+#: src/controls/keypress.js:122
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "Je przełączoné na ${ canvasName }"
 
-#: src/controls/keypress.js:184
+#: src/controls/keypress.js:193
 msgid "Grid ON"
 msgstr "Séc włączonô"
 
-#: src/controls/keypress.js:185
+#: src/controls/keypress.js:194
 msgid "Grid OFF"
 msgstr "Séc wëłączonô"
 
-#: src/controls/keypress.js:195
+#: src/controls/keypress.js:204
 msgid "Pixel Notify ON"
 msgstr "Pòwiadomienié ò Pikselach włączone"
 
-#: src/controls/keypress.js:196
+#: src/controls/keypress.js:205
 msgid "Pixel Notify OFF"
 msgstr "Pòwiadomienié ò Pikselach wëłączone"
 
-#: src/controls/keypress.js:201
+#: src/controls/keypress.js:210
 msgid "Muted Sound"
 msgstr "Wëcëszono zwãczi"
 
-#: src/controls/keypress.js:202
+#: src/controls/keypress.js:211
 msgid "Unmuted Sound"
 msgstr "Òdcëszono zwãczi"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:220
 #, fuzzy
 msgid "Copied"
 msgstr "Je skòpiérowóné!"
 
-#: src/controls/keypress.js:217
+#: src/controls/keypress.js:226
 msgid "Overlay ON"
 msgstr "Pòdkłôd włączony"
 
-#: src/controls/keypress.js:218
+#: src/controls/keypress.js:227
 msgid "Overlay OFF"
 msgstr "Pòdkłôd wëłączony"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:224
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
 msgid "Easter Egg ON"
 msgstr "Easter Egg Włączony"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:225
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
 msgid "Easter Egg OFF"
 msgstr "Easter Egg Wëłączony"
 
@@ -256,17 +274,25 @@ msgstr "Môsz nowé wiadë na czace"
 msgid "Copy to Clipboard"
 msgstr "Skòpieruj do Tacnika"
 
-#: src/components/OnlineBox.jsx:40
+#: src/components/OnlineBox.jsx:56
 msgid "Online Users on Canvas"
 msgstr "Aktiwni brëkòwnicë na Płótnie"
 
-#: src/components/OnlineBox.jsx:47
+#: src/components/OnlineBox.jsx:71
 msgid "Total Online Users"
 msgstr "Całownô lëczba Aktiwnëch Brëkòwników"
 
-#: src/components/OnlineBox.jsx:55
-msgid "Pixels placed"
-msgstr "Piksele pòstawióné"
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+msgid "Placed Pixels"
+msgstr "Pòstawióné piksele"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+msgid "Today"
+msgstr "Dzysô"
+
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+msgid "Total"
+msgstr "Òglowò"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -342,13 +368,13 @@ msgstr "Nastôwë"
 msgid "User Area"
 msgstr "Òbrëmienié Brëkòwnika"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Globalny pòzdrzatk"
-
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
 msgstr "Zrobi Zdrzucënk ekrana"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Globalny pòzdrzatk"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
@@ -358,27 +384,19 @@ msgstr "Wëłączë palétã"
 msgid "Open Palette"
 msgstr "Włączë palétã"
 
-#: src/components/buttons/PencilButton.jsx:32
-msgid "History Pencil ON"
-msgstr "Historiô òłówka włączonô"
-
-#: src/components/buttons/PencilButton.jsx:38
-msgid "Overlay Pencil ON"
-msgstr "Nakłôdkòwi òłówk włączony"
-
-#: src/components/buttons/PencilButton.jsx:65
+#: src/components/buttons/PencilButton.jsx:26
 msgid "Enable Pencil"
 msgstr "Włączë òłówk"
 
-#: src/components/buttons/PencilButton.jsx:69
+#: src/components/buttons/PencilButton.jsx:31
 msgid "Disable Pencil"
 msgstr "Wëłączë òłówk"
 
-#: src/components/buttons/PencilButton.jsx:73
+#: src/components/buttons/PencilButton.jsx:35
 msgid "Disable History Pencil"
 msgstr "Wëłączë historią òłówka"
 
-#: src/components/buttons/PencilButton.jsx:77
+#: src/components/buttons/PencilButton.jsx:39
 msgid "Disable Overlay Pencil"
 msgstr "Wëłączë nakłôdkã òłówka"
 
@@ -547,7 +565,7 @@ msgstr ""
 "zbanowóny niesprawiedlëwie, òdwiedzë proszã najé ${ guildedLink } abò pòslë "
 "nóm e-maila na ${ mailLink } i pòdôj henen IID:"
 
-#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:96
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
 msgid "Controls"
 msgstr "Czérowanié"
 
@@ -580,12 +598,12 @@ msgstr "Wcësni ${ bindR } żebë skòpiérowac wespółrzãdné"
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr "Wcësni ${ bindQ } abò ${ bindE} bë przëblëżëc"
 
-#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:98
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr "Wcësni ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } żebë sã rëchac"
 
-#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:99
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
@@ -607,27 +625,18 @@ msgstr ""
 "przëblëżec"
 
 #: src/components/windows/Help.jsx:91
-#, javascript-format
-msgid "Hold left ${ bindShift } for placing while moving mouse"
+#, fuzzy, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr "Przetrzëmôj lewi ${ bindShift } żebë stawiac rëchającë mëszą"
 
-#: src/components/windows/Help.jsx:92
-#, javascript-format
-msgid ""
-"Hold right ${ bindShift } for placing while moving mouse according to "
-"historical view"
-msgstr ""
-"Przetrzëmôj prawi ${ bindShift } żebë stawiac rëchającë mëszą pòdle "
-"historicznégò wezdrzatkù"
-
-#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:104
+#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 "Wcësni lewą knąpã mëszë ${ mouseSymbol } abò ${ touchSymbol } dotkni ekranu "
 "żebë pòstawic piksel"
 
-#: src/components/windows/Help.jsx:94 src/components/windows/Help.jsx:106
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
 #, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
@@ -636,17 +645,17 @@ msgstr ""
 "Wcësni strzódkòwą knąpã mëszë ${ mouseSymbol } abò ${ touchSymbol } "
 "przëtrzëmôj pôlc żebë pòbrac farwã"
 
-#: src/components/windows/Help.jsx:100
+#: src/components/windows/Help.jsx:99
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Wcësni ${ bindQ } a ${ bindE } bë latac w górã i w dół"
 
-#: src/components/windows/Help.jsx:101
+#: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr "Przetrzëmôj lewą knąpã mëszë ${ mouseSymbol } i przecygni żebë òbrócëc"
 
-#: src/components/windows/Help.jsx:102
+#: src/components/windows/Help.jsx:101
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
@@ -655,14 +664,14 @@ msgstr ""
 "Przewini meszą ${ mouseSymbol } abò przetrzëmôj strzódkòwą knąpã mëszë "
 "${ mouseSymbol } i przesëni żebë przeblëżëc"
 
-#: src/components/windows/Help.jsx:103
+#: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
 "Wcësni prawą knąpã mëszë ${ mouseSymbol } i przesëni mëszą bë przesënąc "
 "pòzdrzatk"
 
-#: src/components/windows/Help.jsx:105
+#: src/components/windows/Help.jsx:104
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
@@ -670,7 +679,7 @@ msgstr ""
 "Wcësni prawą knąpã mëszë ${ mouseSymbol } abò ${ touchSymbol } dotkni ekranu "
 "dwakroc żebë rëmnąc piksel"
 
-#: src/components/windows/Help.jsx:110
+#: src/components/windows/Help.jsx:109
 #, fuzzy
 msgid ""
 "We thank the following artists, who made their palettes available to the "
@@ -678,54 +687,54 @@ msgid ""
 msgstr ""
 "Baro dzãkùjemë tim twórcóm, jaczi pùbliczno ùprzëstãpnilë swòje palétë!"
 
-#: src/components/windows/Help.jsx:113
+#: src/components/windows/Help.jsx:112
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr "Dzãka za Miesądzową Palétã słëchô ${ starhouseLink }."
 
-#: src/components/windows/Help.jsx:116
+#: src/components/windows/Help.jsx:115
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Dzãka za Palétã Top10 Płótnów słëchô ${ vinikLink }."
 
-#: src/components/windows/Help.jsx:119
+#: src/components/windows/Help.jsx:118
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Dzãka za 2-bitową Palétã słëchô ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:91
+#: src/components/windows/Settings.jsx:67
 msgid "Show Grid"
 msgstr "Pòkôżë Séc"
 
-#: src/components/windows/Settings.jsx:96
+#: src/components/windows/Settings.jsx:72
 msgid "Turn on grid to highlight pixel borders."
 msgstr "Włączë satkã żébë pòdswiecëc grańce pikselów."
 
-#: src/components/windows/Settings.jsx:99
+#: src/components/windows/Settings.jsx:75
 msgid "Show Pixel Activity"
 msgstr "Pòkôżë Rësznosc Pikselów"
 
-#: src/components/windows/Settings.jsx:104
+#: src/components/windows/Settings.jsx:80
 msgid "Show circles where pixels are placed."
 msgstr "Pòkażë kòła tam gdze piksele są stôwióné."
 
-#: src/components/windows/Settings.jsx:107
+#: src/components/windows/Settings.jsx:83
 msgid "Always show Movement Controls"
 msgstr "Wiedno pòkazuj czerowónié rëchã"
 
-#: src/components/windows/Settings.jsx:112
+#: src/components/windows/Settings.jsx:88
 msgid "Always show movement control buttons"
 msgstr "Wiedno pòkazuj knąpë czerowaniô rëchã"
 
-#: src/components/windows/Settings.jsx:115
+#: src/components/windows/Settings.jsx:91
 msgid "Disable Game Sounds"
 msgstr "Wëłączë Zwãczi z Jigrë"
 
-#: src/components/windows/Settings.jsx:121
+#: src/components/windows/Settings.jsx:97
 msgid "All sound effects will be disabled."
 msgstr "Wszëtczé zwãkòwé efektë bãdą wëłączony."
 
-#: src/components/windows/Settings.jsx:125
+#: src/components/windows/Settings.jsx:101
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
@@ -733,19 +742,19 @@ msgstr ""
 "Twój przezérnik nie pòzwôlô nóm na ùżëcé AudioContext do òdgriwaniô zwãków. "
 "Sprawdzë, czë nie blokùją naju twòje nastôwë priwatnoscë."
 
-#: src/components/windows/Settings.jsx:131
+#: src/components/windows/Settings.jsx:107
 msgid "Enable chat notifications"
 msgstr "Włączë wiadła z czatu"
 
-#: src/components/windows/Settings.jsx:135
+#: src/components/windows/Settings.jsx:111
 msgid "Play a sound when new chat messages arrive"
 msgstr "Zagrôj zwãk czedë przińdą nowe wiadła"
 
-#: src/components/windows/Settings.jsx:138
+#: src/components/windows/Settings.jsx:114
 msgid "Auto Zoom In"
 msgstr "Aùtomaticzné przëblëżenié"
 
-#: src/components/windows/Settings.jsx:143
+#: src/components/windows/Settings.jsx:119
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
@@ -753,48 +762,56 @@ msgstr ""
 "Przëblëżë miast stawiania pikseli czedë cëskasz płótna ë twòje przëblëżenië "
 "je małé."
 
-#: src/components/windows/Settings.jsx:146
+#: src/components/windows/Settings.jsx:122
 msgid "Compact Palette"
 msgstr "Kòmpaktowô Paléta"
 
-#: src/components/windows/Settings.jsx:151
+#: src/components/windows/Settings.jsx:127
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr ""
 "Wëskrzëni Palétã w kòmpaktowi fòrmie chtërna zajimô mni placu na ekranie."
 
-#: src/components/windows/Settings.jsx:154
+#: src/components/windows/Settings.jsx:130
 msgid "Potato Mode"
 msgstr "Trib bùlwë"
 
-#: src/components/windows/Settings.jsx:158
+#: src/components/windows/Settings.jsx:134
 msgid "For when you are playing on a potato."
 msgstr "Czej grasz na bùlwie."
 
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:161
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
 msgid "Light Grid"
 msgstr "Letkô séc"
 
-#: src/components/windows/Settings.jsx:165
+#: src/components/windows/Settings.jsx:141
 msgid "Show Grid in white instead of black."
 msgstr "Pòkôżë Séc na biało miast na czôrno."
 
-#: src/components/windows/Settings.jsx:169
+#: src/components/windows/Settings.jsx:145
 msgid "Historical View"
 msgstr "Widok historëczny"
 
-#: src/components/windows/Settings.jsx:174
+#: src/components/windows/Settings.jsx:150
 msgid "Check out past versions of the canvas."
 msgstr "Sprôwdzë Pòprzédnô wersijã płótna."
 
-#: src/components/windows/Settings.jsx:179
+#: src/components/windows/Settings.jsx:154
+msgid "Pencil Mode"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:162
+msgid "What the pencil should draw."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:166
 msgid "Themes"
 msgstr "Témë"
 
-#: src/components/windows/Settings.jsx:184
+#: src/components/windows/Settings.jsx:171
 msgid "How pixelplanet should look like."
 msgstr "Jak pixelplanet pòwinno wëzdrzëc."
 
-#: src/components/windows/Settings.jsx:191
+#: src/components/windows/Settings.jsx:178
 msgid "Select Language"
 msgstr "Wëbierzë jãzëk"
 
@@ -1049,11 +1066,11 @@ msgstr "Kòpieruj"
 msgid "Save"
 msgstr "Zapiszë"
 
-#: src/components/TemplateSettings.jsx:57
+#: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr "Nakłôdczi"
 
-#: src/components/TemplateSettings.jsx:61
+#: src/components/TemplateSettings.jsx:56
 msgid ""
 "Tired of always spaming one single color? Want to create art instead, but "
 "you have to count pixels from some other image? Templates can help you with "
@@ -1065,56 +1082,46 @@ msgstr ""
 "Mòdła mògą bëc wëskrzëniwóné jakno nakłôdk jaczi të mdzesz mógł òdéchòwiwac. "
 "Jeden piksel na mòdle mô òdpòwiadac jednémù pikselowi na płótnie."
 
-#: src/components/TemplateSettings.jsx:65
+#: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
 msgstr "Włączë nakłôdkã"
 
-#: src/components/TemplateSettings.jsx:70
+#: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
 msgstr "Wëskrzëniwôj mòdła jakno nakłôdczi òb granié."
 
-#: src/components/TemplateSettings.jsx:73
+#: src/components/TemplateSettings.jsx:68
 #, fuzzy
 msgid "Small Pixels When Zoomed"
 msgstr "Przëblëżënié môłëch piskelów"
 
-#: src/components/TemplateSettings.jsx:78
+#: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
 "Wëskrzëniwôj nakłôdczi jakno môłé, apartné piksele na wësoczich niwlach "
 "pòwikszeniégò."
 
-#: src/components/TemplateSettings.jsx:85
+#: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
 msgstr "Widzawnosc nakłôdkù"
 
-#: src/components/TemplateSettings.jsx:99
+#: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
 msgstr "Widzawnosc nakłôdków w procentach."
 
-#: src/components/TemplateSettings.jsx:105
-msgid "Right-Shift Auto-Color"
-msgstr "Prawi shift dlô aùtomaticznégò farwòwaniô"
-
-#: src/components/TemplateSettings.jsx:110
-msgid "Place pixels from overlay on right-shift, instead of history."
-msgstr ""
-"Stôwiôj piksele z nakłôdczi miast w tribie historie, brëkùjącë prawégò "
-"shifta."
-
-#: src/components/TemplateSettings.jsx:149
+#: src/components/TemplateSettings.jsx:132
 msgid "Cancel adding Template"
 msgstr "Anuluj dodôwanié mòdła"
 
-#: src/components/TemplateSettings.jsx:156
+#: src/components/TemplateSettings.jsx:139
 msgid "Add Template"
 msgstr "Dodaj Nakłôdkã"
 
-#: src/components/TemplateSettings.jsx:173
+#: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
 msgstr "Ekspòrtuj włączoné mòdła"
 
-#: src/components/TemplateSettings.jsx:182
+#: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr "Impòrtuj mòdła"
 
@@ -1149,10 +1156,6 @@ msgstr "Piksele pòstôwioné dzysô"
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
 msgstr "Codniowô ranga"
-
-#: src/components/UserAreaContent.jsx:71
-msgid "Placed Pixels"
-msgstr "Pòstawióné piksele"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
@@ -1263,14 +1266,6 @@ msgstr "Resetuj"
 #: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr "Pòbierzë pòdkłôdë"
-
-#: src/components/Rankings.jsx:147
-msgid "Total"
-msgstr "Òglowò"
-
-#: src/components/Rankings.jsx:156
-msgid "Today"
-msgstr "Dzysô"
 
 #: src/components/Rankings.jsx:165
 msgid "Yesterday"
@@ -1462,6 +1457,26 @@ msgstr "Òdblokùj brëkòwników"
 msgid "You have no users blocked"
 msgstr "Môsz niżôdnëch brëkòwników zablokòwónëch"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Top 10 Krôjów [pxls / day]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Grôcz ë Piksele na gòdzynã"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Top 10 grôczów [pxls / day]"
+
+#: src/core/chartSettings.js:294
+msgid "Countries by Pixels Today"
+msgstr "Kraje pòdług Pikselów Dzysô"
+
+#: src/core/chartSettings.js:351
+msgid "Total Pixels placed per day"
+msgstr "Cawnô lëczba pikselów pòstôwionëch na dzéń"
+
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
 msgstr "Bùduj céchùnk na płótnié."
@@ -1641,26 +1656,6 @@ msgstr "Wpiszë Pòwód"
 msgid "(0 = infinite)"
 msgstr "(0 = nieskùńczoné)"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Top 10 Krôjów [pxls / day]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Grôcz ë Piksele na gòdzynã"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Top 10 grôczów [pxls / day]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Kraje pòdług Pikselów Dzysô"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Cawnô lëczba pikselów pòstôwionëch na dzéń"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Pingùj"
@@ -1677,17 +1672,17 @@ msgstr "Blokùj"
 msgid "Mute"
 msgstr "Wëcëszë"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:92
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:100
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:171
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
@@ -1732,20 +1727,50 @@ msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
 
-#: src/components/windows/Settings.jsx:108
+#: src/components/windows/Settings.jsx:84
 msgctxt "keybinds"
 msgid "N"
 msgstr "N"
 
-#: src/components/windows/Settings.jsx:116
+#: src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "M"
 msgstr "M"
 
-#: src/components/TemplateSettings.jsx:66
+#: src/components/windows/Settings.jsx:157
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Pixels placed"
+#~ msgstr "Piksele pòstawióné"
+
+#~ msgid "History Pencil ON"
+#~ msgstr "Historiô òłówka włączonô"
+
+#~ msgid "Overlay Pencil ON"
+#~ msgstr "Nakłôdkòwi òłówk włączony"
+
+#, javascript-format
+#~ msgid ""
+#~ "Hold right ${ bindShift } for placing while moving mouse according to "
+#~ "historical view"
+#~ msgstr ""
+#~ "Przetrzëmôj prawi ${ bindShift } żebë stawiac rëchającë mëszą pòdle "
+#~ "historicznégò wezdrzatkù"
+
+#~ msgid "Right-Shift Auto-Color"
+#~ msgstr "Prawi shift dlô aùtomaticznégò farwòwaniô"
+
+#~ msgid "Place pixels from overlay on right-shift, instead of history."
+#~ msgstr ""
+#~ "Stôwiôj piksele z nakłôdczi miast w tribie historie, brëkùjącë prawégò "
+#~ "shifta."
 
 #~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
 #~ msgstr ""

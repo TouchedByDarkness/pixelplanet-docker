@@ -114,6 +114,16 @@ msgstr "Κάντε διπλό κλικ στο globe για να επιστρέψ
 msgid "Loading..."
 msgstr "Φόρτωση.."
 
+#: src/ssr/Main.jsx:65
+msgid "PixelPlanet.Fun"
+msgstr "PixelPlanet.Fun"
+
+#: src/ssr/Main.jsx:66
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr ""
+"Τοποθετήστε έγχρωμα pixel σε έναν μεγάλο καμβά με άλλους παίκτες στο "
+"διαδίκτυο"
+
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
@@ -121,16 +131,6 @@ msgstr "ppfun"
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
-
-#: src/ssr/Main.jsx:62
-msgid "PixelPlanet.Fun"
-msgstr "PixelPlanet.Fun"
-
-#: src/ssr/Main.jsx:63
-msgid "Place color pixels on an map styled canvas with other players online"
-msgstr ""
-"Τοποθετήστε έγχρωμα pixel σε έναν μεγάλο καμβά με άλλους παίκτες στο "
-"διαδίκτυο"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -219,6 +219,10 @@ msgstr "Επιβεβαιώστε τον καινούριο σας κωδικό"
 msgid "Submit"
 msgstr "Yπέβαλλε"
 
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Δεν είσαι απαγορευμένος"
+
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Δεν είσται συνδεμένοι"
@@ -230,46 +234,6 @@ msgstr "Δεν επιτρέπεται η πρόσβαση σε αυτή τη σ�
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Μόνο οι διαχειριστές μπορούν να το κάνουν αυτό"
-
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Δεν είσαι απαγορευμένος"
-
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Αυτός ο πάροχος email δεν επιτρέπεται"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Δεν δόθηκε αναγνωριστικό captcha"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Email είναι ήδη σε χρήση."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Το όνομα χρήστη χρησιμοποιείται ήδη."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Χρειάστηκε πολύς χρόνος, δοκιμάστε ξανά."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Απέτυχες το captcha σου"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Άγνωστο σφάλμα Captcha"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Αποτυχία δημιουργίας νέου χρήστη :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Απέτυχε η δημιουργία συνεδρίας μετά την εγγραφή :("
 
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
@@ -311,22 +275,13 @@ msgstr "Λάθος κωδικός!"
 msgid "Muted Users can not delete their account."
 msgstr ""
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Αυτός ο πάροχος email δεν επιτρέπεται"
+
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "Λογαριασμοί PixelPlanet.fun"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "Θα ανακατευθυνθείτε αυτόματα μετά από 15 δευτερόλεπτα"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Ή ${ clickHere } για να επιστρέψετε στο pixelplanet"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
@@ -422,6 +377,51 @@ msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Δεν δόθηκε αναγνωριστικό captcha"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Email είναι ήδη σε χρήση."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Το όνομα χρήστη χρησιμοποιείται ήδη."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Χρειάστηκε πολύς χρόνος, δοκιμάστε ξανά."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Απέτυχες το captcha σου"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Άγνωστο σφάλμα Captcha"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Αποτυχία δημιουργίας νέου χρήστη :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Απέτυχε η δημιουργία συνεδρίας μετά την εγγραφή :("
+
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "Λογαριασμοί PixelPlanet.fun"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "Θα ανακατευθυνθείτε αυτόματα μετά από 15 δευτερόλεπτα"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "Ή ${ clickHere } για να επιστρέψετε στο pixelplanet"
 
 #: src/core/MailProvider.js:66
 #, fuzzy, javascript-format
