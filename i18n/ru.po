@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-12 19:57+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-04-02 18:53+0000\n"
+"Last-Translator: sallbet <Sallbet@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/ru/>\n"
 "Language: ru\n"
@@ -16,21 +16,19 @@ msgstr ""
 
 #: src/controls/keypress.js:62
 msgid "Pencil picks: "
-msgstr ""
+msgstr "Рисование по: "
 
 #: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
-#, fuzzy
 msgid "Selected Color"
-msgstr "Выбрать файл"
+msgstr "выбранному цвету"
 
 #: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
-#, fuzzy
 msgid "From Template"
-msgstr "Шаблоны"
+msgstr "шаблону"
 
 #: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
 msgid "From History"
-msgstr ""
+msgstr "истории"
 
 #: src/controls/keypress.js:122
 #, javascript-format
@@ -87,13 +85,12 @@ msgid "Timeout"
 msgstr "Тайм-аут"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
-"Нет ответа от pixelplanet. Может попробовать обновить, если проблема не "
-"исчезнет?"
+"Нет ответа от pixelplanet. Попробуйте обновить страницу, если проблема не "
+"исчезнет."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
@@ -625,7 +622,7 @@ msgstr ""
 "чтобы изменять масштаб"
 
 #: src/components/windows/Help.jsx:91
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr ""
 "Удерживайте левый ${ bindShift } для установки пикселей во время движения "
@@ -802,11 +799,11 @@ msgstr "Посмотрите прошлые версии полотна."
 
 #: src/components/windows/Settings.jsx:154
 msgid "Pencil Mode"
-msgstr ""
+msgstr "Режим непрерывного рисования"
 
 #: src/components/windows/Settings.jsx:162
 msgid "What the pencil should draw."
-msgstr ""
+msgstr "Как должно идти непрерывное рисование."
 
 #: src/components/windows/Settings.jsx:166
 msgid "Themes"
@@ -1749,7 +1746,7 @@ msgstr "M"
 #: src/components/windows/Settings.jsx:157
 msgctxt "keybinds"
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

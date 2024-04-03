@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-21 04:54+0000\n"
-"Last-Translator: Pixel Albania <ppfalbania@gmail.com>\n"
+"PO-Revision-Date: 2024-04-02 15:32+0000\n"
+"Last-Translator: cil_ass <cil_sucks@outlook.com>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/sq/>\n"
 "Language: sq\n"
@@ -12,65 +12,66 @@ msgstr ""
 
 #: src/controls/keypress.js:62
 msgid "Pencil picks: "
-msgstr ""
+msgstr "Zgjedhjet e lapsave: "
 
 #: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
 msgid "Selected Color"
-msgstr ""
+msgstr "Ngjyra e Zgjedhur"
 
 #: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
 msgid "From Template"
-msgstr ""
+msgstr "Prej Shabllonit"
 
 #: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
 msgid "From History"
-msgstr ""
+msgstr "Prej Historisë"
 
 #: src/controls/keypress.js:122
 #, javascript-format
 msgid "Switched to ${ canvasName }"
-msgstr ""
+msgstr "Kaloi në ${ canvasName }"
 
 #: src/controls/keypress.js:193
 msgid "Grid ON"
-msgstr ""
+msgstr "Rrjeti i NDEZUR"
 
 #: src/controls/keypress.js:194
 msgid "Grid OFF"
-msgstr ""
+msgstr "Rrjeti i FIKUR"
 
 #: src/controls/keypress.js:204
 msgid "Pixel Notify ON"
-msgstr ""
+msgstr "Njoftimi i pikselit i NDEZUR"
 
 #: src/controls/keypress.js:205
 msgid "Pixel Notify OFF"
-msgstr ""
+msgstr "Njoftimi i pikselit i FIKUR"
 
 #: src/controls/keypress.js:210
 msgid "Muted Sound"
-msgstr ""
+msgstr "Tingulli i Heshtur"
 
 #: src/controls/keypress.js:211
 msgid "Unmuted Sound"
-msgstr ""
+msgstr "Tingulli i Pashuar"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:220
 msgid "Copied"
-msgstr ""
+msgstr "Kopjuar"
 
 #: src/controls/keypress.js:226
 msgid "Overlay ON"
-msgstr ""
+msgstr "Mbulesa e NDEZUR"
 
 #: src/controls/keypress.js:227
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Mbulesa e FIKUR"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
+#, fuzzy
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "no proper translation"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
 msgid "Easter Egg OFF"
@@ -78,146 +79,153 @@ msgstr ""
 
 #: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
-msgstr ""
+msgstr "Timeout"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
+"Nuk more përgjigje nga pixelplanet. Përpiquni të freskoni nëse ky problem "
+"vazhdon."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
-msgstr ""
+msgstr "Kanavacë e Pavlershme"
 
 #: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
-msgstr ""
+msgstr "Ky kanavacë nuk ekziston"
 
 #: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
 #: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
-msgstr ""
+msgstr "Koordinata të Pavlershme"
 
 #: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
-msgstr ""
+msgstr "x jashtë kufive"
 
 #: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
-msgstr ""
+msgstr "y jashtë kufive"
 
 #: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
-msgstr ""
+msgstr "z jashtë kufive"
 
 #: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
-msgstr ""
+msgstr "Ngjyra e Gabuar"
 
 #: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
-msgstr ""
+msgstr "Ngjyra e Pavlershme selektuar"
 
 #: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
-msgstr ""
+msgstr "Vetëm për përdorues të regjistruar"
 
 #: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
-msgstr ""
+msgstr "Duhet të jesh kyçur për të vendosur në kanavac"
 
 #: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
 #: src/ui/PixelTransferController.js:148
 msgid "Not allowed"
-msgstr ""
+msgstr "Nuk është e lejueshme"
 
 #: src/ui/PixelTransferController.js:130
 msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
+"Nuk mundeni të hyni ende në këtë kanavacë, sepse nuk i keni pikselat të "
+"mjaftueshme"
 
 #: src/ui/PixelTransferController.js:133
 msgid "Pixel protected"
-msgstr ""
+msgstr "Piksela e mbrojtur"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
-msgstr ""
+msgstr "Të lutem vërtetoni që jeni njeri"
 
 #: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
-msgstr ""
+msgstr "Ti je duke përdorur përfaqësues."
 
 #: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
-msgstr ""
+msgstr "Vetëm ata që ishin në Top10 dje mund të vendosin këtu"
 
 #: src/ui/PixelTransferController.js:152
 msgid "You are weird"
-msgstr ""
+msgstr "Ti je.. ndryshe"
 
 #: src/ui/PixelTransferController.js:154
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
+"Serveri u ngatërrua nga pikselet të juaja. A po luani në pajisje të shumëta?"
 
 #: src/ui/PixelTransferController.js:157
+#, fuzzy
 msgid "Banned"
-msgstr ""
+msgstr "i/e Ndaluar"
 
 #: src/ui/PixelTransferController.js:161
+#, fuzzy
 msgid "Range Banned"
-msgstr ""
+msgstr "Rrezja juaj është ndaluar"
 
 #: src/ui/PixelTransferController.js:162
 msgid "Your Internet Provider is banned from this game"
-msgstr ""
+msgstr "Ofruesi i juaj i internetit është i ndaluar nga kjo lojë"
 
 #: src/ui/PixelTransferController.js:170
 msgid "Weird"
-msgstr ""
+msgstr "Çuditshëm"
 
 #: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"
-msgstr ""
+msgstr "Pikseli nuk mundi të vendosej"
 
 #: src/ui/PixelTransferController.js:176
 #, javascript-format
 msgid "Error ${ retCode }"
-msgstr ""
+msgstr "Gabim ${ retCode }"
 
 #: src/ui/rendererFactory.js:31
 msgid "Canvas Error"
-msgstr ""
+msgstr "Kanavaci gaboj"
 
 #: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
-msgstr ""
+msgstr "Nuk mund të pasqyrohët kanavaci 3D, a e keni të çaktivizuar WebGL2?"
 
 #: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
 msgid "Error :("
-msgstr ""
+msgstr "Gabim :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "Nuk mund të eksportohet më shumë se 20 ose asnjë shabllon!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr ""
+msgstr "Nuk mund të importoj më shumë se 20 ose asnjë shabllon!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
-msgstr ""
+msgstr "Ok"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
-msgstr ""
+msgstr "Ju keni bërë shumë kërkesa"
 
 #: src/store/actions/fetch.js:59
 #, javascript-format
 msgid "try again after ${ ti }min"
-msgstr ""
+msgstr "porvo përsëri pas ${ ti }min"
 
 #: src/store/actions/fetch.js:70
 #, javascript-format

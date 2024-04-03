@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-02 13:57+0000\n"
+"PO-Revision-Date: 2024-04-02 15:32+0000\n"
 "Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/pixelplanet/"
 "client/de/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 
 #: src/controls/keypress.js:62
 msgid "Pencil picks: "
-msgstr "Pinsel wählt von: "
+msgstr "Pinsel wählt: "
 
 #: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
 msgid "Selected Color"

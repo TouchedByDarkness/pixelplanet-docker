@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-02 13:57+0000\n"
+"PO-Revision-Date: 2024-04-02 18:53+0000\n"
 "Last-Translator: Jamie Fitzgerald <jamiefitzgerald2010@gmail.com>\n"
 "Language-Team: Irish <https://hosted.weblate.org/projects/pixelplanet/client/"
 "ga/>\n"
@@ -411,7 +411,7 @@ msgstr "chartlann canbhás"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
-msgstr "Ghlac to raibh fhada, Tráil Arís"
+msgstr "Ghlac to raibh fhada, Tráil Arís."
 
 #: src/components/GlobalCaptcha.jsx:50
 msgid "You failed your captcha"
@@ -952,7 +952,7 @@ msgstr ""
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Caithfidh tú rud a cuir istigh Email ."
+msgstr "Caithfidh tú rud a cuir istigh Ríomhphost."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
@@ -968,7 +968,7 @@ msgstr "Ba chóir go mbeadh ar a laghad ponc amhainn ann"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "Ba chóir go mbeadh @"
+msgstr "Ba chóir go mbeadh @ i do Ríomhphost"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
@@ -988,15 +988,15 @@ msgstr "Tá charachtair neamhbhailí Ann mar shampla @,/,\\ nó #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr "Níor tabhar tu phasfhocal"
+msgstr "Níor thabhar tu phasfhocal."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr "Caithfidh an phasfhocal beidh 6+ charachtair"
+msgstr "Caithfidh an phasfhocal beidh ar a laghad 6 charachtair."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr "Caithfidh an phasfhocal beidh 60- charachtair"
+msgstr "Caithfidh an phasfhocal beidh ar a mhéad 60 charachtair."
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
@@ -1334,7 +1334,7 @@ msgstr ""
 
 #: src/components/ChangePassword.jsx:44
 msgid "Password successfully changed."
-msgstr "Phasfhocal athraithe"
+msgstr "Phasfhocal athraithe go rathúil."
 
 #: src/components/ChangePassword.jsx:88
 msgid "Old Password"

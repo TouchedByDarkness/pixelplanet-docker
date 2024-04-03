@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-09 11:55+0000\n"
+"PO-Revision-Date: 2024-04-02 18:53+0000\n"
 "Last-Translator: sallbet <Sallbet@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/ru/>\n"
@@ -15,7 +15,6 @@ msgstr ""
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
-#, fuzzy
 msgid "You can not send chat messages while using a proxy"
 msgstr "Вы не можете отправлять сообщения в чат, используя прокси"
 
@@ -268,7 +267,6 @@ msgid "Incorrect password!"
 msgstr "Неверный пароль!"
 
 #: src/routes/api/auth/delete_account.js:46
-#, fuzzy
 msgid "Muted Users can not delete their account."
 msgstr "Пользователи в муте не могут удалить свой аккаунт."
 
@@ -277,7 +275,6 @@ msgid "This email provider is not allowed"
 msgstr "Этот провайдер электронной почты не разрешен"
 
 #: src/routes/api/auth/change_mail.js:62
-#, fuzzy
 msgid "Muted Users can not do this."
 msgstr "Пользователи в муте не могут это сделать."
 
@@ -322,11 +319,10 @@ msgid "Minimap"
 msgstr "Миникарта"
 
 #: src/canvasesDesc.js:32
-#, fuzzy
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
 "Наше главное полотно - огромная карта мира, вы можете ставить пиксели где "
-"хотите"
+"хотите!"
 
 #: src/canvasesDesc.js:33
 msgid ""
@@ -338,14 +334,14 @@ msgstr ""
 "х 1,5 тысячи пикселей."
 
 #: src/canvasesDesc.js:34
-#, fuzzy
 msgid "Place Voxels on a 3D canvas with others."
-msgstr "Размещайте воксели на 3D полотне вместе с другими игроками"
+msgstr "Размещайте воксели на 3D полотне вместе с другими игроками."
 
 #: src/canvasesDesc.js:35
-#, fuzzy
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
-msgstr "Специальное полотно для распространения осведомленности о SARS-CoV2"
+msgstr ""
+"Специальное полотно для распространения осведомленности о SARS-CoV2 "
+"(вакцинируйтесь)."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -368,18 +364,16 @@ msgstr ""
 "рейтинга в 00:00 UTC."
 
 #: src/canvasesDesc.js:40
-#, fuzzy
 msgid "Only four colors. Same rules as moon!"
-msgstr "Только четыре цвета. Правила такие же как и на луне."
+msgstr "Только четыре цвета. Правила такие же как и на полотне луны!"
 
 #: src/canvasesDesc.js:41
-#, fuzzy
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
 "Завоевывайте земли на меньшем полотне земли с океаном под защитой. Время "
-"восстановления связано с земным полотном."
+"восстановления связано с земным полотном!"
 
 #: src/routes/api/auth/register.js:31
 msgid "No Captcha given"

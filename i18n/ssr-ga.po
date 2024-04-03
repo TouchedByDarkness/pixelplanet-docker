@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-02 12:28+0000\n"
+"PO-Revision-Date: 2024-04-02 18:53+0000\n"
 "Last-Translator: Jamie Fitzgerald <jamiefitzgerald2010@gmail.com>\n"
 "Language-Team: Irish <https://hosted.weblate.org/projects/pixelplanet/server/"
 "ga/>\n"
 "Language: ga\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
-"(n>6 && n<11) ? 3 : 4;\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :("
+"n>6 && n<11) ? 3 : 4;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
@@ -17,7 +17,7 @@ msgstr "Níl tú ábalta teachtaireacht a cuir amach ag úsáid seachfhreastala�
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr "Cuirtear balbh sealadach ar do Tír Ón ait caint seo"
+msgstr "Cuirtear balbh sealadach ar do Tír Ón comhrá seo"
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
@@ -68,11 +68,11 @@ msgstr "Baint úsáid as cainéal Idirnáisiúnta le do chul"
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
-msgstr "Stad ag Tuileadh"
+msgstr "Stad ag Tuileadh."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr "sheol tú pasfhocal folamh nó data Neamhbhailí :("
+msgstr "sheol tú pasfhocal folamh nó sonraí Neamhbhailí :("
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
@@ -88,7 +88,7 @@ msgstr "Níl an úsáideoir I n-ár bunachar sonraí :("
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr "Phasfhocal athraithe"
+msgstr "Phasfhocal athraithe go rathúil."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
@@ -96,15 +96,15 @@ msgstr "URL neamhbhailí :( cuir seic ar do phost arís."
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun Cruinneog3T [3DGlobe]"
+msgstr "PixelPlanet.Fun Cruinneog3D"
 
 #: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
-msgstr "cruinneog 3T do n-Ár léarscáil"
+msgstr "cruinneog 3D do n-Ár léarscáil iomlán"
 
 #: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
-msgstr "Cuir cliceáil dúbailte ar an cruinneog le dul árais"
+msgstr "Cuir cliceáil dúbailte ar an cruinneog le dul árais."
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
@@ -130,7 +130,7 @@ msgstr "PixelPlanet.Fun PopUp"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Caithfidh tú rud a cuir istigh Email ."
+msgstr "Caithfidh tú rud a cuir istigh Ríomhphost."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
@@ -146,7 +146,7 @@ msgstr "Ba chóir go mbeadh ar a laghad ponc amhainn ann"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "Ba chóir go mbeadh @"
+msgstr "Ba chóir go mbeadh @ i do Ríomhphost"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
@@ -166,15 +166,15 @@ msgstr "Tá charachtair neamhbhailí Ann mar shampla @,/,\\ nó #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr "Níor tabhar tu phasfhocal"
+msgstr "Níor thabhar tu phasfhocal."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr "Caithfidh an phasfhocal beidh 6+ charachtair"
+msgstr "Caithfidh an phasfhocal beidh ar a laghad 6 charachtair."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr "Caithfidh an phasfhocal beidh 60- charachtair"
+msgstr "Caithfidh an phasfhocal beidh ar a mhéad 60 charachtair."
 
 #: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
@@ -200,7 +200,7 @@ msgstr "dul ar ais go dtí pixelplanet"
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
 msgid "Hello ${ name }, you can set your new password here:"
-msgstr "Dia duit ${ name }, Is féidir leat phasfhocal nua a cuir anseo:"
+msgstr "Heileo ${ name }, Is féidir leat phasfhocal nua a cuir anseo:"
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
@@ -228,7 +228,7 @@ msgstr "Níl cead agat teacht ar an leathanach seo"
 
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
-msgstr "Is féidir ach Riarthóirí sin a dhéanamh"
+msgstr "Ní féidir ach Riarthóirí sin a dhéanamh"
 
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
@@ -264,11 +264,11 @@ msgstr "Níl tù Fíordheimhnithe."
 #: src/routes/api/auth/change_passwd.js:43
 #: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
-msgstr "Phasfhocal mícheart"
+msgstr "Phasfhocal mícheart!"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr "Ní féidir le Úsáideoirí le balbh orthu scrios a chuir ar cuntas sacadh"
+msgstr "Ní féidir le Úsáideoirí le balbh orthu scrios a chuir ar cuntas sacadh."
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
@@ -276,7 +276,7 @@ msgstr "Níl cead tugtha ar an Soláthraí Ríomhphost sin"
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr "Ní féidir le úsáideoirí le balbh orthu seo a dhéanamh"
+msgstr "Ní féidir le úsáideoirí le balbh orthu seo a dhéanamh."
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
@@ -321,7 +321,7 @@ msgstr "léarscáil Beag"
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
-"Ár priomh Canbhás., Léarscáil mór don domhan. Cuir áit ar bith a ba mhaith "
+"Ár priomh Canbhás, Léarscáil mór don domhan. Cuir áit ar bith a ba mhaith "
 "leat!"
 
 #: src/canvasesDesc.js:33
@@ -329,17 +329,18 @@ msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
 msgstr ""
-"Canbhás gealach. Ait sabhailte do ealaíne. NA CUIR BhRATACHA NÓ TÉACS MÓR "
-"(ach amháin páirteach le ealaíne)"
+"Canbhás gealach. Ait sabhailte do ealaíne. Na cuir bhratach no teics mór(ach "
+"amháin meas páirteach le ealaíne é) nó ealaíne níos mó ná 1.5k X 1.5 "
+"picteilíní."
 
 #: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others."
-msgstr "Cuir 'Voxels' ar canbhás 3D leis na cuid eile"
+msgstr "Cuir 'Voxels' ar canbhás 3D leis na cuid eile."
 
 #: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr ""
-"Canbhás speisialta le scéal a scaipeadh faoi SARS-CoV2 (ghlac an vacsaín)"
+"Canbhás speisialta le scéal a scaipeadh faoi SARS-CoV2 (ghlac an vacsaín)."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
@@ -359,11 +360,11 @@ msgid ""
 "ranking updates at 00:00 UTC."
 msgstr ""
 "Canbhás do na úsáideoirí is gníomhach ón lá faoi dheireadh. nuashonruithe "
-"rangú gach lá ar 00:00 UTC"
+"rangú gach lá ar 00:00 UTC."
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr "Ní ach ceithre dath. Rialacha mar an gcéanna leis an gealach"
+msgstr "Ní ach ceithre dath. Rialacha mar an gcéanna leis an gealach!"
 
 #: src/canvasesDesc.js:41
 msgid ""
@@ -371,7 +372,7 @@ msgid ""
 "earth canvas!"
 msgstr ""
 "Ghlac talamh are domhan níos liú le farraige sabhailte. Tá an téamh síos mar "
-"an gcéanna leis an Canbhás domhanda"
+"an gcéanna leis an Canbhás domhanda!"
 
 #: src/routes/api/auth/register.js:31
 msgid "No Captcha given"
@@ -379,7 +380,7 @@ msgstr "Níl Captcha ar fail"
 
 #: src/routes/api/auth/register.js:34
 msgid "E-Mail already in use."
-msgstr "Tá an Ríomhphost sin in úsáid"
+msgstr "Tá an Ríomhphost sin in úsáid."
 
 #: src/routes/api/auth/register.js:36
 msgid "Username already in use."
@@ -387,7 +388,7 @@ msgstr "Ta an Ainm úsáideora sin in úsáid cheana féin."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr "Ghlac to raibh fhada, Tráil Arís"
+msgstr "Ghlac to raibh fhada, Tráil Arís."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
@@ -487,8 +488,8 @@ msgid ""
 "If you did not request this mail, please just ignore it (the ip that "
 "requested this mail was ${ ip })."
 msgstr ""
-"Múna rinne tú iarratas don phost seo, neamhaird é le do chul (rinne an ip "
-"${ ip } an iarratas don phost seo)"
+"Múna rinne tú iarratas don phost seo, neamhaird é le do chul (rinne an ip ${ "
+"ip } an iarratas don phost seo)."
 
 #: src/core/MailProvider.js:114
 msgid "Mail is not configured on the server"
