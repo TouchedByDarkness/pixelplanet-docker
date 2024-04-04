@@ -12,72 +12,72 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.3\n"
 
-#: src/controls/keypress.js:62
+#: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
 msgstr ""
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
 #, fuzzy
 msgid "Selected Color"
 msgstr "Æвзаджы Равзарын"
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
 #, fuzzy
 msgid "From Template"
 msgstr "Шаблоны Равæр"
 
-#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
 msgid "From History"
 msgstr ""
 
-#: src/controls/keypress.js:122
+#: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr ""
 
-#: src/controls/keypress.js:193
+#: src/controls/keypress.js:176
 msgid "Grid ON"
 msgstr ""
 
-#: src/controls/keypress.js:194
+#: src/controls/keypress.js:177
 msgid "Grid OFF"
 msgstr ""
 
-#: src/controls/keypress.js:204
+#: src/controls/keypress.js:187
 msgid "Pixel Notify ON"
 msgstr ""
 
-#: src/controls/keypress.js:205
+#: src/controls/keypress.js:188
 msgid "Pixel Notify OFF"
 msgstr ""
 
-#: src/controls/keypress.js:210
+#: src/controls/keypress.js:193
 msgid "Muted Sound"
 msgstr ""
 
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:194
 msgid "Unmuted Sound"
 msgstr ""
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:220
+#: src/controls/keypress.js:203
 #, fuzzy
 msgid "Copied"
 msgstr "Къопи ис!"
 
-#: src/controls/keypress.js:226
+#: src/controls/keypress.js:209
 msgid "Overlay ON"
 msgstr ""
 
-#: src/controls/keypress.js:227
+#: src/controls/keypress.js:210
 msgid "Overlay OFF"
 msgstr ""
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
 msgstr ""
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
 msgstr ""
 
@@ -371,10 +371,6 @@ msgstr "Пайдагæнæджы Облæст"
 msgid "Make Screenshot"
 msgstr "Скриншоты Саразын"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Глобалон бакаст"
-
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Палитры Сæхгæнын"
@@ -383,22 +379,26 @@ msgstr "Палитры Сæхгæнын"
 msgid "Open Palette"
 msgstr "Палитры Бакæнын"
 
-#: src/components/buttons/PencilButton.jsx:26
+#: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr ""
 
-#: src/components/buttons/PencilButton.jsx:31
+#: src/components/buttons/PencilButton.jsx:46
 #, fuzzy
 msgid "Disable Pencil"
 msgstr "Хъазты Зæл Рафтау"
 
-#: src/components/buttons/PencilButton.jsx:35
+#: src/components/buttons/PencilButton.jsx:50
 msgid "Disable History Pencil"
 msgstr ""
 
-#: src/components/buttons/PencilButton.jsx:39
+#: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr ""
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Глобалон бакаст"
 
 #: src/components/windows/index.js:16
 #, fuzzy
@@ -418,28 +418,13 @@ msgstr "Чат"
 msgid "Canvas Archive"
 msgstr "Четæны Архив"
 
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:50
-#, fuzzy
-msgid "You failed your captcha"
-msgstr "Captcha байдзаг бантыс ма"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
 msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:56
-#, fuzzy
-msgid "No captcha id given"
-msgstr "Парол æнæ бацамон."
-
-#: src/components/GlobalCaptcha.jsx:59
-#, fuzzy
-msgid "Unknown Captcha Error"
-msgstr "Æнæхъуыст Рæдыд"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -449,26 +434,6 @@ msgstr "Æнæхъуыст Рæдыд"
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Рæдыд"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Аивын"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Арвитын"
-
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr ""
-
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr ""
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -501,6 +466,200 @@ msgstr ""
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr ""
+
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr ""
+
+#: src/components/GlobalCaptcha.jsx:50
+#, fuzzy
+msgid "You failed your captcha"
+msgstr "Captcha байдзаг бантыс ма"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr ""
+
+#: src/components/GlobalCaptcha.jsx:56
+#, fuzzy
+msgid "No captcha id given"
+msgstr "Парол æнæ бацамон."
+
+#: src/components/GlobalCaptcha.jsx:59
+#, fuzzy
+msgid "Unknown Captcha Error"
+msgstr "Æнæхъуыст Рæдыд"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Аивын"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Арвитын"
+
+#: src/components/windows/Settings.jsx:69
+msgid "Show Grid"
+msgstr "Хызæг Равдис"
+
+#: src/components/windows/Settings.jsx:74
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Хызæг баргъæвын цæмæй пикселы арæн равзар."
+
+#: src/components/windows/Settings.jsx:77
+msgid "Show Pixel Activity"
+msgstr "Пикселы разæнгарддзинад равдис"
+
+#: src/components/windows/Settings.jsx:82
+msgid "Show circles where pixels are placed."
+msgstr "Зылдтæ равдис, кæцы пикселы æрбынат."
+
+#: src/components/windows/Settings.jsx:85
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:90
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:93
+msgid "Disable Game Sounds"
+msgstr "Хъазты Зæл Рафтау"
+
+#: src/components/windows/Settings.jsx:99
+msgid "All sound effects will be disabled."
+msgstr "Алцы зæлон архайдтæ рафтау æгъгъæд."
+
+#: src/components/windows/Settings.jsx:103
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:109
+msgid "Enable chat notifications"
+msgstr "Чаты хъусыгæнæнтæ баргъæв"
+
+#: src/components/windows/Settings.jsx:113
+msgid "Play a sound when new chat messages arrive"
+msgstr "Сноджы зæл фæзынд рæстæджы ног чаты фыстæджытæ"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Auto Zoom In"
+msgstr "Автоахадæн"
+
+#: src/components/windows/Settings.jsx:121
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Масштабы ахадæн уыцы бæсты цæмæй пикселы бынæттæ кæнын, кæддæ ныдзæв четæн "
+"æмæ дæ масштаб къаннæг."
+
+#: src/components/windows/Settings.jsx:124
+msgid "Compact Palette"
+msgstr "Æнгом Палитрæ"
+
+#: src/components/windows/Settings.jsx:129
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Æнгом Палитрæ райста къаддæр екраны бынат."
+
+#: src/components/windows/Settings.jsx:132
+msgid "Potato Mode"
+msgstr "Картофы Уаг"
+
+#: src/components/windows/Settings.jsx:136
+msgid "For when you are playing on a potato."
+msgstr "Кæд картофы хъазт."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
+msgid "Light Grid"
+msgstr "Рухсы Хызæг"
+
+#: src/components/windows/Settings.jsx:143
+msgid "Show Grid in white instead of black."
+msgstr "Хызæг æвдисын урс хуыз сау бæсты."
+
+#: src/components/windows/Settings.jsx:147
+msgid "Historical View"
+msgstr "Историон бакаст"
+
+#: src/components/windows/Settings.jsx:152
+msgid "Check out past versions of the canvas."
+msgstr "Рабæлвырд четæны ивгъуыд верси."
+
+#: src/components/windows/Settings.jsx:156
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:164
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:168
+msgid "Themes"
+msgstr "Темтæ"
+
+#: src/components/windows/Settings.jsx:173
+msgid "How pixelplanet should look like."
+msgstr "Куыд дарын pixelplanet йæ бакаст."
+
+#: src/components/windows/Settings.jsx:180
+msgid "Select Language"
+msgstr "Æвзаджы Равзарын"
+
+#: src/components/windows/Archive.jsx:9
+#, fuzzy
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Кæд мах куыд уагæвæрд,четæнтæ хай нæй, кæцыдæр фæлдыст ивхæрсæнæн кæнæ "
+"курдиаты пайдагæнæг,кæцы абоны бон рæстæг мем зæрдæмæ. Четæны ай чи схъыг "
+"исдуг фæстæ, æмæ стæй цалдæр къуыри нæуæвын лæмбынæг ивындзинад, æмæ кæд "
+"уыдон æцæг лæууы уыцы нæй, цæмæй зай разæнгард, мах скъуыддзаг адард уыдон."
+
+#: src/components/windows/Archive.jsx:10
+#, fuzzy
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Мах ам хи рæвдз четæны ай, цæмæй аккаг фæлгонц архив кæнын уыдон (абоны бон "
+"рæстæджы æрмæст иунæг ай)."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "Политикон Хъыбыллæ Четæн"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Четæны ай уыд æркур рæстæджы политикон быцæу сæйраг зæххы кæттаджы. Уыд "
+"бавдыст ай политикон æнгом барлæвæрды 1024x1024 ифтыгъдимæ 5 сикъунд æмæ "
+"суммированийы 60 сикъунд. 11 майы фехс ма йæ æмæ зайы разæнгард цыды цалдæр "
+"мæй,цалынмæ сæхгæн йæ ай."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Сфæнд кодтон архив кæны уый куыд таймлапс шифримæ æнæ асæрф webm. Екраны "
+"хуызист таймлапсæй ратт хæрзæххæст бавдис 1:1 уыцы, кæцы уыд четæн та "
+"рæстæджы."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -699,140 +858,24 @@ msgstr "Бузныг тыххæй «Палитры мæй» ${ vinikLink }."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Бузныг тыххæй «Палитры мæй» ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:67
-msgid "Show Grid"
-msgstr "Хызæг Равдис"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Хызæг баргъæвын цæмæй пикселы арæн равзар."
-
-#: src/components/windows/Settings.jsx:75
-msgid "Show Pixel Activity"
-msgstr "Пикселы разæнгарддзинад равдис"
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show circles where pixels are placed."
-msgstr "Зылдтæ равдис, кæцы пикселы æрбынат."
-
-#: src/components/windows/Settings.jsx:83
-msgid "Always show Movement Controls"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show movement control buttons"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:91
-msgid "Disable Game Sounds"
-msgstr "Хъазты Зæл Рафтау"
-
-#: src/components/windows/Settings.jsx:97
-msgid "All sound effects will be disabled."
-msgstr "Алцы зæлон архайдтæ рафтау æгъгъæд."
-
-#: src/components/windows/Settings.jsx:101
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
 msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
 msgstr ""
+"Четæны равзар кæцы спайда фæнды дæ. Алы четæн уникал æмæ алы палитрытæ ис, "
+"рæстæг сфидар æмæ домæн. Архив æхгæд кæттаг ам ис:"
 
-#: src/components/windows/Settings.jsx:107
-msgid "Enable chat notifications"
-msgstr "Чаты хъусыгæнæнтæ баргъæв"
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Архив"
 
-#: src/components/windows/Settings.jsx:111
-msgid "Play a sound when new chat messages arrive"
-msgstr "Сноджы зæл фæзынд рæстæджы ног чаты фыстæджытæ"
-
-#: src/components/windows/Settings.jsx:114
-msgid "Auto Zoom In"
-msgstr "Автоахадæн"
-
-#: src/components/windows/Settings.jsx:119
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
 msgstr ""
-"Масштабы ахадæн уыцы бæсты цæмæй пикселы бынæттæ кæнын, кæддæ ныдзæв четæн "
-"æмæ дæ масштаб къаннæг."
-
-#: src/components/windows/Settings.jsx:122
-msgid "Compact Palette"
-msgstr "Æнгом Палитрæ"
-
-#: src/components/windows/Settings.jsx:127
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Æнгом Палитрæ райста къаддæр екраны бынат."
-
-#: src/components/windows/Settings.jsx:130
-msgid "Potato Mode"
-msgstr "Картофы Уаг"
-
-#: src/components/windows/Settings.jsx:134
-msgid "For when you are playing on a potato."
-msgstr "Кæд картофы хъазт."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
-msgid "Light Grid"
-msgstr "Рухсы Хызæг"
-
-#: src/components/windows/Settings.jsx:141
-msgid "Show Grid in white instead of black."
-msgstr "Хызæг æвдисын урс хуыз сау бæсты."
-
-#: src/components/windows/Settings.jsx:145
-msgid "Historical View"
-msgstr "Историон бакаст"
-
-#: src/components/windows/Settings.jsx:150
-msgid "Check out past versions of the canvas."
-msgstr "Рабæлвырд четæны ивгъуыд верси."
-
-#: src/components/windows/Settings.jsx:154
-msgid "Pencil Mode"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:162
-msgid "What the pencil should draw."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:166
-msgid "Themes"
-msgstr "Темтæ"
-
-#: src/components/windows/Settings.jsx:171
-msgid "How pixelplanet should look like."
-msgstr "Куыд дарын pixelplanet йæ бакаст."
-
-#: src/components/windows/Settings.jsx:178
-msgid "Select Language"
-msgstr "Æвзаджы Равзарын"
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Профил"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr ""
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Къонвертер"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Modtools"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Æрбавгæд..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Баиу махæнмæ Guilded:"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -873,73 +916,6 @@ msgstr ""
 msgid "Submit"
 msgstr "Сфидар кæн"
 
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Четæны равзар кæцы спайда фæнды дæ. Алы четæн уникал æмæ алы палитрытæ ис, "
-"рæстæг сфидар æмæ домæн. Архив æхгæд кæттаг ам ис:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Архив"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr ""
-
-#: src/components/windows/Archive.jsx:9
-#, fuzzy
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"Кæд мах куыд уагæвæрд,четæнтæ хай нæй, кæцыдæр фæлдыст ивхæрсæнæн кæнæ "
-"курдиаты пайдагæнæг,кæцы абоны бон рæстæг мем зæрдæмæ. Четæны ай чи схъыг "
-"исдуг фæстæ, æмæ стæй цалдæр къуыри нæуæвын лæмбынæг ивындзинад, æмæ кæд "
-"уыдон æцæг лæууы уыцы нæй, цæмæй зай разæнгард, мах скъуыддзаг адард уыдон."
-
-#: src/components/windows/Archive.jsx:10
-#, fuzzy
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"Мах ам хи рæвдз четæны ай, цæмæй аккаг фæлгонц архив кæнын уыдон (абоны бон "
-"рæстæджы æрмæст иунæг ай)."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "Политикон Хъыбыллæ Четæн"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"Четæны ай уыд æркур рæстæджы политикон быцæу сæйраг зæххы кæттаджы. Уыд "
-"бавдыст ай политикон æнгом барлæвæрды 1024x1024 ифтыгъдимæ 5 сикъунд æмæ "
-"суммированийы 60 сикъунд. 11 майы фехс ма йæ æмæ зайы разæнгард цыды цалдæр "
-"мæй,цалынмæ сæхгæн йæ ай."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"Сфæнд кодтон архив кæны уый куыд таймлапс шифримæ æнæ асæрф webm. Екраны "
-"хуызист таймлапсæй ратт хæрзæххæст бавдис 1:1 уыцы, кæцы уыд четæн та "
-"рæстæджы."
-
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
 msgstr "Райдай æмхиц уын ам"
@@ -956,13 +932,30 @@ msgstr "Ды чаты бацу дарын"
 msgid "Channel settings"
 msgstr "Къаналы рæвдзгæнæнтæ"
 
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr "Арвит фыстæг уын амындимæ паролы раппар гæсгæ."
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Профил"
 
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr "Дæ посты адрис мидæмæ, æмæ мах ног парол сымахæн æрæрвит:"
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr ""
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Къонвертер"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Modtools"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Æрбавгæд..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Баиу махæнмæ Guilded:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -996,6 +989,14 @@ msgstr "Бавдзаг кæн"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Символы Бакæн кæн"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "Арвит фыстæг уын амындимæ паролы раппар гæсгæ."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Дæ посты адрис мидæмæ, æмæ мах ног парол сымахæн æрæрвит:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1046,6 +1047,54 @@ msgstr "Парол дарын у æнæ къаддæр цæмæй 6 символ
 msgid "Password must be shorter than 60 characters."
 msgstr "Парол дарын у цыбыр 60 символы."
 
+#: src/components/CanvasItem.jsx:29
+#, fuzzy
+msgid "Online Users"
+msgstr "Пайдагæнæжы Хъоды айс"
+
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "Цалцæджы Рæстæг"
+
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "Æвæрдмæ"
+
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "Рейтингмæ"
+
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
+msgstr ""
+
+#: src/components/CanvasItem.jsx:44
+msgid "No"
+msgstr ""
+
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "Домæнтæ"
+
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "Пайдагæнæджы Аккаунт"
+
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "æмæ ${ canvas.req } Пикселтæ равæр"
+
+#: src/components/CanvasItem.jsx:58
+#, fuzzy
+msgid "Top 10 Daily Ranking"
+msgstr "Алыбоны Рейтинг"
+
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "Бæрцтæ"
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr ""
@@ -1054,11 +1103,29 @@ msgstr ""
 msgid "Copy"
 msgstr ""
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "Бавæрын"
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr "Бацу цæмæй бацæуæн райсын баххæстаг функци кæнæ статистикмæ."
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr "Ном кæнæ посты бацу:"
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr "Паролы мæ ферох."
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr "кæнæ бацу æххуысимæ:"
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr "кæнæ регистраци ам:"
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr "Регистраци"
 
 #: src/components/TemplateSettings.jsx:52
 #, fuzzy
@@ -1115,29 +1182,11 @@ msgstr ""
 msgid "Import templates"
 msgstr ""
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr "Бацу цæмæй бацæуæн райсын баххæстаг функци кæнæ статистикмæ."
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr "Ном кæнæ посты бацу:"
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr "Паролы мæ ферох."
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr "кæнæ бацу æххуысимæ:"
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr "кæнæ регистраци ам:"
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr "Регистраци"
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Бавæрын"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
@@ -1285,54 +1334,6 @@ msgstr ""
 "Рейтинг ногæй алы 5 минуты. Æрвылбойнон рейтингтæ æппар æмбисæхсæвы "
 "æппæтдунеон координаты рæстæджыл."
 
-#: src/components/CanvasItem.jsx:29
-#, fuzzy
-msgid "Online Users"
-msgstr "Пайдагæнæжы Хъоды айс"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "Цалцæджы Рæстæг"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "Æвæрдмæ"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "Рейтингмæ"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr ""
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr ""
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "Домæнтæ"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "Пайдагæнæджы Аккаунт"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "æмæ ${ canvas.req } Пикселтæ равæр"
-
-#: src/components/CanvasItem.jsx:58
-#, fuzzy
-msgid "Top 10 Daily Ranking"
-msgstr "Алыбоны Рейтинг"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "Бæрцтæ"
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 #, fuzzy
@@ -1352,6 +1353,14 @@ msgstr ""
 msgid "Go to"
 msgstr ""
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Ном кæнæ Електронон пост"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Бацу"
+
 #: src/components/TemplateItemEdit.jsx:97
 #, fuzzy
 msgid "Select File"
@@ -1365,98 +1374,6 @@ msgstr ""
 #, fuzzy
 msgid "Delete"
 msgstr "Аккаунты Адард кæн"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Ном кæнæ Електронон пост"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Бацу"
-
-#: src/components/UserMessages.jsx:28
-#, fuzzy
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Табуафси сфидар дæ адрис електронон пост&nbsp;\n"
-"кæнæ дæ аккаунт чи зоны адард цалдæр бон фæстæ."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Æгъгъæд дæ араст ног фыстæг бæлвырдгæнæнимæ."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Ныкъкъæрцц ам, цæмæй æрфæрс ног фыстæг бæлвырдгæнæнимæ."
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "Парол æнæ аккаг у."
-
-#: src/components/ChangePassword.jsx:44
-#, fuzzy
-msgid "Password successfully changed."
-msgstr "Парол æнтыстджынæй раив."
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "Зæронд Парол"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "Ног Парол"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Ног Паролы Сфидар"
-
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "Ног Пайдагæнæджы Ном"
-
-#: src/components/ChangeMail.jsx:59
-#, fuzzy
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"Пост æнтыстджынæй раив. Мах арвит дæ пост бæлвырдгæнæнимæ,               "
-"табуафси дæ ног адрис електронон посты сфидар."
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "Ног Парол"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "О, Мæ Аккаунт Адард кæн!"
-
-#: src/components/SocialSettings.jsx:35
-#, fuzzy
-msgid "Block DMs"
-msgstr "Фæхъоды кæн"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "Алцы Гоймагон Фыстæджытæ Фæхъоды айс"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "Пайдагæнæжы Хъоды айс"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "Фæхъоды пайдагæнæджытæ æнæ ард"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1479,6 +1396,91 @@ msgstr ""
 #, fuzzy
 msgid "Total Pixels placed per day"
 msgstr "Æрбынтон пикселтæ"
+
+#: src/components/UserMessages.jsx:28
+#, fuzzy
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Табуафси сфидар дæ адрис електронон пост&nbsp;\n"
+"кæнæ дæ аккаунт чи зоны адард цалдæр бон фæстæ."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Æгъгъæд дæ араст ног фыстæг бæлвырдгæнæнимæ."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Ныкъкъæрцц ам, цæмæй æрфæрс ног фыстæг бæлвырдгæнæнимæ."
+
+#: src/components/ModWatchtools.jsx:48
+#, fuzzy
+msgid "Interval is invalid"
+msgstr "Æнæраст Четæн"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr ""
+
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr ""
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:249
+#, fuzzy
+msgid "Get Pixels"
+msgstr "Равæрды Пикселтæ"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
+msgstr ""
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "IP Архайд"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "Цыфæнды араз IP-Адрисимæ (Иунæг IP-Адрис гæсгæ рæнхъы)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "Модератæгтæ Тæрын"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "Модератæджы Адард"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "Мод æнæ ард"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "Ног моды снысан"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "Пайдагæнæджы ном бакæн нæуæг мод"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "Пайдагæнæджы Ном"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1550,16 +1552,6 @@ msgstr ""
 "Облæсты хъахъхъæд равæр         (дæ хъæуы куы дырыс цæстдарддæр,         "
 "хъахъхъæды спайда æрбавгæд сурæтимæ æмæ алфæ-цъар)"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr ""
-
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr ""
-
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Датæмæ Тулæй"
@@ -1579,64 +1571,6 @@ msgstr ""
 
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
-msgstr ""
-
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "IP Архайд"
-
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "Цыфæнды араз IP-Адрисимæ (Иунæг IP-Адрис гæсгæ рæнхъы)"
-
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "Модератæгтæ Тæрын"
-
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "Модератæджы Адард"
-
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "Мод æнæ ард"
-
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "Ног моды снысан"
-
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "Пайдагæнæджы ном бакæн нæуæг мод"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "Пайдагæнæджы Ном"
-
-#: src/components/ModWatchtools.jsx:48
-#, fuzzy
-msgid "Interval is invalid"
-msgstr "Æнæраст Четæн"
-
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:249
-#, fuzzy
-msgid "Get Pixels"
-msgstr "Равæрды Пикселтæ"
-
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
 msgstr ""
 
 #: src/components/ModIIDtools.jsx:20
@@ -1660,6 +1594,73 @@ msgstr ""
 msgid "(0 = infinite)"
 msgstr ""
 
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "Ног Пайдагæнæджы Ном"
+
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "Парол æнæ аккаг у."
+
+#: src/components/ChangePassword.jsx:44
+#, fuzzy
+msgid "Password successfully changed."
+msgstr "Парол æнтыстджынæй раив."
+
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "Зæронд Парол"
+
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "Ног Парол"
+
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Ног Паролы Сфидар"
+
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "О, Мæ Аккаунт Адард кæн!"
+
+#: src/components/ChangeMail.jsx:59
+#, fuzzy
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"Пост æнтыстджынæй раив. Мах арвит дæ пост бæлвырдгæнæнимæ,               "
+"табуафси дæ ног адрис електронон посты сфидар."
+
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "Ног Парол"
+
+#: src/components/SocialSettings.jsx:35
+#, fuzzy
+msgid "Block DMs"
+msgstr "Фæхъоды кæн"
+
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "Алцы Гоймагон Фыстæджытæ Фæхъоды айс"
+
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
+msgstr ""
+
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr ""
+
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "Пайдагæнæжы Хъоды айс"
+
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "Фæхъоды пайдагæнæджытæ æнæ ард"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Пинг"
@@ -1676,20 +1677,35 @@ msgstr "Фæхъоды кæн"
 msgid "Mute"
 msgstr "Фæбынæй кæн"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
+#: src/components/windows/Settings.jsx:86
+msgctxt "keybinds"
+msgid "N"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:94
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
+
+#: src/components/windows/Settings.jsx:159
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1730,21 +1746,6 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
-
-#: src/components/windows/Settings.jsx:84
-msgctxt "keybinds"
-msgid "N"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:92
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Settings.jsx:157
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

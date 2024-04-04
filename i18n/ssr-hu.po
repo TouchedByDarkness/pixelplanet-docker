@@ -111,6 +111,14 @@ msgstr "Kattints duplán a földgömbre a visszatéréshez."
 msgid "Loading..."
 msgstr "Betöltés..."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun felugró"
+
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
@@ -119,14 +127,6 @@ msgstr "PixelPlanet.Fun"
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Helyezz el pixeleket egy hatalmas online vásznon más játékosokkal együtt"
-
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun felugró"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -277,6 +277,51 @@ msgstr "Ez az e-mail szolgáltató nem engedélyezett"
 msgid "Muted Users can not do this."
 msgstr "A némított felhasználók nem tehetik meg ezt."
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "PixelPlanet.fun fiókok"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "Automatikusan átirányítunk 15 másodperc múlva"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "Vagy ${ clickHere } a pixelplanetre való visszatéréshez"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Nincs Captcha megadva"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Az e-mail cím már foglalt."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "A felhasználónév már foglalt."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Túl sokáig próbáltad, próbáld újra."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Nem sikerült a captcha"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Ismeretlen captcha hiba"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Nem sikerült új felhasználót létrehozni :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Nem sikerült létrehozni a munkamenetet a regisztráció után :("
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Föld"
@@ -369,51 +414,6 @@ msgid ""
 msgstr ""
 "Hódítsd meg a területet egy kisebb földön, védett óceánnal. Közös töltési "
 "idővel rendelkezik a földvászonnal!"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Nincs Captcha megadva"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Az e-mail cím már foglalt."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "A felhasználónév már foglalt."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Túl sokáig próbáltad, próbáld újra."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Nem sikerült a captcha"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Ismeretlen captcha hiba"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Nem sikerült új felhasználót létrehozni :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Nem sikerült létrehozni a munkamenetet a regisztráció után :("
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "PixelPlanet.fun fiókok"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "Automatikusan átirányítunk 15 másodperc múlva"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Vagy ${ clickHere } a pixelplanetre való visszatéréshez"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

@@ -111,14 +111,6 @@ msgstr "Дважды щелкните по глобусу, чтобы верну
 msgid "Loading..."
 msgstr "Загрузка..."
 
-#: src/ssr/Main.jsx:65
-msgid "PixelPlanet.Fun"
-msgstr "PixelPlanet.Fun"
-
-#: src/ssr/Main.jsx:66
-msgid "Place color pixels on an map styled canvas with other players online"
-msgstr "Ставьте цветные пиксели на огромном полотне с другими людьми по сети"
-
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr "ppfun"
@@ -126,6 +118,14 @@ msgstr "ppfun"
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr "Всплывающее окно PixelPlanet.Fun"
+
+#: src/ssr/Main.jsx:65
+msgid "PixelPlanet.Fun"
+msgstr "PixelPlanet.Fun"
+
+#: src/ssr/Main.jsx:66
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr "Ставьте цветные пиксели на огромном полотне с другими людьми по сети"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -278,6 +278,51 @@ msgstr "Этот провайдер электронной почты не ра�
 msgid "Muted Users can not do this."
 msgstr "Пользователи в муте не могут это сделать."
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "Аккаунты PixelPlanet.fun"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "Вы будете автоматически перенаправлены через 15 секунд"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "Или ${clickHere}, чтобы вернуться на pixelplanet"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Капча не введена"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Эта электронная почта уже используется."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Это имя пользователя уже используется."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Слишком долго, попробуйте еще раз."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Вы неправильно решили капчу"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Неизвестная ошибка капчи"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Не удалось создать нового пользователя :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Не удалось установить сеанс после регистрации :("
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Земля"
@@ -374,51 +419,6 @@ msgid ""
 msgstr ""
 "Завоевывайте земли на меньшем полотне земли с океаном под защитой. Время "
 "восстановления связано с земным полотном!"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Капча не введена"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Эта электронная почта уже используется."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Это имя пользователя уже используется."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Слишком долго, попробуйте еще раз."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Вы неправильно решили капчу"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Неизвестная ошибка капчи"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Не удалось создать нового пользователя :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Не удалось установить сеанс после регистрации :("
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "Аккаунты PixelPlanet.fun"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "Вы будете автоматически перенаправлены через 15 секунд"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Или ${clickHere}, чтобы вернуться на pixelplanet"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

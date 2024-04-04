@@ -1,9 +1,14 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-04-04 20:02+0000\n"
+"Last-Translator: David <stojanovskidavid74@gmail.com>\n"
+"Language-Team: Macedonian <https://hosted.weblate.org/projects/pixelplanet/"
+"server/mk/>\n"
 "Language: mk\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n==1 || n%10==1 ? 0 : 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -98,6 +103,14 @@ msgstr ""
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
+msgstr "Вчитување..."
+
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr ""
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
 msgstr ""
 
 #: src/ssr/Main.jsx:65
@@ -106,14 +119,6 @@ msgstr ""
 
 #: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
-msgstr ""
-
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr ""
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
 msgstr ""
 
 #: src/utils/validation.js:17
@@ -200,7 +205,7 @@ msgstr ""
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr ""
+msgstr "Потврди"
 
 #: src/routes/api/baninfo.js:32
 msgid "You are not banned"
@@ -262,6 +267,51 @@ msgstr ""
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
+msgstr ""
+
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr ""
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr ""
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr ""
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr ""
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr ""
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr ""
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr ""
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr ""
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Непозната Каптча грешка"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr ""
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
 msgstr ""
 
 #: src/canvasesDesc.js:20
@@ -348,51 +398,6 @@ msgstr ""
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
-msgstr ""
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr ""
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr ""
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr ""
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr ""
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr ""
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr ""
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr ""
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr ""
 
 #: src/core/MailProvider.js:66

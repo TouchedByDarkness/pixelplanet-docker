@@ -113,6 +113,15 @@ msgstr "Doble clic a la bola del món per tornar enrere."
 msgid "Loading..."
 msgstr "Carregant..."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr ""
+
+#: src/ssr/PopUp.jsx:48
+#, fuzzy
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.fun"
+
 #: src/ssr/Main.jsx:65
 #, fuzzy
 msgid "PixelPlanet.Fun"
@@ -122,15 +131,6 @@ msgstr "PixelPlanet.fun"
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Col·loca píxels de colors en un gran llenç amb altres jugadors en línia"
-
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr ""
-
-#: src/ssr/PopUp.jsx:48
-#, fuzzy
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.fun"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -285,6 +285,51 @@ msgstr ""
 msgid "Muted Users can not do this."
 msgstr ""
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "Comptes de PixelPlanet.fun"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "Seràs redirigit automàticament al cap de 15 segons"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "O ${ clickHere } per tornar a PixelPlanet"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "No s'ha rebut el captcha"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "El correu electrònic ja està en ús."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "El nom d'usuari ja està en ús."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Has trigat massa, prova-ho un altre cop."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Has fallat el captcha"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Error de captcha desconegut"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "No s'ha pogut crear un nou usuari :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "No s'ha pogut establir la sessió després del registre :("
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Terra"
@@ -379,51 +424,6 @@ msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "No s'ha rebut el captcha"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "El correu electrònic ja està en ús."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "El nom d'usuari ja està en ús."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Has trigat massa, prova-ho un altre cop."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Has fallat el captcha"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Error de captcha desconegut"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "No s'ha pogut crear un nou usuari :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "No s'ha pogut establir la sessió després del registre :("
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "Comptes de PixelPlanet.fun"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "Seràs redirigit automàticament al cap de 15 segons"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "O ${ clickHere } per tornar a PixelPlanet"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

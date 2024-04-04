@@ -13,71 +13,71 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:62
+#: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
 msgstr ""
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
 #, fuzzy
 msgid "Selected Color"
 msgstr "Faylı seçin"
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
 #, fuzzy
 msgid "From Template"
 msgstr "Şablonlar"
 
-#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
 msgid "From History"
 msgstr ""
 
-#: src/controls/keypress.js:122
+#: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "${ canvasName } lövhəsinə keçildi"
 
-#: src/controls/keypress.js:193
+#: src/controls/keypress.js:176
 msgid "Grid ON"
 msgstr "Tor aktivdir"
 
-#: src/controls/keypress.js:194
+#: src/controls/keypress.js:177
 msgid "Grid OFF"
 msgstr "Tor bağlıdır"
 
-#: src/controls/keypress.js:204
+#: src/controls/keypress.js:187
 msgid "Pixel Notify ON"
 msgstr "Piksel Bildirimi aktivdir"
 
-#: src/controls/keypress.js:205
+#: src/controls/keypress.js:188
 msgid "Pixel Notify OFF"
 msgstr "Piksel Bildirimi bağlıdır"
 
-#: src/controls/keypress.js:210
+#: src/controls/keypress.js:193
 msgid "Muted Sound"
 msgstr "Səs bağlandı"
 
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:194
 msgid "Unmuted Sound"
 msgstr "Səs açıldı"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:220
+#: src/controls/keypress.js:203
 msgid "Copied"
 msgstr "Kopyalandı"
 
-#: src/controls/keypress.js:226
+#: src/controls/keypress.js:209
 msgid "Overlay ON"
 msgstr "Şablon açıqdır"
 
-#: src/controls/keypress.js:227
+#: src/controls/keypress.js:210
 msgid "Overlay OFF"
 msgstr "Şablon bağlıdır"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
 msgstr "Easter Egg açıqdır"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
 msgstr "Easter Egg bağlıdır"
 
@@ -365,10 +365,6 @@ msgstr "İstifadəçi Sahəsi"
 msgid "Make Screenshot"
 msgstr "Ekran görüntüsü al"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Dünya Görünümü"
-
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Palitranı aç"
@@ -377,21 +373,25 @@ msgstr "Palitranı aç"
 msgid "Open Palette"
 msgstr "Palitranı bağla"
 
-#: src/components/buttons/PencilButton.jsx:26
+#: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr "Qələmi Aç"
 
-#: src/components/buttons/PencilButton.jsx:31
+#: src/components/buttons/PencilButton.jsx:46
 msgid "Disable Pencil"
 msgstr "Qələmi Bağla"
 
-#: src/components/buttons/PencilButton.jsx:35
+#: src/components/buttons/PencilButton.jsx:50
 msgid "Disable History Pencil"
 msgstr "Tarix Qələmini Bağla"
 
-#: src/components/buttons/PencilButton.jsx:39
+#: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Şablon Qələmini Bağla"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Dünya Görünümü"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -409,25 +409,13 @@ msgstr "Söhbət"
 msgid "Canvas Archive"
 msgstr "Löhvə Arxivi"
 
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Bu çox vaxt aldı,yenidən yoxla."
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Banlandınız. Bunun haqsız olduğunu düşünürsünüz? Bura baxın "
 
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Captchanızı düzgün yerinə yetirmədiniz"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "captcha mətni yoxdur və ya etibarsızdır"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Heçbir captcha idsi verilmədi"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Naməlum captcha xətası"
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " necə müraciət edəbiləcəyiniz barədə."
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -437,26 +425,6 @@ msgstr "Naməlum captcha xətası"
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Xəta"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Ləğv et"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Göndər"
-
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Banlandınız. Bunun haqsız olduğunu düşünürsünüz? Bura baxın "
-
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " necə müraciət edəbiləcəyiniz barədə."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -489,6 +457,197 @@ msgstr "Siz bu mesajı gördüyünüzə görə,artıq banlı deyilsiniz."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Niyə?"
+
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Bu çox vaxt aldı,yenidən yoxla."
+
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Captchanızı düzgün yerinə yetirmədiniz"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "captcha mətni yoxdur və ya etibarsızdır"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Heçbir captcha idsi verilmədi"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Naməlum captcha xətası"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Ləğv et"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Göndər"
+
+#: src/components/windows/Settings.jsx:69
+msgid "Show Grid"
+msgstr "Toru göstərin"
+
+#: src/components/windows/Settings.jsx:74
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Piksel sərhədlərini vurğulamaq üçün toru açın."
+
+#: src/components/windows/Settings.jsx:77
+msgid "Show Pixel Activity"
+msgstr "Pixel aktivliyini göstər"
+
+#: src/components/windows/Settings.jsx:82
+msgid "Show circles where pixels are placed."
+msgstr "Pixellər qoyulan yerlərdə dairələr göstər."
+
+#: src/components/windows/Settings.jsx:85
+msgid "Always show Movement Controls"
+msgstr "Həmişə Hərəkət Kontrollarını göstər"
+
+#: src/components/windows/Settings.jsx:90
+msgid "Always show movement control buttons"
+msgstr "Həmişə hərəkət düymələrini göstər"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Disable Game Sounds"
+msgstr "Səs Effektlərini bağla"
+
+#: src/components/windows/Settings.jsx:99
+msgid "All sound effects will be disabled."
+msgstr "Bütün səs effektləri bağlanacaq."
+
+#: src/components/windows/Settings.jsx:103
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Brauzeriniz bizə səsləri səsləndirmək üçün AudioContext-dən istifadə etməyə "
+"icazə vermir. Bizi bloklayan gizlilik özəlliyiniz varmı?"
+
+#: src/components/windows/Settings.jsx:109
+msgid "Enable chat notifications"
+msgstr "Sohbet bildirimlərini aç"
+
+#: src/components/windows/Settings.jsx:113
+msgid "Play a sound when new chat messages arrive"
+msgstr "Yeni söhbət mesajları gələndə səs çalın"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Auto Zoom In"
+msgstr "avtomatik yaxınlaşdır"
+
+#: src/components/windows/Settings.jsx:121
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Bir yerə kliklədiyiniz zaman kiçildilirsə pixel atmaq əvəzinə böyüdəcək."
+
+#: src/components/windows/Settings.jsx:124
+msgid "Compact Palette"
+msgstr "Komplakt Palitra"
+
+#: src/components/windows/Settings.jsx:129
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Palitranı daha az ekran sahəsi tutan kompakt formada göstərin."
+
+#: src/components/windows/Settings.jsx:132
+msgid "Potato Mode"
+msgstr "Kartoşka modu"
+
+#: src/components/windows/Settings.jsx:136
+msgid "For when you are playing on a potato."
+msgstr "Kartoşka ilə oynayırsanızsa seçin."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
+msgid "Light Grid"
+msgstr "İşıqlı grid"
+
+#: src/components/windows/Settings.jsx:143
+msgid "Show Grid in white instead of black."
+msgstr "Toru qara yerinə ağ ilə göstərin."
+
+#: src/components/windows/Settings.jsx:147
+msgid "Historical View"
+msgstr "Tarixsəl baxış"
+
+#: src/components/windows/Settings.jsx:152
+msgid "Check out past versions of the canvas."
+msgstr "Löhvənin keçmiş versiyalarına baxın."
+
+#: src/components/windows/Settings.jsx:156
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "${ canvasName } lövhəsinə keçildi"
+
+#: src/components/windows/Settings.jsx:164
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:168
+msgid "Themes"
+msgstr "Temalar"
+
+#: src/components/windows/Settings.jsx:173
+msgid "How pixelplanet should look like."
+msgstr "Pixelplanet necə görünməlidir."
+
+#: src/components/windows/Settings.jsx:180
+msgid "Select Language"
+msgstr "Dili seçin"
+
+#: src/components/windows/Archive.jsx:9
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Biz lövhələri silməməyə meylli olsaq da, bəzi lövhələr əylənmək üçün və ya "
+"istifadəçilərin istəyi ilə meme kimi yaradılır. Bu lövhələr bir müddət sonra "
+"və həftələrlə heç bir əsas dəyişikliyin olmamasından sonra cansıxıcı ola "
+"bilər və əgər onlar həqiqətən aktiv saxlanılmağa dəyməzsə, biz onları silmək "
+"qərarına gəlirik."
+
+#: src/components/windows/Archive.jsx:10
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Burada biz silinən lövhələri düzgün bir şəkildə arxivləmək üçün yığırıq. "
+"Burada yalnız biridir."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "Siyasi Kompas Lövhəsi"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Bu lövhə Yer kürəsinin əsas lövhəsində siyasi münaqişələr zamanı tələb "
+"olundu. Bu, siyasi kompasın 1024x1024 təsviri idi və 5 saniyəlik gözləmə "
+"müddəti və 60 saniyəlik yığma ilə. Mayın 11-də açıldı və noyabrın 30-da "
+"bağlanana qədər aylarla aktiv qaldı."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Biz onu itkisiz kodlaşdırılmış webm ilə timelapse kimi arxivləşdirməyə qərar "
+"verdik. Timelapse-dən skrinşot çəkmək lövhənin o dövrdə necə olduğunu "
+"mükəmməl 1:1 təsviri ilə göstərir."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -700,141 +859,25 @@ msgstr "Top10 Lövhə palitrası üçün kredit ${ vinikLink }-ə gedir."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Top10 Lövhəsinin palitrası üçün kredit ${ donendoLink }-ə gedir."
 
-#: src/components/windows/Settings.jsx:67
-msgid "Show Grid"
-msgstr "Toru göstərin"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Piksel sərhədlərini vurğulamaq üçün toru açın."
-
-#: src/components/windows/Settings.jsx:75
-msgid "Show Pixel Activity"
-msgstr "Pixel aktivliyini göstər"
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show circles where pixels are placed."
-msgstr "Pixellər qoyulan yerlərdə dairələr göstər."
-
-#: src/components/windows/Settings.jsx:83
-msgid "Always show Movement Controls"
-msgstr "Həmişə Hərəkət Kontrollarını göstər"
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show movement control buttons"
-msgstr "Həmişə hərəkət düymələrini göstər"
-
-#: src/components/windows/Settings.jsx:91
-msgid "Disable Game Sounds"
-msgstr "Səs Effektlərini bağla"
-
-#: src/components/windows/Settings.jsx:97
-msgid "All sound effects will be disabled."
-msgstr "Bütün səs effektləri bağlanacaq."
-
-#: src/components/windows/Settings.jsx:101
+#: src/components/windows/CanvasSelect.jsx:29
 msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
 msgstr ""
-"Brauzeriniz bizə səsləri səsləndirmək üçün AudioContext-dən istifadə etməyə "
-"icazə vermir. Bizi bloklayan gizlilik özəlliyiniz varmı?"
+"İstifadə etmək istədiyiniz lövhəni seçin.\n"
+"Hər bir lövhə yeganədir və cürbəcür palitraları, gözləmə müddəti və "
+"tələbləri var.\n"
+"Qapalı lövhələrin arxivinə buradan daxil olmaq olar:"
 
-#: src/components/windows/Settings.jsx:107
-msgid "Enable chat notifications"
-msgstr "Sohbet bildirimlərini aç"
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arxiv"
 
-#: src/components/windows/Settings.jsx:111
-msgid "Play a sound when new chat messages arrive"
-msgstr "Yeni söhbət mesajları gələndə səs çalın"
-
-#: src/components/windows/Settings.jsx:114
-msgid "Auto Zoom In"
-msgstr "avtomatik yaxınlaşdır"
-
-#: src/components/windows/Settings.jsx:119
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Bir yerə kliklədiyiniz zaman kiçildilirsə pixel atmaq əvəzinə böyüdəcək."
-
-#: src/components/windows/Settings.jsx:122
-msgid "Compact Palette"
-msgstr "Komplakt Palitra"
-
-#: src/components/windows/Settings.jsx:127
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Palitranı daha az ekran sahəsi tutan kompakt formada göstərin."
-
-#: src/components/windows/Settings.jsx:130
-msgid "Potato Mode"
-msgstr "Kartoşka modu"
-
-#: src/components/windows/Settings.jsx:134
-msgid "For when you are playing on a potato."
-msgstr "Kartoşka ilə oynayırsanızsa seçin."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
-msgid "Light Grid"
-msgstr "İşıqlı grid"
-
-#: src/components/windows/Settings.jsx:141
-msgid "Show Grid in white instead of black."
-msgstr "Toru qara yerinə ağ ilə göstərin."
-
-#: src/components/windows/Settings.jsx:145
-msgid "Historical View"
-msgstr "Tarixsəl baxış"
-
-#: src/components/windows/Settings.jsx:150
-msgid "Check out past versions of the canvas."
-msgstr "Löhvənin keçmiş versiyalarına baxın."
-
-#: src/components/windows/Settings.jsx:154
-msgid "Pencil Mode"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:162
-msgid "What the pencil should draw."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:166
-msgid "Themes"
-msgstr "Temalar"
-
-#: src/components/windows/Settings.jsx:171
-msgid "How pixelplanet should look like."
-msgstr "Pixelplanet necə görünməlidir."
-
-#: src/components/windows/Settings.jsx:178
-msgid "Select Language"
-msgstr "Dili seçin"
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Profil"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr "Statistikalar"
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Çevirici"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Mod Aracları"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Yüklənir..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Bizə guildeddə qoşulmağı düşünün:"
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Ayrı Lövhələr (tək tarix)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -875,73 +918,6 @@ msgstr "Captcha"
 msgid "Submit"
 msgstr "Təqdim edin"
 
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"İstifadə etmək istədiyiniz lövhəni seçin.\n"
-"Hər bir lövhə yeganədir və cürbəcür palitraları, gözləmə müddəti və "
-"tələbləri var.\n"
-"Qapalı lövhələrin arxivinə buradan daxil olmaq olar:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arxiv"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Ayrı Lövhələr (tək tarix)"
-
-#: src/components/windows/Archive.jsx:9
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"Biz lövhələri silməməyə meylli olsaq da, bəzi lövhələr əylənmək üçün və ya "
-"istifadəçilərin istəyi ilə meme kimi yaradılır. Bu lövhələr bir müddət sonra "
-"və həftələrlə heç bir əsas dəyişikliyin olmamasından sonra cansıxıcı ola "
-"bilər və əgər onlar həqiqətən aktiv saxlanılmağa dəyməzsə, biz onları silmək "
-"qərarına gəlirik."
-
-#: src/components/windows/Archive.jsx:10
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"Burada biz silinən lövhələri düzgün bir şəkildə arxivləmək üçün yığırıq. "
-"Burada yalnız biridir."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "Siyasi Kompas Lövhəsi"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"Bu lövhə Yer kürəsinin əsas lövhəsində siyasi münaqişələr zamanı tələb "
-"olundu. Bu, siyasi kompasın 1024x1024 təsviri idi və 5 saniyəlik gözləmə "
-"müddəti və 60 saniyəlik yığma ilə. Mayın 11-də açıldı və noyabrın 30-da "
-"bağlanana qədər aylarla aktiv qaldı."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"Biz onu itkisiz kodlaşdırılmış webm ilə timelapse kimi arxivləşdirməyə qərar "
-"verdik. Timelapse-dən skrinşot çəkmək lövhənin o dövrdə necə olduğunu "
-"mükəmməl 1:1 təsviri ilə göstərir."
-
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
 msgstr "Burda söhbət etməyə başlayın"
@@ -958,13 +934,30 @@ msgstr "Chata mesaj yazabilmək üçün daxil olmalısınız"
 msgid "Channel settings"
 msgstr "Kanal ayarları"
 
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr "Sizə parolunuzu sıfırlamaq üçün təlimatlar olan bir email göndərdik."
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Profil"
 
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr "Email adresinizi daxil edin və biz sizə yeni bir parol göndərəcəyik:"
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr "Statistikalar"
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Çevirici"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Mod Aracları"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Yüklənir..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Bizə guildeddə qoşulmağı düşünün:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -997,6 +990,14 @@ msgstr "Yeniləyin"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Simvolları daxil edin"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "Sizə parolunuzu sıfırlamaq üçün təlimatlar olan bir email göndərdik."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Email adresinizi daxil edin və biz sizə yeni bir parol göndərəcəyik:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1046,6 +1047,52 @@ msgstr "Parol ən az 6 simvol uzunluğunda olmalıdır."
 msgid "Password must be shorter than 60 characters."
 msgstr "Parol 60 simvoldan qısa olmalıdır."
 
+#: src/components/CanvasItem.jsx:29
+msgid "Online Users"
+msgstr "Onlayn Istifadəçilər"
+
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "Gözləmə vaxtı"
+
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "Yığılabilən vaxt"
+
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "Reytinqli"
+
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
+msgstr "Hə"
+
+#: src/components/CanvasItem.jsx:44
+msgid "No"
+msgstr "Yox"
+
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "Tələblər"
+
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "Istifadəçi Hesabı"
+
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "və ${ canvas.req } pixellər təyin edildi"
+
+#: src/components/CanvasItem.jsx:58
+msgid "Top 10 Daily Ranking"
+msgstr "Top 10 Günlük Reytinq"
+
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "Ölçülər"
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "IID'yi əldə edin"
@@ -1054,11 +1101,29 @@ msgstr "IID'yi əldə edin"
 msgid "Copy"
 msgstr "Kopyala"
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "Yadda saxla"
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr "Daha çox məlumata sahib olmaq üçün daxil olun."
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr "Ad vəya Mail ilə daxil olun:"
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr "Şifrəmi unutdum."
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr "vəya bunlar ilə daxil olun:"
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr "vəya burdan qeydiyyatdan keçin:"
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr "Qeydiyyatdan keçin"
 
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
@@ -1117,29 +1182,11 @@ msgstr "Açıq şablonları xaric et"
 msgid "Import templates"
 msgstr "Şablonları daxil et"
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr "Daha çox məlumata sahib olmaq üçün daxil olun."
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr "Ad vəya Mail ilə daxil olun:"
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr "Şifrəmi unutdum."
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr "vəya bunlar ilə daxil olun:"
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr "vəya burdan qeydiyyatdan keçin:"
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr "Qeydiyyatdan keçin"
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Yadda saxla"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
@@ -1284,52 +1331,6 @@ msgstr "Ölkə"
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr "Hər 5 dəqiqədən bir Gündəlik reytinqlər gecə yarısı UTC-də sıfırlanır."
 
-#: src/components/CanvasItem.jsx:29
-msgid "Online Users"
-msgstr "Onlayn Istifadəçilər"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "Gözləmə vaxtı"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "Yığılabilən vaxt"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "Reytinqli"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr "Hə"
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr "Yox"
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "Tələblər"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "Istifadəçi Hesabı"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "və ${ canvas.req } pixellər təyin edildi"
-
-#: src/components/CanvasItem.jsx:58
-msgid "Top 10 Daily Ranking"
-msgstr "Top 10 Günlük Reytinq"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "Ölçülər"
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1347,6 +1348,14 @@ msgstr "Redaktə et"
 msgid "Go to"
 msgstr "Get"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Ad vəya Email"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Daxil olun"
+
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
 msgstr "Faylı seçin"
@@ -1358,94 +1367,6 @@ msgstr "Şablon Adı"
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
 msgstr "Silin"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Ad vəya Email"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Daxil olun"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Zəhmət olmasa email adresinizi doğrulayın,yoxsa hesabınız bir neçə gün sonra "
-"silinəbilər."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Yeni bir doğrulama maili sizə göndərilir."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Yeni doğrulama maili tələb etmək üçün bura basın."
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "Parollar birbirinə uymur."
-
-#: src/components/ChangePassword.jsx:44
-msgid "Password successfully changed."
-msgstr "Parolunuz uğurla dəyişdirildi."
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "Köhnə parol"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "Yeni Parol"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Yeni parolu doğrulayın"
-
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "Yeni ad"
-
-#: src/components/ChangeMail.jsx:59
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"Emailiniz uğurla dəyişdirildi.Sənə doğrulama maili göndərdik,            "
-"zəhmət olmasa yeni emailini doğrula."
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "Yeni Email"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "Bəli,Hesabımı silin!"
-
-#: src/components/SocialSettings.jsx:35
-msgid "Block DMs"
-msgstr "DMləri blokla"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "Bütün özəl mesajları bloklayın"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr "Özəl"
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr "Məni qlobal statistikada göstərməyin"
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "İstifadəçinin blokunu aç"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "Heçbir istifadəçiyi bloklamamısınız"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1466,6 +1387,88 @@ msgstr "Ölkələrə görə bugün atılan pixellər"
 #: src/core/chartSettings.js:351
 msgid "Total Pixels placed per day"
 msgstr "Bir gün içində toplam qoyulan pixellər"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Zəhmət olmasa email adresinizi doğrulayın,yoxsa hesabınız bir neçə gün sonra "
+"silinəbilər."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Yeni bir doğrulama maili sizə göndərilir."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Yeni doğrulama maili tələb etmək üçün bura basın."
+
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr "İnterval keçərsizdir"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr "Kimin bu bölgədə pixel qoyduğunu yoxlayın"
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr "İnterval"
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr "IID(istəyə bağlıdır)"
+
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr "Sol-üst künc"
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr "Sağ-alt künc"
+
+#: src/components/ModWatchtools.jsx:249
+msgid "Get Pixels"
+msgstr "Pixelləri əldə edin"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
+msgstr "İstifadəçiləri əldə edin"
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "IP fəaliyyətləri"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "IP-lərlə işlər aparın (hər sətirdə bir IP)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "Moderatorları düzənlə"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "Moderator qaldır"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "Burda mod yoxdur"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "Yeni Mod təyin edin"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "Yeni modun istifadəçi adını daxil edin"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "Istifadəçi adı"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1541,16 +1544,6 @@ msgstr ""
 "Qoruma sahələrini ayarla (daha yaxşı dənələnmiş kontrola ehtiyacın varsa, "
 "şəkil yükləmə və alfa qatları ilə qorumadan istifadə et)"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr "Sol-üst künc"
-
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr "Sağ-alt künc"
-
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Bu müddətə qaytarın"
@@ -1573,62 +1566,6 @@ msgstr "Böyük lövhə sahələrində zibilləri təmizləmək üçün filtr t�
 msgid "Stop Cleaner"
 msgstr "Təmizləyiciyi dayandırın"
 
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "IP fəaliyyətləri"
-
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "IP-lərlə işlər aparın (hər sətirdə bir IP)"
-
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "Moderatorları düzənlə"
-
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "Moderator qaldır"
-
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "Burda mod yoxdur"
-
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "Yeni Mod təyin edin"
-
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "Yeni modun istifadəçi adını daxil edin"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "Istifadəçi adı"
-
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
-msgstr "İnterval keçərsizdir"
-
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr "Kimin bu bölgədə pixel qoyduğunu yoxlayın"
-
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr "İnterval"
-
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr "IID(istəyə bağlıdır)"
-
-#: src/components/ModWatchtools.jsx:249
-msgid "Get Pixels"
-msgstr "Pixelləri əldə edin"
-
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
-msgstr "İstifadəçiləri əldə edin"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Bir müddət daxil etməlisiniz"
@@ -1649,6 +1586,70 @@ msgstr "Səbəb daxil edin"
 msgid "(0 = infinite)"
 msgstr "(0 = sonsuzluq)"
 
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "Yeni ad"
+
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "Parollar birbirinə uymur."
+
+#: src/components/ChangePassword.jsx:44
+msgid "Password successfully changed."
+msgstr "Parolunuz uğurla dəyişdirildi."
+
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "Köhnə parol"
+
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "Yeni Parol"
+
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Yeni parolu doğrulayın"
+
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "Bəli,Hesabımı silin!"
+
+#: src/components/ChangeMail.jsx:59
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"Emailiniz uğurla dəyişdirildi.Sənə doğrulama maili göndərdik,            "
+"zəhmət olmasa yeni emailini doğrula."
+
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "Yeni Email"
+
+#: src/components/SocialSettings.jsx:35
+msgid "Block DMs"
+msgstr "DMləri blokla"
+
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "Bütün özəl mesajları bloklayın"
+
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
+msgstr "Özəl"
+
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr "Məni qlobal statistikada göstərməyin"
+
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "İstifadəçinin blokunu aç"
+
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "Heçbir istifadəçiyi bloklamamısınız"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Ping"
@@ -1665,20 +1666,35 @@ msgstr "Blokla"
 msgid "Mute"
 msgstr "Sustur"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
+#: src/components/windows/Settings.jsx:86
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:94
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
+
+#: src/components/windows/Settings.jsx:159
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1719,21 +1735,6 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
-
-#: src/components/windows/Settings.jsx:84
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:92
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Settings.jsx:157
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

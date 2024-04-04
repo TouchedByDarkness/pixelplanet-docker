@@ -13,71 +13,71 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:62
+#: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
 msgstr ""
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
 #, fuzzy
 msgid "Selected Color"
 msgstr "Избиране на файл"
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
 #, fuzzy
 msgid "From Template"
 msgstr "Шаблони"
 
-#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
 msgid "From History"
 msgstr ""
 
-#: src/controls/keypress.js:122
+#: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "Превключен към ${ canvasName }"
 
-#: src/controls/keypress.js:193
+#: src/controls/keypress.js:176
 msgid "Grid ON"
 msgstr "Решетки ВКЛ"
 
-#: src/controls/keypress.js:194
+#: src/controls/keypress.js:177
 msgid "Grid OFF"
 msgstr "Решетки ИЗКЛ"
 
-#: src/controls/keypress.js:204
+#: src/controls/keypress.js:187
 msgid "Pixel Notify ON"
 msgstr "Известие за пиксели ВКЛ"
 
-#: src/controls/keypress.js:205
+#: src/controls/keypress.js:188
 msgid "Pixel Notify OFF"
 msgstr "Известие за пиксели ИЗКЛ"
 
-#: src/controls/keypress.js:210
+#: src/controls/keypress.js:193
 msgid "Muted Sound"
 msgstr "Заглушен звук"
 
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:194
 msgid "Unmuted Sound"
 msgstr "Включен звук"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:220
+#: src/controls/keypress.js:203
 msgid "Copied"
 msgstr "Копирано"
 
-#: src/controls/keypress.js:226
+#: src/controls/keypress.js:209
 msgid "Overlay ON"
 msgstr "Овърлей ВКЛ"
 
-#: src/controls/keypress.js:227
+#: src/controls/keypress.js:210
 msgid "Overlay OFF"
 msgstr "Овърлей ИЗКЛ"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
 msgstr "Великденско яйце ВКЛ"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
 msgstr "Великденско яйце ИЗКЛ"
 
@@ -368,10 +368,6 @@ msgstr "Потребителска зона"
 msgid "Make Screenshot"
 msgstr "Направи скрийншот"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Изглед на глобус"
-
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Затвори палитрата"
@@ -380,21 +376,25 @@ msgstr "Затвори палитрата"
 msgid "Open Palette"
 msgstr "Отвори палитрата"
 
-#: src/components/buttons/PencilButton.jsx:26
+#: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr "Включи молив"
 
-#: src/components/buttons/PencilButton.jsx:31
+#: src/components/buttons/PencilButton.jsx:46
 msgid "Disable Pencil"
 msgstr "Деактивиране на молива"
 
-#: src/components/buttons/PencilButton.jsx:35
+#: src/components/buttons/PencilButton.jsx:50
 msgid "Disable History Pencil"
 msgstr "Изключи историческият молив"
 
-#: src/components/buttons/PencilButton.jsx:39
+#: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Изключване на Овърлей молива"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Изглед на глобус"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -412,25 +412,13 @@ msgstr "Чат"
 msgid "Canvas Archive"
 msgstr "Платнен архив"
 
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Отне Ви твърде много време, опитайте отново."
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Вие сте баннат. Мислите, че е неоправдано? Вижте "
 
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Не успяхте да направите captcha"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Няма или е невалиден captcha текстa"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Не е дадена captcha ID"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Неизвестна Captcha грешка"
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " как да обжалвате."
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -440,26 +428,6 @@ msgstr "Неизвестна Captcha грешка"
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Грешка"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Откажи"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Изпрати"
-
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Вие сте баннат. Мислите, че е неоправдано? Вижте "
-
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " как да обжалвате."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -492,6 +460,199 @@ msgstr "Сега като видяхте това съобщение, вече �
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Защо?"
+
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Отне Ви твърде много време, опитайте отново."
+
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Не успяхте да направите captcha"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Няма или е невалиден captcha текстa"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Не е дадена captcha ID"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Неизвестна Captcha грешка"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Откажи"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Изпрати"
+
+#: src/components/windows/Settings.jsx:69
+msgid "Show Grid"
+msgstr "Покажи решетка"
+
+#: src/components/windows/Settings.jsx:74
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Включи решетката, за да подчертайте границите на пикселите."
+
+#: src/components/windows/Settings.jsx:77
+msgid "Show Pixel Activity"
+msgstr "Покажи пиксел активност"
+
+#: src/components/windows/Settings.jsx:82
+msgid "Show circles where pixels are placed."
+msgstr "Покажи кръгчета, където се поставят пиксели."
+
+#: src/components/windows/Settings.jsx:85
+msgid "Always show Movement Controls"
+msgstr "Винаги покзвай контроли за Движение"
+
+#: src/components/windows/Settings.jsx:90
+msgid "Always show movement control buttons"
+msgstr "Винаги показвай бутони за контрол на Движение"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Disable Game Sounds"
+msgstr "Деактивирайте звуците на играта"
+
+#: src/components/windows/Settings.jsx:99
+msgid "All sound effects will be disabled."
+msgstr "Всички звукови ефекти ще бъдат деактивирани."
+
+#: src/components/windows/Settings.jsx:103
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Вашият браузър не ни позволява да използваме AudioContext за възпроизвеждане "
+"на звуци. Имате ли функция за поверителност, която ни блокира?"
+
+#: src/components/windows/Settings.jsx:109
+msgid "Enable chat notifications"
+msgstr "Активиране известия за чат"
+
+#: src/components/windows/Settings.jsx:113
+msgid "Play a sound when new chat messages arrive"
+msgstr "Възпроизвеждане на звук, когато ново чат съобщение пристигне"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Auto Zoom In"
+msgstr "Автоматично увеличение"
+
+#: src/components/windows/Settings.jsx:121
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Увеличаване, вместо да се поставя пиксел, когато се докосне платното и "
+"Вашето увеличение е малко."
+
+#: src/components/windows/Settings.jsx:124
+msgid "Compact Palette"
+msgstr "Компактна палитра"
+
+#: src/components/windows/Settings.jsx:129
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr ""
+"Покажи палитрата в компактна форма, която заема по-малко място на екрана."
+
+#: src/components/windows/Settings.jsx:132
+msgid "Potato Mode"
+msgstr "Картофен режим"
+
+#: src/components/windows/Settings.jsx:136
+msgid "For when you are playing on a potato."
+msgstr "За когато играете на картоф."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
+msgid "Light Grid"
+msgstr "Лека решетка"
+
+#: src/components/windows/Settings.jsx:143
+msgid "Show Grid in white instead of black."
+msgstr "Покажи решетката в бялото, вместо черно."
+
+#: src/components/windows/Settings.jsx:147
+msgid "Historical View"
+msgstr "Исторически изглед"
+
+#: src/components/windows/Settings.jsx:152
+msgid "Check out past versions of the canvas."
+msgstr "Покажи предишните версии на платното."
+
+#: src/components/windows/Settings.jsx:156
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Превключен към ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:164
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:168
+msgid "Themes"
+msgstr "Теми"
+
+#: src/components/windows/Settings.jsx:173
+msgid "How pixelplanet should look like."
+msgstr "Как pixelplanet трябва да изглежда."
+
+#: src/components/windows/Settings.jsx:180
+msgid "Select Language"
+msgstr "Избиране на език"
+
+#: src/components/windows/Archive.jsx:9
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Въпреки, че сме склонни да не изтриваме платна, някои платна се стартират за "
+"забавление или като заявка от потребители, които в момента харесват "
+"определено меме. Тези платна могат да станат скучни след известно време и "
+"след седмици без значителна промяна и ако наистина не си струва да бъдат "
+"поддържани, ние решаваме да ги премахнем."
+
+#: src/components/windows/Archive.jsx:10
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Тук събираме премахнати платна, за да ги архивираме по подходящ начин (който "
+"в момента е само един)."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "Платно за политически компас"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Това платно беше поискано по време на политически конфликти на основното "
+"платно на Земята. То беше 1024x1024 представяне на политическия компас с 5 "
+"секунди cooldown и 60 секунди край. Той стартира на 11 май и остана активен "
+"месеци наред, докато не беше спрян на 30 ноември."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Решихме да го архивираме като timelapse с webm, кодиран без загуби. "
+"Правенето на скрийншот от timelapse води до перфектно представяне 1:1 на "
+"това как е било платното по това време."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -700,143 +861,25 @@ msgstr "Заслугата за палитрата на платното Топ1
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Заслугата за палитрата на платното 2bit е на ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:67
-msgid "Show Grid"
-msgstr "Покажи решетка"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Включи решетката, за да подчертайте границите на пикселите."
-
-#: src/components/windows/Settings.jsx:75
-msgid "Show Pixel Activity"
-msgstr "Покажи пиксел активност"
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show circles where pixels are placed."
-msgstr "Покажи кръгчета, където се поставят пиксели."
-
-#: src/components/windows/Settings.jsx:83
-msgid "Always show Movement Controls"
-msgstr "Винаги покзвай контроли за Движение"
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show movement control buttons"
-msgstr "Винаги показвай бутони за контрол на Движение"
-
-#: src/components/windows/Settings.jsx:91
-msgid "Disable Game Sounds"
-msgstr "Деактивирайте звуците на играта"
-
-#: src/components/windows/Settings.jsx:97
-msgid "All sound effects will be disabled."
-msgstr "Всички звукови ефекти ще бъдат деактивирани."
-
-#: src/components/windows/Settings.jsx:101
+#: src/components/windows/CanvasSelect.jsx:29
 msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
 msgstr ""
-"Вашият браузър не ни позволява да използваме AudioContext за възпроизвеждане "
-"на звуци. Имате ли функция за поверителност, която ни блокира?"
+"Изберете платното, което искате да използвате.\n"
+"Всяко платно е единствено по рода си и има различни палитри, cooldown-ове и "
+"изисквания.\n"
+"Архивът на затворените платна, може да бъде достъпен тук:"
 
-#: src/components/windows/Settings.jsx:107
-msgid "Enable chat notifications"
-msgstr "Активиране известия за чат"
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Архив"
 
-#: src/components/windows/Settings.jsx:111
-msgid "Play a sound when new chat messages arrive"
-msgstr "Възпроизвеждане на звук, когато ново чат съобщение пристигне"
-
-#: src/components/windows/Settings.jsx:114
-msgid "Auto Zoom In"
-msgstr "Автоматично увеличение"
-
-#: src/components/windows/Settings.jsx:119
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Увеличаване, вместо да се поставя пиксел, когато се докосне платното и "
-"Вашето увеличение е малко."
-
-#: src/components/windows/Settings.jsx:122
-msgid "Compact Palette"
-msgstr "Компактна палитра"
-
-#: src/components/windows/Settings.jsx:127
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr ""
-"Покажи палитрата в компактна форма, която заема по-малко място на екрана."
-
-#: src/components/windows/Settings.jsx:130
-msgid "Potato Mode"
-msgstr "Картофен режим"
-
-#: src/components/windows/Settings.jsx:134
-msgid "For when you are playing on a potato."
-msgstr "За когато играете на картоф."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
-msgid "Light Grid"
-msgstr "Лека решетка"
-
-#: src/components/windows/Settings.jsx:141
-msgid "Show Grid in white instead of black."
-msgstr "Покажи решетката в бялото, вместо черно."
-
-#: src/components/windows/Settings.jsx:145
-msgid "Historical View"
-msgstr "Исторически изглед"
-
-#: src/components/windows/Settings.jsx:150
-msgid "Check out past versions of the canvas."
-msgstr "Покажи предишните версии на платното."
-
-#: src/components/windows/Settings.jsx:154
-msgid "Pencil Mode"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:162
-msgid "What the pencil should draw."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:166
-msgid "Themes"
-msgstr "Теми"
-
-#: src/components/windows/Settings.jsx:171
-msgid "How pixelplanet should look like."
-msgstr "Как pixelplanet трябва да изглежда."
-
-#: src/components/windows/Settings.jsx:178
-msgid "Select Language"
-msgstr "Избиране на език"
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Профил"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr "Статистики"
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Конвертор"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Инструменти за модератори"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Зарежда се..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Не забравяйте да се присъедините в Guilded:"
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Пенсионирани платна (исторически изглед само)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -877,73 +920,6 @@ msgstr "Captcha"
 msgid "Submit"
 msgstr "Изпращане"
 
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Изберете платното, което искате да използвате.\n"
-"Всяко платно е единствено по рода си и има различни палитри, cooldown-ове и "
-"изисквания.\n"
-"Архивът на затворените платна, може да бъде достъпен тук:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Архив"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Пенсионирани платна (исторически изглед само)"
-
-#: src/components/windows/Archive.jsx:9
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"Въпреки, че сме склонни да не изтриваме платна, някои платна се стартират за "
-"забавление или като заявка от потребители, които в момента харесват "
-"определено меме. Тези платна могат да станат скучни след известно време и "
-"след седмици без значителна промяна и ако наистина не си струва да бъдат "
-"поддържани, ние решаваме да ги премахнем."
-
-#: src/components/windows/Archive.jsx:10
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"Тук събираме премахнати платна, за да ги архивираме по подходящ начин (който "
-"в момента е само един)."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "Платно за политически компас"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"Това платно беше поискано по време на политически конфликти на основното "
-"платно на Земята. То беше 1024x1024 представяне на политическия компас с 5 "
-"секунди cooldown и 60 секунди край. Той стартира на 11 май и остана активен "
-"месеци наред, докато не беше спрян на 30 ноември."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"Решихме да го архивираме като timelapse с webm, кодиран без загуби. "
-"Правенето на скрийншот от timelapse води до перфектно представяне 1:1 на "
-"това как е било платното по това време."
-
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
 msgstr "Започнете да чатите тук"
@@ -960,13 +936,30 @@ msgstr "Трябва да сте логнат, за да чатите"
 msgid "Channel settings"
 msgstr "Настройки на канала"
 
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr "Пратихме Ви имейл с инструкции да си нулирате паролата."
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Профил"
 
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr "Въведете си имейл адреса и ще Ви изпратим нова парола:"
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr "Статистики"
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Конвертор"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Инструменти за модератори"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Зарежда се..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Не забравяйте да се присъедините в Guilded:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -999,6 +992,14 @@ msgstr "Презареди"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Въведете знаци"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "Пратихме Ви имейл с инструкции да си нулирате паролата."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Въведете си имейл адреса и ще Ви изпратим нова парола:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1048,6 +1049,52 @@ msgstr "Паролата трябва да е с дължина поне 6 зн�
 msgid "Password must be shorter than 60 characters."
 msgstr "Паролата трябва да е по-къса от 60 знака."
 
+#: src/components/CanvasItem.jsx:29
+msgid "Online Users"
+msgstr "Онлайн потребители"
+
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "Cool-down"
+
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "Стакване до"
+
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "Класирано"
+
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
+msgstr "Да"
+
+#: src/components/CanvasItem.jsx:44
+msgid "No"
+msgstr "Не"
+
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "Изисквания"
+
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "Потребителски профил"
+
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "и ${ canvas.req } сложени пиксели"
+
+#: src/components/CanvasItem.jsx:58
+msgid "Top 10 Daily Ranking"
+msgstr "Топ 10 дневно класиране"
+
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "Размери"
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "Вземи IID"
@@ -1056,11 +1103,29 @@ msgstr "Вземи IID"
 msgid "Copy"
 msgstr "Копирай"
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "Запази"
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr "Влезте, за да получите достъп до повече функции и статистики."
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr "Влезте с Име или Имейл:"
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr "Забравих си паролата."
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr "или влезте с:"
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr "или се регистрирайте тук:"
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr "Регистриране"
 
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
@@ -1121,29 +1186,11 @@ msgstr "Експортиране на включени темплейтове"
 msgid "Import templates"
 msgstr "Вмъкване на темплейтове"
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr "Влезте, за да получите достъп до повече функции и статистики."
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr "Влезте с Име или Имейл:"
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr "Забравих си паролата."
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr "или влезте с:"
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr "или се регистрирайте тук:"
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr "Регистриране"
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Запази"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
@@ -1290,52 +1337,6 @@ msgstr ""
 "Класирането се актуализира на всеки 5 минути. Дневните класации се нулират в "
 "полунощ UTC."
 
-#: src/components/CanvasItem.jsx:29
-msgid "Online Users"
-msgstr "Онлайн потребители"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "Cool-down"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "Стакване до"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "Класирано"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr "Да"
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr "Не"
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "Изисквания"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "Потребителски профил"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "и ${ canvas.req } сложени пиксели"
-
-#: src/components/CanvasItem.jsx:58
-msgid "Top 10 Daily Ranking"
-msgstr "Топ 10 дневно класиране"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "Размери"
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1353,6 +1354,14 @@ msgstr "Редактиране"
 msgid "Go to"
 msgstr "Отиване в"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Име или имейл"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Влизане"
+
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
 msgstr "Избиране на файл"
@@ -1364,94 +1373,6 @@ msgstr "Име на темплейт"
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
 msgstr "Изтриване"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Име или имейл"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Влизане"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Моля потвърдете си имейл адреса или Вашият акаунт може да бъде изтрит след "
-"няколко дни."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Нов имейл за потвърждение се изпраща."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Натиснете тук, за да заявите нов имейл за потвърждение."
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "Паролите Ви не съвпадат."
-
-#: src/components/ChangePassword.jsx:44
-msgid "Password successfully changed."
-msgstr "Паролата е сменена успешно."
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "Стара парола"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "Нова парола"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Потвърждаване на новата парола"
-
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "Ново потребителско име"
-
-#: src/components/ChangeMail.jsx:59
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"Имейлът е успешно сменен. Изпратили сме Ви имейл за "
-"потвърждение,             моля потвърдете новият Ви имейл адрес."
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "Нов имейл"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "Да, изтрийте профила ми!"
-
-#: src/components/SocialSettings.jsx:35
-msgid "Block DMs"
-msgstr "Блокиране на лични съобщения"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "Блокиране на всички лични съобщения"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr "Лични"
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr "Не ме показвай в глобалните статистики"
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "Отблокиране на потребители"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "Нямате блокирани потребители"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1472,6 +1393,88 @@ msgstr "Държави по пиксели днес"
 #: src/core/chartSettings.js:351
 msgid "Total Pixels placed per day"
 msgstr "Общо пиксели сложени днес"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Моля потвърдете си имейл адреса или Вашият акаунт може да бъде изтрит след "
+"няколко дни."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Нов имейл за потвърждение се изпраща."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Натиснете тук, за да заявите нов имейл за потвърждение."
+
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr "Интервалът е невалиден"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr "Провери кой постави в зона"
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr "Интервал"
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr "IID (по избор)"
+
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr "Горен ляв ъгъл"
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr "Долен десен ъгъл"
+
+#: src/components/ModWatchtools.jsx:249
+msgid "Get Pixels"
+msgstr "Вземи пиксели"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
+msgstr "Вземи потребители"
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "IP действия"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "Правене неща с IP адреси (един IP на ред)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "Управление на модератори"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "Премахване на модератор"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "Няма модератори"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "Добавяне на нов модератор"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "Въведи потребителското име на нов модератор"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "Потребителско име"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1547,16 +1550,6 @@ msgstr ""
 "Сложи защита на зони (ако имате нужда от по-фин контрол, използвай защита с "
 "качване на изображение и алфа слоеве)"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr "Горен ляв ъгъл"
-
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr "Долен десен ъгъл"
-
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Rollback-ване до дата"
@@ -1576,62 +1569,6 @@ msgstr "Прилагане на филтър за почистване на см
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
 msgstr "Спиране на чистител"
-
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "IP действия"
-
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "Правене неща с IP адреси (един IP на ред)"
-
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "Управление на модератори"
-
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "Премахване на модератор"
-
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "Няма модератори"
-
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "Добавяне на нов модератор"
-
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "Въведи потребителското име на нов модератор"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "Потребителско име"
-
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
-msgstr "Интервалът е невалиден"
-
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr "Провери кой постави в зона"
-
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr "Интервал"
-
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr "IID (по избор)"
-
-#: src/components/ModWatchtools.jsx:249
-msgid "Get Pixels"
-msgstr "Вземи пиксели"
-
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
-msgstr "Вземи потребители"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1653,6 +1590,70 @@ msgstr "Въведете причина"
 msgid "(0 = infinite)"
 msgstr "(0 = безкрайност)"
 
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "Ново потребителско име"
+
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "Паролите Ви не съвпадат."
+
+#: src/components/ChangePassword.jsx:44
+msgid "Password successfully changed."
+msgstr "Паролата е сменена успешно."
+
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "Стара парола"
+
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "Нова парола"
+
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Потвърждаване на новата парола"
+
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "Да, изтрийте профила ми!"
+
+#: src/components/ChangeMail.jsx:59
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"Имейлът е успешно сменен. Изпратили сме Ви имейл за "
+"потвърждение,             моля потвърдете новият Ви имейл адрес."
+
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "Нов имейл"
+
+#: src/components/SocialSettings.jsx:35
+msgid "Block DMs"
+msgstr "Блокиране на лични съобщения"
+
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "Блокиране на всички лични съобщения"
+
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
+msgstr "Лични"
+
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr "Не ме показвай в глобалните статистики"
+
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "Отблокиране на потребители"
+
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "Нямате блокирани потребители"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Пингни"
@@ -1669,20 +1670,35 @@ msgstr "Блокиране"
 msgid "Mute"
 msgstr "Заглуши"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
+#: src/components/windows/Settings.jsx:86
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:94
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
+
+#: src/components/windows/Settings.jsx:159
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1723,21 +1739,6 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
-
-#: src/components/windows/Settings.jsx:84
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:92
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Settings.jsx:157
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

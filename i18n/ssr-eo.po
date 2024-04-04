@@ -110,15 +110,6 @@ msgstr "Duoble klaku je la globo por reiri."
 msgid "Loading..."
 msgstr "Ŝarĝadanta..."
 
-#: src/ssr/Main.jsx:65
-#, fuzzy
-msgid "PixelPlanet.Fun"
-msgstr "PixelPlanet.fun"
-
-#: src/ssr/Main.jsx:66
-msgid "Place color pixels on an map styled canvas with other players online"
-msgstr "Metu kolorajn pikselojn en grandan kanvason kun alian ludantojn enrete"
-
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr ""
@@ -127,6 +118,15 @@ msgstr ""
 #, fuzzy
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.fun"
+
+#: src/ssr/Main.jsx:65
+#, fuzzy
+msgid "PixelPlanet.Fun"
+msgstr "PixelPlanet.fun"
+
+#: src/ssr/Main.jsx:66
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr "Metu kolorajn pikselojn en grandan kanvason kun alian ludantojn enrete"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -282,6 +282,52 @@ msgstr ""
 msgid "Muted Users can not do this."
 msgstr ""
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "PixelPlanet.fun Kontoj"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "Aŭte redirektos vin post 15s"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "Aŭ ${ clickHere } reeniri al pixelplanet"
+
+#: src/routes/api/auth/register.js:31
+#, fuzzy
+msgid "No Captcha given"
+msgstr "Pasvorton ne donita."
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Retpostadreso jam uzata."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Uzantnomo jam uzata."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr ""
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr ""
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr ""
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Malsukcesis krei novan uzanton ŭwŭ"
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Malsukcesis krei novan ligon post reĝistro"
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "L' Mond'"
@@ -373,52 +419,6 @@ msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
-
-#: src/routes/api/auth/register.js:31
-#, fuzzy
-msgid "No Captcha given"
-msgstr "Pasvorton ne donita."
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Retpostadreso jam uzata."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Uzantnomo jam uzata."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr ""
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr ""
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr ""
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Malsukcesis krei novan uzanton ŭwŭ"
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Malsukcesis krei novan ligon post reĝistro"
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "PixelPlanet.fun Kontoj"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "Aŭte redirektos vin post 15s"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Aŭ ${ clickHere } reeniri al pixelplanet"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

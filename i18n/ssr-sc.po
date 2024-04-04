@@ -110,6 +110,14 @@ msgstr "Ammacca rui voti nalu globo pi iri in arre."
 msgid "Loading..."
 msgstr "Caricannu..."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PopUp ri PixelPlanet.Fun"
+
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
@@ -118,14 +126,6 @@ msgstr "PixelPlanet.Fun"
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Piazza pixel culurata intra na mappa a stili canvas cu avutri chistiana"
-
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PopUp ri PixelPlanet.Fun"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -277,6 +277,51 @@ msgstr "Stu provider rila email unne valiru"
 msgid "Muted Users can not do this."
 msgstr ""
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "Account ri PixelPlanet.fun"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "Veni mannatu nala paggina automaticamente 'n 15s"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "O ${ clickHere } Pi gghiri arre su pixelplanet"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Captcha un ratu"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "E-Mail gia usata."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Username gia pigghiatu."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Ci mittisti troppu assa, prova arre."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Rixi morto Fallisti u captcha"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Errori rilu captcha sconosciutu"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Falli a criari un novu utenti"
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Falli a fari na sissiuni ropu a registazioni :("
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Terra"
@@ -371,51 +416,6 @@ msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Captcha un ratu"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "E-Mail gia usata."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Username gia pigghiatu."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Ci mittisti troppu assa, prova arre."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Rixi morto Fallisti u captcha"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Errori rilu captcha sconosciutu"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Falli a criari un novu utenti"
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Falli a fari na sissiuni ropu a registazioni :("
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "Account ri PixelPlanet.fun"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "Veni mannatu nala paggina automaticamente 'n 15s"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "O ${ clickHere } Pi gghiri arre su pixelplanet"
 
 #: src/core/MailProvider.js:66
 #, fuzzy, javascript-format

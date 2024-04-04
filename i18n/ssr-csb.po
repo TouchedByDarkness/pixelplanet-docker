@@ -111,6 +111,14 @@ msgstr "Przëcesni zemską kùglã dwakroc żebë copnąc."
 msgid "Loading..."
 msgstr "Ładowónié..."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
+
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
@@ -119,14 +127,6 @@ msgstr "PixelPlanet.Fun"
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Stawiôj farwné piksele na kôrtowatëch płótnach z jinszima graczama online"
-
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -280,6 +280,51 @@ msgstr "Ten dotëgòwôcz adrésë e-mail nie je dozwòlony"
 msgid "Muted Users can not do this."
 msgstr "Wëcëszony brëkòwnicë ni mògą tegò robic."
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "Kònta Pixelplanet.fun"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "Òstóniesz aùtomaticzno przekôzóny dali pò 15 sekùndach"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "Abò ${ clickHere } żebë warcëc do pixelplanet"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Captcha nie òsta pòdónô"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "E-mail ju w ùżëcym."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Pòzwa brëkòwnika ju w ùżëcym."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "To za wiele zeszło, spróbùj jesz rôz."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Nie przeszedł jes testu captcha"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Nieznónô fela Captchë"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Nie ùdało sã stwòrzëc nowégò brëkòwnika :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Nie ùdało sã ùsadzëc sesje pò registracje :("
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Zemia"
@@ -375,51 +420,6 @@ msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Captcha nie òsta pòdónô"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "E-mail ju w ùżëcym."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Pòzwa brëkòwnika ju w ùżëcym."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "To za wiele zeszło, spróbùj jesz rôz."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Nie przeszedł jes testu captcha"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Nieznónô fela Captchë"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Nie ùdało sã stwòrzëc nowégò brëkòwnika :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Nie ùdało sã ùsadzëc sesje pò registracje :("
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "Kònta Pixelplanet.fun"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "Òstóniesz aùtomaticzno przekôzóny dali pò 15 sekùndach"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Abò ${ clickHere } żebë warcëc do pixelplanet"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

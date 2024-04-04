@@ -13,71 +13,71 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:62
+#: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
 msgstr ""
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
 #, fuzzy
 msgid "Selected Color"
 msgstr "Fájl kiválasztása"
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
 #, fuzzy
 msgid "From Template"
 msgstr "Sablonok"
 
-#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
 msgid "From History"
 msgstr ""
 
-#: src/controls/keypress.js:122
+#: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "Átváltottál ${ canvasName } vászonra"
 
-#: src/controls/keypress.js:193
+#: src/controls/keypress.js:176
 msgid "Grid ON"
 msgstr "Rács bekapcsolva"
 
-#: src/controls/keypress.js:194
+#: src/controls/keypress.js:177
 msgid "Grid OFF"
 msgstr "Rács kikapcsolva"
 
-#: src/controls/keypress.js:204
+#: src/controls/keypress.js:187
 msgid "Pixel Notify ON"
 msgstr "Pixel-aktivitás bekapcsolva"
 
-#: src/controls/keypress.js:205
+#: src/controls/keypress.js:188
 msgid "Pixel Notify OFF"
 msgstr "Pixel-aktivitás kikapcsolva"
 
-#: src/controls/keypress.js:210
+#: src/controls/keypress.js:193
 msgid "Muted Sound"
 msgstr "Némítva"
 
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:194
 msgid "Unmuted Sound"
 msgstr "Hang"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:220
+#: src/controls/keypress.js:203
 msgid "Copied"
 msgstr "Másolva"
 
-#: src/controls/keypress.js:226
+#: src/controls/keypress.js:209
 msgid "Overlay ON"
 msgstr "Overlay bekapcsolva"
 
-#: src/controls/keypress.js:227
+#: src/controls/keypress.js:210
 msgid "Overlay OFF"
 msgstr "Overlay kikapcsolva"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
 msgstr "Easter Egg bekapcsolva"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
 msgstr "Easter Egg kikapcsolva"
 
@@ -364,10 +364,6 @@ msgstr "Felhasználói terület"
 msgid "Make Screenshot"
 msgstr "Képernyőkép készítése"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Földgömb nézet"
-
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Paletta bezárása"
@@ -376,21 +372,25 @@ msgstr "Paletta bezárása"
 msgid "Open Palette"
 msgstr "Paletta kinyitása"
 
-#: src/components/buttons/PencilButton.jsx:26
+#: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr "Ceruza bekapcsolása"
 
-#: src/components/buttons/PencilButton.jsx:31
+#: src/components/buttons/PencilButton.jsx:46
 msgid "Disable Pencil"
 msgstr "Ceruza kikapcsolása"
 
-#: src/components/buttons/PencilButton.jsx:35
+#: src/components/buttons/PencilButton.jsx:50
 msgid "Disable History Pencil"
 msgstr "Történelmi ceruza kikapcsolása"
 
-#: src/components/buttons/PencilButton.jsx:39
+#: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Overlay ceruza kikapcsolása"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Földgömb nézet"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -408,25 +408,13 @@ msgstr "Chat"
 msgid "Canvas Archive"
 msgstr "Vászonarchívum"
 
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Túl sokáig próbáltad, próbáld újra."
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Ki lettél tiltva. Szerinted ez indokolatlan? Nézd meg a "
 
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Nem sikerült a captcha"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Nincs vagy érvénytelen captcha szöveg"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Nincs megadva captcha-azonosító"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Ismeretlen Captcha hiba"
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " fület a fellebbezés módjáról."
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -436,26 +424,6 @@ msgstr "Ismeretlen Captcha hiba"
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Hiba"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Mégse"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Küldés"
-
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Ki lettél tiltva. Szerinted ez indokolatlan? Nézd meg a "
-
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " fület a fellebbezés módjáról."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -488,6 +456,198 @@ msgstr "Most, hogy láttad ezt az üzenetet, már nem vagy kitiltva."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Miért?"
+
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Túl sokáig próbáltad, próbáld újra."
+
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Nem sikerült a captcha"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Nincs vagy érvénytelen captcha szöveg"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Nincs megadva captcha-azonosító"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Ismeretlen Captcha hiba"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Küldés"
+
+#: src/components/windows/Settings.jsx:69
+msgid "Show Grid"
+msgstr "Rács megjelenítése"
+
+#: src/components/windows/Settings.jsx:74
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Kapcsold be a rácsot, hogy lásd a pixelhatárokat."
+
+#: src/components/windows/Settings.jsx:77
+msgid "Show Pixel Activity"
+msgstr "Pixel-aktivitás megjelenítése"
+
+#: src/components/windows/Settings.jsx:82
+msgid "Show circles where pixels are placed."
+msgstr "A pixelek lerakásakor körök jelennek meg."
+
+#: src/components/windows/Settings.jsx:85
+msgid "Always show Movement Controls"
+msgstr "Mindig mutassa a mozgásvezérlőket"
+
+#: src/components/windows/Settings.jsx:90
+msgid "Always show movement control buttons"
+msgstr "Mindig mutassa a mozgásvezérlő gombokat"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Disable Game Sounds"
+msgstr "Játék hangjainak letiltása"
+
+#: src/components/windows/Settings.jsx:99
+msgid "All sound effects will be disabled."
+msgstr "Az összes hang le lesz tiltva."
+
+#: src/components/windows/Settings.jsx:103
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"A böngésződ nem engedi, hogy AudioContextet használjunk a hangok "
+"lejátszásához. Van valamilyen adatvédelmi rendszered, amely blokkol minket?"
+
+#: src/components/windows/Settings.jsx:109
+msgid "Enable chat notifications"
+msgstr "Chat értesítések engedélyezése"
+
+#: src/components/windows/Settings.jsx:113
+msgid "Play a sound when new chat messages arrive"
+msgstr "Új üzenet érkezésekor hang lejátszása"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Auto Zoom In"
+msgstr "Automatikus zoomolás"
+
+#: src/components/windows/Settings.jsx:121
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Ha a zoomolás túl kicsi ahhoz, hogy pixelt helyezz el, automatikusan "
+"kinagyítja."
+
+#: src/components/windows/Settings.jsx:124
+msgid "Compact Palette"
+msgstr "Kompakt paletta"
+
+#: src/components/windows/Settings.jsx:129
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "A paletta kompakt formában jelenik meg, ami kevesebb helyet foglal."
+
+#: src/components/windows/Settings.jsx:132
+msgid "Potato Mode"
+msgstr "Kenyérpirító mód"
+
+#: src/components/windows/Settings.jsx:136
+msgid "For when you are playing on a potato."
+msgstr "Arra az esetre, ha kenyérpiríton játszol."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
+msgid "Light Grid"
+msgstr "Világos rács"
+
+#: src/components/windows/Settings.jsx:143
+msgid "Show Grid in white instead of black."
+msgstr "Rács megjelenítése fekete helyett fehéren."
+
+#: src/components/windows/Settings.jsx:147
+msgid "Historical View"
+msgstr "Történelmi nézet"
+
+#: src/components/windows/Settings.jsx:152
+msgid "Check out past versions of the canvas."
+msgstr "A vászon korábbi állapotának megtekintése."
+
+#: src/components/windows/Settings.jsx:156
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Átváltottál ${ canvasName } vászonra"
+
+#: src/components/windows/Settings.jsx:164
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:168
+msgid "Themes"
+msgstr "Témák"
+
+#: src/components/windows/Settings.jsx:173
+msgid "How pixelplanet should look like."
+msgstr "Ahogy a pixelplanetnek kellene kinéznie."
+
+#: src/components/windows/Settings.jsx:180
+msgid "Select Language"
+msgstr "Nyelv kiválasztása"
+
+#: src/components/windows/Archive.jsx:9
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Bár általában nem törlünk vásznakat, ám néhány vásznat csak szórakozásból "
+"vagy olyan felhasználók kérésére indítottunk, akiknek éppen tetszett egy "
+"mém. Ezek a vásznak egy idő után unalmassá válnak, és ha hetekig nem "
+"történik nagyobb változás, akkor már tényleg nem érdemes őket fenntartani."
+
+#: src/components/windows/Archive.jsx:10
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Itt gyűjtjük össze az eltávolított vásznakat, hogy megfelelő módon "
+"archiválhassuk őket. Amiből jelenleg csak egy van."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "Politikai iránytű vászon"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Ez a vászon a földi vásznon zajló politikai konfliktusok alatt lett "
+"kérvényezve. A politikai iránytű 1024x1024 reprezentációja 5mp töltési "
+"idővel és 60mp időtartamig. Május 11-én indult el, és hónapokig aktív volt, "
+"amíg november 30-án le nem állítottuk."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Úgy döntöttünk, hogy gyorsított felvételként archiváljuk veszteségmentesen "
+"kódolt webm formátumban. A gyorsított felvételből készített képernyőfotó "
+"tökéletes 1:1 arányú ábrázolást eredményez arról, hogy milyen volt a vászon "
+"abban az időben."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -699,142 +859,25 @@ msgstr "A Top10 vászon palettája a ${ vinikLink } érdeme."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "A 2bit vászon palettája a ${ donendoLink } érdeme."
 
-#: src/components/windows/Settings.jsx:67
-msgid "Show Grid"
-msgstr "Rács megjelenítése"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Kapcsold be a rácsot, hogy lásd a pixelhatárokat."
-
-#: src/components/windows/Settings.jsx:75
-msgid "Show Pixel Activity"
-msgstr "Pixel-aktivitás megjelenítése"
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show circles where pixels are placed."
-msgstr "A pixelek lerakásakor körök jelennek meg."
-
-#: src/components/windows/Settings.jsx:83
-msgid "Always show Movement Controls"
-msgstr "Mindig mutassa a mozgásvezérlőket"
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show movement control buttons"
-msgstr "Mindig mutassa a mozgásvezérlő gombokat"
-
-#: src/components/windows/Settings.jsx:91
-msgid "Disable Game Sounds"
-msgstr "Játék hangjainak letiltása"
-
-#: src/components/windows/Settings.jsx:97
-msgid "All sound effects will be disabled."
-msgstr "Az összes hang le lesz tiltva."
-
-#: src/components/windows/Settings.jsx:101
+#: src/components/windows/CanvasSelect.jsx:29
 msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
 msgstr ""
-"A böngésződ nem engedi, hogy AudioContextet használjunk a hangok "
-"lejátszásához. Van valamilyen adatvédelmi rendszered, amely blokkol minket?"
+"Válaszd ki a használni kívánt vásznat.\n"
+"Minden vászon egyedi, és sajátos színpalettával, töltési idővel illetve "
+"követelményekkel rendelkezik.\n"
+"Az eltávolított vásznak archívuma itt érhető el:"
 
-#: src/components/windows/Settings.jsx:107
-msgid "Enable chat notifications"
-msgstr "Chat értesítések engedélyezése"
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Archívum"
 
-#: src/components/windows/Settings.jsx:111
-msgid "Play a sound when new chat messages arrive"
-msgstr "Új üzenet érkezésekor hang lejátszása"
-
-#: src/components/windows/Settings.jsx:114
-msgid "Auto Zoom In"
-msgstr "Automatikus zoomolás"
-
-#: src/components/windows/Settings.jsx:119
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Ha a zoomolás túl kicsi ahhoz, hogy pixelt helyezz el, automatikusan "
-"kinagyítja."
-
-#: src/components/windows/Settings.jsx:122
-msgid "Compact Palette"
-msgstr "Kompakt paletta"
-
-#: src/components/windows/Settings.jsx:127
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "A paletta kompakt formában jelenik meg, ami kevesebb helyet foglal."
-
-#: src/components/windows/Settings.jsx:130
-msgid "Potato Mode"
-msgstr "Kenyérpirító mód"
-
-#: src/components/windows/Settings.jsx:134
-msgid "For when you are playing on a potato."
-msgstr "Arra az esetre, ha kenyérpiríton játszol."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
-msgid "Light Grid"
-msgstr "Világos rács"
-
-#: src/components/windows/Settings.jsx:141
-msgid "Show Grid in white instead of black."
-msgstr "Rács megjelenítése fekete helyett fehéren."
-
-#: src/components/windows/Settings.jsx:145
-msgid "Historical View"
-msgstr "Történelmi nézet"
-
-#: src/components/windows/Settings.jsx:150
-msgid "Check out past versions of the canvas."
-msgstr "A vászon korábbi állapotának megtekintése."
-
-#: src/components/windows/Settings.jsx:154
-msgid "Pencil Mode"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:162
-msgid "What the pencil should draw."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:166
-msgid "Themes"
-msgstr "Témák"
-
-#: src/components/windows/Settings.jsx:171
-msgid "How pixelplanet should look like."
-msgstr "Ahogy a pixelplanetnek kellene kinéznie."
-
-#: src/components/windows/Settings.jsx:178
-msgid "Select Language"
-msgstr "Nyelv kiválasztása"
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Profil"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr "Statisztikák"
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Konvertáló"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Moderátori eszközök"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Betöltés..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Csatlakozz hozzánk Discordon:"
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Nyugdíjazott vásznak (csak történelmi nézet)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -875,73 +918,6 @@ msgstr "Captcha"
 msgid "Submit"
 msgstr "Küldés"
 
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Válaszd ki a használni kívánt vásznat.\n"
-"Minden vászon egyedi, és sajátos színpalettával, töltési idővel illetve "
-"követelményekkel rendelkezik.\n"
-"Az eltávolított vásznak archívuma itt érhető el:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Archívum"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Nyugdíjazott vásznak (csak történelmi nézet)"
-
-#: src/components/windows/Archive.jsx:9
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"Bár általában nem törlünk vásznakat, ám néhány vásznat csak szórakozásból "
-"vagy olyan felhasználók kérésére indítottunk, akiknek éppen tetszett egy "
-"mém. Ezek a vásznak egy idő után unalmassá válnak, és ha hetekig nem "
-"történik nagyobb változás, akkor már tényleg nem érdemes őket fenntartani."
-
-#: src/components/windows/Archive.jsx:10
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"Itt gyűjtjük össze az eltávolított vásznakat, hogy megfelelő módon "
-"archiválhassuk őket. Amiből jelenleg csak egy van."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "Politikai iránytű vászon"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"Ez a vászon a földi vásznon zajló politikai konfliktusok alatt lett "
-"kérvényezve. A politikai iránytű 1024x1024 reprezentációja 5mp töltési "
-"idővel és 60mp időtartamig. Május 11-én indult el, és hónapokig aktív volt, "
-"amíg november 30-án le nem állítottuk."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"Úgy döntöttünk, hogy gyorsított felvételként archiváljuk veszteségmentesen "
-"kódolt webm formátumban. A gyorsított felvételből készített képernyőfotó "
-"tökéletes 1:1 arányú ábrázolást eredményez arról, hogy milyen volt a vászon "
-"abban az időben."
-
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
 msgstr "Kezdj el csevegni itt"
@@ -958,14 +934,30 @@ msgstr "Be kell jelentkezned a csevegéshez"
 msgid "Channel settings"
 msgstr "Csatorna beállítások"
 
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr ""
-"Elküldtük az e-mailt az instrukciókkal együtt a jelszó megváltoztatásához."
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Profil"
 
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr "Írd be az e-mail címedet és küldünk egy új jelszót:"
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr "Statisztikák"
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Konvertáló"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Moderátori eszközök"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Csatlakozz hozzánk Discordon:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -998,6 +990,15 @@ msgstr "Újra"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Ide írj"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr ""
+"Elküldtük az e-mailt az instrukciókkal együtt a jelszó megváltoztatásához."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Írd be az e-mail címedet és küldünk egy új jelszót:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1047,6 +1048,52 @@ msgstr "A jelszónak legalább 6 karakter hosszúságúnak kell lennie."
 msgid "Password must be shorter than 60 characters."
 msgstr "A jelszónak 60 karakternél rövidebbnek kell lennie."
 
+#: src/components/CanvasItem.jsx:29
+msgid "Online Users"
+msgstr "Elérhető felhasználók"
+
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "Töltési idő"
+
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "Időtartam"
+
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "Rangsorolt"
+
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
+msgstr "Igen"
+
+#: src/components/CanvasItem.jsx:44
+msgid "No"
+msgstr "Nem"
+
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "Követelmény(ek)"
+
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "Felhasználói fiók"
+
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "és ${ canvas.req } pixel letétele"
+
+#: src/components/CanvasItem.jsx:58
+msgid "Top 10 Daily Ranking"
+msgstr "Top 10 napi rangsor"
+
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "Méretek"
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "IID lekérése"
@@ -1055,11 +1102,29 @@ msgstr "IID lekérése"
 msgid "Copy"
 msgstr "Másolás"
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "Mentés"
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr "További funkciók és statisztikák eléréséhez jelentkezz be."
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr "Bejelentkezés névvel vagy e-mail címmel:"
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr "Elfelejtettem a jelszavamat."
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr "vagy jelentkezz be a következővel:"
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr "vagy regisztrálj itt:"
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr "Regisztráció"
 
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
@@ -1118,29 +1183,11 @@ msgstr "Bekapcsolt sablonok exportálása"
 msgid "Import templates"
 msgstr "Sablonok importálása"
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr "További funkciók és statisztikák eléréséhez jelentkezz be."
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr "Bejelentkezés névvel vagy e-mail címmel:"
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr "Elfelejtettem a jelszavamat."
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr "vagy jelentkezz be a következővel:"
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr "vagy regisztrálj itt:"
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr "Regisztráció"
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Mentés"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
@@ -1287,52 +1334,6 @@ msgstr ""
 "A rangsor 5 percenként frissül. A napi ranglisták pedig UTC idő szerint "
 "éjfélkor."
 
-#: src/components/CanvasItem.jsx:29
-msgid "Online Users"
-msgstr "Elérhető felhasználók"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "Töltési idő"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "Időtartam"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "Rangsorolt"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr "Igen"
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr "Nem"
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "Követelmény(ek)"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "Felhasználói fiók"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "és ${ canvas.req } pixel letétele"
-
-#: src/components/CanvasItem.jsx:58
-msgid "Top 10 Daily Ranking"
-msgstr "Top 10 napi rangsor"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "Méretek"
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1350,6 +1351,14 @@ msgstr "Szerkesztés"
 msgid "Go to"
 msgstr "Menj oda"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Név vagy e-mail cím"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Bejelentkezés"
+
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
 msgstr "Fájl kiválasztása"
@@ -1361,94 +1370,6 @@ msgstr "Sablon neve"
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
 msgstr "Törlés"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Név vagy e-mail cím"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Bejelentkezés"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Kérlek erősítsd meg az e-mail címedet, különben a fiókod néhány napon belül "
-"törlésre kerülhet."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Új ellenőrző e-mailt küldünk neked."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Kattints ide, ha új ellenőrző levelet szeretnél kérni."
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "A jelszó nem stimmel."
-
-#: src/components/ChangePassword.jsx:44
-msgid "Password successfully changed."
-msgstr "Sikeresen megváltoztattad a jelszót."
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "Régi jelszó"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "Új jelszó"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Új jelszó megerősítése"
-
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "Új Felhasználónév"
-
-#: src/components/ChangeMail.jsx:59
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"Sikeresen megváltoztattad az e-mail címedet. Küldtünk neked egy ellenőrző "
-"levelet, kérjük, erősítsd meg az új e-mail címedet."
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "Új e-mail cím"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "Igen, töröld a fiókomat!"
-
-#: src/components/SocialSettings.jsx:35
-msgid "Block DMs"
-msgstr "Közvetlen üzenetek tiltása"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "Minden privát üzenet blokkolása"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr "Privát"
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr "Ne jelenítsen meg a globális statisztikákban"
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "Felhasználók letiltásának feloldása"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "Nincsenek letiltott felhasználóid"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1469,6 +1390,88 @@ msgstr "Országok napi helyezése"
 #: src/core/chartSettings.js:351
 msgid "Total Pixels placed per day"
 msgstr "Naponta elhelyezett pixelek száma"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Kérlek erősítsd meg az e-mail címedet, különben a fiókod néhány napon belül "
+"törlésre kerülhet."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Új ellenőrző e-mailt küldünk neked."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Kattints ide, ha új ellenőrző levelet szeretnél kérni."
+
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr "Érvénytelen intervallum"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr "Ellenőrizd, ki rajzolt ezen a területen"
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr "Intervallum"
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr "IID (opcionális)"
+
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr "Bal felső sarok"
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr "Jobb alsó sarok"
+
+#: src/components/ModWatchtools.jsx:249
+msgid "Get Pixels"
+msgstr "Pixelek lekérése"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
+msgstr "Felhasználók lekérése"
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "IP lehetőségek"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "IP-kkel kapcsolatos dolgok (egy IP soronként)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "Moderátorok kezelése"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "Moderátor eltávolítása"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "Nincsenek moderátorok"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "Új moderátor kijelölése"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "Add meg az új moderátor felhasználónevét"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "Felhasználó neve"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1546,16 +1549,6 @@ msgstr ""
 "Területek védelmének beállítása (ha finomabb ellenőrzésre van szükséged, "
 "használd a képfeltöltéssel és az alfa rétegekkel való védelmet)"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr "Bal felső sarok"
-
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr "Jobb alsó sarok"
-
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Visszaállítás egy dátumra"
@@ -1577,62 +1570,6 @@ msgstr "Használj szűrőt a nagy vászonfelületeken lévő szemét megtisztít
 msgid "Stop Cleaner"
 msgstr "Tisztítás leállítása"
 
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "IP lehetőségek"
-
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "IP-kkel kapcsolatos dolgok (egy IP soronként)"
-
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "Moderátorok kezelése"
-
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "Moderátor eltávolítása"
-
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "Nincsenek moderátorok"
-
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "Új moderátor kijelölése"
-
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "Add meg az új moderátor felhasználónevét"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "Felhasználó neve"
-
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
-msgstr "Érvénytelen intervallum"
-
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr "Ellenőrizd, ki rajzolt ezen a területen"
-
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr "Intervallum"
-
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr "IID (opcionális)"
-
-#: src/components/ModWatchtools.jsx:249
-msgid "Get Pixels"
-msgstr "Pixelek lekérése"
-
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
-msgstr "Felhasználók lekérése"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Meg kell adnod egy időtartamot"
@@ -1653,6 +1590,70 @@ msgstr "Indoklás megadása"
 msgid "(0 = infinite)"
 msgstr "(0 = végtelen)"
 
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "Új Felhasználónév"
+
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "A jelszó nem stimmel."
+
+#: src/components/ChangePassword.jsx:44
+msgid "Password successfully changed."
+msgstr "Sikeresen megváltoztattad a jelszót."
+
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "Régi jelszó"
+
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "Új jelszó"
+
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Új jelszó megerősítése"
+
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "Igen, töröld a fiókomat!"
+
+#: src/components/ChangeMail.jsx:59
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"Sikeresen megváltoztattad az e-mail címedet. Küldtünk neked egy ellenőrző "
+"levelet, kérjük, erősítsd meg az új e-mail címedet."
+
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "Új e-mail cím"
+
+#: src/components/SocialSettings.jsx:35
+msgid "Block DMs"
+msgstr "Közvetlen üzenetek tiltása"
+
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "Minden privát üzenet blokkolása"
+
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
+msgstr "Privát"
+
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr "Ne jelenítsen meg a globális statisztikákban"
+
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "Felhasználók letiltásának feloldása"
+
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "Nincsenek letiltott felhasználóid"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Megemlítés"
@@ -1669,20 +1670,35 @@ msgstr "Blokkolás"
 msgid "Mute"
 msgstr "Némít"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
+#: src/components/windows/Settings.jsx:86
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:94
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
+
+#: src/components/windows/Settings.jsx:159
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1723,21 +1739,6 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
-
-#: src/components/windows/Settings.jsx:84
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:92
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Settings.jsx:157
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

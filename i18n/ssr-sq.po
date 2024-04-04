@@ -1,164 +1,172 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-04-04 20:02+0000\n"
+"Last-Translator: Lek Plepi <lekplepi350@gmail.com>\n"
+"Language-Team: Albanian <https://hosted.weblate.org/projects/pixelplanet/"
+"server/sq/>\n"
 "Language: sq\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
-msgstr ""
+msgstr "Nuk mundesh të dërgosh mesazhe në bisedë ndërkohë që ti përdor proxy"
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr ""
+msgstr "Shteti juaj është i bllokuar për momentin nga biseda"
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
+"Ti je i ndalur që të shkruash përgjithmonë, bashkohu në guilded tonë që te "
+"raportosh bllokimin nga biseda"
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
-msgstr ""
+msgstr "Ti je i ndaluar nga loja"
 
 #: src/core/ChatProvider.js:443
 msgid "Your Internet Provider is banned"
-msgstr ""
+msgstr "Ofruesi juaj i internetit është i ndaluar"
 
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr ""
+msgstr "Ti je i heshtur dhe për disa ${timeMin} minuta"
 
 #: src/core/ChatProvider.js:450
 #, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr ""
+msgstr "Ti je i heshtur për ${ ttl } sekonda"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
 msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
 msgstr ""
+"Ti po dërgon mesazhe shumë shpejtë, ti duhësh te presësh ${ waitTime }s :("
 
 #: src/core/ChatProvider.js:471
 msgid "You don't have access to this channel"
-msgstr ""
+msgstr "Ti nuk ke akses tek ky kanal"
 
 #: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
-msgstr ""
+msgstr "Email i yti duhet të verifikohet nesë doni të shkruani"
 
 #: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
-msgstr ""
+msgstr "Ti nuk mund të dërgosh një mesazh kaq të gjatë :("
 
 #: src/core/ChatProvider.js:504
 msgid "Please use int channel"
-msgstr ""
+msgstr "Të lutem perdorni kanalin int"
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
-msgstr ""
+msgstr "Mos përmbysni."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr ""
+msgstr "Ju dërguat nje password bosh ose data invalide :("
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr ""
+msgstr "Ky password-reset link nuk është më valid :("
 
 #: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
-msgstr ""
+msgstr "Passwordet tuaja nuk janë njësoj :("
 
 #: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
-msgstr ""
+msgstr "Ky user nuk eziston ne database tonë"
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr ""
+msgstr "Passwordi është ndryshuar me sukses."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr ""
+msgstr "Url invalide :( Ju lutëm rishikoni mail tuaj përsëri."
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
-msgstr ""
+msgstr "PixelPlanet.Fun Globi 3D"
 
 #: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
-msgstr ""
+msgstr "Nje glob 3D i të gjithë hartës tonë"
 
 #: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
-msgstr ""
+msgstr "Shtypni globin dy herë që të riktheheni"
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
-msgstr ""
-
-#: src/ssr/Main.jsx:65
-msgid "PixelPlanet.Fun"
-msgstr ""
-
-#: src/ssr/Main.jsx:66
-msgid "Place color pixels on an map styled canvas with other players online"
-msgstr ""
+msgstr "Po shkarkohet…"
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
-msgstr ""
+msgstr "ppfun"
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
-msgstr ""
+msgstr "PixelPlanet.Fun PopUp"
+
+#: src/ssr/Main.jsx:65
+msgid "PixelPlanet.Fun"
+msgstr "PixelPlanet.Fun"
+
+#: src/ssr/Main.jsx:66
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr "Vendosni piksela në një canvas si stil harte me lojtarë të tjerë online"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr ""
+msgstr "Email nuk mund të jetë bosh."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr ""
+msgstr "Email duhet të jetë minimumi 5 shkronja i gjatë."
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr ""
+msgstr "Email nuk mundet të jetë më i gjatë se 40 shkronja."
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr ""
+msgstr "Email duhet të ketë të paktën një pikë"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr ""
+msgstr "Email duhet të përmbajë një @"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr ""
+msgstr "Emri nuk mundet të jetë bosh."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr ""
+msgstr "Emri duhet të jetë të paktën 2 shkronja i gjatë"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr ""
+msgstr "Emri duhet te jetë me i shkurtër se 26 shkronja"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr ""
+msgstr "Emri përmban shkronja invalide si @,/,\\ ose #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr ""
+msgstr "Nuk ka password të dhënë."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr ""
+msgstr "Password duhet të jetë të paktën 6 shkronja i gjatë."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
@@ -264,6 +272,51 @@ msgstr ""
 msgid "Muted Users can not do this."
 msgstr ""
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr ""
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr ""
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr ""
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr ""
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr ""
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr ""
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr ""
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr ""
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr ""
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr ""
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr ""
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr ""
@@ -348,51 +401,6 @@ msgstr ""
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
-msgstr ""
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr ""
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr ""
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr ""
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr ""
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr ""
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr ""
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr ""
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr ""
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr ""
 
 #: src/core/MailProvider.js:66

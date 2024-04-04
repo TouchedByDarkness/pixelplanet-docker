@@ -112,6 +112,14 @@ msgstr "ორჯერ დააწკაპუნეთ გლობუსზ�
 msgid "Loading..."
 msgstr "Ჩატვირთვა..."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
+
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
@@ -121,14 +129,6 @@ msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "განათავსეთ ფერადი პიქსელები რუკის კანვასზე ტილოზე სხვა მოთამაშეებთან ერთად "
 "ონლაინ რეჟიმში"
-
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -282,6 +282,51 @@ msgstr "ელფოსტის ეს პროვაიდერი დაუ
 msgid "Muted Users can not do this."
 msgstr "დამიუთებულ მომხმარებლებს არ შეუძლიათ ამის გაკეთება."
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "PixelPlanet.fun ანგარიშები"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "თქვენ ავტომატურად გადამისამართდებით 15 წამის შემდეგ"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "ან ${ clickHere } pixelplanet-ზე დასაბრუნებლად"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "კაპჩა არ არის მოცემული"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Ელექტრონული ფოსტა უკვე გამოყენებულია."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Მომხმარებლის სახელი უკვე გამოიყენება."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "ძალიან დიდი დრო დაგჭირდათ, ისევ სცადეთ."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "თქვენ ვერ მოახერხეთ თქვენი კაპტჩა"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "უცნობი კაპჩტას შეცდომა"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "ახალი მომხმარებლის შექმნა ვერ მოხერხდა :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "რეგისტრაციის შემდეგ სესიის დამყარება ვერ მოხერხდა :("
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "დედამიწა"
@@ -381,51 +426,6 @@ msgid ""
 msgstr ""
 "დაიპყარი მიწები უფრო პატარა დედამიწაზე დაცული ოკეანეთი. აზიარებს ქულდაუნს "
 "დედამიწის ჩარჩისთან."
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "კაპჩა არ არის მოცემული"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Ელექტრონული ფოსტა უკვე გამოყენებულია."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Მომხმარებლის სახელი უკვე გამოიყენება."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "ძალიან დიდი დრო დაგჭირდათ, ისევ სცადეთ."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "თქვენ ვერ მოახერხეთ თქვენი კაპტჩა"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "უცნობი კაპჩტას შეცდომა"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "ახალი მომხმარებლის შექმნა ვერ მოხერხდა :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "რეგისტრაციის შემდეგ სესიის დამყარება ვერ მოხერხდა :("
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "PixelPlanet.fun ანგარიშები"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "თქვენ ავტომატურად გადამისამართდებით 15 წამის შემდეგ"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "ან ${ clickHere } pixelplanet-ზე დასაბრუნებლად"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

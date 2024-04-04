@@ -109,6 +109,14 @@ msgstr "Küreye çift tıklayarak geri dönün."
 msgid "Loading..."
 msgstr "Yükleniyor..."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
+
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
@@ -117,14 +125,6 @@ msgstr "PixelPlanet.Fun"
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Diğer oyuncularla beraber harita tarzı tuvallerde renkli pikseller atın"
-
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -277,6 +277,51 @@ msgstr "Bu e-posta sağlayıcısına izin verilmiyor"
 msgid "Muted Users can not do this."
 msgstr "Susturulan kullanıcılar bunu yapamaz."
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "PixelPlanet.fun Hesapları"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "15 saniye içerisinde otomatik olarak yönlendirileceksin"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "Veya ${ clickHere } pixelplanet'e dönebilirsin"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Captcha girilmedi"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Bu e-posta adresi kullanılıyor."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Bu kullanıcı adı kullanılıyor."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Doğrulamayı yanlış çözdünüz"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Bilinmeyen Captcha Hatası"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Yeni kullanıcı oluşturulamadı :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Kayıttan sonra oturum oluşturulamadı :("
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Dünya"
@@ -369,51 +414,6 @@ msgid ""
 msgstr ""
 "Okyanusun korunduğu bu küçük dünyada fetihler yapın. Bu tuval Dünya tuvali "
 "ile bekleme süresini paylaşır!"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Captcha girilmedi"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Bu e-posta adresi kullanılıyor."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Bu kullanıcı adı kullanılıyor."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Doğrulamayı yanlış çözdünüz"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Bilinmeyen Captcha Hatası"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Yeni kullanıcı oluşturulamadı :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Kayıttan sonra oturum oluşturulamadı :("
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "PixelPlanet.fun Hesapları"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "15 saniye içerisinde otomatik olarak yönlendirileceksin"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Veya ${ clickHere } pixelplanet'e dönebilirsin"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

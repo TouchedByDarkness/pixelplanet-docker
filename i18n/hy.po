@@ -13,71 +13,71 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/controls/keypress.js:62
+#: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
 msgstr ""
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:65
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
 #, fuzzy
 msgid "Selected Color"
 msgstr "Ընտրել ֆայլ"
 
-#: src/components/windows/Settings.jsx:61 src/controls/keypress.js:68
+#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
 #, fuzzy
 msgid "From Template"
 msgstr "Կաղապարներ"
 
-#: src/components/windows/Settings.jsx:62 src/controls/keypress.js:71
+#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
 msgid "From History"
 msgstr ""
 
-#: src/controls/keypress.js:122
+#: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr "Տեղափոխվեց ${ canvasName } կտավին"
 
-#: src/controls/keypress.js:193
+#: src/controls/keypress.js:176
 msgid "Grid ON"
 msgstr "Ցանցը միացված է"
 
-#: src/controls/keypress.js:194
+#: src/controls/keypress.js:177
 msgid "Grid OFF"
 msgstr "Ցանցը անջատված է"
 
-#: src/controls/keypress.js:204
+#: src/controls/keypress.js:187
 msgid "Pixel Notify ON"
 msgstr "Պիքսելի ակտիվությունը միացված է"
 
-#: src/controls/keypress.js:205
+#: src/controls/keypress.js:188
 msgid "Pixel Notify OFF"
 msgstr "Պիքսելի ակտիվությունը անջատված է"
 
-#: src/controls/keypress.js:210
+#: src/controls/keypress.js:193
 msgid "Muted Sound"
 msgstr "Ձայնը անջատված է"
 
-#: src/controls/keypress.js:211
+#: src/controls/keypress.js:194
 msgid "Unmuted Sound"
 msgstr "Ձայնը միացված է"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
-#: src/controls/keypress.js:220
+#: src/controls/keypress.js:203
 msgid "Copied"
 msgstr "Պատճենվա՛ծ է"
 
-#: src/controls/keypress.js:226
+#: src/controls/keypress.js:209
 msgid "Overlay ON"
 msgstr "Overlay-ը միացված է"
 
-#: src/controls/keypress.js:227
+#: src/controls/keypress.js:210
 msgid "Overlay OFF"
 msgstr "Overlay-ը անջատված է"
 
-#: src/components/windows/Help.jsx:50 src/controls/keypress.js:233
+#: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
 msgstr "Հուշումները միացված են"
 
-#: src/components/windows/Help.jsx:49 src/controls/keypress.js:234
+#: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
 msgstr "Հուշումները անջատված են"
 
@@ -366,10 +366,6 @@ msgstr "Օգտագործողի տարածք"
 msgid "Make Screenshot"
 msgstr "Անել սքրինշոթ"
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Մոլորակային տեսանկյուն"
-
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Փակել ներկապնակը"
@@ -378,21 +374,25 @@ msgstr "Փակել ներկապնակը"
 msgid "Open Palette"
 msgstr "Բացել ներկապնակը"
 
-#: src/components/buttons/PencilButton.jsx:26
+#: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr "Միացնել մատիտը"
 
-#: src/components/buttons/PencilButton.jsx:31
+#: src/components/buttons/PencilButton.jsx:46
 msgid "Disable Pencil"
 msgstr "Անջատել Մատիտը"
 
-#: src/components/buttons/PencilButton.jsx:35
+#: src/components/buttons/PencilButton.jsx:50
 msgid "Disable History Pencil"
 msgstr "Անջատել պատմական տեսակետի մատիտը"
 
-#: src/components/buttons/PencilButton.jsx:39
+#: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Անջատել Overlay-ի մատիտը"
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Մոլորակային տեսանկյուն"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -410,25 +410,13 @@ msgstr "Չատ"
 msgid "Canvas Archive"
 msgstr "Կտավի արխիվ"
 
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Շատ երկար էր, նորից փորձեք:"
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Դուք արգելափակված եք: Կարծում եք անարռա՞ռ է, ստուգեք "
 
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Դուք ձեր captcha-ն ձախողեցիք"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Սխալ կամ բացակայող captcha-ի տեքստ"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Captcha ID-ն տրված չէ"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Captcha-ի Անհայտ Սխալ"
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " ինչպես բողոքարկել արդելափակումը."
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -438,26 +426,6 @@ msgstr "Captcha-ի Անհայտ Սխալ"
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Սխալ :("
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Չեղարկել"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Ուղարկել"
-
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Դուք արգելափակված եք: Կարծում եք անարռա՞ռ է, ստուգեք "
-
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " ինչպես բողոքարկել արդելափակումը."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -490,6 +458,200 @@ msgstr "Հիմա, երբ արդեն դու տեսար այս նամակը, դո�
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Ինչու՞"
+
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Շատ երկար էր, նորից փորձեք:"
+
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Դուք ձեր captcha-ն ձախողեցիք"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Սխալ կամ բացակայող captcha-ի տեքստ"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Captcha ID-ն տրված չէ"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Captcha-ի Անհայտ Սխալ"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Չեղարկել"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Ուղարկել"
+
+#: src/components/windows/Settings.jsx:69
+msgid "Show Grid"
+msgstr "Ցույց տալ ցանցը"
+
+#: src/components/windows/Settings.jsx:74
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Միացրեք ցանցը ՝ պիքսելների սահմանները ընդգծելու համար:"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Show Pixel Activity"
+msgstr "Ցույց տալ պիքսելների ակտիվությունը"
+
+#: src/components/windows/Settings.jsx:82
+msgid "Show circles where pixels are placed."
+msgstr "Ցույց տալ կարմիր օղակներ այնտեղ, որտեղ տեղադրվեց պիքսել:"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Always show Movement Controls"
+msgstr "Միշտ ցույց տալ տեղաշարժման կառավարման վահանակը"
+
+#: src/components/windows/Settings.jsx:90
+msgid "Always show movement control buttons"
+msgstr "Միշտ ցույց տալ տեղաշարժման կառավարման կոճակները"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Disable Game Sounds"
+msgstr "Անջատել խաղի հնչյունները"
+
+#: src/components/windows/Settings.jsx:99
+msgid "All sound effects will be disabled."
+msgstr "Բոլոր ձայնային էֆեկտները անջատված կլինեն։"
+
+#: src/components/windows/Settings.jsx:103
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Ձեր բրաուզերը չի թույլատրում օգտագործել AudioContext ձայներ արտահանելու "
+"համար: Դուք ոնե՞ք մեզ արգելափակող գաղտնիության որևէ գործառույթ:"
+
+#: src/components/windows/Settings.jsx:109
+msgid "Enable chat notifications"
+msgstr "Միացնել զրույցի(չատի) ծանուցումները"
+
+#: src/components/windows/Settings.jsx:113
+msgid "Play a sound when new chat messages arrive"
+msgstr ""
+"Հնչեցնել ձայն, երբ զրույցում(չատում) ուղարկվում են նոր հաղորդագրություններ"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Auto Zoom In"
+msgstr "Ավտոմատ խոշորացում"
+
+#: src/components/windows/Settings.jsx:121
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Կտավին սեղմելիս ավտոմատ խոշորացնել այն, պիքսել դրվելու փոխարեն այն դեպքում, "
+"երբ կտավը նայում եք հեռվից, որպեսզի լինի բավականաչափ հեռավորություն պիքսել "
+"դնելու համար:"
+
+#: src/components/windows/Settings.jsx:124
+msgid "Compact Palette"
+msgstr "Կոմպակտ ներկապնակ"
+
+#: src/components/windows/Settings.jsx:129
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr ""
+"Ցուցադրել ներկապնակը կոմպակտ ձևով, որը էկրանի ավելի քիչ տարածք է զբաղեցնում:"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Potato Mode"
+msgstr "Թույլ համակարգչի ռեժիմ"
+
+#: src/components/windows/Settings.jsx:136
+msgid "For when you are playing on a potato."
+msgstr "Նրա համար, երբ թույլ համակարգչով եք խաղում:"
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
+msgid "Light Grid"
+msgstr "Լուսավոր ցանց"
+
+#: src/components/windows/Settings.jsx:143
+msgid "Show Grid in white instead of black."
+msgstr "Ցույց տալ սպիտակ ցանց սևի փոխարեն:"
+
+#: src/components/windows/Settings.jsx:147
+msgid "Historical View"
+msgstr "Պատմական տեսակետ"
+
+#: src/components/windows/Settings.jsx:152
+msgid "Check out past versions of the canvas."
+msgstr "Նայեք կտավի տեսքին անցյալ ժամանակի որևէ կետում:"
+
+#: src/components/windows/Settings.jsx:156
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Տեղափոխվեց ${ canvasName } կտավին"
+
+#: src/components/windows/Settings.jsx:164
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:168
+msgid "Themes"
+msgstr "Թեմաներ"
+
+#: src/components/windows/Settings.jsx:173
+msgid "How pixelplanet should look like."
+msgstr "Ինչպես պետք է լինի pixelplanet-ը:"
+
+#: src/components/windows/Settings.jsx:180
+msgid "Select Language"
+msgstr "Ընտրեք լեզուն"
+
+#: src/components/windows/Archive.jsx:9
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Չնայած մենք հակված ենք կտավները չջնջելուն, որոշ կտավներ սկսվում են զվարճանքի "
+"համար կամ որպես խնդրանք այն օգտվողների կողմից, ովքեր ներկայումս սիրում են "
+"մեմեր: Այդ կտավները կարող են ձանձրալի լինել որոշ ժամանակ անց և իմաստ չի "
+"լինում դրանք պահելու, այդ պատճառով մենք որոշում ենք հեռացնել դրանց:"
+
+#: src/components/windows/Archive.jsx:10
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Այստեղ մենք հավաքում ենք հեռացված կտավները՝ պատշաճ կերպով արխիվացնելու համար "
+"(որը ներկայումս ընդամենը մեկն է):"
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "Քաղաքական կողմնացույցի կտավ"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Այս կտավը պահանջվել է Երկրի գլխավոր կտավի վրա քաղաքական բախումների ժամանակ: "
+"Դա քաղաքական կողմնացույցի 1024x1024 ներկայացում էր` 5 վրկ վերալիցքավորմամբ և "
+"60-ականների դասախցիկներով: Այն մեկնարկվեց մայիսի 11-ին և ամիսներ շարունակ "
+"ակտիվ մնաց, մինչև այն դադարեցվեց նոյեմբերի 30-ին:"
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Մենք որոշեցինք արխիվացնել այն որպես պատմական տեսանյութ ՝ առանց կորուստների "
+"կոդավորված վեբ-կայքերի: Ժամանակահատվածից սքրինշոթ վերցնելը բերում է կատարյալ "
+"1:1 ներկայացման այն մասին, թե ինչպես էր այդ ժամանակ կտավը:"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -697,145 +859,25 @@ msgstr "Թոփ10-ի ներկապնակի վարկը տրամադրվում է ${
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "2բիտի ներկապնակը տրամադրվում է ${ donendoLink } կողմից:"
 
-#: src/components/windows/Settings.jsx:67
-msgid "Show Grid"
-msgstr "Ցույց տալ ցանցը"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Միացրեք ցանցը ՝ պիքսելների սահմանները ընդգծելու համար:"
-
-#: src/components/windows/Settings.jsx:75
-msgid "Show Pixel Activity"
-msgstr "Ցույց տալ պիքսելների ակտիվությունը"
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show circles where pixels are placed."
-msgstr "Ցույց տալ կարմիր օղակներ այնտեղ, որտեղ տեղադրվեց պիքսել:"
-
-#: src/components/windows/Settings.jsx:83
-msgid "Always show Movement Controls"
-msgstr "Միշտ ցույց տալ տեղաշարժման կառավարման վահանակը"
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show movement control buttons"
-msgstr "Միշտ ցույց տալ տեղաշարժման կառավարման կոճակները"
-
-#: src/components/windows/Settings.jsx:91
-msgid "Disable Game Sounds"
-msgstr "Անջատել խաղի հնչյունները"
-
-#: src/components/windows/Settings.jsx:97
-msgid "All sound effects will be disabled."
-msgstr "Բոլոր ձայնային էֆեկտները անջատված կլինեն։"
-
-#: src/components/windows/Settings.jsx:101
+#: src/components/windows/CanvasSelect.jsx:29
 msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
 msgstr ""
-"Ձեր բրաուզերը չի թույլատրում օգտագործել AudioContext ձայներ արտահանելու "
-"համար: Դուք ոնե՞ք մեզ արգելափակող գաղտնիության որևէ գործառույթ:"
+"Ընտրեք կտավը, որը ցանկանում եք օգտագործել:\n"
+"Յուրաքանչյուր կտավ եզակի է և ունի տարբեր գունապնակներ, վերականգնման ժամանակ "
+"և պահանջներ:\n"
+"Հեռացված կտավների արխիվ կարելի է մուտք գործել այստեղ."
 
-#: src/components/windows/Settings.jsx:107
-msgid "Enable chat notifications"
-msgstr "Միացնել զրույցի(չատի) ծանուցումները"
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Արխիվ"
 
-#: src/components/windows/Settings.jsx:111
-msgid "Play a sound when new chat messages arrive"
-msgstr ""
-"Հնչեցնել ձայն, երբ զրույցում(չատում) ուղարկվում են նոր հաղորդագրություններ"
-
-#: src/components/windows/Settings.jsx:114
-msgid "Auto Zoom In"
-msgstr "Ավտոմատ խոշորացում"
-
-#: src/components/windows/Settings.jsx:119
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Կտավին սեղմելիս ավտոմատ խոշորացնել այն, պիքսել դրվելու փոխարեն այն դեպքում, "
-"երբ կտավը նայում եք հեռվից, որպեսզի լինի բավականաչափ հեռավորություն պիքսել "
-"դնելու համար:"
-
-#: src/components/windows/Settings.jsx:122
-msgid "Compact Palette"
-msgstr "Կոմպակտ ներկապնակ"
-
-#: src/components/windows/Settings.jsx:127
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr ""
-"Ցուցադրել ներկապնակը կոմպակտ ձևով, որը էկրանի ավելի քիչ տարածք է զբաղեցնում:"
-
-#: src/components/windows/Settings.jsx:130
-msgid "Potato Mode"
-msgstr "Թույլ համակարգչի ռեժիմ"
-
-#: src/components/windows/Settings.jsx:134
-msgid "For when you are playing on a potato."
-msgstr "Նրա համար, երբ թույլ համակարգչով եք խաղում:"
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:137
-msgid "Light Grid"
-msgstr "Լուսավոր ցանց"
-
-#: src/components/windows/Settings.jsx:141
-msgid "Show Grid in white instead of black."
-msgstr "Ցույց տալ սպիտակ ցանց սևի փոխարեն:"
-
-#: src/components/windows/Settings.jsx:145
-msgid "Historical View"
-msgstr "Պատմական տեսակետ"
-
-#: src/components/windows/Settings.jsx:150
-msgid "Check out past versions of the canvas."
-msgstr "Նայեք կտավի տեսքին անցյալ ժամանակի որևէ կետում:"
-
-#: src/components/windows/Settings.jsx:154
-msgid "Pencil Mode"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:162
-msgid "What the pencil should draw."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:166
-msgid "Themes"
-msgstr "Թեմաներ"
-
-#: src/components/windows/Settings.jsx:171
-msgid "How pixelplanet should look like."
-msgstr "Ինչպես պետք է լինի pixelplanet-ը:"
-
-#: src/components/windows/Settings.jsx:178
-msgid "Select Language"
-msgstr "Ընտրեք լեզուն"
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Պրոֆիլ"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr "Ստատիստիկա"
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Փոխարկիչ"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Մոդերատորի գործիքներ"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Բեռնում..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Միացեք մեզ Guilded-ում`"
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Չօգտագործվող կտավներ (Միայն պատմական տեսակետ)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -876,72 +918,6 @@ msgstr "Captcha"
 msgid "Submit"
 msgstr "Հաստատել"
 
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Ընտրեք կտավը, որը ցանկանում եք օգտագործել:\n"
-"Յուրաքանչյուր կտավ եզակի է և ունի տարբեր գունապնակներ, վերականգնման ժամանակ "
-"և պահանջներ:\n"
-"Հեռացված կտավների արխիվ կարելի է մուտք գործել այստեղ."
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Արխիվ"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Չօգտագործվող կտավներ (Միայն պատմական տեսակետ)"
-
-#: src/components/windows/Archive.jsx:9
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"Չնայած մենք հակված ենք կտավները չջնջելուն, որոշ կտավներ սկսվում են զվարճանքի "
-"համար կամ որպես խնդրանք այն օգտվողների կողմից, ովքեր ներկայումս սիրում են "
-"մեմեր: Այդ կտավները կարող են ձանձրալի լինել որոշ ժամանակ անց և իմաստ չի "
-"լինում դրանք պահելու, այդ պատճառով մենք որոշում ենք հեռացնել դրանց:"
-
-#: src/components/windows/Archive.jsx:10
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"Այստեղ մենք հավաքում ենք հեռացված կտավները՝ պատշաճ կերպով արխիվացնելու համար "
-"(որը ներկայումս ընդամենը մեկն է):"
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "Քաղաքական կողմնացույցի կտավ"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"Այս կտավը պահանջվել է Երկրի գլխավոր կտավի վրա քաղաքական բախումների ժամանակ: "
-"Դա քաղաքական կողմնացույցի 1024x1024 ներկայացում էր` 5 վրկ վերալիցքավորմամբ և "
-"60-ականների դասախցիկներով: Այն մեկնարկվեց մայիսի 11-ին և ամիսներ շարունակ "
-"ակտիվ մնաց, մինչև այն դադարեցվեց նոյեմբերի 30-ին:"
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"Մենք որոշեցինք արխիվացնել այն որպես պատմական տեսանյութ ՝ առանց կորուստների "
-"կոդավորված վեբ-կայքերի: Ժամանակահատվածից սքրինշոթ վերցնելը բերում է կատարյալ "
-"1:1 ներկայացման այն մասին, թե ինչպես էր այդ ժամանակ կտավը:"
-
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
 msgstr "Սկսեք զրուցել այստեղ"
@@ -958,16 +934,30 @@ msgstr "Դուք պետք է մուտք գործեք զրուցելու համա
 msgid "Channel settings"
 msgstr "Ալիքի կարգավորումներ"
 
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr ""
-"Ձեր mail-ին գաղտնաբառի վերակայման համար հրահանգներով նամակ է ուղարկվել:"
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Պրոֆիլ"
 
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr ""
-"Մուտքագրեք ձեր էլեկտրոնային փոստի հասցեն, և մենք ձեզ նոր գաղտնաբառ "
-"կուղարկենք:"
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr "Ստատիստիկա"
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Փոխարկիչ"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Մոդերատորի գործիքներ"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Բեռնում..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Միացեք մեզ Guilded-ում`"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -1000,6 +990,17 @@ msgstr "Թարմացնել"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Մուտքագրեք նշանները"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr ""
+"Ձեր mail-ին գաղտնաբառի վերակայման համար հրահանգներով նամակ է ուղարկվել:"
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr ""
+"Մուտքագրեք ձեր էլեկտրոնային փոստի հասցեն, և մենք ձեզ նոր գաղտնաբառ "
+"կուղարկենք:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1049,6 +1050,52 @@ msgstr "Գաղտնաբառը պետք է ունենա առնվազն 6 նիշ:"
 msgid "Password must be shorter than 60 characters."
 msgstr "Գաղտնաբառը պետք է լինի 60 նիշից կարճ:"
 
+#: src/components/CanvasItem.jsx:29
+msgid "Online Users"
+msgstr "Առցանց Օգտատերեր"
+
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "Վերալիցքավորում"
+
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "Վերալիցքավորման պահուստ"
+
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "Դասակարգված"
+
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
+msgstr "Այո"
+
+#: src/components/CanvasItem.jsx:44
+msgid "No"
+msgstr "Ոչ"
+
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "Պահանջներ"
+
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "Օգտագործողի հաշիվ"
+
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "և առնվազն ${ canvas.req } պիքսել"
+
+#: src/components/CanvasItem.jsx:58
+msgid "Top 10 Daily Ranking"
+msgstr "Թոփ 10 օրական վարկանիշ"
+
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "Չափերը"
+
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "Ստանալ IID-ն"
@@ -1057,11 +1104,31 @@ msgstr "Ստանալ IID-ն"
 msgid "Copy"
 msgstr "Պատճենել"
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "Պահպանել"
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr ""
+"Մուտք գործեք ձեր հաշիվ ՝ վիճակագրության և այլ հնարավորություններ ստանալու "
+"համար։"
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr "Մուտք գործեք անունով կամ էլ. փոստով."
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr "Ես մոռացել եմ իմ գաղտնաբառը։"
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr "կամ մուտք գործեք հետևյալով ."
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr "կամ գրանցվեք այստեղ."
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr "Գրանցվել"
 
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
@@ -1121,31 +1188,11 @@ msgstr "Արտահանել միացված կաղապարները"
 msgid "Import templates"
 msgstr "Ներմուծել կաղապարներ"
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr ""
-"Մուտք գործեք ձեր հաշիվ ՝ վիճակագրության և այլ հնարավորություններ ստանալու "
-"համար։"
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr "Մուտք գործեք անունով կամ էլ. փոստով."
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr "Ես մոռացել եմ իմ գաղտնաբառը։"
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr "կամ մուտք գործեք հետևյալով ."
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr "կամ գրանցվեք այստեղ."
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr "Գրանցվել"
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Պահպանել"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
@@ -1292,52 +1339,6 @@ msgstr ""
 "Դասակարգումը թարմացվում է ամեն 5 րոպեն մեկ: Ամենօրյա վարկանիշները "
 "վերակայվում են UTC- ի կեսգիշերին:"
 
-#: src/components/CanvasItem.jsx:29
-msgid "Online Users"
-msgstr "Առցանց Օգտատերեր"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "Վերալիցքավորում"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "Վերալիցքավորման պահուստ"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "Դասակարգված"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr "Այո"
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr "Ոչ"
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "Պահանջներ"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "Օգտագործողի հաշիվ"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "և առնվազն ${ canvas.req } պիքսել"
-
-#: src/components/CanvasItem.jsx:58
-msgid "Top 10 Daily Ranking"
-msgstr "Թոփ 10 օրական վարկանիշ"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "Չափերը"
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1355,6 +1356,14 @@ msgstr "Խմբագրել"
 msgid "Go to"
 msgstr "Գնալ"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Անուն կամ էլ. փոստ"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Մուտք"
+
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
 msgstr "Ընտրել ֆայլ"
@@ -1366,94 +1375,6 @@ msgstr "Կաղապարի անուն"
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
 msgstr "Ջնջել"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Անուն կամ էլ. փոստ"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Մուտք"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Խնդրում ենք հաստատել ձեր փոստի հասցեն, այլապես ձեր հաշիվը կարող է ջնջվել մի "
-"քանի օր անց:"
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Ձեզ ուղարկվել է ստուգման նոր նամակ:"
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Սեղմեք այստեղ նոր հաստատման նամակ պահանջելու համար:"
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "Գաղտնաբառերը չեն համապատասխանում."
-
-#: src/components/ChangePassword.jsx:44
-msgid "Password successfully changed."
-msgstr "Գաղտնաբառը հաջողությամբ փոխվեց:"
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "Հին Գաղտնաբառ"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "Նոր գաղտնաբառ"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Հաստատեք նոր գաղտնաբառը"
-
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "Նոր օգտանուն"
-
-#: src/components/ChangeMail.jsx:59
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"Փոստը հաջողությամբ փոխվեց: Մենք ձեզ հաստատման նամակ ուղարկել ենք, խնդրում "
-"ենք հաստատել Ձեր նոր փոստի հասցեն:"
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "Նոր էլ. փոստ"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "Այո, ջնջե՛ք իմ հաշիվը:"
-
-#: src/components/SocialSettings.jsx:35
-msgid "Block DMs"
-msgstr "Արգելափակել անձնական նամակները"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "Արգելափակել բոլոր անձնական հաղորդագրությունները"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr "Անձնական"
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr "Ցույց չտալ ինձ դասակարգման մեջ"
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "Արգելափակումից հանել օգտատիրոջը"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "Դուք արգելափակված օգտատերեր չունեք"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1474,6 +1395,88 @@ msgstr "Երկրները, իրենց այսօրվա տեղադրած պիքսե�
 #: src/core/chartSettings.js:351
 msgid "Total Pixels placed per day"
 msgstr "Օրական տեղադրված պիքսելների ընդհանուր քանակը"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Խնդրում ենք հաստատել ձեր փոստի հասցեն, այլապես ձեր հաշիվը կարող է ջնջվել մի "
+"քանի օր անց:"
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Ձեզ ուղարկվել է ստուգման նոր նամակ:"
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Սեղմեք այստեղ նոր հաստատման նամակ պահանջելու համար:"
+
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr "Անվավեր ընդմիջում"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr "Ստուգել, թե ով է տեղադրել տվյալ վայրում"
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr "Ընդիջում"
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr "IID (ըստ ցանկության)"
+
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr "Վերևի ձախ անկյուն"
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr "Ներքևի աջ անկյուն"
+
+#: src/components/ModWatchtools.jsx:249
+msgid "Get Pixels"
+msgstr "Ստանալ պիքսելներ"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
+msgstr "Ստանալ օգտատերեր"
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "IP գործողություններ"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "Իրականացրեք IP- ներով (մեկ IP մեկ տողում)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "Կառավարել մոդերատորներին"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "Հեռացնել մոդերատորին"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "Չկա մոդերատոր"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "Նոր մոդերատոր նշանակեք"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "Մուտքագրեք նոր մոդերատորի օգտատիրոջ անունը"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "Օգտագործողի անունը"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1551,16 +1554,6 @@ msgstr ""
 "Սահմանել տարածքների պաշտպանություն (եթե ձեզ ավելի մանրակրկիտ հսկողություն է "
 "պետք, օգտագործեք պատկերի պաշտպանումը վերբեռնումով և ալֆա շերտերով)"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr "Վերևի ձախ անկյուն"
-
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr "Ներքևի աջ անկյուն"
-
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Վերադարձ դեպի ամսաթիվ"
@@ -1580,62 +1573,6 @@ msgstr "Դնել ֆիլտր մեծ տարածքներից աղբը մաքրել�
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
 msgstr "Դադարեցնել մաքրիչը"
-
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "IP գործողություններ"
-
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "Իրականացրեք IP- ներով (մեկ IP մեկ տողում)"
-
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "Կառավարել մոդերատորներին"
-
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "Հեռացնել մոդերատորին"
-
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "Չկա մոդերատոր"
-
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "Նոր մոդերատոր նշանակեք"
-
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "Մուտքագրեք նոր մոդերատորի օգտատիրոջ անունը"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "Օգտագործողի անունը"
-
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
-msgstr "Անվավեր ընդմիջում"
-
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr "Ստուգել, թե ով է տեղադրել տվյալ վայրում"
-
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr "Ընդիջում"
-
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr "IID (ըստ ցանկության)"
-
-#: src/components/ModWatchtools.jsx:249
-msgid "Get Pixels"
-msgstr "Ստանալ պիքսելներ"
-
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
-msgstr "Ստանալ օգտատերեր"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1657,6 +1594,70 @@ msgstr "Գրեք պատճառը"
 msgid "(0 = infinite)"
 msgstr "(0 = անվերջություն)"
 
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "Նոր օգտանուն"
+
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "Գաղտնաբառերը չեն համապատասխանում."
+
+#: src/components/ChangePassword.jsx:44
+msgid "Password successfully changed."
+msgstr "Գաղտնաբառը հաջողությամբ փոխվեց:"
+
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "Հին Գաղտնաբառ"
+
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "Նոր գաղտնաբառ"
+
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Հաստատեք նոր գաղտնաբառը"
+
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "Այո, ջնջե՛ք իմ հաշիվը:"
+
+#: src/components/ChangeMail.jsx:59
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"Փոստը հաջողությամբ փոխվեց: Մենք ձեզ հաստատման նամակ ուղարկել ենք, խնդրում "
+"ենք հաստատել Ձեր նոր փոստի հասցեն:"
+
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "Նոր էլ. փոստ"
+
+#: src/components/SocialSettings.jsx:35
+msgid "Block DMs"
+msgstr "Արգելափակել անձնական նամակները"
+
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "Արգելափակել բոլոր անձնական հաղորդագրությունները"
+
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
+msgstr "Անձնական"
+
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr "Ցույց չտալ ինձ դասակարգման մեջ"
+
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "Արգելափակումից հանել օգտատիրոջը"
+
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "Դուք արգելափակված օգտատերեր չունեք"
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Պինգ"
@@ -1673,20 +1674,35 @@ msgstr "Արգելափակել"
 msgid "Mute"
 msgstr "Լռեցնել"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:68
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:76
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:147
+#: src/components/windows/Settings.jsx:86
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:94
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
+
+#: src/components/windows/Settings.jsx:159
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1727,21 +1743,6 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
-
-#: src/components/windows/Settings.jsx:84
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:92
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Settings.jsx:157
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

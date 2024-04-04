@@ -117,6 +117,14 @@ msgstr "Lomiʻi tuʻo ua ʻi he mamani ke toe foki."
 msgid "Loading..."
 msgstr "Load..."
 
+#: src/ssr/PopUp.jsx:47
+msgid "ppfun"
+msgstr "ppfun"
+
+#: src/ssr/PopUp.jsx:48
+msgid "PixelPlanet.Fun PopUp"
+msgstr "PixelPlanet.Fun PopUp"
+
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
@@ -126,14 +134,6 @@ msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Fokotuʻu ʻa e lanu ʻo e lanu ʻi ha mape styled fakatataa mo e kau vaʻinga "
 "kehe ʻi he ʻInitaneti"
-
-#: src/ssr/PopUp.jsx:47
-msgid "ppfun"
-msgstr "ppfun"
-
-#: src/ssr/PopUp.jsx:48
-msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -287,6 +287,51 @@ msgstr "ʻOku ʻikai fakangofua ʻa e kautaha ʻimeili ko ʻeni"
 msgid "Muted Users can not do this."
 msgstr ""
 
+#: src/ssr/RedirectionPage.jsx:19
+msgid "PixelPlanet.fun Accounts"
+msgstr "Ngaahi ʻAkauni PixelPlanet.fun"
+
+#: src/ssr/RedirectionPage.jsx:29
+msgid "You will be automatically redirected after 15s"
+msgstr "ʻE toe fakafoki fakahangatonu atu koe hili 15s"
+
+#: src/ssr/RedirectionPage.jsx:30
+#, javascript-format
+msgid "Or ${ clickHere } to go back to pixelplanet"
+msgstr "Pe ${ clickHere } ke foki ki pixelplanet"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "ʻIkai ha Captcha ʻe foaki"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Kuo ʻosi fakaʻaongaʻi ʻa e ʻĪ-meilí."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Kuo ʻosi ngāueʻaki ʻe he tokotaha ngāue ki he polokala."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Naʻe fuʻu fuoloa hoʻo feinga."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Naʻe ʻikai ke ke lava hoʻo captcha"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Fehalaaki Captcha ʻikai ʻiloʻi"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "ʻIkai lava ʻo faʻu ha foʻou ki he polokalamá :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "ʻIkai lava ke fokotuʻu ha fakataha hili e lesisita :("
+
 #: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr "Mamani"
@@ -382,51 +427,6 @@ msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "ʻIkai ha Captcha ʻe foaki"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Kuo ʻosi fakaʻaongaʻi ʻa e ʻĪ-meilí."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Kuo ʻosi ngāueʻaki ʻe he tokotaha ngāue ki he polokala."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Naʻe fuʻu fuoloa hoʻo feinga."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Naʻe ʻikai ke ke lava hoʻo captcha"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Fehalaaki Captcha ʻikai ʻiloʻi"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "ʻIkai lava ʻo faʻu ha foʻou ki he polokalamá :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "ʻIkai lava ke fokotuʻu ha fakataha hili e lesisita :("
-
-#: src/ssr/RedirectionPage.jsx:19
-msgid "PixelPlanet.fun Accounts"
-msgstr "Ngaahi ʻAkauni PixelPlanet.fun"
-
-#: src/ssr/RedirectionPage.jsx:29
-msgid "You will be automatically redirected after 15s"
-msgstr "ʻE toe fakafoki fakahangatonu atu koe hili 15s"
-
-#: src/ssr/RedirectionPage.jsx:30
-#, javascript-format
-msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Pe ${ clickHere } ke foki ki pixelplanet"
 
 #: src/core/MailProvider.js:66
 #, fuzzy, javascript-format
