@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-02 13:57+0000\n"
-"Last-Translator: TCr3 <tcreeper.earth@gmail.com>\n"
+"PO-Revision-Date: 2024-04-09 20:01+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/tr/>\n"
 "Language: tr\n"
@@ -582,14 +582,13 @@ msgid "Check out past versions of the canvas."
 msgstr "Tuvalin eskiden nasıl göründüğünü gösterir."
 
 #: src/components/windows/Settings.jsx:156
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "${ canvasName } tuvaline geçildi"
+msgstr "${ canvasName } için Kalem Modu"
 
 #: src/components/windows/Settings.jsx:164
-#, fuzzy
 msgid "What the pencil should draw on the current canvas."
-msgstr "Kalemin ne çizeceği."
+msgstr "Kalem mevcut kanvasta ne çizmeli."
 
 #: src/components/windows/Settings.jsx:168
 msgid "Themes"

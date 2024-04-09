@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-26 10:13+0000\n"
+"PO-Revision-Date: 2024-04-09 20:01+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/et/>\n"
@@ -12,21 +12,19 @@ msgstr ""
 
 #: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
-msgstr ""
+msgstr "Pliiats valib: "
 
 #: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
-#, fuzzy
 msgid "Selected Color"
-msgstr "Vali Fail"
+msgstr "Valitud Värv"
 
 #: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
-#, fuzzy
 msgid "From Template"
-msgstr "Šabloonid"
+msgstr "Šabloonilt"
 
 #: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
 msgid "From History"
-msgstr ""
+msgstr "Ajaloost"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -766,9 +764,11 @@ msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
 
 #: src/components/windows/Help.jsx:91
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
-msgstr "Hoia vasakut ${ bindShift }, et joonistada hiire liigutustega"
+msgstr ""
+"Hoia vasakut ${ bindShift }, et kasutada pliiatsit (joonistada hiire "
+"liigutamisega)"
 
 #: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
@@ -1665,7 +1665,7 @@ msgstr "H"
 #: src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"

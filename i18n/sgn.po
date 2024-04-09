@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-26 10:13+0000\n"
+"PO-Revision-Date: 2024-04-05 21:01+0000\n"
 "Last-Translator: Elie Al Nasr <velir30058@fashlend.com>\n"
 "Language-Team: Sign Languages <https://hosted.weblate.org/projects/"
 "pixelplanet/client/sgn/>\n"
@@ -12,19 +12,19 @@ msgstr ""
 
 #: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
-msgstr ""
+msgstr "👎🤙👇🤘🤞👍 👎🤞🤘👊🖖: "
 
 #: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
 msgid "Selected Color"
-msgstr ""
+msgstr "🖖🤙👍🤙🤘👋🤙🤚 🤘👌👍👌☝️"
 
 #: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
 msgid "From Template"
-msgstr ""
+msgstr "✋☝️👌👆 👋🤙👆👎👍✌️👋🤙"
 
 #: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
 msgid "From History"
-msgstr ""
+msgstr "✋☝️👌👆 🖐🤞🖖👋👌☝️👏"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -284,15 +284,15 @@ msgstr "👋👌👋✌️👍 👌👇👍🤞👇🤙 🙌🖖🤙☝️🖖"
 
 #: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
 msgid "Placed Pixels"
-msgstr ""
+msgstr "👎👍✌️🤘🤙🤚 👎🤞👉🤙👍🖖"
 
 #: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
 msgid "Today"
-msgstr ""
+msgstr "👋👌🤚✌️👏"
 
 #: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
 msgid "Total"
-msgstr ""
+msgstr "👋👌👋✌️👍"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
@@ -597,13 +597,14 @@ msgid "Check out past versions of the canvas."
 msgstr "🤘🖐🤙🤘👊 👌🙌👋 👎✌️🖖👋 🤜🤙☝️🖖🤞👌👇🖖 👌✋ 👋🖐🤙 🤘✌️👇🤜✌️🖖."
 
 #: src/components/windows/Settings.jsx:156
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "🖖👐🤞👋🤘🖐🤙🤚 👋👌 ${ canvasName }"
+msgstr "👎🤙👇🤘🤞👍 👆👌🤚🤙 ✋👌☝️ ${ canvasName } 🤘✌️👇🤜✌️🖖"
 
 #: src/components/windows/Settings.jsx:164
 msgid "What the pencil should draw on the current canvas."
-msgstr ""
+msgstr "👐🖐✌️👋 👋🖐🤙 👎🤙👇🤘🤞👍 🖖🖐👌🙌👍🤚 🤚☝️✌️👐 👌👇 👋🖐🤙 🤘🙌☝️☝️🤙👇👋 "
+"🤘✌️👇🤜✌️🖖."
 
 #: src/components/windows/Settings.jsx:168
 msgid "Themes"
@@ -618,29 +619,32 @@ msgid "Select Language"
 msgstr "🖖🤙👍🤙🤘👋 👍✌️👇🤛🙌✌️🤛🤙"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who like a currently popular meme. Those canvases can "
 "become dull and inactive after a while, at which point there is no reason to "
 "keep them and we may decide to remove them."
 msgstr ""
-"👐🖐🤞👍🤙 👐🤙 👋🤙👇🤚 👋👌 👇👌👋 🤚🤙👍🤙👋🤙 🤘✌️👇🤜✌️🖖🤙🖖, 🖖👌👆🤙 🤘✌️"
-"👇🤜✌️🖖🤙🖖 ✌️☝️🤙 🖖👋✌️☝️👋🤙🤚 ✋👌☝️ ✋🙌👇 👌☝️ ✌️🖖 ✌️ ☝️🤙🤝🙌🤙🖖👋 👈👏 🙌🖖"
-"🤙☝️🖖 👐🖐👌 🤘🙌☝️☝️🤙👇👋👍👏 👍🤞👊🤙 ✌️ 👆🤙👆🤙. 👋🖐👌🖖🤙 🤘✌️👇🤜✌️🖖🤙🖖 🤘"
-"✌️👇 🤛🤙👋 👈👌☝️🤞👇🤛 ✌️✋👋🤙☝️ ✌️ 👐🖐🤞👍🤙 ✌️👇🤚 ✌️✋👋🤙☝️ 👐🤙🤙👊🖖 👌✋ 👇"
-"👌 👆✌️✊👌☝️ 🤘🖐✌️👇🤛🤙 ✌️👇🤚 🤞✋ 👋🖐🤙👏 ☝️🤙✌️👍👍👏 ✌️☝️🤙👇'👋 👐👌☝️👋🖐 👈🤙"
-"🤞👇🤛 👊🤙👎👋 ✌️🤘👋🤞🤜🤙."
+"👐🖐🤞👍🤙 👐🤙 👋🤙👇🤚 👋👌 👇👌👋 🤚🤙👍🤙👋🤙 🤘✌️👇🤜✌️🖖🤙🖖, 🖖👌👆🤙 "
+"🤘✌️👇🤜✌️🖖🤙🖖 ✌️☝️🤙 🖖👋✌️☝️👋🤙🤚 ✋👌☝️ ✋🙌👇 👌☝️ ✌️🖖 ✌️ "
+"☝️🤙🤝🙌🤙🖖👋 👈👏 🙌🖖🤙☝️🖖 👐🖐👌 👍🤞👊🤙 ✌️ 🤘🙌☝️☝️🤙👇👋👍👏 "
+"👎👌👎🙌👍✌️☝️ 👆🤙👆🤙. 👋🖐👌🖖🤙 🤘✌️👇🤜✌️🖖🤙🖖 🤘✌️👇 👈🤙🤘👌👆🤙 "
+"🤚🙌👍👍 ✌️👇🤚 🤞👇✌️🤘👋🤞🤜🤙 ✌️✋👋🤙☝️ ✌️ 👐🖐🤞👍🤙, ✌️👋 👐🖐🤞🤘🖐 "
+"👎👌🤞👇👋 👋🖐🤙☝️🤙 🤞🖖 👇👌 ☝️🤙✌️🖖👌👇 👋👌 👊🤙🤙👎 👋🖐🤙👆 ✌️👇🤚 👐🤙"
+" 👆✌️👏 🤚🤙🤘🤞🤚🤙 👋👌 ☝️🤙👆👌🤜🤙 👋🖐🤙👆."
 
 #: src/components/windows/Archive.jsx:10
 msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
+"🖐🤙☝️🤙 👐🤙 🤘👌👍👍🤙🤘👋 ☝️🤙👆👌🤜🤙🤚 🤘✌️👇🤜✌️🖖🤙🖖 👋👌 "
+"✌️☝️🤘🖐🤞🤜🤙 👋🖐🤙👆 👎☝️👌👎🤙☝️👍👏. 👐🖐🤞🤘🖐 🤞🖖 🤘🙌☝️☝️🤙👇👋👍👏 "
+"👌👇👍👏 👌👇🤙."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
-msgstr ""
+msgstr "👎👌👍🤞👋🤞🤘✌️👍 🤘👌👆👎✌️🖖🖖 🤘✌️👇🤜✌️🖖"
 
 #: src/components/windows/Archive.jsx:21
 msgid ""
@@ -835,7 +839,7 @@ msgstr ""
 #: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
-msgstr ""
+msgstr "${ mouseSymbol } ☝️🤞🤛🖐👋 🤘👍🤞🤘👊 ✌️👇🤚 🤚☝️✌️🤛 👆👌🙌🖖🤙 👋👌 👎✌️👇"
 
 #: src/components/windows/Help.jsx:104
 #, javascript-format
@@ -869,7 +873,6 @@ msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr ""
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
@@ -877,48 +880,47 @@ msgid ""
 "Archived canvases can be accessed here:"
 msgstr ""
 "🖖🤙👍🤙🤘👋 👋🖐🤙 🤘✌️👇🤜✌️🖖 👏👌🙌 👐✌️👇👋 👋👌 🙌🖖🤙.\n"
-" 🤙🤜🤙☝️👏 🤘✌️👇🤜✌️🖖 🤞🖖 🙌👇🤞🤝🙌🤙 ✌️👇🤚 🖐✌️🖖 🤚🤞✋✋🤙☝️🤙👇👋 👎✌️👍🤙"
-"👋👋🤙🖖, 🤘👌👌👍🤚👌👐👇 ✌️👇🤚 ☝️🤙🤝🙌🤞☝️🤙👆🤙👇👋🖖.\n"
-" ✌️☝️🤘🖐🤞🤜🤙 👌✋ ☝️🤙👆👌🤜🤙🤚 🤘✌️👇🤜✌️🖖🤙🖖 🤘✌️👇 👈🤙 ✌️🤘🤘🤙🖖🖖🤙🤚 🖐🤙"
-"☝️🤙:"
+" 🤙🤜🤙☝️👏 🤘✌️👇🤜✌️🖖 🤞🖖 🙌👇🤞🤝🙌🤙 ✌️👇🤚 🖐✌️🖖 🤚🤞✋✋🤙☝️🤙👇👋 "
+"👎✌️👍🤙👋👋🤙🖖, 🤘👌👌👍🤚👌👐👇 ✌️👇🤚 ☝️🤙🤝🙌🤞☝️🤙👆🤙👇👋🖖.\n"
+" ✌️☝️🤘🖐🤞🤜🤙🤚 🤘✌️👇🤜✌️🖖🤙🖖 🤘✌️👇 👈🤙 ✌️🤘🤘🤙🖖🖖🤙🤚 🖐🤙☝️🤙:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
-msgstr ""
+msgstr "✌️☝️🤘🖐🤞🤜🤙"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "☝️🤙👋🤞☝️🤙🤚 🤘✌️👇🤜✌️🖖🤙🖖 (🖐🤞🖖👋👌☝️👏 👌👇👍👏)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
-msgstr ""
+msgstr "☝️🤙🤛🤞🖖👋🤙☝️ 👇🤙👐 ✌️🤘🤘👌🙌👇👋 🖐🤙☝️🤙"
 
 #: src/components/windows/Register.jsx:92
 #: src/components/windows/Register.jsx:98
 msgid "Name"
-msgstr ""
+msgstr "👇✌️👆🤙"
 
 #: src/components/windows/ForgotPassword.jsx:80
 #: src/components/windows/Register.jsx:100
 #: src/components/windows/Register.jsx:106
 msgid "Email"
-msgstr ""
+msgstr "🤙👆✌️🤞👍"
 
 #: src/components/ChangeMail.jsx:80 src/components/DeleteAccount.jsx:62
 #: src/components/LogInForm.jsx:84 src/components/windows/Register.jsx:108
 #: src/components/windows/Register.jsx:114
 msgid "Password"
-msgstr ""
+msgstr "👎✌️🖖🖖👐👌☝️🤚"
 
 #: src/components/windows/Register.jsx:116
 #: src/components/windows/Register.jsx:122
 msgid "Confirm Password"
-msgstr ""
+msgstr "🤘👌👇✋🤞☝️👆 👎✌️🖖🖖👐👌☝️🤚"
 
 #: src/components/windows/Register.jsx:124
 msgid "Captcha"
-msgstr ""
+msgstr "🤘✌️👎👋🤘🖐✌️"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
 #: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
@@ -931,19 +933,19 @@ msgstr "🖖🙌👈👆🤞👋"
 
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
-msgstr ""
+msgstr "🖖👋✌️☝️👋 🤘🖐✌️👋👋🤞👇🤛 🖐🤙☝️🤙"
 
 #: src/components/windows/Chat.jsx:217
 msgid "Chat here"
-msgstr ""
+msgstr "🤘🖐✌️👋 🖐🤙☝️🤙"
 
 #: src/components/windows/Chat.jsx:243
 msgid "You must be logged in to chat"
-msgstr ""
+msgstr "👏👌🙌 👆🙌🖖👋 👈🤙 👍👌🤛🤛🤙🤚 🤞👇 👋👌 🤘🖐✌️👋"
 
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
-msgstr ""
+msgstr "🤘🖐✌️👇👇🤙👍 🖖🤙👋👋🤞👇🤛🖖"
 
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
@@ -972,43 +974,47 @@ msgstr "🤘👌👇🖖🤞🤚🤙☝️ ✊👌🤞👇🤞👇🤛 🙌🖖 
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
-msgstr ""
+msgstr "🤘👌🙌👍🤚 👇👌👋 👍👌✌️🤚 🤘✌️👎👋🤘🖐✌️"
 
 #: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
-msgstr ""
+msgstr "👋👏👎🤙 👋🖐🤙 🤘🖐✌️☝️✌️🤘👋🤙☝️🖖 ✋☝️👌👆 👋🖐🤙 ✋👌👍👍👌👐🤞👇🤛 "
+"🤞👆✌️🤛🤙:"
 
 #: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
-msgstr ""
+msgstr "👋🤞👎: 👇👌👋 🤘✌️🖖🤙-🖖🤙👇🖖🤞👋🤞🤜🤙; 🤞 ✌️👇🤚 👍 ✌️☝️🤙 👋🖐🤙 "
+"🖖✌️👆🤙"
 
 #: src/components/Captcha.jsx:116
 msgid "Load Captcha"
-msgstr ""
+msgstr "👍👌✌️🤚 🤘✌️👎👋🤘🖐✌️"
 
 #: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
-msgstr ""
+msgstr "🤘👍🤞🤘👊 👋👌 👍👌✌️🤚 🤘✌️👎👋🤘🖐✌️"
 
 #: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
-msgstr ""
+msgstr "🤘✌️👇👋 ☝️🤙✌️🤚? ☝️🤙👍👌✌️🤚:"
 
 #: src/components/Captcha.jsx:130
 msgid "Reload"
-msgstr ""
+msgstr "☝️🤙👍👌✌️🤚"
 
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
-msgstr ""
+msgstr "🤙👇👋🤙☝️ 🤘🖐✌️☝️✌️🤘👋🤙☝️🖖"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
-msgstr ""
+msgstr "🖖🤙👇👋 👏👌🙌 ✌️ 👆✌️🤞👍 👐🤞👋🖐 🤞👇🖖👋☝️🙌🤘👋🤞👌👇🖖 👋👌 ☝️🤙🖖🤙👋 "
+"👏👌🙌☝️ 👎✌️🖖🖖👐👌☝️🤚."
 
 #: src/components/windows/ForgotPassword.jsx:69
 msgid "Enter your mail address and we will send you a new password:"
-msgstr ""
+msgstr "🤙👇👋🤙☝️ 👏👌🙌☝️ 👆✌️🤞👍 ✌️🤚🤚☝️🤙🖖🖖 ✌️👇🤚 👐🤙 👐🤞👍👍 🖖🤙👇🤚 "
+"👏👌🙌 ✌️ 👇🤙👐 👎✌️🖖🖖👐👌☝️🤚:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1061,35 +1067,35 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
-msgstr ""
+msgstr "👌👇👍🤞👇🤙 🙌🖖🤙☝️🖖"
 
 #: src/components/CanvasItem.jsx:34
 msgid "Cooldown"
-msgstr ""
+msgstr "🤘👌👌👍🤚👌👐👇"
 
 #: src/components/CanvasItem.jsx:40
 msgid "Stacking till"
-msgstr ""
+msgstr "🖖👋✌️🤘👊🤞👇🤛 👋🤞👍👍"
 
 #: src/components/CanvasItem.jsx:42
 msgid "Ranked"
-msgstr ""
+msgstr "☝️✌️👇👊🤙🤚"
 
 #: src/components/CanvasItem.jsx:44
 msgid "Yes"
-msgstr ""
+msgstr "👏🤙🖖"
 
 #: src/components/CanvasItem.jsx:44
 msgid "No"
-msgstr ""
+msgstr "👇👌"
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
-msgstr ""
+msgstr "☝️🤙🤝🙌🤞☝️🤙👆🤙👇👋🖖"
 
 #: src/components/CanvasItem.jsx:53
 msgid "User Account"
-msgstr ""
+msgstr "🙌🖖🤙☝️ ✌️🤘🤘👌🙌👇👋"
 
 #: src/components/CanvasItem.jsx:55
 #, javascript-format
@@ -1103,43 +1109,43 @@ msgstr ""
 #: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
-msgstr ""
+msgstr "🤚🤞👆🤙👇🖖🤞👌👇🖖"
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
-msgstr ""
+msgstr "🤛🤙👋 🤞🤞🤚"
 
 #: src/components/GetIID.jsx:53
 msgid "Copy"
-msgstr ""
+msgstr "🤘👌👎👏"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
-msgstr ""
+msgstr "👍👌🤛🤞👇 👋👌 ✌️🤘🤘🤙🖖🖖 👆👌☝️🤙 ✋🤙✌️👋🙌☝️🤙🖖 ✌️👇🤚 🖖👋✌️👋🖖."
 
 #: src/components/LogInArea.jsx:21
 msgid "Login with Name or Mail:"
-msgstr ""
+msgstr "👍👌🤛🤞👇 👐🤞👋🖐 👇✌️👆🤙 👌☝️ 👆✌️🤞👍:"
 
 #: src/components/LogInArea.jsx:28
 msgid "I forgot my Password."
-msgstr ""
+msgstr "🤞 ✋👌☝️🤛👌👋 👆👏 👎✌️🖖🖖👐👌☝️🤚."
 
 #: src/components/LogInArea.jsx:29
 msgid "or login with:"
-msgstr ""
+msgstr "👌☝️ 👍👌🤛🤞👇 👐🤞👋🖐:"
 
 #: src/components/LogInArea.jsx:70
 msgid "or register here:"
-msgstr ""
+msgstr "👌☝️ ☝️🤙🤛🤞🖖👋🤙☝️ 🖐🤙☝️🤙:"
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
-msgstr ""
+msgstr "☝️🤙🤛🤞🖖👋🤙☝️"
 
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
-msgstr ""
+msgstr "👋🤙👆👎👍✌️👋🤙🖖"
 
 #: src/components/TemplateSettings.jsx:56
 msgid ""
@@ -1157,94 +1163,95 @@ msgstr ""
 
 #: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
-msgstr ""
+msgstr "🤙👇✌️👈👍🤙 👌🤜🤙☝️👍✌️👏"
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "🖖🖐👌👐 👋🤙👆👎👍✌️👋🤙🖖 ✌️🖖 👌🤜🤙☝️👍✌️👏🖖 🤞👇🤛✌️👆🤙."
 
 #: src/components/TemplateSettings.jsx:68
 msgid "Small Pixels When Zoomed"
-msgstr ""
+msgstr "🖖👆✌️👍👍 👎🤞👉🤙👍🖖 👐🖐🤙👇 🙏👌👌👆🤙🤚"
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
-msgstr ""
+msgstr "🖖🖐👌👐 👌🤜🤙☝️👍✌️👏 ✌️🖖 🖖👆✌️👍👍 🤞👇🤚🤞🤜🤞🤚🙌✌️👍 👎🤞👉🤙👍🖖 👌👇"
+" 🖐🤞🤛🖐 🙏👌👌👆👍🤙🤜🤙👍🖖."
 
 #: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "👌🤜🤙☝️👍✌️👏 👌👎✌️🤘🤞👋👏"
 
 #: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "👌👎✌️🤘🤞👋👏 👌✋ 👌🤜🤙☝️👍✌️👏 🤞👇 👎🤙☝️🤘🤙👇👋."
 
 #: src/components/TemplateSettings.jsx:132
 msgid "Cancel adding Template"
-msgstr ""
+msgstr "🤘✌️👇🤘🤙👍 ✌️🤚🤚🤞👇🤛 👋🤙👆👎👍✌️👋🤙"
 
 #: src/components/TemplateSettings.jsx:139
 msgid "Add Template"
-msgstr ""
+msgstr "✌️🤚🤚 👋🤙👆👎👍✌️👋🤙"
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
-msgstr ""
+msgstr "🤙👉👎👌☝️👋 🤙👇✌️👈👍🤙🤚 👋🤙👆👎👍✌️👋🤙🖖"
 
 #: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
-msgstr ""
+msgstr "🤞👆👎👌☝️👋 👋🤙👆👎👍✌️👋🤙🖖"
 
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
 msgid "Save"
-msgstr ""
+msgstr "🖖✌️🤜🤙"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
-msgstr ""
+msgstr "👋👌🤚✌️👏 👎👍✌️🤘🤙🤚 👎🤞👉🤙👍🖖"
 
 #: src/components/UserAreaContent.jsx:66
 msgid "Daily Rank"
-msgstr ""
+msgstr "🤚✌️🤞👍👏 ☝️✌️👇👊"
 
 #: src/components/UserAreaContent.jsx:75
 msgid "Total Rank"
-msgstr ""
+msgstr "👋👌👋✌️👍 ☝️✌️👇👊"
 
 #: src/components/UserAreaContent.jsx:80
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr ""
+msgstr "👏👌🙌☝️ 👇✌️👆🤙 🤞🖖: ${ name }"
 
 #: src/components/UserAreaContent.jsx:86
 msgid "Log out"
-msgstr ""
+msgstr "👍👌🤛 👌🙌👋"
 
 #: src/components/UserAreaContent.jsx:93
 msgid "Change Username"
-msgstr ""
+msgstr "🤘🖐✌️👇🤛🤙 🙌🖖🤙☝️👇✌️👆🤙"
 
 #: src/components/UserAreaContent.jsx:103
 msgid "Change Mail"
-msgstr ""
+msgstr "🤘🖐✌️👇🤛🤙 👆✌️🤞👍"
 
 #: src/components/UserAreaContent.jsx:112
 msgid "Change Password"
-msgstr ""
+msgstr "🤘🖐✌️👇🤛🤙 👎✌️🖖🖖👐👌☝️🤚"
 
 #: src/components/UserAreaContent.jsx:119
 msgid "Delete Account"
-msgstr ""
+msgstr "🤚🤙👍🤙👋🤙 ✌️🤘🤘👌🙌👇👋"
 
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
-msgstr ""
+msgstr "🖖👌🤘🤞✌️👍 🖖🤙👋👋🤞👇🤛🖖"
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
-msgstr ""
+msgstr "🤘🖐👌👌🖖🤙 🤘✌️👇🤜✌️🖖"
 
 #: src/components/Converter.jsx:218
 msgid "Palette Download"

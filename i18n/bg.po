@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 20:59+0000\n"
-"Last-Translator: \"Д. Савовъ\" <bofondido@gmail.com>\n"
+"PO-Revision-Date: 2024-04-09 20:01+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/bg/>\n"
 "Language: bg\n"
@@ -15,21 +15,19 @@ msgstr ""
 
 #: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
-msgstr ""
+msgstr "Моливът избира: "
 
 #: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
-#, fuzzy
 msgid "Selected Color"
-msgstr "Избиране на файл"
+msgstr "Избран цвят"
 
 #: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
-#, fuzzy
 msgid "From Template"
-msgstr "Шаблони"
+msgstr "От шаблон"
 
 #: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
 msgid "From History"
-msgstr ""
+msgstr "От история"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -587,13 +585,13 @@ msgid "Check out past versions of the canvas."
 msgstr "Покажи предишните версии на платното."
 
 #: src/components/windows/Settings.jsx:156
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Превключен към ${ canvasName }"
+msgstr "Превключен към ${ canvasName } платно"
 
 #: src/components/windows/Settings.jsx:164
 msgid "What the pencil should draw on the current canvas."
-msgstr ""
+msgstr "Какво моливът трябва да рисува на текущото платно."
 
 #: src/components/windows/Settings.jsx:168
 msgid "Themes"
@@ -785,7 +783,7 @@ msgstr ""
 "щипнете, за да увеличите"
 
 #: src/components/windows/Help.jsx:91
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr ""
 "Задръжте ляв ${ bindShift }, за да слагате пиксели докато движите мишката"
@@ -1698,7 +1696,7 @@ msgstr "H"
 #: src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-04 20:02+0000\n"
+"PO-Revision-Date: 2024-04-05 21:01+0000\n"
 "Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/pixelplanet/"
 "client/de/>\n"
@@ -588,7 +588,7 @@ msgstr "Siehe vergangene Versionen der Leinwand."
 #: src/components/windows/Settings.jsx:156
 #, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Pinsel Modus for ${ canvasName } Leinwand"
+msgstr "Pinsel Modus für ${ canvasName } Leinwand"
 
 #: src/components/windows/Settings.jsx:164
 msgid "What the pencil should draw on the current canvas."

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-04 20:02+0000\n"
+"PO-Revision-Date: 2024-04-05 21:01+0000\n"
 "Last-Translator: David <stojanovskidavid74@gmail.com>\n"
 "Language-Team: Macedonian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/mk/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr ""
+msgstr "Твојата држава е мутирана од овој канал"
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
-msgstr ""
+msgstr "Ти си баниран"
 
 #: src/core/ChatProvider.js:443
 msgid "Your Internet Provider is banned"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr ""
+msgstr "Лозинката е успешно сменета."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
@@ -107,7 +107,7 @@ msgstr "Вчитување..."
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
-msgstr ""
+msgstr "ппфун"
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
@@ -123,7 +123,7 @@ msgstr ""
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr ""
+msgstr "Емаил не може да биде празен."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
@@ -197,11 +197,11 @@ msgstr ""
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
-msgstr ""
+msgstr "Нова лозинка"
 
 #: src/ssr/PasswordReset.jsx:60
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Потврди ја новата лозинка"
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
