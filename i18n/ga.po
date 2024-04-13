@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-09 20:01+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"PO-Revision-Date: 2024-04-13 16:57+0000\n"
+"Last-Translator: Jamie Fitzgerald <jamiefitzgerald2010@gmail.com>\n"
 "Language-Team: Irish <https://hosted.weblate.org/projects/pixelplanet/client/"
 "ga/>\n"
 "Language: ga\n"
@@ -512,92 +512,98 @@ msgstr "Taispéant srianta gluaiseacht i gcónaí"
 
 #: src/components/windows/Settings.jsx:90
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Taispéant rialuithe Gluaiseacht cnaipí I gconaí"
 
 #: src/components/windows/Settings.jsx:93
 msgid "Disable Game Sounds"
-msgstr ""
+msgstr "Díchumasaigh Fuaimeanna Cluiche"
 
 #: src/components/windows/Settings.jsx:99
 msgid "All sound effects will be disabled."
-msgstr ""
+msgstr "Cuirfidh faoi mhíchumas na Fuaimeanna Éifeachta uilig."
 
 #: src/components/windows/Settings.jsx:103
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
 msgstr ""
+"Ní ligeann do Brabhsálaí dúinn le baint úsáid as AudioContext le fuaim a "
+"Séanaim. An bhfuil gnéithe príobháideachta agat a bhfuil ag cuur Bloc "
+"orrainn?"
 
 #: src/components/windows/Settings.jsx:109
 msgid "Enable chat notifications"
-msgstr ""
+msgstr "Cuir cumasaigh ar Fógraí Teachtaireachta"
 
 #: src/components/windows/Settings.jsx:113
 msgid "Play a sound when new chat messages arrive"
-msgstr ""
+msgstr "Séanaim fuam nuair a thagann teachtaireacht nua sa comhrá"
 
 #: src/components/windows/Settings.jsx:116
 msgid "Auto Zoom In"
-msgstr ""
+msgstr "Uathsúmáilte isteach"
 
 #: src/components/windows/Settings.jsx:121
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
 msgstr ""
+"zúmáil isteach in ait cuir picteilíní nuair a cliceáileann tú are an cambhas "
+"agus tá do zúm beag"
 
 #: src/components/windows/Settings.jsx:124
 msgid "Compact Palette"
-msgstr ""
+msgstr "Pailéad dlúth"
 
 #: src/components/windows/Settings.jsx:129
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr ""
+"taispeáint pailéad in fhoirm Dlúth a ghlacann níos liú Spás sa scáileán."
 
 #: src/components/windows/Settings.jsx:132
 msgid "Potato Mode"
-msgstr ""
+msgstr "Modh prátaí"
 
 #: src/components/windows/Settings.jsx:136
 msgid "For when you are playing on a potato."
-msgstr ""
+msgstr "Nuair a n-imríonn tú ar phráta."
 
 #: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
 msgid "Light Grid"
-msgstr ""
+msgstr "eangach éadrom"
 
 #: src/components/windows/Settings.jsx:143
 msgid "Show Grid in white instead of black."
-msgstr ""
+msgstr "Taispéant eangach i mbán in áit dhuth."
 
 #: src/components/windows/Settings.jsx:147
 msgid "Historical View"
-msgstr ""
+msgstr "rAmharcanna Stairiúil"
 
 #: src/components/windows/Settings.jsx:152
 msgid "Check out past versions of the canvas."
-msgstr ""
+msgstr "Amharc ar leaganacha stairiúil ón canbhás."
 
 #: src/components/windows/Settings.jsx:156
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "athrú go dtí ${ canvasName }"
+msgstr "Mód peann luaidhe do Canbhás ${ canvasName }"
 
 #: src/components/windows/Settings.jsx:164
 msgid "What the pencil should draw on the current canvas."
-msgstr ""
+msgstr "An rud a caithfidh an peann luaidhe tarraingt ar an Canbhás seo."
 
 #: src/components/windows/Settings.jsx:168
 msgid "Themes"
-msgstr ""
+msgstr "Téamaí"
 
 #: src/components/windows/Settings.jsx:173
 msgid "How pixelplanet should look like."
-msgstr ""
+msgstr "An dóigh a ba Chóir do Pixelplanet a beith mar."
 
 #: src/components/windows/Settings.jsx:180
 msgid "Select Language"
-msgstr ""
+msgstr "Roghnaigh Teanga"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -606,16 +612,21 @@ msgid ""
 "become dull and inactive after a while, at which point there is no reason to "
 "keep them and we may decide to remove them."
 msgstr ""
+"cé go mbíonn claonadh againn gan canbhásanna a scriosadh, cuirtear tús le "
+"roinnt canbhás le haghaidh spraoi nó de réir mar a iarrann úsáideoirí ar "
+"mhaith leo meime  coitianta. Bíonn na canbhás sin maol agus neamhghníomhach "
+"I ndiaidh tamaill beag, ag an pointe sin níl fáth leis iad a cineál, agus "
+"roghnaíonn muid le cuir scrios orthu."
 
 #: src/components/windows/Archive.jsx:10
 msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
-msgstr ""
+msgstr "Anseo bhailiúmid na canbhás scriosta. Nach bhfuil ach ceann amháin."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
-msgstr ""
+msgstr "Canbhás Compás Polaitiúil"
 
 #: src/components/windows/Archive.jsx:21
 msgid ""
