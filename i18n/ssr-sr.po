@@ -229,6 +229,42 @@ msgstr "Nemate pristup da vidite ovu stranicu"
 msgid "Just admins can do that"
 msgstr "Samo admini mogu to da rade"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Ovaj e-mail provajder nije dostupan"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Verifikacija nije data"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "E-mail je već u koristi."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Ime je već u koristi."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Trebalo ti je previše vremena,probaj opet."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Neuspela verifikacija"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Nepoznata verifikacijska greška"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Nije se mogao napraviti nov nalog :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Nije se uspelo da se napravi sednica posle registrovanja :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Verifikacija mail-a"
@@ -269,10 +305,6 @@ msgstr "Neispravna lozinka!"
 msgid "Muted Users can not delete their account."
 msgstr "Utišani korisnici ne mogu da obrišu svoj nalog."
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Ovaj e-mail provajder nije dostupan"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr "Utišani korisnici ne mogu uraditi to."
@@ -289,38 +321,6 @@ msgstr "Bićete automatično vraćeni posle 15 sekundi"
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Ili ${ clickHere } da bi ste se vratili na pixelplanet"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Verifikacija nije data"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "E-mail je već u koristi."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Ime je već u koristi."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Trebalo ti je previše vremena,probaj opet."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Neuspela verifikacija"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Nepoznata verifikacijska greška"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Nije se mogao napraviti nov nalog :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Nije se uspelo da se napravi sednica posle registrovanja :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

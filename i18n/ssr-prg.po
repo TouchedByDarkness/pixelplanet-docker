@@ -226,6 +226,42 @@ msgstr "jūs assei ni preiwērpt prēi preiēisenis šis pāusan"
 msgid "Just admins can do that"
 msgstr "Ka tēr Deiwāi mazzi segēi stas"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "šis pōstikastens ni ast preiwērpja"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Ni Captcha dāwusi"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Pōstikastens jāu tērpau."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "emmens jāu tērpau."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "jūs izlaīdja pēr tūlan kērdā, bānda etkūmps."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "jūs praspīli twajs captcha"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Niwaīsts Captcha Error"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "praspīli kurtun nāuns tērpautajs :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "praspīli gruntintun sīndausnā pa registrijja"
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "pōstikastens izbānda"
@@ -265,10 +301,6 @@ msgstr "blāndewingis kliptaswīrds!"
 msgid "Muted Users can not delete their account."
 msgstr "Dussaws tērpautajai ni izklìptina audrazza kōnts."
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "šis pōstikastens ni ast preiwērpja"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr "Dussaws tērpautajai ni izklìptina segēi šis."
@@ -285,38 +317,6 @@ msgstr "jūs ast ēisei assei autōmatiska pabanginna pa 15s"
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "adder ${ clickHere } skassa pixelplanet"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Ni Captcha dāwusi"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Pōstikastens jāu tērpau."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "emmens jāu tērpau."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "jūs izlaīdja pēr tūlan kērdā, bānda etkūmps."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "jūs praspīli twajs captcha"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Niwaīsts Captcha Error"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "praspīli kurtun nāuns tērpautajs :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "praspīli gruntintun sīndausnā pa registrijja"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

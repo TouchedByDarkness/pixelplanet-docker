@@ -232,6 +232,42 @@ msgstr "თქვენ არ გაქვთ უფლება შეხვ�
 msgid "Just admins can do that"
 msgstr "ამის გაკეთება მხოლოდ ადმინებს შეუძლიათ"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "ელფოსტის ეს პროვაიდერი დაუშვებელია"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "კაპჩა არ არის მოცემული"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Ელექტრონული ფოსტა უკვე გამოყენებულია."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Მომხმარებლის სახელი უკვე გამოიყენება."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "ძალიან დიდი დრო დაგჭირდათ, ისევ სცადეთ."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "თქვენ ვერ მოახერხეთ თქვენი კაპტჩა"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "უცნობი კაპჩტას შეცდომა"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "ახალი მომხმარებლის შექმნა ვერ მოხერხდა :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "რეგისტრაციის შემდეგ სესიის დამყარება ვერ მოხერხდა :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "ფოსტის გადამოწმება"
@@ -273,10 +309,6 @@ msgstr "Არასწორი პაროლი!"
 msgid "Muted Users can not delete their account."
 msgstr "დამიუთებულ მომხმარებლებს არ შეუძლიათ აქაუნთის წაშლა."
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "ელფოსტის ეს პროვაიდერი დაუშვებელია"
-
 #: src/routes/api/auth/change_mail.js:62
 #, fuzzy
 msgid "Muted Users can not do this."
@@ -294,38 +326,6 @@ msgstr "თქვენ ავტომატურად გადამის�
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "ან ${ clickHere } pixelplanet-ზე დასაბრუნებლად"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "კაპჩა არ არის მოცემული"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Ელექტრონული ფოსტა უკვე გამოყენებულია."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Მომხმარებლის სახელი უკვე გამოიყენება."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "ძალიან დიდი დრო დაგჭირდათ, ისევ სცადეთ."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "თქვენ ვერ მოახერხეთ თქვენი კაპტჩა"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "უცნობი კაპჩტას შეცდომა"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "ახალი მომხმარებლის შექმნა ვერ მოხერხდა :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "რეგისტრაციის შემდეგ სესიის დამყარება ვერ მოხერხდა :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

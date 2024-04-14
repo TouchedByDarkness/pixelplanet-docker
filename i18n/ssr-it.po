@@ -230,6 +230,42 @@ msgstr "Non hai il permasso di accedere a questa pagina"
 msgid "Just admins can do that"
 msgstr "Solo gli admin possono farlo"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Il tuo email provider non è permesso, 1984"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Nessun captcha dato"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Email già in uso"
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Username già in uso"
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Ci hai messo troppo, riprova"
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Hai sbagliato il captcha"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Errore del captcha sconosciuto"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Fallimento nel creare un nuovo user"
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Fallimento nel ristabilire una sessione dopo la registraione"
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Verificazione mail"
@@ -270,10 +306,6 @@ msgstr "Password incorretta"
 msgid "Muted Users can not delete their account."
 msgstr "Un account mutato non puo essere eliminato"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Il tuo email provider non è permesso, 1984"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr "una persona mutata non puo fare quello che stai facendo, smettila!"
@@ -290,38 +322,6 @@ msgstr "Sarai rediretto automaticamente dopo 15s"
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "o ${ clickHere } per tornare su pixelplanet"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Nessun captcha dato"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Email già in uso"
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Username già in uso"
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Ci hai messo troppo, riprova"
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Hai sbagliato il captcha"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Errore del captcha sconosciuto"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Fallimento nel creare un nuovo user"
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Fallimento nel ristabilire una sessione dopo la registraione"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

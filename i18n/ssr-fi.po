@@ -229,6 +229,42 @@ msgstr "Sinulla ei ole lupaa käyttää tätä sivua"
 msgid "Just admins can do that"
 msgstr "Vain järjestelmänvalvojat voivat tehdä noin"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Tämä sähköpostipalveluntarjoaja ei ole sallittu"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Ei captcha annettu"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Sähköposti on jo käytössä"
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Käyttäjänimi on jo käytössä."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Sinulla kesti liian kauan, kokeile uudestaan."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Sinä epäonnistuit captchassasi"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Tuntematon Captcha Virhe"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Käyttäjän luonti epäonnistunut:("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Istunnon perustaminen epäonnistui rekisteröinnin jälkeen :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Sähköpostin vahvistaminen"
@@ -269,10 +305,6 @@ msgstr ""
 msgid "Muted Users can not delete their account."
 msgstr ""
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Tämä sähköpostipalveluntarjoaja ei ole sallittu"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr ""
@@ -289,38 +321,6 @@ msgstr ""
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr ""
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Ei captcha annettu"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Sähköposti on jo käytössä"
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Käyttäjänimi on jo käytössä."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Sinulla kesti liian kauan, kokeile uudestaan."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Sinä epäonnistuit captchassasi"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Tuntematon Captcha Virhe"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Käyttäjän luonti epäonnistunut:("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Istunnon perustaminen epäonnistui rekisteröinnin jälkeen :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

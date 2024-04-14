@@ -12,24 +12,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: src/store/actions/thunks.js:227
-msgid "Pencil picks: "
-msgstr ""
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
-#, fuzzy
-msgid "Selected Color"
-msgstr "Selektu Lingvon"
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
-#, fuzzy
-msgid "From Template"
-msgstr "Elŝultu Modelon"
-
-#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
-msgid "From History"
-msgstr ""
-
 #: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
@@ -194,12 +176,30 @@ msgstr "Ne povis meti pikselon"
 msgid "Error ${ retCode }"
 msgstr "Eraro ${ retCode }"
 
-#: src/ui/rendererFactory.js:31
+#: src/store/actions/thunks.js:227
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
+#, fuzzy
+msgid "Selected Color"
+msgstr "Selektu Lingvon"
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
+#, fuzzy
+msgid "From Template"
+msgstr "Elŝultu Modelon"
+
+#: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
+msgid "From History"
+msgstr ""
+
+#: src/ui/rendererFactory.js:32
 #, fuzzy
 msgid "Canvas Error"
 msgstr "Kanvasarkivo"
 
-#: src/ui/rendererFactory.js:32
+#: src/ui/rendererFactory.js:33
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr ""
 
@@ -369,6 +369,10 @@ msgstr "Uzantareo"
 msgid "Make Screenshot"
 msgstr "Faru Ekrankopio"
 
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Globa Vidaĵ'"
+
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Fermi je L' Kolorar'"
@@ -393,10 +397,6 @@ msgstr ""
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr ""
-
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Globa Vidaĵ'"
 
 #: src/components/windows/index.js:16
 #, fuzzy
@@ -497,164 +497,6 @@ msgstr "Nuligu"
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
 msgstr ""
-
-#: src/components/windows/Settings.jsx:69
-msgid "Show Grid"
-msgstr "Montri je Krad'"
-
-#: src/components/windows/Settings.jsx:74
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Ŝalti kradon emfazi pikselbarojn."
-
-#: src/components/windows/Settings.jsx:77
-msgid "Show Pixel Activity"
-msgstr "Montri je Piksela Aktivec'"
-
-#: src/components/windows/Settings.jsx:82
-msgid "Show circles where pixels are placed."
-msgstr "Montri cirklojn tie ke pikselojn estas metitajn."
-
-#: src/components/windows/Settings.jsx:85
-msgid "Always show Movement Controls"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:90
-msgid "Always show movement control buttons"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:93
-msgid "Disable Game Sounds"
-msgstr "Malŝalti je Ludsonar'"
-
-#: src/components/windows/Settings.jsx:99
-msgid "All sound effects will be disabled."
-msgstr "Ĉiuj sonoj estos malŝaltitaj."
-
-#: src/components/windows/Settings.jsx:103
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:109
-msgid "Enable chat notifications"
-msgstr "Ŝaltiti je babila avizar'"
-
-#: src/components/windows/Settings.jsx:113
-msgid "Play a sound when new chat messages arrive"
-msgstr "Meti sonon kiam novan babilan mensaĝon alvenas"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Auto Zoom In"
-msgstr "Aŭto Zomi"
-
-#: src/components/windows/Settings.jsx:121
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Zomu anstataŭe meti pikselon kiam vi frapetas l' kanvason kaj vian zomo etas."
-
-#: src/components/windows/Settings.jsx:124
-msgid "Compact Palette"
-msgstr "Kompakta Kolorar'"
-
-#: src/components/windows/Settings.jsx:129
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Montru Kolorar' je kompakta form' kiu ekranuzas malpli."
-
-#: src/components/windows/Settings.jsx:132
-msgid "Potato Mode"
-msgstr "Malmultekosta Computilaĉo Modo"
-
-#: src/components/windows/Settings.jsx:136
-msgid "For when you are playing on a potato."
-msgstr "Kiam vi ludas je aĉa avina legoma computil'."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
-msgid "Light Grid"
-msgstr "Hela Krad'"
-
-#: src/components/windows/Settings.jsx:143
-msgid "Show Grid in white instead of black."
-msgstr "Montru Krad' je blanka anstataŭ negra."
-
-#: src/components/windows/Settings.jsx:147
-msgid "Historical View"
-msgstr "Historia Vidaĵ'"
-
-#: src/components/windows/Settings.jsx:152
-msgid "Check out past versions of the canvas."
-msgstr "Vidu estintecajn versiojn de l' kanvas'."
-
-#: src/components/windows/Settings.jsx:156
-#, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:164
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:168
-msgid "Themes"
-msgstr "Temar'"
-
-#: src/components/windows/Settings.jsx:173
-msgid "How pixelplanet should look like."
-msgstr "Kiel pixelplanet devus verŝajni."
-
-#: src/components/windows/Settings.jsx:180
-msgid "Select Language"
-msgstr "Selektu Lingvon"
-
-#: src/components/windows/Archive.jsx:9
-#, fuzzy
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"Kvankam ni inklinus ne nuligi je kanvasar', kelkajn kanvasojn estas "
-"komencigitaj por amuzigi aŭ por pet' de uzantoj kiun momente ŝatas ion ajn "
-"memeon. Tiuj kanvasoj povus tedi kelkatempe kaj post semanoj de ne grandaj "
-"ŝanĝaĵoj, kaj se tiuj vere ne  estas aktiva, ni decidas nuligi tiujn."
-
-#: src/components/windows/Archive.jsx:10
-#, fuzzy
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"Ĉi tie ni kolektas tiun kanvasojn arkivi ilin je konvena manier' (kiu estas "
-"unuope, momente)."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "Politikompasa Kanvas'"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"Ĉi tiu kanvas' estis petita dum temp' de politikajn konfliktojn je la "
-"mondkanvas'. Ĝi estis 1024x1024 reprezentadon de la politikompason kun 5s "
-"malvarmiĝon kaj 60s bufron. Ĝi estis lanĉita je 11-a de Maio kaj daŭris "
-"aktivece je monatoj ĝis ĝi estis mallanĉita je 11-a de Novembro."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"Ni decidis arkivi ĝi je rapidtempfilmet' kun senperda webm. Ekrankopi' de l' "
-"rapidtempfilmet' rezultas je perfektan 1:1 reprezentad' da kanvason je tiu "
-"temp'."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -852,25 +694,123 @@ msgstr "Kredito por l' Kolorar' de l' lun'  ĉeestas kun ${ vinikLink }"
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Kredito por l' Kolorar' de l' lun'  ĉeestas kun ${ donendoLink }"
 
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "Montri je Krad'"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Ŝalti kradon emfazi pikselbarojn."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Montri je Piksela Aktivec'"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "Montri cirklojn tie ke pikselojn estas metitajn."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "Malŝalti je Ludsonar'"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "Ĉiuj sonoj estos malŝaltitaj."
+
+#: src/components/windows/Settings.jsx:106
 msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
 msgstr ""
-"Selekti la kanvason kiu uzos. Ĉiu kanvas' estas  unika kaj havas malsamajn "
-"palestrojn, malvarmiĝon, kaj postulojn. Arkivon de fermitaj kanvasoj alirus "
-"jen:"
 
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arkiv'"
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "Ŝaltiti je babila avizar'"
 
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "Meti sonon kiam novan babilan mensaĝon alvenas"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "Aŭto Zomi"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
 msgstr ""
+"Zomu anstataŭe meti pikselon kiam vi frapetas l' kanvason kaj vian zomo etas."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "Kompakta Kolorar'"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Montru Kolorar' je kompakta form' kiu ekranuzas malpli."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Malmultekosta Computilaĉo Modo"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "Kiam vi ludas je aĉa avina legoma computil'."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "Hela Krad'"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "Montru Krad' je blanka anstataŭ negra."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Historia Vidaĵ'"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "Vidu estintecajn versiojn de l' kanvas'."
+
+#: src/components/windows/Settings.jsx:166
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Temar'"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "Kiel pixelplanet devus verŝajni."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Selektu Lingvon"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -911,22 +851,6 @@ msgstr ""
 msgid "Submit"
 msgstr "Sendu"
 
-#: src/components/windows/Chat.jsx:180
-msgid "Start chatting here"
-msgstr "Komencu babili ĉi tie"
-
-#: src/components/windows/Chat.jsx:217
-msgid "Chat here"
-msgstr "Babilu jen"
-
-#: src/components/windows/Chat.jsx:243
-msgid "You must be logged in to chat"
-msgstr "Devas esti ensalutita por babili"
-
-#: src/components/windows/Chat.jsx:273
-msgid "Channel settings"
-msgstr "Kanal' agordoj"
-
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -951,6 +875,99 @@ msgstr "Ŝarĝadanta..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Konsideru kunigi kun ni je Guilded:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Selekti la kanvason kiu uzos. Ĉiu kanvas' estas  unika kaj havas malsamajn "
+"palestrojn, malvarmiĝon, kaj postulojn. Arkivon de fermitaj kanvasoj alirus "
+"jen:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arkiv'"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
+
+#: src/components/windows/Archive.jsx:9
+#, fuzzy
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Kvankam ni inklinus ne nuligi je kanvasar', kelkajn kanvasojn estas "
+"komencigitaj por amuzigi aŭ por pet' de uzantoj kiun momente ŝatas ion ajn "
+"memeon. Tiuj kanvasoj povus tedi kelkatempe kaj post semanoj de ne grandaj "
+"ŝanĝaĵoj, kaj se tiuj vere ne  estas aktiva, ni decidas nuligi tiujn."
+
+#: src/components/windows/Archive.jsx:10
+#, fuzzy
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Ĉi tie ni kolektas tiun kanvasojn arkivi ilin je konvena manier' (kiu estas "
+"unuope, momente)."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "Politikompasa Kanvas'"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Ĉi tiu kanvas' estis petita dum temp' de politikajn konfliktojn je la "
+"mondkanvas'. Ĝi estis 1024x1024 reprezentadon de la politikompason kun 5s "
+"malvarmiĝon kaj 60s bufron. Ĝi estis lanĉita je 11-a de Maio kaj daŭris "
+"aktivece je monatoj ĝis ĝi estis mallanĉita je 11-a de Novembro."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Ni decidis arkivi ĝi je rapidtempfilmet' kun senperda webm. Ekrankopi' de l' "
+"rapidtempfilmet' rezultas je perfektan 1:1 reprezentad' da kanvason je tiu "
+"temp'."
+
+#: src/components/windows/Chat.jsx:180
+msgid "Start chatting here"
+msgstr "Komencu babili ĉi tie"
+
+#: src/components/windows/Chat.jsx:217
+msgid "Chat here"
+msgstr "Babilu jen"
+
+#: src/components/windows/Chat.jsx:243
+msgid "You must be logged in to chat"
+msgstr "Devas esti ensalutita por babili"
+
+#: src/components/windows/Chat.jsx:273
+msgid "Channel settings"
+msgstr "Kanal' agordoj"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr ""
+"Sendita estas retpostmensaĝo kun instrukcioj, kiel renovigi vian pasvorton."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Enskribi vian retmesaĝadreson  kaj ni sendos vi novan pasvorton:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -983,15 +1000,6 @@ msgstr ""
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr ""
-
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr ""
-"Sendita estas retpostmensaĝo kun instrukcioj, kiel renovigi vian pasvorton."
-
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr "Enskribi vian retmesaĝadreson  kaj ni sendos vi novan pasvorton:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1042,54 +1050,6 @@ msgstr "Pasvorton devus enhavi almenaŭ 6 karakterojn."
 msgid "Password must be shorter than 60 characters."
 msgstr "Pasvorton devus esti pli mallonga ol 60 karakterojn."
 
-#: src/components/CanvasItem.jsx:29
-#, fuzzy
-msgid "Online Users"
-msgstr "Malblokigu Uzantojn"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "Malvarmiĝ'"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "Bufadinda ĝis"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "Rangita"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr ""
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr ""
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "Postular'"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "Uzantkont'"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "kaj ${ canvas.req } Pikselojn metitajn"
-
-#: src/components/CanvasItem.jsx:58
-#, fuzzy
-msgid "Top 10 Daily Ranking"
-msgstr "Hodiaŭa Rang'"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "Dimensioj"
-
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr ""
@@ -1097,6 +1057,12 @@ msgstr ""
 #: src/components/GetIID.jsx:53
 msgid "Copy"
 msgstr ""
+
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Ŝparu"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1177,12 +1143,6 @@ msgstr ""
 msgid "Import templates"
 msgstr ""
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "Ŝparu"
-
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
 msgstr "Hodiaŭa Metitaj Pikseloj"
@@ -1223,6 +1183,32 @@ msgstr "Nuligu Konton"
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
 msgstr "Komunikaĵaj Agordoj"
+
+#: src/components/Rankings.jsx:165
+msgid "Yesterday"
+msgstr ""
+
+#: src/components/Rankings.jsx:174
+msgid "Countries Today"
+msgstr ""
+
+#: src/components/Rankings.jsx:183
+msgid "Charts"
+msgstr ""
+
+#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
+#: src/components/Rankings.jsx:219
+#, fuzzy
+msgid "User"
+msgstr "Uzantareo"
+
+#: src/components/Rankings.jsx:226
+msgid "Country"
+msgstr ""
+
+#: src/components/Rankings.jsx:286
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr "Rangigas ĉiu 5 minutoj. Hodiaŭa rangojn nuligas je meznokto UTC."
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
@@ -1301,72 +1287,53 @@ msgstr "Renuligu"
 msgid "Download Template"
 msgstr "Elŝultu Modelon"
 
-#: src/components/Rankings.jsx:165
-msgid "Yesterday"
-msgstr ""
-
-#: src/components/Rankings.jsx:174
-msgid "Countries Today"
-msgstr ""
-
-#: src/components/Rankings.jsx:183
-msgid "Charts"
-msgstr ""
-
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
+#: src/components/CanvasItem.jsx:29
 #, fuzzy
-msgid "User"
-msgstr "Uzantareo"
+msgid "Online Users"
+msgstr "Malblokigu Uzantojn"
 
-#: src/components/Rankings.jsx:226
-msgid "Country"
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "Malvarmiĝ'"
+
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "Bufadinda ĝis"
+
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "Rangita"
+
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
 msgstr ""
 
-#: src/components/Rankings.jsx:286
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr "Rangigas ĉiu 5 minutoj. Hodiaŭa rangojn nuligas je meznokto UTC."
-
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-#, fuzzy
-msgid "Canvas"
-msgstr "Elektu Kanvason"
-
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
-msgid "Coordinates"
-msgstr "Koordinatoj Nevalidaj"
-
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
+#: src/components/CanvasItem.jsx:44
+msgid "No"
 msgstr ""
 
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "Postular'"
 
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Nom' aŭ Retpostadres'"
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "Uzantkont'"
 
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "EnSalUtu"
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "kaj ${ canvas.req } Pikselojn metitajn"
 
-#: src/components/TemplateItemEdit.jsx:97
+#: src/components/CanvasItem.jsx:58
 #, fuzzy
-msgid "Select File"
-msgstr "Selektu Lingvon"
+msgid "Top 10 Daily Ranking"
+msgstr "Hodiaŭa Rang'"
 
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr ""
-
-#: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
-msgid "Delete"
-msgstr "Nuligu Konton"
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "Dimensioj"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1390,6 +1357,47 @@ msgstr ""
 msgid "Total Pixels placed per day"
 msgstr "Pikseloj metitaj"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Nom' aŭ Retpostadres'"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "EnSalUtu"
+
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+#, fuzzy
+msgid "Canvas"
+msgstr "Elektu Kanvason"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+#, fuzzy
+msgid "Coordinates"
+msgstr "Koordinatoj Nevalidaj"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "Selektu Lingvon"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:174
+#, fuzzy
+msgid "Delete"
+msgstr "Nuligu Konton"
+
 #: src/components/UserMessages.jsx:28
 #, fuzzy
 msgid ""
@@ -1407,73 +1415,72 @@ msgstr "Novan verigan retpostmensaĝon estas sendita."
 msgid "Click here to request a new verification mail."
 msgstr "Klaku jen peti novan verigan retpostmensaĝon."
 
-#: src/components/ModWatchtools.jsx:48
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "Pasvortoj ne parigas."
+
+#: src/components/ChangePassword.jsx:44
 #, fuzzy
-msgid "Interval is invalid"
-msgstr "Nevalida Kanvas'"
+msgid "Password successfully changed."
+msgstr "Ŝanĝis Pasvorton malerare."
 
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr ""
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "Malnova Pasvort'"
 
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr ""
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "Nova Pasvort'"
 
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr ""
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Verigu Novan Pasvorton"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr ""
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "Nova Uzantnom'"
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:249
+#: src/components/ChangeMail.jsx:59
 #, fuzzy
-msgid "Get Pixels"
-msgstr "Metitaj Pikseloj"
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"Ŝanĝis Retpostadreson malerare. Ni sendis vin verigaĵa mensaĝon,\tbonvolu "
+"verigi vian novan retpostadreson."
 
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "Nova Retpostmensaĝ'"
+
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "Jes, Nuligu Mian Konton!"
+
+#: src/components/SocialSettings.jsx:35
+#, fuzzy
+msgid "Block DMs"
+msgstr "Bloku"
+
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "Bloku ĉiuj privatan mensaĝaĉon"
+
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
 msgstr ""
 
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "IP Aktoj"
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr ""
 
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "Faru iom kun IPs (un IP po linion)"
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "Malblokigu Uzantojn"
 
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "Mastrumu Moderigistojn"
-
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "Alĵetu je Moderigist'"
-
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "Ne estas moderigistoj"
-
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "Faru novan moderigiston"
-
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "Entajpu UzantNomon de la nova Moderigist'"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "Uzantnom'"
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "Ne havas vi uzantojn blokatajn"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1544,6 +1551,16 @@ msgstr ""
 "Protektu areojn\t(se necesas pli fajna kontrolo,\tuzu protekton kun la bilda "
 "alŝultilon kaj alfa tavolon)"
 
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr ""
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr ""
+
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Malmetu je l' Dat'"
@@ -1563,6 +1580,64 @@ msgstr ""
 
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
+msgstr ""
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "IP Aktoj"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "Faru iom kun IPs (un IP po linion)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "Mastrumu Moderigistojn"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "Alĵetu je Moderigist'"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "Ne estas moderigistoj"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "Faru novan moderigiston"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "Entajpu UzantNomon de la nova Moderigist'"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "Uzantnom'"
+
+#: src/components/ModWatchtools.jsx:48
+#, fuzzy
+msgid "Interval is invalid"
+msgstr "Nevalida Kanvas'"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:249
+#, fuzzy
+msgid "Get Pixels"
+msgstr "Metitaj Pikseloj"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
 msgstr ""
 
 #: src/components/ModIIDtools.jsx:20
@@ -1586,73 +1661,6 @@ msgstr ""
 msgid "(0 = infinite)"
 msgstr ""
 
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "Nova Uzantnom'"
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "Pasvortoj ne parigas."
-
-#: src/components/ChangePassword.jsx:44
-#, fuzzy
-msgid "Password successfully changed."
-msgstr "Ŝanĝis Pasvorton malerare."
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "Malnova Pasvort'"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "Nova Pasvort'"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Verigu Novan Pasvorton"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "Jes, Nuligu Mian Konton!"
-
-#: src/components/ChangeMail.jsx:59
-#, fuzzy
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"Ŝanĝis Retpostadreson malerare. Ni sendis vin verigaĵa mensaĝon,\tbonvolu "
-"verigi vian novan retpostadreson."
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "Nova Retpostmensaĝ'"
-
-#: src/components/SocialSettings.jsx:35
-#, fuzzy
-msgid "Block DMs"
-msgstr "Bloku"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "Bloku ĉiuj privatan mensaĝaĉon"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "Malblokigu Uzantojn"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "Ne havas vi uzantojn blokatajn"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Eĥosondu"
@@ -1669,35 +1677,20 @@ msgstr "Bloku"
 msgid "Mute"
 msgstr "Silentu"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:81
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Settings.jsx:86
-msgctxt "keybinds"
-msgid "N"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:94
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
-
-#: src/components/windows/Settings.jsx:159
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1738,6 +1731,21 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
+
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

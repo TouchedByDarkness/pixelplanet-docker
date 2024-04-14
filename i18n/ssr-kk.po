@@ -231,6 +231,42 @@ msgstr "Бұл бетті көруге рұқсатыңыз жоқ"
 msgid "Just admins can do that"
 msgstr "Мына әрекетті әкімшілер ғана жасай алады"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Осы эл. пошта сервисіне тыйым салынған"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Captcha берілмеген"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Бұл эл. поштаны біреу алып қойған."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Бұл қолданушы атын біреу алып қойған."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Тым көп уақыт өтті, қайта байқап көріңіз."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Captcha-ны шешпедіңіз"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Белгісіз Captcha қатесі"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Жаңа тіркелгі жасау мүмкін емес :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Тіркелуден кейінгі сессияны орнату мүмкін емес :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Эл. пошта растау"
@@ -271,10 +307,6 @@ msgstr "Құпиясөз дұрыс емес!"
 msgid "Muted Users can not delete their account."
 msgstr ""
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Осы эл. пошта сервисіне тыйым салынған"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr ""
@@ -291,38 +323,6 @@ msgstr "15 секундтан кейін сізді автоматты түрд�
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Немесе pixelplanet-ке оралу үшін ${ clickHere }"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Captcha берілмеген"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Бұл эл. поштаны біреу алып қойған."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Бұл қолданушы атын біреу алып қойған."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Тым көп уақыт өтті, қайта байқап көріңіз."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Captcha-ны шешпедіңіз"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Белгісіз Captcha қатесі"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Жаңа тіркелгі жасау мүмкін емес :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Тіркелуден кейінгі сессияны орнату мүмкін емес :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

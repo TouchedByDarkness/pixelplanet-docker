@@ -228,6 +228,42 @@ msgstr "Ձեզ չի թույլատրվում մուտք գործել այս էջ
 msgid "Just admins can do that"
 msgstr "Միայն ադմինները կարող են դա անել"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Այս էլփոստի մատակարարը չի թույլատրվում"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Captcha չի տրվել"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Այս փոստը արդեն օգտագործվում է."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Այս անունը արդեն զբաղված է."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Շատ երկար էր, նորից փորձեք:"
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Դուք ձեր captcha-ն ձախողեցիք"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Captcha-ի Անհայտ Սխալ"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Չհաջողվեց ստեղծել նոր օգտվող :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Գրանցվելուց հետո չհաջողվեց ստեղծել նստաշրջան :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Փոստի ստուգում"
@@ -268,10 +304,6 @@ msgstr "Սխալ գաղտնաբառ!"
 msgid "Muted Users can not delete their account."
 msgstr "Լռեցված օգտատերերը չեն կարող ջնջել իրենց հաշիվը:"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Այս էլփոստի մատակարարը չի թույլատրվում"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr "Լռեցված օգտատերերը չեն կարող դա անել:"
@@ -288,38 +320,6 @@ msgstr "15 վրկ հետո դուք ավտոմատ կերպով կուղղորդ
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Կամ ${clickHere} ՝ pixelplanet վերադառնալու համար"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Captcha չի տրվել"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Այս փոստը արդեն օգտագործվում է."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Այս անունը արդեն զբաղված է."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Շատ երկար էր, նորից փորձեք:"
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Դուք ձեր captcha-ն ձախողեցիք"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Captcha-ի Անհայտ Սխալ"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Չհաջողվեց ստեղծել նոր օգտվող :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Գրանցվելուց հետո չհաջողվեց ստեղծել նստաշրջան :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

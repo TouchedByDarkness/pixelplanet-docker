@@ -13,24 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/store/actions/thunks.js:227
-msgid "Pencil picks: "
-msgstr ""
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
-#, fuzzy
-msgid "Selected Color"
-msgstr "Vybrat Soubor"
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
-#, fuzzy
-msgid "From Template"
-msgstr "Šablony"
-
-#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
-msgid "From History"
-msgstr ""
-
 #: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
@@ -193,11 +175,29 @@ msgstr "Nemohl se položit pixel"
 msgid "Error ${ retCode }"
 msgstr "Chyba ${ retCode }"
 
-#: src/ui/rendererFactory.js:31
+#: src/store/actions/thunks.js:227
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
+#, fuzzy
+msgid "Selected Color"
+msgstr "Vybrat Soubor"
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
+#, fuzzy
+msgid "From Template"
+msgstr "Šablony"
+
+#: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
+msgid "From History"
+msgstr ""
+
+#: src/ui/rendererFactory.js:32
 msgid "Canvas Error"
 msgstr "Chyba plátna"
 
-#: src/ui/rendererFactory.js:32
+#: src/ui/rendererFactory.js:33
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "Nedokázali jsme vyrenderovat 3D plátno, máte vyplý WebGL2?"
 
@@ -364,6 +364,10 @@ msgstr "Uživatelská Oblast"
 msgid "Make Screenshot"
 msgstr "Udělat Snímek"
 
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Pohled na planetu"
+
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Zavřít Paletu"
@@ -387,10 +391,6 @@ msgstr "Vypnout Historickou Tužku"
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Vypnout Overlay Tužku"
-
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Pohled na planetu"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -488,165 +488,6 @@ msgstr "Zrušit"
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
 msgstr "Poslat"
-
-#: src/components/windows/Settings.jsx:69
-msgid "Show Grid"
-msgstr "Ukázat Mřížku"
-
-#: src/components/windows/Settings.jsx:74
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Zapněte mřížky aby jste mohli zvýraznit hranice pixelu."
-
-#: src/components/windows/Settings.jsx:77
-msgid "Show Pixel Activity"
-msgstr "Ukázat Aktivitu Pixelu"
-
-#: src/components/windows/Settings.jsx:82
-msgid "Show circles where pixels are placed."
-msgstr "Ukazuje kruhy kde byli před chvilkou položený pixely."
-
-#: src/components/windows/Settings.jsx:85
-msgid "Always show Movement Controls"
-msgstr "Vždy ukázat Pohybové ovládaní"
-
-#: src/components/windows/Settings.jsx:90
-msgid "Always show movement control buttons"
-msgstr "Vždy ukázat tlačítka pohybového ovládaní"
-
-#: src/components/windows/Settings.jsx:93
-msgid "Disable Game Sounds"
-msgstr "Vypnout Zvuky Hry"
-
-#: src/components/windows/Settings.jsx:99
-msgid "All sound effects will be disabled."
-msgstr "Všechny zvukový efekty budou vypnutý."
-
-#: src/components/windows/Settings.jsx:103
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"Váš Prohlížeč nepovoluje nám použít AudioContext pro hraní zvuku. Máte "
-"nějakou funkci ochrany osobních údajů?"
-
-#: src/components/windows/Settings.jsx:109
-msgid "Enable chat notifications"
-msgstr "Zapnout oznamení chatu"
-
-#: src/components/windows/Settings.jsx:113
-msgid "Play a sound when new chat messages arrive"
-msgstr "Hraje zvuk když se pošlou nové zprávy"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Auto Zoom In"
-msgstr "Automatické přiblížení"
-
-#: src/components/windows/Settings.jsx:121
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Při klepnutí na plátno místo umístění pixelu přibližte a vaše přiblížení je "
-"malé."
-
-#: src/components/windows/Settings.jsx:124
-msgid "Compact Palette"
-msgstr "Kompaktní Paleta"
-
-#: src/components/windows/Settings.jsx:129
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Zobrazit Paletu v kompaktní formě která zabírá míň obrazovky."
-
-#: src/components/windows/Settings.jsx:132
-msgid "Potato Mode"
-msgstr "Bramborový mod"
-
-#: src/components/windows/Settings.jsx:136
-msgid "For when you are playing on a potato."
-msgstr "Pro to když hrajete na bramboře."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
-msgid "Light Grid"
-msgstr "Rozsvítit Mřížku"
-
-#: src/components/windows/Settings.jsx:143
-msgid "Show Grid in white instead of black."
-msgstr "Zobrazuje Mřížku v bíle místo černé barvě."
-
-#: src/components/windows/Settings.jsx:147
-msgid "Historical View"
-msgstr "Historický Pohled"
-
-#: src/components/windows/Settings.jsx:152
-msgid "Check out past versions of the canvas."
-msgstr "Ukazuje jak vypadala mapa dříve."
-
-#: src/components/windows/Settings.jsx:156
-#, fuzzy, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Změněno na ${ canvasName }"
-
-#: src/components/windows/Settings.jsx:164
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:168
-msgid "Themes"
-msgstr "Témata"
-
-#: src/components/windows/Settings.jsx:173
-msgid "How pixelplanet should look like."
-msgstr "Jak pixelplanet by měl vypadat."
-
-#: src/components/windows/Settings.jsx:180
-msgid "Select Language"
-msgstr "Vybrat Jazyk"
-
-#: src/components/windows/Archive.jsx:9
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"Protože nemažeme plátna, nějaká plátna začali jen pro zábavů a nebo od "
-"požadavku uživatelů kdo mají rádi meme. Tato plátna můžou začít být nudné po "
-"nějaký době a po týdnech bez žádné velké změny a nemá cenu je nechávat "
-"aktivní, se rozhodujeme o tom je odstranit."
-
-#: src/components/windows/Archive.jsx:10
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"Tady sbíráme plátna pro to abychom je mohli archivovat ve správným způsobu "
-"(Což je zatím jenom jeden)."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "Plátno Politického Kompasu"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"Tohle plátno bylo požadováno v době politických konfliktu na hlavním zemským "
-"plátnu. Byla to 1024x1024 reprezentace politického kompasu s 5s cooldownem a "
-"60s zásobníkem. Bylo to puštěno 11. Května a zůstalo to být aktivní několik "
-"měsíců než to bylo uzavřeno 30. Listopadu."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"Rozhodli jsme se to archivovat jako timelapse s bezztrátově zakódovaným "
-"webm. Pořízení snímku obrazovky z timelapsu vede k dokonalému zobrazení 1:1 "
-"toho, jak vypadalo plátno v té době."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -853,24 +694,126 @@ msgstr "Čest za Top10 Paletu jde ${ vinikLink }."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Čest za Top10 Paletu jde ${ donendoLink }."
 
-#: src/components/windows/CanvasSelect.jsx:29
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "Ukázat Mřížku"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Zapněte mřížky aby jste mohli zvýraznit hranice pixelu."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Ukázat Aktivitu Pixelu"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "Ukazuje kruhy kde byli před chvilkou položený pixely."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr "Vždy ukázat Pohybové ovládaní"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr "Vždy ukázat tlačítka pohybového ovládaní"
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "Vypnout Zvuky Hry"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "Všechny zvukový efekty budou vypnutý."
+
+#: src/components/windows/Settings.jsx:106
 msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
 msgstr ""
-"Vyberte si plátno které chcete použít.↩\n"
-"Každé plátno je unikátní a má jinačí barvy, cooldown a požadavky.↩\n"
-"Archiv zavřených pláten můžete najít tady:"
+"Váš Prohlížeč nepovoluje nám použít AudioContext pro hraní zvuku. Máte "
+"nějakou funkci ochrany osobních údajů?"
 
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Archiv"
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "Zapnout oznamení chatu"
 
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Neaktivní Plátna (pouze historie)"
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "Hraje zvuk když se pošlou nové zprávy"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "Automatické přiblížení"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Při klepnutí na plátno místo umístění pixelu přibližte a vaše přiblížení je "
+"malé."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "Kompaktní Paleta"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Zobrazit Paletu v kompaktní formě která zabírá míň obrazovky."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Bramborový mod"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "Pro to když hrajete na bramboře."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "Rozsvítit Mřížku"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "Zobrazuje Mřížku v bíle místo černé barvě."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Historický Pohled"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "Ukazuje jak vypadala mapa dříve."
+
+#: src/components/windows/Settings.jsx:166
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Změněno na ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Témata"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "Jak pixelplanet by měl vypadat."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Vybrat Jazyk"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -911,22 +854,6 @@ msgstr "Captcha"
 msgid "Submit"
 msgstr "Vytvořit"
 
-#: src/components/windows/Chat.jsx:180
-msgid "Start chatting here"
-msgstr "Začněte se tady bavit"
-
-#: src/components/windows/Chat.jsx:217
-msgid "Chat here"
-msgstr "Mluvte tady - dsc.gg/czechpixel"
-
-#: src/components/windows/Chat.jsx:243
-msgid "You must be logged in to chat"
-msgstr "Musíte být přihlášení aby jste mohli chatovat"
-
-#: src/components/windows/Chat.jsx:273
-msgid "Channel settings"
-msgstr "Nastavení kanálu"
-
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -951,6 +878,95 @@ msgstr "Načítaní..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Uvažujte o připojení se k nám na Guilded:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Vyberte si plátno které chcete použít.↩\n"
+"Každé plátno je unikátní a má jinačí barvy, cooldown a požadavky.↩\n"
+"Archiv zavřených pláten můžete najít tady:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Archiv"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Neaktivní Plátna (pouze historie)"
+
+#: src/components/windows/Archive.jsx:9
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Protože nemažeme plátna, nějaká plátna začali jen pro zábavů a nebo od "
+"požadavku uživatelů kdo mají rádi meme. Tato plátna můžou začít být nudné po "
+"nějaký době a po týdnech bez žádné velké změny a nemá cenu je nechávat "
+"aktivní, se rozhodujeme o tom je odstranit."
+
+#: src/components/windows/Archive.jsx:10
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Tady sbíráme plátna pro to abychom je mohli archivovat ve správným způsobu "
+"(Což je zatím jenom jeden)."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "Plátno Politického Kompasu"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Tohle plátno bylo požadováno v době politických konfliktu na hlavním zemským "
+"plátnu. Byla to 1024x1024 reprezentace politického kompasu s 5s cooldownem a "
+"60s zásobníkem. Bylo to puštěno 11. Května a zůstalo to být aktivní několik "
+"měsíců než to bylo uzavřeno 30. Listopadu."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Rozhodli jsme se to archivovat jako timelapse s bezztrátově zakódovaným "
+"webm. Pořízení snímku obrazovky z timelapsu vede k dokonalému zobrazení 1:1 "
+"toho, jak vypadalo plátno v té době."
+
+#: src/components/windows/Chat.jsx:180
+msgid "Start chatting here"
+msgstr "Začněte se tady bavit"
+
+#: src/components/windows/Chat.jsx:217
+msgid "Chat here"
+msgstr "Mluvte tady - dsc.gg/czechpixel"
+
+#: src/components/windows/Chat.jsx:243
+msgid "You must be logged in to chat"
+msgstr "Musíte být přihlášení aby jste mohli chatovat"
+
+#: src/components/windows/Chat.jsx:273
+msgid "Channel settings"
+msgstr "Nastavení kanálu"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "Poslal vám mail s instrukcemi jak si resetovat heslo."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Zadejte svojí emailovou adresu a pošleme vám nové heslo:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -983,14 +999,6 @@ msgstr "Znovu načíst"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Zadejte Znaky"
-
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr "Poslal vám mail s instrukcemi jak si resetovat heslo."
-
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr "Zadejte svojí emailovou adresu a pošleme vám nové heslo:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1040,52 +1048,6 @@ msgstr "Heslo musí obsahovat alespoň 6 znaků."
 msgid "Password must be shorter than 60 characters."
 msgstr "Heslo musí být kratší jak 60 znaků."
 
-#: src/components/CanvasItem.jsx:29
-msgid "Online Users"
-msgstr "Online Uživatelů"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "Odpočet (cooldown)"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "Zásobuje do"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "Hodnoceno"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr "Ano"
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr "Ne"
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "Požadavky"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "Uživatelskej Účet"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "a ${ canvas.req } Položenejch pixelů"
-
-#: src/components/CanvasItem.jsx:58
-msgid "Top 10 Daily Ranking"
-msgstr "Top 10 denní Hodnocení"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "Rozměry"
-
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "Získat IID"
@@ -1093,6 +1055,12 @@ msgstr "Získat IID"
 #: src/components/GetIID.jsx:53
 msgid "Copy"
 msgstr "Kopírovat"
+
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Uložit"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1174,12 +1142,6 @@ msgstr "Exportovat zapnuté šablony"
 msgid "Import templates"
 msgstr "Importovat šablony"
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "Uložit"
-
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
 msgstr "Dnešní Počet Pixelů"
@@ -1220,6 +1182,33 @@ msgstr "Odstranit Účet"
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
 msgstr "Sociální Nastavení"
+
+#: src/components/Rankings.jsx:165
+msgid "Yesterday"
+msgstr "Včera"
+
+#: src/components/Rankings.jsx:174
+msgid "Countries Today"
+msgstr "Státy dnes"
+
+#: src/components/Rankings.jsx:183
+msgid "Charts"
+msgstr "Grafy"
+
+#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
+#: src/components/Rankings.jsx:219
+msgid "User"
+msgstr "Uživatel"
+
+#: src/components/Rankings.jsx:226
+msgid "Country"
+msgstr "Stát"
+
+#: src/components/Rankings.jsx:286
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"Hodnocení se aktualizuje každých 5 min. Denní hodnocení se resetuje o "
+"půlnoci UTC."
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
@@ -1298,69 +1287,51 @@ msgstr "Resetovat"
 msgid "Download Template"
 msgstr "Stáhnout Šabnlonu"
 
-#: src/components/Rankings.jsx:165
-msgid "Yesterday"
-msgstr "Včera"
+#: src/components/CanvasItem.jsx:29
+msgid "Online Users"
+msgstr "Online Uživatelů"
 
-#: src/components/Rankings.jsx:174
-msgid "Countries Today"
-msgstr "Státy dnes"
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "Odpočet (cooldown)"
 
-#: src/components/Rankings.jsx:183
-msgid "Charts"
-msgstr "Grafy"
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "Zásobuje do"
 
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
-msgid "User"
-msgstr "Uživatel"
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "Hodnoceno"
 
-#: src/components/Rankings.jsx:226
-msgid "Country"
-msgstr "Stát"
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
+msgstr "Ano"
 
-#: src/components/Rankings.jsx:286
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr ""
-"Hodnocení se aktualizuje každých 5 min. Denní hodnocení se resetuje o "
-"půlnoci UTC."
+#: src/components/CanvasItem.jsx:44
+msgid "No"
+msgstr "Ne"
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr "Plátno"
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "Požadavky"
 
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-msgid "Coordinates"
-msgstr "Souřadnice"
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "Uživatelskej Účet"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Editovat"
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "a ${ canvas.req } Položenejch pixelů"
 
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Najít"
+#: src/components/CanvasItem.jsx:58
+msgid "Top 10 Daily Ranking"
+msgstr "Top 10 denní Hodnocení"
 
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Jméno a Email"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Přihlásit se"
-
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Vybrat Soubor"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Jméno Šablony"
-
-#: src/components/TemplateItemEdit.jsx:174
-msgid "Delete"
-msgstr "Odstranit"
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "Rozměry"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1382,6 +1353,43 @@ msgstr "Státy podle Pixelů Dnes"
 msgid "Total Pixels placed per day"
 msgstr "Celkem Pixelů položeno denně"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Jméno a Email"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Přihlásit se"
+
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "Plátno"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr "Souřadnice"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Editovat"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Najít"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Vybrat Soubor"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Jméno Šablony"
+
+#: src/components/TemplateItemEdit.jsx:174
+msgid "Delete"
+msgstr "Odstranit"
+
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
@@ -1397,71 +1405,69 @@ msgstr "Novej ověřující mail se vám posílá."
 msgid "Click here to request a new verification mail."
 msgstr "Klikněte tu aby jste požádali o nový ověřující mail."
 
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
-msgstr "Interval je neplatný"
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "Hesla nejsou stejná."
 
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr "Zkontrolovat kdo položil v oblasti"
+#: src/components/ChangePassword.jsx:44
+msgid "Password successfully changed."
+msgstr "Heslo úspěšně změněno."
 
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr "Přestávka"
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "Staré Heslo"
 
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr "IID (dobrovolný)"
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "Nové Heslo"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr "Horní-levej roh"
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Potvrdit Nový Heslo"
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr "Dolní-pravej roh"
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "Nové Jméno"
 
-#: src/components/ModWatchtools.jsx:249
-msgid "Get Pixels"
-msgstr "Získat Pixely"
+#: src/components/ChangeMail.jsx:59
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"Byl Úspěšně změněn Mail. Poslali jsme vám ověřující mail,             prosím "
+"ověřte svojí novou mailovou adresu."
 
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
-msgstr "Získat Uživatele"
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "Novej Mail"
 
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "IP akce"
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "Ano, Odstraňte Mi Účet!"
 
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "Udělat věci s IP (jedno IP na řádek)"
+#: src/components/SocialSettings.jsx:35
+msgid "Block DMs"
+msgstr "Blokovat DMs"
 
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "Spravovat Moderátory"
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "Blokovat všechny Privátní Zprávy"
 
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "Odstranit Moderátora"
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
+msgstr "Privát"
 
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "Nejsou tu moderátoři"
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr "Neukazujte mě v globálních statistik"
 
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "Přidat nového Moderátora"
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "Unblokovat Uživatele"
 
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "Vlož Jméno nového Moderátora"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "Uživatelské Jméno"
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "Nemáté žádný blokovaný uživatele"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1537,6 +1543,16 @@ msgstr ""
 "Nastavit ochranu oblastí (pokud potřebuješ jemnější kontrolu, použíj "
 "ochránit s nahratí obrázku a alfa vrstvy)"
 
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr "Horní-levej roh"
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr "Dolní-pravej roh"
+
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Nahrát zpátky na Datum"
@@ -1556,6 +1572,62 @@ msgstr "Přidat filter na vyčištění odpadků ve velkých oblastech plátna."
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
 msgstr "Vypnout Čistič"
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "IP akce"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "Udělat věci s IP (jedno IP na řádek)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "Spravovat Moderátory"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "Odstranit Moderátora"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "Nejsou tu moderátoři"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "Přidat nového Moderátora"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "Vlož Jméno nového Moderátora"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "Uživatelské Jméno"
+
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr "Interval je neplatný"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr "Zkontrolovat kdo položil v oblasti"
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr "Přestávka"
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr "IID (dobrovolný)"
+
+#: src/components/ModWatchtools.jsx:249
+msgid "Get Pixels"
+msgstr "Získat Pixely"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
+msgstr "Získat Uživatele"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1577,70 +1649,6 @@ msgstr "Vložit Důvod"
 msgid "(0 = infinite)"
 msgstr "(0 = nekonečno)"
 
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "Nové Jméno"
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "Hesla nejsou stejná."
-
-#: src/components/ChangePassword.jsx:44
-msgid "Password successfully changed."
-msgstr "Heslo úspěšně změněno."
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "Staré Heslo"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "Nové Heslo"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Potvrdit Nový Heslo"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "Ano, Odstraňte Mi Účet!"
-
-#: src/components/ChangeMail.jsx:59
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"Byl Úspěšně změněn Mail. Poslali jsme vám ověřující mail,             prosím "
-"ověřte svojí novou mailovou adresu."
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "Novej Mail"
-
-#: src/components/SocialSettings.jsx:35
-msgid "Block DMs"
-msgstr "Blokovat DMs"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "Blokovat všechny Privátní Zprávy"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr "Privát"
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr "Neukazujte mě v globálních statistik"
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "Unblokovat Uživatele"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "Nemáté žádný blokovaný uživatele"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Ping"
@@ -1657,35 +1665,20 @@ msgstr "Block"
 msgid "Mute"
 msgstr "Umlčení"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:81
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Settings.jsx:86
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:94
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
-
-#: src/components/windows/Settings.jsx:159
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1726,6 +1719,21 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
+
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

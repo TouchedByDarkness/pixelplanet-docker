@@ -10,24 +10,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/store/actions/thunks.js:227
-msgid "Pencil picks: "
-msgstr ""
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
-#, fuzzy
-msgid "Selected Color"
-msgstr "Valitse Tiedosto"
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
-#, fuzzy
-msgid "From Template"
-msgstr "Mallit"
-
-#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
-msgid "From History"
-msgstr ""
-
 #: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
@@ -194,11 +176,29 @@ msgstr "Pikselin asetus ei onnistunut"
 msgid "Error ${ retCode }"
 msgstr "Virhe ${ retCode }"
 
-#: src/ui/rendererFactory.js:31
+#: src/store/actions/thunks.js:227
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
+#, fuzzy
+msgid "Selected Color"
+msgstr "Valitse Tiedosto"
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
+#, fuzzy
+msgid "From Template"
+msgstr "Mallit"
+
+#: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
+msgid "From History"
+msgstr ""
+
+#: src/ui/rendererFactory.js:32
 msgid "Canvas Error"
 msgstr "Kehyksessä virhe"
 
-#: src/ui/rendererFactory.js:32
+#: src/ui/rendererFactory.js:33
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr ""
 "3D-kehyksen renderöinti epäonnistui. Oletko poistanut WebGL2:en käytöstä?"
@@ -366,6 +366,10 @@ msgstr "Käyttäjäalue"
 msgid "Make Screenshot"
 msgstr "Ota näyttökuva"
 
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Maapallonäkymä"
+
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Sulje väripaletti"
@@ -389,10 +393,6 @@ msgstr "Sulje historiakynä"
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Sulje päällyskynä"
-
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Maapallonäkymä"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -490,162 +490,6 @@ msgstr "Peruuta"
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
 msgstr "Lähetä"
-
-#: src/components/windows/Settings.jsx:69
-msgid "Show Grid"
-msgstr "Näytä ruudukko"
-
-#: src/components/windows/Settings.jsx:74
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Näyttää ruudukon nähdäksesi pikselien rajat."
-
-#: src/components/windows/Settings.jsx:77
-msgid "Show Pixel Activity"
-msgstr "Näytä pikseliaktiivisuus"
-
-#: src/components/windows/Settings.jsx:82
-msgid "Show circles where pixels are placed."
-msgstr "Näyttää punaisia palloja siellä, missä asetetaan pikseleitä."
-
-#: src/components/windows/Settings.jsx:85
-msgid "Always show Movement Controls"
-msgstr "Näytä aina kontrollit"
-
-#: src/components/windows/Settings.jsx:90
-msgid "Always show movement control buttons"
-msgstr "Näyttää kontrollit aina"
-
-#: src/components/windows/Settings.jsx:93
-msgid "Disable Game Sounds"
-msgstr "Mykistä pelin äänet"
-
-#: src/components/windows/Settings.jsx:99
-msgid "All sound effects will be disabled."
-msgstr "Kaikki äänet mykistetään."
-
-#: src/components/windows/Settings.jsx:103
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"Selaimesi ei anna meidän käyttää AudioContextiä soittaaksemme ääniä. Onko "
-"sinulla jokin turvallisuustoiminto päällä, joka estää tämän?"
-
-#: src/components/windows/Settings.jsx:109
-msgid "Enable chat notifications"
-msgstr "Salli keskusteluilmoitukset"
-
-#: src/components/windows/Settings.jsx:113
-msgid "Play a sound when new chat messages arrive"
-msgstr "Soita ääni kun uusia viestejä tulee"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Auto Zoom In"
-msgstr "Automaattinen zoomaus"
-
-#: src/components/windows/Settings.jsx:121
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr "Zoomaa pikselin asettamisen sijasta."
-
-#: src/components/windows/Settings.jsx:124
-msgid "Compact Palette"
-msgstr "Pienempi väripaletti"
-
-#: src/components/windows/Settings.jsx:129
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Näyttää väripaletin pienempänä."
-
-#: src/components/windows/Settings.jsx:132
-msgid "Potato Mode"
-msgstr "Perunamuoto"
-
-#: src/components/windows/Settings.jsx:136
-msgid "For when you are playing on a potato."
-msgstr "Kun pelaat perunalla."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
-msgid "Light Grid"
-msgstr "Vaalea ruudukko"
-
-#: src/components/windows/Settings.jsx:143
-msgid "Show Grid in white instead of black."
-msgstr "Näyttää ruudukon vaaleana mustan sijasta."
-
-#: src/components/windows/Settings.jsx:147
-msgid "Historical View"
-msgstr "Historiallinen näkymä"
-
-#: src/components/windows/Settings.jsx:152
-msgid "Check out past versions of the canvas."
-msgstr "Näyttää kehysten vanhat versiot."
-
-#: src/components/windows/Settings.jsx:156
-#, fuzzy, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Vaihdettu ${ canvasName }"
-
-#: src/components/windows/Settings.jsx:164
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:168
-msgid "Themes"
-msgstr "Teemat"
-
-#: src/components/windows/Settings.jsx:173
-msgid "How pixelplanet should look like."
-msgstr "Miltä pixelplanetin pitäisi näyttää."
-
-#: src/components/windows/Settings.jsx:180
-msgid "Select Language"
-msgstr "Valitse kieli"
-
-#: src/components/windows/Archive.jsx:9
-#, fuzzy
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"Vaikkemme useimmiten poista kehyksiä, jotkin kehykset aloitetaan vain "
-"vitsillä. Tällaiset kehykset saattavat käydä tylsäksi ajan kuluessa ja ne "
-"poistetaan, jos ne eivät ole tarpeeksi aktiivisia."
-
-#: src/components/windows/Archive.jsx:10
-#, fuzzy
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr "Tänne kerätään poistetut kehykset, joita on tällä hetkellä vain yksi."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "Poliittinen kompassi -kehys"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"Tätä kehystä pyydettiin pääkehyksen poliittisten konfliktien aikana. Se oli "
-"1024x1024-kokoinen poliittinen kompassi 5 sekunnin jäähdytysajalla ja 60 "
-"sekunnin keräysajalla. Se esiteltiin toukokuun 11. päivänä pysyen "
-"aktiivisena kuukausien ajan, kunnes se poistettiin marraskuun 30. päivänä."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"Päätimme arkistoida sen timelapsena koodatulla webm:llä. Kuvakaappauksen "
-"ottaminen timelapsesta antaa täydellisen 1:1-esityksen siitä, millainen "
-"kehys oli tuolloin."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -852,26 +696,124 @@ msgstr "Kiitokset Top10-kehyksen väripaletista menee ${ vinikLink }."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Kiitokset 2bit-kehyksen väripaletista menee ${ donendoLink }."
 
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "Näytä ruudukko"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Näyttää ruudukon nähdäksesi pikselien rajat."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Näytä pikseliaktiivisuus"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "Näyttää punaisia palloja siellä, missä asetetaan pikseleitä."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr "Näytä aina kontrollit"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr "Näyttää kontrollit aina"
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "Mykistä pelin äänet"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "Kaikki äänet mykistetään."
+
+#: src/components/windows/Settings.jsx:106
 msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
 msgstr ""
-"Valitse kehys, jota haluat käyttää.\n"
-"Jokainen kehys on erilainen ja tarjoaa erilaiset väripaletit, jäähtymisajat "
-"ja vaatimukset.\n"
-"Poistettujen kehysten arkisto on täällä:"
+"Selaimesi ei anna meidän käyttää AudioContextiä soittaaksemme ääniä. Onko "
+"sinulla jokin turvallisuustoiminto päällä, joka estää tämän?"
 
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arkisto"
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "Salli keskusteluilmoitukset"
 
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Vanhat kehykset (vain historiallinen näkymä)"
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "Soita ääni kun uusia viestejä tulee"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "Automaattinen zoomaus"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr "Zoomaa pikselin asettamisen sijasta."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "Pienempi väripaletti"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Näyttää väripaletin pienempänä."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Perunamuoto"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "Kun pelaat perunalla."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "Vaalea ruudukko"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "Näyttää ruudukon vaaleana mustan sijasta."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Historiallinen näkymä"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "Näyttää kehysten vanhat versiot."
+
+#: src/components/windows/Settings.jsx:166
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Vaihdettu ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Teemat"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "Miltä pixelplanetin pitäisi näyttää."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Valitse kieli"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -912,22 +854,6 @@ msgstr "Captcha"
 msgid "Submit"
 msgstr "Lähetä"
 
-#: src/components/windows/Chat.jsx:180
-msgid "Start chatting here"
-msgstr "Aloita keskustelu täällä"
-
-#: src/components/windows/Chat.jsx:217
-msgid "Chat here"
-msgstr "Keskustele täällä"
-
-#: src/components/windows/Chat.jsx:243
-msgid "You must be logged in to chat"
-msgstr "Kirjaudu sisään keskustellaksesi"
-
-#: src/components/windows/Chat.jsx:273
-msgid "Channel settings"
-msgstr "Kanava-asetukset"
-
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -952,6 +878,99 @@ msgstr "Ladataan..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Liity Guildediin:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Valitse kehys, jota haluat käyttää.\n"
+"Jokainen kehys on erilainen ja tarjoaa erilaiset väripaletit, jäähtymisajat "
+"ja vaatimukset.\n"
+"Poistettujen kehysten arkisto on täällä:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arkisto"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Vanhat kehykset (vain historiallinen näkymä)"
+
+#: src/components/windows/Archive.jsx:9
+#, fuzzy
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Vaikkemme useimmiten poista kehyksiä, jotkin kehykset aloitetaan vain "
+"vitsillä. Tällaiset kehykset saattavat käydä tylsäksi ajan kuluessa ja ne "
+"poistetaan, jos ne eivät ole tarpeeksi aktiivisia."
+
+#: src/components/windows/Archive.jsx:10
+#, fuzzy
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr "Tänne kerätään poistetut kehykset, joita on tällä hetkellä vain yksi."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "Poliittinen kompassi -kehys"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Tätä kehystä pyydettiin pääkehyksen poliittisten konfliktien aikana. Se oli "
+"1024x1024-kokoinen poliittinen kompassi 5 sekunnin jäähdytysajalla ja 60 "
+"sekunnin keräysajalla. Se esiteltiin toukokuun 11. päivänä pysyen "
+"aktiivisena kuukausien ajan, kunnes se poistettiin marraskuun 30. päivänä."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Päätimme arkistoida sen timelapsena koodatulla webm:llä. Kuvakaappauksen "
+"ottaminen timelapsesta antaa täydellisen 1:1-esityksen siitä, millainen "
+"kehys oli tuolloin."
+
+#: src/components/windows/Chat.jsx:180
+msgid "Start chatting here"
+msgstr "Aloita keskustelu täällä"
+
+#: src/components/windows/Chat.jsx:217
+msgid "Chat here"
+msgstr "Keskustele täällä"
+
+#: src/components/windows/Chat.jsx:243
+msgid "You must be logged in to chat"
+msgstr "Kirjaudu sisään keskustellaksesi"
+
+#: src/components/windows/Chat.jsx:273
+msgid "Channel settings"
+msgstr "Kanava-asetukset"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr ""
+"Sinulle lähetettiin sähköposti, jossa on ohjeet salasanan vaihtamiseen."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr ""
+"Kirjoita sähköpostiosoitteesi, ja me lähetämme sinulle ohjeet salasanan "
+"vaihtamiseen:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -984,17 +1003,6 @@ msgstr "Lataa uudelleen"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Kirjoita"
-
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr ""
-"Sinulle lähetettiin sähköposti, jossa on ohjeet salasanan vaihtamiseen."
-
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr ""
-"Kirjoita sähköpostiosoitteesi, ja me lähetämme sinulle ohjeet salasanan "
-"vaihtamiseen:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1046,52 +1054,6 @@ msgstr "salasanan tulee olla yli 6 merkkiä pidempi."
 msgid "Password must be shorter than 60 characters."
 msgstr "Salasanan tulee olla 60 merkkiä lyhyempi."
 
-#: src/components/CanvasItem.jsx:29
-msgid "Online Users"
-msgstr "Käyttäjiä onlinessa"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "Jäähdytys"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr ""
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "Rankattu"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr "Kyllä"
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr "Ei"
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "Vaatimukset"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "Käyttäjä"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "ja ${ canvas.req } pikseliä asetettu"
-
-#: src/components/CanvasItem.jsx:58
-msgid "Top 10 Daily Ranking"
-msgstr "Top 10 Päivittäinen listaus"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "Ulottovuudet"
-
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "Näe IID"
@@ -1099,6 +1061,12 @@ msgstr "Näe IID"
 #: src/components/GetIID.jsx:53
 msgid "Copy"
 msgstr "Kopioi"
+
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Tallenna"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1183,12 +1151,6 @@ msgstr "Vie käytössä olevat mallineet"
 msgid "Import templates"
 msgstr "Tuo mallineita"
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "Tallenna"
-
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
 msgstr "Tänään laitetut pikselit"
@@ -1229,6 +1191,33 @@ msgstr "Poista käyttäjä"
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
 msgstr "Sosiaaliset asetukset"
+
+#: src/components/Rankings.jsx:165
+msgid "Yesterday"
+msgstr "Eilen"
+
+#: src/components/Rankings.jsx:174
+msgid "Countries Today"
+msgstr "Maat tänään"
+
+#: src/components/Rankings.jsx:183
+msgid "Charts"
+msgstr "Kaaviot"
+
+#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
+#: src/components/Rankings.jsx:219
+msgid "User"
+msgstr "Käyttäjä"
+
+#: src/components/Rankings.jsx:226
+msgid "Country"
+msgstr "Maa"
+
+#: src/components/Rankings.jsx:286
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"Sijoitukset päivittyvät viiden minuutin välein. Päivän sijoitukset nollataan "
+"kahdelta suomen aikaan."
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
@@ -1307,69 +1296,51 @@ msgstr "Nollaa muunnokset"
 msgid "Download Template"
 msgstr "Lataa Malline"
 
-#: src/components/Rankings.jsx:165
-msgid "Yesterday"
-msgstr "Eilen"
+#: src/components/CanvasItem.jsx:29
+msgid "Online Users"
+msgstr "Käyttäjiä onlinessa"
 
-#: src/components/Rankings.jsx:174
-msgid "Countries Today"
-msgstr "Maat tänään"
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "Jäähdytys"
 
-#: src/components/Rankings.jsx:183
-msgid "Charts"
-msgstr "Kaaviot"
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr ""
 
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
-msgid "User"
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "Rankattu"
+
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
+msgstr "Kyllä"
+
+#: src/components/CanvasItem.jsx:44
+msgid "No"
+msgstr "Ei"
+
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "Vaatimukset"
+
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
 msgstr "Käyttäjä"
 
-#: src/components/Rankings.jsx:226
-msgid "Country"
-msgstr "Maa"
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "ja ${ canvas.req } pikseliä asetettu"
 
-#: src/components/Rankings.jsx:286
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr ""
-"Sijoitukset päivittyvät viiden minuutin välein. Päivän sijoitukset nollataan "
-"kahdelta suomen aikaan."
+#: src/components/CanvasItem.jsx:58
+msgid "Top 10 Daily Ranking"
+msgstr "Top 10 Päivittäinen listaus"
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr "Kehys"
-
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-msgid "Coordinates"
-msgstr "Koordinaatit"
-
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Muokkaa"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Mene"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Nimi tai Sähköposti"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Kirjaudu sisään"
-
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Valitse Tiedosto"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "sapluunan nimi"
-
-#: src/components/TemplateItemEdit.jsx:174
-msgid "Delete"
-msgstr "Poista"
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "Ulottovuudet"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1391,6 +1362,43 @@ msgstr ""
 msgid "Total Pixels placed per day"
 msgstr ""
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Nimi tai Sähköposti"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Kirjaudu sisään"
+
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "Kehys"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr "Koordinaatit"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Mene"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Valitse Tiedosto"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "sapluunan nimi"
+
+#: src/components/TemplateItemEdit.jsx:174
+msgid "Delete"
+msgstr "Poista"
+
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
@@ -1407,70 +1415,66 @@ msgstr "Sinulle lähetetään uusi vahvistusviesti."
 msgid "Click here to request a new verification mail."
 msgstr "Napsauta tätä pyytääksesi uutta vahvistussähköpostia."
 
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "Salasanat eivät täsmää."
+
+#: src/components/ChangePassword.jsx:44
+msgid "Password successfully changed."
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "Uusi salasana"
+
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Vahvista uusi salasanasi"
+
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
+#: src/components/ChangeMail.jsx:59
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:249
-msgid "Get Pixels"
+#: src/components/SocialSettings.jsx:35
+msgid "Block DMs"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
 msgstr ""
 
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
 msgstr ""
 
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
 msgstr ""
 
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
 msgstr ""
 
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr ""
-
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr ""
-
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr ""
-
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr ""
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
 msgstr ""
 
 #: src/components/ModCanvastools.jsx:168
@@ -1538,6 +1542,16 @@ msgid ""
 "image upload and alpha layers)"
 msgstr ""
 
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr ""
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr ""
+
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr ""
@@ -1556,6 +1570,62 @@ msgstr ""
 
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
+msgstr ""
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr ""
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr ""
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr ""
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr ""
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr ""
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr ""
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr ""
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:249
+msgid "Get Pixels"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
 msgstr ""
 
 #: src/components/ModIIDtools.jsx:20
@@ -1578,68 +1648,6 @@ msgstr ""
 msgid "(0 = infinite)"
 msgstr ""
 
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr ""
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "Salasanat eivät täsmää."
-
-#: src/components/ChangePassword.jsx:44
-msgid "Password successfully changed."
-msgstr ""
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr ""
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "Uusi salasana"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Vahvista uusi salasanasi"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr ""
-
-#: src/components/ChangeMail.jsx:59
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:35
-msgid "Block DMs"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr ""
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr ""
@@ -1656,35 +1664,20 @@ msgstr ""
 msgid "Mute"
 msgstr ""
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:81
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Settings.jsx:86
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:94
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
-
-#: src/components/windows/Settings.jsx:159
-msgctxt "keybinds"
-msgid "B"
-msgstr "B"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1725,6 +1718,21 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
+
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

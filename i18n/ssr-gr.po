@@ -235,6 +235,42 @@ msgstr "Δεν επιτρέπεται η πρόσβαση σε αυτή τη σ�
 msgid "Just admins can do that"
 msgstr "Μόνο οι διαχειριστές μπορούν να το κάνουν αυτό"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Αυτός ο πάροχος email δεν επιτρέπεται"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Δεν δόθηκε αναγνωριστικό captcha"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Email είναι ήδη σε χρήση."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Το όνομα χρήστη χρησιμοποιείται ήδη."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Χρειάστηκε πολύς χρόνος, δοκιμάστε ξανά."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Απέτυχες το captcha σου"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Άγνωστο σφάλμα Captcha"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Αποτυχία δημιουργίας νέου χρήστη :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Απέτυχε η δημιουργία συνεδρίας μετά την εγγραφή :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Επαλήθευση mail"
@@ -275,10 +311,6 @@ msgstr "Λάθος κωδικός!"
 msgid "Muted Users can not delete their account."
 msgstr ""
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Αυτός ο πάροχος email δεν επιτρέπεται"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr ""
@@ -295,38 +327,6 @@ msgstr "Θα ανακατευθυνθείτε αυτόματα μετά από 1
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Ή ${ clickHere } για να επιστρέψετε στο pixelplanet"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Δεν δόθηκε αναγνωριστικό captcha"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Email είναι ήδη σε χρήση."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Το όνομα χρήστη χρησιμοποιείται ήδη."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Χρειάστηκε πολύς χρόνος, δοκιμάστε ξανά."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Απέτυχες το captcha σου"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Άγνωστο σφάλμα Captcha"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Αποτυχία δημιουργίας νέου χρήστη :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Απέτυχε η δημιουργία συνεδρίας μετά την εγγραφή :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

@@ -228,6 +228,42 @@ msgstr "Nu ai voie să accesezi această pagină"
 msgid "Just admins can do that"
 msgstr "Numai admini pot face asta"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Acest furnizor de mail nu este permis"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Niciun captcha dat"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "E-Mailul este deja înregistrat."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Numele de utiizator este deja folosită."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Ți-a luat prea mult, încearcă din nou."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Nu ai trecut captchaul tău"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Eroare de Captcha necunoscută"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Nu s-a putut crea un utilizator nou :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Nu s-a putut stabili sesiunea după înregistrare :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Mail verificat"
@@ -268,10 +304,6 @@ msgstr "Parolă incorrectă!"
 msgid "Muted Users can not delete their account."
 msgstr "Utilizator desconectat nu își poate șterge contul."
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Acest furnizor de mail nu este permis"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr "Utilizatorul desconectat nu poate face asta."
@@ -288,38 +320,6 @@ msgstr "Vei fi redirecționat automatic după 15 secunde"
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Sau ${ clickHere } pentru a merge înapoi la pixelplanet"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Niciun captcha dat"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "E-Mailul este deja înregistrat."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Numele de utiizator este deja folosită."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Ți-a luat prea mult, încearcă din nou."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Nu ai trecut captchaul tău"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Eroare de Captcha necunoscută"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Nu s-a putut crea un utilizator nou :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Nu s-a putut stabili sesiunea după înregistrare :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

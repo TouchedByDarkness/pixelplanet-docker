@@ -234,6 +234,43 @@ msgstr "Malhavas l' permes' je l' kanal'"
 msgid "Just admins can do that"
 msgstr ""
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr ""
+
+#: src/routes/api/auth/register.js:31
+#, fuzzy
+msgid "No Captcha given"
+msgstr "Pasvorton ne donita."
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Retpostadreso jam uzata."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Uzantnomo jam uzata."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr ""
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr ""
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr ""
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Malsukcesis krei novan uzanton ŭwŭ"
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Malsukcesis krei novan ligon post reĝistro"
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Retpostmensaĝa verigo"
@@ -274,10 +311,6 @@ msgstr "Pasvorto erara!"
 msgid "Muted Users can not delete their account."
 msgstr ""
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr ""
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr ""
@@ -294,39 +327,6 @@ msgstr "Aŭte redirektos vin post 15s"
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Aŭ ${ clickHere } reeniri al pixelplanet"
-
-#: src/routes/api/auth/register.js:31
-#, fuzzy
-msgid "No Captcha given"
-msgstr "Pasvorton ne donita."
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Retpostadreso jam uzata."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Uzantnomo jam uzata."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr ""
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr ""
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr ""
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Malsukcesis krei novan uzanton ŭwŭ"
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Malsukcesis krei novan ligon post reĝistro"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

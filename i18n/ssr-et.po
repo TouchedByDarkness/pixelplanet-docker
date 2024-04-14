@@ -224,6 +224,42 @@ msgstr "Sul puudub sellele leheküljele ligipääs"
 msgid "Just admins can do that"
 msgstr "Ainult administraatorid saavad seda teha"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "See meiliaadress ei ole lubatud"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Captcha't ei antud"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Meil on juba kasutuses."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Nimi on juba kasutuses."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Sul läks liiga kaua, proovi uuesti."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Sa lahendasid captcha valesti"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Tundmatu Captcha Viga"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Uue kasutaja loomine ebaõnnestus :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Sessiooni loomine ebaõnnestus peale registreerumist :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Meili verifikatsioon"
@@ -264,10 +300,6 @@ msgstr "Vale salasõna!"
 msgid "Muted Users can not delete their account."
 msgstr "Vaigistatud Kasutajad ei saa oma kontot kustutada."
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "See meiliaadress ei ole lubatud"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr "Vaigistatud Kasutajad ei saa seda teha."
@@ -284,38 +316,6 @@ msgstr "Sind suunatake automaatselt ümber 15 sekundi pärast"
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Või ${ clickHere }, et minna tagasi pixelplanet'isse"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Captcha't ei antud"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Meil on juba kasutuses."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Nimi on juba kasutuses."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Sul läks liiga kaua, proovi uuesti."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Sa lahendasid captcha valesti"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Tundmatu Captcha Viga"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Uue kasutaja loomine ebaõnnestus :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Sessiooni loomine ebaõnnestus peale registreerumist :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

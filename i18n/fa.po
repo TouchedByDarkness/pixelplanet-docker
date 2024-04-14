@@ -13,24 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/store/actions/thunks.js:227
-msgid "Pencil picks: "
-msgstr ""
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
-#, fuzzy
-msgid "Selected Color"
-msgstr "زبانت رو انتخاب کن"
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
-#, fuzzy
-msgid "From Template"
-msgstr "دانلود قالب"
-
-#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
-msgid "From History"
-msgstr ""
-
 #: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
@@ -202,11 +184,29 @@ msgstr "پیکسل گذاشته نشد"
 msgid "Error ${ retCode }"
 msgstr ""
 
-#: src/ui/rendererFactory.js:31
+#: src/store/actions/thunks.js:227
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
+#, fuzzy
+msgid "Selected Color"
+msgstr "زبانت رو انتخاب کن"
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
+#, fuzzy
+msgid "From Template"
+msgstr "دانلود قالب"
+
+#: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
+msgid "From History"
+msgstr ""
+
+#: src/ui/rendererFactory.js:32
 msgid "Canvas Error"
 msgstr "ارور بوم"
 
-#: src/ui/rendererFactory.js:32
+#: src/ui/rendererFactory.js:33
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "داداش بوم سه بعدی رندر نشد. WebGL2 رو غیر فعال کردی ناقلا؟"
 
@@ -373,6 +373,10 @@ msgstr "منطقه یوزر"
 msgid "Make Screenshot"
 msgstr "اسکرین شات بگیر"
 
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "بازدید از کل جهان"
+
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "جعبه رنگ ها رو ببند"
@@ -397,10 +401,6 @@ msgstr ""
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr ""
-
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "بازدید از کل جهان"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -499,164 +499,6 @@ msgstr "لغو"
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
 msgstr "ارسال"
-
-#: src/components/windows/Settings.jsx:69
-msgid "Show Grid"
-msgstr "شبکه رو نشون بده"
-
-#: src/components/windows/Settings.jsx:74
-msgid "Turn on grid to highlight pixel borders."
-msgstr "شبکه رو روشن کن که مرز های دور پیکسل ها نشون داده بشه."
-
-#: src/components/windows/Settings.jsx:77
-msgid "Show Pixel Activity"
-msgstr "فعالیت پیکسل ها رو نشون بده"
-
-#: src/components/windows/Settings.jsx:82
-msgid "Show circles where pixels are placed."
-msgstr "دور پیکسل هایی که گذاشته میشن دایره بزار."
-
-#: src/components/windows/Settings.jsx:85
-msgid "Always show Movement Controls"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:90
-msgid "Always show movement control buttons"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:93
-msgid "Disable Game Sounds"
-msgstr "صدا های بازی رو غیرفعال کن"
-
-#: src/components/windows/Settings.jsx:99
-msgid "All sound effects will be disabled."
-msgstr "تمامی افکت های صدا غیرفعال میشه."
-
-#: src/components/windows/Settings.jsx:103
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"مرورگر شما به ما اجازه نمی دهد از AudioContext برای پخش صداها استفاده کنیم. "
-"آیا برخی از ویژگی های حفظ حریم خصوصی ما را مسدود می کند؟"
-
-#: src/components/windows/Settings.jsx:109
-msgid "Enable chat notifications"
-msgstr "نوتیفیکیشن های چت رو فعال کن"
-
-#: src/components/windows/Settings.jsx:113
-msgid "Play a sound when new chat messages arrive"
-msgstr "وقتی یه پیام جدید میاد یه صدایی بده"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Auto Zoom In"
-msgstr "زوم اتوماتیک بزرگتر"
-
-#: src/components/windows/Settings.jsx:121
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr "وقتی که بومت کوچیکه و میخوای پیکسل بزاری، بجای پیکسل گذاشتن زوم کن."
-
-#: src/components/windows/Settings.jsx:124
-msgid "Compact Palette"
-msgstr "حعبه رنگ فشرده"
-
-#: src/components/windows/Settings.jsx:129
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "جعبه رنگ رو فشرده کن که فضای کمتری بگیره."
-
-#: src/components/windows/Settings.jsx:132
-msgid "Potato Mode"
-msgstr "حالت سیب زمینی"
-
-#: src/components/windows/Settings.jsx:136
-msgid "For when you are playing on a potato."
-msgstr "برای موقعی که داری روی ذغال بازی میکنی."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
-msgid "Light Grid"
-msgstr "پس زمینه روشن"
-
-#: src/components/windows/Settings.jsx:143
-msgid "Show Grid in white instead of black."
-msgstr "پس زمینه رو بجای اینکه سفید نشون بده، سیاه نشون بده."
-
-#: src/components/windows/Settings.jsx:147
-msgid "Historical View"
-msgstr "حالت تاریخی"
-
-#: src/components/windows/Settings.jsx:152
-msgid "Check out past versions of the canvas."
-msgstr "نسخه های قدیمی این بوم رو نشون بده."
-
-#: src/components/windows/Settings.jsx:156
-#, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:164
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:168
-msgid "Themes"
-msgstr "تِم ها"
-
-#: src/components/windows/Settings.jsx:173
-msgid "How pixelplanet should look like."
-msgstr "پیکسل پلنت باید چطوری دیده بشه."
-
-#: src/components/windows/Settings.jsx:180
-msgid "Select Language"
-msgstr "زبانت رو انتخاب کن"
-
-#: src/components/windows/Archive.jsx:9
-#, fuzzy
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"در حالی که ما تمایل داریم بوم‌ها را حذف نکنیم، برخی از بوم‌ها برای سرگرمی یا "
-"به‌عنوان درخواست کاربرانی که در حال حاضر یک میم را دوست دارند شروع می‌شوند. آن "
-"بوم‌ها ممکن است پس از مدتی و پس از هفته‌ها بدون تغییر اساسی خسته‌کننده شوند و "
-"اگر واقعاً ارزش فعال نگه‌داشتن را ندارند، تصمیم می‌گیریم آنها را حذف کنیم."
-
-#: src/components/windows/Archive.jsx:10
-#, fuzzy
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"در اینجا ما آن بوم‌ها را جمع‌آوری می‌کنیم تا آنها را به روشی مناسب بایگانی کنیم "
-"(که در حال حاضر فقط یکی است)."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "بوم قطب نمای سیاسی"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"این بوم در زمان درگیری های سیاسی در بوم اصلی زمین درخواست شد. این یک نمایش "
-"1024x1024 از قطب‌نمای سیاسی با خنک‌کردن 5s و انباشته شدن 60s بود. در 21 "
-"اردیبهشت راه اندازی شد و برای ماه ها فعال بود تا اینکه در 9 آذر تعطیل شد."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"ما تصمیم گرفتیم آن را به عنوان یک تایم لپس با وب مدیا رمزگذاری شده بدون ضرر "
-"بایگانی کنیم. گرفتن اسکرین شات از تایم لپس به نمایش کامل 1:1 از چگونگی بوم "
-"در آن زمان منجر می شود."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -862,25 +704,124 @@ msgstr "فرد سازنده بوم 10 نفر اول ${ vinikLink }."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "فرد سازنده بوم 10 نفر اول ${ donendoLink }."
 
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "شبکه رو نشون بده"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "شبکه رو روشن کن که مرز های دور پیکسل ها نشون داده بشه."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "فعالیت پیکسل ها رو نشون بده"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "دور پیکسل هایی که گذاشته میشن دایره بزار."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "صدا های بازی رو غیرفعال کن"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "تمامی افکت های صدا غیرفعال میشه."
+
+#: src/components/windows/Settings.jsx:106
 msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
 msgstr ""
-"بوم مورد نظر برای استفاده را انتخاب کنید. هر بوم منحصر به فرد است و دارای "
-"جعبه رنگ ها،کولداون و الزامات متفاوتی است. آرشیو بوم های بسته را می توانید "
-"در اینجا مشاهده کنید:"
+"مرورگر شما به ما اجازه نمی دهد از AudioContext برای پخش صداها استفاده کنیم. "
+"آیا برخی از ویژگی های حفظ حریم خصوصی ما را مسدود می کند؟"
 
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "آرشیو"
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "نوتیفیکیشن های چت رو فعال کن"
 
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "وقتی یه پیام جدید میاد یه صدایی بده"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "زوم اتوماتیک بزرگتر"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr "وقتی که بومت کوچیکه و میخوای پیکسل بزاری، بجای پیکسل گذاشتن زوم کن."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "حعبه رنگ فشرده"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "جعبه رنگ رو فشرده کن که فضای کمتری بگیره."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "حالت سیب زمینی"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "برای موقعی که داری روی ذغال بازی میکنی."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "پس زمینه روشن"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "پس زمینه رو بجای اینکه سفید نشون بده، سیاه نشون بده."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
 msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "حالت تاریخی"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "نسخه های قدیمی این بوم رو نشون بده."
+
+#: src/components/windows/Settings.jsx:166
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "تِم ها"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "پیکسل پلنت باید چطوری دیده بشه."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "زبانت رو انتخاب کن"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -921,22 +862,6 @@ msgstr "کَپچا"
 msgid "Submit"
 msgstr "ارسال"
 
-#: src/components/windows/Chat.jsx:180
-msgid "Start chatting here"
-msgstr "اینجا میتونی چت کنی"
-
-#: src/components/windows/Chat.jsx:217
-msgid "Chat here"
-msgstr "همینجا چت کن"
-
-#: src/components/windows/Chat.jsx:243
-msgid "You must be logged in to chat"
-msgstr "باید در سایت وارد بشی تا بتونی چت کنی"
-
-#: src/components/windows/Chat.jsx:273
-msgid "Channel settings"
-msgstr "تنظمیات کانال"
-
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -961,6 +886,98 @@ msgstr "در حال بارگزاری..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "حتی خوب میشه اگر به گیلدد ما هم عضو بشین:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"بوم مورد نظر برای استفاده را انتخاب کنید. هر بوم منحصر به فرد است و دارای "
+"جعبه رنگ ها،کولداون و الزامات متفاوتی است. آرشیو بوم های بسته را می توانید "
+"در اینجا مشاهده کنید:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "آرشیو"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
+
+#: src/components/windows/Archive.jsx:9
+#, fuzzy
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"در حالی که ما تمایل داریم بوم‌ها را حذف نکنیم، برخی از بوم‌ها برای سرگرمی یا "
+"به‌عنوان درخواست کاربرانی که در حال حاضر یک میم را دوست دارند شروع می‌شوند. آن "
+"بوم‌ها ممکن است پس از مدتی و پس از هفته‌ها بدون تغییر اساسی خسته‌کننده شوند و "
+"اگر واقعاً ارزش فعال نگه‌داشتن را ندارند، تصمیم می‌گیریم آنها را حذف کنیم."
+
+#: src/components/windows/Archive.jsx:10
+#, fuzzy
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"در اینجا ما آن بوم‌ها را جمع‌آوری می‌کنیم تا آنها را به روشی مناسب بایگانی کنیم "
+"(که در حال حاضر فقط یکی است)."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "بوم قطب نمای سیاسی"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"این بوم در زمان درگیری های سیاسی در بوم اصلی زمین درخواست شد. این یک نمایش "
+"1024x1024 از قطب‌نمای سیاسی با خنک‌کردن 5s و انباشته شدن 60s بود. در 21 "
+"اردیبهشت راه اندازی شد و برای ماه ها فعال بود تا اینکه در 9 آذر تعطیل شد."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"ما تصمیم گرفتیم آن را به عنوان یک تایم لپس با وب مدیا رمزگذاری شده بدون ضرر "
+"بایگانی کنیم. گرفتن اسکرین شات از تایم لپس به نمایش کامل 1:1 از چگونگی بوم "
+"در آن زمان منجر می شود."
+
+#: src/components/windows/Chat.jsx:180
+msgid "Start chatting here"
+msgstr "اینجا میتونی چت کنی"
+
+#: src/components/windows/Chat.jsx:217
+msgid "Chat here"
+msgstr "همینجا چت کن"
+
+#: src/components/windows/Chat.jsx:243
+msgid "You must be logged in to chat"
+msgstr "باید در سایت وارد بشی تا بتونی چت کنی"
+
+#: src/components/windows/Chat.jsx:273
+msgid "Channel settings"
+msgstr "تنظمیات کانال"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "یک ایمیل فرستادیم با آموزش که پسوردتون رو عوض کنین."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr ""
+"آدرس ایمیلتون رو وارد کنین تا ما یه لینک بفرستیم تا بتونین پسورد جدید بسازید:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -993,15 +1010,6 @@ msgstr "بارگذاری جدید"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "کاراکترای جدید رو وارد کن"
-
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr "یک ایمیل فرستادیم با آموزش که پسوردتون رو عوض کنین."
-
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr ""
-"آدرس ایمیلتون رو وارد کنین تا ما یه لینک بفرستیم تا بتونین پسورد جدید بسازید:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1051,52 +1059,6 @@ msgstr "رمز باید حداقل شیش تا کلمه داشته باشه."
 msgid "Password must be shorter than 60 characters."
 msgstr "داداش چخبره باید کمتر از شصت تا کلمه باشه پسوردت."
 
-#: src/components/CanvasItem.jsx:29
-msgid "Online Users"
-msgstr "کاربران انلاین"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "کولداون"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "انباشته شدن تا"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "رتبه دار"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr "آره"
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr "نه"
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "چیزای مورد نیاز"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "اکانت کاربر"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "و ${ canvas.req } تنظیم پیکسل"
-
-#: src/components/CanvasItem.jsx:58
-msgid "Top 10 Daily Ranking"
-msgstr "10 رتبه برتر روزانه"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "ابعاد"
-
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "آیدی بگیر"
@@ -1104,6 +1066,12 @@ msgstr "آیدی بگیر"
 #: src/components/GetIID.jsx:53
 msgid "Copy"
 msgstr "کپی"
+
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "ذخیره"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1184,12 +1152,6 @@ msgstr ""
 msgid "Import templates"
 msgstr ""
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "ذخیره"
-
 #: src/components/UserAreaContent.jsx:62
 #, fuzzy
 msgid "Today Placed Pixels"
@@ -1231,6 +1193,33 @@ msgstr "اکانتت رو پاک کن"
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
 msgstr "تنظیمات فضای اجتماعی"
+
+#: src/components/Rankings.jsx:165
+msgid "Yesterday"
+msgstr "دیروز"
+
+#: src/components/Rankings.jsx:174
+msgid "Countries Today"
+msgstr "کشور های امروز"
+
+#: src/components/Rankings.jsx:183
+msgid "Charts"
+msgstr "نمودار"
+
+#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
+#: src/components/Rankings.jsx:219
+msgid "User"
+msgstr "کاربر"
+
+#: src/components/Rankings.jsx:226
+msgid "Country"
+msgstr "کشور"
+
+#: src/components/Rankings.jsx:286
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"به روز رسانی رتبه بندی هر 5 دقیقه. رتبه بندی روزانه در نیمه شب UTC بازنشانی "
+"می شود."
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
@@ -1309,72 +1298,51 @@ msgstr "بازنشانی کنین"
 msgid "Download Template"
 msgstr "دانلود قالب"
 
-#: src/components/Rankings.jsx:165
-msgid "Yesterday"
-msgstr "دیروز"
+#: src/components/CanvasItem.jsx:29
+msgid "Online Users"
+msgstr "کاربران انلاین"
 
-#: src/components/Rankings.jsx:174
-msgid "Countries Today"
-msgstr "کشور های امروز"
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "کولداون"
 
-#: src/components/Rankings.jsx:183
-msgid "Charts"
-msgstr "نمودار"
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "انباشته شدن تا"
 
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
-msgid "User"
-msgstr "کاربر"
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "رتبه دار"
 
-#: src/components/Rankings.jsx:226
-msgid "Country"
-msgstr "کشور"
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
+msgstr "آره"
 
-#: src/components/Rankings.jsx:286
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr ""
-"به روز رسانی رتبه بندی هر 5 دقیقه. رتبه بندی روزانه در نیمه شب UTC بازنشانی "
-"می شود."
+#: src/components/CanvasItem.jsx:44
+msgid "No"
+msgstr "نه"
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr "بوم"
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "چیزای مورد نیاز"
 
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
-msgid "Coordinates"
-msgstr "مختصات اشتباه است"
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "اکانت کاربر"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "و ${ canvas.req } تنظیم پیکسل"
 
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
+#: src/components/CanvasItem.jsx:58
+msgid "Top 10 Daily Ranking"
+msgstr "10 رتبه برتر روزانه"
 
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "اسم یا ایمیل"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "وارد شدن"
-
-#: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
-msgid "Select File"
-msgstr "زبانت رو انتخاب کن"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr ""
-
-#: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
-msgid "Delete"
-msgstr "اکانتت رو پاک کن"
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "ابعاد"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1396,6 +1364,46 @@ msgstr "کشورها بر اساس پیکسل امروز"
 msgid "Total Pixels placed per day"
 msgstr "مجموع پیکسل های قرار داده شده در روز"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "اسم یا ایمیل"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "وارد شدن"
+
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "بوم"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+#, fuzzy
+msgid "Coordinates"
+msgstr "مختصات اشتباه است"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "زبانت رو انتخاب کن"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:174
+#, fuzzy
+msgid "Delete"
+msgstr "اکانتت رو پاک کن"
+
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
@@ -1412,71 +1420,70 @@ msgstr "یک ایمیل تأیید جدید برای شما ارسال می شو
 msgid "Click here to request a new verification mail."
 msgstr "برای درخواست یک ایمیل تأیید جدید اینجا را کلیک کنید."
 
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
-msgstr "فاصله نامعتبر است"
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "رمزهای ورود مطابقت ندارند."
 
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr "بررسی کنید چه کسی در اون منطقه پیکسل گذاشته"
+#: src/components/ChangePassword.jsx:44
+#, fuzzy
+msgid "Password successfully changed."
+msgstr "رمز عبور با موفقیت تغییر کرد."
 
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr "فاصله"
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "رمز قدیمی"
 
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr "آیدی (اختیاری)"
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "رمز جدید"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr "گوشه بالا سمت چپ"
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "رمز عبور جدید را تأیید کنید"
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr "گوشه پایین سمت راست"
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "نام کاربری جدید"
 
-#: src/components/ModWatchtools.jsx:249
-msgid "Get Pixels"
-msgstr "پیکسل بگیر"
+#: src/components/ChangeMail.jsx:59
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"ایمیل با موفقیت تغییر کرد. ما یک ایمیل تأیید برای شما ارسال "
+"کردیم،               لطفا آدرس ایمیل جدید خود را تأیید کنید."
 
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
-msgstr "کاربر بگیر"
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "ایمیل جدید"
 
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "اقدامات آیپی"
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "آره، اکانتم رو پاک کن!"
 
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "انجام کارها با IP (یک IP در هر خط)"
+#: src/components/SocialSettings.jsx:35
+msgid "Block DMs"
+msgstr "پیام ها رو مسدود کنید"
 
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "ادمین ها رو مدیریت کنین"
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "تمام پیام های خصوصی رو مسدود کنید"
 
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "ادمین  رو پاک کنین"
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
+msgstr "خصوصی"
 
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "هیچ ادمینی نیست"
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr "اسم من رو توی امار جهانی نشون نده"
 
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "ادمین جدید انتخاب کن"
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "کاربران رو غیر مسدود کن"
 
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "نام کاربری ادمین جدید را وارد کنید"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "نام کاربری"
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "تو هیچ کاربر مسدود شده نداری"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1553,6 +1560,16 @@ msgstr ""
 "حفاظت از مناطق          (اگر به کنترل دانه ریزتر نیاز دارید،         use "
 "protect with image upload and alpha layers)"
 
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr "گوشه بالا سمت چپ"
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr "گوشه پایین سمت راست"
+
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "بازگشت به تاریخ"
@@ -1572,6 +1589,62 @@ msgstr "از یک فیلتر برای تمیز کردن سطل زباله در �
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
 msgstr "تمیز کننده رو متوقف کنین"
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "اقدامات آیپی"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "انجام کارها با IP (یک IP در هر خط)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "ادمین ها رو مدیریت کنین"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "ادمین  رو پاک کنین"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "هیچ ادمینی نیست"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "ادمین جدید انتخاب کن"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "نام کاربری ادمین جدید را وارد کنید"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "نام کاربری"
+
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr "فاصله نامعتبر است"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr "بررسی کنید چه کسی در اون منطقه پیکسل گذاشته"
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr "فاصله"
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr "آیدی (اختیاری)"
+
+#: src/components/ModWatchtools.jsx:249
+msgid "Get Pixels"
+msgstr "پیکسل بگیر"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
+msgstr "کاربر بگیر"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1593,71 +1666,6 @@ msgstr "دلیل وارد کن"
 msgid "(0 = infinite)"
 msgstr ""
 
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "نام کاربری جدید"
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "رمزهای ورود مطابقت ندارند."
-
-#: src/components/ChangePassword.jsx:44
-#, fuzzy
-msgid "Password successfully changed."
-msgstr "رمز عبور با موفقیت تغییر کرد."
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "رمز قدیمی"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "رمز جدید"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "رمز عبور جدید را تأیید کنید"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "آره، اکانتم رو پاک کن!"
-
-#: src/components/ChangeMail.jsx:59
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"ایمیل با موفقیت تغییر کرد. ما یک ایمیل تأیید برای شما ارسال "
-"کردیم،               لطفا آدرس ایمیل جدید خود را تأیید کنید."
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "ایمیل جدید"
-
-#: src/components/SocialSettings.jsx:35
-msgid "Block DMs"
-msgstr "پیام ها رو مسدود کنید"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "تمام پیام های خصوصی رو مسدود کنید"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr "خصوصی"
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr "اسم من رو توی امار جهانی نشون نده"
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "کاربران رو غیر مسدود کن"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "تو هیچ کاربر مسدود شده نداری"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "پینگ"
@@ -1674,35 +1682,19 @@ msgstr "بلاک"
 msgid "Mute"
 msgstr "سکوت"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
 msgstr ""
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:81
 msgctxt "keybinds"
 msgid "X"
 msgstr ""
 
-#: src/components/windows/Settings.jsx:86
-#, fuzzy
-msgctxt "keybinds"
-msgid "N"
-msgstr "نه"
-
-#: src/components/windows/Settings.jsx:94
-msgctxt "keybinds"
-msgid "M"
-msgstr ""
-
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:159
-msgctxt "keybinds"
-msgid "B"
 msgstr ""
 
 #: src/components/windows/Help.jsx:22
@@ -1743,6 +1735,22 @@ msgstr ""
 #: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:89
+#, fuzzy
+msgctxt "keybinds"
+msgid "N"
+msgstr "نه"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:61

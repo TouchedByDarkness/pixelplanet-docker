@@ -230,6 +230,42 @@ msgstr "Të ni môsz ùdowierzeniô do przistãpù do ti starnë"
 msgid "Just admins can do that"
 msgstr "Leno sprôwnicë mògą to robic"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Ten dotëgòwôcz adrésë e-mail nie je dozwòlony"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Captcha nie òsta pòdónô"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "E-mail ju w ùżëcym."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Pòzwa brëkòwnika ju w ùżëcym."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "To za wiele zeszło, spróbùj jesz rôz."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Nie przeszedł jes testu captcha"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Nieznónô fela Captchë"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Nie ùdało sã stwòrzëc nowégò brëkòwnika :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Nie ùdało sã ùsadzëc sesje pò registracje :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Sprôwdzenié adrésë e-mail"
@@ -271,10 +307,6 @@ msgstr "Złô parola!"
 msgid "Muted Users can not delete their account."
 msgstr "Wëcëszony brëkòwnicë ni mògą rëmnąc swòjégò kònta."
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Ten dotëgòwôcz adrésë e-mail nie je dozwòlony"
-
 #: src/routes/api/auth/change_mail.js:62
 #, fuzzy
 msgid "Muted Users can not do this."
@@ -292,38 +324,6 @@ msgstr "Òstóniesz aùtomaticzno przekôzóny dali pò 15 sekùndach"
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Abò ${ clickHere } żebë warcëc do pixelplanet"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Captcha nie òsta pòdónô"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "E-mail ju w ùżëcym."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Pòzwa brëkòwnika ju w ùżëcym."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "To za wiele zeszło, spróbùj jesz rôz."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Nie przeszedł jes testu captcha"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Nieznónô fela Captchë"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Nie ùdało sã stwòrzëc nowégò brëkòwnika :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Nie ùdało sã ùsadzëc sesje pò registracje :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

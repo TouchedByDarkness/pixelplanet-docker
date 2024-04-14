@@ -233,6 +233,42 @@ msgstr "Вам нельга захадзіць на гэтую старонку"
 msgid "Just admins can do that"
 msgstr "Толькі адміністратары могуць гэта рабіць"
 
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
+msgid "This email provider is not allowed"
+msgstr "Гэты email-правайдэр забанены"
+
+#: src/routes/api/auth/register.js:31
+msgid "No Captcha given"
+msgstr "Капча адсутнічае"
+
+#: src/routes/api/auth/register.js:34
+msgid "E-Mail already in use."
+msgstr "Гэтая пошта ўжо выкарыстоўваецца."
+
+#: src/routes/api/auth/register.js:36
+msgid "Username already in use."
+msgstr "Гэтае імя ўжо выкарыстоўваецца."
+
+#: src/routes/api/auth/register.js:59
+msgid "You took too long, try again."
+msgstr "Вам спатрэбілася занадта многа часу, паспрабуйце яшчэ раз."
+
+#: src/routes/api/auth/register.js:62
+msgid "You failed your captcha"
+msgstr "Вы правалілі сваю капчу"
+
+#: src/routes/api/auth/register.js:65
+msgid "Unknown Captcha Error"
+msgstr "Невядомая памылка капчы"
+
+#: src/routes/api/auth/register.js:89
+msgid "Failed to create new user :("
+msgstr "Не атрымалася стварыць новага карыстальніка :("
+
+#: src/routes/api/auth/register.js:105
+msgid "Failed to establish session after register :("
+msgstr "Не атрымалася стварыць сэсію пасля рэгістрацыі :("
+
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "Спраўджанне пошты"
@@ -273,10 +309,6 @@ msgstr "Няправільны пароль!"
 msgid "Muted Users can not delete their account."
 msgstr ""
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Гэты email-правайдэр забанены"
-
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
 msgstr ""
@@ -293,38 +325,6 @@ msgstr "Вы будзеце аўтаматычна перанакіраваны�
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr "Альбо ${ clickHere } каб вярнуцца да pixelplanet"
-
-#: src/routes/api/auth/register.js:31
-msgid "No Captcha given"
-msgstr "Капча адсутнічае"
-
-#: src/routes/api/auth/register.js:34
-msgid "E-Mail already in use."
-msgstr "Гэтая пошта ўжо выкарыстоўваецца."
-
-#: src/routes/api/auth/register.js:36
-msgid "Username already in use."
-msgstr "Гэтае імя ўжо выкарыстоўваецца."
-
-#: src/routes/api/auth/register.js:59
-msgid "You took too long, try again."
-msgstr "Вам спатрэбілася занадта многа часу, паспрабуйце яшчэ раз."
-
-#: src/routes/api/auth/register.js:62
-msgid "You failed your captcha"
-msgstr "Вы правалілі сваю капчу"
-
-#: src/routes/api/auth/register.js:65
-msgid "Unknown Captcha Error"
-msgstr "Невядомая памылка капчы"
-
-#: src/routes/api/auth/register.js:89
-msgid "Failed to create new user :("
-msgstr "Не атрымалася стварыць новага карыстальніка :("
-
-#: src/routes/api/auth/register.js:105
-msgid "Failed to establish session after register :("
-msgstr "Не атрымалася стварыць сэсію пасля рэгістрацыі :("
 
 #: src/canvasesDesc.js:20
 msgid "Earth"

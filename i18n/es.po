@@ -13,22 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/store/actions/thunks.js:227
-msgid "Pencil picks: "
-msgstr ""
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
-msgid "Selected Color"
-msgstr "Color seleccionado"
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
-msgid "From Template"
-msgstr "De la plantilla"
-
-#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
-msgid "From History"
-msgstr "Del historial"
-
 #: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
@@ -196,12 +180,28 @@ msgstr "No se pudo colocar el Píxel"
 msgid "Error ${ retCode }"
 msgstr "Error ${ retCode }"
 
-#: src/ui/rendererFactory.js:31
+#: src/store/actions/thunks.js:227
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
+msgid "Selected Color"
+msgstr "Color seleccionado"
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
+msgid "From Template"
+msgstr "De la plantilla"
+
+#: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
+msgid "From History"
+msgstr "Del historial"
+
+#: src/ui/rendererFactory.js:32
 #, fuzzy
 msgid "Canvas Error"
 msgstr "Archivo de Lienzos"
 
-#: src/ui/rendererFactory.js:32
+#: src/ui/rendererFactory.js:33
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "No se puede renderizar el lienzo 3D. ¿Tienes WebGL2 deshabilitado?"
 
@@ -372,6 +372,10 @@ msgstr "Área del Usuario"
 msgid "Make Screenshot"
 msgstr "Tomar Captura de Pantalla"
 
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "Vista de Globo"
+
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "Cerrar Paleta"
@@ -396,10 +400,6 @@ msgstr ""
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr ""
-
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "Vista de Globo"
 
 #: src/components/windows/index.js:16
 #, fuzzy
@@ -502,170 +502,6 @@ msgstr "Cancelar"
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
 msgstr "Enviar"
-
-#: src/components/windows/Settings.jsx:69
-msgid "Show Grid"
-msgstr "Mostrar Cuadrícula"
-
-#: src/components/windows/Settings.jsx:74
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Enciende la cuadrícula para mostrar los bordes de los píxeles."
-
-#: src/components/windows/Settings.jsx:77
-msgid "Show Pixel Activity"
-msgstr "Mostrar Actividad de Píxeles"
-
-#: src/components/windows/Settings.jsx:82
-msgid "Show circles where pixels are placed."
-msgstr "Muestra círculos donde se han colocado píxeles."
-
-#: src/components/windows/Settings.jsx:85
-msgid "Always show Movement Controls"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:90
-msgid "Always show movement control buttons"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:93
-msgid "Disable Game Sounds"
-msgstr "Desactivar los Sonidos del Juego"
-
-#: src/components/windows/Settings.jsx:99
-msgid "All sound effects will be disabled."
-msgstr "Se desactivarán todos los efectos de sonido."
-
-#: src/components/windows/Settings.jsx:103
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:109
-msgid "Enable chat notifications"
-msgstr "Activar las notificaciones del chat"
-
-#: src/components/windows/Settings.jsx:113
-msgid "Play a sound when new chat messages arrive"
-msgstr "Reproducir un sonido al llegar mensajes nuevos."
-
-#: src/components/windows/Settings.jsx:116
-msgid "Auto Zoom In"
-msgstr "Zoom automático"
-
-#: src/components/windows/Settings.jsx:121
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Si el zoom está alejado, este se acercará en lugar de colocar un píxel al "
-"hacer clic en el lienzo."
-
-#: src/components/windows/Settings.jsx:124
-msgid "Compact Palette"
-msgstr "Paleta de colores compacta"
-
-#: src/components/windows/Settings.jsx:129
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr ""
-"Muestra la Paleta de Colores en una forma compacta para ahorrar espacio en "
-"la pantalla."
-
-#: src/components/windows/Settings.jsx:132
-msgid "Potato Mode"
-msgstr "Modo Patata"
-
-#: src/components/windows/Settings.jsx:136
-msgid "For when you are playing on a potato."
-msgstr "Para cuando juegas en una patata."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
-msgid "Light Grid"
-msgstr "Cuadrícula Clara"
-
-#: src/components/windows/Settings.jsx:143
-msgid "Show Grid in white instead of black."
-msgstr "Muestra la Cuadrícula en blanco en vez de negro."
-
-#: src/components/windows/Settings.jsx:147
-msgid "Historical View"
-msgstr "Vista Histórica"
-
-#: src/components/windows/Settings.jsx:152
-msgid "Check out past versions of the canvas."
-msgstr "Revisar versiones antiguas del lienzo."
-
-#: src/components/windows/Settings.jsx:156
-#, fuzzy, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Cambiado a ${ canvasName }"
-
-#: src/components/windows/Settings.jsx:164
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:168
-msgid "Themes"
-msgstr "Temas"
-
-#: src/components/windows/Settings.jsx:173
-msgid "How pixelplanet should look like."
-msgstr "Cambiar el aspecto de pixelplanet."
-
-#: src/components/windows/Settings.jsx:180
-msgid "Select Language"
-msgstr "Seleccionar Lenguage"
-
-#: src/components/windows/Archive.jsx:9
-#, fuzzy
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"SI bien no tendemos a eliminar lienzos, algunos lienzos son introducidos "
-"solo por diversión, o por petición de usuarios que disfrutan de algún meme. "
-"Dichos lienzos pueden volverse aburridos después de un cierto tiempo y luego "
-"de varias semanas sin cambios mayores y si no vale la pena mantenerlos "
-"activos, puede que decidamos removerlos."
-
-#: src/components/windows/Archive.jsx:10
-#, fuzzy
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"Aquí recolectamos aquellos lienzos para archivarlos de manera apropiada "
-"(actualmente es solo uno)."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "Lienzo de Brújula Política"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"Este lienzo fue solicitado durante un periodo de conflictos políticos en el "
-"lienzo principal de la Tierra. Era una representación de la brújula política "
-"de 1024x1024px con 5s de enfriamiento y 60 de apilamiento. Fue lanzado el 11 "
-"de Mayo de 2020 y permaneció activo por meses hasta que fue cerrado el 30 de "
-"Noviembre del mismo año."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"Hemos decidido archivarlo como un lapso de tiempo en la forma de un webm "
-"codificado sin pérdida. Tomar una captura del lapso temporal resulta en una "
-"representación 1:1 perfecta de como el lienzo se veía en un determinado "
-"momento."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -875,25 +711,126 @@ msgstr "El crédito por la Paleta de la Luna es para ${ vinikLink }."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "El crédito por la Paleta de la Luna es para ${ donendoLink }."
 
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "Mostrar Cuadrícula"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Enciende la cuadrícula para mostrar los bordes de los píxeles."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Mostrar Actividad de Píxeles"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "Muestra círculos donde se han colocado píxeles."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "Desactivar los Sonidos del Juego"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "Se desactivarán todos los efectos de sonido."
+
+#: src/components/windows/Settings.jsx:106
 msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
 msgstr ""
-"Selecciona el lienzo que deseas utilizar. Cada lienzo es único y tiene "
-"distintas paletas, tiempos de enfriamiento y requisitos. Puedes acceder a un "
-"archivo de los lienzos cerrados aquí:"
 
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Archivo"
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "Activar las notificaciones del chat"
 
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "Reproducir un sonido al llegar mensajes nuevos."
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "Zoom automático"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
 msgstr ""
+"Si el zoom está alejado, este se acercará en lugar de colocar un píxel al "
+"hacer clic en el lienzo."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "Paleta de colores compacta"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr ""
+"Muestra la Paleta de Colores en una forma compacta para ahorrar espacio en "
+"la pantalla."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Modo Patata"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "Para cuando juegas en una patata."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "Cuadrícula Clara"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "Muestra la Cuadrícula en blanco en vez de negro."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Vista Histórica"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "Revisar versiones antiguas del lienzo."
+
+#: src/components/windows/Settings.jsx:166
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Cambiado a ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Temas"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "Cambiar el aspecto de pixelplanet."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Seleccionar Lenguage"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -934,22 +871,6 @@ msgstr ""
 msgid "Submit"
 msgstr "Enviar"
 
-#: src/components/windows/Chat.jsx:180
-msgid "Start chatting here"
-msgstr "Comienza a chatear aquí"
-
-#: src/components/windows/Chat.jsx:217
-msgid "Chat here"
-msgstr "Chatea aquí"
-
-#: src/components/windows/Chat.jsx:243
-msgid "You must be logged in to chat"
-msgstr "Debes iniciar sesión para chatear"
-
-#: src/components/windows/Chat.jsx:273
-msgid "Channel settings"
-msgstr "Configuración del Canal"
-
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -974,6 +895,101 @@ msgstr "Cargando..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Considera unirte a nuestro Guilded:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Selecciona el lienzo que deseas utilizar. Cada lienzo es único y tiene "
+"distintas paletas, tiempos de enfriamiento y requisitos. Puedes acceder a un "
+"archivo de los lienzos cerrados aquí:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Archivo"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
+
+#: src/components/windows/Archive.jsx:9
+#, fuzzy
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"SI bien no tendemos a eliminar lienzos, algunos lienzos son introducidos "
+"solo por diversión, o por petición de usuarios que disfrutan de algún meme. "
+"Dichos lienzos pueden volverse aburridos después de un cierto tiempo y luego "
+"de varias semanas sin cambios mayores y si no vale la pena mantenerlos "
+"activos, puede que decidamos removerlos."
+
+#: src/components/windows/Archive.jsx:10
+#, fuzzy
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Aquí recolectamos aquellos lienzos para archivarlos de manera apropiada "
+"(actualmente es solo uno)."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "Lienzo de Brújula Política"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Este lienzo fue solicitado durante un periodo de conflictos políticos en el "
+"lienzo principal de la Tierra. Era una representación de la brújula política "
+"de 1024x1024px con 5s de enfriamiento y 60 de apilamiento. Fue lanzado el 11 "
+"de Mayo de 2020 y permaneció activo por meses hasta que fue cerrado el 30 de "
+"Noviembre del mismo año."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Hemos decidido archivarlo como un lapso de tiempo en la forma de un webm "
+"codificado sin pérdida. Tomar una captura del lapso temporal resulta en una "
+"representación 1:1 perfecta de como el lienzo se veía en un determinado "
+"momento."
+
+#: src/components/windows/Chat.jsx:180
+msgid "Start chatting here"
+msgstr "Comienza a chatear aquí"
+
+#: src/components/windows/Chat.jsx:217
+msgid "Chat here"
+msgstr "Chatea aquí"
+
+#: src/components/windows/Chat.jsx:243
+msgid "You must be logged in to chat"
+msgstr "Debes iniciar sesión para chatear"
+
+#: src/components/windows/Chat.jsx:273
+msgid "Channel settings"
+msgstr "Configuración del Canal"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "Te enviamos un correo con instrucciones para reiniciar tu contraseña."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Ingresa tu dirección de correo y te enviaremos una contraseña nueva:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -1007,14 +1023,6 @@ msgstr "Recargar"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "Introducir Caracteres"
-
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr "Te enviamos un correo con instrucciones para reiniciar tu contraseña."
-
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr "Ingresa tu dirección de correo y te enviaremos una contraseña nueva:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1065,54 +1073,6 @@ msgstr "La contraseña debe tener al menos 6 caracteres de largo."
 msgid "Password must be shorter than 60 characters."
 msgstr "La contraseña debe tener menos de 60 caracteres."
 
-#: src/components/CanvasItem.jsx:29
-#, fuzzy
-msgid "Online Users"
-msgstr "Desbloquear Usuarios"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "Enfriamiento"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "Apilamiento hasta"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "Incluido en Ranking"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr ""
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr ""
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "Requisitos"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "Cuenta de Usuario"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "y ${ canvas.req } Píxeles colocados"
-
-#: src/components/CanvasItem.jsx:58
-#, fuzzy
-msgid "Top 10 Daily Ranking"
-msgstr "Ranking Diario"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "Dimensiones"
-
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr ""
@@ -1120,6 +1080,12 @@ msgstr ""
 #: src/components/GetIID.jsx:53
 msgid "Copy"
 msgstr ""
+
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "Guardar"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1200,12 +1166,6 @@ msgstr ""
 msgid "Import templates"
 msgstr ""
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "Guardar"
-
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
 msgstr "Píxeles Colocados Hoy"
@@ -1246,6 +1206,34 @@ msgstr "Eliminar Cuenta"
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
 msgstr "Configuración Social"
+
+#: src/components/Rankings.jsx:165
+msgid "Yesterday"
+msgstr ""
+
+#: src/components/Rankings.jsx:174
+msgid "Countries Today"
+msgstr ""
+
+#: src/components/Rankings.jsx:183
+msgid "Charts"
+msgstr ""
+
+#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
+#: src/components/Rankings.jsx:219
+#, fuzzy
+msgid "User"
+msgstr "Área del Usuario"
+
+#: src/components/Rankings.jsx:226
+msgid "Country"
+msgstr ""
+
+#: src/components/Rankings.jsx:286
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"El ranking se actualiza cada 5min. Los rankings diarios son actualizados a "
+"la medianoche UTC."
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
@@ -1324,74 +1312,53 @@ msgstr "Reiniciar"
 msgid "Download Template"
 msgstr "Descargar Plantilla"
 
-#: src/components/Rankings.jsx:165
-msgid "Yesterday"
-msgstr ""
-
-#: src/components/Rankings.jsx:174
-msgid "Countries Today"
-msgstr ""
-
-#: src/components/Rankings.jsx:183
-msgid "Charts"
-msgstr ""
-
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
+#: src/components/CanvasItem.jsx:29
 #, fuzzy
-msgid "User"
-msgstr "Área del Usuario"
+msgid "Online Users"
+msgstr "Desbloquear Usuarios"
 
-#: src/components/Rankings.jsx:226
-msgid "Country"
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "Enfriamiento"
+
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "Apilamiento hasta"
+
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "Incluido en Ranking"
+
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
 msgstr ""
 
-#: src/components/Rankings.jsx:286
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+#: src/components/CanvasItem.jsx:44
+msgid "No"
 msgstr ""
-"El ranking se actualiza cada 5min. Los rankings diarios son actualizados a "
-"la medianoche UTC."
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "Requisitos"
+
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "Cuenta de Usuario"
+
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "y ${ canvas.req } Píxeles colocados"
+
+#: src/components/CanvasItem.jsx:58
 #, fuzzy
-msgid "Canvas"
-msgstr "Elegir Lienzo"
+msgid "Top 10 Daily Ranking"
+msgstr "Ranking Diario"
 
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
-msgid "Coordinates"
-msgstr "Coordenas Inválidas"
-
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Nombre o Email"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Iniciar Sesión"
-
-#: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
-msgid "Select File"
-msgstr "Seleccionar Lenguage"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr ""
-
-#: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
-msgid "Delete"
-msgstr "Eliminar Cuenta"
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "Dimensiones"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1415,6 +1382,47 @@ msgstr ""
 msgid "Total Pixels placed per day"
 msgstr "Píxeles colocados"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Nombre o Email"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Iniciar Sesión"
+
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+#, fuzzy
+msgid "Canvas"
+msgstr "Elegir Lienzo"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+#, fuzzy
+msgid "Coordinates"
+msgstr "Coordenas Inválidas"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "Seleccionar Lenguage"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:174
+#, fuzzy
+msgid "Delete"
+msgstr "Eliminar Cuenta"
+
 #: src/components/UserMessages.jsx:28
 #, fuzzy
 msgid ""
@@ -1432,73 +1440,72 @@ msgstr "Un nuevo correo de verificación está siendo enviado."
 msgid "Click here to request a new verification mail."
 msgstr "Haz clic aquí para solicitar un nuevo correo de verificación."
 
-#: src/components/ModWatchtools.jsx:48
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "Las contraseñas no coinciden."
+
+#: src/components/ChangePassword.jsx:44
 #, fuzzy
-msgid "Interval is invalid"
-msgstr "Lienzo Inválido"
+msgid "Password successfully changed."
+msgstr "Se cambió la Contraseña exitosamente."
 
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr ""
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "Contraseña Anterior"
 
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr ""
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "Contraseña Nueva"
 
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr ""
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Confirmar Contraseña Nueva"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr ""
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "Nombre de Usuario Nuevo"
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:249
+#: src/components/ChangeMail.jsx:59
 #, fuzzy
-msgid "Get Pixels"
-msgstr "Píxeles Colocados"
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"El Correo se ha cambiado exitosamente. Te hemos enviado un correo de "
+"notificación               por favor verifica tu nueva dirección de correo."
 
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "Correo Nuevo"
+
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "¡Si, Elimina Mi Cuenta!"
+
+#: src/components/SocialSettings.jsx:35
+#, fuzzy
+msgid "Block DMs"
+msgstr "Bloquear"
+
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "Bloquear todos los Mensajes Privados"
+
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
 msgstr ""
 
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "Acciones IP"
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr ""
 
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "Hacer cosas con IPs (una IP por línea)"
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "Desbloquear Usuarios"
 
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "Administrar Moderadores"
-
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "Remover Moderador"
-
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "No hay mods"
-
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "Asignar nuevo Mod"
-
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "Ingresar Nombre de Usuario del nuevo Mod"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "Nombre de Usuario"
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "No tienes usuarios bloqueados"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1570,6 +1577,16 @@ msgstr ""
 "Configurar protección de áreas (si necesitas control granular más fino, "
 "utiliza la protección con subida de imagen y capas alpha)"
 
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr ""
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr ""
+
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "Regresar a la Fecha"
@@ -1589,6 +1606,64 @@ msgstr ""
 
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
+msgstr ""
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "Acciones IP"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "Hacer cosas con IPs (una IP por línea)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "Administrar Moderadores"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "Remover Moderador"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "No hay mods"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "Asignar nuevo Mod"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "Ingresar Nombre de Usuario del nuevo Mod"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "Nombre de Usuario"
+
+#: src/components/ModWatchtools.jsx:48
+#, fuzzy
+msgid "Interval is invalid"
+msgstr "Lienzo Inválido"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:249
+#, fuzzy
+msgid "Get Pixels"
+msgstr "Píxeles Colocados"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
 msgstr ""
 
 #: src/components/ModIIDtools.jsx:20
@@ -1612,73 +1687,6 @@ msgstr ""
 msgid "(0 = infinite)"
 msgstr ""
 
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "Nombre de Usuario Nuevo"
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "Las contraseñas no coinciden."
-
-#: src/components/ChangePassword.jsx:44
-#, fuzzy
-msgid "Password successfully changed."
-msgstr "Se cambió la Contraseña exitosamente."
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "Contraseña Anterior"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "Contraseña Nueva"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Confirmar Contraseña Nueva"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "¡Si, Elimina Mi Cuenta!"
-
-#: src/components/ChangeMail.jsx:59
-#, fuzzy
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"El Correo se ha cambiado exitosamente. Te hemos enviado un correo de "
-"notificación               por favor verifica tu nueva dirección de correo."
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "Correo Nuevo"
-
-#: src/components/SocialSettings.jsx:35
-#, fuzzy
-msgid "Block DMs"
-msgstr "Bloquear"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "Bloquear todos los Mensajes Privados"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr ""
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "Desbloquear Usuarios"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "No tienes usuarios bloqueados"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Hacer Ping"
@@ -1695,35 +1703,20 @@ msgstr "Bloquear"
 msgid "Mute"
 msgstr "Silenciar"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
 msgstr "G"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:81
 msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Settings.jsx:86
-msgctxt "keybinds"
-msgid "N"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:94
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
-
-#: src/components/windows/Settings.jsx:159
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1764,6 +1757,21 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
+
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

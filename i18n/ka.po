@@ -13,24 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
-#: src/store/actions/thunks.js:227
-msgid "Pencil picks: "
-msgstr ""
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:230
-#, fuzzy
-msgid "Selected Color"
-msgstr "აირჩიეთ ფაილი"
-
-#: src/components/windows/Settings.jsx:63 src/store/actions/thunks.js:233
-#, fuzzy
-msgid "From Template"
-msgstr "თემფლეითები"
-
-#: src/components/windows/Settings.jsx:64 src/store/actions/thunks.js:236
-msgid "From History"
-msgstr ""
-
 #: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
@@ -192,11 +174,29 @@ msgstr "Pixel-ის დაყენება ვერ მოხერხდა
 msgid "Error ${ retCode }"
 msgstr "უცნაური ${ retCode }"
 
-#: src/ui/rendererFactory.js:31
+#: src/store/actions/thunks.js:227
+msgid "Pencil picks: "
+msgstr ""
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
+#, fuzzy
+msgid "Selected Color"
+msgstr "აირჩიეთ ფაილი"
+
+#: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
+#, fuzzy
+msgid "From Template"
+msgstr "თემფლეითები"
+
+#: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
+msgid "From History"
+msgstr ""
+
+#: src/ui/rendererFactory.js:32
 msgid "Canvas Error"
 msgstr "კანვასის შეცდომა"
 
-#: src/ui/rendererFactory.js:32
+#: src/ui/rendererFactory.js:33
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
 msgstr "3D კანვასის რენდერი ვერ ხერხდება, გამორთული გაქვთ WebGL2?"
 
@@ -363,6 +363,10 @@ msgstr "მომხმარებლის ზონა"
 msgid "Make Screenshot"
 msgstr "სკრინშოტის გაკეთება"
 
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr "გლობუსის ნახვა"
+
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
 msgstr "დახურეთ პალიტრა"
@@ -386,10 +390,6 @@ msgstr "გამორთეთ ისტორიული ფანქარ�
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "გამორთეთ ოვერლეის ფანქარი"
-
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr "გლობუსის ნახვა"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -487,167 +487,6 @@ msgstr "გაუქმება"
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
 msgstr "გაგზავნა"
-
-#: src/components/windows/Settings.jsx:69
-msgid "Show Grid"
-msgstr "ბადის ჩვენება"
-
-#: src/components/windows/Settings.jsx:74
-msgid "Turn on grid to highlight pixel borders."
-msgstr "ჩართეთ ბადე პიქსელის საზღვრების გამოსაყოფად."
-
-#: src/components/windows/Settings.jsx:77
-msgid "Show Pixel Activity"
-msgstr "Pixel Activity-ის ჩვენება"
-
-#: src/components/windows/Settings.jsx:82
-msgid "Show circles where pixels are placed."
-msgstr "აჩვენეთ წრეები, სადაც პიქსელებია განთავსებული."
-
-#: src/components/windows/Settings.jsx:85
-msgid "Always show Movement Controls"
-msgstr "მოძრაობის კონტროლის სულ ჩვენება"
-
-#: src/components/windows/Settings.jsx:90
-msgid "Always show movement control buttons"
-msgstr "მოძრაობის კონტროლის ღილაკების ყოველთვის ჩვენება"
-
-#: src/components/windows/Settings.jsx:93
-msgid "Disable Game Sounds"
-msgstr "თამაშის ხმების გამორთვა"
-
-#: src/components/windows/Settings.jsx:99
-msgid "All sound effects will be disabled."
-msgstr "ყველა ხმოვანი ეფექტი გამორთული იქნება."
-
-#: src/components/windows/Settings.jsx:103
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"თქვენი ბრაუზერი არ გვაძლევს საშუალებას გამოვიყენოთ AudioContext საუნდის "
-"ჩასართავათ. გაქვთ რაიმე კონფიდენციალურობის ფუნქცია, რომელიც გვბლოკავს?"
-
-#: src/components/windows/Settings.jsx:109
-msgid "Enable chat notifications"
-msgstr "ჩეთის შეტყობინებების ჩართვა"
-
-#: src/components/windows/Settings.jsx:113
-msgid "Play a sound when new chat messages arrive"
-msgstr "ახალი ჩეთის შეტყობინებების მოსვლისას ხმის დაკვრა"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Auto Zoom In"
-msgstr "ავტომატური ზუმინგი"
-
-#: src/components/windows/Settings.jsx:121
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"გაადიდეთ პიქსელის განთავსების ნაცვლად, როდესაც ტილოზე შეხებით და თქვენი "
-"მასშტაბირება მცირეა."
-
-#: src/components/windows/Settings.jsx:124
-msgid "Compact Palette"
-msgstr "კომპაქტური პალიტრა"
-
-#: src/components/windows/Settings.jsx:129
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr ""
-"ჩვენება პალიტრა კომპაქტური ფორმით, რომელიც ნაკლებ ადგილს იკავებს ეკრანზე."
-
-#: src/components/windows/Settings.jsx:132
-msgid "Potato Mode"
-msgstr "კარტოფილის რეჟიმი"
-
-#: src/components/windows/Settings.jsx:136
-msgid "For when you are playing on a potato."
-msgstr "როცა კარტოფილზე თამაშობ."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:139
-msgid "Light Grid"
-msgstr "სინათლის ბადე"
-
-#: src/components/windows/Settings.jsx:143
-msgid "Show Grid in white instead of black."
-msgstr "აჩვენეთ ბადე თეთრად შავის ნაცვლად."
-
-#: src/components/windows/Settings.jsx:147
-msgid "Historical View"
-msgstr "ისტორიული ხედი"
-
-#: src/components/windows/Settings.jsx:152
-msgid "Check out past versions of the canvas."
-msgstr "შეამოწმეთ კანნვასის წარსული ვერსიები."
-
-#: src/components/windows/Settings.jsx:156
-#, fuzzy, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "გადაერთო ${ canvasName }-ზე"
-
-#: src/components/windows/Settings.jsx:164
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:168
-msgid "Themes"
-msgstr "თემები"
-
-#: src/components/windows/Settings.jsx:173
-msgid "How pixelplanet should look like."
-msgstr "როგორი უნდა გამოიყურებოდეს pixelplanet."
-
-#: src/components/windows/Settings.jsx:180
-msgid "Select Language"
-msgstr "Აირჩიეთ ენა"
-
-#: src/components/windows/Archive.jsx:9
-msgid ""
-"While we tend to not delete canvases, some canvases are started for fun or "
-"as a request by users who like a currently popular meme. Those canvases can "
-"become dull and inactive after a while, at which point there is no reason to "
-"keep them and we may decide to remove them."
-msgstr ""
-"მიუხედავად იმისა, რომ ჩვენ მიდრეკილნი ვართ არ წავშალოთ კანვასები, ზოგიერთი "
-"კანვასი დაწყებულია გასართობად ან მომხმარებლის მოთხოვნით, რომლებსაც ამჟამად "
-"მოსწონთ meme. ეს კანვასები შეიძლება მოსაწყენი გახდეს გარკვეული პერიოდის "
-"შემდეგ და რამდენიმე კვირის შემდეგ მნიშვნელოვანი ცვლილებების გარეშე და თუ "
-"ისინი ნამდვილად არ ღირს აქტიური შენარჩუნება, ჩვენ გადავწყვიტეთ მათი ამოღება."
-
-#: src/components/windows/Archive.jsx:10
-msgid ""
-"Here we collect removed canvases to archive them properly. Which is "
-"currently only one."
-msgstr ""
-"აქ ჩვენ ვაგროვებთ ამ კანვასებს, რათა დავაარქივოთ ისინი სათანადო გზით "
-"(რომელიც ამჟამად მხოლოდ ერთია)."
-
-#: src/components/windows/Archive.jsx:12
-msgid "Political Compass Canvas"
-msgstr "პოლიტიკური კომპასის კანვასი"
-
-#: src/components/windows/Archive.jsx:21
-msgid ""
-"This canvas got requested during a time of political conflicts on the main "
-"Earth canvas. It was a 1024x1024 representation of the political compass "
-"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
-"remained active for months till it got shut down on November 30th."
-msgstr ""
-"ეს კანვასი მოითხოვეს დედამიწის მთავარ კანვასზე პოლიტიკური კონფლიქტების დროს. "
-"ეს იყო პოლიტიკური კომპასის 1024x1024 გამოსახულება 5s cooldown-ით და 60s-ების "
-"დაწყობით. ის ამოქმედდა 11 მაისს და აქტიური იყო თვეების განმავლობაში, სანამ "
-"არ დაიხურა 30 ნოემბერს."
-
-#: src/components/windows/Archive.jsx:22
-msgid ""
-"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
-"screenshot from the timelapse results in a perfect 1:1 representation of how "
-"the canvas was at that time."
-msgstr ""
-"ჩვენ გადავწყვიტეთ მისი დაარქივება, როგორც დროულად დაკარგვის გარეშე დაშიფრული "
-"ვებმით. Timelapse-დან სკრინშოტის გადაღება იძლევა სრულყოფილ 1:1 წარმოდგენას "
-"იმის შესახებ, თუ როგორ იყო კანვასი იმ დროს."
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -857,25 +696,127 @@ msgstr "ტოპ10 ტილოს პალიტრის კრედიტ�
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "ტოპ10 ტილოს პალიტრის კრედიტი გადადის ${ donendoLink }."
 
-#: src/components/windows/CanvasSelect.jsx:29
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "ბადის ჩვენება"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "ჩართეთ ბადე პიქსელის საზღვრების გამოსაყოფად."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Pixel Activity-ის ჩვენება"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "აჩვენეთ წრეები, სადაც პიქსელებია განთავსებული."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr "მოძრაობის კონტროლის სულ ჩვენება"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr "მოძრაობის კონტროლის ღილაკების ყოველთვის ჩვენება"
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "თამაშის ხმების გამორთვა"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "ყველა ხმოვანი ეფექტი გამორთული იქნება."
+
+#: src/components/windows/Settings.jsx:106
 msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
 msgstr ""
-"აირჩიეთ კანვასი, რომლის გამოყენებაც გსურთ. \n"
-"ყველა კანვასი უნიკალურია და აქვს სხვადასხვა პალიტრა, დროს მოცდა და "
-"მოთხოვნები. \n"
-"დახურული კანვასის არქივი შეგიძლიათ ნახოთ აქ:"
+"თქვენი ბრაუზერი არ გვაძლევს საშუალებას გამოვიყენოთ AudioContext საუნდის "
+"ჩასართავათ. გაქვთ რაიმე კონფიდენციალურობის ფუნქცია, რომელიც გვბლოკავს?"
 
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "არქივი"
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "ჩეთის შეტყობინებების ჩართვა"
 
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "პენსიონერი ჩარჩო (მხოლოდ ისტორია)"
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "ახალი ჩეთის შეტყობინებების მოსვლისას ხმის დაკვრა"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "ავტომატური ზუმინგი"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"გაადიდეთ პიქსელის განთავსების ნაცვლად, როდესაც ტილოზე შეხებით და თქვენი "
+"მასშტაბირება მცირეა."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "კომპაქტური პალიტრა"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr ""
+"ჩვენება პალიტრა კომპაქტური ფორმით, რომელიც ნაკლებ ადგილს იკავებს ეკრანზე."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "კარტოფილის რეჟიმი"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "როცა კარტოფილზე თამაშობ."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "სინათლის ბადე"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "აჩვენეთ ბადე თეთრად შავის ნაცვლად."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "ისტორიული ხედი"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "შეამოწმეთ კანნვასის წარსული ვერსიები."
+
+#: src/components/windows/Settings.jsx:166
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "გადაერთო ${ canvasName }-ზე"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "თემები"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "როგორი უნდა გამოიყურებოდეს pixelplanet."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Აირჩიეთ ენა"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -916,22 +857,6 @@ msgstr "კაპჩა"
 msgid "Submit"
 msgstr "გაგზავნა"
 
-#: src/components/windows/Chat.jsx:180
-msgid "Start chatting here"
-msgstr "დაიწყეთ საუბარი აქ"
-
-#: src/components/windows/Chat.jsx:217
-msgid "Chat here"
-msgstr "ჩატი აქ"
-
-#: src/components/windows/Chat.jsx:243
-msgid "You must be logged in to chat"
-msgstr "თქვენ უნდა იყოთ შესული ჩატისთვის"
-
-#: src/components/windows/Chat.jsx:273
-msgid "Channel settings"
-msgstr "არხის პარამეტრები"
-
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -956,6 +881,97 @@ msgstr "Ჩატვირთვა..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "იფიქრეთ შემოგვიერთდით Guilded-ზე:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"აირჩიეთ კანვასი, რომლის გამოყენებაც გსურთ. \n"
+"ყველა კანვასი უნიკალურია და აქვს სხვადასხვა პალიტრა, დროს მოცდა და "
+"მოთხოვნები. \n"
+"დახურული კანვასის არქივი შეგიძლიათ ნახოთ აქ:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "არქივი"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "პენსიონერი ჩარჩო (მხოლოდ ისტორია)"
+
+#: src/components/windows/Archive.jsx:9
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"მიუხედავად იმისა, რომ ჩვენ მიდრეკილნი ვართ არ წავშალოთ კანვასები, ზოგიერთი "
+"კანვასი დაწყებულია გასართობად ან მომხმარებლის მოთხოვნით, რომლებსაც ამჟამად "
+"მოსწონთ meme. ეს კანვასები შეიძლება მოსაწყენი გახდეს გარკვეული პერიოდის "
+"შემდეგ და რამდენიმე კვირის შემდეგ მნიშვნელოვანი ცვლილებების გარეშე და თუ "
+"ისინი ნამდვილად არ ღირს აქტიური შენარჩუნება, ჩვენ გადავწყვიტეთ მათი ამოღება."
+
+#: src/components/windows/Archive.jsx:10
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"აქ ჩვენ ვაგროვებთ ამ კანვასებს, რათა დავაარქივოთ ისინი სათანადო გზით "
+"(რომელიც ამჟამად მხოლოდ ერთია)."
+
+#: src/components/windows/Archive.jsx:12
+msgid "Political Compass Canvas"
+msgstr "პოლიტიკური კომპასის კანვასი"
+
+#: src/components/windows/Archive.jsx:21
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"ეს კანვასი მოითხოვეს დედამიწის მთავარ კანვასზე პოლიტიკური კონფლიქტების დროს. "
+"ეს იყო პოლიტიკური კომპასის 1024x1024 გამოსახულება 5s cooldown-ით და 60s-ების "
+"დაწყობით. ის ამოქმედდა 11 მაისს და აქტიური იყო თვეების განმავლობაში, სანამ "
+"არ დაიხურა 30 ნოემბერს."
+
+#: src/components/windows/Archive.jsx:22
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"ჩვენ გადავწყვიტეთ მისი დაარქივება, როგორც დროულად დაკარგვის გარეშე დაშიფრული "
+"ვებმით. Timelapse-დან სკრინშოტის გადაღება იძლევა სრულყოფილ 1:1 წარმოდგენას "
+"იმის შესახებ, თუ როგორ იყო კანვასი იმ დროს."
+
+#: src/components/windows/Chat.jsx:180
+msgid "Start chatting here"
+msgstr "დაიწყეთ საუბარი აქ"
+
+#: src/components/windows/Chat.jsx:217
+msgid "Chat here"
+msgstr "ჩატი აქ"
+
+#: src/components/windows/Chat.jsx:243
+msgid "You must be logged in to chat"
+msgstr "თქვენ უნდა იყოთ შესული ჩატისთვის"
+
+#: src/components/windows/Chat.jsx:273
+msgid "Channel settings"
+msgstr "არხის პარამეტრები"
+
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "გამოგიგზავნეთ მეილი ინსტრუქციებით თქვენი პაროლის აღდგენის შესახებ."
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "შეიყვანეთ თქვენი ფოსტის მისამართი და ჩვენ გამოგიგზავნით ახალ პაროლს:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
@@ -988,14 +1004,6 @@ msgstr "გადატვირთვა"
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr "შეიყვანეთ სიმბოლოები"
-
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr "გამოგიგზავნეთ მეილი ინსტრუქციებით თქვენი პაროლის აღდგენის შესახებ."
-
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
-msgstr "შეიყვანეთ თქვენი ფოსტის მისამართი და ჩვენ გამოგიგზავნით ახალ პაროლს:"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1045,52 +1053,6 @@ msgstr "პაროლი უნდა იყოს მინიმუმ 6 ს
 msgid "Password must be shorter than 60 characters."
 msgstr "პაროლი უნდა იყოს 60 სიმბოლოზე ნაკლები."
 
-#: src/components/CanvasItem.jsx:29
-msgid "Online Users"
-msgstr "ონლაინ მომხმარებლები"
-
-#: src/components/CanvasItem.jsx:34
-msgid "Cooldown"
-msgstr "დროს შენახვა"
-
-#: src/components/CanvasItem.jsx:40
-msgid "Stacking till"
-msgstr "დაწყობა მდე"
-
-#: src/components/CanvasItem.jsx:42
-msgid "Ranked"
-msgstr "რეიტინგული"
-
-#: src/components/CanvasItem.jsx:44
-msgid "Yes"
-msgstr "დიახ"
-
-#: src/components/CanvasItem.jsx:44
-msgid "No"
-msgstr "არა"
-
-#: src/components/CanvasItem.jsx:50
-msgid "Requirements"
-msgstr "მოთხოვნები"
-
-#: src/components/CanvasItem.jsx:53
-msgid "User Account"
-msgstr "მომხმარებლის ანგარიში"
-
-#: src/components/CanvasItem.jsx:55
-#, javascript-format
-msgid "and ${ canvas.req } Pixels set"
-msgstr "და ${ canvas.req } პიქსელების ნაკრები"
-
-#: src/components/CanvasItem.jsx:58
-msgid "Top 10 Daily Ranking"
-msgstr "ტოპ 10 ყოველდღიური რეიტინგი"
-
-#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
-#: src/components/TemplateItemEdit.jsx:160
-msgid "Dimensions"
-msgstr "ზომები"
-
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr "მიიღეთ IID"
@@ -1098,6 +1060,12 @@ msgstr "მიიღეთ IID"
 #: src/components/GetIID.jsx:53
 msgid "Copy"
 msgstr "კოპირება"
+
+#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:209
+msgid "Save"
+msgstr "შენახვა"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1179,12 +1147,6 @@ msgstr "ჩართული თემფლეითების დაექ�
 msgid "Import templates"
 msgstr "თემფლეითების იმპორტირება"
 
-#: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
-#: src/components/TemplateItemEdit.jsx:209
-msgid "Save"
-msgstr "შენახვა"
-
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
 msgstr "დღეს დასმული პიქსელები"
@@ -1225,6 +1187,33 @@ msgstr "Ანგარიშის წაშლა"
 #: src/components/UserAreaContent.jsx:126
 msgid "Social Settings"
 msgstr "სოციალური პარამეტრები"
+
+#: src/components/Rankings.jsx:165
+msgid "Yesterday"
+msgstr "გუშინ"
+
+#: src/components/Rankings.jsx:174
+msgid "Countries Today"
+msgstr "ქვეყნები დღეს"
+
+#: src/components/Rankings.jsx:183
+msgid "Charts"
+msgstr "ჩარტები"
+
+#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
+#: src/components/Rankings.jsx:219
+msgid "User"
+msgstr "მომხმარებელი"
+
+#: src/components/Rankings.jsx:226
+msgid "Country"
+msgstr "ქვეყანა"
+
+#: src/components/Rankings.jsx:286
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"რეიტინგის განახლება ყოველ 5 წუთში. ყოველდღიური რეიტინგები განახლდება "
+"შუაღამისას UTC."
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
@@ -1303,69 +1292,51 @@ msgstr "გადატვირთვა"
 msgid "Download Template"
 msgstr "ჩამოტვირთეთ შაბლონი"
 
-#: src/components/Rankings.jsx:165
-msgid "Yesterday"
-msgstr "გუშინ"
+#: src/components/CanvasItem.jsx:29
+msgid "Online Users"
+msgstr "ონლაინ მომხმარებლები"
 
-#: src/components/Rankings.jsx:174
-msgid "Countries Today"
-msgstr "ქვეყნები დღეს"
+#: src/components/CanvasItem.jsx:34
+msgid "Cooldown"
+msgstr "დროს შენახვა"
 
-#: src/components/Rankings.jsx:183
-msgid "Charts"
-msgstr "ჩარტები"
+#: src/components/CanvasItem.jsx:40
+msgid "Stacking till"
+msgstr "დაწყობა მდე"
 
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
-msgid "User"
-msgstr "მომხმარებელი"
+#: src/components/CanvasItem.jsx:42
+msgid "Ranked"
+msgstr "რეიტინგული"
 
-#: src/components/Rankings.jsx:226
-msgid "Country"
-msgstr "ქვეყანა"
+#: src/components/CanvasItem.jsx:44
+msgid "Yes"
+msgstr "დიახ"
 
-#: src/components/Rankings.jsx:286
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr ""
-"რეიტინგის განახლება ყოველ 5 წუთში. ყოველდღიური რეიტინგები განახლდება "
-"შუაღამისას UTC."
+#: src/components/CanvasItem.jsx:44
+msgid "No"
+msgstr "არა"
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr "კანვასი"
+#: src/components/CanvasItem.jsx:50
+msgid "Requirements"
+msgstr "მოთხოვნები"
 
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-msgid "Coordinates"
-msgstr "კორდინატები"
+#: src/components/CanvasItem.jsx:53
+msgid "User Account"
+msgstr "მომხმარებლის ანგარიში"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "დაედითება"
+#: src/components/CanvasItem.jsx:55
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "და ${ canvas.req } პიქსელების ნაკრები"
 
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "წასვლა"
+#: src/components/CanvasItem.jsx:58
+msgid "Top 10 Daily Ranking"
+msgstr "ტოპ 10 ყოველდღიური რეიტინგი"
 
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "სახელი ან ელფოსტა"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Შესვლა"
-
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "აირჩიეთ ფაილი"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "თემფლეითის სახელი"
-
-#: src/components/TemplateItemEdit.jsx:174
-msgid "Delete"
-msgstr "წაშლა"
+#: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:160
+msgid "Dimensions"
+msgstr "ზომები"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
@@ -1387,6 +1358,43 @@ msgstr "ქვეყნები პიქსელების მიხედ�
 msgid "Total Pixels placed per day"
 msgstr "სულ პიქსელები განთავსებული დღეში"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "სახელი ან ელფოსტა"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Შესვლა"
+
+#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "კანვასი"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr "კორდინატები"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "დაედითება"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "წასვლა"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "აირჩიეთ ფაილი"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "თემფლეითის სახელი"
+
+#: src/components/TemplateItemEdit.jsx:174
+msgid "Delete"
+msgstr "წაშლა"
+
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
@@ -1403,71 +1411,69 @@ msgstr "ახალი დამადასტურებელი ფოს�
 msgid "Click here to request a new verification mail."
 msgstr "დააწკაპუნეთ აქ, რათა მოითხოვოთ ახალი დამადასტურებელი ფოსტა."
 
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
-msgstr "ინტერვალი არასწორია"
+#: src/components/ChangePassword.jsx:21
+msgid "Passwords do not match."
+msgstr "Პაროლები არ ემთხვევა."
 
-#: src/components/ModWatchtools.jsx:124
-msgid "Check who placed in an area"
-msgstr "შეამოწმეთ ვინ მოათავსა რაიონში"
+#: src/components/ChangePassword.jsx:44
+msgid "Password successfully changed."
+msgstr "პაროლი წარმატებით შეიცვალა."
 
-#: src/components/ModWatchtools.jsx:144
-msgid "Interval"
-msgstr "ინტერვალი"
+#: src/components/ChangePassword.jsx:88
+msgid "Old Password"
+msgstr "ძველი პაროლი"
 
-#: src/components/ModWatchtools.jsx:159
-msgid "IID (optional)"
-msgstr "IID (არასავალდებულო)"
+#: src/components/ChangePassword.jsx:96
+msgid "New Password"
+msgstr "ახალი პაროლი"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
-msgid "Top-left corner"
-msgstr "ზედა მარცხენა კუთხე"
+#: src/components/ChangePassword.jsx:103
+msgid "Confirm New Password"
+msgstr "Დაადასტურეთ ახალი პაროლი"
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
-msgid "Bottom-right corner"
-msgstr "ქვედა მარჯვენა კუთხე"
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
+msgstr "ახალი მომხმარებლის სახელი"
 
-#: src/components/ModWatchtools.jsx:249
-msgid "Get Pixels"
-msgstr "მიიღეთ პიქსელები"
+#: src/components/ChangeMail.jsx:59
+msgid ""
+"Changed Mail successfully. We sent you a verification mail,             "
+"please verify your new mail address."
+msgstr ""
+"ფოსტა წარმატებით შეიცვალა. ჩვენ გამოგიგზავნეთ დამადასტურებელი "
+"წერილი,             გთხოვთ, დაადასტუროთ თქვენი ახალი ფოსტის მისამართი."
 
-#: src/components/ModWatchtools.jsx:281
-msgid "Get Users"
-msgstr "მიიღეთ მომხმარებლები"
+#: src/components/ChangeMail.jsx:87
+msgid "New Mail"
+msgstr "ახალი ფოსტა"
 
-#: src/components/Admintools.jsx:109
-msgid "IP Actions"
-msgstr "IP მოქმედებები"
+#: src/components/DeleteAccount.jsx:66
+msgid "Yes, Delete My Account!"
+msgstr "დიახ, წაშალე ჩემი ანგარიში!"
 
-#: src/components/Admintools.jsx:111
-msgid "Do stuff with IPs (one IP per line)"
-msgstr "გააკეთეთ საქმეები IP-ით (თითო IP თითო ხაზზე)"
+#: src/components/SocialSettings.jsx:35
+msgid "Block DMs"
+msgstr "დაბლოკე დმები"
 
-#: src/components/Admintools.jsx:158
-msgid "Manage Moderators"
-msgstr "მოდერატორების მართვა"
+#: src/components/SocialSettings.jsx:42
+msgid "Block all Private Messages"
+msgstr "დაბლოკეთ ყველა პირადი შეტყობინება"
 
-#: src/components/Admintools.jsx:160
-msgid "Remove Moderator"
-msgstr "მოდერატორის მოხსნა"
+#: src/components/SocialSettings.jsx:44
+msgid "Private"
+msgstr "პირადი"
 
-#: src/components/Admintools.jsx:193
-msgid "There are no mods"
-msgstr "არ არის მოდერატორები"
+#: src/components/SocialSettings.jsx:51
+msgid "Don't show me in global stats"
+msgstr "არ მაჩვენო მსოფლიო სტატისტიკაში"
 
-#: src/components/Admintools.jsx:198
-msgid "Assign new Mod"
-msgstr "დააყენე ახალი მოდერატორი"
+#: src/components/SocialSettings.jsx:57
+msgid "Unblock Users"
+msgstr "მომხმარებლების განბლოკვა"
 
-#: src/components/Admintools.jsx:201
-msgid "Enter UserName of new Mod"
-msgstr "ჩაწერე სახელი ახალი მოდერატორის"
-
-#: src/components/Admintools.jsx:210
-msgid "User Name"
-msgstr "სახელი"
+#: src/components/SocialSettings.jsx:82
+msgid "You have no users blocked"
+msgstr "თქვენ არ გაქვთ დაბლოკილი მომხმარებელი"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1545,6 +1551,16 @@ msgstr ""
 "დააყენეთ უბნების დაცვა (თუ გჭირდებათ უფრო წვრილმარცვლოვანი კონტროლი, "
 "გამოიყენეთ დაცვა სურათის ატვირთვით და ალფა შრეებით)"
 
+#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
+#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+msgid "Top-left corner"
+msgstr "ზედა მარცხენა კუთხე"
+
+#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
+#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+msgid "Bottom-right corner"
+msgstr "ქვედა მარჯვენა კუთხე"
+
 #: src/components/ModCanvastools.jsx:409
 msgid "Rollback to Date"
 msgstr "დაბრუნება თარიღამდე"
@@ -1564,6 +1580,62 @@ msgstr "წაუსვი ფილტრი ნაგვის გასას
 #: src/components/ModCanvastools.jsx:605
 msgid "Stop Cleaner"
 msgstr "გააჩერე გამწმენდი"
+
+#: src/components/Admintools.jsx:109
+msgid "IP Actions"
+msgstr "IP მოქმედებები"
+
+#: src/components/Admintools.jsx:111
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "გააკეთეთ საქმეები IP-ით (თითო IP თითო ხაზზე)"
+
+#: src/components/Admintools.jsx:158
+msgid "Manage Moderators"
+msgstr "მოდერატორების მართვა"
+
+#: src/components/Admintools.jsx:160
+msgid "Remove Moderator"
+msgstr "მოდერატორის მოხსნა"
+
+#: src/components/Admintools.jsx:193
+msgid "There are no mods"
+msgstr "არ არის მოდერატორები"
+
+#: src/components/Admintools.jsx:198
+msgid "Assign new Mod"
+msgstr "დააყენე ახალი მოდერატორი"
+
+#: src/components/Admintools.jsx:201
+msgid "Enter UserName of new Mod"
+msgstr "ჩაწერე სახელი ახალი მოდერატორის"
+
+#: src/components/Admintools.jsx:210
+msgid "User Name"
+msgstr "სახელი"
+
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr "ინტერვალი არასწორია"
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr "შეამოწმეთ ვინ მოათავსა რაიონში"
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr "ინტერვალი"
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr "IID (არასავალდებულო)"
+
+#: src/components/ModWatchtools.jsx:249
+msgid "Get Pixels"
+msgstr "მიიღეთ პიქსელები"
+
+#: src/components/ModWatchtools.jsx:281
+msgid "Get Users"
+msgstr "მიიღეთ მომხმარებლები"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1585,70 +1657,6 @@ msgstr "შეიყვანეთ მიზეზი"
 msgid "(0 = infinite)"
 msgstr "(0 = უსასრულო)"
 
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr "ახალი მომხმარებლის სახელი"
-
-#: src/components/ChangePassword.jsx:21
-msgid "Passwords do not match."
-msgstr "Პაროლები არ ემთხვევა."
-
-#: src/components/ChangePassword.jsx:44
-msgid "Password successfully changed."
-msgstr "პაროლი წარმატებით შეიცვალა."
-
-#: src/components/ChangePassword.jsx:88
-msgid "Old Password"
-msgstr "ძველი პაროლი"
-
-#: src/components/ChangePassword.jsx:96
-msgid "New Password"
-msgstr "ახალი პაროლი"
-
-#: src/components/ChangePassword.jsx:103
-msgid "Confirm New Password"
-msgstr "Დაადასტურეთ ახალი პაროლი"
-
-#: src/components/DeleteAccount.jsx:66
-msgid "Yes, Delete My Account!"
-msgstr "დიახ, წაშალე ჩემი ანგარიში!"
-
-#: src/components/ChangeMail.jsx:59
-msgid ""
-"Changed Mail successfully. We sent you a verification mail,             "
-"please verify your new mail address."
-msgstr ""
-"ფოსტა წარმატებით შეიცვალა. ჩვენ გამოგიგზავნეთ დამადასტურებელი "
-"წერილი,             გთხოვთ, დაადასტუროთ თქვენი ახალი ფოსტის მისამართი."
-
-#: src/components/ChangeMail.jsx:87
-msgid "New Mail"
-msgstr "ახალი ფოსტა"
-
-#: src/components/SocialSettings.jsx:35
-msgid "Block DMs"
-msgstr "დაბლოკე დმები"
-
-#: src/components/SocialSettings.jsx:42
-msgid "Block all Private Messages"
-msgstr "დაბლოკეთ ყველა პირადი შეტყობინება"
-
-#: src/components/SocialSettings.jsx:44
-msgid "Private"
-msgstr "პირადი"
-
-#: src/components/SocialSettings.jsx:51
-msgid "Don't show me in global stats"
-msgstr "არ მაჩვენო მსოფლიო სტატისტიკაში"
-
-#: src/components/SocialSettings.jsx:57
-msgid "Unblock Users"
-msgstr "მომხმარებლების განბლოკვა"
-
-#: src/components/SocialSettings.jsx:82
-msgid "You have no users blocked"
-msgstr "თქვენ არ გაქვთ დაბლოკილი მომხმარებელი"
-
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "პინგი"
@@ -1665,35 +1673,20 @@ msgstr "დაბლოკვა"
 msgid "Mute"
 msgstr "დადუმება"
 
-#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:70
+#: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
 msgstr "გ"
 
-#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:78
+#: src/components/windows/Help.jsx:20 src/components/windows/Settings.jsx:81
 msgctxt "keybinds"
 msgid "X"
 msgstr "ხ"
 
-#: src/components/windows/Settings.jsx:86
-msgctxt "keybinds"
-msgid "N"
-msgstr "ნ"
-
-#: src/components/windows/Settings.jsx:94
-msgctxt "keybinds"
-msgid "M"
-msgstr "მ"
-
-#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:149
+#: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "ჰ"
-
-#: src/components/windows/Settings.jsx:159
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1734,6 +1727,21 @@ msgstr "დ"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "შიფტი"
+
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr "ნ"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "მ"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"
