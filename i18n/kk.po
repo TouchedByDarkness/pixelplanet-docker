@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-09 22:00+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-04-15 08:17+0000\n"
+"Last-Translator: Legenda Tochno <tochnolegenda8@gmail.com>\n"
 "Language-Team: Kazakh <https://hosted.weblate.org/projects/pixelplanet/"
 "client/kk/>\n"
 "Language: kk\n"
@@ -44,37 +44,35 @@ msgstr "Дыбыс қосылды"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:203
-#, fuzzy
 msgid "Copied"
-msgstr "Көшірілді!"
+msgstr "Көшірілді"
 
 #: src/controls/keypress.js:209
 msgid "Overlay ON"
-msgstr ""
+msgstr "Оверлей қосылды"
 
 #: src/controls/keypress.js:210
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Оверлей өшірілді"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "Пасха жұмыртқасы қосылды"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Пасха жұмыртқасы өшірілді"
 
 #: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
 msgstr "Байланыс орнату уақыты бітті"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
-"Pixelplanet жауап бермейді. Мәселе шешілмесе, бәлкім бетті жаңартып көресіз?"
+"Pixelplanet жауап бермейді. Мәселе шешілмесе, бәлкім бетті жаңартып көріңіз."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
@@ -123,14 +121,12 @@ msgid "Not allowed"
 msgstr "Рұқсат етілмеген"
 
 #: src/ui/PixelTransferController.js:130
-#, fuzzy
 msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr "Осы кенепте әзірше сала алмайсыз. Көбірек пиксел салуыңыз қажет"
 
 #: src/ui/PixelTransferController.js:133
-#, fuzzy
 msgid "Pixel protected"
-msgstr "Пиксел қорғалған!"
+msgstr "Пиксел қорғалған"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
@@ -164,7 +160,6 @@ msgid "Range Banned"
 msgstr "Аймақта бұғатталғансыз"
 
 #: src/ui/PixelTransferController.js:162
-#, fuzzy
 msgid "Your Internet Provider is banned from this game"
 msgstr "Интернет провайдеріңіз бұл ойында бұғатталған"
 
@@ -183,21 +178,19 @@ msgstr "Қате ${ retCode }"
 
 #: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
-msgstr ""
+msgstr "Қарындаш таңдау "
 
 #: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
-#, fuzzy
 msgid "Selected Color"
-msgstr "Тілді таңдаңыз"
+msgstr "Түс таңдау"
 
 #: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
-#, fuzzy
 msgid "From Template"
-msgstr "Үлгіні жүктеп алу"
+msgstr "Үлгі арқылы"
 
 #: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
 msgid "From History"
-msgstr ""
+msgstr "Тарих арқылы"
 
 #: src/ui/rendererFactory.js:32
 msgid "Canvas Error"
@@ -213,11 +206,11 @@ msgstr "Қате :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "20 Дан астам үлгі қойылмайды!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr ""
+msgstr "20 Дан астам үлгі жазылмайды!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -295,7 +288,7 @@ msgstr "Жалпы"
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
 msgid "Canvas Selection"
-msgstr "Кенеп таңдау"
+msgstr "Кеңеп таңдау"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Close Chat"
@@ -384,20 +377,19 @@ msgstr "Палитраны ашу"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
-msgstr ""
+msgstr "Қарындаш қосылды"
 
 #: src/components/buttons/PencilButton.jsx:46
-#, fuzzy
 msgid "Disable Pencil"
-msgstr "Дыбыс өшіру"
+msgstr "Қарындаш өшірілді"
 
 #: src/components/buttons/PencilButton.jsx:50
 msgid "Disable History Pencil"
-msgstr ""
+msgstr "Тарихи қарындаш ошірілді"
 
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "Үлгі бойынша қарындаш өшірілді"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -405,7 +397,7 @@ msgstr "Тіркелу"
 
 #: src/components/windows/index.js:17
 msgid "Forgot Password"
-msgstr "Құпиясөзді арылту"
+msgstr "Құпиясөзді ұмыту"
 
 #: src/components/windows/index.js:18
 msgid "Chat"
@@ -627,7 +619,7 @@ msgstr ""
 "${ touchSymbol } жақындатыңыз/алшақтатыңыз"
 
 #: src/components/windows/Help.jsx:91
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr ""
 "Тінтуірді сүйрегенде пиксел салу үшін сол жақ ${ bindShift } ұстап тұрыңыз"
@@ -649,7 +641,7 @@ msgstr ""
 "ортаңғы батырмасын шертіңіз немесе ${ touchSymbol } түртіп ұстап тұрыңыз"
 
 #: src/components/windows/Help.jsx:99
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr "Көтерілу үшін ${ bindQ }, төмен түсу үшін ${ bindE } басыңыз"
 
@@ -683,7 +675,6 @@ msgstr ""
 "немесе ${ touchSymbol } екі рет түртіңіз"
 
 #: src/components/windows/Help.jsx:109
-#, fuzzy
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
@@ -702,7 +693,7 @@ msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr "Топ-10 кенебі палитрасының авторы: ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:118
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Топ-10 кенебі палитрасының авторы: ${ donendoLink }."
 
@@ -724,11 +715,11 @@ msgstr "Басқа ойыншы пиксел салған жерде шеңбе�
 
 #: src/components/windows/Settings.jsx:88
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Әрқашан қозғалу түймесін көрсету"
 
 #: src/components/windows/Settings.jsx:93
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Әрқашан қозғалуды басқару түймесін көрсету"
 
 #: src/components/windows/Settings.jsx:96
 msgid "Disable Game Sounds"
@@ -791,11 +782,11 @@ msgstr "Қара тордың орнына ақ торды көрсету."
 
 #: src/components/windows/Settings.jsx:149
 msgid "Custom Cursor"
-msgstr ""
+msgstr "Арнаулы курсор"
 
 #: src/components/windows/Settings.jsx:153
 msgid "Use our custom cursor"
-msgstr ""
+msgstr "Өзіңнің арнаулы курсор қолдану"
 
 #: src/components/windows/Settings.jsx:157
 msgid "Historical View"
@@ -806,13 +797,13 @@ msgid "Check out past versions of the canvas."
 msgstr "Кенептің алдыңғы нұсқаларын көру."
 
 #: src/components/windows/Settings.jsx:166
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "${ canvasName } кенебіне ауыстыңыз"
+msgstr "Қарындаш ${ canvasName } үшін"
 
 #: src/components/windows/Settings.jsx:174
 msgid "What the pencil should draw on the current canvas."
-msgstr ""
+msgstr "Қандай қарындаш қолдану керек."
 
 #: src/components/windows/Settings.jsx:178
 msgid "Themes"
@@ -891,15 +882,15 @@ msgid "Consider joining us on Guilded:"
 msgstr "Guilded-те бізге қосылсаңыз болады:"
 
 #: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Archived canvases can be accessed here:"
 msgstr ""
-"Қолданғыңыз келетін кенепті таңдаңыз. Әр кенептің өз палитрасы, күту уақыты "
-"және талаптары бар. Жабылған кенептер мұрағатын мына жерден көре аласыз:"
+"Қолданғыңыз келетін кенепті таңдаңыз.\n"
+"Әр кенептің өз палитрасы, күту уақыты және талаптары бар. \n"
+"Жабылған кенептер мұрағатын мына жерден көре аласыз:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
@@ -907,10 +898,9 @@ msgstr "Мұрағат"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Қолданыстағы кенептер (тек тарих)"
 
 #: src/components/windows/Archive.jsx:9
-#, fuzzy
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who like a currently popular meme. Those canvases can "
@@ -924,7 +914,6 @@ msgstr ""
 "қалдырудың қажеті жоқ деп шешеміз."
 
 #: src/components/windows/Archive.jsx:10
-#, fuzzy
 msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
@@ -1100,9 +1089,8 @@ msgid "Register"
 msgstr "Тіркелу"
 
 #: src/components/TemplateSettings.jsx:52
-#, fuzzy
 msgid "Templates"
-msgstr "Үлгіні жүктеп алу"
+msgstr "Үлгілер"
 
 #: src/components/TemplateSettings.jsx:56
 msgid ""
@@ -1111,48 +1099,53 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"Әрқашан бір түстпен басуға шаршадыңыз ба? Оның орнына сурет жасағыңыз келе "
+"ме, бірақ басқа кескіннен пикселдерді санау керек пе? Үлгілер сізге "
+"көмектесе алады! Үлгілер қабаттасу ретінде көрсетілуі мүмкін және олардың "
+"үстінен сурет салуға болады. Үлгідегі бір пиксель кенепте бір пиксель болуы "
+"керек."
 
 #: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Оверлей қосылуы"
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Үлгілерді ойын ішіндегі қабаттасу ретінде көрсету."
 
 #: src/components/TemplateSettings.jsx:68
 msgid "Small Pixels When Zoomed"
-msgstr ""
+msgstr "Масштабтау кезінде шағын пикселдер көрсету"
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
+"Жоғары масштабтау деңгейлерінде шағын жеке пикселдер ретінде қабаттасуды "
+"көрсету."
 
 #: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Оверлей мөлдірлігі"
 
 #: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Пайызбен қабаттасудың мөлдірлігі."
 
 #: src/components/TemplateSettings.jsx:132
-#, fuzzy
 msgid "Cancel adding Template"
-msgstr "Үлгіні жүктеп алу"
+msgstr "Үлгіні қосудан бас тарту"
 
 #: src/components/TemplateSettings.jsx:139
-#, fuzzy
 msgid "Add Template"
-msgstr "Үлгіні жүктеп алу"
+msgstr "Үлгіні қосу"
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Қосылған үлгілерді экспорттау"
 
 #: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
-msgstr ""
+msgstr "Үлгілерді импорттау"
 
 #: src/components/UserAreaContent.jsx:62
 msgid "Today Placed Pixels"
@@ -1224,7 +1217,7 @@ msgstr ""
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
 msgid "Choose Canvas"
-msgstr "Кенеп таңдау"
+msgstr "Кеңеп таңдауға"
 
 #: src/components/Converter.jsx:218
 msgid "Palette Download"
@@ -1379,31 +1372,28 @@ msgid "Canvas"
 msgstr "Кенеп"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
 msgid "Coordinates"
-msgstr "Жарамсыз координаттар"
+msgstr "Координаттар"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Өзгерту"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Бару"
 
 #: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
 msgid "Select File"
-msgstr "Тілді таңдаңыз"
+msgstr "Файл таңдаңыз"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Үлгінің аты"
 
 #: src/components/TemplateItemEdit.jsx:174
-#, fuzzy
 msgid "Delete"
-msgstr "Тіркелгіні жою"
+msgstr "Жою"
 
 #: src/components/UserMessages.jsx:28
 msgid ""
@@ -1425,7 +1415,6 @@ msgid "Passwords do not match."
 msgstr "Құпиясөздер бірдей емес."
 
 #: src/components/ChangePassword.jsx:44
-#, fuzzy
 msgid "Password successfully changed."
 msgstr "Құпиясөз сәтті өзгертілді."
 
@@ -1523,6 +1512,8 @@ msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"Аймақтағы әрбір пикселді 0-ге айналдырыңыз (СІЗ ШЫНЫНДА ОСЫ КЕЗ КЕЛГЕН "
+"АЙМАҚТА ОЛАРДЫ ЖАСАУ КЕРЕК)"
 
 #: src/components/ModCanvastools.jsx:207
 msgid "Status: Not running"
@@ -1541,16 +1532,14 @@ msgid "File"
 msgstr "Файл"
 
 #: src/components/ModCanvastools.jsx:273
-#, fuzzy
 msgid "Coordinates:"
-msgstr "Жарамсыз координаттар"
+msgstr "Координаттар:"
 
 #: src/components/ModCanvastools.jsx:317
 msgid "Pixel Protection"
 msgstr "Пиксел қорғалуы"
 
 #: src/components/ModCanvastools.jsx:321
-#, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
@@ -1737,10 +1726,9 @@ msgid "Shift"
 msgstr "Shift"
 
 #: src/components/windows/Settings.jsx:89
-#, fuzzy
 msgctxt "keybinds"
 msgid "N"
-msgstr "Жоқ"
+msgstr "N"
 
 #: src/components/windows/Settings.jsx:97
 msgctxt "keybinds"
@@ -1750,12 +1738,12 @@ msgstr "M"
 #: src/components/windows/Settings.jsx:169
 msgctxt "keybinds"
 msgid "B"
-msgstr ""
+msgstr "В"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #~ msgid "Pixels placed"
 #~ msgstr "Сіз салған пикселдер"
