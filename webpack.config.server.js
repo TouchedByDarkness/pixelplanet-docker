@@ -154,6 +154,10 @@ module.exports = ({
             to: path.resolve('dist', 'public'),
           },
           path.resolve('src', 'canvases.json'),
+          path.resolve('LICENSE'),
+          path.resolve('COPYING'),
+          path.resolve('CODE_OF_CONDUCT.md'),
+          path.resolve('AUTHORS'),
           {
             from: path.resolve('deployment', 'example-ecosystem.yml'),
             to: path.resolve('dist', 'ecosystem.yml'),
