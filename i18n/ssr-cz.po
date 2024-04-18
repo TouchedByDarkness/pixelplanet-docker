@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-18 19:50+0000\n"
-"Last-Translator: asd <petr.pesek.99@seznam.cz>\n"
+"PO-Revision-Date: 2024-04-16 07:23+0000\n"
+"Last-Translator: ok what <dhyrbfytyreal123@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/pixelplanet/server/"
 "cs/>\n"
 "Language: cz\n"
@@ -403,7 +403,7 @@ msgstr ""
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr "Pouze 4 barvy. Stejná pravidla jako na měsíci."
+msgstr "Pouze 4 barvy. Stejná pravidla jako na měsíci!"
 
 #: src/canvasesDesc.js:41
 msgid ""
@@ -411,7 +411,7 @@ msgid ""
 "earth canvas!"
 msgstr ""
 "Obsaďte území na menší zemi s chráněným oceánem. Sděluje cooldown s plátnem "
-"země."
+"země!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

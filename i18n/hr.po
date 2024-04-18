@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-15 20:29+0000\n"
+"PO-Revision-Date: 2024-04-18 01:03+0000\n"
 "Last-Translator: Antonio <srbomrz@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hr/>\n"
@@ -178,21 +178,19 @@ msgstr "Pogreška ${ retCode}"
 
 #: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
-msgstr ""
+msgstr "Odabir olovke: "
 
 #: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
-#, fuzzy
 msgid "Selected Color"
-msgstr "Odaberi datoteku"
+msgstr "Odabrana boja"
 
 #: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
-#, fuzzy
 msgid "From Template"
-msgstr "Šabloni"
+msgstr "Sa šablona"
 
 #: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
 msgid "From History"
-msgstr ""
+msgstr "Iz History mode-a"
 
 #: src/ui/rendererFactory.js:32
 msgid "Canvas Error"
@@ -618,7 +616,7 @@ msgstr ""
 "zumiranje"
 
 #: src/components/windows/Help.jsx:91
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr "Držite lijevo ${ bindShift } za postavljanje dok pomičete miš"
 
@@ -778,11 +776,11 @@ msgstr "Pokaži rešetku u bijeloj umjesto u crnoj boji."
 
 #: src/components/windows/Settings.jsx:149
 msgid "Custom Cursor"
-msgstr ""
+msgstr "Prilagođeni kursor"
 
 #: src/components/windows/Settings.jsx:153
 msgid "Use our custom cursor"
-msgstr ""
+msgstr "Koristite naš prilagođeni kursor"
 
 #: src/components/windows/Settings.jsx:157
 msgid "Historical View"
@@ -793,13 +791,13 @@ msgid "Check out past versions of the canvas."
 msgstr "Pogledajte prethodne verzije platna."
 
 #: src/components/windows/Settings.jsx:166
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Prebačeno na ${ canvasName }"
+msgstr "Mod olovke za platno ${ canvasName }"
 
 #: src/components/windows/Settings.jsx:174
 msgid "What the pencil should draw on the current canvas."
-msgstr ""
+msgstr "Što bi olovka trebala nacrtati na trenutnom platnu."
 
 #: src/components/windows/Settings.jsx:178
 msgid "Themes"
@@ -1733,7 +1731,7 @@ msgstr "M"
 #: src/components/windows/Settings.jsx:169
 msgctxt "keybinds"
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

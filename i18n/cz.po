@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-18 19:50+0000\n"
+"PO-Revision-Date: 2024-04-16 07:23+0000\n"
 "Last-Translator: ok what <dhyrbfytyreal123@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/pixelplanet/client/"
 "cs/>\n"
@@ -177,21 +177,19 @@ msgstr "Chyba ${ retCode }"
 
 #: src/store/actions/thunks.js:227
 msgid "Pencil picks: "
-msgstr ""
+msgstr "Tužka vybrana: "
 
 #: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
-#, fuzzy
 msgid "Selected Color"
-msgstr "Vybrat Soubor"
+msgstr "Vybraná Barva"
 
 #: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
-#, fuzzy
 msgid "From Template"
-msgstr "Šablony"
+msgstr "Ze Šablony"
 
 #: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
 msgid "From History"
-msgstr ""
+msgstr "Z Historie"
 
 #: src/ui/rendererFactory.js:32
 msgid "Canvas Error"
@@ -617,9 +615,9 @@ msgstr ""
 "přiblížení"
 
 #: src/components/windows/Help.jsx:91
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
-msgstr "Držte leveý ${ bindShift } pro pokládaní pixelu při pohybu myši"
+msgstr "Držte levý ${ bindShift } pro tužku (pokládaní pixelu při pohybu myši)"
 
 #: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
@@ -780,11 +778,11 @@ msgstr "Zobrazuje Mřížku v bíle místo černé barvě."
 
 #: src/components/windows/Settings.jsx:149
 msgid "Custom Cursor"
-msgstr ""
+msgstr "Vlastní Kurzor"
 
 #: src/components/windows/Settings.jsx:153
 msgid "Use our custom cursor"
-msgstr ""
+msgstr "Použít náš vlastní kurzor"
 
 #: src/components/windows/Settings.jsx:157
 msgid "Historical View"
@@ -795,13 +793,13 @@ msgid "Check out past versions of the canvas."
 msgstr "Ukazuje jak vypadala mapa dříve."
 
 #: src/components/windows/Settings.jsx:166
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Změněno na ${ canvasName }"
+msgstr "Tužka změněna na ${ canvasName }"
 
 #: src/components/windows/Settings.jsx:174
 msgid "What the pencil should draw on the current canvas."
-msgstr ""
+msgstr "Co by tužka měla kreslit na vybraném plátně."
 
 #: src/components/windows/Settings.jsx:178
 msgid "Themes"
@@ -1733,7 +1731,7 @@ msgstr "M"
 #: src/components/windows/Settings.jsx:169
 msgctxt "keybinds"
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

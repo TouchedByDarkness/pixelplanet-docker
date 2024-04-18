@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-15 08:17+0000\n"
+"PO-Revision-Date: 2024-04-18 01:03+0000\n"
 "Last-Translator: Pollofrito <pollofrito050@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/es/>\n"
@@ -24,7 +24,7 @@ msgstr "Cuadrícula activa"
 
 #: src/controls/keypress.js:177
 msgid "Grid OFF"
-msgstr "cuadrícula apagada"
+msgstr "Cuadrícula apagada"
 
 #: src/controls/keypress.js:187
 msgid "Pixel Notify ON"
@@ -315,7 +315,7 @@ msgstr "Cargando"
 
 #: src/components/HistorySelect.jsx:147
 msgid "Select Date above"
-msgstr "Selecciona la fecha arriba"
+msgstr "Selecciona la fecha"
 
 #: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
@@ -808,11 +808,11 @@ msgstr "Revisa versiones antiguas del lienzo."
 #: src/components/windows/Settings.jsx:166
 #, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Modo del lápiz para${ canvasName }"
+msgstr "Modo del lápiz para el lienzo ${ canvasName }"
 
 #: src/components/windows/Settings.jsx:174
 msgid "What the pencil should draw on the current canvas."
-msgstr "Que debería dibujar el lápiz en el lienzo actual."
+msgstr "Qué debería dibujar el lápiz en el lienzo actual."
 
 #: src/components/windows/Settings.jsx:178
 msgid "Themes"
@@ -868,7 +868,7 @@ msgstr "Confirmar"
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
-msgstr "Pérfil"
+msgstr "Perfil"
 
 #: src/components/windows/UserArea.jsx:59
 msgid "Statistics"
@@ -1112,11 +1112,11 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
-"¿Estás cansado de spamear siempre un solo color? ¿Quieres crear arte en su "
-"lugar, pero tienes que contar píxeles de otra imagen? ¡Las plantillas pueden "
-"ayudarte con eso! Las plantillas se pueden mostrar como superposiciones y "
-"puedes poner pixeles debajo de ellas. Un pixel en la plantilla, debe un "
-"pixel en el lienzo."
+"¿Cansado de spamear siempre un sólo color? ¿En lugar de eso quieres crear "
+"arte, pero tienes que contar píxeles de otra imagen? ¡Las plantillas pueden "
+"ayudarte con eso! Las plantillas se muestran como superposiciones y puedes "
+"dibujar sobre ellas. Un pixel en la plantilla debe representar un pixel en "
+"el lienzo."
 
 #: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
