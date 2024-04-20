@@ -223,10 +223,6 @@ msgstr "Fakapapauʻi ʻa e Lea Fufū Foʻoú"
 msgid "Submit"
 msgstr "Fakahū"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "ʻOku ʻikai ke ke banned"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "ʻOku ʻikai ke ke hū ki he polokalamá"
@@ -238,6 +234,10 @@ msgstr "ʻOku ʻikai ngofua ke ke hū ki he peesi ko ʻení"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "ʻE lava ʻe he miniti pe ʻe taha ʻo fai ia"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "ʻOku ʻikai ke ke banned"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

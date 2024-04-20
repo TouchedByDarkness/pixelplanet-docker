@@ -212,10 +212,6 @@ msgstr "Հաստատեք նոր գաղտնաբառը"
 msgid "Submit"
 msgstr "Հաստատել"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Դուք արգելված չեք"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Դուք մուտք չեք գործել"
@@ -227,6 +223,10 @@ msgstr "Ձեզ չի թույլատրվում մուտք գործել այս էջ
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Միայն ադմինները կարող են դա անել"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Դուք արգելված չեք"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

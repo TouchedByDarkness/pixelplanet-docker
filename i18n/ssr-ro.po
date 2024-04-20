@@ -212,10 +212,6 @@ msgstr "Confirmă Parola Nouă"
 msgid "Submit"
 msgstr "Încarcă"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Nu ești banat"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Nu ești conectat"
@@ -227,6 +223,10 @@ msgstr "Nu ai voie să accesezi această pagină"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Numai admini pot face asta"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Nu ești banat"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

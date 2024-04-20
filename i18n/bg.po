@@ -280,11 +280,11 @@ msgstr "Общо онлайн потребители"
 msgid "Placed Pixels"
 msgstr "Поставени пиксели"
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:159
 msgid "Today"
 msgstr "Днес"
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:150
 msgid "Total"
 msgstr "Общо"
 
@@ -370,14 +370,6 @@ msgstr "Направи скрийншот"
 msgid "Globe View"
 msgstr "Изглед на глобус"
 
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr "Затвори палитрата"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr "Отвори палитрата"
-
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr "Включи молив"
@@ -393,6 +385,14 @@ msgstr "Изключи историческият молив"
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Изключване на Овърлей молива"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr "Затвори палитрата"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
+msgstr "Отвори палитрата"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -410,13 +410,25 @@ msgstr "Чат"
 msgid "Canvas Archive"
 msgstr "Платнен архив"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Вие сте баннат. Мислите, че е неоправдано? Вижте "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Отне Ви твърде много време, опитайте отново."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " как да обжалвате."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Не успяхте да направите captcha"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Няма или е невалиден captcha текстa"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Не е дадена captcha ID"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Неизвестна Captcha грешка"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -426,6 +438,26 @@ msgstr " как да обжалвате."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Грешка"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Откажи"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Изпрати"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Вие сте баннат. Мислите, че е неоправдано? Вижте "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " как да обжалвате."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -458,38 +490,6 @@ msgstr "Сега като видяхте това съобщение, вече �
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Защо?"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Отне Ви твърде много време, опитайте отново."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Не успяхте да направите captcha"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Няма или е невалиден captcha текстa"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Не е дадена captcha ID"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Неизвестна Captcha грешка"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Откажи"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Изпрати"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -820,6 +820,31 @@ msgstr "Как pixelplanet трябва да изглежда."
 msgid "Select Language"
 msgstr "Избиране на език"
 
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Профил"
+
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr "Статистики"
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Конвертор"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Инструменти за модератори"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Зарежда се..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Не забравяйте да се присъедините в Guilded:"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Регистрирайте нов акаунт тук"
@@ -858,31 +883,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Изпращане"
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Профил"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr "Статистики"
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Конвертор"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Инструменти за модератори"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Зарежда се..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Не забравяйте да се присъедините в Guilded:"
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
@@ -1069,30 +1069,6 @@ msgstr "Копирай"
 msgid "Save"
 msgstr "Запази"
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr "Влезте, за да получите достъп до повече функции и статистики."
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr "Влезте с Име или Имейл:"
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr "Забравих си паролата."
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr "или влезте с:"
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr "или се регистрирайте тук:"
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr "Регистриране"
-
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr "Шаблони"
@@ -1193,28 +1169,76 @@ msgstr "Изтриване на акаунт"
 msgid "Social Settings"
 msgstr "Социални настройки"
 
-#: src/components/Rankings.jsx:165
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr "Влезте, за да получите достъп до повече функции и статистики."
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr "Влезте с Име или Имейл:"
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr "Забравих си паролата."
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr "или влезте с:"
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr "или се регистрирайте тук:"
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr "Регистриране"
+
+#: src/components/Rankings.jsx:168
 msgid "Yesterday"
 msgstr "Вчера"
 
-#: src/components/Rankings.jsx:174
+#: src/components/Rankings.jsx:177
 msgid "Countries Today"
 msgstr "Държави днес"
 
-#: src/components/Rankings.jsx:183
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
 msgid "Charts"
 msgstr "Диаграми"
 
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
+#: src/components/Rankings.jsx:191
+#, fuzzy
+msgid "Total Pixels per Player"
+msgstr "Общо пиксели сложени днес"
+
+#: src/components/Rankings.jsx:192
+#, fuzzy
+msgid "Daily Pixels per Player"
+msgstr "Общо пиксели сложени днес"
+
+#: src/components/Rankings.jsx:193
+#, fuzzy
+msgid "Top 10 Players from Yesterday"
+msgstr "Топ 10 играчи [pxls / day]"
+
+#: src/components/Rankings.jsx:197
+#, fuzzy
+msgid "Daily Pixels per Country"
+msgstr "Играчи и пиксели на час"
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
 msgid "User"
 msgstr "Потребител"
 
-#: src/components/Rankings.jsx:226
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
 msgid "Country"
 msgstr "Държава"
 
-#: src/components/Rankings.jsx:286
+#: src/components/Rankings.jsx:241
+msgid "+last hour"
+msgstr ""
+
+#: src/components/Rankings.jsx:311
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 "Класирането се актуализира на всеки 5 минути. Дневните класации се нулират в "
@@ -1343,34 +1367,6 @@ msgstr "Топ 10 дневно класиране"
 msgid "Dimensions"
 msgstr "Размери"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Топ 10 държави [pxls / day]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Играчи и пиксели на час"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Топ 10 играчи [pxls / day]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Държави по пиксели днес"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Общо пиксели сложени днес"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Име или имейл"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Влизане"
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1479,6 +1475,14 @@ msgstr "Отблокиране на потребители"
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"
 msgstr "Нямате блокирани потребители"
+
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Име или имейл"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Влизане"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1660,6 +1664,36 @@ msgstr "Въведете причина"
 msgid "(0 = infinite)"
 msgstr "(0 = безкрайност)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Топ 10 държави [pxls / day]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Играчи и пиксели на час"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Топ 10 играчи [pxls / day]"
+
+#: src/core/chartSettings.js:347
+msgid "Total Pixels placed per day"
+msgstr "Общо пиксели сложени днес"
+
+#: src/components/CooldownChanges.jsx:20
+msgid "Current Cooldown Changes per Country:"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:25
+msgid "Factor"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:46
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
+msgstr ""
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Пингни"
@@ -1750,6 +1784,9 @@ msgstr "B"
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Countries by Pixels Today"
+#~ msgstr "Държави по пиксели днес"
 
 #~ msgid "Pixels placed"
 #~ msgstr "Сложени пиксели"

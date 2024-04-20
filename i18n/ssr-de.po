@@ -212,10 +212,6 @@ msgstr "Neues Passwort bestätigen"
 msgid "Submit"
 msgstr "Absenden"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Du bist nicht verbannt"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Du bist nicht angemeldet"
@@ -227,6 +223,10 @@ msgstr "Du hast keinen Zugriff zu diese Seite"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Nur Administratoren können dies tun"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Du bist nicht verbannt"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

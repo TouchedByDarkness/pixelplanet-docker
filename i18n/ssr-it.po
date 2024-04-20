@@ -214,10 +214,6 @@ msgstr "Conferma nuova password"
 msgid "Submit"
 msgstr "Manda"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Non sei bannato (purtroppo)"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Non hai effettuato l'accesso"
@@ -229,6 +225,10 @@ msgstr "Non hai il permasso di accedere a questa pagina"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Solo gli admin possono farlo"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Non sei bannato (purtroppo)"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

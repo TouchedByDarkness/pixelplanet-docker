@@ -210,10 +210,6 @@ msgstr "padrūktina nāuns kliptaswīrds"
 msgid "Submit"
 msgstr "paklusta"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "jūs assei ni ni preiwērpt"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "jūs ni ast senrissa"
@@ -225,6 +221,10 @@ msgstr "jūs assei ni preiwērpt prēi preiēisenis šis pāusan"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Ka tēr Deiwāi mazzi segēi stas"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "jūs assei ni ni preiwērpt"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

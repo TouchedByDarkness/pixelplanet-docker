@@ -214,10 +214,6 @@ msgstr "deimhnigh n phasfhocal nua"
 msgid "Submit"
 msgstr "Cuir isteach"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Níl cosc ort"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Níl tú logáilte isteach"
@@ -229,6 +225,10 @@ msgstr "Níl cead agat teacht ar an leathanach seo"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Ní féidir ach Riarthóirí sin a dhéanamh"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Níl cosc ort"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

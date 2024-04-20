@@ -213,10 +213,6 @@ msgstr "Vahvista uusi salasanasi"
 msgid "Submit"
 msgstr "Lähetä"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Sinulla ei ole porttikieltoa"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Sinä et ole kirjautuneena"
@@ -228,6 +224,10 @@ msgstr "Sinulla ei ole lupaa käyttää tätä sivua"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Vain järjestelmänvalvojat voivat tehdä noin"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Sinulla ei ole porttikieltoa"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

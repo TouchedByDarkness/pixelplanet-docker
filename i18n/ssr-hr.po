@@ -214,10 +214,6 @@ msgstr "Potvrdi novu lozinku"
 msgid "Submit"
 msgstr "Podnesi"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Niste banani"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Niste ulogirani"
@@ -229,6 +225,10 @@ msgstr "Nije vam dopušten pristup ovoj stranici"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "To mogu samo administratori"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Niste banani"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

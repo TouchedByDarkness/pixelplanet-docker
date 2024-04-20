@@ -213,10 +213,6 @@ msgstr "Yeni Parolayı Onayla"
 msgid "Submit"
 msgstr "Onayla"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Yasaklı değilsiniz"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Giriş yapmadınız"
@@ -228,6 +224,10 @@ msgstr "Bu sayfaya erişiminiz yok"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Bunu yalnızca yöneticiler yapabilir"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Yasaklı değilsiniz"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

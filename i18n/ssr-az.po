@@ -212,10 +212,6 @@ msgstr "Yeni Parolu Doğrulayın"
 msgid "Submit"
 msgstr "Təqdim edin"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Sən banlı deyilsən"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Siz daxil olmamısınız"
@@ -227,6 +223,10 @@ msgstr "Sizin bu səhifəyi görüntüləməyə icazəniz yoxdur"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Sadəcə adminlər bunu edəbilər"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Sən banlı deyilsən"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

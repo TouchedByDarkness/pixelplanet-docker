@@ -278,11 +278,11 @@ msgstr "Toplam Çevrim İçi Oyuncular"
 msgid "Placed Pixels"
 msgstr "Atılan Pikseller"
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:159
 msgid "Today"
 msgstr "Bugün"
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:150
 msgid "Total"
 msgstr "Toplam"
 
@@ -368,14 +368,6 @@ msgstr "Ekran Görüntüsü Al"
 msgid "Globe View"
 msgstr "Küresel Görünüm"
 
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr "Paleti Kapat"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr "Paleti Aç"
-
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr "Kalemi Etkinleştir"
@@ -391,6 +383,14 @@ msgstr "Geçmiş Kalemini Devre Dışı Bırak"
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Şablon Kalemini Devre Dışı Bırak"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr "Paleti Kapat"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
+msgstr "Paleti Aç"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -408,13 +408,25 @@ msgstr "Sohbet"
 msgid "Canvas Archive"
 msgstr "Tuval Arşivi"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Yasaklandınız. Doğru olmadığını mı düşünüyorsunuz? "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " 'da başvuruda bulunun."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Doğrulamayı yanlış çözdünüz"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Olmayan veya yanlış captcha metni"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Captcha kimliği verilmedi"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Bilinmeyen Captcha Hatası"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -424,6 +436,26 @@ msgstr " 'da başvuruda bulunun."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Hata"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Geri Dön"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Gönder"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Yasaklandınız. Doğru olmadığını mı düşünüyorsunuz? "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " 'da başvuruda bulunun."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -456,38 +488,6 @@ msgstr "Bu iletiyi gördüğünüze göre artık yasaklı değilsiniz."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Neden?"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Doğrulamayı yanlış çözdünüz"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Olmayan veya yanlış captcha metni"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Captcha kimliği verilmedi"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Bilinmeyen Captcha Hatası"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Geri Dön"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Gönder"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -824,6 +824,31 @@ msgstr "Oyunun nasıl görüneceğidir."
 msgid "Select Language"
 msgstr "Dil Seç"
 
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Profil"
+
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr "İstatistikler"
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Dönüştürücü"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Mod Araçları"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Yükleniyor..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Eğer Guilded üzerinden bize katılmak isterseniz:"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Yeni Hesap Oluşturun"
@@ -862,31 +887,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Onayla"
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Profil"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr "İstatistikler"
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Dönüştürücü"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Mod Araçları"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Yükleniyor..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Eğer Guilded üzerinden bize katılmak isterseniz:"
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
@@ -1077,30 +1077,6 @@ msgstr "Kopyala"
 msgid "Save"
 msgstr "Kaydet"
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr "Daha fazla özellik ve istatistik için giriş yapın."
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr "Kullanıcı adı veya E-Posta ile giriş yap:"
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr "Parolamı Unuttum."
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr "veya bunlar ile giriş yap:"
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr "veya buradan kayıt ol:"
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr "Kayıt Ol"
-
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr "Şablonlar"
@@ -1199,28 +1175,76 @@ msgstr "Hesabı Sil"
 msgid "Social Settings"
 msgstr "Sosyal Ayarlar"
 
-#: src/components/Rankings.jsx:165
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr "Daha fazla özellik ve istatistik için giriş yapın."
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr "Kullanıcı adı veya E-Posta ile giriş yap:"
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr "Parolamı Unuttum."
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr "veya bunlar ile giriş yap:"
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr "veya buradan kayıt ol:"
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr "Kayıt Ol"
+
+#: src/components/Rankings.jsx:168
 msgid "Yesterday"
 msgstr "Dün"
 
-#: src/components/Rankings.jsx:174
+#: src/components/Rankings.jsx:177
 msgid "Countries Today"
 msgstr "Bugünkü Ülkeler"
 
-#: src/components/Rankings.jsx:183
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
 msgid "Charts"
 msgstr "Tablolar"
 
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
+#: src/components/Rankings.jsx:191
+#, fuzzy
+msgid "Total Pixels per Player"
+msgstr "Günlük atılan toplam piksel"
+
+#: src/components/Rankings.jsx:192
+#, fuzzy
+msgid "Daily Pixels per Player"
+msgstr "Günlük atılan toplam piksel"
+
+#: src/components/Rankings.jsx:193
+#, fuzzy
+msgid "Top 10 Players from Yesterday"
+msgstr "En Yüksek 10 Oyuncu [piksel / gün]"
+
+#: src/components/Rankings.jsx:197
+#, fuzzy
+msgid "Daily Pixels per Country"
+msgstr "Saatlik oyuncu ve piksel sayısı"
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
 msgid "User"
 msgstr "Kullanıcı"
 
-#: src/components/Rankings.jsx:226
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
 msgid "Country"
 msgstr "Ülke"
 
-#: src/components/Rankings.jsx:286
+#: src/components/Rankings.jsx:241
+msgid "+last hour"
+msgstr ""
+
+#: src/components/Rankings.jsx:311
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 "Sıralama her 5 dakikada bir güncellenir. Günlük sıralama UTC gece yarısında "
@@ -1349,34 +1373,6 @@ msgstr "Günlük Top10 Sıralaması"
 msgid "Dimensions"
 msgstr "Boyutlar"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "En Yüksek 10 Ülke [piksel / gün]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Saatlik oyuncu ve piksel sayısı"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "En Yüksek 10 Oyuncu [piksel / gün]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Bugünkü piksel sayılarına göre ülkeler"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Günlük atılan toplam piksel"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Kullanıcı Adı veya E-Posta"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Giriş Yap"
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1485,6 +1481,14 @@ msgstr "Kullanıcıların Engelini Kaldır"
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"
 msgstr "Engellediğin kullanıcı yok"
+
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Kullanıcı Adı veya E-Posta"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Giriş Yap"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1667,6 +1671,36 @@ msgstr "Nedeni Gir"
 msgid "(0 = infinite)"
 msgstr "(0 = sonsuz)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "En Yüksek 10 Ülke [piksel / gün]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Saatlik oyuncu ve piksel sayısı"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "En Yüksek 10 Oyuncu [piksel / gün]"
+
+#: src/core/chartSettings.js:347
+msgid "Total Pixels placed per day"
+msgstr "Günlük atılan toplam piksel"
+
+#: src/components/CooldownChanges.jsx:20
+msgid "Current Cooldown Changes per Country:"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:25
+msgid "Factor"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:46
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
+msgstr ""
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Ping"
@@ -1757,6 +1791,9 @@ msgstr "B"
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Countries by Pixels Today"
+#~ msgstr "Bugünkü piksel sayılarına göre ülkeler"
 
 #~ msgid "Pencil Mode"
 #~ msgstr "Kalem Modu"

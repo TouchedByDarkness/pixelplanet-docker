@@ -220,11 +220,6 @@ msgstr "Confirme a senha nova"
 msgid "Submit"
 msgstr "Enviar"
 
-#: src/routes/api/baninfo.js:32
-#, fuzzy
-msgid "You are not banned"
-msgstr "Você não está autenticado."
-
 #: src/routes/api/modtools.js:53
 #, fuzzy
 msgid "You are not logged in"
@@ -238,6 +233,11 @@ msgstr "Você não tem acesso a esse canal"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr ""
+
+#: src/routes/api/baninfo.js:32
+#, fuzzy
+msgid "You are not banned"
+msgstr "Você não está autenticado."
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

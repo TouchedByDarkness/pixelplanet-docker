@@ -279,11 +279,11 @@ msgstr ""
 msgid "Placed Pixels"
 msgstr ""
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:159
 msgid "Today"
 msgstr ""
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:150
 msgid "Total"
 msgstr ""
 
@@ -369,14 +369,6 @@ msgstr ""
 msgid "Globe View"
 msgstr ""
 
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr ""
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr ""
-
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr ""
@@ -391,6 +383,14 @@ msgstr ""
 
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
+msgstr ""
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr ""
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
 msgstr ""
 
 #: src/components/windows/index.js:16
@@ -409,12 +409,24 @@ msgstr ""
 msgid "Canvas Archive"
 msgstr ""
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
 msgstr ""
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr ""
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr ""
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr ""
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
 msgstr ""
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
@@ -424,6 +436,26 @@ msgstr ""
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
+msgstr ""
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr ""
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr ""
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr ""
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
 msgstr ""
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
@@ -456,38 +488,6 @@ msgstr ""
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr ""
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
 msgstr ""
 
 #: src/components/windows/Help.jsx:65
@@ -781,6 +781,31 @@ msgstr ""
 msgid "Select Language"
 msgstr ""
 
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr ""
+
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr ""
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr ""
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr ""
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Po shkarkohet…"
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr ""
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr ""
@@ -818,31 +843,6 @@ msgstr ""
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
-msgstr ""
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr ""
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr ""
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr ""
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr ""
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Po shkarkohet…"
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
 msgstr ""
 
 #: src/components/windows/CanvasSelect.jsx:29
@@ -1012,30 +1012,6 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr ""
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr ""
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr ""
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr ""
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr ""
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr ""
-
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr ""
@@ -1129,28 +1105,72 @@ msgstr ""
 msgid "Social Settings"
 msgstr ""
 
-#: src/components/Rankings.jsx:165
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr ""
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr ""
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr ""
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr ""
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr ""
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr ""
+
+#: src/components/Rankings.jsx:168
 msgid "Yesterday"
 msgstr ""
 
-#: src/components/Rankings.jsx:174
+#: src/components/Rankings.jsx:177
 msgid "Countries Today"
 msgstr ""
 
-#: src/components/Rankings.jsx:183
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
 msgid "Charts"
 msgstr ""
 
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
+#: src/components/Rankings.jsx:191
+msgid "Total Pixels per Player"
+msgstr ""
+
+#: src/components/Rankings.jsx:192
+msgid "Daily Pixels per Player"
+msgstr ""
+
+#: src/components/Rankings.jsx:193
+msgid "Top 10 Players from Yesterday"
+msgstr ""
+
+#: src/components/Rankings.jsx:197
+msgid "Daily Pixels per Country"
+msgstr ""
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
 msgid "User"
 msgstr ""
 
-#: src/components/Rankings.jsx:226
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
 msgid "Country"
 msgstr ""
 
-#: src/components/Rankings.jsx:286
+#: src/components/Rankings.jsx:241
+msgid "+last hour"
+msgstr ""
+
+#: src/components/Rankings.jsx:311
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 
@@ -1277,34 +1297,6 @@ msgstr ""
 msgid "Dimensions"
 msgstr ""
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr ""
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr ""
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr ""
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr ""
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr ""
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1408,6 +1400,14 @@ msgstr ""
 
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"
+msgstr ""
+
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr ""
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
 msgstr ""
 
 #: src/components/ModCanvastools.jsx:168
@@ -1579,6 +1579,36 @@ msgstr ""
 
 #: src/components/ModIIDtools.jsx:97
 msgid "(0 = infinite)"
+msgstr ""
+
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr ""
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:347
+msgid "Total Pixels placed per day"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:20
+msgid "Current Cooldown Changes per Country:"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:25
+msgid "Factor"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:46
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
 msgstr ""
 
 #: src/components/contextmenus/UserContextMenu.jsx:49

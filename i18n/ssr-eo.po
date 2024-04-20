@@ -215,11 +215,6 @@ msgstr "Verigu Novan Pasvorton"
 msgid "Submit"
 msgstr "Alsendu"
 
-#: src/routes/api/baninfo.js:32
-#, fuzzy
-msgid "You are not banned"
-msgstr "Vi ne estas aŭtentigita."
-
 #: src/routes/api/modtools.js:53
 #, fuzzy
 msgid "You are not logged in"
@@ -233,6 +228,11 @@ msgstr "Malhavas l' permes' je l' kanal'"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr ""
+
+#: src/routes/api/baninfo.js:32
+#, fuzzy
+msgid "You are not banned"
+msgstr "Vi ne estas aŭtentigita."
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-14 19:17+0000\n"
+"PO-Revision-Date: 2024-04-20 08:31+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/et/>\n"
@@ -279,11 +279,11 @@ msgstr "Mängus Olevate Kasutajate Arv"
 msgid "Placed Pixels"
 msgstr "Piksleid Joonistatud"
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:159
 msgid "Today"
 msgstr "Täna"
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:150
 msgid "Total"
 msgstr "Kokku"
 
@@ -369,14 +369,6 @@ msgstr "Tee Kuvatõmmis"
 msgid "Globe View"
 msgstr "Maakera Vaade"
 
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr "Sule Palett"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr "Ava Palett"
-
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr "Lülita Pliiats sisse"
@@ -392,6 +384,14 @@ msgstr "Lülita Ajaloo Pliiats välja"
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Lülita Ülekatte Pliiats välja"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr "Sule Palett"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
+msgstr "Ava Palett"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -409,13 +409,25 @@ msgstr "Jututuba"
 msgid "Canvas Archive"
 msgstr "Lõuendi Arhiiv"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
-msgstr "Sinu ligipääs on piiratud. Arvad, et see on viga? Proovi "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
+msgstr "Sul läks liiga kaua, proovi uuesti."
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
-msgstr " , et otsus vaidlustada."
+#: src/components/GlobalCaptcha.jsx:50
+msgid "You failed your captcha"
+msgstr "Sa lahendasid captcha valesti"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
+msgstr "Puudulik või sobimatu captcha tekst"
+
+#: src/components/GlobalCaptcha.jsx:56
+msgid "No captcha id given"
+msgstr "Captcha ID-d ei antud"
+
+#: src/components/GlobalCaptcha.jsx:59
+msgid "Unknown Captcha Error"
+msgstr "Tundmatu Captcha Viga"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -425,6 +437,26 @@ msgstr " , et otsus vaidlustada."
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Viga"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Tühista"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Saada"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr "Sinu ligipääs on piiratud. Arvad, et see on viga? Proovi "
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr " , et otsus vaidlustada."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -457,38 +489,6 @@ msgstr "Nüüd, mil sa näed seda sõnumit, su ligipääs ei ole enam piiratud."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Miks?"
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr "Sul läks liiga kaua, proovi uuesti."
-
-#: src/components/GlobalCaptcha.jsx:50
-msgid "You failed your captcha"
-msgstr "Sa lahendasid captcha valesti"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr "Puudulik või sobimatu captcha tekst"
-
-#: src/components/GlobalCaptcha.jsx:56
-msgid "No captcha id given"
-msgstr "Captcha ID-d ei antud"
-
-#: src/components/GlobalCaptcha.jsx:59
-msgid "Unknown Captcha Error"
-msgstr "Tundmatu Captcha Viga"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Tühista"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Saada"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -810,6 +810,31 @@ msgstr "Kuidas pixelplanet peaks välja nägema."
 msgid "Select Language"
 msgstr "Vali Keel"
 
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Profiil"
+
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr "Statistika"
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Pikselaator"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Modereerimine"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Laadimine..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Ühine meie Guilded'iga:"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Registreeri uus kasutaja siin"
@@ -848,31 +873,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Kinnita"
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Profiil"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr "Statistika"
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Pikselaator"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Modereerimine"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Laadimine..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Ühine meie Guilded'iga:"
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
@@ -1057,31 +1057,6 @@ msgstr "Kopeeri"
 msgid "Save"
 msgstr "Salvesta"
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr ""
-"Logi sisse, et saada ligipääs rohkematele funktsioonidele ja statistikale."
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr "Logi Sisse Nime või Meiliga:"
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr "Unustasin Salasõna."
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr "või logi sisse kasutades:"
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr "või registreeri siin:"
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr "Registreeri"
-
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
 msgstr "Šabloonid"
@@ -1179,28 +1154,77 @@ msgstr "Kustuta Kasutaja"
 msgid "Social Settings"
 msgstr "Sotsiaalseadmed"
 
-#: src/components/Rankings.jsx:165
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr ""
+"Logi sisse, et saada ligipääs rohkematele funktsioonidele ja statistikale."
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr "Logi Sisse Nime või Meiliga:"
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr "Unustasin Salasõna."
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr "või logi sisse kasutades:"
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr "või registreeri siin:"
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr "Registreeri"
+
+#: src/components/Rankings.jsx:168
 msgid "Yesterday"
 msgstr "Eile"
 
-#: src/components/Rankings.jsx:174
+#: src/components/Rankings.jsx:177
 msgid "Countries Today"
 msgstr "Riigid Täna"
 
-#: src/components/Rankings.jsx:183
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
 msgid "Charts"
 msgstr "Graafikud"
 
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
+#: src/components/Rankings.jsx:191
+#, fuzzy
+msgid "Total Pixels per Player"
+msgstr "Joonistatud Piklite arv päeva kaupa"
+
+#: src/components/Rankings.jsx:192
+#, fuzzy
+msgid "Daily Pixels per Player"
+msgstr "Joonistatud Piklite arv päeva kaupa"
+
+#: src/components/Rankings.jsx:193
+#, fuzzy
+msgid "Top 10 Players from Yesterday"
+msgstr "Top 10 Mängijat [pikslit päevas]"
+
+#: src/components/Rankings.jsx:197
+#, fuzzy
+msgid "Daily Pixels per Country"
+msgstr "Mängijaid ja Piksleid tunni kaupa"
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
 msgid "User"
 msgstr "Kasutaja"
 
-#: src/components/Rankings.jsx:226
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
 msgid "Country"
 msgstr "Riik"
 
-#: src/components/Rankings.jsx:286
+#: src/components/Rankings.jsx:241
+msgid "+last hour"
+msgstr "+ viimane tund"
+
+#: src/components/Rankings.jsx:311
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 "Edetabeli värskendused iga 5 minuti järel. Päevased edetabelid lähtestatakse "
@@ -1329,34 +1353,6 @@ msgstr "Top 10 Igapäevane Edetabel"
 msgid "Dimensions"
 msgstr "Mõõtmed"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr "Top 10 Riiki [pikslit päevas]"
-
-#: src/core/chartSettings.js:127
-msgid "Players and Pixels per hour"
-msgstr "Mängijaid ja Piksleid tunni kaupa"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr "Top 10 Mängijat [pikslit päevas]"
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr "Täna joonistatud Piksleid riigi kaupa"
-
-#: src/core/chartSettings.js:351
-msgid "Total Pixels placed per day"
-msgstr "Joonistatud Piklite arv päeva kaupa"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Nimi või E-meil"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Logi Sisse"
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1465,6 +1461,14 @@ msgstr "Eemalda Kasutaja Blokeeringud"
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"
 msgstr "Sa ei ole blokeerinud ühtegi kasutajat"
+
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Nimi või E-meil"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Logi Sisse"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1646,6 +1650,36 @@ msgstr "Sisesta Põhjus"
 msgid "(0 = infinite)"
 msgstr "(0 = lõppematu)"
 
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Top 10 Riiki [pikslit päevas]"
+
+#: src/core/chartSettings.js:127
+msgid "Players and Pixels per hour"
+msgstr "Mängijaid ja Piksleid tunni kaupa"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr "Top 10 Mängijat [pikslit päevas]"
+
+#: src/core/chartSettings.js:347
+msgid "Total Pixels placed per day"
+msgstr "Joonistatud Piklite arv päeva kaupa"
+
+#: src/components/CooldownChanges.jsx:20
+msgid "Current Cooldown Changes per Country:"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:25
+msgid "Factor"
+msgstr "Tegur"
+
+#: src/components/CooldownChanges.jsx:46
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
+msgstr ""
+
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
 msgstr "Maini"
@@ -1736,6 +1770,9 @@ msgstr "B"
 msgctxt "keybinds"
 msgid "T"
 msgstr "T"
+
+#~ msgid "Countries by Pixels Today"
+#~ msgstr "Täna joonistatud Piksleid riigi kaupa"
 
 #~ msgid "Pixels placed"
 #~ msgstr "Joonistatud piksleid"

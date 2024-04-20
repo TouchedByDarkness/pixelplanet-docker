@@ -215,11 +215,6 @@ msgstr "Confirma la contrasenya nova"
 msgid "Submit"
 msgstr "Envia"
 
-#: src/routes/api/baninfo.js:32
-#, fuzzy
-msgid "You are not banned"
-msgstr "No estàs verificat."
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "No has iniciat sessió"
@@ -231,6 +226,11 @@ msgstr "No tens permís per accedir a aquesta pàgina"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Només els administradors poden fer això"
+
+#: src/routes/api/baninfo.js:32
+#, fuzzy
+msgid "You are not banned"
+msgstr "No estàs verificat."
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

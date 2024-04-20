@@ -213,10 +213,6 @@ msgstr "Potvrdit Nový Heslo"
 msgid "Submit"
 msgstr "Vytvořit"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Nejste zabanován"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Nejsi přihlášenej"
@@ -228,6 +224,10 @@ msgstr "Nejste povolen na tuhle stránků"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Pouze admini to můžou dělat"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Nejste zabanován"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

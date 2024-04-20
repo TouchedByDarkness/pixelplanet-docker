@@ -212,10 +212,6 @@ msgstr "رمز عبور جدید را تأیید کنید"
 msgid "Submit"
 msgstr "ارسال"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "تو بن نشدی"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "شما وارد نشده اید"
@@ -227,6 +223,10 @@ msgstr "شما اجازه دسترسی به این صفحه را ندارید"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "فقط ادمین ها میتونن این کار رو بکنن"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "تو بن نشدی"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

@@ -208,10 +208,6 @@ msgstr "Kinnita Uus Salasõna"
 msgid "Submit"
 msgstr "Kinnita"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Sinu ligipääs ei ole piiratud"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Sa ei ole sisse logitud"
@@ -223,6 +219,10 @@ msgstr "Sul puudub sellele leheküljele ligipääs"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Ainult administraatorid saavad seda teha"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Sinu ligipääs ei ole piiratud"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

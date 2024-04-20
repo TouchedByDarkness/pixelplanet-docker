@@ -219,11 +219,6 @@ msgstr "Potrdite Novo Geslo"
 msgid "Submit"
 msgstr "Oddajte"
 
-#: src/routes/api/baninfo.js:32
-#, fuzzy
-msgid "You are not banned"
-msgstr "Niste preverjeni."
-
 #: src/routes/api/modtools.js:53
 #, fuzzy
 msgid "You are not logged in"
@@ -237,6 +232,11 @@ msgstr "Nimate dostopa do tega kanala"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr ""
+
+#: src/routes/api/baninfo.js:32
+#, fuzzy
+msgid "You are not banned"
+msgstr "Niste preverjeni."
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

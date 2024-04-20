@@ -214,10 +214,6 @@ msgstr "Bekræft Nye Adgangskode"
 msgid "Submit"
 msgstr "Indsend"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Du er ikke bannet"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Du er ikke logget ind"
@@ -229,6 +225,10 @@ msgstr "Du er ikke tilladt til at få adgang til denne side"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Kun administratorer kan gøre det"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Du er ikke bannet"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

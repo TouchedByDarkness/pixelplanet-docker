@@ -211,10 +211,6 @@ msgstr "Потвърждаване на новата парола"
 msgid "Submit"
 msgstr "Изпращане"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Не сте баннати"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Не сте логнати"
@@ -226,6 +222,10 @@ msgstr "Нямате достъп до тази страница"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Само администраторите имат право на това"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Не сте баннати"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

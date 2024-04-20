@@ -214,10 +214,6 @@ msgstr "Подтвердите новый пароль"
 msgid "Submit"
 msgstr "Отправить"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Вы не забанены"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Вы не авторизованы"
@@ -229,6 +225,10 @@ msgstr "У вас нет доступа к этой странице"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Это могут сделать только админы"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Вы не забанены"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

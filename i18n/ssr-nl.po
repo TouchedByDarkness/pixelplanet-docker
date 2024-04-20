@@ -218,10 +218,6 @@ msgstr "Bevestig nieuw wachtwoord"
 msgid "Submit"
 msgstr "Indienen"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "Je bent niet gebanned"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "Je bent niet ingelogd"
@@ -233,6 +229,10 @@ msgstr "U heeft geen toegang tot deze pagina"
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "Alleen beheerders kunnen dat doen"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "Je bent niet gebanned"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"

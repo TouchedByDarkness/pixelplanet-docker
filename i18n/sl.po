@@ -284,11 +284,11 @@ msgstr ""
 msgid "Placed Pixels"
 msgstr "Postavljenih Pixlov"
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:156
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:159
 msgid "Today"
 msgstr ""
 
-#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:147
+#: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:150
 msgid "Total"
 msgstr "Skupaj"
 
@@ -377,14 +377,6 @@ msgstr "Ustvari Zajem zaslona"
 msgid "Globe View"
 msgstr "Pogled Globusa"
 
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr "Zapri Paleto"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr "Odpri Paleto"
-
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr ""
@@ -401,6 +393,14 @@ msgstr ""
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr ""
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr "Zapri Paleto"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
+msgstr "Odpri Paleto"
 
 #: src/components/windows/index.js:16
 #, fuzzy
@@ -420,13 +420,28 @@ msgstr "Klepet"
 msgid "Canvas Archive"
 msgstr "Arhiv Kanvasov"
 
-#: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustified? Check out the "
+#: src/components/GlobalCaptcha.jsx:47
+msgid "You took too long, try again."
 msgstr ""
 
-#: src/components/BanInfo.jsx:76
-msgid " on how to appeal."
+#: src/components/GlobalCaptcha.jsx:50
+#, fuzzy
+msgid "You failed your captcha"
+msgstr "Nismo morali naložiti captcho"
+
+#: src/components/GlobalCaptcha.jsx:53
+msgid "No or invalid captcha text"
 msgstr ""
+
+#: src/components/GlobalCaptcha.jsx:56
+#, fuzzy
+msgid "No captcha id given"
+msgstr "Niste vnesli gesla"
+
+#: src/components/GlobalCaptcha.jsx:59
+#, fuzzy
+msgid "Unknown Captcha Error"
+msgstr "Neznana Napaka"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -436,6 +451,26 @@ msgstr ""
 #: src/components/windows/Register.jsx:89
 msgid "Error"
 msgstr "Napaka"
+
+#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
+#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
+#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/windows/ForgotPassword.jsx:89
+#: src/components/windows/Register.jsx:133
+msgid "Cancel"
+msgstr "Prekini"
+
+#: src/components/GlobalCaptcha.jsx:86
+msgid "Send"
+msgstr "Pošlji"
+
+#: src/components/BanInfo.jsx:66
+msgid "You are banned. You think it is unjustified? Check out the "
+msgstr ""
+
+#: src/components/BanInfo.jsx:76
+msgid " on how to appeal."
+msgstr ""
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
@@ -468,41 +503,6 @@ msgstr ""
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:47
-msgid "You took too long, try again."
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:50
-#, fuzzy
-msgid "You failed your captcha"
-msgstr "Nismo morali naložiti captcho"
-
-#: src/components/GlobalCaptcha.jsx:53
-msgid "No or invalid captcha text"
-msgstr ""
-
-#: src/components/GlobalCaptcha.jsx:56
-#, fuzzy
-msgid "No captcha id given"
-msgstr "Niste vnesli gesla"
-
-#: src/components/GlobalCaptcha.jsx:59
-#, fuzzy
-msgid "Unknown Captcha Error"
-msgstr "Neznana Napaka"
-
-#: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
-#: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
-#: src/components/windows/ForgotPassword.jsx:89
-#: src/components/windows/Register.jsx:133
-msgid "Cancel"
-msgstr "Prekini"
-
-#: src/components/GlobalCaptcha.jsx:86
-msgid "Send"
-msgstr "Pošlji"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -827,6 +827,31 @@ msgstr "Kako si želite da pixelplanet izgleda"
 msgid "Select Language"
 msgstr "Izberite Jezik"
 
+#: src/components/windows/UserArea.jsx:36
+#: src/components/windows/UserArea.jsx:56
+msgid "Profile"
+msgstr "Profil"
+
+#: src/components/windows/UserArea.jsx:59
+msgid "Statistics"
+msgstr ""
+
+#: src/components/windows/UserArea.jsx:64
+msgid "Converter"
+msgstr "Pretvornik"
+
+#: src/components/windows/UserArea.jsx:70
+msgid "Modtools"
+msgstr "Moderatorska orodja"
+
+#: src/components/windows/UserArea.jsx:71
+msgid "Loading..."
+msgstr "Nalaganje..."
+
+#: src/components/windows/UserArea.jsx:78
+msgid "Consider joining us on Guilded:"
+msgstr "Pridružite se nam na Guilded:"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Registrirajte nov uporabniški račun tukaj"
@@ -865,31 +890,6 @@ msgstr ""
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Pošlji"
-
-#: src/components/windows/UserArea.jsx:36
-#: src/components/windows/UserArea.jsx:56
-msgid "Profile"
-msgstr "Profil"
-
-#: src/components/windows/UserArea.jsx:59
-msgid "Statistics"
-msgstr ""
-
-#: src/components/windows/UserArea.jsx:64
-msgid "Converter"
-msgstr "Pretvornik"
-
-#: src/components/windows/UserArea.jsx:70
-msgid "Modtools"
-msgstr "Moderatorska orodja"
-
-#: src/components/windows/UserArea.jsx:71
-msgid "Loading..."
-msgstr "Nalaganje..."
-
-#: src/components/windows/UserArea.jsx:78
-msgid "Consider joining us on Guilded:"
-msgstr "Pridružite se nam na Guilded:"
 
 #: src/components/windows/CanvasSelect.jsx:29
 #, fuzzy
@@ -1080,30 +1080,6 @@ msgstr ""
 msgid "Save"
 msgstr "Shrani"
 
-#: src/components/LogInArea.jsx:19
-msgid "Login to access more features and stats."
-msgstr "Prijavite se, da lahko dostopate do več možnosti in statistik."
-
-#: src/components/LogInArea.jsx:21
-msgid "Login with Name or Mail:"
-msgstr "Prijavite se z Imenom ali E-naslovom:"
-
-#: src/components/LogInArea.jsx:28
-msgid "I forgot my Password."
-msgstr "Pozabil sem svoje Geslo."
-
-#: src/components/LogInArea.jsx:29
-msgid "or login with:"
-msgstr "Prijavi se z:"
-
-#: src/components/LogInArea.jsx:70
-msgid "or register here:"
-msgstr "Ali pa se registriraj tukaj:"
-
-#: src/components/LogInArea.jsx:75
-msgid "Register"
-msgstr "Registracija"
-
 #: src/components/TemplateSettings.jsx:52
 #, fuzzy
 msgid "Templates"
@@ -1200,29 +1176,76 @@ msgstr "Izbriši Profil"
 msgid "Social Settings"
 msgstr "Družbene Nastavitve"
 
-#: src/components/Rankings.jsx:165
+#: src/components/LogInArea.jsx:19
+msgid "Login to access more features and stats."
+msgstr "Prijavite se, da lahko dostopate do več možnosti in statistik."
+
+#: src/components/LogInArea.jsx:21
+msgid "Login with Name or Mail:"
+msgstr "Prijavite se z Imenom ali E-naslovom:"
+
+#: src/components/LogInArea.jsx:28
+msgid "I forgot my Password."
+msgstr "Pozabil sem svoje Geslo."
+
+#: src/components/LogInArea.jsx:29
+msgid "or login with:"
+msgstr "Prijavi se z:"
+
+#: src/components/LogInArea.jsx:70
+msgid "or register here:"
+msgstr "Ali pa se registriraj tukaj:"
+
+#: src/components/LogInArea.jsx:75
+msgid "Register"
+msgstr "Registracija"
+
+#: src/components/Rankings.jsx:168
 msgid "Yesterday"
 msgstr ""
 
-#: src/components/Rankings.jsx:174
+#: src/components/Rankings.jsx:177
 msgid "Countries Today"
 msgstr ""
 
-#: src/components/Rankings.jsx:183
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
 msgid "Charts"
 msgstr ""
 
-#: src/components/Rankings.jsx:201 src/components/Rankings.jsx:210
-#: src/components/Rankings.jsx:219
+#: src/components/Rankings.jsx:191
+#, fuzzy
+msgid "Total Pixels per Player"
+msgstr "Postavljeni pixli"
+
+#: src/components/Rankings.jsx:192
+#, fuzzy
+msgid "Daily Pixels per Player"
+msgstr "Postavljeni pixli"
+
+#: src/components/Rankings.jsx:193
+msgid "Top 10 Players from Yesterday"
+msgstr ""
+
+#: src/components/Rankings.jsx:197
+#, fuzzy
+msgid "Daily Pixels per Country"
+msgstr "Postavljenih Pixlov"
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
 #, fuzzy
 msgid "User"
 msgstr "Uporabniško Območje"
 
-#: src/components/Rankings.jsx:226
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
 msgid "Country"
 msgstr ""
 
-#: src/components/Rankings.jsx:286
+#: src/components/Rankings.jsx:241
+msgid "+last hour"
+msgstr ""
+
+#: src/components/Rankings.jsx:311
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 "Uvrstitev se posodobi vsakih 5 min. Dnevna uvrstitev pa se posodobi ob pol "
@@ -1353,36 +1376,6 @@ msgstr "Dnevna Uvrstitev"
 msgid "Dimensions"
 msgstr "Dimenzije"
 
-#: src/core/chartSettings.js:30
-msgid "Top 10 Countries [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:127
-#, fuzzy
-msgid "Players and Pixels per hour"
-msgstr "Postavljenih Pixlov"
-
-#: src/core/chartSettings.js:221
-msgid "Top 10 Players [pxls / day]"
-msgstr ""
-
-#: src/core/chartSettings.js:294
-msgid "Countries by Pixels Today"
-msgstr ""
-
-#: src/core/chartSettings.js:351
-#, fuzzy
-msgid "Total Pixels placed per day"
-msgstr "Postavljeni pixli"
-
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Ime ali E-naslov"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Prijava"
-
 #: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 #, fuzzy
@@ -1499,6 +1492,14 @@ msgstr "Odblokirajte Uporabnike"
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"
 msgstr "Nimate blokiranih uporabnikov"
+
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Ime ali E-naslov"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Prijava"
 
 #: src/components/ModCanvastools.jsx:168
 msgid "Build image on canvas."
@@ -1678,6 +1679,38 @@ msgstr ""
 
 #: src/components/ModIIDtools.jsx:97
 msgid "(0 = infinite)"
+msgstr ""
+
+#: src/core/chartSettings.js:30
+msgid "Top 10 Countries [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:127
+#, fuzzy
+msgid "Players and Pixels per hour"
+msgstr "Postavljenih Pixlov"
+
+#: src/core/chartSettings.js:221
+msgid "Top 10 Players [pxls / day]"
+msgstr ""
+
+#: src/core/chartSettings.js:347
+#, fuzzy
+msgid "Total Pixels placed per day"
+msgstr "Postavljeni pixli"
+
+#: src/components/CooldownChanges.jsx:20
+msgid "Current Cooldown Changes per Country:"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:25
+msgid "Factor"
+msgstr ""
+
+#: src/components/CooldownChanges.jsx:46
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
 msgstr ""
 
 #: src/components/contextmenus/UserContextMenu.jsx:49

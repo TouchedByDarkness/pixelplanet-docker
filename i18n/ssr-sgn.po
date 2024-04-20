@@ -221,10 +221,6 @@ msgstr "🤘👌👇✋🤞☝️👆 👇🤙👐 👎✌️🖖🖖👐👌☝
 msgid "Submit"
 msgstr "🖖🙌👈👆🤞👋"
 
-#: src/routes/api/baninfo.js:32
-msgid "You are not banned"
-msgstr "👏👌🙌 ✌️☝️🤙 👇👌👋 👈✌️👇👇🤙🤚"
-
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
 msgstr "👏👌🙌 ✌️☝️🤙 👇👌👋 👍👌🤛🤛🤙🤚 🤞👇"
@@ -236,6 +232,10 @@ msgstr "👏👌🙌 ✌️☝️🤙 👇👌👋 ✌️👍👍👌👐🤙�
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
 msgstr "✊🙌🖖👋 ✌️🤚👆🤞👇🖖 🤘✌️👇 🤚👌 👋🖐✌️👋"
+
+#: src/routes/api/baninfo.js:32
+msgid "You are not banned"
+msgstr "👏👌🙌 ✌️☝️🤙 👇👌👋 👈✌️👇👇🤙🤚"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
