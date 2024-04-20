@@ -1680,7 +1680,7 @@ msgid "Total Pixels placed per day"
 msgstr "Całkowita liczba pikseli postawionych dziennie"
 
 #: src/components/CooldownChanges.jsx:20
-msgid "Current Cooldown Changes per Country:"
+msgid "Current Cooldown Changes per Country"
 msgstr ""
 
 #: src/components/CooldownChanges.jsx:25

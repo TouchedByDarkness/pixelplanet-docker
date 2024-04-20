@@ -1684,8 +1684,8 @@ msgid "Total Pixels placed per day"
 msgstr "Pixel pro Tag insgesamt"
 
 #: src/components/CooldownChanges.jsx:20
-msgid "Current Cooldown Changes per Country:"
-msgstr "Aktuell modifizierte Abklingzeit per Land:"
+msgid "Current Cooldown Changes per Country"
+msgstr "Aktuell modifizierte Abklingzeit per Land"
 
 #: src/components/CooldownChanges.jsx:25
 msgid "Factor"

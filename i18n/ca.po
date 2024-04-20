@@ -1706,7 +1706,7 @@ msgid "Total Pixels placed per day"
 msgstr "Píxels col·locats"
 
 #: src/components/CooldownChanges.jsx:20
-msgid "Current Cooldown Changes per Country:"
+msgid "Current Cooldown Changes per Country"
 msgstr ""
 
 #: src/components/CooldownChanges.jsx:25
