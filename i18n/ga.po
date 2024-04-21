@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-13 16:57+0000\n"
+"PO-Revision-Date: 2024-04-21 10:07+0000\n"
 "Last-Translator: Jamie Fitzgerald <jamiefitzgerald2010@gmail.com>\n"
 "Language-Team: Irish <https://hosted.weblate.org/projects/pixelplanet/client/"
 "ga/>\n"
 "Language: ga\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
-"(n>6 && n<11) ? 3 : 4;\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :("
+"n>6 && n<11) ? 3 : 4;\n"
 "X-Generator: Weblate 5.5-dev\n"
 
 #: src/controls/keypress.js:102
@@ -596,28 +596,33 @@ msgstr "Cliceáil ar ${ bindQ } nó ${ bindE } le súmáil"
 #: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
-msgstr ""
+msgstr "Cliceáil ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } le Bóg"
 
 #: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
 msgstr ""
+"Cliceáil ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } le bóg"
 
 #: src/components/windows/Help.jsx:89
 #, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
-msgstr ""
+msgstr "Tarraing ${ mouseSymbol } luchóg nó ${ touchSymbol } pan le bóg"
 
 #: src/components/windows/Help.jsx:90
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
+"Scrollaigh ${ mouseSymbol } luchóg rotha nó ${ touchSymbol } bhain liomóg as "
+"le Zúm"
 
 #: src/components/windows/Help.jsx:91
 #, javascript-format
 msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr ""
+"coinnigh ar chlé ${ bindShift } do peann luaidhe (le cuir nuair atá tú ag "
+"bóg an luchóg)"
 
 #: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format

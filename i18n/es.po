@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-18 01:03+0000\n"
-"Last-Translator: Pollofrito <pollofrito050@gmail.com>\n"
+"PO-Revision-Date: 2024-04-21 10:07+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/es/>\n"
 "Language: es\n"
@@ -1214,24 +1214,20 @@ msgid "Charts"
 msgstr "Gráficos"
 
 #: src/components/Rankings.jsx:191
-#, fuzzy
 msgid "Total Pixels per Player"
-msgstr "Pixeles Totales colocados por día"
+msgstr "Píxeles totales por jugador"
 
 #: src/components/Rankings.jsx:192
-#, fuzzy
 msgid "Daily Pixels per Player"
-msgstr "Pixeles Totales colocados por día"
+msgstr "Píxeles diarios por jugador"
 
 #: src/components/Rankings.jsx:193
-#, fuzzy
 msgid "Top 10 Players from Yesterday"
-msgstr "Top 10 jugadores [píxeles / días]"
+msgstr "Los 10 mejores jugadores de ayer"
 
 #: src/components/Rankings.jsx:197
-#, fuzzy
 msgid "Daily Pixels per Country"
-msgstr "Jugadores y Píxeles por hora"
+msgstr "Píxeles diarios por país"
 
 #: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
 #: src/components/Rankings.jsx:233
@@ -1244,7 +1240,7 @@ msgstr "País"
 
 #: src/components/Rankings.jsx:241
 msgid "+last hour"
-msgstr ""
+msgstr "+última hora"
 
 #: src/components/Rankings.jsx:311
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
@@ -1691,17 +1687,19 @@ msgstr "Pixeles Totales colocados por día"
 
 #: src/components/CooldownChanges.jsx:20
 msgid "Current Cooldown Changes per Country"
-msgstr ""
+msgstr "Cambios de tiempo de reutilización actuales por país"
 
 #: src/components/CooldownChanges.jsx:25
 msgid "Factor"
-msgstr ""
+msgstr "Factor"
 
 #: src/components/CooldownChanges.jsx:46
 msgid ""
 "Cooldown is usually automatically changed for a country that is dominating. "
 "In example in the case of a streamer raid."
 msgstr ""
+"El tiempo de reutilización generalmente cambia automáticamente para un país "
+"que domina. Por ejemplo, en el caso de una redada de streamers."
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
