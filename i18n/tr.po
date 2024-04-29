@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-14 18:28+0000\n"
+"PO-Revision-Date: 2024-04-28 10:07+0000\n"
 "Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/tr/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.1\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -1212,24 +1212,20 @@ msgid "Charts"
 msgstr "Tablolar"
 
 #: src/components/Rankings.jsx:191
-#, fuzzy
 msgid "Total Pixels per Player"
-msgstr "Günlük atılan toplam piksel"
+msgstr "Oyuncu başına atılan toplam piksel"
 
 #: src/components/Rankings.jsx:192
-#, fuzzy
 msgid "Daily Pixels per Player"
-msgstr "Günlük atılan toplam piksel"
+msgstr "Oyuncu başına atılan günlük piksel"
 
 #: src/components/Rankings.jsx:193
-#, fuzzy
 msgid "Top 10 Players from Yesterday"
-msgstr "En Yüksek 10 Oyuncu [piksel / gün]"
+msgstr "Dün En Yüksek 10 Oyuncu"
 
 #: src/components/Rankings.jsx:197
-#, fuzzy
 msgid "Daily Pixels per Country"
-msgstr "Saatlik oyuncu ve piksel sayısı"
+msgstr "Ülke başına atılan günlük piksel"
 
 #: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
 #: src/components/Rankings.jsx:233
@@ -1242,7 +1238,7 @@ msgstr "Ülke"
 
 #: src/components/Rankings.jsx:241
 msgid "+last hour"
-msgstr ""
+msgstr "+son saat"
 
 #: src/components/Rankings.jsx:311
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
@@ -1689,17 +1685,19 @@ msgstr "Günlük atılan toplam piksel"
 
 #: src/components/CooldownChanges.jsx:20
 msgid "Current Cooldown Changes per Country"
-msgstr ""
+msgstr "Ülke Başına Geçerli Bekleme Süresi Değişiklikleri"
 
 #: src/components/CooldownChanges.jsx:25
 msgid "Factor"
-msgstr ""
+msgstr "Çarpan"
 
 #: src/components/CooldownChanges.jsx:46
 msgid ""
 "Cooldown is usually automatically changed for a country that is dominating. "
 "In example in the case of a streamer raid."
 msgstr ""
+"Bekleme süresi genellikle baskın olan bir ülke için otomatik olarak "
+"değiştirilir. Örneğin bir yayıncı baskını durumunda."
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"

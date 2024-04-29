@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-04-23 16:07+0000\n"
+"Last-Translator: Sylvain <sylvainstein@pxlplanet.be>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/pixelplanet/"
+"server/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/core/ChatProvider.js:434
 #, fuzzy
@@ -35,7 +36,7 @@ msgstr "Vous n'êtes pas autorisé."
 
 #: src/core/ChatProvider.js:443
 msgid "Your Internet Provider is banned"
-msgstr ""
+msgstr "Votre FAI est banni"
 
 #: src/core/ChatProvider.js:448
 #, javascript-format
@@ -242,7 +243,7 @@ msgstr "Vous n'êtes pas autorisé."
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
-msgstr ""
+msgstr "Ce fournisseur d'email n'est pas autorisé"
 
 #: src/routes/api/auth/register.js:31
 #, fuzzy
@@ -316,11 +317,11 @@ msgstr "Mauvais mot de passe !"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr ""
+msgstr "Les utilisateurs mis en sourdine ne peuvent pas supprimer leur compte."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr ""
+msgstr "Cette action n'est pas disponible aux utilisateurs mis en sourdine."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
@@ -417,16 +418,20 @@ msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
+"Une toile pour les joueurs les plus actifs de la veille. Le classement "
+"journalier est mis à jour à minuit UTC."
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr ""
+msgstr "Seulement 4 couleurs. Même règles que pour la lune !"
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
+"Conquérir des territoires sur une version plus petite de la Terre où les "
+"océans sont protégés. Le temps de recharge est partagé avec la Terre !"
 
 #: src/core/MailProvider.js:66
 #, javascript-format

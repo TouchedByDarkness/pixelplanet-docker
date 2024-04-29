@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-20 08:31+0000\n"
+"PO-Revision-Date: 2024-04-29 11:08+0000\n"
 "Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/et/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.2\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -1202,9 +1202,8 @@ msgid "Daily Pixels per Player"
 msgstr "Joonistatud Piklite arv päeva kaupa"
 
 #: src/components/Rankings.jsx:193
-#, fuzzy
 msgid "Top 10 Players from Yesterday"
-msgstr "Top 10 Mängijat [pikslit päevas]"
+msgstr "Eilsed Top 10 Mängijat"
 
 #: src/components/Rankings.jsx:197
 #, fuzzy

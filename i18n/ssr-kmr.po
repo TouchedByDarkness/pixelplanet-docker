@@ -1,243 +1,246 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-11 18:57+0000\n"
-"Last-Translator: Şêr kuh <buzaarq@gmail.com>\n"
+"PO-Revision-Date: 2024-04-29 11:08+0000\n"
+"Last-Translator: Ahmed kurdish <nikogaming500@gmail.com>\n"
 "Language-Team: Kurdish (Northern) <https://hosted.weblate.org/projects/"
 "pixelplanet/server/kmr/>\n"
 "Language: kmr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.2\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
-msgstr ""
+msgstr "Dema ku hûn proxy bikar tînin hûn nikarin peyamên chatê bişînin"
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr ""
+msgstr "Welatê we ji vê kanala sohbetê re demkî ye"
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
+"Hûn bi domdarî bêdeng in, beşdarî komeleya me bibin ku îtîraza lalbûnê bikin"
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
-msgstr ""
+msgstr "Tu qedexe yî"
 
 #: src/core/ChatProvider.js:443
 msgid "Your Internet Provider is banned"
-msgstr ""
+msgstr "Pêşkêşkara Înternetê ya we qedexe ye"
 
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr ""
+msgstr "Hûn ji bo ${timeMin } deqîqeyên din têne bêdeng kirin"
 
 #: src/core/ChatProvider.js:450
 #, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr ""
+msgstr "Tu ji bo ${ ttl } çirkeyên din bê deng bûyî"
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
 msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
-msgstr ""
+msgstr "Tu pir bi lez mesajan dişînî, divê tu li benda ${ waitTime } bimînî :("
 
 #: src/core/ChatProvider.js:471
 msgid "You don't have access to this channel"
-msgstr ""
+msgstr "Tu bigihîjî vê kanalê"
 
 #: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
-msgstr ""
+msgstr "Ji bo sohbetê divê nameya we were verast kirin"
 
 #: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
-msgstr ""
+msgstr "Tu nikarî evqas dirêj peyamekê bişînî :("
 
 #: src/core/ChatProvider.js:504
 msgid "Please use int channel"
-msgstr ""
+msgstr "Ji kerema xwe kanala int bikar bînin"
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
-msgstr ""
+msgstr "lehî rawestandin."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr ""
+msgstr "Te şîfreyek vala şand an daneya nederbasdar :("
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr ""
+msgstr "Ev lînka vesazkirina şîfreyê êdî ne derbasdar e :("
 
 #: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
-msgstr ""
+msgstr "Şîfreyên te hev nagirin :("
 
 #: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
-msgstr ""
+msgstr "Bikarhêner di databasa me de tune :("
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr ""
+msgstr "Şîfre bi serkeftî hate guhertin."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr ""
+msgstr "url nederbasdar :( Ji kerema xwe dîsa mail xwe kontrol bikin."
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
-msgstr ""
+msgstr "PixelPlanet.Fun 3DGlob"
 
 #: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
-msgstr ""
+msgstr "Cîhaneke 3D a tevahiya nexşeya me"
 
 #: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
-msgstr ""
+msgstr "Ji bo vegerê du caran li ser cîhanê bikirtînin."
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
-msgstr ""
+msgstr "Bar dike..."
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
-msgstr ""
+msgstr "ppfun"
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
-msgstr ""
+msgstr "PixelPlanet.Fun Daxwazker"
 
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
-msgstr ""
+msgstr "PixelPlanet.Fun"
 
 #: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
+"Pîkselên rengîn bi lîstikvanên din ên serhêl re li ser nexşeyek şêwazê "
+"nexşeyê bi cîh bikin"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr ""
+msgstr "E-peyam ne vala ye."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr ""
+msgstr "E-name divê herî kêm 5 tîpan be."
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr ""
+msgstr "E-name nikare ji 40 tîpan dirêjtir be."
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr ""
+msgstr "Divê e-mail bi kêmanî xalek hebe"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr ""
+msgstr "Divê e-mail navnîşek @ hebe"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr ""
+msgstr "Nav vala nabe."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr ""
+msgstr "Divê nav bi kêmanî 2 tîpan dirêj be"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr ""
+msgstr "Divê nav ji 26 tîpan kurttir be"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr ""
+msgstr "Navê tîpan nederbasdar e wek @, /, \\ an #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr ""
+msgstr "Tu şîfre nehat dayîn."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr ""
+msgstr "Divê şîfre herî kêm 6 tîpan be."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr ""
+msgstr "Divê şîfre ji 60 tîpan kurttir be."
 
 #: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
-msgstr ""
+msgstr "PixelPlanet.fun Şîfre Vegere"
 
 #: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
-msgstr ""
+msgstr "Şîfreya xwe li vir vegerîne"
 
 #: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
-msgstr ""
+msgstr "Şîfreyê Vegerîne"
 
 #: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
-msgstr ""
+msgstr "Li vir bitikîne"
 
 #: src/ssr/PasswordReset.jsx:30
 msgid "to go back to pixelplanet"
-msgstr ""
+msgstr "da ku vegerin ser pîkselplanetê"
 
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
 msgid "Hello ${ name }, you can set your new password here:"
-msgstr ""
+msgstr "Silav ${ name }, hûn dikarin şîfreya xwe ya nû li vir destnîşan bikin:"
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
-msgstr ""
+msgstr "Şîfreya Nû"
 
 #: src/ssr/PasswordReset.jsx:60
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Şîfreya Nû piştrast bikin"
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr ""
+msgstr "Pêşkêş kirin"
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
-msgstr ""
+msgstr "Tu ne têketinê"
 
 #: src/routes/api/modtools.js:65
 msgid "You are not allowed to access this page"
-msgstr ""
+msgstr "Destûr nayê dayîn ku hûn bigihîjin vê rûpelê"
 
 #: src/routes/api/modtools.js:207
 msgid "Just admins can do that"
-msgstr ""
+msgstr "Tenê admin dikarin wiya bikin"
 
 #: src/routes/api/baninfo.js:32
 msgid "You are not banned"
-msgstr ""
+msgstr "Hûn ne qedexe ne"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
-msgstr ""
+msgstr "Ev pêşkêşkarê e-mail nayê destûr kirin"
 
 #: src/routes/api/auth/register.js:31
 msgid "No Captcha given"
-msgstr ""
+msgstr "Kaptcha nayê dayîn"
 
 #: src/routes/api/auth/register.js:34
 msgid "E-Mail already in use."
-msgstr ""
+msgstr "E-Mail jixwe tê bikar anîn."
 
 #: src/routes/api/auth/register.js:36
 msgid "Username already in use."
-msgstr ""
+msgstr "Navê bikarhêner jixwe tê bikaranîn."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
@@ -249,189 +252,204 @@ msgstr "Te captcha xwe bi ser neket"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"
-msgstr ""
+msgstr "Çewtiya Captcha nenas"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
-msgstr ""
+msgstr "Nekarî bikarhênerek nû biafirîne :("
 
 #: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
-msgstr ""
+msgstr "Piştî qeydkirinê danişîn nehat damezrandin :("
 
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
-msgstr ""
+msgstr "Rastandina nameyê"
 
 #: src/routes/api/auth/verify.js:27
 msgid "You are now verified :)"
-msgstr ""
+msgstr "Hûn niha hatine piştrast kirin :)"
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
 "Your mail verification code is invalid or already expired :(, please request "
 "a new one."
 msgstr ""
+"Koda verastkirina e-mail we nederbasdar e an jixwe qediyaye :(, ji kerema "
+"xwe yekî nû bixwaze."
 
 #: src/routes/api/auth/logout.js:11
 msgid "You are not even logged in."
-msgstr ""
+msgstr "Hûn ne têketinê jî ne."
 
 #: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
-msgstr ""
+msgstr "Çewtiya serverê dema têketinê."
 
 #: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
 #: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
-msgstr ""
+msgstr "Hûn ne piştrastkirî ne."
 
 #: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
 #: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
-msgstr ""
+msgstr "Şîfreya çewt!"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr ""
+msgstr "Bikarhênerên Bêdengî nikarin hesabê xwe jêbikin."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr ""
+msgstr "Bikarhênerên bêdeng nikarin vê yekê bikin."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
-msgstr ""
+msgstr "Hesabên PixelPlanet.fun"
 
 #: src/ssr/RedirectionPage.jsx:29
 msgid "You will be automatically redirected after 15s"
-msgstr ""
+msgstr "Hûn ê piştî 15 hûrdeman bixweber werin verast kirin"
 
 #: src/ssr/RedirectionPage.jsx:30
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr ""
+msgstr "An jî ${ clickHere } vegere pixelplanet"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
-msgstr ""
+msgstr "Erd"
 
 #: src/canvasesDesc.js:21
 msgid "Moon"
-msgstr ""
+msgstr "Heyv"
 
 #: src/canvasesDesc.js:22
 msgid "3D Canvas"
-msgstr ""
+msgstr "3D kanvas"
 
 #: src/canvasesDesc.js:23
 msgid "Coronavirus"
-msgstr ""
+msgstr "Coronavirus"
 
 #: src/canvasesDesc.js:24
 msgid "PixelZone"
-msgstr ""
+msgstr "PixelZone"
 
 #: src/canvasesDesc.js:25
 msgid "PixelCanvas"
-msgstr ""
+msgstr "Pixelkanvas"
 
 #: src/canvasesDesc.js:26
 msgid "1bit"
-msgstr ""
+msgstr "1bit"
 
 #: src/canvasesDesc.js:27
 msgid "Top10"
-msgstr ""
+msgstr "lîstikvan10"
 
 #: src/canvasesDesc.js:28
 msgid "2bit"
-msgstr ""
+msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "Nexşeya mînî"
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
+"Kulîlka meya sereke, nexşeyek mezin a cîhanê. Li cîhê ku hûn dixwazin bi cîh "
+"bikin!"
 
 #: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
 msgstr ""
+"Kanvasê Heyv. Cihê ewle ji bo hunerê. No al an nivîsek mezin (heya ku beşek "
+"hunerê nebe) an hunerek ji 1,5k x 1,5k piksel mezintir tune."
 
 #: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others."
-msgstr ""
+msgstr "voxelên bi yên din re li ser kanvasek 3D bi cîh bikin."
 
 #: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
-msgstr ""
+msgstr "Kanvas taybetî ji bo belavkirina hişmendiya SARS-CoV2 (vax bigire)."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
-msgstr ""
+msgstr "Neynika ji PixelZone"
 
 #: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
-msgstr ""
+msgstr "Neynika Pîkselkanvas"
 
 #: src/canvasesDesc.js:38
 msgid "Black and White canvas"
-msgstr ""
+msgstr "kanvasê Reş û Spî"
 
 #: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
+"Kanvasek ji bo lîstikvanên herî çalak ên roja berê. Rojane nûvekirinên rêzê "
+"di 00:00 UTC de."
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr ""
+msgstr "Tenê çar reng. Heman qaîdeyên wekî heyvê!"
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
+"Erdê li ser erdek piçûktir bi okyanûsa parastî fetih bikin. Sersaxiyê bi "
+"kanvasê erdê re parve dike!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr ""
+"Bi xêr hatî ${ name } PixelPlanet, ji kerema xwe e-mail xwe verast bikin"
 
 #: src/core/MailProvider.js:67
 #, javascript-format
 msgid "Hello ${ name }"
-msgstr ""
+msgstr "Silav ${ name }"
 
 #: src/core/MailProvider.js:68
 msgid ""
 "welcome to our little community of pixelplacers, to use your account, you "
 "have to verify your mail. You can do that here: "
 msgstr ""
+"hûn bi xêr hatin civata meya piçûk a pixelplacers, ji bo ku hûn hesabê xwe "
+"bikar bînin, divê hûn e-nameya xwe verast bikin. Hûn dikarin li vir bikin: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
-msgstr ""
+msgstr "Ji bo erêkirinê bitikîne"
 
 #: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
-msgstr ""
+msgstr "An jî bi kopîkirina url-ya jêrîn:"
 
 #: src/core/MailProvider.js:69
 msgid ""
 "Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
+"Kêfxweş bin û heke pirsgirêkek we hebe dudilî nebin ku bi me re têkilî "
+"daynin :)"
 
 #: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"
-msgstr ""
+msgstr "Spas"
 
 #: src/core/MailProvider.js:87
 #, javascript-format
@@ -439,20 +457,24 @@ msgid ""
 "We already sent you a verification mail, you can request another one in "
 "${ minLeft } minutes."
 msgstr ""
+"Me berê ji we re e-nameyek verastkirinê şand, hûn dikarin di nav ${ minLeft }"
+" hûrdeman de nameyek din bixwazin."
 
 #: src/core/MailProvider.js:103
 msgid "You forgot your password for PixelPlanet? Get a new one here"
-msgstr ""
+msgstr "We şîfreya xwe ji bo PixelPlanet ji bîr kir? Li vir yekî nû bistînin"
 
 #: src/core/MailProvider.js:104
 msgid "Hello"
-msgstr ""
+msgstr "Slav"
 
 #: src/core/MailProvider.js:105
 msgid ""
 "You requested to get a new password. You can change your password within the "
 "next 30min here: "
 msgstr ""
+"We xwest ku şîfreyek nû bistînin. Hûn dikarin şîfreya xwe di nav 30 hûrdeman "
+"de li vir biguhezînin: "
 
 #: src/core/MailProvider.js:106
 #, javascript-format
@@ -460,17 +482,21 @@ msgid ""
 "If you did not request this mail, please just ignore it (the ip that "
 "requested this mail was ${ ip })."
 msgstr ""
+"Ger we ev mail daxwaz nekir, ji kerema xwe guh nede wê (IP-ya ku ev e-name "
+"xwest ${ ip } bû)."
 
 #: src/core/MailProvider.js:114
 msgid "Mail is not configured on the server"
-msgstr ""
+msgstr "Mail li ser serverê nehatiye mîheng kirin"
 
 #: src/core/MailProvider.js:122
 msgid ""
 "We already sent you a mail with instructions. Please wait before requesting "
 "another mail."
 msgstr ""
+"Me berê ji we re e-mail bi talîmatan şand. Ji kerema xwe berî ku e-mail din "
+"daxwaz bikin bisekinin."
 
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"
-msgstr ""
+msgstr "Di databasa me de ev e-mail nehat dîtin"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-16 07:23+0000\n"
-"Last-Translator: ok what <dhyrbfytyreal123@gmail.com>\n"
+"PO-Revision-Date: 2024-04-28 10:07+0000\n"
+"Last-Translator: asd <petr.pesek.99@seznam.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/pixelplanet/client/"
 "cs/>\n"
 "Language: cz\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.1\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -295,7 +295,7 @@ msgstr "Zavřít Chat"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Open Chat"
-msgstr "Otevřít Chat"
+msgstr "Otevřít chat"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Close Menu"
@@ -303,7 +303,7 @@ msgstr "Zavřít Menu"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Open Menu"
-msgstr "Otevřít Chat"
+msgstr "Otevřít Menu"
 
 #: src/components/HistorySelect.jsx:146
 msgid "Loading"
@@ -1194,24 +1194,20 @@ msgid "Charts"
 msgstr "Grafy"
 
 #: src/components/Rankings.jsx:191
-#, fuzzy
 msgid "Total Pixels per Player"
-msgstr "Celkem Pixelů položeno denně"
+msgstr "Celkový počet pixelů na hráče"
 
 #: src/components/Rankings.jsx:192
-#, fuzzy
 msgid "Daily Pixels per Player"
-msgstr "Celkem Pixelů položeno denně"
+msgstr "Počet pixelů položeno za den pro hráče"
 
 #: src/components/Rankings.jsx:193
-#, fuzzy
 msgid "Top 10 Players from Yesterday"
-msgstr "Top 10 Hráčů [pxls / den]"
+msgstr "Top 10 Hráčů ze včerejška"
 
 #: src/components/Rankings.jsx:197
-#, fuzzy
 msgid "Daily Pixels per Country"
-msgstr "Hráči a Pixely za hodinu"
+msgstr "Denní počet pixelů na zemi"
 
 #: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
 #: src/components/Rankings.jsx:233
@@ -1224,7 +1220,7 @@ msgstr "Stát"
 
 #: src/components/Rankings.jsx:241
 msgid "+last hour"
-msgstr ""
+msgstr "+poslední hodinu"
 
 #: src/components/Rankings.jsx:311
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
@@ -1669,17 +1665,19 @@ msgstr "Celkem Pixelů položeno denně"
 
 #: src/components/CooldownChanges.jsx:20
 msgid "Current Cooldown Changes per Country"
-msgstr ""
+msgstr "Aktuální změny Cooldownu pro jednotlivé zemích"
 
 #: src/components/CooldownChanges.jsx:25
 msgid "Factor"
-msgstr ""
+msgstr "Faktor"
 
 #: src/components/CooldownChanges.jsx:46
 msgid ""
 "Cooldown is usually automatically changed for a country that is dominating. "
 "In example in the case of a streamer raid."
 msgstr ""
+"Cooldown se obvykle automaticky mění pro zemi, která aktuálně dominuje. "
+"Například v případě nájezdu streamerů."
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"

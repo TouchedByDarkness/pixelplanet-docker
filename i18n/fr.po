@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-09 22:00+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-04-23 16:07+0000\n"
+"Last-Translator: Sylvain <sylvainstein@pxlplanet.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/pixelplanet/"
 "client/fr/>\n"
 "Language: fr\n"
@@ -50,11 +50,11 @@ msgstr "Copié !"
 
 #: src/controls/keypress.js:209
 msgid "Overlay ON"
-msgstr ""
+msgstr "Calque activé"
 
 #: src/controls/keypress.js:210
 msgid "Overlay OFF"
-msgstr ""
+msgstr "Calque désactivé"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
