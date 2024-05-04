@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-09 20:01+0000\n"
+"PO-Revision-Date: 2024-05-04 13:07+0000\n"
 "Last-Translator: \"Д. Савовъ\" <bofondido@gmail.com>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/bg/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.3\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -245,7 +245,7 @@ msgstr "Потребителското име вече се използва."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr "Отне Ви прекалено много време, опитайте отново."
+msgstr "Отне Ви твърде много време, опитайте отново."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"

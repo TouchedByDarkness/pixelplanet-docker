@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-28 10:07+0000\n"
-"Last-Translator: asd <petr.pesek.99@seznam.cz>\n"
+"PO-Revision-Date: 2024-05-04 13:07+0000\n"
+"Last-Translator: ok what <dhyrbfytyreal123@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/pixelplanet/client/"
 "cs/>\n"
 "Language: cz\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5.1\n"
+"X-Generator: Weblate 5.5.3\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -948,7 +948,7 @@ msgstr "Začněte se tady bavit"
 
 #: src/components/windows/Chat.jsx:217
 msgid "Chat here"
-msgstr "Mluvte tady - dsc.gg/czechpixel"
+msgstr "Mluvte tady - dsc.gg/czppf"
 
 #: src/components/windows/Chat.jsx:243
 msgid "You must be logged in to chat"

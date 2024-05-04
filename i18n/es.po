@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-28 10:07+0000\n"
+"PO-Revision-Date: 2024-05-04 13:07+0000\n"
 "Last-Translator: Pollofrito <pollofrito050@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/es/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.1\n"
+"X-Generator: Weblate 5.5.3\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -136,7 +136,7 @@ msgstr "Por favor demuestra que eres humano"
 
 #: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
-msgstr "Estas usando un Proxy."
+msgstr "Estas usando Proxy."
 
 #: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-09 20:01+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"PO-Revision-Date: 2024-05-04 13:07+0000\n"
+"Last-Translator: \"Д. Савовъ\" <bofondido@gmail.com>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/bg/>\n"
 "Language: bg\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.3\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -72,7 +72,7 @@ msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
-"Няма получен отговор от pixelplanet. Може би пробвайте да refresh-нете, ако "
+"Няма получен отговор от pixelplanet. Може би се опитайте да опресните, ако "
 "проблемът продължава."
 
 #: src/ui/PixelTransferController.js:104
@@ -114,7 +114,7 @@ msgstr "Само за регистрирани потребители"
 
 #: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
-msgstr "Трябва да сте логнати, за да можете да слагате на това платно"
+msgstr "Трябва да сте вписани, за да можете да слагате на това платно"
 
 #: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
 #: src/ui/PixelTransferController.js:148
@@ -124,8 +124,8 @@ msgstr "Не е разрешено"
 #: src/ui/PixelTransferController.js:130
 msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
-"Нямате достъп до това платно все още, защото вашите пиксели са прекалено "
-"малко"
+"Нямате достъп до това платно все още, защото вашият брой пиксели са "
+"прекалено малко"
 
 #: src/ui/PixelTransferController.js:133
 msgid "Pixel protected"
@@ -151,7 +151,7 @@ msgstr "Вие сте странен"
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
 msgstr ""
-"Сървърът е объркан от Вашите пиксели. Да не играете от множествени "
+"Сървърът е объркан от Вашите пиксели. Да не играете от многобройни "
 "устройства?"
 
 #: src/ui/PixelTransferController.js:157
@@ -209,11 +209,11 @@ msgstr "Грешка :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr "Не можете да експортирате повече от 20 или нито един шаблон!"
+msgstr "Не можете да износите повече от 20 или нито един шаблон!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr "Не можете да импортирате повече от 20 или нито един шаблон!"
+msgstr "Не можете да внесете повече от 20 или нито един шаблон!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
@@ -235,7 +235,7 @@ msgstr "Грешка при свързване ${ code } :("
 
 #: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
-msgstr "Не може да се свърже със сървъра, моля, опитайте отново по-късно :("
+msgstr "Не може да се свърже със сървъра, моля опитайте отново по-късно :("
 
 #: src/store/actions/fetch.js:151 src/store/actions/fetch.js:170
 #: src/store/actions/fetch.js:189 src/store/actions/fetch.js:208
@@ -245,7 +245,7 @@ msgstr "Неизвестна грешка"
 
 #: src/store/actions/fetch.js:237
 msgid "Server answered with gibberish :("
-msgstr "Сървърът отговори с безсмислици :("
+msgstr "Сървърът отговори на патагонски :("
 
 #: src/store/middleware/notifications.js:33
 msgid "Your next pixels are ready"
@@ -257,7 +257,7 @@ msgstr "Вече можете да поставяте повече на pixelpla
 
 #: src/store/middleware/notifications.js:54
 msgid "mentioned you"
-msgstr "ви споменаха"
+msgstr "Ви споменаха"
 
 #: src/store/middleware/notifications.js:58
 msgid "You have new messages in chat"
@@ -295,19 +295,19 @@ msgstr "Избиране на платно"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Close Chat"
-msgstr "Затвори чат"
+msgstr "Затваряне на чата"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Open Chat"
-msgstr "Отвори чат"
+msgstr "Отваряне на чата"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Close Menu"
-msgstr "Затвори меню"
+msgstr "Затваряне на менюто"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Open Menu"
-msgstr "Отвори меню"
+msgstr "Отваряне на менюто"
 
 #: src/components/HistorySelect.jsx:146
 msgid "Loading"
@@ -322,7 +322,7 @@ msgstr "Изберете дата отгоре"
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
-msgstr "Затвори"
+msgstr "Затваряне"
 
 #: src/components/Window.jsx:173
 msgid "PopUp"
@@ -372,15 +372,15 @@ msgstr "Изглед на глобус"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
-msgstr "Включи молив"
+msgstr "Включване на молив"
 
 #: src/components/buttons/PencilButton.jsx:46
 msgid "Disable Pencil"
-msgstr "Деактивиране на молива"
+msgstr "Изключване на молив"
 
 #: src/components/buttons/PencilButton.jsx:50
 msgid "Disable History Pencil"
-msgstr "Изключи историческият молив"
+msgstr "Изключване на историческият молив"
 
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
@@ -408,7 +408,7 @@ msgstr "Чат"
 
 #: src/components/windows/index.js:20
 msgid "Canvas Archive"
-msgstr "Платнен архив"
+msgstr "Архив на платната"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -420,7 +420,7 @@ msgstr "Не успяхте да направите captcha"
 
 #: src/components/GlobalCaptcha.jsx:53
 msgid "No or invalid captcha text"
-msgstr "Няма или е невалиден captcha текстa"
+msgstr "Няма или е невалиден captcha текстът"
 
 #: src/components/GlobalCaptcha.jsx:56
 msgid "No captcha id given"
@@ -485,7 +485,7 @@ msgstr "Ънбаннат"
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."
-msgstr "Сега като видяхте това съобщение, вече не сте баннат."
+msgstr "Сега, като видяхте това съобщение, вече не сте баннат."
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
@@ -504,7 +504,7 @@ msgid ""
 "pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
 "and 7s on already set pixels."
 msgstr ""
-"Нашето главно платно е световна карта, където можете да слагате навсякъде, "
+"Нашето главно платно е огромна световна карта, можете да слагате навсякъде "
 "където пожелаете. Но ще трябва да изчакате определн Cooldown между "
 "пикселите. Може също да проверите cooldown-а и изискванията в менюто за "
 "избор на платно (бутона с глобус отгоре). Някои платна имат различен "
@@ -517,8 +517,8 @@ msgid ""
 "Higher zoomlevels take some time to update, the 3D globe gets updated at "
 "least once per day."
 msgstr ""
-"По-високите нива на увеличение отнемат повече да се актуализират, 3D глобуса "
-"се актуализира поне веднъж на ден."
+"По-високите нива на увеличение отнемат повече време да се актуализират, 3D "
+"глобуса се актуализира поне веднъж на ден."
 
 #: src/components/windows/Help.jsx:68
 msgid "Have fun!"
@@ -541,12 +541,12 @@ msgid ""
 "The bare map data that we use, together with converted OpenStreetMap tiles "
 "for orientation, can be downloaded from mega.nz here: "
 msgstr ""
-"Голата карта, която използваме, заедно с преобразувания OpenStreetMap "
-"решетки за ориентация, могат да бъдат изтеглени от mega.nz: "
+"Голата карта, която използваме, заедно с преобразувания OpenStreetMap плочки "
+"за ориентация, могат да бъдат изтеглени от mega.nz: "
 
 #: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
-msgstr "Баннати? Открити като прокси?"
+msgstr "Баннати? Открити сте като прокси?"
 
 #: src/components/windows/Help.jsx:76
 #, javascript-format
@@ -785,11 +785,11 @@ msgstr "Покажи решетката в бялото, вместо черно
 
 #: src/components/windows/Settings.jsx:149
 msgid "Custom Cursor"
-msgstr ""
+msgstr "Персонализиран Курсор"
 
 #: src/components/windows/Settings.jsx:153
 msgid "Use our custom cursor"
-msgstr ""
+msgstr "Използвайте нашия персонализиран курсор"
 
 #: src/components/windows/Settings.jsx:157
 msgid "Historical View"
@@ -1206,24 +1206,20 @@ msgid "Charts"
 msgstr "Диаграми"
 
 #: src/components/Rankings.jsx:191
-#, fuzzy
 msgid "Total Pixels per Player"
-msgstr "Общо пиксели сложени днес"
+msgstr "Общо пиксели сложени днес на Човек"
 
 #: src/components/Rankings.jsx:192
-#, fuzzy
 msgid "Daily Pixels per Player"
-msgstr "Общо пиксели сложени днес"
+msgstr "Дневни пиксели сложени днес на Човек"
 
 #: src/components/Rankings.jsx:193
-#, fuzzy
 msgid "Top 10 Players from Yesterday"
-msgstr "Топ 10 играчи [pxls / day]"
+msgstr "Топ 10 играчи от вчера"
 
 #: src/components/Rankings.jsx:197
-#, fuzzy
 msgid "Daily Pixels per Country"
-msgstr "Играчи и пиксели на час"
+msgstr "Дневни пиксели на Държава"
 
 #: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
 #: src/components/Rankings.jsx:233
@@ -1236,7 +1232,7 @@ msgstr "Държава"
 
 #: src/components/Rankings.jsx:241
 msgid "+last hour"
-msgstr ""
+msgstr "+последния час"
 
 #: src/components/Rankings.jsx:311
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
@@ -1682,17 +1678,19 @@ msgstr "Общо пиксели сложени днес"
 
 #: src/components/CooldownChanges.jsx:20
 msgid "Current Cooldown Changes per Country"
-msgstr ""
+msgstr "Текущи промени на Cool-down на Държава"
 
 #: src/components/CooldownChanges.jsx:25
 msgid "Factor"
-msgstr ""
+msgstr "Фактор"
 
 #: src/components/CooldownChanges.jsx:46
 msgid ""
 "Cooldown is usually automatically changed for a country that is dominating. "
 "In example in the case of a streamer raid."
 msgstr ""
+"Cool-down-ът е обикновено променен за държава, която доминира. За пример "
+"като стриймърски raid."
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
