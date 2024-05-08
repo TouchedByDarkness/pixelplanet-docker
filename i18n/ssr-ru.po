@@ -222,7 +222,7 @@ msgstr "Вы не авторизованы"
 msgid "You are not allowed to access this page"
 msgstr "У вас нет доступа к этой странице"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "Это могут сделать только админы"
 

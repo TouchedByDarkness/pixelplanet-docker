@@ -216,7 +216,7 @@ msgstr "Sa ei ole sisse logitud"
 msgid "You are not allowed to access this page"
 msgstr "Sul puudub sellele leheküljele ligipääs"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "Ainult administraatorid saavad seda teha"
 

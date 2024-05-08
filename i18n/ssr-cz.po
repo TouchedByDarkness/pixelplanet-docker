@@ -221,7 +221,7 @@ msgstr "Nejsi přihlášenej"
 msgid "You are not allowed to access this page"
 msgstr "Nejste povolen na tuhle stránků"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "Pouze admini to můžou dělat"
 

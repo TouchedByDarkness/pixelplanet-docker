@@ -225,7 +225,7 @@ msgstr "Vin eĉ ne ensalutita."
 msgid "You are not allowed to access this page"
 msgstr "Malhavas l' permes' je l' kanal'"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr ""
 

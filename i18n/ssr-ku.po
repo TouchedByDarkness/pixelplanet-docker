@@ -218,7 +218,7 @@ msgstr "Tu ne têketinê"
 msgid "You are not allowed to access this page"
 msgstr "Destûr nayê dayîn ku hûn bigihîjin vê rûpelê"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "Tenê admin dikarin wiya bikin"
 
@@ -457,8 +457,8 @@ msgid ""
 "We already sent you a verification mail, you can request another one in "
 "${ minLeft } minutes."
 msgstr ""
-"Me berê ji we re e-nameyek verastkirinê şand, hûn dikarin di nav ${ minLeft }"
-" hûrdeman de nameyek din bixwazin."
+"Me berê ji we re e-nameyek verastkirinê şand, hûn dikarin di nav "
+"${ minLeft } hûrdeman de nameyek din bixwazin."
 
 #: src/core/MailProvider.js:103
 msgid "You forgot your password for PixelPlanet? Get a new one here"

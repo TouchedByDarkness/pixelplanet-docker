@@ -219,7 +219,7 @@ msgstr "Не сте логнати"
 msgid "You are not allowed to access this page"
 msgstr "Нямате достъп до тази страница"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "Само администраторите имат право на това"
 

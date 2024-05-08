@@ -227,7 +227,7 @@ msgstr "Δεν είσται συνδεμένοι"
 msgid "You are not allowed to access this page"
 msgstr "Δεν επιτρέπεται η πρόσβαση σε αυτή τη σελίδα"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "Μόνο οι διαχειριστές μπορούν να το κάνουν αυτό"
 

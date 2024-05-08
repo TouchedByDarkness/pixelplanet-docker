@@ -222,7 +222,7 @@ msgstr "Niste ulogirani"
 msgid "You are not allowed to access this page"
 msgstr "Nije vam dopušten pristup ovoj stranici"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "To mogu samo administratori"
 

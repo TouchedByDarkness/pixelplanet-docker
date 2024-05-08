@@ -231,7 +231,7 @@ msgstr "ʻOku ʻikai ke ke hū ki he polokalamá"
 msgid "You are not allowed to access this page"
 msgstr "ʻOku ʻikai ngofua ke ke hū ki he peesi ko ʻení"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "ʻE lava ʻe he miniti pe ʻe taha ʻo fai ia"
 

@@ -276,7 +276,7 @@ msgstr "Bikarhênerên Online li ser kanvas"
 msgid "Total Online Users"
 msgstr "Tevahiya Bikarhênerên Serhêl"
 
-#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:79
 msgid "Placed Pixels"
 msgstr "Pixelên danîn"
 
@@ -309,15 +309,15 @@ msgstr "Menûyê Bigire"
 msgid "Open Menu"
 msgstr "Menûyê Veke"
 
-#: src/components/HistorySelect.jsx:146
+#: src/components/HistorySelect.jsx:156
 msgid "Loading"
 msgstr "Bar dike, bisekine"
 
-#: src/components/HistorySelect.jsx:147
+#: src/components/HistorySelect.jsx:157
 msgid "Select Date above"
 msgstr "Dîroka Jorîn hilbijêrin"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
@@ -370,6 +370,14 @@ msgstr "Wêneya Ekranê Bigirin"
 msgid "Globe View"
 msgstr "Dîtina Gerdûnî"
 
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr "Depkê Rengan Bigire"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
+msgstr "Depkê Rengan Veke"
+
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr "Pênûsê çalak bike"
@@ -385,14 +393,6 @@ msgstr "Pênûse Dîrokê Neçalak Bike"
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Pênûsê Şablûnê Neçalak Bike"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr "Depkê Rengan Bigire"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr "Depkê Rengan Veke"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -490,214 +490,6 @@ msgstr "Niha ku we ev peyam dît, êdî hûn qedexe ne."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Çima?"
-
-#: src/components/windows/Help.jsx:65
-msgid "Place color pixels on a large canvas with other players online!"
-msgstr ""
-"Bi lîstikvanên din ên serhêl re pîxelên rengîn li ser kavilek mezin bi cîh "
-"bikin!"
-
-#: src/components/windows/Help.jsx:66
-msgid ""
-"Our main canvas is a huge worldmap, you can place wherever you like, but you "
-"will have to wait a specific Cooldown between pixels. You can check out the "
-"cooldown and requirements on the Canvas Selection menu (globe button on "
-"top). Some canvases have a different cooldown for replacing a user-set "
-"pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
-"and 7s on already set pixels."
-msgstr ""
-"Kulîlka meya sereke nexşeyek cîhanek mezin e, hûn dikarin li ku derê "
-"bixwazin bi cîh bikin, lê hûn ê neçar bimînin ku di navbera pixelan de li "
-"benda Cooldownek taybetî bin. Hûn dikarin sarbûn û hewcedariyên li ser "
-"menuya Hilbijartina kanvas (bişkoka gerdûnê ya li jor) binihêrin. Ji bo "
-"guheztina pîxelên set-bikarhêner ji danîna li ser pîxelek nesazkirî, hin "
-"kanava sarbûnek cûda heye. ango 4s/7s tê wateya 4s li ser pixelên nû û 7s li "
-"ser pixelên jixwe hatine saz kirin."
-
-#: src/components/windows/Help.jsx:67
-msgid ""
-"Higher zoomlevels take some time to update, the 3D globe gets updated at "
-"least once per day."
-msgstr ""
-"Asta zoomê ya bilind ji bo nûvekirinê hin dem digire, cîhana 3D herî kêm "
-"rojê carekê tê nûve kirin."
-
-#: src/components/windows/Help.jsx:68
-msgid "Have fun!"
-msgstr "Baş derbas be!"
-
-#: src/components/windows/Help.jsx:70
-msgid "recommended"
-msgstr "pêşniyar kirin"
-
-#: src/components/windows/Help.jsx:71
-msgid "Source on "
-msgstr "Çavkanî li ser "
-
-#: src/components/windows/Help.jsx:72
-msgid "Map Data"
-msgstr "Daneyên nexşeyê"
-
-#: src/components/windows/Help.jsx:73
-msgid ""
-"The bare map data that we use, together with converted OpenStreetMap tiles "
-"for orientation, can be downloaded from mega.nz here: "
-msgstr ""
-"Daneyên nexşeyê yên tazî yên ku em bikar tînin, digel pêlên OpenStreetMap-ê "
-"yên veguheztin ji bo rêgezê, dikarin ji mega.nz vir werin dakêşandin: "
-
-#: src/components/windows/Help.jsx:74
-msgid "Banned? Detected as Proxy?"
-msgstr "Qedexe kirin? Weke Proxy hat tesbît kirin?"
-
-#: src/components/windows/Help.jsx:76
-#, javascript-format
-msgid ""
-"If you got detected as proxy, but you are none, or think that you got "
-"wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
-"${ mailLink } and include the following IID:"
-msgstr ""
-"Heger tu wek proxy hatiyî dîtin, lê tu tune, yan jî difikirî ku tu bi xeletî "
-"hatîye qedexekirin, ji kerema xwe here ${ guildedLink } me an jî e-nameyek "
-"ji me re bişîne ${ mailLink } û ID-ya jêrîn tê de hebe:"
-
-#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
-msgid "Controls"
-msgstr "kontrolên"
-
-#: src/components/windows/Help.jsx:81
-msgid "Click a color in palette to select it"
-msgstr "Rengek di paletê de bikirtînin da ku wê hilbijêrin"
-
-#: src/components/windows/Help.jsx:82
-#, javascript-format
-msgid "Press ${ bindG } to toggle grid"
-msgstr "Bişkojka ${ bindG } bike ku torê biguherîne"
-
-#: src/components/windows/Help.jsx:83
-#, javascript-format
-msgid "Press ${ bindX } to toggle showing of pixel activity"
-msgstr "Bişkojka ${ bindX } bikirtînin da ku nîşana çalakiya pixelê biguherînin"
-
-#: src/components/windows/Help.jsx:84
-#, javascript-format
-msgid "Press ${ bindH } to toggle historical view"
-msgstr "Bişkojka ${ bindH } ji bo guheztina dîtina dîrokî"
-
-#: src/components/windows/Help.jsx:85
-#, javascript-format
-msgid "Press ${ bindR } to copy coordinates"
-msgstr "Ji bo kopîkirina koordînatan ${ bindR } bikirtînin"
-
-#: src/components/windows/Help.jsx:86
-#, javascript-format
-msgid "Press ${ bindQ } or ${ bindE } to zoom"
-msgstr "Bişkojka ${ bindQ } an jî ${ bindE } ji bo zoom bike"
-
-#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
-#, javascript-format
-msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
-msgstr ""
-"Ji bo veguheztina ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } bikirtînin"
-
-#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
-#, javascript-format
-msgid ""
-"Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
-msgstr ""
-"Bişkojka ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } ji bo "
-"barkirinê"
-
-#: src/components/windows/Help.jsx:89
-#, javascript-format
-msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
-msgstr "${ mouseSymbol } mişk an jî ${ touchSymbol } panê kaş bikin da ku biçin"
-
-#: src/components/windows/Help.jsx:90
-#, javascript-format
-msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
-msgstr ""
-"Ji bo mezinkirinê ${ mouseSymbol } çerxa mişkê bigerin an jî ${ touchSymbol }"
-" biçînin"
-
-#: src/components/windows/Help.jsx:91
-#, javascript-format
-msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
-msgstr ""
-"${ bindShift } ji bo qelemê li çepê bihêle (ji bo ku dema mişk diherike bi "
-"cîh bike)"
-
-#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
-#, javascript-format
-msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
-msgstr ""
-"${ mouseSymbol } Çep bikirtînin an jî ${ touchSymbol } bikirtînin da ku "
-"pixelek bi cih bikin"
-
-#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
-#, javascript-format
-msgid ""
-"Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
-"select current hovering color"
-msgstr ""
-"Bikirtînin ${ mouseSymbol } bişkoka mişkê ya navîn an jî ${ touchSymbol } "
-"klîk dirêj bikin da ku rengê hilavêtina heyî hilbijêrin"
-
-#: src/components/windows/Help.jsx:99
-#, javascript-format
-msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr "Bişkojka ${ bindQ } û ${ bindE } bifirin ku jor û jêr bifirin"
-
-#: src/components/windows/Help.jsx:100
-#, javascript-format
-msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
-msgstr ""
-"${ mouseSymbol } Bişkoka çepê ya mişkê bigire û ji bo zivirîna mişkê kaş bike"
-
-#: src/components/windows/Help.jsx:101
-#, javascript-format
-msgid ""
-"${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
-"button and drag to zoom"
-msgstr ""
-"${ mouseSymbol } Tekera mişkê bigerîne an jî ${ mouseSymbol } bişkoka navîn "
-"ya mişkê bigire û kaş bike ku mezin bike"
-
-#: src/components/windows/Help.jsx:102
-#, javascript-format
-msgid "${ mouseSymbol } Right click and drag mouse to pan"
-msgstr ""
-"${ mouseSymbol } Bişkojka rastê bikirtînin û mişkê kaş bikin da ku pêve bikin"
-
-#: src/components/windows/Help.jsx:104
-#, javascript-format
-msgid ""
-"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
-msgstr ""
-"${ mouseSymbol } Rast bikirtînin an ${ touchSymbol } du caran bikirtînin da "
-"ku pixelek jêbirin"
-
-#: src/components/windows/Help.jsx:109
-msgid ""
-"We thank the following artists, who made their palettes available to the "
-"public on"
-msgstr ""
-"Em spasiya hunermendên jêrîn dikin, ku paletên xwe pêşkêşî raya giştî kirin"
-
-#: src/components/windows/Help.jsx:112
-#, javascript-format
-msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
-msgstr "Krediya Paleta Heyvê diçe ${ starhouseLink }."
-
-#: src/components/windows/Help.jsx:115
-#, javascript-format
-msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr "Krediya Paleta Top10-ê ji bo ${ vinikLink } heye."
-
-#: src/components/windows/Help.jsx:118
-#, javascript-format
-msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr "Krediya Paleta kanvasa 2bit diçe ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:72
 msgid "Show Grid"
@@ -820,6 +612,216 @@ msgstr "Divê pixelplanet çawa xuya bike."
 msgid "Select Language"
 msgstr "Ziman hilbijêrin"
 
+#: src/components/windows/Help.jsx:65
+msgid "Place color pixels on a large canvas with other players online!"
+msgstr ""
+"Bi lîstikvanên din ên serhêl re pîxelên rengîn li ser kavilek mezin bi cîh "
+"bikin!"
+
+#: src/components/windows/Help.jsx:66
+msgid ""
+"Our main canvas is a huge worldmap, you can place wherever you like, but you "
+"will have to wait a specific Cooldown between pixels. You can check out the "
+"cooldown and requirements on the Canvas Selection menu (globe button on "
+"top). Some canvases have a different cooldown for replacing a user-set "
+"pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
+"and 7s on already set pixels."
+msgstr ""
+"Kulîlka meya sereke nexşeyek cîhanek mezin e, hûn dikarin li ku derê "
+"bixwazin bi cîh bikin, lê hûn ê neçar bimînin ku di navbera pixelan de li "
+"benda Cooldownek taybetî bin. Hûn dikarin sarbûn û hewcedariyên li ser "
+"menuya Hilbijartina kanvas (bişkoka gerdûnê ya li jor) binihêrin. Ji bo "
+"guheztina pîxelên set-bikarhêner ji danîna li ser pîxelek nesazkirî, hin "
+"kanava sarbûnek cûda heye. ango 4s/7s tê wateya 4s li ser pixelên nû û 7s li "
+"ser pixelên jixwe hatine saz kirin."
+
+#: src/components/windows/Help.jsx:67
+msgid ""
+"Higher zoomlevels take some time to update, the 3D globe gets updated at "
+"least once per day."
+msgstr ""
+"Asta zoomê ya bilind ji bo nûvekirinê hin dem digire, cîhana 3D herî kêm "
+"rojê carekê tê nûve kirin."
+
+#: src/components/windows/Help.jsx:68
+msgid "Have fun!"
+msgstr "Baş derbas be!"
+
+#: src/components/windows/Help.jsx:70
+msgid "recommended"
+msgstr "pêşniyar kirin"
+
+#: src/components/windows/Help.jsx:71
+msgid "Source on "
+msgstr "Çavkanî li ser "
+
+#: src/components/windows/Help.jsx:72
+msgid "Map Data"
+msgstr "Daneyên nexşeyê"
+
+#: src/components/windows/Help.jsx:73
+msgid ""
+"The bare map data that we use, together with converted OpenStreetMap tiles "
+"for orientation, can be downloaded from mega.nz here: "
+msgstr ""
+"Daneyên nexşeyê yên tazî yên ku em bikar tînin, digel pêlên OpenStreetMap-ê "
+"yên veguheztin ji bo rêgezê, dikarin ji mega.nz vir werin dakêşandin: "
+
+#: src/components/windows/Help.jsx:74
+msgid "Banned? Detected as Proxy?"
+msgstr "Qedexe kirin? Weke Proxy hat tesbît kirin?"
+
+#: src/components/windows/Help.jsx:76
+#, javascript-format
+msgid ""
+"If you got detected as proxy, but you are none, or think that you got "
+"wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
+"${ mailLink } and include the following IID:"
+msgstr ""
+"Heger tu wek proxy hatiyî dîtin, lê tu tune, yan jî difikirî ku tu bi xeletî "
+"hatîye qedexekirin, ji kerema xwe here ${ guildedLink } me an jî e-nameyek "
+"ji me re bişîne ${ mailLink } û ID-ya jêrîn tê de hebe:"
+
+#: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
+msgid "Controls"
+msgstr "kontrolên"
+
+#: src/components/windows/Help.jsx:81
+msgid "Click a color in palette to select it"
+msgstr "Rengek di paletê de bikirtînin da ku wê hilbijêrin"
+
+#: src/components/windows/Help.jsx:82
+#, javascript-format
+msgid "Press ${ bindG } to toggle grid"
+msgstr "Bişkojka ${ bindG } bike ku torê biguherîne"
+
+#: src/components/windows/Help.jsx:83
+#, javascript-format
+msgid "Press ${ bindX } to toggle showing of pixel activity"
+msgstr ""
+"Bişkojka ${ bindX } bikirtînin da ku nîşana çalakiya pixelê biguherînin"
+
+#: src/components/windows/Help.jsx:84
+#, javascript-format
+msgid "Press ${ bindH } to toggle historical view"
+msgstr "Bişkojka ${ bindH } ji bo guheztina dîtina dîrokî"
+
+#: src/components/windows/Help.jsx:85
+#, javascript-format
+msgid "Press ${ bindR } to copy coordinates"
+msgstr "Ji bo kopîkirina koordînatan ${ bindR } bikirtînin"
+
+#: src/components/windows/Help.jsx:86
+#, javascript-format
+msgid "Press ${ bindQ } or ${ bindE } to zoom"
+msgstr "Bişkojka ${ bindQ } an jî ${ bindE } ji bo zoom bike"
+
+#: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
+#, javascript-format
+msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
+msgstr ""
+"Ji bo veguheztina ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } bikirtînin"
+
+#: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
+#, javascript-format
+msgid ""
+"Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
+msgstr ""
+"Bişkojka ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } ji bo "
+"barkirinê"
+
+#: src/components/windows/Help.jsx:89
+#, javascript-format
+msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
+msgstr ""
+"${ mouseSymbol } mişk an jî ${ touchSymbol } panê kaş bikin da ku biçin"
+
+#: src/components/windows/Help.jsx:90
+#, javascript-format
+msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
+msgstr ""
+"Ji bo mezinkirinê ${ mouseSymbol } çerxa mişkê bigerin an jî "
+"${ touchSymbol } biçînin"
+
+#: src/components/windows/Help.jsx:91
+#, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
+msgstr ""
+"${ bindShift } ji bo qelemê li çepê bihêle (ji bo ku dema mişk diherike bi "
+"cîh bike)"
+
+#: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
+#, javascript-format
+msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
+msgstr ""
+"${ mouseSymbol } Çep bikirtînin an jî ${ touchSymbol } bikirtînin da ku "
+"pixelek bi cih bikin"
+
+#: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
+#, javascript-format
+msgid ""
+"Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
+"select current hovering color"
+msgstr ""
+"Bikirtînin ${ mouseSymbol } bişkoka mişkê ya navîn an jî ${ touchSymbol } "
+"klîk dirêj bikin da ku rengê hilavêtina heyî hilbijêrin"
+
+#: src/components/windows/Help.jsx:99
+#, javascript-format
+msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
+msgstr "Bişkojka ${ bindQ } û ${ bindE } bifirin ku jor û jêr bifirin"
+
+#: src/components/windows/Help.jsx:100
+#, javascript-format
+msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
+msgstr ""
+"${ mouseSymbol } Bişkoka çepê ya mişkê bigire û ji bo zivirîna mişkê kaş bike"
+
+#: src/components/windows/Help.jsx:101
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
+"button and drag to zoom"
+msgstr ""
+"${ mouseSymbol } Tekera mişkê bigerîne an jî ${ mouseSymbol } bişkoka navîn "
+"ya mişkê bigire û kaş bike ku mezin bike"
+
+#: src/components/windows/Help.jsx:102
+#, javascript-format
+msgid "${ mouseSymbol } Right click and drag mouse to pan"
+msgstr ""
+"${ mouseSymbol } Bişkojka rastê bikirtînin û mişkê kaş bikin da ku pêve bikin"
+
+#: src/components/windows/Help.jsx:104
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
+msgstr ""
+"${ mouseSymbol } Rast bikirtînin an ${ touchSymbol } du caran bikirtînin da "
+"ku pixelek jêbirin"
+
+#: src/components/windows/Help.jsx:109
+msgid ""
+"We thank the following artists, who made their palettes available to the "
+"public on"
+msgstr ""
+"Em spasiya hunermendên jêrîn dikin, ku paletên xwe pêşkêşî raya giştî kirin"
+
+#: src/components/windows/Help.jsx:112
+#, javascript-format
+msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
+msgstr "Krediya Paleta Heyvê diçe ${ starhouseLink }."
+
+#: src/components/windows/Help.jsx:115
+#, javascript-format
+msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
+msgstr "Krediya Paleta Top10-ê ji bo ${ vinikLink } heye."
+
+#: src/components/windows/Help.jsx:118
+#, javascript-format
+msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
+msgstr "Krediya Paleta kanvasa 2bit diçe ${ donendoLink }."
+
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -844,6 +846,25 @@ msgstr "Bar dike..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Li ser Guilded bifikirin ku hûn beşdarî me bibin:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Tuvalên ku hûn dixwazin bi kar bînin hilbijêrin\n"
+"Her tuval bêhempa ye û palet, sarbûn û pêdiviyên wan ên cuda hene\n"
+"Tuvalên arşîvkirî dikarin bigihîjin vir:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arşîv"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Tuxleyên teqawîtbûyî (dîrok tenê)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -876,32 +897,13 @@ msgid "Captcha"
 msgstr "kaptcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
-#: src/components/ModCanvastools.jsx:486 src/components/ModCanvastools.jsx:587
+#: src/components/ModCanvastools.jsx:315 src/components/ModCanvastools.jsx:406
+#: src/components/ModCanvastools.jsx:484 src/components/ModCanvastools.jsx:585
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Pêşkêş kirin"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Tuvalên ku hûn dixwazin bi kar bînin hilbijêrin\n"
-"Her tuval bêhempa ye û palet, sarbûn û pêdiviyên wan ên cuda hene\n"
-"Tuvalên arşîvkirî dikarin bigihîjin vir:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arşîv"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Tuxleyên teqawîtbûyî (dîrok tenê)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1055,14 +1057,6 @@ msgstr "Divê şîfre herî kêm 6 tîpan be."
 msgid "Password must be shorter than 60 characters."
 msgstr "Divê şîfre ji 60 tîpan kurttir be."
 
-#: src/components/GetIID.jsx:44
-msgid "Get IID"
-msgstr "IID bistînin"
-
-#: src/components/GetIID.jsx:53
-msgid "Copy"
-msgstr "kopî"
-
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
@@ -1127,46 +1121,13 @@ msgstr "Şablonên çalakkirî derxînin"
 msgid "Import templates"
 msgstr "Şablonên derhanînê"
 
-#: src/components/UserAreaContent.jsx:62
-msgid "Today Placed Pixels"
-msgstr "Îro Pixelên Cihkirî"
+#: src/components/GetIID.jsx:44
+msgid "Get IID"
+msgstr "IID bistînin"
 
-#: src/components/UserAreaContent.jsx:66
-msgid "Daily Rank"
-msgstr "rêjeya rojane"
-
-#: src/components/UserAreaContent.jsx:75
-msgid "Total Rank"
-msgstr "rêjeya giştî"
-
-#: src/components/UserAreaContent.jsx:80
-#, javascript-format
-msgid "Your name is: ${ name }"
-msgstr "Navê te: ${ name }"
-
-#: src/components/UserAreaContent.jsx:86
-msgid "Log out"
-msgstr "Derkeve"
-
-#: src/components/UserAreaContent.jsx:93
-msgid "Change Username"
-msgstr "Navê bikarhêner biguherînin"
-
-#: src/components/UserAreaContent.jsx:103
-msgid "Change Mail"
-msgstr "Mail biguherînin"
-
-#: src/components/UserAreaContent.jsx:112
-msgid "Change Password"
-msgstr "Şîfre biguherînin"
-
-#: src/components/UserAreaContent.jsx:119
-msgid "Delete Account"
-msgstr "Hesabê jêbirin"
-
-#: src/components/UserAreaContent.jsx:126
-msgid "Social Settings"
-msgstr "Mîhengên Civakî"
+#: src/components/GetIID.jsx:53
+msgid "Copy"
+msgstr "kopî"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1191,6 +1152,47 @@ msgstr "an jî li vir qeyd bikin:"
 #: src/components/LogInArea.jsx:75
 msgid "Register"
 msgstr "Fêhrist"
+
+#: src/components/UserAreaContent.jsx:69
+msgid "Today Placed Pixels"
+msgstr "Îro Pixelên Cihkirî"
+
+#: src/components/UserAreaContent.jsx:73
+msgid "Daily Rank"
+msgstr "rêjeya rojane"
+
+#: src/components/UserAreaContent.jsx:83
+msgid "Total Rank"
+msgstr "rêjeya giştî"
+
+#: src/components/UserAreaContent.jsx:89
+#, javascript-format
+msgid "Your name is: ${ name }"
+msgstr "Navê te: ${ name }"
+
+#: src/components/UserAreaContent.jsx:95
+msgid "Log out"
+msgstr "Derkeve"
+
+#: src/components/UserAreaContent.jsx:102
+msgid "Change Username"
+msgstr "Navê bikarhêner biguherînin"
+
+#: src/components/UserAreaContent.jsx:112
+msgid "Change Mail"
+msgstr "Mail biguherînin"
+
+#: src/components/UserAreaContent.jsx:121
+msgid "Change Password"
+msgstr "Şîfre biguherînin"
+
+#: src/components/UserAreaContent.jsx:128
+msgid "Delete Account"
+msgstr "Hesabê jêbirin"
+
+#: src/components/UserAreaContent.jsx:135
+msgid "Social Settings"
+msgstr "Mîhengên Civakî"
 
 #: src/components/Rankings.jsx:168
 msgid "Yesterday"
@@ -1229,17 +1231,17 @@ msgstr "Bikarhêner"
 msgid "Country"
 msgstr "Welat"
 
-#: src/components/Rankings.jsx:241
+#: src/components/Rankings.jsx:243
 msgid "+last hour"
 msgstr "+saeta dawî"
 
-#: src/components/Rankings.jsx:311
+#: src/components/Rankings.jsx:314
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 "Her 5 hûrdem carekê nûvekirinên rêzkirinê. Rêzkirinên rojane di demjimêra "
 "Gerdûnî ya Hevrêzkirî ya nîvê şevê de ji nû ve têne sererast kirin."
 
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:233
 msgid "Choose Canvas"
 msgstr "kanvas hilbijêre"
 
@@ -1391,6 +1393,14 @@ msgstr "Navê Şablonê"
 msgid "Delete"
 msgstr "Jêbirin"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Nav an E-mail"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Têketin"
+
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
@@ -1471,32 +1481,24 @@ msgstr "Astengkirina Bikarhêneran"
 msgid "You have no users blocked"
 msgstr "Tu bikarhênerên astengkirî tune"
 
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Nav an E-mail"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Têketin"
-
-#: src/components/ModCanvastools.jsx:168
+#: src/components/ModCanvastools.jsx:171
 msgid "Build image on canvas."
 msgstr "Wêne li ser kanvas ava bikin."
 
-#: src/components/ModCanvastools.jsx:171
+#: src/components/ModCanvastools.jsx:174
 msgid "Build image and set it to protected."
 msgstr "Wêne ava bikin û wê ji bo parastinê saz bikin."
 
-#: src/components/ModCanvastools.jsx:174
+#: src/components/ModCanvastools.jsx:177
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr "Wêneyê ava bikin, lê sarbûnê li cd-ya nesazkirî-piksel vegerînin."
 
-#: src/components/ModCanvastools.jsx:184
+#: src/components/ModCanvastools.jsx:187
 msgid "Clean spare pixels that are surrounded by unset pixels"
 msgstr ""
 "Pixelên yedek ên ku bi pîxelên nesazkirî ve hatine dorpêç kirin paqij bikin"
 
-#: src/components/ModCanvastools.jsx:188
+#: src/components/ModCanvastools.jsx:191
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
@@ -1504,7 +1506,7 @@ msgstr ""
 "Pixelên yedek ên ku bi pixelên nesazkirî û heta 1 pîxelên setê yên din ve "
 "hatine dorpêç kirin paqij bikin"
 
-#: src/components/ModCanvastools.jsx:192
+#: src/components/ModCanvastools.jsx:195
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
@@ -1514,7 +1516,7 @@ msgstr ""
 "hatine dorpêç kirin paqij bikin (LI SER PÎKELÊN KU DAWÎ DIDE PÎKÊLÊN "
 "NEHATINE (li cihê ku du sarbûn hene) PIR AGRESIVE!)"
 
-#: src/components/ModCanvastools.jsx:196
+#: src/components/ModCanvastools.jsx:199
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
@@ -1522,31 +1524,31 @@ msgstr ""
 "Her pîxelê li herêmê bizivirînin 0 (BASTÎ DIVÊ TU WÊ LI SER QERÊKE KU JI BER "
 "NE PIRÎ 0 NE BIKIN)"
 
-#: src/components/ModCanvastools.jsx:207
+#: src/components/ModCanvastools.jsx:210
 msgid "Status: Not running"
 msgstr "Rewş: Nabe"
 
-#: src/components/ModCanvastools.jsx:249
+#: src/components/ModCanvastools.jsx:252
 msgid "Image Upload"
 msgstr "Barkirina Wêne"
 
-#: src/components/ModCanvastools.jsx:250
+#: src/components/ModCanvastools.jsx:253
 msgid "Upload images to canvas"
 msgstr "Wêneyên li ser kanvas barkirin"
 
-#: src/components/ModCanvastools.jsx:252
+#: src/components/ModCanvastools.jsx:255
 msgid "File"
 msgstr "Pel"
 
-#: src/components/ModCanvastools.jsx:273
+#: src/components/ModCanvastools.jsx:276
 msgid "Coordinates:"
 msgstr "koordînatên:"
 
-#: src/components/ModCanvastools.jsx:317
+#: src/components/ModCanvastools.jsx:320
 msgid "Pixel Protection"
 msgstr "Parastina Piksel"
 
-#: src/components/ModCanvastools.jsx:321
+#: src/components/ModCanvastools.jsx:324
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
@@ -1554,33 +1556,34 @@ msgstr ""
 "Parastina deveran bicîh bikin (heke hûn hewceyê kontrolek zexmtir be, bi "
 "barkirina wêneyê û qatên alpha parastinê bikar bînin)"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:344 src/components/ModCanvastools.jsx:421
+#: src/components/ModCanvastools.jsx:515 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
 msgstr "Kuncê çepê yê-jorîn"
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:366 src/components/ModCanvastools.jsx:443
+#: src/components/ModCanvastools.jsx:537 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
 msgstr "Kuncê jêrîn-rastê"
 
-#: src/components/ModCanvastools.jsx:409
+#: src/components/ModCanvastools.jsx:412
 msgid "Rollback to Date"
 msgstr "Vegerîna Dîrokê"
 
-#: src/components/ModCanvastools.jsx:411
-msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
+#: src/components/ModCanvastools.jsx:416
+#, fuzzy
+msgid "Rollback an area of the canvas to a set date and time"
 msgstr "Deverek kanvas vegerîne rojek diyarkirî (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:492
+#: src/components/ModCanvastools.jsx:490
 msgid "Canvas Cleaner"
 msgstr "Kanvasên Paqijker"
 
-#: src/components/ModCanvastools.jsx:494
+#: src/components/ModCanvastools.jsx:492
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr "Parzûnek bixin da ku çopê li deverên mezin ên kanvas paqij bikin."
 
-#: src/components/ModCanvastools.jsx:605
+#: src/components/ModCanvastools.jsx:603
 msgid "Stop Cleaner"
 msgstr "Paqijker rawestîne"
 
@@ -1718,10 +1721,25 @@ msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1762,21 +1780,6 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
-
-#: src/components/windows/Settings.jsx:89
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:97
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Settings.jsx:169
-msgctxt "keybinds"
-msgid "B"
-msgstr "B"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

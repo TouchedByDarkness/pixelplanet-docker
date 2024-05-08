@@ -285,7 +285,7 @@ msgstr "Μόνο για εγγεγραμμένους χρήστες"
 msgid "Total Online Users"
 msgstr "Μόνο για εγγεγραμμένους χρήστες"
 
-#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:79
 msgid "Placed Pixels"
 msgstr "Pixels τοποθετήθηκαν"
 
@@ -318,15 +318,15 @@ msgstr "Κλείσιμο μενού"
 msgid "Open Menu"
 msgstr "Άνοιγμα Μενού"
 
-#: src/components/HistorySelect.jsx:146
+#: src/components/HistorySelect.jsx:156
 msgid "Loading"
 msgstr "Φόρτωση"
 
-#: src/components/HistorySelect.jsx:147
+#: src/components/HistorySelect.jsx:157
 msgid "Select Date above"
 msgstr "Επιλέξτε Ημερομηνία παραπάνω"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
@@ -379,6 +379,14 @@ msgstr "Δημιουργία στιγμιότυπου οθόνης"
 msgid "Globe View"
 msgstr "Προβολή Υδρόγειου"
 
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr "Κλείσιμο παλέτας"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
+msgstr "Άνοιγμα Παλέτας"
+
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr ""
@@ -395,14 +403,6 @@ msgstr ""
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr ""
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr "Κλείσιμο παλέτας"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr "Άνοιγμα Παλέτας"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -501,6 +501,129 @@ msgstr "Τώρα που είδατε αυτό το μήνυμα, δεν είστ
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Γιατί;"
+
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "Εμφάνιση πλέγματος"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Ενεργοποιήστε το πλέγμα για να επισημάνετε τα περιγράμματα των pixel."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Ειδοποίηση Pixel Ενεργό"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "Εμφάνιση κύκλων όπου τοποθετούνται τα pixel."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "Απενεργοποιήστε τους ήχους παιχνιδιού"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "Όλα τα ηχητικά εφέ θα απενεργοποιηθούν."
+
+#: src/components/windows/Settings.jsx:106
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Το πρόγραμμα περιήγησής σας δεν μας επιτρέπει να χρησιμοποιούμε το "
+"AudioContext για την αναπαραγωγή ήχων. Έχετε κάποια λειτουργία απορρήτου που "
+"μας αποκλείει;"
+
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "Ενεργοποίηση ειδοποιήσεων συνομιλίας"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "Παίξτε έναν ήχο όταν φτάνουν νέα μηνύματα συνομιλίας"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "Αυτόματο ζουμ"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Κάντε μεγέθυνση αντί να τοποθετήσετε ένα pixel όταν αγγίζετε τον καμβά και "
+"το ζουμ σας είναι μικρό."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "Συμπαγής παλέτα"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr ""
+"Εμφάνιση παλέτας σε συμπαγή μορφή που καταλαμβάνει λιγότερο χώρο στην οθόνη."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Λειτουργία πατάτας"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "Για όταν παίζετε σε μια πατάτα."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "Πλέγμα φωτός"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "Εμφάνιση Πλέγματος σε λευκό αντί για μαύρο."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Ιστορική Προβολή"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "Δείτε προηγούμενες εκδόσεις του καμβά."
+
+#: src/components/windows/Settings.jsx:166
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Έγινε εναλλαγή σε ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Θέματα"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "Πώς πρέπει να μοιάζει το pixelplanet."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Επιλογή γλώσσας"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -716,129 +839,6 @@ msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr ""
 "Τα εύσημα για την Παλέτα του καμβά Top10 πηγαίνουν στο ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:72
-msgid "Show Grid"
-msgstr "Εμφάνιση πλέγματος"
-
-#: src/components/windows/Settings.jsx:77
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Ενεργοποιήστε το πλέγμα για να επισημάνετε τα περιγράμματα των pixel."
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show Pixel Activity"
-msgstr "Ειδοποίηση Pixel Ενεργό"
-
-#: src/components/windows/Settings.jsx:85
-msgid "Show circles where pixels are placed."
-msgstr "Εμφάνιση κύκλων όπου τοποθετούνται τα pixel."
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show Movement Controls"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:93
-msgid "Always show movement control buttons"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:96
-msgid "Disable Game Sounds"
-msgstr "Απενεργοποιήστε τους ήχους παιχνιδιού"
-
-#: src/components/windows/Settings.jsx:102
-msgid "All sound effects will be disabled."
-msgstr "Όλα τα ηχητικά εφέ θα απενεργοποιηθούν."
-
-#: src/components/windows/Settings.jsx:106
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"Το πρόγραμμα περιήγησής σας δεν μας επιτρέπει να χρησιμοποιούμε το "
-"AudioContext για την αναπαραγωγή ήχων. Έχετε κάποια λειτουργία απορρήτου που "
-"μας αποκλείει;"
-
-#: src/components/windows/Settings.jsx:112
-msgid "Enable chat notifications"
-msgstr "Ενεργοποίηση ειδοποιήσεων συνομιλίας"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Play a sound when new chat messages arrive"
-msgstr "Παίξτε έναν ήχο όταν φτάνουν νέα μηνύματα συνομιλίας"
-
-#: src/components/windows/Settings.jsx:119
-msgid "Auto Zoom In"
-msgstr "Αυτόματο ζουμ"
-
-#: src/components/windows/Settings.jsx:124
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Κάντε μεγέθυνση αντί να τοποθετήσετε ένα pixel όταν αγγίζετε τον καμβά και "
-"το ζουμ σας είναι μικρό."
-
-#: src/components/windows/Settings.jsx:127
-msgid "Compact Palette"
-msgstr "Συμπαγής παλέτα"
-
-#: src/components/windows/Settings.jsx:132
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr ""
-"Εμφάνιση παλέτας σε συμπαγή μορφή που καταλαμβάνει λιγότερο χώρο στην οθόνη."
-
-#: src/components/windows/Settings.jsx:135
-msgid "Potato Mode"
-msgstr "Λειτουργία πατάτας"
-
-#: src/components/windows/Settings.jsx:139
-msgid "For when you are playing on a potato."
-msgstr "Για όταν παίζετε σε μια πατάτα."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
-msgid "Light Grid"
-msgstr "Πλέγμα φωτός"
-
-#: src/components/windows/Settings.jsx:146
-msgid "Show Grid in white instead of black."
-msgstr "Εμφάνιση Πλέγματος σε λευκό αντί για μαύρο."
-
-#: src/components/windows/Settings.jsx:149
-msgid "Custom Cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:153
-msgid "Use our custom cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:157
-msgid "Historical View"
-msgstr "Ιστορική Προβολή"
-
-#: src/components/windows/Settings.jsx:162
-msgid "Check out past versions of the canvas."
-msgstr "Δείτε προηγούμενες εκδόσεις του καμβά."
-
-#: src/components/windows/Settings.jsx:166
-#, fuzzy, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Έγινε εναλλαγή σε ${ canvasName }"
-
-#: src/components/windows/Settings.jsx:174
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:178
-msgid "Themes"
-msgstr "Θέματα"
-
-#: src/components/windows/Settings.jsx:183
-msgid "How pixelplanet should look like."
-msgstr "Πώς πρέπει να μοιάζει το pixelplanet."
-
-#: src/components/windows/Settings.jsx:190
-msgid "Select Language"
-msgstr "Επιλογή γλώσσας"
-
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -863,6 +863,26 @@ msgstr "Φόρτωση.."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Σκεφτείτε να συμμετάσχετε μαζί μας στο Guilded:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Επιλέξτε τον καμβά που θέλετε να χρησιμοποιήσετε. Κάθε καμβάς είναι "
+"μοναδικός και έχει διαφορετικές παλέτες, cooldown και απαιτήσεις. Το αρχείο "
+"των κλειστών καμβάδων μπορείτε να το προσπελάσετε εδώ:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Αρχείο"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -895,33 +915,13 @@ msgid "Captcha"
 msgstr "Captcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
-#: src/components/ModCanvastools.jsx:486 src/components/ModCanvastools.jsx:587
+#: src/components/ModCanvastools.jsx:315 src/components/ModCanvastools.jsx:406
+#: src/components/ModCanvastools.jsx:484 src/components/ModCanvastools.jsx:585
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Yπέβαλλε"
-
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Επιλέξτε τον καμβά που θέλετε να χρησιμοποιήσετε. Κάθε καμβάς είναι "
-"μοναδικός και έχει διαφορετικές παλέτες, cooldown και απαιτήσεις. Το αρχείο "
-"των κλειστών καμβάδων μπορείτε να το προσπελάσετε εδώ:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Αρχείο"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr ""
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -1081,14 +1081,6 @@ msgstr "Ο κωδικός θα πρέπει να είναι τουλάχιστο
 msgid "Password must be shorter than 60 characters."
 msgstr "Ο κωδικός πρόσβασης πρέπει να είναι μικρότερος από 60 χαρακτήρες."
 
-#: src/components/GetIID.jsx:44
-msgid "Get IID"
-msgstr "Παρε το iid"
-
-#: src/components/GetIID.jsx:53
-msgid "Copy"
-msgstr "Αντιγραφή"
-
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
@@ -1150,47 +1142,13 @@ msgstr ""
 msgid "Import templates"
 msgstr ""
 
-#: src/components/UserAreaContent.jsx:62
-#, fuzzy
-msgid "Today Placed Pixels"
-msgstr "Pixels τοποθετήθηκαν σήμερα"
+#: src/components/GetIID.jsx:44
+msgid "Get IID"
+msgstr "Παρε το iid"
 
-#: src/components/UserAreaContent.jsx:66
-msgid "Daily Rank"
-msgstr "Top 10 Ημερήσια Κατάταξη"
-
-#: src/components/UserAreaContent.jsx:75
-msgid "Total Rank"
-msgstr "Σύνολο"
-
-#: src/components/UserAreaContent.jsx:80
-#, javascript-format
-msgid "Your name is: ${ name }"
-msgstr "Το όνομά σας είναι: ${ name }"
-
-#: src/components/UserAreaContent.jsx:86
-msgid "Log out"
-msgstr "Έξοδος"
-
-#: src/components/UserAreaContent.jsx:93
-msgid "Change Username"
-msgstr "Νέο όνομα χρήστη"
-
-#: src/components/UserAreaContent.jsx:103
-msgid "Change Mail"
-msgstr "Άλλαξτε Mail"
-
-#: src/components/UserAreaContent.jsx:112
-msgid "Change Password"
-msgstr "Άλλαξτε κωδικό"
-
-#: src/components/UserAreaContent.jsx:119
-msgid "Delete Account"
-msgstr "Διαγραφή λογαριασμού"
-
-#: src/components/UserAreaContent.jsx:126
-msgid "Social Settings"
-msgstr "Ρυθμίσεις κοινωνικής δικτύωσης"
+#: src/components/GetIID.jsx:53
+msgid "Copy"
+msgstr "Αντιγραφή"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1217,6 +1175,48 @@ msgstr "ή εγγραφείτε εδώ:"
 #: src/components/LogInArea.jsx:75
 msgid "Register"
 msgstr "Εγγραφείτε"
+
+#: src/components/UserAreaContent.jsx:69
+#, fuzzy
+msgid "Today Placed Pixels"
+msgstr "Pixels τοποθετήθηκαν σήμερα"
+
+#: src/components/UserAreaContent.jsx:73
+msgid "Daily Rank"
+msgstr "Top 10 Ημερήσια Κατάταξη"
+
+#: src/components/UserAreaContent.jsx:83
+msgid "Total Rank"
+msgstr "Σύνολο"
+
+#: src/components/UserAreaContent.jsx:89
+#, javascript-format
+msgid "Your name is: ${ name }"
+msgstr "Το όνομά σας είναι: ${ name }"
+
+#: src/components/UserAreaContent.jsx:95
+msgid "Log out"
+msgstr "Έξοδος"
+
+#: src/components/UserAreaContent.jsx:102
+msgid "Change Username"
+msgstr "Νέο όνομα χρήστη"
+
+#: src/components/UserAreaContent.jsx:112
+msgid "Change Mail"
+msgstr "Άλλαξτε Mail"
+
+#: src/components/UserAreaContent.jsx:121
+msgid "Change Password"
+msgstr "Άλλαξτε κωδικό"
+
+#: src/components/UserAreaContent.jsx:128
+msgid "Delete Account"
+msgstr "Διαγραφή λογαριασμού"
+
+#: src/components/UserAreaContent.jsx:135
+msgid "Social Settings"
+msgstr "Ρυθμίσεις κοινωνικής δικτύωσης"
 
 #: src/components/Rankings.jsx:168
 msgid "Yesterday"
@@ -1259,17 +1259,17 @@ msgstr "Χρήστης"
 msgid "Country"
 msgstr "Χώρα"
 
-#: src/components/Rankings.jsx:241
+#: src/components/Rankings.jsx:243
 msgid "+last hour"
 msgstr ""
 
-#: src/components/Rankings.jsx:311
+#: src/components/Rankings.jsx:314
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 "Ενημερώσεις κατάταξης κάθε 5 λεπτά. Οι ημερήσιες κατατάξεις επαναφέρονται τα "
 "μεσάνυχτα UTC."
 
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:233
 msgid "Choose Canvas"
 msgstr "Επιλέξτε Καμβάς"
 
@@ -1424,6 +1424,14 @@ msgstr ""
 msgid "Delete"
 msgstr "Διαγραφή λογαριασμού"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Όνομα ή Mail"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Σύνδεση"
+
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
@@ -1505,31 +1513,23 @@ msgstr "Ξεμπλοκάρισμα χρηστών"
 msgid "You have no users blocked"
 msgstr "Δεν έχετε αποκλεισμένους χρήστες"
 
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Όνομα ή Mail"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Σύνδεση"
-
-#: src/components/ModCanvastools.jsx:168
+#: src/components/ModCanvastools.jsx:171
 msgid "Build image on canvas."
 msgstr "Δημιουργία εικόνας σε καμβά."
 
-#: src/components/ModCanvastools.jsx:171
+#: src/components/ModCanvastools.jsx:174
 msgid "Build image and set it to protected."
 msgstr "Δημιουργήστε εικόνα και ρυθμίστε την σε προστατευμένη."
 
-#: src/components/ModCanvastools.jsx:174
+#: src/components/ModCanvastools.jsx:177
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr "Δημιουργία εικόνας, αλλά επαναφέρετε το cooldown σε cd unset-pixel."
 
-#: src/components/ModCanvastools.jsx:184
+#: src/components/ModCanvastools.jsx:187
 msgid "Clean spare pixels that are surrounded by unset pixels"
 msgstr "Καθαρίστε τα εφεδρικά pixel που περιβάλλονται από μη καθορισμένα pixel"
 
-#: src/components/ModCanvastools.jsx:188
+#: src/components/ModCanvastools.jsx:191
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
@@ -1537,7 +1537,7 @@ msgstr ""
 "Καθαρίστε τα εφεδρικά pixel που περιβάλλονται από τα μη καθορισμένα pixel "
 "και έως και 1 άλλο σύνολο pixel"
 
-#: src/components/ModCanvastools.jsx:192
+#: src/components/ModCanvastools.jsx:195
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
@@ -1547,38 +1547,38 @@ msgstr ""
 "καθορισμένα pixel (ΠΟΛΥ ΕΠΙΘΕΤΙΚΟ ΣΕ ΚΑΜΒΑΔΕΣ ΠΟΥ ΕΠΙΤΡΕΠΟΥΝ ΤΑ ΑΠΑΡΑΙΤΗΜΕΝΑ "
 "PIXEL (όπου υπάρχουν δύο αργές λειτουργίες)!)"
 
-#: src/components/ModCanvastools.jsx:196
+#: src/components/ModCanvastools.jsx:199
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:207
+#: src/components/ModCanvastools.jsx:210
 msgid "Status: Not running"
 msgstr "Κατάσταση: Δεν εκτελείται"
 
-#: src/components/ModCanvastools.jsx:249
+#: src/components/ModCanvastools.jsx:252
 msgid "Image Upload"
 msgstr "Μεταφόρτωση εικόνας"
 
-#: src/components/ModCanvastools.jsx:250
+#: src/components/ModCanvastools.jsx:253
 msgid "Upload images to canvas"
 msgstr "Ανεβάστε εικόνες σε καμβά"
 
-#: src/components/ModCanvastools.jsx:252
+#: src/components/ModCanvastools.jsx:255
 msgid "File"
 msgstr "Αρχείο"
 
-#: src/components/ModCanvastools.jsx:273
+#: src/components/ModCanvastools.jsx:276
 #, fuzzy
 msgid "Coordinates:"
 msgstr "Μη έγκυρες συντεταγμένες"
 
-#: src/components/ModCanvastools.jsx:317
+#: src/components/ModCanvastools.jsx:320
 msgid "Pixel Protection"
 msgstr "Προστασία Pixel"
 
-#: src/components/ModCanvastools.jsx:321
+#: src/components/ModCanvastools.jsx:324
 #, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
@@ -1587,36 +1587,37 @@ msgstr ""
 "Ορίστε την προστασία των περιοχών (εάν χρειάζεστε πιο λεπτό έλεγχο, "
 "χρησιμοποιήστε προστασία με μεταφόρτωση εικόνας και επίπεδα άλφα)"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:344 src/components/ModCanvastools.jsx:421
+#: src/components/ModCanvastools.jsx:515 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
 msgstr "Πάνω-αριστερή γωνία"
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:366 src/components/ModCanvastools.jsx:443
+#: src/components/ModCanvastools.jsx:537 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
 msgstr "Κάτω δεξιά γωνία"
 
-#: src/components/ModCanvastools.jsx:409
+#: src/components/ModCanvastools.jsx:412
 msgid "Rollback to Date"
 msgstr "Επαναφορά στην ημερομηνία"
 
-#: src/components/ModCanvastools.jsx:411
-msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
+#: src/components/ModCanvastools.jsx:416
+#, fuzzy
+msgid "Rollback an area of the canvas to a set date and time"
 msgstr ""
 "Επαναφορά μιας περιοχής του καμβά σε μια καθορισμένη ημερομηνία (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:492
+#: src/components/ModCanvastools.jsx:490
 msgid "Canvas Cleaner"
 msgstr "Καθαριστικό καμβά"
 
-#: src/components/ModCanvastools.jsx:494
+#: src/components/ModCanvastools.jsx:492
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr ""
 "Εφαρμόστε ένα φίλτρο για να καθαρίσετε τα σκουπίδια σε μεγάλες επιφάνειες "
 "καμβά."
 
-#: src/components/ModCanvastools.jsx:605
+#: src/components/ModCanvastools.jsx:603
 msgid "Stop Cleaner"
 msgstr "Stop Cleaner"
 
@@ -1752,9 +1753,25 @@ msgctxt "keybinds"
 msgid "X"
 msgstr "x εκτός ορίων"
 
+#: src/components/windows/Settings.jsx:89
+#, fuzzy
+msgctxt "keybinds"
+msgid "N"
+msgstr "Όχι"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr ""
+
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
 msgstr ""
 
 #: src/components/windows/Help.jsx:22
@@ -1795,22 +1812,6 @@ msgstr ""
 #: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:89
-#, fuzzy
-msgctxt "keybinds"
-msgid "N"
-msgstr "Όχι"
-
-#: src/components/windows/Settings.jsx:97
-msgctxt "keybinds"
-msgid "M"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:169
-msgctxt "keybinds"
-msgid "B"
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:61

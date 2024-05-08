@@ -5,7 +5,7 @@ msgstr ""
 "Language-Team: Kurdish (Central) <https://hosted.weblate.org/projects/"
 "pixelplanet/server/ckb/>\n"
 "Language: ckb\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5.2\n"
@@ -172,24 +172,20 @@ msgstr "وشەی نهێنی بە لایەنی کەمەوە پێویستە ٦ پ�
 msgid "Password must be shorter than 60 characters."
 msgstr "وشەی نهێنی دەبێت لە ٦٠ پیت کورتتر بێت."
 
-#: src/ssr/PasswordReset.jsx:20
-#: src/ssr/PasswordReset.jsx:40
+#: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
 msgstr "PixelPlanet.fun گۆڕینی وشەی نهێنی"
 
-#: src/ssr/PasswordReset.jsx:21
-#: src/ssr/PasswordReset.jsx:41
+#: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
 msgstr "لێرەدا وشەی نهێنی خۆت بگۆڕە"
 
-#: src/core/MailProvider.js:105
-#: src/ssr/PasswordReset.jsx:28
+#: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
 msgstr "وشەی نهێنی ڕێکبخەرەوە"
 
-#: src/ssr/PasswordReset.jsx:30
-#: src/ssr/RedirectionPage.jsx:12
+#: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
 msgstr "گرتەی ئێرە بکە"
 
@@ -222,7 +218,7 @@ msgstr "تۆ داخڵ نەبوویت"
 msgid "You are not allowed to access this page"
 msgstr "ڕێگەت پێنادرێت بچیتە ناو ئەم لاپەڕەیە"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "تەنها ئەدمینەکان دەتوانن ئەوە بکەن"
 
@@ -230,8 +226,7 @@ msgstr "تەنها ئەدمینەکان دەتوانن ئەوە بکەن"
 msgid "You are not banned"
 msgstr "تۆ قەدەغە نەکراویت"
 
-#: src/routes/api/auth/change_mail.js:22
-#: src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr "ئەم دابینکەری ئیمەیڵە ڕێگەپێدراو نییە"
 
@@ -267,8 +262,7 @@ msgstr "شکستی هێنا لە دروستکردنی بەکارهێنەری ن�
 msgid "Failed to establish session after register :("
 msgstr "شکستی هێنا لە دامەزراندنی دانیشتن دوای تۆمارکردن :("
 
-#: src/routes/api/auth/verify.js:26
-#: src/routes/api/auth/verify.js:35
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
 msgstr "پشتڕاستکردنەوەی پۆست"
 
@@ -278,8 +272,8 @@ msgstr "ئێستا پشتڕاستکرایتەوە :)"
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
-"Your mail verification code is invalid or already expired :(, please "
-"request a new one."
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
 msgstr ""
 "کۆدی پشتڕاستکردنەوەی پۆستەکەت نادروستە یان پێشتر بەسەرچووە :(، تکایە داوای "
 "نوێ بکە."
@@ -288,8 +282,7 @@ msgstr ""
 msgid "You are not even logged in."
 msgstr "تەنانەت تۆش نەچوویتە ژوورەوە."
 
-#: src/routes/api/auth/delete_account.js:65
-#: src/routes/api/auth/logout.js:20
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
 msgstr "هەڵەی سێرڤەر لە کاتی چوونە دەرەوە."
 
@@ -373,8 +366,8 @@ msgstr ""
 
 #: src/canvasesDesc.js:33
 msgid ""
-"Moon canvas. Safe space for art. No flags or large text (unless part of "
-"art) or art larger than 1.5k x 1.5k pixels."
+"Moon canvas. Safe space for art. No flags or large text (unless part of art) "
+"or art larger than 1.5k x 1.5k pixels."
 msgstr ""
 "کانڤاسی مانگ. شوێنی سەلامەت بۆ هونەر. هیچ ئاڵایەک یان دەقێکی گەورە (مەگەر "
 "بەشێک لە هونەر نەبێت) یان هونەرێک کە لە ١.٥ک x ١.٥ک پێکسڵ گەورەتر بێت."
@@ -442,30 +435,29 @@ msgstr ""
 msgid "Click to Verify"
 msgstr "بۆ سەلماندن کلیک بکە"
 
-#: src/core/MailProvider.js:68
-#: src/core/MailProvider.js:105
+#: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
 msgstr "یان بە کۆپیکردنی ئەم لینکی خوارەوە:"
 
 #: src/core/MailProvider.js:69
-msgid "Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgid ""
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
 "کاتێکی خۆش بەسەر بەرە و دوودڵ مەبە لە پەیوەندیکردن ئەگەر تووشی هەر کێشەیەک "
 "بوویت :)"
 
-#: src/core/MailProvider.js:70
-#: src/core/MailProvider.js:107
+#: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"
 msgstr "سوپاس"
 
 #: src/core/MailProvider.js:87
 #, javascript-format
 msgid ""
-"We already sent you a verification mail, you can request another one in ${ "
-"minLeft } minutes."
+"We already sent you a verification mail, you can request another one in "
+"${ minLeft } minutes."
 msgstr ""
-"پێشتر ئیمەیڵێکی پشتڕاستکردنەوەمان بۆ ناردوویت، دەتوانیت لە ماوەی ${ minLeft }"
-" خولەکدا داوای پۆستێکی تر بکەیت."
+"پێشتر ئیمەیڵێکی پشتڕاستکردنەوەمان بۆ ناردوویت، دەتوانیت لە ماوەی "
+"${ minLeft } خولەکدا داوای پۆستێکی تر بکەیت."
 
 #: src/core/MailProvider.js:103
 msgid "You forgot your password for PixelPlanet? Get a new one here"
@@ -478,8 +470,8 @@ msgstr "سڵاو"
 
 #: src/core/MailProvider.js:105
 msgid ""
-"You requested to get a new password. You can change your password within "
-"the next 30min here: "
+"You requested to get a new password. You can change your password within the "
+"next 30min here: "
 msgstr ""
 "داوای وشەی نهێنی نوێت کرد. دەتوانیت لە ماوەی ٣٠ خولەکی داهاتوودا وشەی نهێنی "
 "خۆت بگۆڕیت لێرە: "

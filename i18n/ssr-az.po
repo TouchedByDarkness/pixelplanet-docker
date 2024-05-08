@@ -220,7 +220,7 @@ msgstr "Siz daxil olmamısınız"
 msgid "You are not allowed to access this page"
 msgstr "Sizin bu səhifəyi görüntüləməyə icazəniz yoxdur"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "Sadəcə adminlər bunu edəbilər"
 

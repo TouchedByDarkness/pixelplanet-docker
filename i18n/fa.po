@@ -283,7 +283,7 @@ msgstr "یوزر های انلاین در بوم"
 msgid "Total Online Users"
 msgstr "تمام یوزر های آنلاین"
 
-#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:79
 msgid "Placed Pixels"
 msgstr "پیکسل های گذاشته شده"
 
@@ -316,15 +316,15 @@ msgstr "منو رو ببند"
 msgid "Open Menu"
 msgstr "منو رو باز کن"
 
-#: src/components/HistorySelect.jsx:146
+#: src/components/HistorySelect.jsx:156
 msgid "Loading"
 msgstr "در حال لود کردن"
 
-#: src/components/HistorySelect.jsx:147
+#: src/components/HistorySelect.jsx:157
 msgid "Select Date above"
 msgstr "تاریخ رو انتخاب کن"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
@@ -377,6 +377,14 @@ msgstr "اسکرین شات بگیر"
 msgid "Globe View"
 msgstr "بازدید از کل جهان"
 
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr "جعبه رنگ ها رو ببند"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
+msgstr "جعبه رنگ ها رو باز کن"
+
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr ""
@@ -393,14 +401,6 @@ msgstr ""
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr ""
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr "جعبه رنگ ها رو ببند"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr "جعبه رنگ ها رو باز کن"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -499,6 +499,125 @@ msgstr "خب الان که داری این پیامو میبینی، دیگه ب
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "چرا؟"
+
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "شبکه رو نشون بده"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "شبکه رو روشن کن که مرز های دور پیکسل ها نشون داده بشه."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "فعالیت پیکسل ها رو نشون بده"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "دور پیکسل هایی که گذاشته میشن دایره بزار."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "صدا های بازی رو غیرفعال کن"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "تمامی افکت های صدا غیرفعال میشه."
+
+#: src/components/windows/Settings.jsx:106
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"مرورگر شما به ما اجازه نمی دهد از AudioContext برای پخش صداها استفاده کنیم. "
+"آیا برخی از ویژگی های حفظ حریم خصوصی ما را مسدود می کند؟"
+
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "نوتیفیکیشن های چت رو فعال کن"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "وقتی یه پیام جدید میاد یه صدایی بده"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "زوم اتوماتیک بزرگتر"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr "وقتی که بومت کوچیکه و میخوای پیکسل بزاری، بجای پیکسل گذاشتن زوم کن."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "حعبه رنگ فشرده"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "جعبه رنگ رو فشرده کن که فضای کمتری بگیره."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "حالت سیب زمینی"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "برای موقعی که داری روی ذغال بازی میکنی."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "پس زمینه روشن"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "پس زمینه رو بجای اینکه سفید نشون بده، سیاه نشون بده."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "حالت تاریخی"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "نسخه های قدیمی این بوم رو نشون بده."
+
+#: src/components/windows/Settings.jsx:166
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "تِم ها"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "پیکسل پلنت باید چطوری دیده بشه."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "زبانت رو انتخاب کن"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -704,125 +823,6 @@ msgstr "فرد سازنده بوم 10 نفر اول ${ vinikLink }."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "فرد سازنده بوم 10 نفر اول ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:72
-msgid "Show Grid"
-msgstr "شبکه رو نشون بده"
-
-#: src/components/windows/Settings.jsx:77
-msgid "Turn on grid to highlight pixel borders."
-msgstr "شبکه رو روشن کن که مرز های دور پیکسل ها نشون داده بشه."
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show Pixel Activity"
-msgstr "فعالیت پیکسل ها رو نشون بده"
-
-#: src/components/windows/Settings.jsx:85
-msgid "Show circles where pixels are placed."
-msgstr "دور پیکسل هایی که گذاشته میشن دایره بزار."
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show Movement Controls"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:93
-msgid "Always show movement control buttons"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:96
-msgid "Disable Game Sounds"
-msgstr "صدا های بازی رو غیرفعال کن"
-
-#: src/components/windows/Settings.jsx:102
-msgid "All sound effects will be disabled."
-msgstr "تمامی افکت های صدا غیرفعال میشه."
-
-#: src/components/windows/Settings.jsx:106
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"مرورگر شما به ما اجازه نمی دهد از AudioContext برای پخش صداها استفاده کنیم. "
-"آیا برخی از ویژگی های حفظ حریم خصوصی ما را مسدود می کند؟"
-
-#: src/components/windows/Settings.jsx:112
-msgid "Enable chat notifications"
-msgstr "نوتیفیکیشن های چت رو فعال کن"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Play a sound when new chat messages arrive"
-msgstr "وقتی یه پیام جدید میاد یه صدایی بده"
-
-#: src/components/windows/Settings.jsx:119
-msgid "Auto Zoom In"
-msgstr "زوم اتوماتیک بزرگتر"
-
-#: src/components/windows/Settings.jsx:124
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr "وقتی که بومت کوچیکه و میخوای پیکسل بزاری، بجای پیکسل گذاشتن زوم کن."
-
-#: src/components/windows/Settings.jsx:127
-msgid "Compact Palette"
-msgstr "حعبه رنگ فشرده"
-
-#: src/components/windows/Settings.jsx:132
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "جعبه رنگ رو فشرده کن که فضای کمتری بگیره."
-
-#: src/components/windows/Settings.jsx:135
-msgid "Potato Mode"
-msgstr "حالت سیب زمینی"
-
-#: src/components/windows/Settings.jsx:139
-msgid "For when you are playing on a potato."
-msgstr "برای موقعی که داری روی ذغال بازی میکنی."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
-msgid "Light Grid"
-msgstr "پس زمینه روشن"
-
-#: src/components/windows/Settings.jsx:146
-msgid "Show Grid in white instead of black."
-msgstr "پس زمینه رو بجای اینکه سفید نشون بده، سیاه نشون بده."
-
-#: src/components/windows/Settings.jsx:149
-msgid "Custom Cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:153
-msgid "Use our custom cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:157
-msgid "Historical View"
-msgstr "حالت تاریخی"
-
-#: src/components/windows/Settings.jsx:162
-msgid "Check out past versions of the canvas."
-msgstr "نسخه های قدیمی این بوم رو نشون بده."
-
-#: src/components/windows/Settings.jsx:166
-#, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:174
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:178
-msgid "Themes"
-msgstr "تِم ها"
-
-#: src/components/windows/Settings.jsx:183
-msgid "How pixelplanet should look like."
-msgstr "پیکسل پلنت باید چطوری دیده بشه."
-
-#: src/components/windows/Settings.jsx:190
-msgid "Select Language"
-msgstr "زبانت رو انتخاب کن"
-
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -847,6 +847,26 @@ msgstr "در حال بارگزاری..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "حتی خوب میشه اگر به گیلدد ما هم عضو بشین:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"بوم مورد نظر برای استفاده را انتخاب کنید. هر بوم منحصر به فرد است و دارای "
+"جعبه رنگ ها،کولداون و الزامات متفاوتی است. آرشیو بوم های بسته را می توانید "
+"در اینجا مشاهده کنید:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "آرشیو"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -879,33 +899,13 @@ msgid "Captcha"
 msgstr "کَپچا"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
-#: src/components/ModCanvastools.jsx:486 src/components/ModCanvastools.jsx:587
+#: src/components/ModCanvastools.jsx:315 src/components/ModCanvastools.jsx:406
+#: src/components/ModCanvastools.jsx:484 src/components/ModCanvastools.jsx:585
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "ارسال"
-
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"بوم مورد نظر برای استفاده را انتخاب کنید. هر بوم منحصر به فرد است و دارای "
-"جعبه رنگ ها،کولداون و الزامات متفاوتی است. آرشیو بوم های بسته را می توانید "
-"در اینجا مشاهده کنید:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "آرشیو"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr ""
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -1059,14 +1059,6 @@ msgstr "رمز باید حداقل شیش تا کلمه داشته باشه."
 msgid "Password must be shorter than 60 characters."
 msgstr "داداش چخبره باید کمتر از شصت تا کلمه باشه پسوردت."
 
-#: src/components/GetIID.jsx:44
-msgid "Get IID"
-msgstr "آیدی بگیر"
-
-#: src/components/GetIID.jsx:53
-msgid "Copy"
-msgstr "کپی"
-
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
@@ -1128,47 +1120,13 @@ msgstr ""
 msgid "Import templates"
 msgstr ""
 
-#: src/components/UserAreaContent.jsx:62
-#, fuzzy
-msgid "Today Placed Pixels"
-msgstr "پیکسل هایی که امروز گذاشتی"
+#: src/components/GetIID.jsx:44
+msgid "Get IID"
+msgstr "آیدی بگیر"
 
-#: src/components/UserAreaContent.jsx:66
-msgid "Daily Rank"
-msgstr "رتبه روزانه"
-
-#: src/components/UserAreaContent.jsx:75
-msgid "Total Rank"
-msgstr "رتبه کلی"
-
-#: src/components/UserAreaContent.jsx:80
-#, javascript-format
-msgid "Your name is: ${ name }"
-msgstr "اسم شما: ${ name }"
-
-#: src/components/UserAreaContent.jsx:86
-msgid "Log out"
-msgstr "خروج از اکانت"
-
-#: src/components/UserAreaContent.jsx:93
-msgid "Change Username"
-msgstr "اسم کاربریت رو عوض کن"
-
-#: src/components/UserAreaContent.jsx:103
-msgid "Change Mail"
-msgstr "ایمیلت رو عوض کن"
-
-#: src/components/UserAreaContent.jsx:112
-msgid "Change Password"
-msgstr "پسوردت رو عوض کن"
-
-#: src/components/UserAreaContent.jsx:119
-msgid "Delete Account"
-msgstr "اکانتت رو پاک کن"
-
-#: src/components/UserAreaContent.jsx:126
-msgid "Social Settings"
-msgstr "تنظیمات فضای اجتماعی"
+#: src/components/GetIID.jsx:53
+msgid "Copy"
+msgstr "کپی"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1193,6 +1151,48 @@ msgstr "یا اینجا ثبت نام کنید:"
 #: src/components/LogInArea.jsx:75
 msgid "Register"
 msgstr "ثبت نام"
+
+#: src/components/UserAreaContent.jsx:69
+#, fuzzy
+msgid "Today Placed Pixels"
+msgstr "پیکسل هایی که امروز گذاشتی"
+
+#: src/components/UserAreaContent.jsx:73
+msgid "Daily Rank"
+msgstr "رتبه روزانه"
+
+#: src/components/UserAreaContent.jsx:83
+msgid "Total Rank"
+msgstr "رتبه کلی"
+
+#: src/components/UserAreaContent.jsx:89
+#, javascript-format
+msgid "Your name is: ${ name }"
+msgstr "اسم شما: ${ name }"
+
+#: src/components/UserAreaContent.jsx:95
+msgid "Log out"
+msgstr "خروج از اکانت"
+
+#: src/components/UserAreaContent.jsx:102
+msgid "Change Username"
+msgstr "اسم کاربریت رو عوض کن"
+
+#: src/components/UserAreaContent.jsx:112
+msgid "Change Mail"
+msgstr "ایمیلت رو عوض کن"
+
+#: src/components/UserAreaContent.jsx:121
+msgid "Change Password"
+msgstr "پسوردت رو عوض کن"
+
+#: src/components/UserAreaContent.jsx:128
+msgid "Delete Account"
+msgstr "اکانتت رو پاک کن"
+
+#: src/components/UserAreaContent.jsx:135
+msgid "Social Settings"
+msgstr "تنظیمات فضای اجتماعی"
 
 #: src/components/Rankings.jsx:168
 msgid "Yesterday"
@@ -1235,17 +1235,17 @@ msgstr "کاربر"
 msgid "Country"
 msgstr "کشور"
 
-#: src/components/Rankings.jsx:241
+#: src/components/Rankings.jsx:243
 msgid "+last hour"
 msgstr ""
 
-#: src/components/Rankings.jsx:311
+#: src/components/Rankings.jsx:314
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 "به روز رسانی رتبه بندی هر 5 دقیقه. رتبه بندی روزانه در نیمه شب UTC بازنشانی "
 "می شود."
 
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:233
 msgid "Choose Canvas"
 msgstr "بوم رو انتخاب کن"
 
@@ -1400,6 +1400,14 @@ msgstr ""
 msgid "Delete"
 msgstr "اکانتت رو پاک کن"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "اسم یا ایمیل"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "وارد شدن"
+
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
@@ -1481,32 +1489,24 @@ msgstr "کاربران رو غیر مسدود کن"
 msgid "You have no users blocked"
 msgstr "تو هیچ کاربر مسدود شده نداری"
 
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "اسم یا ایمیل"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "وارد شدن"
-
-#: src/components/ModCanvastools.jsx:168
+#: src/components/ModCanvastools.jsx:171
 msgid "Build image on canvas."
 msgstr "ساخت تصویر روی بوم."
 
-#: src/components/ModCanvastools.jsx:171
+#: src/components/ModCanvastools.jsx:174
 msgid "Build image and set it to protected."
 msgstr "تصویر را بسازید و آن را روی محافظت شده تنظیم کنید."
 
-#: src/components/ModCanvastools.jsx:174
+#: src/components/ModCanvastools.jsx:177
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr "تصویر بسازید، اما cooldown را به unset-pixel cd بازنشانی کنید."
 
-#: src/components/ModCanvastools.jsx:184
+#: src/components/ModCanvastools.jsx:187
 msgid "Clean spare pixels that are surrounded by unset pixels"
 msgstr ""
 "پیکسل های یدکی را که با پیکسل های تنظیم نشده احاطه شده اند را تمیز کنید"
 
-#: src/components/ModCanvastools.jsx:188
+#: src/components/ModCanvastools.jsx:191
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
@@ -1514,7 +1514,7 @@ msgstr ""
 "پیکسل‌های یدکی را که با پیکسل‌های تنظیم‌نشده و حداکثر ۱ پیکسل تنظیم‌شده دیگر "
 "احاطه شده‌اند، تمیز کنید"
 
-#: src/components/ModCanvastools.jsx:192
+#: src/components/ModCanvastools.jsx:195
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
@@ -1524,38 +1524,38 @@ msgstr ""
 "کنید (روی بوم‌ها بسیار تهاجمی است که اجازه می‌دهد پیکسل‌های تنظیم نشده (در جایی "
 "که دو حالت خنک‌کننده وجود دارد) وجود داشته باشد!)"
 
-#: src/components/ModCanvastools.jsx:196
+#: src/components/ModCanvastools.jsx:199
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:207
+#: src/components/ModCanvastools.jsx:210
 msgid "Status: Not running"
 msgstr "وضعیت: در حال اجرا نیست"
 
-#: src/components/ModCanvastools.jsx:249
+#: src/components/ModCanvastools.jsx:252
 msgid "Image Upload"
 msgstr "آپلود تصویر"
 
-#: src/components/ModCanvastools.jsx:250
+#: src/components/ModCanvastools.jsx:253
 msgid "Upload images to canvas"
 msgstr "تصاویر را روی بوم آپلود کنید"
 
-#: src/components/ModCanvastools.jsx:252
+#: src/components/ModCanvastools.jsx:255
 msgid "File"
 msgstr "فایل"
 
-#: src/components/ModCanvastools.jsx:273
+#: src/components/ModCanvastools.jsx:276
 #, fuzzy
 msgid "Coordinates:"
 msgstr "مختصات اشتباه است"
 
-#: src/components/ModCanvastools.jsx:317
+#: src/components/ModCanvastools.jsx:320
 msgid "Pixel Protection"
 msgstr "محافظت از پیکسل"
 
-#: src/components/ModCanvastools.jsx:321
+#: src/components/ModCanvastools.jsx:324
 #, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
@@ -1564,33 +1564,34 @@ msgstr ""
 "حفاظت از مناطق          (اگر به کنترل دانه ریزتر نیاز دارید،         use "
 "protect with image upload and alpha layers)"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:344 src/components/ModCanvastools.jsx:421
+#: src/components/ModCanvastools.jsx:515 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
 msgstr "گوشه بالا سمت چپ"
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:366 src/components/ModCanvastools.jsx:443
+#: src/components/ModCanvastools.jsx:537 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
 msgstr "گوشه پایین سمت راست"
 
-#: src/components/ModCanvastools.jsx:409
+#: src/components/ModCanvastools.jsx:412
 msgid "Rollback to Date"
 msgstr "بازگشت به تاریخ"
 
-#: src/components/ModCanvastools.jsx:411
-msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
+#: src/components/ModCanvastools.jsx:416
+#, fuzzy
+msgid "Rollback an area of the canvas to a set date and time"
 msgstr "یک منطقه از بوم را به تاریخ مشخصی برگردانید (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:492
+#: src/components/ModCanvastools.jsx:490
 msgid "Canvas Cleaner"
 msgstr "پاک کننده بوم"
 
-#: src/components/ModCanvastools.jsx:494
+#: src/components/ModCanvastools.jsx:492
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr "از یک فیلتر برای تمیز کردن سطل زباله در مناطق بزرگ بوم استفاده کنید."
 
-#: src/components/ModCanvastools.jsx:605
+#: src/components/ModCanvastools.jsx:603
 msgid "Stop Cleaner"
 msgstr "تمیز کننده رو متوقف کنین"
 
@@ -1726,9 +1727,25 @@ msgctxt "keybinds"
 msgid "X"
 msgstr ""
 
+#: src/components/windows/Settings.jsx:89
+#, fuzzy
+msgctxt "keybinds"
+msgid "N"
+msgstr "نه"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr ""
+
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
 msgstr ""
 
 #: src/components/windows/Help.jsx:22
@@ -1769,22 +1786,6 @@ msgstr ""
 #: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:89
-#, fuzzy
-msgctxt "keybinds"
-msgid "N"
-msgstr "نه"
-
-#: src/components/windows/Settings.jsx:97
-msgctxt "keybinds"
-msgid "M"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:169
-msgctxt "keybinds"
-msgid "B"
 msgstr ""
 
 #: src/components/TemplateSettings.jsx:61

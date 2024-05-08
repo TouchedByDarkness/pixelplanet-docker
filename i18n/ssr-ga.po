@@ -222,7 +222,7 @@ msgstr "Níl tú logáilte isteach"
 msgid "You are not allowed to access this page"
 msgstr "Níl cead agat teacht ar an leathanach seo"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
 msgstr "Ní féidir ach Riarthóirí sin a dhéanamh"
 

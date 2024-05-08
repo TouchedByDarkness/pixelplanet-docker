@@ -273,7 +273,7 @@ msgstr "Online korisnici na platnu"
 msgid "Total Online Users"
 msgstr "Ukupno online korisnika"
 
-#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:71
+#: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:79
 msgid "Placed Pixels"
 msgstr "Postavljeni pixeli"
 
@@ -306,15 +306,15 @@ msgstr "Zatvori izbornik"
 msgid "Open Menu"
 msgstr "Otvori izbornik"
 
-#: src/components/HistorySelect.jsx:146
+#: src/components/HistorySelect.jsx:156
 msgid "Loading"
 msgstr "Učitavanje"
 
-#: src/components/HistorySelect.jsx:147
+#: src/components/HistorySelect.jsx:157
 msgid "Select Date above"
 msgstr "Označite datum iznad"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:226
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
@@ -367,6 +367,14 @@ msgstr "Napravite snimak zaslona"
 msgid "Globe View"
 msgstr "Pogled na globus"
 
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr "Zatvori paletu"
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
+msgstr "Otvorite paletu"
+
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
 msgstr "Upali Olovku"
@@ -382,14 +390,6 @@ msgstr "Ugasi Povijest Olovku"
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
 msgstr "Ugasi Šablon Olovku"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr "Zatvori paletu"
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
-msgstr "Otvorite paletu"
 
 #: src/components/windows/index.js:16
 msgid "Registration"
@@ -487,6 +487,128 @@ msgstr "Sada kada ste vidjeli ovu poruku, više niste banani."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Zašto?"
+
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "Pokaži rešetku"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Uključite rešetku za označavanje granica piksela."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Prikaži aktivnost Pixela"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "Prikažite krugove gdje su postavljeni pikseli."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr "Uvijek pokaži kontrole za kretnju"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr "Uvijek prikaži gumbe za kontrolu kretanja"
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "Onemogući zvukove igre"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "Svi zvučni efekti bit će onemogućeni."
+
+#: src/components/windows/Settings.jsx:106
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Vaš nam preglednik ne dopušta korištenje AudioContexta za reprodukciju "
+"zvukova. Imate li neku značajku privatnosti koja nas blokira?"
+
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "Omogući obavijesti o chatu"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "Pusti zvuk kada stignu nove chat poruke"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "Automatsko povećanje"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Povećajte umjesto postavljanja piksela kada dodirnete platno i vaše je "
+"zumiranje malo."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "Kompaktna paleta"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr ""
+"Prikaži paletu u kompaktnom obliku koji zauzima manje prostora na zaslonu."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Način krumpira"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "Jer kad igraš na krumpir."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "Svijetla rešetka"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "Pokaži rešetku u bijeloj umjesto u crnoj boji."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr "Prilagođeni kursor"
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr "Koristite naš prilagođeni kursor"
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Povijesni pogled"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "Pogledajte prethodne verzije platna."
+
+#: src/components/windows/Settings.jsx:166
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Mod olovke za platno ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr "Što bi olovka trebala nacrtati na trenutnom platnu."
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Teme"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "Kako bi pixelplanet trebao izgledati."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Izaberi jezik"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -689,128 +811,6 @@ msgstr "Zasluga za paletu Top10 pripada ${ vinikLink }."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Zasluga za paletu Top10 pripada ${ donendoLink }."
 
-#: src/components/windows/Settings.jsx:72
-msgid "Show Grid"
-msgstr "Pokaži rešetku"
-
-#: src/components/windows/Settings.jsx:77
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Uključite rešetku za označavanje granica piksela."
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show Pixel Activity"
-msgstr "Prikaži aktivnost Pixela"
-
-#: src/components/windows/Settings.jsx:85
-msgid "Show circles where pixels are placed."
-msgstr "Prikažite krugove gdje su postavljeni pikseli."
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show Movement Controls"
-msgstr "Uvijek pokaži kontrole za kretnju"
-
-#: src/components/windows/Settings.jsx:93
-msgid "Always show movement control buttons"
-msgstr "Uvijek prikaži gumbe za kontrolu kretanja"
-
-#: src/components/windows/Settings.jsx:96
-msgid "Disable Game Sounds"
-msgstr "Onemogući zvukove igre"
-
-#: src/components/windows/Settings.jsx:102
-msgid "All sound effects will be disabled."
-msgstr "Svi zvučni efekti bit će onemogućeni."
-
-#: src/components/windows/Settings.jsx:106
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"Vaš nam preglednik ne dopušta korištenje AudioContexta za reprodukciju "
-"zvukova. Imate li neku značajku privatnosti koja nas blokira?"
-
-#: src/components/windows/Settings.jsx:112
-msgid "Enable chat notifications"
-msgstr "Omogući obavijesti o chatu"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Play a sound when new chat messages arrive"
-msgstr "Pusti zvuk kada stignu nove chat poruke"
-
-#: src/components/windows/Settings.jsx:119
-msgid "Auto Zoom In"
-msgstr "Automatsko povećanje"
-
-#: src/components/windows/Settings.jsx:124
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Povećajte umjesto postavljanja piksela kada dodirnete platno i vaše je "
-"zumiranje malo."
-
-#: src/components/windows/Settings.jsx:127
-msgid "Compact Palette"
-msgstr "Kompaktna paleta"
-
-#: src/components/windows/Settings.jsx:132
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr ""
-"Prikaži paletu u kompaktnom obliku koji zauzima manje prostora na zaslonu."
-
-#: src/components/windows/Settings.jsx:135
-msgid "Potato Mode"
-msgstr "Način krumpira"
-
-#: src/components/windows/Settings.jsx:139
-msgid "For when you are playing on a potato."
-msgstr "Jer kad igraš na krumpir."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
-msgid "Light Grid"
-msgstr "Svijetla rešetka"
-
-#: src/components/windows/Settings.jsx:146
-msgid "Show Grid in white instead of black."
-msgstr "Pokaži rešetku u bijeloj umjesto u crnoj boji."
-
-#: src/components/windows/Settings.jsx:149
-msgid "Custom Cursor"
-msgstr "Prilagođeni kursor"
-
-#: src/components/windows/Settings.jsx:153
-msgid "Use our custom cursor"
-msgstr "Koristite naš prilagođeni kursor"
-
-#: src/components/windows/Settings.jsx:157
-msgid "Historical View"
-msgstr "Povijesni pogled"
-
-#: src/components/windows/Settings.jsx:162
-msgid "Check out past versions of the canvas."
-msgstr "Pogledajte prethodne verzije platna."
-
-#: src/components/windows/Settings.jsx:166
-#, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Mod olovke za platno ${ canvasName }"
-
-#: src/components/windows/Settings.jsx:174
-msgid "What the pencil should draw on the current canvas."
-msgstr "Što bi olovka trebala nacrtati na trenutnom platnu."
-
-#: src/components/windows/Settings.jsx:178
-msgid "Themes"
-msgstr "Teme"
-
-#: src/components/windows/Settings.jsx:183
-msgid "How pixelplanet should look like."
-msgstr "Kako bi pixelplanet trebao izgledati."
-
-#: src/components/windows/Settings.jsx:190
-msgid "Select Language"
-msgstr "Izaberi jezik"
-
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -835,6 +835,26 @@ msgstr "Učitavam..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Razmislite o tome da nam se pridružite na Discordu:"
+
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Odaberite platno koje želite koristiti. \n"
+"Svako je platno jedinstveno i ima različite palete, vrijeme hlađenja i "
+"zahtjeve. \n"
+" Arhivi zatvorenih platna možete pristupiti ovdje:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arhiva"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Povučena platna (samo povijest)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -867,33 +887,13 @@ msgid "Captcha"
 msgstr "Captcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:312 src/components/ModCanvastools.jsx:403
-#: src/components/ModCanvastools.jsx:486 src/components/ModCanvastools.jsx:587
+#: src/components/ModCanvastools.jsx:315 src/components/ModCanvastools.jsx:406
+#: src/components/ModCanvastools.jsx:484 src/components/ModCanvastools.jsx:585
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Podnesi"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Odaberite platno koje želite koristiti. \n"
-"Svako je platno jedinstveno i ima različite palete, vrijeme hlađenja i "
-"zahtjeve. \n"
-" Arhivi zatvorenih platna možete pristupiti ovdje:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arhiva"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Povučena platna (samo povijest)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1045,14 +1045,6 @@ msgstr "Lozinka mora imati najmanje 6 znakova."
 msgid "Password must be shorter than 60 characters."
 msgstr "Lozinka mora biti kraća od 60 znakova."
 
-#: src/components/GetIID.jsx:44
-msgid "Get IID"
-msgstr "Uzmi IID"
-
-#: src/components/GetIID.jsx:53
-msgid "Copy"
-msgstr "Kopiraj"
-
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
@@ -1116,46 +1108,13 @@ msgstr "Izvoz omogućenih šablona"
 msgid "Import templates"
 msgstr "Uvoz šablona"
 
-#: src/components/UserAreaContent.jsx:62
-msgid "Today Placed Pixels"
-msgstr "Današnji postavljeni pikseli"
+#: src/components/GetIID.jsx:44
+msgid "Get IID"
+msgstr "Uzmi IID"
 
-#: src/components/UserAreaContent.jsx:66
-msgid "Daily Rank"
-msgstr "Dnevni rank"
-
-#: src/components/UserAreaContent.jsx:75
-msgid "Total Rank"
-msgstr "Ukupni rank"
-
-#: src/components/UserAreaContent.jsx:80
-#, javascript-format
-msgid "Your name is: ${ name }"
-msgstr "Vaše ime je: ${ name }"
-
-#: src/components/UserAreaContent.jsx:86
-msgid "Log out"
-msgstr "Odjavite se"
-
-#: src/components/UserAreaContent.jsx:93
-msgid "Change Username"
-msgstr "Promjena korisničkog imena"
-
-#: src/components/UserAreaContent.jsx:103
-msgid "Change Mail"
-msgstr "Promjena pošte"
-
-#: src/components/UserAreaContent.jsx:112
-msgid "Change Password"
-msgstr "Promjena pošte"
-
-#: src/components/UserAreaContent.jsx:119
-msgid "Delete Account"
-msgstr "Izbriši račun"
-
-#: src/components/UserAreaContent.jsx:126
-msgid "Social Settings"
-msgstr "Promjena lozinke"
+#: src/components/GetIID.jsx:53
+msgid "Copy"
+msgstr "Kopiraj"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1180,6 +1139,47 @@ msgstr "ili se registrirajte ovdje:"
 #: src/components/LogInArea.jsx:75
 msgid "Register"
 msgstr "Registracija"
+
+#: src/components/UserAreaContent.jsx:69
+msgid "Today Placed Pixels"
+msgstr "Današnji postavljeni pikseli"
+
+#: src/components/UserAreaContent.jsx:73
+msgid "Daily Rank"
+msgstr "Dnevni rank"
+
+#: src/components/UserAreaContent.jsx:83
+msgid "Total Rank"
+msgstr "Ukupni rank"
+
+#: src/components/UserAreaContent.jsx:89
+#, javascript-format
+msgid "Your name is: ${ name }"
+msgstr "Vaše ime je: ${ name }"
+
+#: src/components/UserAreaContent.jsx:95
+msgid "Log out"
+msgstr "Odjavite se"
+
+#: src/components/UserAreaContent.jsx:102
+msgid "Change Username"
+msgstr "Promjena korisničkog imena"
+
+#: src/components/UserAreaContent.jsx:112
+msgid "Change Mail"
+msgstr "Promjena pošte"
+
+#: src/components/UserAreaContent.jsx:121
+msgid "Change Password"
+msgstr "Promjena pošte"
+
+#: src/components/UserAreaContent.jsx:128
+msgid "Delete Account"
+msgstr "Izbriši račun"
+
+#: src/components/UserAreaContent.jsx:135
+msgid "Social Settings"
+msgstr "Promjena lozinke"
 
 #: src/components/Rankings.jsx:168
 msgid "Yesterday"
@@ -1222,16 +1222,16 @@ msgstr "Korisnik"
 msgid "Country"
 msgstr "Država"
 
-#: src/components/Rankings.jsx:241
+#: src/components/Rankings.jsx:243
 msgid "+last hour"
 msgstr ""
 
-#: src/components/Rankings.jsx:311
+#: src/components/Rankings.jsx:314
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 "Poredak se ažurira svakih 5 minuta. Dnevni poredak se resetira u ponoć UTC."
 
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:230
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:233
 msgid "Choose Canvas"
 msgstr "Izbriši račun"
 
@@ -1383,6 +1383,14 @@ msgstr "Ime šablona"
 msgid "Delete"
 msgstr "Izbriši"
 
+#: src/components/LogInForm.jsx:77
+msgid "Name or Email"
+msgstr "Ime ili email"
+
+#: src/components/LogInForm.jsx:88
+msgid "LogIn"
+msgstr "Prijava"
+
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
@@ -1463,31 +1471,23 @@ msgstr "Odblokiraj korisnike"
 msgid "You have no users blocked"
 msgstr "Nemate blokiranih korisnika"
 
-#: src/components/LogInForm.jsx:77
-msgid "Name or Email"
-msgstr "Ime ili email"
-
-#: src/components/LogInForm.jsx:88
-msgid "LogIn"
-msgstr "Prijava"
-
-#: src/components/ModCanvastools.jsx:168
+#: src/components/ModCanvastools.jsx:171
 msgid "Build image on canvas."
 msgstr "Izgradite sliku na platnu."
 
-#: src/components/ModCanvastools.jsx:171
+#: src/components/ModCanvastools.jsx:174
 msgid "Build image and set it to protected."
 msgstr "Izgradite sliku i postavite je na zaštićenu."
 
-#: src/components/ModCanvastools.jsx:174
+#: src/components/ModCanvastools.jsx:177
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr "Izgradite sliku, ali vratite vrijeme hlađenja na unset-pixel cd."
 
-#: src/components/ModCanvastools.jsx:184
+#: src/components/ModCanvastools.jsx:187
 msgid "Clean spare pixels that are surrounded by unset pixels"
 msgstr "Očistite rezervne piksele koji su okruženi nepostavljenim pikselima"
 
-#: src/components/ModCanvastools.jsx:188
+#: src/components/ModCanvastools.jsx:191
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
@@ -1495,7 +1495,7 @@ msgstr ""
 "Očisti rezervne piksele koji su okruženi nepostavljenim pikselima i do 1 "
 "drugim postavljenim pikselima"
 
-#: src/components/ModCanvastools.jsx:192
+#: src/components/ModCanvastools.jsx:195
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
@@ -1505,7 +1505,7 @@ msgstr ""
 "nepostavljenim pikselima (VRLO AGRESIVNO NA PLATNIMA KOJA DOPUŠTAJU "
 "NEPOSTAVLJENE PIKSELE (gdje postoje dva hlađenja)!)"
 
-#: src/components/ModCanvastools.jsx:196
+#: src/components/ModCanvastools.jsx:199
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
@@ -1513,31 +1513,31 @@ msgstr ""
 "Okrenite svaki piksel u području na 0 (TO STVARNO NE BISTE SMIJELI RADITI NA "
 "BILO KOJEM PODRUČJU KOJE VEĆ NIJE VEĆINOM 0)"
 
-#: src/components/ModCanvastools.jsx:207
+#: src/components/ModCanvastools.jsx:210
 msgid "Status: Not running"
 msgstr "Status: Ne radi"
 
-#: src/components/ModCanvastools.jsx:249
+#: src/components/ModCanvastools.jsx:252
 msgid "Image Upload"
 msgstr "Prijenos slike"
 
-#: src/components/ModCanvastools.jsx:250
+#: src/components/ModCanvastools.jsx:253
 msgid "Upload images to canvas"
 msgstr "Prenesite slike na platno"
 
-#: src/components/ModCanvastools.jsx:252
+#: src/components/ModCanvastools.jsx:255
 msgid "File"
 msgstr "Datoteka"
 
-#: src/components/ModCanvastools.jsx:273
+#: src/components/ModCanvastools.jsx:276
 msgid "Coordinates:"
 msgstr "Koordinate:"
 
-#: src/components/ModCanvastools.jsx:317
+#: src/components/ModCanvastools.jsx:320
 msgid "Pixel Protection"
 msgstr "Zaštita piksela"
 
-#: src/components/ModCanvastools.jsx:321
+#: src/components/ModCanvastools.jsx:324
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
@@ -1545,33 +1545,34 @@ msgstr ""
 "Postavite zaštitu područja (ako vam je potrebna preciznija kontrola, "
 "koristite zaštitu s učitavanjem slike i alfa slojevima)"
 
-#: src/components/ModCanvastools.jsx:341 src/components/ModCanvastools.jsx:424
-#: src/components/ModCanvastools.jsx:517 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:344 src/components/ModCanvastools.jsx:421
+#: src/components/ModCanvastools.jsx:515 src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
 msgstr "Gornji lijevi kut"
 
-#: src/components/ModCanvastools.jsx:363 src/components/ModCanvastools.jsx:446
-#: src/components/ModCanvastools.jsx:539 src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:366 src/components/ModCanvastools.jsx:443
+#: src/components/ModCanvastools.jsx:537 src/components/ModWatchtools.jsx:198
 msgid "Bottom-right corner"
 msgstr "Donji desni kut"
 
-#: src/components/ModCanvastools.jsx:409
+#: src/components/ModCanvastools.jsx:412
 msgid "Rollback to Date"
 msgstr "Rollback na datum"
 
-#: src/components/ModCanvastools.jsx:411
-msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
+#: src/components/ModCanvastools.jsx:416
+#, fuzzy
+msgid "Rollback an area of the canvas to a set date and time"
 msgstr "Rollback područje platna na postavljeni datum (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:492
+#: src/components/ModCanvastools.jsx:490
 msgid "Canvas Cleaner"
 msgstr "Sredstvo za čišćenje platna"
 
-#: src/components/ModCanvastools.jsx:494
+#: src/components/ModCanvastools.jsx:492
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr "Primijenite filtar za čišćenje smeća na velikim površinama platna."
 
-#: src/components/ModCanvastools.jsx:605
+#: src/components/ModCanvastools.jsx:603
 msgid "Stop Cleaner"
 msgstr "Zaustavi čistača"
 
@@ -1707,10 +1708,25 @@ msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1751,21 +1767,6 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
-
-#: src/components/windows/Settings.jsx:89
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:97
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
-#: src/components/windows/Settings.jsx:169
-msgctxt "keybinds"
-msgid "B"
-msgstr "B"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

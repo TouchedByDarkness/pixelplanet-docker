@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-07 12:26+0000\n"
-"Last-Translator: aaa aaa <greentimka75@mail.ru>\n"
+"PO-Revision-Date: 2024-05-08 13:07+0000\n"
+"Last-Translator: анит изгоев <oorrrpamperstars@gmail.com>\n"
 "Language-Team: Rusyn <https://hosted.weblate.org/projects/pixelplanet/server/"
 "rue/>\n"
 "Language: rue\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5.4-rc\n"
@@ -51,11 +51,11 @@ msgstr "Вы не мати приступа ид се канал"
 
 #: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
-msgstr ""
+msgstr "До общеня у чете ваш мейл довжен быти потверженым"
 
 #: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
-msgstr ""
+msgstr "Вы не мочете одослати сообщеня такый довгы :("
 
 #: src/core/ChatProvider.js:504
 msgid "Please use int channel"
@@ -67,11 +67,11 @@ msgstr "Застановити флудити."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr ""
+msgstr "Вы одыслали пустый парол або погрішные дані :("
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr ""
+msgstr "Сеся одсыланя до очисту парола теперь недїйна :("
 
 #: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
@@ -79,7 +79,7 @@ msgstr "Ваш парол не совпадати :("
 
 #: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
-msgstr ""
+msgstr "Хоснователь не єствує на нашей базї податкув :("
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
@@ -87,7 +87,7 @@ msgstr "Парол успішно помінян."
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr ""
+msgstr "Невірный URL :( Прошу, провірити свуй мейл щи раз."
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
@@ -95,11 +95,11 @@ msgstr "PixelPlanet.Fun 3DҐлобус"
 
 #: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
-msgstr ""
+msgstr "3D ґлобус с всей нашей мапой"
 
 #: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
-msgstr ""
+msgstr "Двычи троцкнути по ґлобусу, обы вернути ся назад."
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
@@ -107,39 +107,41 @@ msgstr "Обтерьханя..."
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
-msgstr ""
+msgstr "ppfun"
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
-msgstr ""
+msgstr "PixelPlanet.Fun Вынуряючый ся Увідоменя"
 
 #: src/ssr/Main.jsx:65
 msgid "PixelPlanet.Fun"
-msgstr ""
+msgstr "PixelPlanet.Fun"
 
 #: src/ssr/Main.jsx:66
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
+"Розміщайте цвітные цятки на верете у стілы мапы заєдно з другыми играчами "
+"онлайн"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr ""
+msgstr "Емайл не моче быти пустым."
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr ""
+msgstr "Довгота емайла довжна составляти не маймень 5 літер."
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr ""
+msgstr "Довгота емайла не довжна пересягати 40 літер."
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr ""
+msgstr "Емайл довжен содержати мере, точку"
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr ""
+msgstr "Емайл довжен содержати @"
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
@@ -147,15 +149,15 @@ msgstr "Имня не мочь быти пустым."
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr ""
+msgstr "Довгота именї довжна содержати маймень 2 літер"
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr ""
+msgstr "Довгота именї не довжна пересягати 26 літер"
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr ""
+msgstr "Имня содержити недопустимый літер, такый як @, /, \\ or #"
 
 #: src/utils/validation.js:53
 msgid "No password given."
@@ -163,30 +165,26 @@ msgstr "Парол не провказан."
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr ""
+msgstr "Довгота парола довжна составляти маймень 6 літер."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr ""
+msgstr "Парол довжен быти куртше 60 літер."
 
-#: src/ssr/PasswordReset.jsx:20
-#: src/ssr/PasswordReset.jsx:40
+#: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
-msgstr ""
+msgstr "PixelPlanet.fun Парол Очист"
 
-#: src/ssr/PasswordReset.jsx:21
-#: src/ssr/PasswordReset.jsx:41
+#: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
-msgstr ""
+msgstr "Очистите свуй парол туй"
 
-#: src/core/MailProvider.js:105
-#: src/ssr/PasswordReset.jsx:28
+#: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
-msgstr ""
+msgstr "Парол Очист"
 
-#: src/ssr/PasswordReset.jsx:30
-#: src/ssr/RedirectionPage.jsx:12
+#: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
 msgstr "Гойкнути сюды"
 
@@ -197,7 +195,7 @@ msgstr ""
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
 msgid "Hello ${ name }, you can set your new password here:"
-msgstr ""
+msgstr "Привіт, ${ name }, вы мочете уставити свуй парол туй:"
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
@@ -213,28 +211,27 @@ msgstr ""
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
-msgstr ""
+msgstr "Вы не зайшли у сістему"
 
 #: src/routes/api/modtools.js:65
 msgid "You are not allowed to access this page"
-msgstr ""
+msgstr "Вам запрічен доприступ ку сей сторонке"
 
-#: src/routes/api/modtools.js:207
+#: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
-msgstr ""
+msgstr "То моче зробити лиш адміністраторы"
 
 #: src/routes/api/baninfo.js:32
 msgid "You are not banned"
-msgstr ""
+msgstr "Вы не выгнаты"
 
-#: src/routes/api/auth/change_mail.js:22
-#: src/routes/api/auth/register.js:24
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
-msgstr ""
+msgstr "Приступ к сему провайдеру мейлу запрічен"
 
 #: src/routes/api/auth/register.js:31
 msgid "No Captcha given"
-msgstr ""
+msgstr "Капча не вводити ся"
 
 #: src/routes/api/auth/register.js:34
 msgid "E-Mail already in use."
@@ -242,11 +239,11 @@ msgstr "Мейл вже примінёван."
 
 #: src/routes/api/auth/register.js:36
 msgid "Username already in use."
-msgstr ""
+msgstr "Имня вже поуживаюти ся."
 
 #: src/routes/api/auth/register.js:59
 msgid "You took too long, try again."
-msgstr ""
+msgstr "У вас минуло черезміру помного однынї, попробуйте щи раз."
 
 #: src/routes/api/auth/register.js:62
 msgid "You failed your captcha"
@@ -254,39 +251,39 @@ msgstr "Вы не ввожали свую капчу"
 
 #: src/routes/api/auth/register.js:65
 msgid "Unknown Captcha Error"
-msgstr ""
+msgstr "Непозната Хыба ввода Капчи"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
-msgstr ""
+msgstr "Не упастилось вытворити новыго хоснователя :("
 
 #: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
-msgstr ""
+msgstr "Не упастилось уставити сеанс послї евіденції :("
 
-#: src/routes/api/auth/verify.js:26
-#: src/routes/api/auth/verify.js:35
+#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
-msgstr ""
+msgstr "Провірка мейла"
 
 #: src/routes/api/auth/verify.js:27
 msgid "You are now verified :)"
-msgstr ""
+msgstr "Теперь вы потвержены :)"
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
-"Your mail verification code is invalid or already expired :(, please "
-"request a new one."
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
 msgstr ""
+"Ваш мейловый код для потверженя недїйный лебо час ёго дїланя вже сплыват :"
+"( Прошу, запросити новый."
 
 #: src/routes/api/auth/logout.js:11
 msgid "You are not even logged in."
-msgstr ""
+msgstr "Вы даже не зайшли у сістему."
 
-#: src/routes/api/auth/delete_account.js:65
-#: src/routes/api/auth/logout.js:20
+#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
-msgstr ""
+msgstr "Хыба сервера при выходе з сістемы."
 
 #: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
@@ -367,8 +364,8 @@ msgstr ""
 
 #: src/canvasesDesc.js:33
 msgid ""
-"Moon canvas. Safe space for art. No flags or large text (unless part of "
-"art) or art larger than 1.5k x 1.5k pixels."
+"Moon canvas. Safe space for art. No flags or large text (unless part of art) "
+"or art larger than 1.5k x 1.5k pixels."
 msgstr ""
 
 #: src/canvasesDesc.js:34
@@ -427,25 +424,24 @@ msgstr ""
 msgid "Click to Verify"
 msgstr "Натискнути на Потверженя"
 
-#: src/core/MailProvider.js:68
-#: src/core/MailProvider.js:105
+#: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
 msgstr ""
 
 #: src/core/MailProvider.js:69
-msgid "Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgid ""
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
 
-#: src/core/MailProvider.js:70
-#: src/core/MailProvider.js:107
+#: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"
 msgstr "Дякую"
 
 #: src/core/MailProvider.js:87
 #, javascript-format
 msgid ""
-"We already sent you a verification mail, you can request another one in ${ "
-"minLeft } minutes."
+"We already sent you a verification mail, you can request another one in "
+"${ minLeft } minutes."
 msgstr ""
 
 #: src/core/MailProvider.js:103
@@ -458,8 +454,8 @@ msgstr "Привіт"
 
 #: src/core/MailProvider.js:105
 msgid ""
-"You requested to get a new password. You can change your password within "
-"the next 30min here: "
+"You requested to get a new password. You can change your password within the "
+"next 30min here: "
 msgstr ""
 
 #: src/core/MailProvider.js:106
