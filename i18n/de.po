@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-20 08:31+0000\n"
+"PO-Revision-Date: 2024-05-09 14:07+0000\n"
 "Last-Translator: HF <hf@pixelplanet.fun>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/pixelplanet/"
 "client/de/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.4-rc\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -1575,10 +1575,8 @@ msgid "Rollback to Date"
 msgstr "Spule zum Datum zurück"
 
 #: src/components/ModCanvastools.jsx:416
-#, fuzzy
 msgid "Rollback an area of the canvas to a set date and time"
-msgstr ""
-"Spule einen Beraich auf der Leinwand zum angegebenen Datum zurück (00:00 UTC)"
+msgstr "Spule einen Bereich auf der Leinwand zum angegebenen Zeitpunkt zurück"
 
 #: src/components/ModCanvastools.jsx:490
 msgid "Canvas Cleaner"

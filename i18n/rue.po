@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-08 13:07+0000\n"
+"PO-Revision-Date: 2024-05-09 14:07+0000\n"
 "Last-Translator: анит изгоев <oorrrpamperstars@gmail.com>\n"
 "Language-Team: Rusyn <https://hosted.weblate.org/projects/pixelplanet/client/"
 "rue/>\n"
@@ -200,19 +200,19 @@ msgstr ""
 
 #: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
 msgid "Error :("
-msgstr ""
+msgstr "Хыба :("
 
 #: src/ui/templateLoader.js:231
 msgid "Can not export more than 20 or no template!"
-msgstr ""
+msgstr "Не удаєтся експортовати высше 20 шаблонов ци їх навгул нїт!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr ""
+msgstr "Невозможно імпортовати высше 20 шаблонов ци ни єдного з нїх!"
 
 #: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
 msgid "OK"
-msgstr ""
+msgstr "ОК"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -221,22 +221,22 @@ msgstr ""
 #: src/store/actions/fetch.js:59
 #, javascript-format
 msgid "try again after ${ ti }min"
-msgstr ""
+msgstr "повторите пробунку через ${ ti }мин"
 
 #: src/store/actions/fetch.js:70
 #, javascript-format
 msgid "Connection error ${ code } :("
-msgstr ""
+msgstr "Хыба прикапчованя ${ code } :("
 
 #: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
-msgstr ""
+msgstr "Не удалося пудкапчати ся к серверу, прошу, повторите пробунку потум :("
 
 #: src/store/actions/fetch.js:151 src/store/actions/fetch.js:170
 #: src/store/actions/fetch.js:189 src/store/actions/fetch.js:208
 #: src/store/actions/fetch.js:227
 msgid "Unknown Error"
-msgstr ""
+msgstr "Непознатна Хыба"
 
 #: src/store/actions/fetch.js:237
 msgid "Server answered with gibberish :("
@@ -252,72 +252,72 @@ msgstr ""
 
 #: src/store/middleware/notifications.js:54
 msgid "mentioned you"
-msgstr ""
+msgstr "упоминав тя"
 
 #: src/store/middleware/notifications.js:58
 msgid "You have new messages in chat"
-msgstr ""
+msgstr "У вас появились нові сообщеня у чете"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
 #: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Копіровати в Буфер Міньби"
 
 #: src/components/OnlineBox.jsx:56
 msgid "Online Users on Canvas"
-msgstr ""
+msgstr "Онлайн Хоснователи на Верете"
 
 #: src/components/OnlineBox.jsx:71
 msgid "Total Online Users"
-msgstr ""
+msgstr "Цїле Кулькость Онлайн Хоснователей"
 
 #: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:79
 msgid "Placed Pixels"
-msgstr ""
+msgstr "Розміщеные Цятки"
 
 #: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:159
 msgid "Today"
-msgstr ""
+msgstr "Нынї"
 
 #: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:150
 msgid "Total"
-msgstr ""
+msgstr "Увесь"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:19
 msgid "Canvas Selection"
-msgstr ""
+msgstr "Збраня Верета"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Close Chat"
-msgstr ""
+msgstr "Укрыти Чет"
 
 #: src/components/buttons/ChatButton.jsx:88
 msgid "Open Chat"
-msgstr ""
+msgstr "Одомкти Чет"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Close Menu"
-msgstr ""
+msgstr "Укрыти Меню"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Open Menu"
-msgstr ""
+msgstr "Одомкти Меню"
 
 #: src/components/HistorySelect.jsx:156
 msgid "Loading"
-msgstr ""
+msgstr "Обтерьханя"
 
 #: src/components/HistorySelect.jsx:157
 msgid "Select Date above"
-msgstr ""
+msgstr "Выбрате Датуму высше"
 
 #: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
 #: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
-msgstr ""
+msgstr "Укрыти"
 
 #: src/components/Window.jsx:173
 msgid "PopUp"

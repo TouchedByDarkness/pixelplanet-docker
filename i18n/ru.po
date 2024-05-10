@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-14 18:28+0000\n"
-"Last-Translator: sallbet <Sallbet@mail.ru>\n"
+"PO-Revision-Date: 2024-05-09 14:07+0000\n"
+"Last-Translator: Артем Юрченко <artemkaago@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/ru/>\n"
 "Language: ru\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.4-rc\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -1214,24 +1214,20 @@ msgid "Charts"
 msgstr "Графики"
 
 #: src/components/Rankings.jsx:191
-#, fuzzy
 msgid "Total Pixels per Player"
-msgstr "Всего пикселей, размещенных за день"
+msgstr "Всего пикселей размещенных участником"
 
 #: src/components/Rankings.jsx:192
-#, fuzzy
 msgid "Daily Pixels per Player"
-msgstr "Всего пикселей, размещенных за день"
+msgstr "Всего пикселей размещенных за день участником"
 
 #: src/components/Rankings.jsx:193
-#, fuzzy
 msgid "Top 10 Players from Yesterday"
-msgstr "Топ-10 игроков [пикселей/день]"
+msgstr "Топ-10 игроков за вчера"
 
 #: src/components/Rankings.jsx:197
-#, fuzzy
 msgid "Daily Pixels per Country"
-msgstr "Игроки и пиксели в час"
+msgstr "Пиксели поставленные странами за день"
 
 #: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
 #: src/components/Rankings.jsx:233
@@ -1244,7 +1240,7 @@ msgstr "Страна"
 
 #: src/components/Rankings.jsx:243
 msgid "+last hour"
-msgstr ""
+msgstr "+последний час"
 
 #: src/components/Rankings.jsx:314
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
@@ -1584,9 +1580,8 @@ msgid "Rollback to Date"
 msgstr "Откатить до даты"
 
 #: src/components/ModCanvastools.jsx:416
-#, fuzzy
 msgid "Rollback an area of the canvas to a set date and time"
-msgstr "Откатить область полотна до установленной даты (00:00 UTC)"
+msgstr "Откатить область полотна до установленной даты и времени"
 
 #: src/components/ModCanvastools.jsx:490
 msgid "Canvas Cleaner"
@@ -1694,17 +1689,19 @@ msgstr "Всего пикселей, размещенных за день"
 
 #: src/components/CooldownChanges.jsx:20
 msgid "Current Cooldown Changes per Country"
-msgstr ""
+msgstr "Текущий кулдаун изменений на страну"
 
 #: src/components/CooldownChanges.jsx:25
 msgid "Factor"
-msgstr ""
+msgstr "Фактор"
 
 #: src/components/CooldownChanges.jsx:46
 msgid ""
 "Cooldown is usually automatically changed for a country that is dominating. "
 "In example in the case of a streamer raid."
 msgstr ""
+"Кулдаун обычно автоматически изменяется для страны, которая доминирует. "
+"Например, когда идёт рейд стримера."
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"

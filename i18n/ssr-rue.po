@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-08 13:07+0000\n"
+"PO-Revision-Date: 2024-05-09 14:07+0000\n"
 "Last-Translator: анит изгоев <oorrrpamperstars@gmail.com>\n"
 "Language-Team: Rusyn <https://hosted.weblate.org/projects/pixelplanet/server/"
 "rue/>\n"
@@ -289,7 +289,7 @@ msgstr "Хыба сервера при выходе з сістемы."
 #: src/routes/api/auth/change_passwd.js:34
 #: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
-msgstr ""
+msgstr "Вы не пруйшли провірку автентичности."
 
 #: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
@@ -299,15 +299,15 @@ msgstr "Погрішный парол!"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr ""
+msgstr "Замученые Хоснователи не могуч удалити свуй акаунт."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr ""
+msgstr "Замученые Хоснователи не могуч се зробити."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
-msgstr ""
+msgstr "PixelPlanet.fun Акаунты"
 
 #: src/ssr/RedirectionPage.jsx:29
 msgid "You will be automatically redirected after 15s"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 22:53+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-05-10 18:23+0000\n"
+"Last-Translator: serdar <muradovsrdar@gmail.com>\n"
 "Language-Team: Azerbaijani <https://hosted.weblate.org/projects/pixelplanet/"
 "client/az/>\n"
 "Language: az\n"
@@ -11,28 +11,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.5.4\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
-msgstr "${ canvasName } lövhəsinə keçildi"
+msgstr "${ canvasName } taxtasına keçildi"
 
 #: src/controls/keypress.js:176
 msgid "Grid ON"
-msgstr "Tor aktivdir"
+msgstr "Tor qoşuldu"
 
 #: src/controls/keypress.js:177
 msgid "Grid OFF"
-msgstr "Tor bağlıdır"
+msgstr "Tor bağlandı"
 
 #: src/controls/keypress.js:187
 msgid "Pixel Notify ON"
-msgstr "Piksel Bildirimi aktivdir"
+msgstr "Piksel bildirişi qoşuldu"
 
 #: src/controls/keypress.js:188
 msgid "Pixel Notify OFF"
-msgstr "Piksel Bildirimi bağlıdır"
+msgstr "Piksel bildirişi bağlandı"
 
 #: src/controls/keypress.js:193
 msgid "Muted Sound"
@@ -45,42 +45,42 @@ msgstr "Səs açıldı"
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:203
 msgid "Copied"
-msgstr "Kopyalandı"
+msgstr "Köçürüldü"
 
 #: src/controls/keypress.js:209
 msgid "Overlay ON"
-msgstr "Şablon açıqdır"
+msgstr "Şablon qoşuldu"
 
 #: src/controls/keypress.js:210
 msgid "Overlay OFF"
-msgstr "Şablon bağlıdır"
+msgstr "Şablon bağlandı"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
-msgstr "Easter Egg açıqdır"
+msgstr "Easter Egg qoşuldu"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
-msgstr "Easter Egg bağlıdır"
+msgstr "Easter Egg bağlandı"
 
 #: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
 msgstr "Zamanaşımı"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
-#, fuzzy
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
-msgstr "Pixelplanetdən cavab alınmadı.Səyifəni yeniləməyi yoxlayın?"
+msgstr ""
+"Pixelplanetdən yanıd alınmadı. Əgər sorun davam edirsə səhifəni yeniləyin."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
-msgstr "Keçərsiz Löhvə"
+msgstr "Keçərsiz taxta"
 
 #: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
-msgstr "Bu löhvə mövcud deyil"
+msgstr "Bu taxta mövcud deyil"
 
 #: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
 #: src/ui/PixelTransferController.js:116
@@ -89,7 +89,7 @@ msgstr "Keçərsiz koordinatlar"
 
 #: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
-msgstr "x sərhədlərinin kənarında"
+msgstr "x sərhədlərinin keçib"
 
 #: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
