@@ -232,33 +232,33 @@ msgstr "Мына әрекетті әкімшілер ғана жасай ала�
 msgid "You are not banned"
 msgstr "Сіз бұғаттауда емессіз"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Осы эл. пошта сервисіне тыйым салынған"
-
-#: src/routes/api/auth/register.js:31
+#: src/routes/api/auth/register.js:27
 msgid "No Captcha given"
 msgstr "Captcha берілмеген"
 
-#: src/routes/api/auth/register.js:34
+#: src/routes/api/auth/register.js:30
 msgid "E-Mail already in use."
 msgstr "Бұл эл. поштаны біреу алып қойған."
 
-#: src/routes/api/auth/register.js:36
+#: src/routes/api/auth/register.js:32
 msgid "Username already in use."
 msgstr "Бұл қолданушы атын біреу алып қойған."
 
-#: src/routes/api/auth/register.js:59
+#: src/routes/api/auth/register.js:55
 msgid "You took too long, try again."
 msgstr "Тым көп уақыт өтті, қайта байқап көріңіз."
 
-#: src/routes/api/auth/register.js:62
+#: src/routes/api/auth/register.js:58
 msgid "You failed your captcha"
 msgstr "Captcha-ны шешпедіңіз"
 
-#: src/routes/api/auth/register.js:65
+#: src/routes/api/auth/register.js:61
 msgid "Unknown Captcha Error"
 msgstr "Белгісіз Captcha қатесі"
+
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+msgid "This email provider is not allowed"
+msgstr "Осы эл. пошта сервисіне тыйым салынған"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("

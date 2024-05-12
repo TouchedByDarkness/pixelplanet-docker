@@ -232,33 +232,33 @@ msgstr "Només els administradors poden fer això"
 msgid "You are not banned"
 msgstr "No estàs verificat."
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr ""
-
-#: src/routes/api/auth/register.js:31
+#: src/routes/api/auth/register.js:27
 msgid "No Captcha given"
 msgstr "No s'ha rebut el captcha"
 
-#: src/routes/api/auth/register.js:34
+#: src/routes/api/auth/register.js:30
 msgid "E-Mail already in use."
 msgstr "El correu electrònic ja està en ús."
 
-#: src/routes/api/auth/register.js:36
+#: src/routes/api/auth/register.js:32
 msgid "Username already in use."
 msgstr "El nom d'usuari ja està en ús."
 
-#: src/routes/api/auth/register.js:59
+#: src/routes/api/auth/register.js:55
 msgid "You took too long, try again."
 msgstr "Has trigat massa, prova-ho un altre cop."
 
-#: src/routes/api/auth/register.js:62
+#: src/routes/api/auth/register.js:58
 msgid "You failed your captcha"
 msgstr "Has fallat el captcha"
 
-#: src/routes/api/auth/register.js:65
+#: src/routes/api/auth/register.js:61
 msgid "Unknown Captcha Error"
 msgstr "Error de captcha desconegut"
+
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+msgid "This email provider is not allowed"
+msgstr ""
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("

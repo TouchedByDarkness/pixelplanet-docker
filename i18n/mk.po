@@ -259,7 +259,7 @@ msgid "You have new messages in chat"
 msgstr ""
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
-#: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
+#: src/components/ModWatchtools.jsx:388 src/components/ModWatchtools.jsx:406
 msgid "Copy to Clipboard"
 msgstr ""
 
@@ -284,15 +284,15 @@ msgid "Total"
 msgstr "Вкупно"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
-#: src/components/windows/index.js:19
+#: src/components/windows/index.js:20
 msgid "Canvas Selection"
 msgstr ""
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Close Chat"
 msgstr ""
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Open Chat"
 msgstr ""
 
@@ -312,8 +312,8 @@ msgstr "Очитување"
 msgid "Select Date above"
 msgstr ""
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
-#: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:227
+#: src/components/ModWatchtools.jsx:118 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
@@ -344,16 +344,16 @@ msgid "Resize"
 msgstr ""
 
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
-#: src/components/windows/index.js:13
+#: src/components/windows/index.js:14
 msgid "Help"
 msgstr "Помош"
 
 #: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:14
+#: src/components/windows/index.js:15
 msgid "Settings"
 msgstr "Подесување"
 
-#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:15
+#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr ""
 
@@ -389,20 +389,24 @@ msgstr ""
 msgid "Disable Overlay Pencil"
 msgstr ""
 
-#: src/components/windows/index.js:16
+#: src/components/windows/index.js:17
 msgid "Registration"
 msgstr "Регистрација"
 
-#: src/components/windows/index.js:17
+#: src/components/windows/index.js:18
 msgid "Forgot Password"
 msgstr "Заборавена лозинка"
 
-#: src/components/windows/index.js:18
+#: src/components/windows/index.js:19
 msgid "Chat"
 msgstr ""
 
-#: src/components/windows/index.js:20
+#: src/components/windows/index.js:21
 msgid "Canvas Archive"
+msgstr ""
+
+#: src/components/windows/index.js:22
+msgid "Player"
 msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:47
@@ -487,123 +491,6 @@ msgstr "Сега кога ја погледна оваа порака, пове�
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Зошто?"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Show Grid"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:77
-msgid "Turn on grid to highlight pixel borders."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show Pixel Activity"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:85
-msgid "Show circles where pixels are placed."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show Movement Controls"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:93
-msgid "Always show movement control buttons"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:96
-msgid "Disable Game Sounds"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:102
-msgid "All sound effects will be disabled."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:106
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:112
-msgid "Enable chat notifications"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:116
-msgid "Play a sound when new chat messages arrive"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:119
-msgid "Auto Zoom In"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:124
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:127
-msgid "Compact Palette"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:132
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:135
-msgid "Potato Mode"
-msgstr "Компир Мод"
-
-#: src/components/windows/Settings.jsx:139
-msgid "For when you are playing on a potato."
-msgstr ""
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
-msgid "Light Grid"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:146
-msgid "Show Grid in white instead of black."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:149
-msgid "Custom Cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:153
-msgid "Use our custom cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:157
-msgid "Historical View"
-msgstr "Историјски поглед"
-
-#: src/components/windows/Settings.jsx:162
-msgid "Check out past versions of the canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:166
-#, fuzzy, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Сменето на ${ canvasName }"
-
-#: src/components/windows/Settings.jsx:174
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:178
-msgid "Themes"
-msgstr "Теми"
-
-#: src/components/windows/Settings.jsx:183
-msgid "How pixelplanet should look like."
-msgstr "Како пиксел планет би требала да изгледа."
-
-#: src/components/windows/Settings.jsx:190
-msgid "Select Language"
-msgstr "Изберете Јазик"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -779,6 +666,123 @@ msgstr ""
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr ""
 
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:106
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Компир Мод"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr ""
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Историјски поглед"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:166
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Сменето на ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Теми"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "Како пиксел планет би требала да изгледа."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Изберете Јазик"
+
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -802,22 +806,6 @@ msgstr "Вчитување..."
 
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
-msgstr ""
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Архива"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
 msgstr ""
 
 #: src/components/windows/Register.jsx:87
@@ -851,13 +839,29 @@ msgid "Captcha"
 msgstr "Каптча"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:315 src/components/ModCanvastools.jsx:406
-#: src/components/ModCanvastools.jsx:484 src/components/ModCanvastools.jsx:585
+#: src/components/ModCanvastools.jsx:313 src/components/ModCanvastools.jsx:404
+#: src/components/ModCanvastools.jsx:482 src/components/ModCanvastools.jsx:583
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Потврди"
+
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Архива"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -907,6 +911,10 @@ msgstr ""
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
 msgstr "Поставки на каналот"
+
+#: src/components/windows/Player.jsx:17
+msgid "This URL is not supported by our Media Player"
+msgstr ""
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -996,6 +1004,14 @@ msgstr ""
 msgid "Password must be shorter than 60 characters."
 msgstr ""
 
+#: src/components/GetIID.jsx:44
+msgid "Get IID"
+msgstr ""
+
+#: src/components/GetIID.jsx:53
+msgid "Copy"
+msgstr "Копирај"
+
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
@@ -1053,14 +1069,6 @@ msgstr ""
 #: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr ""
-
-#: src/components/GetIID.jsx:44
-msgid "Get IID"
-msgstr ""
-
-#: src/components/GetIID.jsx:53
-msgid "Copy"
-msgstr "Копирај"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1127,52 +1135,7 @@ msgstr ""
 msgid "Social Settings"
 msgstr ""
 
-#: src/components/Rankings.jsx:168
-msgid "Yesterday"
-msgstr "Вчера"
-
-#: src/components/Rankings.jsx:177
-msgid "Countries Today"
-msgstr "Држави Денеска"
-
-#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
-msgid "Charts"
-msgstr ""
-
-#: src/components/Rankings.jsx:191
-msgid "Total Pixels per Player"
-msgstr ""
-
-#: src/components/Rankings.jsx:192
-msgid "Daily Pixels per Player"
-msgstr ""
-
-#: src/components/Rankings.jsx:193
-msgid "Top 10 Players from Yesterday"
-msgstr ""
-
-#: src/components/Rankings.jsx:197
-msgid "Daily Pixels per Country"
-msgstr ""
-
-#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
-#: src/components/Rankings.jsx:233
-msgid "User"
-msgstr "Корисник"
-
-#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
-msgid "Country"
-msgstr "Држава"
-
-#: src/components/Rankings.jsx:243
-msgid "+last hour"
-msgstr ""
-
-#: src/components/Rankings.jsx:314
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr ""
-
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:233
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:231
 msgid "Choose Canvas"
 msgstr ""
 
@@ -1249,6 +1212,51 @@ msgstr ""
 msgid "Download Template"
 msgstr "Исталирај Темплејт"
 
+#: src/components/Rankings.jsx:168
+msgid "Yesterday"
+msgstr "Вчера"
+
+#: src/components/Rankings.jsx:177
+msgid "Countries Today"
+msgstr "Држави Денеска"
+
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
+msgid "Charts"
+msgstr ""
+
+#: src/components/Rankings.jsx:191
+msgid "Total Pixels per Player"
+msgstr ""
+
+#: src/components/Rankings.jsx:192
+msgid "Daily Pixels per Player"
+msgstr ""
+
+#: src/components/Rankings.jsx:193
+msgid "Top 10 Players from Yesterday"
+msgstr ""
+
+#: src/components/Rankings.jsx:197
+msgid "Daily Pixels per Country"
+msgstr ""
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
+msgid "User"
+msgstr "Корисник"
+
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
+msgid "Country"
+msgstr "Држава"
+
+#: src/components/Rankings.jsx:243
+msgid "+last hour"
+msgstr ""
+
+#: src/components/Rankings.jsx:314
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Онлајн Корисници"
@@ -1295,23 +1303,6 @@ msgstr ""
 msgid "Dimensions"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-msgid "Coordinates"
-msgstr "Кординати"
-
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Иди до"
-
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
 msgstr "Избери фајл"
@@ -1319,6 +1310,15 @@ msgstr "Избери фајл"
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
 msgstr "Името на темплејтот"
+
+#: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr "Кординати"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1331,20 +1331,6 @@ msgstr ""
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr ""
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr ""
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Кликнете тука за да побарате нова верификација на емаилот."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1380,6 +1366,20 @@ msgstr ""
 msgid "New Mail"
 msgstr "Нов емаил"
 
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr ""
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Кликнете тука за да побарате нова верификација на емаилот."
+
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
 msgstr "Да , избришете го мојот Акаунт!"
@@ -1408,98 +1408,98 @@ msgstr "Одблокирај корисници"
 msgid "You have no users blocked"
 msgstr "Ти немаш блокирано никого"
 
-#: src/components/ModCanvastools.jsx:171
+#: src/components/ModCanvastools.jsx:169
 msgid "Build image on canvas."
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:174
+#: src/components/ModCanvastools.jsx:172
 msgid "Build image and set it to protected."
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:177
+#: src/components/ModCanvastools.jsx:175
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:187
+#: src/components/ModCanvastools.jsx:185
 msgid "Clean spare pixels that are surrounded by unset pixels"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:191
+#: src/components/ModCanvastools.jsx:189
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:195
+#: src/components/ModCanvastools.jsx:193
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
 "two cooldowns)!)"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:199
+#: src/components/ModCanvastools.jsx:197
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:210
+#: src/components/ModCanvastools.jsx:208
 msgid "Status: Not running"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:252
+#: src/components/ModCanvastools.jsx:250
 msgid "Image Upload"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:253
+#: src/components/ModCanvastools.jsx:251
 msgid "Upload images to canvas"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:255
+#: src/components/ModCanvastools.jsx:253
 msgid "File"
 msgstr "Фајл"
 
-#: src/components/ModCanvastools.jsx:276
+#: src/components/ModCanvastools.jsx:274
 msgid "Coordinates:"
 msgstr "Кординати:"
 
-#: src/components/ModCanvastools.jsx:320
+#: src/components/ModCanvastools.jsx:318
 msgid "Pixel Protection"
 msgstr "Пиксел Протекција"
 
-#: src/components/ModCanvastools.jsx:324
+#: src/components/ModCanvastools.jsx:322
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:344 src/components/ModCanvastools.jsx:421
-#: src/components/ModCanvastools.jsx:515 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:342 src/components/ModCanvastools.jsx:419
+#: src/components/ModCanvastools.jsx:513 src/components/ModWatchtools.jsx:174
 msgid "Top-left corner"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:366 src/components/ModCanvastools.jsx:443
-#: src/components/ModCanvastools.jsx:537 src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:364 src/components/ModCanvastools.jsx:441
+#: src/components/ModCanvastools.jsx:535 src/components/ModWatchtools.jsx:196
 msgid "Bottom-right corner"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:412
+#: src/components/ModCanvastools.jsx:410
 msgid "Rollback to Date"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:416
+#: src/components/ModCanvastools.jsx:414
 msgid "Rollback an area of the canvas to a set date and time"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:490
+#: src/components/ModCanvastools.jsx:488
 msgid "Canvas Cleaner"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:492
+#: src/components/ModCanvastools.jsx:490
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:603
+#: src/components/ModCanvastools.jsx:601
 msgid "Stop Cleaner"
 msgstr ""
 
@@ -1535,29 +1535,37 @@ msgstr ""
 msgid "User Name"
 msgstr "Името на Корисникот"
 
-#: src/components/ModWatchtools.jsx:48
+#: src/components/ModWatchtools.jsx:49
 msgid "Interval is invalid"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:124
+#: src/components/ModWatchtools.jsx:122
 msgid "Check who placed in an area"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:144
+#: src/components/ModWatchtools.jsx:142
 msgid "Interval"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:159
+#: src/components/ModWatchtools.jsx:157
 msgid "IID (optional)"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:249
+#: src/components/ModWatchtools.jsx:247
 msgid "Get Pixels"
 msgstr ""
 
-#: src/components/ModWatchtools.jsx:281
+#: src/components/ModWatchtools.jsx:279
 msgid "Get Users"
 msgstr ""
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Иди до"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1625,6 +1633,18 @@ msgstr "Блокирај"
 msgid "Mute"
 msgstr ""
 
+#: src/components/MdLink.jsx:93
+msgid "Open in PopUp"
+msgstr ""
+
+#: src/components/MdLink.jsx:104
+msgid "Hide Embed"
+msgstr ""
+
+#: src/components/MdLink.jsx:110
+msgid "Show Embedded"
+msgstr ""
+
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
@@ -1635,25 +1655,10 @@ msgctxt "keybinds"
 msgid "X"
 msgstr "Х"
 
-#: src/components/windows/Settings.jsx:89
-msgctxt "keybinds"
-msgid "N"
-msgstr "Н"
-
-#: src/components/windows/Settings.jsx:97
-msgctxt "keybinds"
-msgid "M"
-msgstr "М"
-
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
-
-#: src/components/windows/Settings.jsx:169
-msgctxt "keybinds"
-msgid "B"
-msgstr "Б"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1694,6 +1699,21 @@ msgstr "Д"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Шифт"
+
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr "Н"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "М"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr "Б"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

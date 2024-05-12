@@ -228,33 +228,33 @@ msgstr "Numai admini pot face asta"
 msgid "You are not banned"
 msgstr "Nu ești banat"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Acest furnizor de mail nu este permis"
-
-#: src/routes/api/auth/register.js:31
+#: src/routes/api/auth/register.js:27
 msgid "No Captcha given"
 msgstr "Niciun captcha dat"
 
-#: src/routes/api/auth/register.js:34
+#: src/routes/api/auth/register.js:30
 msgid "E-Mail already in use."
 msgstr "E-Mailul este deja înregistrat."
 
-#: src/routes/api/auth/register.js:36
+#: src/routes/api/auth/register.js:32
 msgid "Username already in use."
 msgstr "Numele de utiizator este deja folosită."
 
-#: src/routes/api/auth/register.js:59
+#: src/routes/api/auth/register.js:55
 msgid "You took too long, try again."
 msgstr "Ți-a luat prea mult, încearcă din nou."
 
-#: src/routes/api/auth/register.js:62
+#: src/routes/api/auth/register.js:58
 msgid "You failed your captcha"
 msgstr "Nu ai trecut captchaul tău"
 
-#: src/routes/api/auth/register.js:65
+#: src/routes/api/auth/register.js:61
 msgid "Unknown Captcha Error"
 msgstr "Eroare de Captcha necunoscută"
+
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+msgid "This email provider is not allowed"
+msgstr "Acest furnizor de mail nu este permis"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("

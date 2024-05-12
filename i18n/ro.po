@@ -263,7 +263,7 @@ msgid "You have new messages in chat"
 msgstr "Ai mesaje noi pe chat"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
-#: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
+#: src/components/ModWatchtools.jsx:388 src/components/ModWatchtools.jsx:406
 msgid "Copy to Clipboard"
 msgstr "Copiază către Clipboard"
 
@@ -288,15 +288,15 @@ msgid "Total"
 msgstr "Total"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
-#: src/components/windows/index.js:19
+#: src/components/windows/index.js:20
 msgid "Canvas Selection"
 msgstr "Selectare a Canvasurilor"
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Close Chat"
 msgstr "Închide Chatul"
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Open Chat"
 msgstr "Deschide Chatul"
 
@@ -316,8 +316,8 @@ msgstr "Se încarcă"
 msgid "Select Date above"
 msgstr "Selectează Data deasupra"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
-#: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:227
+#: src/components/ModWatchtools.jsx:118 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
@@ -348,16 +348,16 @@ msgid "Resize"
 msgstr "Redimenzionează"
 
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
-#: src/components/windows/index.js:13
+#: src/components/windows/index.js:14
 msgid "Help"
 msgstr "Ajutor"
 
 #: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:14
+#: src/components/windows/index.js:15
 msgid "Settings"
 msgstr "Setări"
 
-#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:15
+#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Zonă de Utilizator"
 
@@ -393,21 +393,25 @@ msgstr "Creion de istorie Dezactivat"
 msgid "Disable Overlay Pencil"
 msgstr "Dezactivează Creion de Overlay"
 
-#: src/components/windows/index.js:16
+#: src/components/windows/index.js:17
 msgid "Registration"
 msgstr "Înregistrare"
 
-#: src/components/windows/index.js:17
+#: src/components/windows/index.js:18
 msgid "Forgot Password"
 msgstr "Uitat Parola"
 
-#: src/components/windows/index.js:18
+#: src/components/windows/index.js:19
 msgid "Chat"
 msgstr "Chat"
 
-#: src/components/windows/index.js:20
+#: src/components/windows/index.js:21
 msgid "Canvas Archive"
 msgstr "Arhivă de canvas"
+
+#: src/components/windows/index.js:22
+msgid "Player"
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -489,127 +493,6 @@ msgstr "Acum că ai văzut acest mesaj, nu mai ești banat."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "De ce?"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Show Grid"
-msgstr "Arată Grila"
-
-#: src/components/windows/Settings.jsx:77
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Pornește grila pentru a marca marginea pixelilor."
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show Pixel Activity"
-msgstr "Arată activitatea pixelilor"
-
-#: src/components/windows/Settings.jsx:85
-msgid "Show circles where pixels are placed."
-msgstr "Arată cercurile unde pixelii sunt puși."
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show Movement Controls"
-msgstr "Totdeauna arată Controalele de Mișcare"
-
-#: src/components/windows/Settings.jsx:93
-msgid "Always show movement control buttons"
-msgstr "Totdeauna arată butoanele Controalelor de Mișcare"
-
-#: src/components/windows/Settings.jsx:96
-msgid "Disable Game Sounds"
-msgstr "Oprește suntelele jocului"
-
-#: src/components/windows/Settings.jsx:102
-msgid "All sound effects will be disabled."
-msgstr "Toate sunetele jocului vor fi oprite."
-
-#: src/components/windows/Settings.jsx:106
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"Browserul dvs. nu ne permite să folosim AudioContext pentru a reda sunete. "
-"Aveți vreo funcție de confidențialitate care ne blochează?"
-
-#: src/components/windows/Settings.jsx:112
-msgid "Enable chat notifications"
-msgstr "Permite notificările de chat"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Play a sound when new chat messages arrive"
-msgstr "Redă un sunet atunci când sunt trimise mesaje noi pe chat"
-
-#: src/components/windows/Settings.jsx:119
-msgid "Auto Zoom In"
-msgstr "Zoom In automat"
-
-#: src/components/windows/Settings.jsx:124
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Zoom in în loc să pui in pixel atunci când apeși canvasul și zoomul tău este "
-"mic."
-
-#: src/components/windows/Settings.jsx:127
-msgid "Compact Palette"
-msgstr "Paletă Compactă"
-
-#: src/components/windows/Settings.jsx:132
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Arată Paleta într-o formă compactă ca să ocupe mai puțin spațiu."
-
-#: src/components/windows/Settings.jsx:135
-msgid "Potato Mode"
-msgstr "Modul Cartof"
-
-#: src/components/windows/Settings.jsx:139
-msgid "For when you are playing on a potato."
-msgstr "Pentru atunci când te joci pe un cartof."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
-msgid "Light Grid"
-msgstr "Grilă Albă"
-
-#: src/components/windows/Settings.jsx:146
-msgid "Show Grid in white instead of black."
-msgstr "Arată Grila în alb în loc de negru."
-
-#: src/components/windows/Settings.jsx:149
-msgid "Custom Cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:153
-msgid "Use our custom cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:157
-msgid "Historical View"
-msgstr "Vedere Istorică"
-
-#: src/components/windows/Settings.jsx:162
-msgid "Check out past versions of the canvas."
-msgstr "Vezi versiunile de trecut ale canvasului."
-
-#: src/components/windows/Settings.jsx:166
-#, fuzzy, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Schimbat canvasul la ${ canvasName }"
-
-#: src/components/windows/Settings.jsx:174
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:178
-msgid "Themes"
-msgstr "Teme"
-
-#: src/components/windows/Settings.jsx:183
-msgid "How pixelplanet should look like."
-msgstr "Cum pixelplanet ar trebui să arate."
-
-#: src/components/windows/Settings.jsx:190
-msgid "Select Language"
-msgstr "Selectează limba"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -816,6 +699,127 @@ msgstr "Credit pentru Paleta de pe Top10 se duce la ${ vinikLink }."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Credit pentru Paleta de pe 2bit se duce la ${ donendoLink }."
 
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "Arată Grila"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Pornește grila pentru a marca marginea pixelilor."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Arată activitatea pixelilor"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "Arată cercurile unde pixelii sunt puși."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr "Totdeauna arată Controalele de Mișcare"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr "Totdeauna arată butoanele Controalelor de Mișcare"
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "Oprește suntelele jocului"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "Toate sunetele jocului vor fi oprite."
+
+#: src/components/windows/Settings.jsx:106
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Browserul dvs. nu ne permite să folosim AudioContext pentru a reda sunete. "
+"Aveți vreo funcție de confidențialitate care ne blochează?"
+
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "Permite notificările de chat"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "Redă un sunet atunci când sunt trimise mesaje noi pe chat"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "Zoom In automat"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Zoom in în loc să pui in pixel atunci când apeși canvasul și zoomul tău este "
+"mic."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "Paletă Compactă"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Arată Paleta într-o formă compactă ca să ocupe mai puțin spațiu."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Modul Cartof"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "Pentru atunci când te joci pe un cartof."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "Grilă Albă"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "Arată Grila în alb în loc de negru."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Vedere Istorică"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "Vezi versiunile de trecut ale canvasului."
+
+#: src/components/windows/Settings.jsx:166
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Schimbat canvasul la ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Teme"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "Cum pixelplanet ar trebui să arate."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Selectează limba"
+
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -840,25 +844,6 @@ msgstr "Se încarcă..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Consideră să intri pe Guildedul nostru:"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Selectează canvasul pe care vrei să îl folosești. \n"
-"Fiecare canvas este unic și are palete diferite, cooldownuri și obligații. \n"
-"Arhiva canvasurilor închise poate fi accesată aici:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arhivă"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Convasuri retrase (doar istorie)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -891,13 +876,32 @@ msgid "Captcha"
 msgstr "Captcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:315 src/components/ModCanvastools.jsx:406
-#: src/components/ModCanvastools.jsx:484 src/components/ModCanvastools.jsx:585
+#: src/components/ModCanvastools.jsx:313 src/components/ModCanvastools.jsx:404
+#: src/components/ModCanvastools.jsx:482 src/components/ModCanvastools.jsx:583
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Încarcă"
+
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Selectează canvasul pe care vrei să îl folosești. \n"
+"Fiecare canvas este unic și are palete diferite, cooldownuri și obligații. \n"
+"Arhiva canvasurilor închise poate fi accesată aici:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arhivă"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Convasuri retrase (doar istorie)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -960,6 +964,10 @@ msgstr "Trebuie să fi logat pentru a vorbi"
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
 msgstr "Setări de Canal"
+
+#: src/components/windows/Player.jsx:17
+msgid "This URL is not supported by our Media Player"
+msgstr ""
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -1049,6 +1057,14 @@ msgstr "Parola trebuie să aibă cel puțin 6 litere."
 msgid "Password must be shorter than 60 characters."
 msgstr "Parola trebuie să aibă mai puțin de 60 de litere."
 
+#: src/components/GetIID.jsx:44
+msgid "Get IID"
+msgstr "Primește IIDul"
+
+#: src/components/GetIID.jsx:53
+msgid "Copy"
+msgstr "Copiază"
+
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
@@ -1111,14 +1127,6 @@ msgstr "Exportă șabloanele activate"
 #: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr "Iportează șabloane"
-
-#: src/components/GetIID.jsx:44
-msgid "Get IID"
-msgstr "Primește IIDul"
-
-#: src/components/GetIID.jsx:53
-msgid "Copy"
-msgstr "Copiază"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1185,58 +1193,7 @@ msgstr "Șterge Contul"
 msgid "Social Settings"
 msgstr "Setări Sociale"
 
-#: src/components/Rankings.jsx:168
-msgid "Yesterday"
-msgstr "Ieri"
-
-#: src/components/Rankings.jsx:177
-msgid "Countries Today"
-msgstr "Tări Azi"
-
-#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
-msgid "Charts"
-msgstr "Grafice"
-
-#: src/components/Rankings.jsx:191
-#, fuzzy
-msgid "Total Pixels per Player"
-msgstr "Pixeli puși în total pe zi"
-
-#: src/components/Rankings.jsx:192
-#, fuzzy
-msgid "Daily Pixels per Player"
-msgstr "Pixeli puși în total pe zi"
-
-#: src/components/Rankings.jsx:193
-#, fuzzy
-msgid "Top 10 Players from Yesterday"
-msgstr "Top 10 Jucători [pixeli / zi]"
-
-#: src/components/Rankings.jsx:197
-#, fuzzy
-msgid "Daily Pixels per Country"
-msgstr "Jucători și pixeli pe oră"
-
-#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
-#: src/components/Rankings.jsx:233
-msgid "User"
-msgstr "Utilizator"
-
-#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
-msgid "Country"
-msgstr "Țară"
-
-#: src/components/Rankings.jsx:243
-msgid "+last hour"
-msgstr ""
-
-#: src/components/Rankings.jsx:314
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr ""
-"Actualizări de clasament la fiecare 5 minute. Clasamentul zilnic este "
-"resetat la 2:00 AM în zona noastră de timp."
-
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:233
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:231
 msgid "Choose Canvas"
 msgstr "Alege Canvasul"
 
@@ -1313,6 +1270,57 @@ msgstr "Resetează"
 msgid "Download Template"
 msgstr "Descarcă Templateul"
 
+#: src/components/Rankings.jsx:168
+msgid "Yesterday"
+msgstr "Ieri"
+
+#: src/components/Rankings.jsx:177
+msgid "Countries Today"
+msgstr "Tări Azi"
+
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
+msgid "Charts"
+msgstr "Grafice"
+
+#: src/components/Rankings.jsx:191
+#, fuzzy
+msgid "Total Pixels per Player"
+msgstr "Pixeli puși în total pe zi"
+
+#: src/components/Rankings.jsx:192
+#, fuzzy
+msgid "Daily Pixels per Player"
+msgstr "Pixeli puși în total pe zi"
+
+#: src/components/Rankings.jsx:193
+#, fuzzy
+msgid "Top 10 Players from Yesterday"
+msgstr "Top 10 Jucători [pixeli / zi]"
+
+#: src/components/Rankings.jsx:197
+#, fuzzy
+msgid "Daily Pixels per Country"
+msgstr "Jucători și pixeli pe oră"
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
+msgid "User"
+msgstr "Utilizator"
+
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
+msgid "Country"
+msgstr "Țară"
+
+#: src/components/Rankings.jsx:243
+msgid "+last hour"
+msgstr ""
+
+#: src/components/Rankings.jsx:314
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"Actualizări de clasament la fiecare 5 minute. Clasamentul zilnic este "
+"resetat la 2:00 AM în zona noastră de timp."
+
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Utilizatori Online"
@@ -1359,23 +1367,6 @@ msgstr "Top 10 pe Clasamentul Zilnic"
 msgid "Dimensions"
 msgstr "Dimensiuni"
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr "Canvas"
-
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-msgid "Coordinates"
-msgstr "Coordonate"
-
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Schimbă"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Mergi la"
-
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
 msgstr "Selectează Fișier"
@@ -1383,6 +1374,15 @@ msgstr "Selectează Fișier"
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
 msgstr "Numele Șablon"
+
+#: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "Canvas"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr "Coordonate"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1395,22 +1395,6 @@ msgstr "Nume sau Email"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "LogIn"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Te rog să îți verifici adresa de mail sau contul poate să îți fie șters după "
-"câteva zile."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Un nou mail de verificare este trimis către tine."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Dă click aici pentru a cere un nou mail de verificare."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1448,6 +1432,22 @@ msgstr ""
 msgid "New Mail"
 msgstr "Mail Nou"
 
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Te rog să îți verifici adresa de mail sau contul poate să îți fie șters după "
+"câteva zile."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Un nou mail de verificare este trimis către tine."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Dă click aici pentru a cere un nou mail de verificare."
+
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
 msgstr "Da, Șterge-Mi Contul!"
@@ -1476,24 +1476,24 @@ msgstr "Deblochează Utilizatori"
 msgid "You have no users blocked"
 msgstr "Nu ai niciun utilizator blocat"
 
-#: src/components/ModCanvastools.jsx:171
+#: src/components/ModCanvastools.jsx:169
 msgid "Build image on canvas."
 msgstr "Construiește imagine pe Canvas."
 
-#: src/components/ModCanvastools.jsx:174
+#: src/components/ModCanvastools.jsx:172
 msgid "Build image and set it to protected."
 msgstr "Construiește imagine și seteaz-o pe protejat."
 
-#: src/components/ModCanvastools.jsx:177
+#: src/components/ModCanvastools.jsx:175
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr ""
 "Construiește imagine, dar resetează cooldown la pixeli cu cooldown nesetat."
 
-#: src/components/ModCanvastools.jsx:187
+#: src/components/ModCanvastools.jsx:185
 msgid "Clean spare pixels that are surrounded by unset pixels"
 msgstr "Șterge pixelii de rezervă care sunt înconjurați de pixeli nesetați"
 
-#: src/components/ModCanvastools.jsx:191
+#: src/components/ModCanvastools.jsx:189
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
@@ -1501,7 +1501,7 @@ msgstr ""
 "Curățați pixelii de rezervă care sunt înconjurați de pixeli nesetati și până "
 "la 1 alți pixeli setați"
 
-#: src/components/ModCanvastools.jsx:195
+#: src/components/ModCanvastools.jsx:193
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
@@ -1511,7 +1511,7 @@ msgstr ""
 "sau pixeli nesetati (FOARTE AGRESIV PE PÂNZELE CARE PERMIT PIXELI NESETATI "
 "(unde există două cooldownuri!)"
 
-#: src/components/ModCanvastools.jsx:199
+#: src/components/ModCanvastools.jsx:197
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
@@ -1519,31 +1519,31 @@ msgstr ""
 "Întoarce fiecare pixel din zonă la 0 (CHIAR NU TREBUIE SĂ FACI ASTA ÎN NICIO "
 "ZONA CARE NU ESTE DEJA 0)"
 
-#: src/components/ModCanvastools.jsx:210
+#: src/components/ModCanvastools.jsx:208
 msgid "Status: Not running"
 msgstr "Stare: Nu rulează"
 
-#: src/components/ModCanvastools.jsx:252
+#: src/components/ModCanvastools.jsx:250
 msgid "Image Upload"
 msgstr "Încarcă Imagine"
 
-#: src/components/ModCanvastools.jsx:253
+#: src/components/ModCanvastools.jsx:251
 msgid "Upload images to canvas"
 msgstr "Încarcă imagine către canvas"
 
-#: src/components/ModCanvastools.jsx:255
+#: src/components/ModCanvastools.jsx:253
 msgid "File"
 msgstr "Filă"
 
-#: src/components/ModCanvastools.jsx:276
+#: src/components/ModCanvastools.jsx:274
 msgid "Coordinates:"
 msgstr "Coordonate:"
 
-#: src/components/ModCanvastools.jsx:320
+#: src/components/ModCanvastools.jsx:318
 msgid "Pixel Protection"
 msgstr "Protejare de Pixeli"
 
-#: src/components/ModCanvastools.jsx:324
+#: src/components/ModCanvastools.jsx:322
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
@@ -1551,34 +1551,34 @@ msgstr ""
 "Setați protecția zonelor (dacă ai nevoie de un control cu granulație mai "
 "fină, utilizați protecția cu încărcarea imaginilor și straturi alpha)"
 
-#: src/components/ModCanvastools.jsx:344 src/components/ModCanvastools.jsx:421
-#: src/components/ModCanvastools.jsx:515 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:342 src/components/ModCanvastools.jsx:419
+#: src/components/ModCanvastools.jsx:513 src/components/ModWatchtools.jsx:174
 msgid "Top-left corner"
 msgstr "Colțul din Stânga-sus"
 
-#: src/components/ModCanvastools.jsx:366 src/components/ModCanvastools.jsx:443
-#: src/components/ModCanvastools.jsx:537 src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:364 src/components/ModCanvastools.jsx:441
+#: src/components/ModCanvastools.jsx:535 src/components/ModWatchtools.jsx:196
 msgid "Bottom-right corner"
 msgstr "Colțul din Dreapta-jos"
 
-#: src/components/ModCanvastools.jsx:412
+#: src/components/ModCanvastools.jsx:410
 msgid "Rollback to Date"
 msgstr "Rollback la data"
 
-#: src/components/ModCanvastools.jsx:416
+#: src/components/ModCanvastools.jsx:414
 #, fuzzy
 msgid "Rollback an area of the canvas to a set date and time"
 msgstr "Dă Rollback la o zonă de la canvas la o dată fixă (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:490
+#: src/components/ModCanvastools.jsx:488
 msgid "Canvas Cleaner"
 msgstr "Ștergere de Canvas"
 
-#: src/components/ModCanvastools.jsx:492
+#: src/components/ModCanvastools.jsx:490
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr "Aplică un filtru pentru a șterge gunoi în zonele cu canvas mare."
 
-#: src/components/ModCanvastools.jsx:603
+#: src/components/ModCanvastools.jsx:601
 msgid "Stop Cleaner"
 msgstr "Oprește curățătorul"
 
@@ -1614,29 +1614,37 @@ msgstr "Pune Numele de Utilizator al moderatorului nou"
 msgid "User Name"
 msgstr "Nume de Utilizator"
 
-#: src/components/ModWatchtools.jsx:48
+#: src/components/ModWatchtools.jsx:49
 msgid "Interval is invalid"
 msgstr "Intervalul este invalid"
 
-#: src/components/ModWatchtools.jsx:124
+#: src/components/ModWatchtools.jsx:122
 msgid "Check who placed in an area"
 msgstr "Verifică cine a pus într-o zonă"
 
-#: src/components/ModWatchtools.jsx:144
+#: src/components/ModWatchtools.jsx:142
 msgid "Interval"
 msgstr "Interval"
 
-#: src/components/ModWatchtools.jsx:159
+#: src/components/ModWatchtools.jsx:157
 msgid "IID (optional)"
 msgstr "IID (opțional)"
 
-#: src/components/ModWatchtools.jsx:249
+#: src/components/ModWatchtools.jsx:247
 msgid "Get Pixels"
 msgstr "Fă rost de Pixeli"
 
-#: src/components/ModWatchtools.jsx:281
+#: src/components/ModWatchtools.jsx:279
 msgid "Get Users"
 msgstr "Fă rost de utilizatori"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Schimbă"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Mergi la"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1704,6 +1712,18 @@ msgstr "Blochează"
 msgid "Mute"
 msgstr "Mutează"
 
+#: src/components/MdLink.jsx:93
+msgid "Open in PopUp"
+msgstr ""
+
+#: src/components/MdLink.jsx:104
+msgid "Hide Embed"
+msgstr ""
+
+#: src/components/MdLink.jsx:110
+msgid "Show Embedded"
+msgstr ""
+
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
@@ -1714,25 +1734,10 @@ msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Settings.jsx:89
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:97
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
-
-#: src/components/windows/Settings.jsx:169
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1773,6 +1778,21 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
+
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-09 14:07+0000\n"
+"PO-Revision-Date: 2024-05-12 15:21+0000\n"
 "Last-Translator: анит изгоев <oorrrpamperstars@gmail.com>\n"
 "Language-Team: Rusyn <https://hosted.weblate.org/projects/pixelplanet/server/"
 "rue/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.4-rc\n"
+"X-Generator: Weblate 5.5.4\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -225,33 +225,33 @@ msgstr "То моче зробити лиш адміністраторы"
 msgid "You are not banned"
 msgstr "Вы не выгнаты"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Приступ к сему провайдеру мейлу запрічен"
-
-#: src/routes/api/auth/register.js:31
+#: src/routes/api/auth/register.js:27
 msgid "No Captcha given"
 msgstr "Капча не вводити ся"
 
-#: src/routes/api/auth/register.js:34
+#: src/routes/api/auth/register.js:30
 msgid "E-Mail already in use."
 msgstr "Мейл вже примінёван."
 
-#: src/routes/api/auth/register.js:36
+#: src/routes/api/auth/register.js:32
 msgid "Username already in use."
 msgstr "Имня вже поуживаюти ся."
 
-#: src/routes/api/auth/register.js:59
+#: src/routes/api/auth/register.js:55
 msgid "You took too long, try again."
 msgstr "У вас минуло черезміру помного однынї, попробуйте щи раз."
 
-#: src/routes/api/auth/register.js:62
+#: src/routes/api/auth/register.js:58
 msgid "You failed your captcha"
 msgstr "Вы не ввожали свую капчу"
 
-#: src/routes/api/auth/register.js:65
+#: src/routes/api/auth/register.js:61
 msgid "Unknown Captcha Error"
 msgstr "Непозната Хыба ввода Капчи"
+
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+msgid "This email provider is not allowed"
+msgstr "Приступ к сему провайдеру мейлу запрічен"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
@@ -311,12 +311,12 @@ msgstr "PixelPlanet.fun Акаунты"
 
 #: src/ssr/RedirectionPage.jsx:29
 msgid "You will be automatically redirected after 15s"
-msgstr ""
+msgstr "Вы будете автоматичны наднути через 15с"
 
 #: src/ssr/RedirectionPage.jsx:30
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr ""
+msgstr "Ци ${ clickHere } обы вернути ся у pixelplanet"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
@@ -361,16 +361,21 @@ msgstr "Мінімапа"
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
+"Наше головноє полотно - превеликыя мапа світу. Розміщайте в всякым "
+"вылагодным для вас містї!"
 
 #: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
 msgstr ""
+"Місячный верет. Беспечное місто для малюнков. Ниякых прапоров ци крупного "
+"текста (кедь се не подїл малюнка) ци малюнков розміром понад 1.5тыс. x "
+"1.5тыс цяток."
 
 #: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others."
-msgstr ""
+msgstr "Розмістите Вокселі на 3D-верете заєдно з другыми."
 
 #: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
@@ -386,17 +391,19 @@ msgstr ""
 
 #: src/canvasesDesc.js:38
 msgid "Black and White canvas"
-msgstr ""
+msgstr "Чорно-білый верет"
 
 #: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
+"Спис самішных активных играчів за пережый день. Рейтінґ обновляти ся "
+"каждодено в 00:00 UTC."
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr ""
+msgstr "Лише четыри колора. Правила, што і у місяца!"
 
 #: src/canvasesDesc.js:41
 msgid ""
@@ -407,12 +414,12 @@ msgstr ""
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr ""
+msgstr "Вітайте, ${ name }, до PixelPlamet, прошу, потвердити свуй мейл"
 
 #: src/core/MailProvider.js:67
 #, javascript-format
 msgid "Hello ${ name }"
-msgstr ""
+msgstr "Привіт ${ name }"
 
 #: src/core/MailProvider.js:68
 msgid ""
@@ -426,12 +433,14 @@ msgstr "Натискнути на Потверженя"
 
 #: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
-msgstr ""
+msgstr "Ци копіровав слїдуючый url:"
 
 #: src/core/MailProvider.js:69
 msgid ""
 "Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
+"Зыскайте задоволеня і не стеснити ся обходити ся к нам, кедь у вас зникнут "
+"даякые проблемы :)"
 
 #: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"

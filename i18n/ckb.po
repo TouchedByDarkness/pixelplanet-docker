@@ -258,7 +258,7 @@ msgid "You have new messages in chat"
 msgstr "لە چاتدا نامەی نوێت هەیە"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
-#: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
+#: src/components/ModWatchtools.jsx:388 src/components/ModWatchtools.jsx:406
 msgid "Copy to Clipboard"
 msgstr "کۆپی بکە بۆ کلیپبۆرد"
 
@@ -283,15 +283,15 @@ msgid "Total"
 msgstr "کۆی گشتی"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
-#: src/components/windows/index.js:19
+#: src/components/windows/index.js:20
 msgid "Canvas Selection"
 msgstr "هەڵبژاردنی کانڤاس"
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Close Chat"
 msgstr "داخستنی چات"
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Open Chat"
 msgstr "چات بکەرەوە"
 
@@ -311,8 +311,8 @@ msgstr "بارکردن"
 msgid "Select Date above"
 msgstr "لە سەرەوە ڕێکەوت هەڵبژێرە"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
-#: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:227
+#: src/components/ModWatchtools.jsx:118 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
@@ -343,16 +343,16 @@ msgid "Resize"
 msgstr "گۆڕینی قەبارە"
 
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
-#: src/components/windows/index.js:13
+#: src/components/windows/index.js:14
 msgid "Help"
 msgstr "یارمەتیدان"
 
 #: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:14
+#: src/components/windows/index.js:15
 msgid "Settings"
 msgstr "ڕێکخستنەکان"
 
-#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:15
+#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "ناوچەی بەکارهێنەر"
 
@@ -388,21 +388,25 @@ msgstr "قەڵەمی مێژوو لەکاربخە"
 msgid "Disable Overlay Pencil"
 msgstr "قەڵەمی سەرپۆش لەکاربخە"
 
-#: src/components/windows/index.js:16
+#: src/components/windows/index.js:17
 msgid "Registration"
 msgstr "ناو تۆمارکردن"
 
-#: src/components/windows/index.js:17
+#: src/components/windows/index.js:18
 msgid "Forgot Password"
 msgstr "وشەی نهێنی لەبیر کردووە"
 
-#: src/components/windows/index.js:18
+#: src/components/windows/index.js:19
 msgid "Chat"
 msgstr "چات"
 
-#: src/components/windows/index.js:20
+#: src/components/windows/index.js:21
 msgid "Canvas Archive"
 msgstr "ئەرشیفی کانڤاس"
+
+#: src/components/windows/index.js:22
+msgid "Player"
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -484,127 +488,6 @@ msgstr "ئێستا کە ئەم پەیامەت بینی ئیتر قەدەغە ن�
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "بۆچی؟"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Show Grid"
-msgstr "تۆڕ پیشان بدە"
-
-#: src/components/windows/Settings.jsx:77
-msgid "Turn on grid to highlight pixel borders."
-msgstr "بۆ تیشک خستنە سەر سنوورەکانی پێکسڵ، تۆڕەکە دابگیرسێنە."
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show Pixel Activity"
-msgstr "چالاکیی پێکسڵ پیشان بدە"
-
-#: src/components/windows/Settings.jsx:85
-msgid "Show circles where pixels are placed."
-msgstr "ئەو بازنانە پیشان بدە کە پێکسڵەکان تێیدا دانراون."
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show Movement Controls"
-msgstr "هەمیشە کۆنتڕۆڵەکانی جوڵە پیشان بدە"
-
-#: src/components/windows/Settings.jsx:93
-msgid "Always show movement control buttons"
-msgstr "هەمیشە دوگمەکانی کۆنترۆڵکردنی جوڵە پیشان بدە"
-
-#: src/components/windows/Settings.jsx:96
-msgid "Disable Game Sounds"
-msgstr "دەنگەکانی یاری لەکاربخە"
-
-#: src/components/windows/Settings.jsx:102
-msgid "All sound effects will be disabled."
-msgstr "هەموو کاریگەرییە دەنگییەکان لەکاردەخرێن."
-
-#: src/components/windows/Settings.jsx:106
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"وێبگەڕەکەت ڕێگەمان پێنادات AudioContext بەکاربهێنین بۆ لێدانی دەنگەکان. ئایا "
-"هەندێک تایبەتمەندی نهێنیتان هەیە کە ڕێگریمان لێدەکات؟"
-
-#: src/components/windows/Settings.jsx:112
-msgid "Enable chat notifications"
-msgstr "ئاگادارکردنەوەکانی چات چالاک بکە"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Play a sound when new chat messages arrive"
-msgstr "کاتێک نامەی چاتی نوێ دێت دەنگێک لێبدە"
-
-#: src/components/windows/Settings.jsx:119
-msgid "Auto Zoom In"
-msgstr "زوومی ئۆتۆماتیکی"
-
-#: src/components/windows/Settings.jsx:124
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"زووم بکە لەبری دانانی پێکسڵ کاتێک پەنجە دەخەیتە سەر کانڤاسەکە و زوومەکەت "
-"بچووکە."
-
-#: src/components/windows/Settings.jsx:127
-msgid "Compact Palette"
-msgstr "پالێتی کۆمپاکت"
-
-#: src/components/windows/Settings.jsx:132
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "پیشاندانی پالێت بە شێوەیەکی بچووک کە شوێنی شاشەی کەمتر دەگرێت."
-
-#: src/components/windows/Settings.jsx:135
-msgid "Potato Mode"
-msgstr "دۆخی پەتاتە"
-
-#: src/components/windows/Settings.jsx:139
-msgid "For when you are playing on a potato."
-msgstr "بۆ کاتێک یاری لەسەر پەتاتە دەکەیت."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
-msgid "Light Grid"
-msgstr "تۆڕی ڕووناکی"
-
-#: src/components/windows/Settings.jsx:146
-msgid "Show Grid in white instead of black."
-msgstr "دۆخ بە سپی پیشان بدە لەبری ڕەش."
-
-#: src/components/windows/Settings.jsx:149
-msgid "Custom Cursor"
-msgstr "ئاماژەدەری تایبەتمەند"
-
-#: src/components/windows/Settings.jsx:153
-msgid "Use our custom cursor"
-msgstr "ئاماژەدەری تایبەتمەندمان بەکاربهێنە"
-
-#: src/components/windows/Settings.jsx:157
-msgid "Historical View"
-msgstr "ڕوانگەی مێژوویی"
-
-#: src/components/windows/Settings.jsx:162
-msgid "Check out past versions of the canvas."
-msgstr "وەشانی ڕابردووی کانڤاسەکە ببینە."
-
-#: src/components/windows/Settings.jsx:166
-#, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "دۆخی قەڵەم بۆ ${ canvasName } کانڤاس"
-
-#: src/components/windows/Settings.jsx:174
-msgid "What the pencil should draw on the current canvas."
-msgstr "ئەوەی پێویستە قەڵەم لەسەر کانڤاسی ئێستا بکێشێت."
-
-#: src/components/windows/Settings.jsx:178
-msgid "Themes"
-msgstr "تەوەرەکان"
-
-#: src/components/windows/Settings.jsx:183
-msgid "How pixelplanet should look like."
-msgstr "پیکسڵپلانێت دەبێت چۆن بێت."
-
-#: src/components/windows/Settings.jsx:190
-msgid "Select Language"
-msgstr "زمان هەڵبژێرە"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -810,6 +693,127 @@ msgstr "کریدت بۆ پالێتی کانڤاسی ١٠ڕێزبەندی دەچ�
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "کریدت بۆ پالێتی کانڤاسی ٢بیت دەچێتە سەر ${ donendoLink }."
 
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "تۆڕ پیشان بدە"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "بۆ تیشک خستنە سەر سنوورەکانی پێکسڵ، تۆڕەکە دابگیرسێنە."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "چالاکیی پێکسڵ پیشان بدە"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "ئەو بازنانە پیشان بدە کە پێکسڵەکان تێیدا دانراون."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr "هەمیشە کۆنتڕۆڵەکانی جوڵە پیشان بدە"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr "هەمیشە دوگمەکانی کۆنترۆڵکردنی جوڵە پیشان بدە"
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "دەنگەکانی یاری لەکاربخە"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "هەموو کاریگەرییە دەنگییەکان لەکاردەخرێن."
+
+#: src/components/windows/Settings.jsx:106
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"وێبگەڕەکەت ڕێگەمان پێنادات AudioContext بەکاربهێنین بۆ لێدانی دەنگەکان. ئایا "
+"هەندێک تایبەتمەندی نهێنیتان هەیە کە ڕێگریمان لێدەکات؟"
+
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "ئاگادارکردنەوەکانی چات چالاک بکە"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "کاتێک نامەی چاتی نوێ دێت دەنگێک لێبدە"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "زوومی ئۆتۆماتیکی"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"زووم بکە لەبری دانانی پێکسڵ کاتێک پەنجە دەخەیتە سەر کانڤاسەکە و زوومەکەت "
+"بچووکە."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "پالێتی کۆمپاکت"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "پیشاندانی پالێت بە شێوەیەکی بچووک کە شوێنی شاشەی کەمتر دەگرێت."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "دۆخی پەتاتە"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "بۆ کاتێک یاری لەسەر پەتاتە دەکەیت."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "تۆڕی ڕووناکی"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "دۆخ بە سپی پیشان بدە لەبری ڕەش."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr "ئاماژەدەری تایبەتمەند"
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr "ئاماژەدەری تایبەتمەندمان بەکاربهێنە"
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "ڕوانگەی مێژوویی"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "وەشانی ڕابردووی کانڤاسەکە ببینە."
+
+#: src/components/windows/Settings.jsx:166
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "دۆخی قەڵەم بۆ ${ canvasName } کانڤاس"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr "ئەوەی پێویستە قەڵەم لەسەر کانڤاسی ئێستا بکێشێت."
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "تەوەرەکان"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "پیکسڵپلانێت دەبێت چۆن بێت."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "زمان هەڵبژێرە"
+
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -834,25 +838,6 @@ msgstr "بارکردن..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "بیرلەوە بکەرەوە کە بەشداریمان بکەیت لە Guilded:"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"ئەو کانڤاسە هەڵبژێرە کە دەتەوێت بەکاری بهێنیت.\n"
-"هەموو کانڤاسێک ناوازەیە و پالێت و کوڵداون و پێداویستی جیاوازی هەیە.\n"
-"دەتوانرێت لێرەدا دەستت بگات بە کانڤاسەکانی ئەرشیفکراو:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "ئەرشیف"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "کانڤاس خانەنشینەکان (تەنها مێژوو)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -885,13 +870,32 @@ msgid "Captcha"
 msgstr "کاپچا"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:315 src/components/ModCanvastools.jsx:406
-#: src/components/ModCanvastools.jsx:484 src/components/ModCanvastools.jsx:585
+#: src/components/ModCanvastools.jsx:313 src/components/ModCanvastools.jsx:404
+#: src/components/ModCanvastools.jsx:482 src/components/ModCanvastools.jsx:583
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "پێشکەشکردن"
+
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"ئەو کانڤاسە هەڵبژێرە کە دەتەوێت بەکاری بهێنیت.\n"
+"هەموو کانڤاسێک ناوازەیە و پالێت و کوڵداون و پێداویستی جیاوازی هەیە.\n"
+"دەتوانرێت لێرەدا دەستت بگات بە کانڤاسەکانی ئەرشیفکراو:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "ئەرشیف"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "کانڤاس خانەنشینەکان (تەنها مێژوو)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -955,6 +959,10 @@ msgstr "بۆ چات پێویستە بچیتە ژوورەوە"
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
 msgstr "ڕێکخستنەکانی کەناڵ"
+
+#: src/components/windows/Player.jsx:17
+msgid "This URL is not supported by our Media Player"
+msgstr ""
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -1045,6 +1053,14 @@ msgstr "وشەی نهێنی بە لایەنی کەمەوە پێویستە ٦ پ�
 msgid "Password must be shorter than 60 characters."
 msgstr "وشەی نهێنی دەبێت لە ٦٠ پیت کورتتر بێت."
 
+#: src/components/GetIID.jsx:44
+msgid "Get IID"
+msgstr "IID بەدەست بهێنە"
+
+#: src/components/GetIID.jsx:53
+msgid "Copy"
+msgstr "کۆپی"
+
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
@@ -1107,14 +1123,6 @@ msgstr "هەناردەکردنی قاڵبی چالاککراو"
 #: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr "هاوردەکردنی قاڵبەکان"
-
-#: src/components/GetIID.jsx:44
-msgid "Get IID"
-msgstr "IID بەدەست بهێنە"
-
-#: src/components/GetIID.jsx:53
-msgid "Copy"
-msgstr "کۆپی"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1181,54 +1189,7 @@ msgstr "سڕینەوەی هەژمار"
 msgid "Social Settings"
 msgstr "ڕێکخستنە کۆمەڵایەتییەکان"
 
-#: src/components/Rankings.jsx:168
-msgid "Yesterday"
-msgstr "دوێنێ"
-
-#: src/components/Rankings.jsx:177
-msgid "Countries Today"
-msgstr "وڵاتانی ئەمڕۆ"
-
-#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
-msgid "Charts"
-msgstr "هێڵکارییەکان"
-
-#: src/components/Rankings.jsx:191
-msgid "Total Pixels per Player"
-msgstr "کۆی گشتی پێکسڵ بۆ هەر یاریزانێک"
-
-#: src/components/Rankings.jsx:192
-msgid "Daily Pixels per Player"
-msgstr "پێکسڵی ڕۆژانە بۆ هەر یاریزانێک"
-
-#: src/components/Rankings.jsx:193
-msgid "Top 10 Players from Yesterday"
-msgstr "١٠ باشترین یاریزانی دوێنێ"
-
-#: src/components/Rankings.jsx:197
-msgid "Daily Pixels per Country"
-msgstr "پێکسڵی ڕۆژانە بۆ هەر وڵاتێک"
-
-#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
-#: src/components/Rankings.jsx:233
-msgid "User"
-msgstr "بەکارهێنەر"
-
-#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
-msgid "Country"
-msgstr "وڵات"
-
-#: src/components/Rankings.jsx:243
-msgid "+last hour"
-msgstr "+کاتژمێری کۆتایی"
-
-#: src/components/Rankings.jsx:314
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr ""
-"نوێکردنەوەی ڕیزبەندی هەر 5 خولەک جارێک. ڕیزبەندی ڕۆژانە لە نیوەی شەو ڕێست "
-"دەکرێتەوە."
-
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:233
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:231
 msgid "Choose Canvas"
 msgstr "کانڤاس هەڵبژێرە"
 
@@ -1305,6 +1266,53 @@ msgstr "‎ ڕێستکردنەوە"
 msgid "Download Template"
 msgstr "داگرتنی قاڵب"
 
+#: src/components/Rankings.jsx:168
+msgid "Yesterday"
+msgstr "دوێنێ"
+
+#: src/components/Rankings.jsx:177
+msgid "Countries Today"
+msgstr "وڵاتانی ئەمڕۆ"
+
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
+msgid "Charts"
+msgstr "هێڵکارییەکان"
+
+#: src/components/Rankings.jsx:191
+msgid "Total Pixels per Player"
+msgstr "کۆی گشتی پێکسڵ بۆ هەر یاریزانێک"
+
+#: src/components/Rankings.jsx:192
+msgid "Daily Pixels per Player"
+msgstr "پێکسڵی ڕۆژانە بۆ هەر یاریزانێک"
+
+#: src/components/Rankings.jsx:193
+msgid "Top 10 Players from Yesterday"
+msgstr "١٠ باشترین یاریزانی دوێنێ"
+
+#: src/components/Rankings.jsx:197
+msgid "Daily Pixels per Country"
+msgstr "پێکسڵی ڕۆژانە بۆ هەر وڵاتێک"
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
+msgid "User"
+msgstr "بەکارهێنەر"
+
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
+msgid "Country"
+msgstr "وڵات"
+
+#: src/components/Rankings.jsx:243
+msgid "+last hour"
+msgstr "+کاتژمێری کۆتایی"
+
+#: src/components/Rankings.jsx:314
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"نوێکردنەوەی ڕیزبەندی هەر 5 خولەک جارێک. ڕیزبەندی ڕۆژانە لە نیوەی شەو ڕێست "
+"دەکرێتەوە."
+
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "بەکارهێنەرانی ئۆنلاین"
@@ -1351,23 +1359,6 @@ msgstr "١٠ باشترین ڕیزبەندی ڕۆژانە"
 msgid "Dimensions"
 msgstr "ڕەهەندەکان"
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr "کانڤاس"
-
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-msgid "Coordinates"
-msgstr "کۆئۆردینیات دەکات"
-
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "دەستکاری"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "بڕۆ بۆ"
-
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
 msgstr "فایل هەڵبژێرە"
@@ -1375,6 +1366,15 @@ msgstr "فایل هەڵبژێرە"
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
 msgstr "ناوی قاڵب"
+
+#: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "کانڤاس"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr "کۆئۆردینیات دەکات"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1387,22 +1387,6 @@ msgstr "ناو یان ئیمەیڵ"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "چونه‌ ژووره‌وه‌"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"تکایە ناونیشانی پۆستەکەت پشتڕاست بکەرەوە یان ئەکاونتەکەت دوای چەند ڕۆژێک "
-"بسڕدرێتەوە."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "پۆستێکی نوێی پشتڕاستکردنەوەت بۆ دەنێردرێت."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "بۆ داوای پۆستێکی نوێی پشتڕاستکردنەوە کلیک لێرە بکە."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1440,6 +1424,22 @@ msgstr ""
 msgid "New Mail"
 msgstr "پۆستی نوێ"
 
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"تکایە ناونیشانی پۆستەکەت پشتڕاست بکەرەوە یان ئەکاونتەکەت دوای چەند ڕۆژێک "
+"بسڕدرێتەوە."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "پۆستێکی نوێی پشتڕاستکردنەوەت بۆ دەنێردرێت."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "بۆ داوای پۆستێکی نوێی پشتڕاستکردنەوە کلیک لێرە بکە."
+
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
 msgstr "بەڵێ، ئەکاونتەکەم بسڕەوە!"
@@ -1468,23 +1468,23 @@ msgstr "لادانی بلۆکی بەکارهێنەران"
 msgid "You have no users blocked"
 msgstr "هیچ بەکارهێنەرێکت بلۆک نەکردووە"
 
-#: src/components/ModCanvastools.jsx:171
+#: src/components/ModCanvastools.jsx:169
 msgid "Build image on canvas."
 msgstr "دروستکردنی وێنە لەسەر کانڤاس."
 
-#: src/components/ModCanvastools.jsx:174
+#: src/components/ModCanvastools.jsx:172
 msgid "Build image and set it to protected."
 msgstr "وێنە دروست بکە و لەسەر پارێزراوە دابنێ."
 
-#: src/components/ModCanvastools.jsx:177
+#: src/components/ModCanvastools.jsx:175
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr "وێنە دروست بکە، بەڵام کوڵداون ڕێست بکە بۆ پێکسڵی دانەنراو سیدی."
 
-#: src/components/ModCanvastools.jsx:187
+#: src/components/ModCanvastools.jsx:185
 msgid "Clean spare pixels that are surrounded by unset pixels"
 msgstr "پاککردنەوەی ئەو پێکسڵە یەدەگانەی کە بە پێکسڵی دانەنراو دەورە دراون"
 
-#: src/components/ModCanvastools.jsx:191
+#: src/components/ModCanvastools.jsx:189
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
@@ -1492,7 +1492,7 @@ msgstr ""
 "پاککردنەوەی ئەو پێکسڵە یەدەگانەی کە بە پێکسڵی دانەنراو دەورە دراون و تا ١ "
 "پێکسڵی دانراوی تر"
 
-#: src/components/ModCanvastools.jsx:195
+#: src/components/ModCanvastools.jsx:193
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
@@ -1502,7 +1502,7 @@ msgstr ""
 "دانەنراو (زۆر شەڕانگێزن لەسەر ئەو کانڤاسانەی کە ڕێگە بە پێکسڵە نەگۆڕەکان "
 "دەدەن (کە دوو کوڵداون هەیە)!)"
 
-#: src/components/ModCanvastools.jsx:199
+#: src/components/ModCanvastools.jsx:197
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
@@ -1510,31 +1510,31 @@ msgstr ""
 "هەموو پێکسڵێک لە ڕووبەرەکەدا بگۆڕە بۆ ٠ (بەڕاستی نابێت ئەوە بکەیت لەسەر هیچ "
 "ناوچەیەک کە پێشتر زۆربەی کات ٠ نییە)"
 
-#: src/components/ModCanvastools.jsx:210
+#: src/components/ModCanvastools.jsx:208
 msgid "Status: Not running"
 msgstr "دۆخ: کارناکات"
 
-#: src/components/ModCanvastools.jsx:252
+#: src/components/ModCanvastools.jsx:250
 msgid "Image Upload"
 msgstr "بارکردنی وێنە"
 
-#: src/components/ModCanvastools.jsx:253
+#: src/components/ModCanvastools.jsx:251
 msgid "Upload images to canvas"
 msgstr "وێنەکان باربکە بۆ کانڤاس"
 
-#: src/components/ModCanvastools.jsx:255
+#: src/components/ModCanvastools.jsx:253
 msgid "File"
 msgstr "فایل"
 
-#: src/components/ModCanvastools.jsx:276
+#: src/components/ModCanvastools.jsx:274
 msgid "Coordinates:"
 msgstr "کۆئۆردینیاتەکان:"
 
-#: src/components/ModCanvastools.jsx:320
+#: src/components/ModCanvastools.jsx:318
 msgid "Pixel Protection"
 msgstr "پاراستنی پێکسڵ"
 
-#: src/components/ModCanvastools.jsx:324
+#: src/components/ModCanvastools.jsx:322
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
@@ -1542,35 +1542,35 @@ msgstr ""
 "پاراستنی ناوچەکان دابنێ (ئەگەر پێویستت بە کۆنترۆڵی دانەوێڵەیی وردترە، "
 "پاراستن بەکاربهێنە لەگەڵ بارکردنی وێنە و چینەکانی ئەلفا)"
 
-#: src/components/ModCanvastools.jsx:344 src/components/ModCanvastools.jsx:421
-#: src/components/ModCanvastools.jsx:515 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:342 src/components/ModCanvastools.jsx:419
+#: src/components/ModCanvastools.jsx:513 src/components/ModWatchtools.jsx:174
 msgid "Top-left corner"
 msgstr "گۆشەی سەرەوە-چەپ"
 
-#: src/components/ModCanvastools.jsx:366 src/components/ModCanvastools.jsx:443
-#: src/components/ModCanvastools.jsx:537 src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:364 src/components/ModCanvastools.jsx:441
+#: src/components/ModCanvastools.jsx:535 src/components/ModWatchtools.jsx:196
 msgid "Bottom-right corner"
 msgstr "گۆشەی خوارەوە-ڕاست"
 
-#: src/components/ModCanvastools.jsx:412
+#: src/components/ModCanvastools.jsx:410
 msgid "Rollback to Date"
 msgstr "گەڕانەوە بۆ ڕێکەوت"
 
-#: src/components/ModCanvastools.jsx:416
+#: src/components/ModCanvastools.jsx:414
 #, fuzzy
 msgid "Rollback an area of the canvas to a set date and time"
 msgstr "ڕووبەرێکی کانڤاسەکە بگەڕێنێتەوە بۆ بەروارێکی دیاریکراو (٠٠:٠٠ UTC)"
 
-#: src/components/ModCanvastools.jsx:490
+#: src/components/ModCanvastools.jsx:488
 msgid "Canvas Cleaner"
 msgstr "پاککەرەوەی کانڤاس"
 
-#: src/components/ModCanvastools.jsx:492
+#: src/components/ModCanvastools.jsx:490
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr ""
 "فلتەرێک بەکاربهێنە بۆ پاککردنەوەی زبڵ و خاشاک لە شوێنە گەورەکانی کانڤاس."
 
-#: src/components/ModCanvastools.jsx:603
+#: src/components/ModCanvastools.jsx:601
 msgid "Stop Cleaner"
 msgstr "وەستاندنی پاککەرەوە"
 
@@ -1606,29 +1606,37 @@ msgstr "ناوی بەکارهێنەری مۆدی نوێ دابنێ"
 msgid "User Name"
 msgstr "ناوی بەکارهێنەر"
 
-#: src/components/ModWatchtools.jsx:48
+#: src/components/ModWatchtools.jsx:49
 msgid "Interval is invalid"
 msgstr "ئینتەرڤاڵ نادروستە"
 
-#: src/components/ModWatchtools.jsx:124
+#: src/components/ModWatchtools.jsx:122
 msgid "Check who placed in an area"
 msgstr "بزانە کێ لە ناوچەیەکدا داناوە"
 
-#: src/components/ModWatchtools.jsx:144
+#: src/components/ModWatchtools.jsx:142
 msgid "Interval"
 msgstr "ئینتەرڤاڵ"
 
-#: src/components/ModWatchtools.jsx:159
+#: src/components/ModWatchtools.jsx:157
 msgid "IID (optional)"
 msgstr "IID (ئیختیاری)"
 
-#: src/components/ModWatchtools.jsx:249
+#: src/components/ModWatchtools.jsx:247
 msgid "Get Pixels"
 msgstr "پێکسڵەکان بەدەست بهێنە"
 
-#: src/components/ModWatchtools.jsx:281
+#: src/components/ModWatchtools.jsx:279
 msgid "Get Users"
 msgstr "بەکارهێنەران بەدەست بهێنە"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "دەستکاری"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "بڕۆ بۆ"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1698,6 +1706,18 @@ msgstr "بلۆک"
 msgid "Mute"
 msgstr "بێدەنگ"
 
+#: src/components/MdLink.jsx:93
+msgid "Open in PopUp"
+msgstr ""
+
+#: src/components/MdLink.jsx:104
+msgid "Hide Embed"
+msgstr ""
+
+#: src/components/MdLink.jsx:110
+msgid "Show Embedded"
+msgstr ""
+
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
@@ -1708,25 +1728,10 @@ msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Settings.jsx:89
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:97
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
-
-#: src/components/windows/Settings.jsx:169
-msgctxt "keybinds"
-msgid "B"
-msgstr "B"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1767,6 +1772,21 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
+
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

@@ -264,7 +264,7 @@ msgid "You have new messages in chat"
 msgstr "Di suhbetê de peyamên nû hene"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
-#: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
+#: src/components/ModWatchtools.jsx:388 src/components/ModWatchtools.jsx:406
 msgid "Copy to Clipboard"
 msgstr "Kopî li Clipboardê"
 
@@ -289,15 +289,15 @@ msgid "Total"
 msgstr "Hemî"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
-#: src/components/windows/index.js:19
+#: src/components/windows/index.js:20
 msgid "Canvas Selection"
 msgstr "Hilbijartina Kanvas"
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Close Chat"
 msgstr "Suhbetê Bigire"
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Open Chat"
 msgstr "Suhbetê Veke"
 
@@ -317,8 +317,8 @@ msgstr "Bar dike, bisekine"
 msgid "Select Date above"
 msgstr "Dîroka Jorîn hilbijêrin"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
-#: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:227
+#: src/components/ModWatchtools.jsx:118 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
@@ -349,16 +349,16 @@ msgid "Resize"
 msgstr "Biguherîne"
 
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
-#: src/components/windows/index.js:13
+#: src/components/windows/index.js:14
 msgid "Help"
 msgstr "Alîkarî"
 
 #: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:14
+#: src/components/windows/index.js:15
 msgid "Settings"
 msgstr "Mîhengên"
 
-#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:15
+#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Herêma Bikarhêner"
 
@@ -394,21 +394,25 @@ msgstr "Pênûse Dîrokê Neçalak Bike"
 msgid "Disable Overlay Pencil"
 msgstr "Pênûsê Şablûnê Neçalak Bike"
 
-#: src/components/windows/index.js:16
+#: src/components/windows/index.js:17
 msgid "Registration"
 msgstr "Qeydkirin"
 
-#: src/components/windows/index.js:17
+#: src/components/windows/index.js:18
 msgid "Forgot Password"
 msgstr "Nasnavê ji bîr kir"
 
-#: src/components/windows/index.js:18
+#: src/components/windows/index.js:19
 msgid "Chat"
 msgstr "Suhbet"
 
-#: src/components/windows/index.js:20
+#: src/components/windows/index.js:21
 msgid "Canvas Archive"
 msgstr "Arşîva Kanvasê"
+
+#: src/components/windows/index.js:22
+msgid "Player"
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -490,127 +494,6 @@ msgstr "Niha ku we ev peyam dît, êdî hûn qedexe ne."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Çima?"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Show Grid"
-msgstr "Grid nîşan bide"
-
-#: src/components/windows/Settings.jsx:77
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Ji bo ronîkirina sînorên pîxelê torê vekin."
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show Pixel Activity"
-msgstr "Çalakiya Pixel nîşan bide"
-
-#: src/components/windows/Settings.jsx:85
-msgid "Show circles where pixels are placed."
-msgstr "Derdorên ku pixel lê têne danîn nîşan bidin."
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show Movement Controls"
-msgstr "Her gav Kontrolên Tevgerê nîşan bidin"
-
-#: src/components/windows/Settings.jsx:93
-msgid "Always show movement control buttons"
-msgstr "Her gav bişkokên kontrola tevgerê nîşan bidin"
-
-#: src/components/windows/Settings.jsx:96
-msgid "Disable Game Sounds"
-msgstr "Dengên lîstikê neçalak bike"
-
-#: src/components/windows/Settings.jsx:102
-msgid "All sound effects will be disabled."
-msgstr "Hemî bandorên deng dê neçalak bibin."
-
-#: src/components/windows/Settings.jsx:106
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"Geroka we rê nade me ku em AudioContext bikar bînin da ku dengan bilîzin. Ma "
-"we hin taybetmendiyek nepenîtiyê heye ku me asteng dike?"
-
-#: src/components/windows/Settings.jsx:112
-msgid "Enable chat notifications"
-msgstr "Agahiyên chatê çalak bike"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Play a sound when new chat messages arrive"
-msgstr "Dema ku peyamên chatê yên nû digihîjin dengek bileyzin"
-
-#: src/components/windows/Settings.jsx:119
-msgid "Auto Zoom In"
-msgstr "Zêdekirina Xweser"
-
-#: src/components/windows/Settings.jsx:124
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Dema ku hûn li ser kanavê bixin li şûna ku hûn pixelek bixin zoom bikin û "
-"zooma we piçûk e."
-
-#: src/components/windows/Settings.jsx:127
-msgid "Compact Palette"
-msgstr "Gişt paleta"
-
-#: src/components/windows/Settings.jsx:132
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Pêşandana Paleta bi rengek kompakt ku cîhê ekranê kêmtir digire."
-
-#: src/components/windows/Settings.jsx:135
-msgid "Potato Mode"
-msgstr "Moda kartol"
-
-#: src/components/windows/Settings.jsx:139
-msgid "For when you are playing on a potato."
-msgstr "Ji bo dema ku hûn li ser kartol dilîzin."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
-msgid "Light Grid"
-msgstr "Ronahî Tor"
-
-#: src/components/windows/Settings.jsx:146
-msgid "Show Grid in white instead of black."
-msgstr "Li şûna reş tor bi spî nîşan bidin."
-
-#: src/components/windows/Settings.jsx:149
-msgid "Custom Cursor"
-msgstr "Hûnbunî kursor"
-
-#: src/components/windows/Settings.jsx:153
-msgid "Use our custom cursor"
-msgstr "Kursorê meya xwerû bikar bînin"
-
-#: src/components/windows/Settings.jsx:157
-msgid "Historical View"
-msgstr "Dîtina Dîrokî"
-
-#: src/components/windows/Settings.jsx:162
-msgid "Check out past versions of the canvas."
-msgstr "Guhertoyên paşîn ên kanavê binihêrin."
-
-#: src/components/windows/Settings.jsx:166
-#, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Moda Qelemê ya ji bo kanava ${ canvasName }"
-
-#: src/components/windows/Settings.jsx:174
-msgid "What the pencil should draw on the current canvas."
-msgstr "Tiştê ku pênûs divê li ser kabloya heyî xêz bike."
-
-#: src/components/windows/Settings.jsx:178
-msgid "Themes"
-msgstr "Mijad"
-
-#: src/components/windows/Settings.jsx:183
-msgid "How pixelplanet should look like."
-msgstr "Divê pixelplanet çawa xuya bike."
-
-#: src/components/windows/Settings.jsx:190
-msgid "Select Language"
-msgstr "Ziman hilbijêrin"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -822,6 +705,127 @@ msgstr "Krediya Paleta Top10-ê ji bo ${ vinikLink } heye."
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr "Krediya Paleta kanvasa 2bit diçe ${ donendoLink }."
 
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "Grid nîşan bide"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Ji bo ronîkirina sînorên pîxelê torê vekin."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Çalakiya Pixel nîşan bide"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "Derdorên ku pixel lê têne danîn nîşan bidin."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr "Her gav Kontrolên Tevgerê nîşan bidin"
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr "Her gav bişkokên kontrola tevgerê nîşan bidin"
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "Dengên lîstikê neçalak bike"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "Hemî bandorên deng dê neçalak bibin."
+
+#: src/components/windows/Settings.jsx:106
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Geroka we rê nade me ku em AudioContext bikar bînin da ku dengan bilîzin. Ma "
+"we hin taybetmendiyek nepenîtiyê heye ku me asteng dike?"
+
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "Agahiyên chatê çalak bike"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "Dema ku peyamên chatê yên nû digihîjin dengek bileyzin"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "Zêdekirina Xweser"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Dema ku hûn li ser kanavê bixin li şûna ku hûn pixelek bixin zoom bikin û "
+"zooma we piçûk e."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "Gişt paleta"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Pêşandana Paleta bi rengek kompakt ku cîhê ekranê kêmtir digire."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Moda kartol"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "Ji bo dema ku hûn li ser kartol dilîzin."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "Ronahî Tor"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "Li şûna reş tor bi spî nîşan bidin."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr "Hûnbunî kursor"
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr "Kursorê meya xwerû bikar bînin"
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Dîtina Dîrokî"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "Guhertoyên paşîn ên kanavê binihêrin."
+
+#: src/components/windows/Settings.jsx:166
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Moda Qelemê ya ji bo kanava ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr "Tiştê ku pênûs divê li ser kabloya heyî xêz bike."
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Mijad"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "Divê pixelplanet çawa xuya bike."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Ziman hilbijêrin"
+
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -846,25 +850,6 @@ msgstr "Bar dike..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Li ser Guilded bifikirin ku hûn beşdarî me bibin:"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Tuvalên ku hûn dixwazin bi kar bînin hilbijêrin\n"
-"Her tuval bêhempa ye û palet, sarbûn û pêdiviyên wan ên cuda hene\n"
-"Tuvalên arşîvkirî dikarin bigihîjin vir:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arşîv"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Tuxleyên teqawîtbûyî (dîrok tenê)"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -897,13 +882,32 @@ msgid "Captcha"
 msgstr "kaptcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:315 src/components/ModCanvastools.jsx:406
-#: src/components/ModCanvastools.jsx:484 src/components/ModCanvastools.jsx:585
+#: src/components/ModCanvastools.jsx:313 src/components/ModCanvastools.jsx:404
+#: src/components/ModCanvastools.jsx:482 src/components/ModCanvastools.jsx:583
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Pêşkêş kirin"
+
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Tuvalên ku hûn dixwazin bi kar bînin hilbijêrin\n"
+"Her tuval bêhempa ye û palet, sarbûn û pêdiviyên wan ên cuda hene\n"
+"Tuvalên arşîvkirî dikarin bigihîjin vir:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arşîv"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Tuxleyên teqawîtbûyî (dîrok tenê)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -966,6 +970,10 @@ msgstr "Ji bo axaftinê divê tu têkevî têketinê"
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
 msgstr "Mîhengên kanalê"
+
+#: src/components/windows/Player.jsx:17
+msgid "This URL is not supported by our Media Player"
+msgstr ""
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -1057,6 +1065,14 @@ msgstr "Divê şîfre herî kêm 6 tîpan be."
 msgid "Password must be shorter than 60 characters."
 msgstr "Divê şîfre ji 60 tîpan kurttir be."
 
+#: src/components/GetIID.jsx:44
+msgid "Get IID"
+msgstr "IID bistînin"
+
+#: src/components/GetIID.jsx:53
+msgid "Copy"
+msgstr "kopî"
+
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
@@ -1120,14 +1136,6 @@ msgstr "Şablonên çalakkirî derxînin"
 #: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr "Şablonên derhanînê"
-
-#: src/components/GetIID.jsx:44
-msgid "Get IID"
-msgstr "IID bistînin"
-
-#: src/components/GetIID.jsx:53
-msgid "Copy"
-msgstr "kopî"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1194,54 +1202,7 @@ msgstr "Hesabê jêbirin"
 msgid "Social Settings"
 msgstr "Mîhengên Civakî"
 
-#: src/components/Rankings.jsx:168
-msgid "Yesterday"
-msgstr "Do"
-
-#: src/components/Rankings.jsx:177
-msgid "Countries Today"
-msgstr "Welatên Îro"
-
-#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
-msgid "Charts"
-msgstr "Qebale"
-
-#: src/components/Rankings.jsx:191
-msgid "Total Pixels per Player"
-msgstr "hemî piksel her yarîker"
-
-#: src/components/Rankings.jsx:192
-msgid "Daily Pixels per Player"
-msgstr "rojane piksel her yarîker"
-
-#: src/components/Rankings.jsx:193
-msgid "Top 10 Players from Yesterday"
-msgstr "10 lîstikvanên herî baş yên duh"
-
-#: src/components/Rankings.jsx:197
-msgid "Daily Pixels per Country"
-msgstr "Rojane piksel her Welat"
-
-#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
-#: src/components/Rankings.jsx:233
-msgid "User"
-msgstr "Bikarhêner"
-
-#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
-msgid "Country"
-msgstr "Welat"
-
-#: src/components/Rankings.jsx:243
-msgid "+last hour"
-msgstr "+saeta dawî"
-
-#: src/components/Rankings.jsx:314
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr ""
-"Her 5 hûrdem carekê nûvekirinên rêzkirinê. Rêzkirinên rojane di demjimêra "
-"Gerdûnî ya Hevrêzkirî ya nîvê şevê de ji nû ve têne sererast kirin."
-
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:233
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:231
 msgid "Choose Canvas"
 msgstr "kanvas hilbijêre"
 
@@ -1318,6 +1279,53 @@ msgstr "ji nû ve saz kirin"
 msgid "Download Template"
 msgstr "Şablon dakêşin"
 
+#: src/components/Rankings.jsx:168
+msgid "Yesterday"
+msgstr "Do"
+
+#: src/components/Rankings.jsx:177
+msgid "Countries Today"
+msgstr "Welatên Îro"
+
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
+msgid "Charts"
+msgstr "Qebale"
+
+#: src/components/Rankings.jsx:191
+msgid "Total Pixels per Player"
+msgstr "hemî piksel her yarîker"
+
+#: src/components/Rankings.jsx:192
+msgid "Daily Pixels per Player"
+msgstr "rojane piksel her yarîker"
+
+#: src/components/Rankings.jsx:193
+msgid "Top 10 Players from Yesterday"
+msgstr "10 lîstikvanên herî baş yên duh"
+
+#: src/components/Rankings.jsx:197
+msgid "Daily Pixels per Country"
+msgstr "Rojane piksel her Welat"
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
+msgid "User"
+msgstr "Bikarhêner"
+
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
+msgid "Country"
+msgstr "Welat"
+
+#: src/components/Rankings.jsx:243
+msgid "+last hour"
+msgstr "+saeta dawî"
+
+#: src/components/Rankings.jsx:314
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"Her 5 hûrdem carekê nûvekirinên rêzkirinê. Rêzkirinên rojane di demjimêra "
+"Gerdûnî ya Hevrêzkirî ya nîvê şevê de ji nû ve têne sererast kirin."
+
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Bikarhênerên liserxetê"
@@ -1364,23 +1372,6 @@ msgstr "10 lîstikvanên herî baş ên rojê"
 msgid "Dimensions"
 msgstr "Rehend"
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr "Kanvasên"
-
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-msgid "Coordinates"
-msgstr "Koordînatên"
-
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Weşandin"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Biçe"
-
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
 msgstr "Pelî Hilbijêre"
@@ -1388,6 +1379,15 @@ msgstr "Pelî Hilbijêre"
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
 msgstr "Navê Şablonê"
+
+#: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "Kanvasên"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr "Koordînatên"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1400,22 +1400,6 @@ msgstr "Nav an E-mail"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Têketin"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Ji kerema xwe navnîşana e-nameya xwe verast bikin an jî dibe ku hesabê we "
-"piştî çend rojan were jêbirin."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Nameyek verastkirinê ya nû ji we re tê şandin."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Li vir bikirtînin ku hûn e-nameyek verastkirinê ya nû bixwazin."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1453,6 +1437,22 @@ msgstr ""
 msgid "New Mail"
 msgstr "Nameya Nû"
 
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Ji kerema xwe navnîşana e-nameya xwe verast bikin an jî dibe ku hesabê we "
+"piştî çend rojan were jêbirin."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Nameyek verastkirinê ya nû ji we re tê şandin."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Li vir bikirtînin ku hûn e-nameyek verastkirinê ya nû bixwazin."
+
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
 msgstr "Erê, hesabê min jê bibe!"
@@ -1481,24 +1481,24 @@ msgstr "Astengkirina Bikarhêneran"
 msgid "You have no users blocked"
 msgstr "Tu bikarhênerên astengkirî tune"
 
-#: src/components/ModCanvastools.jsx:171
+#: src/components/ModCanvastools.jsx:169
 msgid "Build image on canvas."
 msgstr "Wêne li ser kanvas ava bikin."
 
-#: src/components/ModCanvastools.jsx:174
+#: src/components/ModCanvastools.jsx:172
 msgid "Build image and set it to protected."
 msgstr "Wêne ava bikin û wê ji bo parastinê saz bikin."
 
-#: src/components/ModCanvastools.jsx:177
+#: src/components/ModCanvastools.jsx:175
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr "Wêneyê ava bikin, lê sarbûnê li cd-ya nesazkirî-piksel vegerînin."
 
-#: src/components/ModCanvastools.jsx:187
+#: src/components/ModCanvastools.jsx:185
 msgid "Clean spare pixels that are surrounded by unset pixels"
 msgstr ""
 "Pixelên yedek ên ku bi pîxelên nesazkirî ve hatine dorpêç kirin paqij bikin"
 
-#: src/components/ModCanvastools.jsx:191
+#: src/components/ModCanvastools.jsx:189
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
@@ -1506,7 +1506,7 @@ msgstr ""
 "Pixelên yedek ên ku bi pixelên nesazkirî û heta 1 pîxelên setê yên din ve "
 "hatine dorpêç kirin paqij bikin"
 
-#: src/components/ModCanvastools.jsx:195
+#: src/components/ModCanvastools.jsx:193
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
@@ -1516,7 +1516,7 @@ msgstr ""
 "hatine dorpêç kirin paqij bikin (LI SER PÎKELÊN KU DAWÎ DIDE PÎKÊLÊN "
 "NEHATINE (li cihê ku du sarbûn hene) PIR AGRESIVE!)"
 
-#: src/components/ModCanvastools.jsx:199
+#: src/components/ModCanvastools.jsx:197
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
@@ -1524,31 +1524,31 @@ msgstr ""
 "Her pîxelê li herêmê bizivirînin 0 (BASTÎ DIVÊ TU WÊ LI SER QERÊKE KU JI BER "
 "NE PIRÎ 0 NE BIKIN)"
 
-#: src/components/ModCanvastools.jsx:210
+#: src/components/ModCanvastools.jsx:208
 msgid "Status: Not running"
 msgstr "Rewş: Nabe"
 
-#: src/components/ModCanvastools.jsx:252
+#: src/components/ModCanvastools.jsx:250
 msgid "Image Upload"
 msgstr "Barkirina Wêne"
 
-#: src/components/ModCanvastools.jsx:253
+#: src/components/ModCanvastools.jsx:251
 msgid "Upload images to canvas"
 msgstr "Wêneyên li ser kanvas barkirin"
 
-#: src/components/ModCanvastools.jsx:255
+#: src/components/ModCanvastools.jsx:253
 msgid "File"
 msgstr "Pel"
 
-#: src/components/ModCanvastools.jsx:276
+#: src/components/ModCanvastools.jsx:274
 msgid "Coordinates:"
 msgstr "koordînatên:"
 
-#: src/components/ModCanvastools.jsx:320
+#: src/components/ModCanvastools.jsx:318
 msgid "Pixel Protection"
 msgstr "Parastina Piksel"
 
-#: src/components/ModCanvastools.jsx:324
+#: src/components/ModCanvastools.jsx:322
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
@@ -1556,34 +1556,34 @@ msgstr ""
 "Parastina deveran bicîh bikin (heke hûn hewceyê kontrolek zexmtir be, bi "
 "barkirina wêneyê û qatên alpha parastinê bikar bînin)"
 
-#: src/components/ModCanvastools.jsx:344 src/components/ModCanvastools.jsx:421
-#: src/components/ModCanvastools.jsx:515 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:342 src/components/ModCanvastools.jsx:419
+#: src/components/ModCanvastools.jsx:513 src/components/ModWatchtools.jsx:174
 msgid "Top-left corner"
 msgstr "Kuncê çepê yê-jorîn"
 
-#: src/components/ModCanvastools.jsx:366 src/components/ModCanvastools.jsx:443
-#: src/components/ModCanvastools.jsx:537 src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:364 src/components/ModCanvastools.jsx:441
+#: src/components/ModCanvastools.jsx:535 src/components/ModWatchtools.jsx:196
 msgid "Bottom-right corner"
 msgstr "Kuncê jêrîn-rastê"
 
-#: src/components/ModCanvastools.jsx:412
+#: src/components/ModCanvastools.jsx:410
 msgid "Rollback to Date"
 msgstr "Vegerîna Dîrokê"
 
-#: src/components/ModCanvastools.jsx:416
+#: src/components/ModCanvastools.jsx:414
 #, fuzzy
 msgid "Rollback an area of the canvas to a set date and time"
 msgstr "Deverek kanvas vegerîne rojek diyarkirî (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:490
+#: src/components/ModCanvastools.jsx:488
 msgid "Canvas Cleaner"
 msgstr "Kanvasên Paqijker"
 
-#: src/components/ModCanvastools.jsx:492
+#: src/components/ModCanvastools.jsx:490
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr "Parzûnek bixin da ku çopê li deverên mezin ên kanvas paqij bikin."
 
-#: src/components/ModCanvastools.jsx:603
+#: src/components/ModCanvastools.jsx:601
 msgid "Stop Cleaner"
 msgstr "Paqijker rawestîne"
 
@@ -1619,29 +1619,37 @@ msgstr "Navê bikarhêner a moda nû binivîse"
 msgid "User Name"
 msgstr "Navê bikarhêner"
 
-#: src/components/ModWatchtools.jsx:48
+#: src/components/ModWatchtools.jsx:49
 msgid "Interval is invalid"
 msgstr "Navber nederbasdar e"
 
-#: src/components/ModWatchtools.jsx:124
+#: src/components/ModWatchtools.jsx:122
 msgid "Check who placed in an area"
 msgstr "Kontrol bikin ka kî li herêmek bi cih kiriye"
 
-#: src/components/ModWatchtools.jsx:144
+#: src/components/ModWatchtools.jsx:142
 msgid "Interval"
 msgstr "Navber"
 
-#: src/components/ModWatchtools.jsx:159
+#: src/components/ModWatchtools.jsx:157
 msgid "IID (optional)"
 msgstr "IID (vebijarkî)"
 
-#: src/components/ModWatchtools.jsx:249
+#: src/components/ModWatchtools.jsx:247
 msgid "Get Pixels"
 msgstr "pikselên bistînin"
 
-#: src/components/ModWatchtools.jsx:281
+#: src/components/ModWatchtools.jsx:279
 msgid "Get Users"
 msgstr "Bikarhêneran bistînin"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Weşandin"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Biçe"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1711,6 +1719,18 @@ msgstr "Blok"
 msgid "Mute"
 msgstr "Bêdeng"
 
+#: src/components/MdLink.jsx:93
+msgid "Open in PopUp"
+msgstr ""
+
+#: src/components/MdLink.jsx:104
+msgid "Hide Embed"
+msgstr ""
+
+#: src/components/MdLink.jsx:110
+msgid "Show Embedded"
+msgstr ""
+
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
@@ -1721,25 +1741,10 @@ msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Settings.jsx:89
-msgctxt "keybinds"
-msgid "N"
-msgstr "N"
-
-#: src/components/windows/Settings.jsx:97
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
-
-#: src/components/windows/Settings.jsx:169
-msgctxt "keybinds"
-msgid "B"
-msgstr "B"
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1780,6 +1785,21 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
+
+#: src/components/windows/Settings.jsx:89
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

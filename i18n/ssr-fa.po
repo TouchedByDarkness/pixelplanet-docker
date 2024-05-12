@@ -228,33 +228,33 @@ msgstr "فقط ادمین ها میتونن این کار رو بکنن"
 msgid "You are not banned"
 msgstr "تو بن نشدی"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "این ارائه دهنده ایمیل مجاز نیست"
-
-#: src/routes/api/auth/register.js:31
+#: src/routes/api/auth/register.js:27
 msgid "No Captcha given"
 msgstr "کپچا داده نشده است"
 
-#: src/routes/api/auth/register.js:34
+#: src/routes/api/auth/register.js:30
 msgid "E-Mail already in use."
 msgstr "ایمیل در حال حاضر در حال استفاده است."
 
-#: src/routes/api/auth/register.js:36
+#: src/routes/api/auth/register.js:32
 msgid "Username already in use."
 msgstr "نام کاربری در حال حاضر استفاده شده است."
 
-#: src/routes/api/auth/register.js:59
+#: src/routes/api/auth/register.js:55
 msgid "You took too long, try again."
 msgstr "خیلی کار رو طولش دادی، دوباره امتحان کن."
 
-#: src/routes/api/auth/register.js:62
+#: src/routes/api/auth/register.js:58
 msgid "You failed your captcha"
 msgstr "شما کپچای خود را اشتباه جواب دادین"
 
-#: src/routes/api/auth/register.js:65
+#: src/routes/api/auth/register.js:61
 msgid "Unknown Captcha Error"
 msgstr "کپچا یه خطایی داده که خودمم نمیدونم چیه"
+
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+msgid "This email provider is not allowed"
+msgstr "این ارائه دهنده ایمیل مجاز نیست"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("

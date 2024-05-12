@@ -274,7 +274,7 @@ msgid "You have new messages in chat"
 msgstr "ʻOku ʻi ai haʻo ngaahi popoaki foʻou ʻi he chat"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
-#: src/components/ModWatchtools.jsx:390 src/components/ModWatchtools.jsx:408
+#: src/components/ModWatchtools.jsx:388 src/components/ModWatchtools.jsx:406
 msgid "Copy to Clipboard"
 msgstr "Hiki Tatau ki he Papafakamaʻú"
 
@@ -299,15 +299,15 @@ msgid "Total"
 msgstr "Fakakatoa"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
-#: src/components/windows/index.js:19
+#: src/components/windows/index.js:20
 msgid "Canvas Selection"
 msgstr "Fili ʻo e fakatataa"
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Close Chat"
 msgstr "Tapuniʻi ʻa e chat"
 
-#: src/components/buttons/ChatButton.jsx:88
+#: src/components/buttons/ChatButton.jsx:79
 msgid "Open Chat"
 msgstr "Fakaava ʻa e chat"
 
@@ -327,8 +327,8 @@ msgstr "Load"
 msgid "Select Date above"
 msgstr "Fili ʻa e ʻAho ʻi ʻolungá"
 
-#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:229
-#: src/components/ModWatchtools.jsx:120 src/components/Window.jsx:157
+#: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:227
+#: src/components/ModWatchtools.jsx:118 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
@@ -359,16 +359,16 @@ msgid "Resize"
 msgstr "ʻAi ke siʻisiʻi"
 
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
-#: src/components/windows/index.js:13
+#: src/components/windows/index.js:14
 msgid "Help"
 msgstr "Tokoni"
 
 #: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:14
+#: src/components/windows/index.js:15
 msgid "Settings"
 msgstr "Ngaahi Feituʻú"
 
-#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:15
+#: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "ʻĒlia ʻo e Tokotaha Ngā"
 
@@ -405,21 +405,25 @@ msgstr ""
 msgid "Disable Overlay Pencil"
 msgstr ""
 
-#: src/components/windows/index.js:16
+#: src/components/windows/index.js:17
 msgid "Registration"
 msgstr "Lesisita"
 
-#: src/components/windows/index.js:17
+#: src/components/windows/index.js:18
 msgid "Forgot Password"
 msgstr "Ngalo e Lea Fufuú"
 
-#: src/components/windows/index.js:18
+#: src/components/windows/index.js:19
 msgid "Chat"
 msgstr "Chat"
 
-#: src/components/windows/index.js:20
+#: src/components/windows/index.js:21
 msgid "Canvas Archive"
 msgstr "ʻAkaivi ʻo e fakatataa"
+
+#: src/components/windows/index.js:22
+msgid "Player"
+msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -503,128 +507,6 @@ msgstr ""
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Ko e ha hono ʻuhinga?"
-
-#: src/components/windows/Settings.jsx:72
-msgid "Show Grid"
-msgstr "Fakaʻasi ʻa e grid"
-
-#: src/components/windows/Settings.jsx:77
-msgid "Turn on grid to highlight pixel borders."
-msgstr "Fakamoʻui ʻa e grid ke fakaʻilongaʻi pixel kauʻafonua."
-
-#: src/components/windows/Settings.jsx:80
-msgid "Show Pixel Activity"
-msgstr "Fakaʻasi ʻa e ʻekitiviti pixel"
-
-#: src/components/windows/Settings.jsx:85
-msgid "Show circles where pixels are placed."
-msgstr "Fakaʻaliʻali ʻa e ngaahi siakale ʻoku fokotuʻu ai ʻa e pixel."
-
-#: src/components/windows/Settings.jsx:88
-msgid "Always show Movement Controls"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:93
-msgid "Always show movement control buttons"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:96
-msgid "Disable Game Sounds"
-msgstr "Toʻo e ongo ʻo e vaʻinga"
-
-#: src/components/windows/Settings.jsx:102
-msgid "All sound effects will be disabled."
-msgstr "ʻE fakataʻeʻaongaʻi ʻa e ngaahi ola lelei kotoa pe."
-
-#: src/components/windows/Settings.jsx:106
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-"ʻOku ʻikai fakangofua ʻe hoʻo browser ke tau fakaʻaongaʻi ʻa e AudioContext "
-"ke ta ʻaki e ngaahi ongo. ʻOku ʻi ai nai ha meʻa fakafoʻituitui ʻoku ne "
-"taʻofi kitautolu?"
-
-#: src/components/windows/Settings.jsx:112
-msgid "Enable chat notifications"
-msgstr "ʻAi ke lava ʻo talanoa"
-
-#: src/components/windows/Settings.jsx:116
-msgid "Play a sound when new chat messages arrive"
-msgstr "Ta ha ongo ʻi he taimi ʻoku aʻu mai ai ha ngaahi popoaki foʻou"
-
-#: src/components/windows/Settings.jsx:119
-msgid "Auto Zoom In"
-msgstr "Fakaʻata ʻa e meʻalele ʻi he"
-
-#: src/components/windows/Settings.jsx:124
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-"Fakaʻata ke ʻoua naʻa ke fokotuʻu ha pixel ʻi he taimi ʻoku ke lomiʻi ai ʻa "
-"e fakatataa pea ʻoku siʻisiʻi hoʻo fakaʻata."
-
-#: src/components/windows/Settings.jsx:127
-msgid "Compact Palette"
-msgstr "Maʻuʻanga Fakamatala Palette"
-
-#: src/components/windows/Settings.jsx:132
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr "Fakaʻaliʻali Palette ʻi ha foomu ʻoku siʻisiʻi ange hono screen."
-
-#: src/components/windows/Settings.jsx:135
-msgid "Potato Mode"
-msgstr "Founga pateta"
-
-#: src/components/windows/Settings.jsx:139
-msgid "For when you are playing on a potato."
-msgstr "He ko e taimi ʻoku ke vaʻinga ai ʻi ha foʻi pateta."
-
-#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
-msgid "Light Grid"
-msgstr "Grid ʻo e mama"
-
-#: src/components/windows/Settings.jsx:146
-msgid "Show Grid in white instead of black."
-msgstr "Fakaʻaliʻali ʻa e grid ʻi he hinehina kae ʻikai ko e ʻuliʻuli."
-
-#: src/components/windows/Settings.jsx:149
-msgid "Custom Cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:153
-msgid "Use our custom cursor"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:157
-msgid "Historical View"
-msgstr "Vakai Fakahisitōliá"
-
-#: src/components/windows/Settings.jsx:162
-msgid "Check out past versions of the canvas."
-msgstr "Vakaiʻi ʻa e ngaahi tatau ʻo e fakatataa kuo ʻosi."
-
-#: src/components/windows/Settings.jsx:166
-#, fuzzy, javascript-format
-msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Liliu ki he ${ canvasName }"
-
-#: src/components/windows/Settings.jsx:174
-msgid "What the pencil should draw on the current canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:178
-msgid "Themes"
-msgstr "Ngaahi Kaveingá"
-
-#: src/components/windows/Settings.jsx:183
-msgid "How pixelplanet should look like."
-msgstr "ʻOku totonu ke fotunga fefe ʻa e pixelplanet."
-
-#: src/components/windows/Settings.jsx:190
-msgid "Select Language"
-msgstr "Fili ʻa e Lea Fakafonuá"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -842,6 +724,128 @@ msgstr ""
 "ʻOku ʻalu ʻa e credit ki he Palette ʻo e Top10 fakatataa ki he "
 "${ donendoLink }."
 
+#: src/components/windows/Settings.jsx:72
+msgid "Show Grid"
+msgstr "Fakaʻasi ʻa e grid"
+
+#: src/components/windows/Settings.jsx:77
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Fakamoʻui ʻa e grid ke fakaʻilongaʻi pixel kauʻafonua."
+
+#: src/components/windows/Settings.jsx:80
+msgid "Show Pixel Activity"
+msgstr "Fakaʻasi ʻa e ʻekitiviti pixel"
+
+#: src/components/windows/Settings.jsx:85
+msgid "Show circles where pixels are placed."
+msgstr "Fakaʻaliʻali ʻa e ngaahi siakale ʻoku fokotuʻu ai ʻa e pixel."
+
+#: src/components/windows/Settings.jsx:88
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:93
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:96
+msgid "Disable Game Sounds"
+msgstr "Toʻo e ongo ʻo e vaʻinga"
+
+#: src/components/windows/Settings.jsx:102
+msgid "All sound effects will be disabled."
+msgstr "ʻE fakataʻeʻaongaʻi ʻa e ngaahi ola lelei kotoa pe."
+
+#: src/components/windows/Settings.jsx:106
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"ʻOku ʻikai fakangofua ʻe hoʻo browser ke tau fakaʻaongaʻi ʻa e AudioContext "
+"ke ta ʻaki e ngaahi ongo. ʻOku ʻi ai nai ha meʻa fakafoʻituitui ʻoku ne "
+"taʻofi kitautolu?"
+
+#: src/components/windows/Settings.jsx:112
+msgid "Enable chat notifications"
+msgstr "ʻAi ke lava ʻo talanoa"
+
+#: src/components/windows/Settings.jsx:116
+msgid "Play a sound when new chat messages arrive"
+msgstr "Ta ha ongo ʻi he taimi ʻoku aʻu mai ai ha ngaahi popoaki foʻou"
+
+#: src/components/windows/Settings.jsx:119
+msgid "Auto Zoom In"
+msgstr "Fakaʻata ʻa e meʻalele ʻi he"
+
+#: src/components/windows/Settings.jsx:124
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Fakaʻata ke ʻoua naʻa ke fokotuʻu ha pixel ʻi he taimi ʻoku ke lomiʻi ai ʻa "
+"e fakatataa pea ʻoku siʻisiʻi hoʻo fakaʻata."
+
+#: src/components/windows/Settings.jsx:127
+msgid "Compact Palette"
+msgstr "Maʻuʻanga Fakamatala Palette"
+
+#: src/components/windows/Settings.jsx:132
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Fakaʻaliʻali Palette ʻi ha foomu ʻoku siʻisiʻi ange hono screen."
+
+#: src/components/windows/Settings.jsx:135
+msgid "Potato Mode"
+msgstr "Founga pateta"
+
+#: src/components/windows/Settings.jsx:139
+msgid "For when you are playing on a potato."
+msgstr "He ko e taimi ʻoku ke vaʻinga ai ʻi ha foʻi pateta."
+
+#: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
+msgid "Light Grid"
+msgstr "Grid ʻo e mama"
+
+#: src/components/windows/Settings.jsx:146
+msgid "Show Grid in white instead of black."
+msgstr "Fakaʻaliʻali ʻa e grid ʻi he hinehina kae ʻikai ko e ʻuliʻuli."
+
+#: src/components/windows/Settings.jsx:149
+msgid "Custom Cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:153
+msgid "Use our custom cursor"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:157
+msgid "Historical View"
+msgstr "Vakai Fakahisitōliá"
+
+#: src/components/windows/Settings.jsx:162
+msgid "Check out past versions of the canvas."
+msgstr "Vakaiʻi ʻa e ngaahi tatau ʻo e fakatataa kuo ʻosi."
+
+#: src/components/windows/Settings.jsx:166
+#, fuzzy, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Liliu ki he ${ canvasName }"
+
+#: src/components/windows/Settings.jsx:174
+msgid "What the pencil should draw on the current canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:178
+msgid "Themes"
+msgstr "Ngaahi Kaveingá"
+
+#: src/components/windows/Settings.jsx:183
+msgid "How pixelplanet should look like."
+msgstr "ʻOku totonu ke fotunga fefe ʻa e pixelplanet."
+
+#: src/components/windows/Settings.jsx:190
+msgid "Select Language"
+msgstr "Fili ʻa e Lea Fakafonuá"
+
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
@@ -866,26 +870,6 @@ msgstr "Load..."
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
 msgstr "Fakakaukau ke ke kau fakataha mo kimautolu ʻi he Guilded:"
-
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Fili ʻa e fakatataa ʻoku ke fie fakaʻaongaʻi. ʻOku makehe ʻa e fakatataa "
-"kotoa pe pea ʻoku kehekehe ʻa e palettes, cooldown mo e ngaahi fie maʻu. ʻE "
-"lava ke maʻu heni ʻa e ʻakaivi ʻo e canvases kuo tapuni:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "ʻAkaivi"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr ""
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
@@ -918,13 +902,33 @@ msgid "Captcha"
 msgstr "Captcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:315 src/components/ModCanvastools.jsx:406
-#: src/components/ModCanvastools.jsx:484 src/components/ModCanvastools.jsx:585
+#: src/components/ModCanvastools.jsx:313 src/components/ModCanvastools.jsx:404
+#: src/components/ModCanvastools.jsx:482 src/components/ModCanvastools.jsx:583
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Fakahū"
+
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Fili ʻa e fakatataa ʻoku ke fie fakaʻaongaʻi. ʻOku makehe ʻa e fakatataa "
+"kotoa pe pea ʻoku kehekehe ʻa e palettes, cooldown mo e ngaahi fie maʻu. ʻE "
+"lava ke maʻu heni ʻa e ʻakaivi ʻo e canvases kuo tapuni:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "ʻAkaivi"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -992,6 +996,10 @@ msgstr "Kuo pau ke ke hu ki he polokalama ke talanoa"
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
 msgstr "Fokotuʻutuʻu ʻo e senolo"
+
+#: src/components/windows/Player.jsx:17
+msgid "This URL is not supported by our Media Player"
+msgstr ""
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -1083,6 +1091,14 @@ msgstr "Kuo pau ke ʻoua naʻa toe siʻi hifo he mataʻitohi ʻe 6 ʻa e lea fuf
 msgid "Password must be shorter than 60 characters."
 msgstr "Kuo pau ke nounou ange ʻa e lea fufuú ʻi he mataʻitohi ʻe 60."
 
+#: src/components/GetIID.jsx:44
+msgid "Get IID"
+msgstr "Maʻu IID"
+
+#: src/components/GetIID.jsx:53
+msgid "Copy"
+msgstr "Hiki Tatau"
+
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
@@ -1143,14 +1159,6 @@ msgstr ""
 #: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
 msgstr ""
-
-#: src/components/GetIID.jsx:44
-msgid "Get IID"
-msgstr "Maʻu IID"
-
-#: src/components/GetIID.jsx:53
-msgid "Copy"
-msgstr "Hiki Tatau"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
@@ -1220,58 +1228,7 @@ msgstr "Tāmateʻi e ʻAkauní"
 msgid "Social Settings"
 msgstr "Ngaahi Feituʻu Fakasōsialé"
 
-#: src/components/Rankings.jsx:168
-msgid "Yesterday"
-msgstr "ʻAneafi"
-
-#: src/components/Rankings.jsx:177
-msgid "Countries Today"
-msgstr "Ngaahi Fonua he ʻAho Ní"
-
-#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
-msgid "Charts"
-msgstr "Ngaahi Sātí"
-
-#: src/components/Rankings.jsx:191
-#, fuzzy
-msgid "Total Pixels per Player"
-msgstr "Fakakatoa ʻo e pixel ʻi he ʻaho"
-
-#: src/components/Rankings.jsx:192
-#, fuzzy
-msgid "Daily Pixels per Player"
-msgstr "Fakakatoa ʻo e pixel ʻi he ʻaho"
-
-#: src/components/Rankings.jsx:193
-#, fuzzy
-msgid "Top 10 Players from Yesterday"
-msgstr "Kau vaʻinga ʻe toko 10 [pxls/ʻaho]"
-
-#: src/components/Rankings.jsx:197
-#, fuzzy
-msgid "Daily Pixels per Country"
-msgstr "Kau vaʻinga mo e pixel ʻi he houa"
-
-#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
-#: src/components/Rankings.jsx:233
-msgid "User"
-msgstr "Tokotaha Ngāue ki he Polo"
-
-#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
-msgid "Country"
-msgstr "Fonua"
-
-#: src/components/Rankings.jsx:243
-msgid "+last hour"
-msgstr ""
-
-#: src/components/Rankings.jsx:314
-msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
-msgstr ""
-"Fakamatala fakamuimuitaha ʻi he miniti ʻe 5 kotoa pe. Muimuitaha "
-"fakahokohoko fakafoʻou fakaʻaho ʻi he tuʻuapoo UTC."
-
-#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:233
+#: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:231
 msgid "Choose Canvas"
 msgstr "Fili ʻa e fakatataa"
 
@@ -1348,6 +1305,57 @@ msgstr "Fakafoʻou"
 msgid "Download Template"
 msgstr "Download Template"
 
+#: src/components/Rankings.jsx:168
+msgid "Yesterday"
+msgstr "ʻAneafi"
+
+#: src/components/Rankings.jsx:177
+msgid "Countries Today"
+msgstr "Ngaahi Fonua he ʻAho Ní"
+
+#: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
+msgid "Charts"
+msgstr "Ngaahi Sātí"
+
+#: src/components/Rankings.jsx:191
+#, fuzzy
+msgid "Total Pixels per Player"
+msgstr "Fakakatoa ʻo e pixel ʻi he ʻaho"
+
+#: src/components/Rankings.jsx:192
+#, fuzzy
+msgid "Daily Pixels per Player"
+msgstr "Fakakatoa ʻo e pixel ʻi he ʻaho"
+
+#: src/components/Rankings.jsx:193
+#, fuzzy
+msgid "Top 10 Players from Yesterday"
+msgstr "Kau vaʻinga ʻe toko 10 [pxls/ʻaho]"
+
+#: src/components/Rankings.jsx:197
+#, fuzzy
+msgid "Daily Pixels per Country"
+msgstr "Kau vaʻinga mo e pixel ʻi he houa"
+
+#: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
+#: src/components/Rankings.jsx:233
+msgid "User"
+msgstr "Tokotaha Ngāue ki he Polo"
+
+#: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
+msgid "Country"
+msgstr "Fonua"
+
+#: src/components/Rankings.jsx:243
+msgid "+last hour"
+msgstr ""
+
+#: src/components/Rankings.jsx:314
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"Fakamatala fakamuimuitaha ʻi he miniti ʻe 5 kotoa pe. Muimuitaha "
+"fakahokohoko fakafoʻou fakaʻaho ʻi he tuʻuapoo UTC."
+
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
 msgstr "Kau Fakaʻaongaʻi ʻi he ʻ"
@@ -1394,24 +1402,6 @@ msgstr "Tuʻunga fakaʻaho ʻe 10"
 msgid "Dimensions"
 msgstr "Fua"
 
-#: src/components/ModWatchtools.jsx:125 src/components/TemplateItem.jsx:54
-#: src/components/TemplateItemEdit.jsx:122
-msgid "Canvas"
-msgstr "Fakatataa"
-
-#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
-#, fuzzy
-msgid "Coordinates"
-msgstr "Ngaahi Fakafekauʻaki Hala"
-
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
-
 #: src/components/TemplateItemEdit.jsx:97
 #, fuzzy
 msgid "Select File"
@@ -1420,6 +1410,16 @@ msgstr "Fili ʻa e Lea Fakafonuá"
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
 msgstr ""
+
+#: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr "Fakatataa"
+
+#: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
+#, fuzzy
+msgid "Coordinates"
+msgstr "Ngaahi Fakafekauʻaki Hala"
 
 #: src/components/TemplateItemEdit.jsx:174
 #, fuzzy
@@ -1433,22 +1433,6 @@ msgstr "Hingoa pe ʻĪmeilí"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "LogIn"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Kātaki ʻo fakapapauʻi ho tuʻasila meilí pe ʻe lava ke tāmateʻi hoʻo ʻakauní "
-"hili ha ngaahi ʻaho siʻi."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "ʻOku ʻoatu ha meili fakapapauʻi foʻou kiate koe."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Lomiʻi heni ke kole ha meili fakapapauʻi foʻou."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1487,6 +1471,22 @@ msgstr ""
 msgid "New Mail"
 msgstr "Meili Foʻoú"
 
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Kātaki ʻo fakapapauʻi ho tuʻasila meilí pe ʻe lava ke tāmateʻi hoʻo ʻakauní "
+"hili ha ngaahi ʻaho siʻi."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "ʻOku ʻoatu ha meili fakapapauʻi foʻou kiate koe."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Lomiʻi heni ke kole ha meili fakapapauʻi foʻou."
+
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
 msgstr "ʻIo, tamateʻi ʻeku ʻakauni!"
@@ -1515,23 +1515,23 @@ msgstr "Taʻofi e kau fakaʻaongaʻi"
 msgid "You have no users blocked"
 msgstr "ʻOku ʻikai ke ʻi ai haʻo loka"
 
-#: src/components/ModCanvastools.jsx:171
+#: src/components/ModCanvastools.jsx:169
 msgid "Build image on canvas."
 msgstr "Langa ha ʻimisi ʻi he fakatataa."
 
-#: src/components/ModCanvastools.jsx:174
+#: src/components/ModCanvastools.jsx:172
 msgid "Build image and set it to protected."
 msgstr "Langa ha ʻimisi pea fokotuʻu ia ke maluʻi."
 
-#: src/components/ModCanvastools.jsx:177
+#: src/components/ModCanvastools.jsx:175
 msgid "Build image, but reset cooldown to unset-pixel cd."
 msgstr "Langa ʻa e ʻimisi, kae fakafoʻou ʻa e cooldown ki he t-pixel cd."
 
-#: src/components/ModCanvastools.jsx:187
+#: src/components/ModCanvastools.jsx:185
 msgid "Clean spare pixels that are surrounded by unset pixels"
 msgstr "ʻOku maʻa ʻa e ngaahi liunga ʻoku ʻatakaiʻi ʻe he ngaahi liunga"
 
-#: src/components/ModCanvastools.jsx:191
+#: src/components/ModCanvastools.jsx:189
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
@@ -1539,7 +1539,7 @@ msgstr ""
 "ʻOku ʻi ai ha ngaahi liunga maʻa ʻoku ʻatakaiʻi ʻe he ngaahi pixel ʻoku "
 "ʻikai ke ʻi ai ha liunga pea aʻu ki he 1 ngaahi liunga kehe"
 
-#: src/components/ModCanvastools.jsx:195
+#: src/components/ModCanvastools.jsx:193
 msgid ""
 "Clean spare pixels that are surrounded by a single other color or unset "
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
@@ -1549,38 +1549,38 @@ msgstr ""
 "liunga ua (ʻoku ʻikai ke ʻi ai ha MEʻA ʻi he CANVASES ʻoku ne fakaʻata ʻa e "
 "PIXELS (ʻa ia ʻoku ʻi ai ha cooldowns ʻe ua)!)"
 
-#: src/components/ModCanvastools.jsx:199
+#: src/components/ModCanvastools.jsx:197
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:210
+#: src/components/ModCanvastools.jsx:208
 msgid "Status: Not running"
 msgstr "Tuʻunga: ʻikai lele"
 
-#: src/components/ModCanvastools.jsx:252
+#: src/components/ModCanvastools.jsx:250
 msgid "Image Upload"
 msgstr "Upload e ʻĪmisí"
 
-#: src/components/ModCanvastools.jsx:253
+#: src/components/ModCanvastools.jsx:251
 msgid "Upload images to canvas"
 msgstr "Upload e ngaahi ʻata ki he fakatataa"
 
-#: src/components/ModCanvastools.jsx:255
+#: src/components/ModCanvastools.jsx:253
 msgid "File"
 msgstr "Faile"
 
-#: src/components/ModCanvastools.jsx:276
+#: src/components/ModCanvastools.jsx:274
 #, fuzzy
 msgid "Coordinates:"
 msgstr "Ngaahi Fakafekauʻaki Hala"
 
-#: src/components/ModCanvastools.jsx:320
+#: src/components/ModCanvastools.jsx:318
 msgid "Pixel Protection"
 msgstr "Pixel maluʻi"
 
-#: src/components/ModCanvastools.jsx:324
+#: src/components/ModCanvastools.jsx:322
 #, fuzzy
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
@@ -1590,36 +1590,36 @@ msgstr ""
 "grained lelei ange, fakaʻaongaʻi ʻa e maluʻi ʻaki ʻa e ʻimisi upload mo e "
 "ʻAlifa)"
 
-#: src/components/ModCanvastools.jsx:344 src/components/ModCanvastools.jsx:421
-#: src/components/ModCanvastools.jsx:515 src/components/ModWatchtools.jsx:176
+#: src/components/ModCanvastools.jsx:342 src/components/ModCanvastools.jsx:419
+#: src/components/ModCanvastools.jsx:513 src/components/ModWatchtools.jsx:174
 msgid "Top-left corner"
 msgstr "Tuliki toʻohema ʻi ʻolunga"
 
-#: src/components/ModCanvastools.jsx:366 src/components/ModCanvastools.jsx:443
-#: src/components/ModCanvastools.jsx:537 src/components/ModWatchtools.jsx:198
+#: src/components/ModCanvastools.jsx:364 src/components/ModCanvastools.jsx:441
+#: src/components/ModCanvastools.jsx:535 src/components/ModWatchtools.jsx:196
 msgid "Bottom-right corner"
 msgstr "Tuliki toʻomataʻu ki lalo"
 
-#: src/components/ModCanvastools.jsx:412
+#: src/components/ModCanvastools.jsx:410
 msgid "Rollback to Date"
 msgstr "Rollback ki he ʻaho"
 
-#: src/components/ModCanvastools.jsx:416
+#: src/components/ModCanvastools.jsx:414
 #, fuzzy
 msgid "Rollback an area of the canvas to a set date and time"
 msgstr "Rollback ha feituʻu ʻo e fakatataa ki ha ʻaho kuo fokotuʻu (00:00 UTC)"
 
-#: src/components/ModCanvastools.jsx:490
+#: src/components/ModCanvastools.jsx:488
 msgid "Canvas Cleaner"
 msgstr "Fakamaʻa ʻo e fakatataa"
 
-#: src/components/ModCanvastools.jsx:492
+#: src/components/ModCanvastools.jsx:490
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr ""
 "Fakaʻaongaʻi ha filter ke fakamaʻa ʻaki e veve ʻi he ngaahi feituʻu "
 "fakatataa lalahi."
 
-#: src/components/ModCanvastools.jsx:603
+#: src/components/ModCanvastools.jsx:601
 msgid "Stop Cleaner"
 msgstr "Taʻofi e fakamaʻa"
 
@@ -1655,29 +1655,37 @@ msgstr "Fakahu ʻa e hingoa ngaue ʻo e Mod foʻou"
 msgid "User Name"
 msgstr "Hingoa Ngāue ʻi he Polokalam"
 
-#: src/components/ModWatchtools.jsx:48
+#: src/components/ModWatchtools.jsx:49
 msgid "Interval is invalid"
 msgstr "ʻIkai tonu ʻa e vahaʻa taimi"
 
-#: src/components/ModWatchtools.jsx:124
+#: src/components/ModWatchtools.jsx:122
 msgid "Check who placed in an area"
 msgstr "Vakaiʻi pe ko hai naʻe tuku ʻi ha feituʻu"
 
-#: src/components/ModWatchtools.jsx:144
+#: src/components/ModWatchtools.jsx:142
 msgid "Interval"
 msgstr "ʻI he vahaʻa ʻo"
 
-#: src/components/ModWatchtools.jsx:159
+#: src/components/ModWatchtools.jsx:157
 msgid "IID (optional)"
 msgstr "IID (fili pē)"
 
-#: src/components/ModWatchtools.jsx:249
+#: src/components/ModWatchtools.jsx:247
 msgid "Get Pixels"
 msgstr "Maʻu ʻa e pixel"
 
-#: src/components/ModWatchtools.jsx:281
+#: src/components/ModWatchtools.jsx:279
 msgid "Get Users"
 msgstr "Maʻu e kau fakaʻaongaʻi"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
@@ -1745,6 +1753,18 @@ msgstr "Poloka"
 msgid "Mute"
 msgstr "Fakalongo"
 
+#: src/components/MdLink.jsx:93
+msgid "Open in PopUp"
+msgstr ""
+
+#: src/components/MdLink.jsx:104
+msgid "Hide Embed"
+msgstr ""
+
+#: src/components/MdLink.jsx:110
+msgid "Show Embedded"
+msgstr ""
+
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
 msgid "G"
@@ -1755,26 +1775,10 @@ msgctxt "keybinds"
 msgid "X"
 msgstr "X"
 
-#: src/components/windows/Settings.jsx:89
-#, fuzzy
-msgctxt "keybinds"
-msgid "N"
-msgstr "ʻIkai"
-
-#: src/components/windows/Settings.jsx:97
-msgctxt "keybinds"
-msgid "M"
-msgstr "M"
-
 #: src/components/windows/Help.jsx:21 src/components/windows/Settings.jsx:159
 msgctxt "keybinds"
 msgid "H"
 msgstr "H"
-
-#: src/components/windows/Settings.jsx:169
-msgctxt "keybinds"
-msgid "B"
-msgstr ""
 
 #: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
@@ -1815,6 +1819,22 @@ msgstr "D"
 msgctxt "keybinds"
 msgid "Shift"
 msgstr "Shift"
+
+#: src/components/windows/Settings.jsx:89
+#, fuzzy
+msgctxt "keybinds"
+msgid "N"
+msgstr "ʻIkai"
+
+#: src/components/windows/Settings.jsx:97
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+#: src/components/windows/Settings.jsx:169
+msgctxt "keybinds"
+msgid "B"
+msgstr ""
 
 #: src/components/TemplateSettings.jsx:61
 msgctxt "keybinds"

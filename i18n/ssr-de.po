@@ -228,33 +228,33 @@ msgstr "Nur Administratoren können dies tun"
 msgid "You are not banned"
 msgstr "Du bist nicht verbannt"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:24
-msgid "This email provider is not allowed"
-msgstr "Dieser E-Mail Anbieter ist nicht erlaubt"
-
-#: src/routes/api/auth/register.js:31
+#: src/routes/api/auth/register.js:27
 msgid "No Captcha given"
 msgstr "Kein Captcha angegeben"
 
-#: src/routes/api/auth/register.js:34
+#: src/routes/api/auth/register.js:30
 msgid "E-Mail already in use."
 msgstr "E-Mail wird bereits verwendet."
 
-#: src/routes/api/auth/register.js:36
+#: src/routes/api/auth/register.js:32
 msgid "Username already in use."
 msgstr "Name wird bereits verwendet."
 
-#: src/routes/api/auth/register.js:59
+#: src/routes/api/auth/register.js:55
 msgid "You took too long, try again."
 msgstr "Du hast zu lange gebraucht, versuche es noch einmal."
 
-#: src/routes/api/auth/register.js:62
+#: src/routes/api/auth/register.js:58
 msgid "You failed your captcha"
 msgstr "Captcha Text ist falsch"
 
-#: src/routes/api/auth/register.js:65
+#: src/routes/api/auth/register.js:61
 msgid "Unknown Captcha Error"
 msgstr "Unbekannter Captcha-Fehler"
+
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+msgid "This email provider is not allowed"
+msgstr "Dieser E-Mail Anbieter ist nicht erlaubt"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
