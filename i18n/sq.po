@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-09 20:01+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
+"PO-Revision-Date: 2024-05-14 19:42+0000\n"
+"Last-Translator: Sinan-alt <sinanppf2@gmail.com>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/sq/>\n"
 "Language: sq\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -37,7 +37,7 @@ msgstr "Tingulli i Heshtur"
 
 #: src/controls/keypress.js:194
 msgid "Unmuted Sound"
-msgstr "Tingulli i Pashuar"
+msgstr "Tingulli Pa zë"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:203
@@ -46,40 +46,39 @@ msgstr "Kopjuar"
 
 #: src/controls/keypress.js:209
 msgid "Overlay ON"
-msgstr "Mbulesa e NDEZUR"
+msgstr "Overlay e NDEZUR"
 
 #: src/controls/keypress.js:210
 msgid "Overlay OFF"
-msgstr "Mbulesa e FIKUR"
+msgstr "Overlay e FIKUR"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
-#, fuzzy
 msgid "Easter Egg ON"
-msgstr "no proper translation"
+msgstr "Veza e Pashkeve e NDEZUR"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Veza e Pashkeve e FIKUR"
 
 #: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
-msgstr "Timeout"
+msgstr "Kohëzgjatja"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
-"Nuk more përgjigje nga pixelplanet. Përpiquni të freskoni nëse ky problem "
+"Nuk more përgjigje nga pixelplanet. Përpiquni të rifreskoni nëse ky problem "
 "vazhdon."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
-msgstr "Kanavacë e Pavlershme"
+msgstr "Kanvas invalid"
 
 #: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
-msgstr "Ky kanavacë nuk ekziston"
+msgstr "Ky kanvas nuk ekziston"
 
 #: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
 #: src/ui/PixelTransferController.js:116
@@ -104,7 +103,7 @@ msgstr "Ngjyra e Gabuar"
 
 #: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
-msgstr "Ngjyra e Pavlershme selektuar"
+msgstr "Ngjyrë e pavleshme e selektuar"
 
 #: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
@@ -112,7 +111,7 @@ msgstr "Vetëm për përdorues të regjistruar"
 
 #: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"
-msgstr "Duhet të jesh kyçur për të vendosur në kanavac"
+msgstr "Duhet të jesh kyçur për të vendosur në kanvas"
 
 #: src/ui/PixelTransferController.js:128 src/ui/PixelTransferController.js:144
 #: src/ui/PixelTransferController.js:148
@@ -122,7 +121,7 @@ msgstr "Nuk është e lejueshme"
 #: src/ui/PixelTransferController.js:130
 msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr ""
-"Nuk mundeni të hyni ende në këtë kanavacë, sepse nuk i keni pikselat të "
+"Nuk mundeni të hyni ende në këtë kanvas, sepse nuk i keni pikselat të "
 "mjaftueshme"
 
 #: src/ui/PixelTransferController.js:133
@@ -135,7 +134,7 @@ msgstr "Të lutem vërtetoni që jeni njeri"
 
 #: src/ui/PixelTransferController.js:145
 msgid "You are using a Proxy."
-msgstr "Ti je duke përdorur përfaqësues."
+msgstr "Ti je duke përdorur proxy."
 
 #: src/ui/PixelTransferController.js:149
 msgid "Just the Top10 of yesterday can place here"
@@ -143,23 +142,20 @@ msgstr "Vetëm ata që ishin në Top10 dje mund të vendosin këtu"
 
 #: src/ui/PixelTransferController.js:152
 msgid "You are weird"
-msgstr "Ti je.. ndryshe"
+msgstr "Ti je I çuditshme"
 
 #: src/ui/PixelTransferController.js:154
 msgid ""
 "Server got confused by your pixels. Are you playing on multiple devices?"
-msgstr ""
-"Serveri u ngatërrua nga pikselet të juaja. A po luani në pajisje të shumëta?"
+msgstr "Serveri u ngatërrua nga pikselet të juaja. A po perdorni shum paisje ?"
 
 #: src/ui/PixelTransferController.js:157
-#, fuzzy
 msgid "Banned"
-msgstr "i/e Ndaluar"
+msgstr "Banned"
 
 #: src/ui/PixelTransferController.js:161
-#, fuzzy
 msgid "Range Banned"
-msgstr "Rrezja juaj është ndaluar"
+msgstr "Rrezja juaj është e ndaluar"
 
 #: src/ui/PixelTransferController.js:162
 msgid "Your Internet Provider is banned from this game"
@@ -230,208 +226,208 @@ msgstr "porvo përsëri pas ${ ti }min"
 #: src/store/actions/fetch.js:70
 #, javascript-format
 msgid "Connection error ${ code } :("
-msgstr ""
+msgstr "Gabim lidhjeje ${ code } :("
 
 #: src/store/actions/fetch.js:103 src/store/actions/fetch.js:129
 msgid "Could not connect to server, please try again later :("
-msgstr ""
+msgstr "Nuk mund të lidhej me serverin, ju lutemi provoni përsëri më vonë :("
 
 #: src/store/actions/fetch.js:151 src/store/actions/fetch.js:170
 #: src/store/actions/fetch.js:189 src/store/actions/fetch.js:208
 #: src/store/actions/fetch.js:227
 msgid "Unknown Error"
-msgstr ""
+msgstr "Gabim i panjohur"
 
 #: src/store/actions/fetch.js:237
 msgid "Server answered with gibberish :("
-msgstr ""
+msgstr "Serveri u përgjigj me kokrra :("
 
 #: src/store/middleware/notifications.js:33
 msgid "Your next pixels are ready"
-msgstr ""
+msgstr "Pixelët e tu të ardhshëm janë gati"
 
 #: src/store/middleware/notifications.js:37
 msgid "You can now place more on pixelplanet.fun :)"
-msgstr ""
+msgstr "Tani mund të vendosni më shumë në pixelplanet.fun :)"
 
 #: src/store/middleware/notifications.js:54
 msgid "mentioned you"
-msgstr ""
+msgstr "ju përmendi"
 
 #: src/store/middleware/notifications.js:58
 msgid "You have new messages in chat"
-msgstr ""
+msgstr "Ju keni mesazhe të reja në chat"
 
 #: src/components/Converter.jsx:566 src/components/CoordinatesBox.jsx:42
 #: src/components/ModWatchtools.jsx:388 src/components/ModWatchtools.jsx:406
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopjo në Clipboard"
 
 #: src/components/OnlineBox.jsx:56
 msgid "Online Users on Canvas"
-msgstr ""
+msgstr "Përdoruesit në internet në Canvas"
 
 #: src/components/OnlineBox.jsx:71
 msgid "Total Online Users"
-msgstr ""
+msgstr "Totali i përdoruesve në internet"
 
 #: src/components/OnlineBox.jsx:84 src/components/UserAreaContent.jsx:79
 msgid "Placed Pixels"
-msgstr ""
+msgstr "Piksele të vendosura"
 
 #: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:159
 msgid "Today"
-msgstr ""
+msgstr "Sot"
 
 #: src/components/OnlineBox.jsx:92 src/components/Rankings.jsx:150
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: src/components/buttons/CanvasSwitchButton.jsx:20
 #: src/components/windows/index.js:20
 msgid "Canvas Selection"
-msgstr ""
+msgstr "Përzgjedhja e kanavacës"
 
 #: src/components/buttons/ChatButton.jsx:79
 msgid "Close Chat"
-msgstr ""
+msgstr "Mbyll Chat"
 
 #: src/components/buttons/ChatButton.jsx:79
 msgid "Open Chat"
-msgstr ""
+msgstr "Hapni Chat"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Close Menu"
-msgstr ""
+msgstr "Mbyll Menunë"
 
 #: src/components/buttons/ExpandMenuButton.jsx:22
 msgid "Open Menu"
-msgstr ""
+msgstr "Hap Menunë"
 
 #: src/components/HistorySelect.jsx:156
 msgid "Loading"
-msgstr ""
+msgstr "Po ngarkohet"
 
 #: src/components/HistorySelect.jsx:157
 msgid "Select Date above"
-msgstr ""
+msgstr "Zgjidhni datën më lart"
 
 #: src/components/Admintools.jsx:103 src/components/ModCanvastools.jsx:227
 #: src/components/ModWatchtools.jsx:118 src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
 msgid "Close"
-msgstr ""
+msgstr "Mbylle"
 
 #: src/components/Window.jsx:173
 msgid "PopUp"
-msgstr ""
+msgstr "Shfaqem"
 
 #: src/components/Window.jsx:184
 msgid "Restore"
-msgstr ""
+msgstr "Rivendos"
 
 #: src/components/Window.jsx:221
 msgid "Clone"
-msgstr ""
+msgstr "Klonimi"
 
 #: src/components/Window.jsx:229
 msgid "Move"
-msgstr ""
+msgstr "Lëvizni"
 
 #: src/components/Window.jsx:252
 msgid "Maximize"
-msgstr ""
+msgstr "Maksimizoni"
 
 #: src/components/Window.jsx:268
 msgid "Resize"
-msgstr ""
+msgstr "Ndryshimi i madhësisë"
 
 #: src/components/BanInfo.jsx:75 src/components/buttons/HelpButton.jsx:20
 #: src/components/windows/index.js:14
 msgid "Help"
-msgstr ""
+msgstr "Ndim o kar"
 
 #: src/components/buttons/SettingsButton.jsx:21
 #: src/components/windows/index.js:15
 msgid "Settings"
-msgstr ""
+msgstr "Cilësimet"
 
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
-msgstr ""
+msgstr "Zona e Përdoruesit"
 
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
-msgstr ""
+msgstr "Bëni pamje nga ekrani"
 
 #: src/components/buttons/GlobeButton.jsx:34
 msgid "Globe View"
-msgstr ""
+msgstr "Pamja e globit"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Close Palette"
-msgstr ""
+msgstr "Mbyll paletën"
 
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
-msgstr ""
+msgstr "Hapni paletën"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
-msgstr ""
+msgstr "Aktivizo Lapsin"
 
 #: src/components/buttons/PencilButton.jsx:46
 msgid "Disable Pencil"
-msgstr ""
+msgstr "Çaktivizo lapsin"
 
 #: src/components/buttons/PencilButton.jsx:50
 msgid "Disable History Pencil"
-msgstr ""
+msgstr "Çaktivizo Lapsin e historisë"
 
 #: src/components/buttons/PencilButton.jsx:54
 msgid "Disable Overlay Pencil"
-msgstr ""
+msgstr "Çaktivizo Lapsin e mbivendosjes"
 
 #: src/components/windows/index.js:17
 msgid "Registration"
-msgstr ""
+msgstr "Regjistrimi"
 
 #: src/components/windows/index.js:18
 msgid "Forgot Password"
-msgstr ""
+msgstr "Keni harruar fjalëkalimin"
 
 #: src/components/windows/index.js:19
 msgid "Chat"
-msgstr ""
+msgstr "Bisedë"
 
 #: src/components/windows/index.js:21
 msgid "Canvas Archive"
-msgstr ""
+msgstr "Arkivi i kanavacës"
 
 #: src/components/windows/index.js:22
 msgid "Player"
-msgstr ""
+msgstr "Lojtar"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
-msgstr ""
+msgstr "Ju mori shumë kohë, provoni përsëri."
 
 #: src/components/GlobalCaptcha.jsx:50
 msgid "You failed your captcha"
-msgstr ""
+msgstr "Dështove captcha-n tënde"
 
 #: src/components/GlobalCaptcha.jsx:53
 msgid "No or invalid captcha text"
-msgstr ""
+msgstr "Nuk ka ose tekst i pavlefshëm captcha"
 
 #: src/components/GlobalCaptcha.jsx:56
 msgid "No captcha id given"
-msgstr ""
+msgstr "Nuk është dhënë asnjë ID captcha"
 
 #: src/components/GlobalCaptcha.jsx:59
 msgid "Unknown Captcha Error"
-msgstr ""
+msgstr "Gabim i panjohur Captcha"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
@@ -440,7 +436,7 @@ msgstr ""
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
-msgstr ""
+msgstr "Gabim"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
@@ -448,55 +444,57 @@ msgstr ""
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
-msgstr ""
+msgstr "Anulo"
 
 #: src/components/GlobalCaptcha.jsx:86
 msgid "Send"
-msgstr ""
+msgstr "Dërgo"
 
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
-msgstr ""
+msgstr "Ju jeni bannuar.Ju lutem mos u bëni si serbët "
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
-msgstr ""
+msgstr " se si të apelohet."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
-msgstr ""
+msgstr "Arsyeja"
 
 #: src/components/BanInfo.jsx:91
 msgid "By Mod"
-msgstr ""
+msgstr "Nga Mod"
 
 #: src/components/BanInfo.jsx:97 src/components/ModIIDtools.jsx:84
 msgid "Duration"
-msgstr ""
+msgstr "Kohëzgjatja"
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
-msgstr ""
+msgstr "Ndalimi juaj skadon në "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr ""
+msgstr " e cila është në "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
-msgstr ""
+msgstr "Unbanuar"
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."
-msgstr ""
+msgstr "Tani që e keni parë këtë mesazh, nuk jeni më i ndaluar."
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
-msgstr ""
+msgstr "Pse?"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
 msgstr ""
+"Vendosni piksele me ngjyra në një kanavacë të madhe me lojtarët e tjerë në "
+"internet!"
 
 #: src/components/windows/Help.jsx:66
 msgid ""
@@ -507,38 +505,50 @@ msgid ""
 "pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
 "and 7s on already set pixels."
 msgstr ""
+"Kanavacja jonë kryesore është një hartë e madhe botërore, ju mund ta "
+"vendosni kudo që dëshironi, por do t'ju duhet të prisni një ftohje specifike "
+"midis pikselëve. Mund të shikoni ftohjen dhe kërkesat në menynë Përzgjedhja "
+"e kanavacës (butoni i globit në krye). Disa piktura kanë një ftohje të "
+"ndryshme për zëvendësimin e pikselëve të vendosur nga përdoruesi sesa "
+"vendosja në një piksel të pacaktuar. dmth 4s/7s do të thotë 4s në piksele të "
+"freskëta dhe 7s në pikselë tashmë të vendosur."
 
 #: src/components/windows/Help.jsx:67
 msgid ""
 "Higher zoomlevels take some time to update, the 3D globe gets updated at "
 "least once per day."
 msgstr ""
+"Nivelet më të larta të zmadhimit kërkojnë pak kohë për t'u përditësuar, "
+"globi 3D përditësohet të paktën një herë në ditë."
 
 #: src/components/windows/Help.jsx:68
 msgid "Have fun!"
-msgstr ""
+msgstr "Argëtohu!"
 
 #: src/components/windows/Help.jsx:70
 msgid "recommended"
-msgstr ""
+msgstr "rekomandohet"
 
 #: src/components/windows/Help.jsx:71
 msgid "Source on "
-msgstr ""
+msgstr "Burimi në "
 
 #: src/components/windows/Help.jsx:72
 msgid "Map Data"
-msgstr ""
+msgstr "Të dhënat e hartës"
 
 #: src/components/windows/Help.jsx:73
 msgid ""
 "The bare map data that we use, together with converted OpenStreetMap tiles "
 "for orientation, can be downloaded from mega.nz here: "
 msgstr ""
+"Të dhënat e zhveshura të hartës që ne përdorim, së bashku me pllakat e "
+"konvertuara të OpenStreetMap për orientim, mund të shkarkohen nga mega.nz "
+"këtu: "
 
 #: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
-msgstr ""
+msgstr "I ndaluar? U zbulua si përfaqësues?"
 
 #: src/components/windows/Help.jsx:76
 #, javascript-format
@@ -547,70 +557,81 @@ msgid ""
 "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail to "
 "${ mailLink } and include the following IID:"
 msgstr ""
+"Nëse jeni zbuluar si përfaqësues, por nuk jeni asnjë, ose mendoni se jeni "
+"ndaluar gabimisht, ju lutemi shkoni te ${ guildedLink } ose na dërgoni një "
+"email te ${ mailLink } dhe përfshini ID-në e mëposhtme:"
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
 msgid "Controls"
-msgstr ""
+msgstr "Kontrollet"
 
 #: src/components/windows/Help.jsx:81
 msgid "Click a color in palette to select it"
-msgstr ""
+msgstr "Klikoni një ngjyrë në paleta për ta zgjedhur atë"
 
 #: src/components/windows/Help.jsx:82
 #, javascript-format
 msgid "Press ${ bindG } to toggle grid"
-msgstr ""
+msgstr "Shtypni ${ bindG } për të ndërruar rrjetin"
 
 #: src/components/windows/Help.jsx:83
 #, javascript-format
 msgid "Press ${ bindX } to toggle showing of pixel activity"
-msgstr ""
+msgstr "Shtypni ${ bindX } për të ndryshuar shfaqjen e aktivitetit të pikselëve"
 
 #: src/components/windows/Help.jsx:84
 #, javascript-format
 msgid "Press ${ bindH } to toggle historical view"
-msgstr ""
+msgstr "Shtypni ${ bindH } për të ndryshuar pamjen historike"
 
 #: src/components/windows/Help.jsx:85
 #, javascript-format
 msgid "Press ${ bindR } to copy coordinates"
-msgstr ""
+msgstr "Shtypni ${ bindR } për të kopjuar koordinatat"
 
 #: src/components/windows/Help.jsx:86
 #, javascript-format
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
-msgstr ""
+msgstr "Shtypni ${ bindQ } ose ${ bindE } për të zmadhuar"
 
 #: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
-msgstr ""
+msgstr "Shtypni ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } për të lëvizur"
 
 #: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
 msgstr ""
+"Shtypni ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } për të "
+"lëvizur"
 
 #: src/components/windows/Help.jsx:89
 #, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
 msgstr ""
+"Tërhiqni miun ${ mouseSymbol } ose shiritin ${ touchSymbol } për të lëvizur"
 
 #: src/components/windows/Help.jsx:90
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
+"Lëvizni rrotën e miut ${ mouseSymbol } ose shtypni ${ touchSymbol } për të "
+"zmadhuar"
 
 #: src/components/windows/Help.jsx:91
 #, javascript-format
 msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr ""
+"Mbajeni majtas ${ bindShift } për laps (për ta vendosur ndërsa lëvizni miun)"
 
 #: src/components/windows/Help.jsx:92 src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
+"${ mouseSymbol } Klikoni majtas ose ${ touchSymbol } trokitni lehtë për të "
+"vendosur një piksel"
 
 #: src/components/windows/Help.jsx:93 src/components/windows/Help.jsx:105
 #, javascript-format
@@ -618,16 +639,20 @@ msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
 "select current hovering color"
 msgstr ""
+"Klikoni në butonin e mesëm të miut ${ mouseSymbol } ose trokitni lehtë mbi ${"
+" touchSymbol } për të zgjedhur ngjyrën aktuale që rri pezull"
 
 #: src/components/windows/Help.jsx:99
 #, javascript-format
 msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
-msgstr ""
+msgstr "Shtypni ${ bindQ } dhe ${ bindE } për të fluturuar lart e poshtë"
 
 #: src/components/windows/Help.jsx:100
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
+"${ mouseSymbol } Mbani butonin e majtë të miut dhe tërhiqni miun për ta "
+"rrotulluar"
 
 #: src/components/windows/Help.jsx:101
 #, javascript-format
@@ -635,172 +660,184 @@ msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
 "button and drag to zoom"
 msgstr ""
+"${ mouseSymbol } Lëvizni rrotën e miut ose mbani butonin e mesëm të miut ${ "
+"mouseSymbol } dhe tërhiqeni për të zmadhuar"
 
 #: src/components/windows/Help.jsx:102
 #, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
+"${ mouseSymbol } Klikoni me të djathtën dhe tërhiqni miun për të shtrirë"
 
 #: src/components/windows/Help.jsx:104
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
 msgstr ""
+"${ mouseSymbol } Klikoni me të djathtën ose prekni dy herë ${ touchSymbol } "
+"për të hequr një piksel"
 
 #: src/components/windows/Help.jsx:109
 msgid ""
 "We thank the following artists, who made their palettes available to the "
 "public on"
 msgstr ""
+"Falenderojmë artistët e mëposhtëm, të cilët vunë në dispozicion të publikut "
+"paletat e tyre"
 
 #: src/components/windows/Help.jsx:112
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
-msgstr ""
+msgstr "Kredia për Paletën e Hënës shkon te ${ starhouseLink }."
 
 #: src/components/windows/Help.jsx:115
 #, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
-msgstr ""
+msgstr "Kredia për Paletën e kanavacës së Top10 shkon te ${ vinikLink }."
 
 #: src/components/windows/Help.jsx:118
 #, javascript-format
 msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
-msgstr ""
+msgstr "Kredia për Paletën e kanavacës 2 bit shkon te ${ donendoLink }."
 
 #: src/components/windows/Settings.jsx:72
 msgid "Show Grid"
-msgstr ""
+msgstr "Trego Grid"
 
 #: src/components/windows/Settings.jsx:77
 msgid "Turn on grid to highlight pixel borders."
-msgstr ""
+msgstr "Aktivizo rrjetën për të theksuar kufijtë e pikselit."
 
 #: src/components/windows/Settings.jsx:80
 msgid "Show Pixel Activity"
-msgstr ""
+msgstr "Shfaq aktivitetin e pikselit"
 
 #: src/components/windows/Settings.jsx:85
 msgid "Show circles where pixels are placed."
-msgstr ""
+msgstr "Trego rrathët ku janë vendosur pikselët."
 
 #: src/components/windows/Settings.jsx:88
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Trego gjithmonë Kontrollin e Lëvizjes"
 
 #: src/components/windows/Settings.jsx:93
 msgid "Always show movement control buttons"
-msgstr ""
+msgstr "Trego gjithmonë butonat e kontrollit të lëvizjes"
 
 #: src/components/windows/Settings.jsx:96
 msgid "Disable Game Sounds"
-msgstr ""
+msgstr "Çaktivizo tingujt e lojës"
 
 #: src/components/windows/Settings.jsx:102
 msgid "All sound effects will be disabled."
-msgstr ""
+msgstr "Të gjitha efektet zanore do të çaktivizohen."
 
 #: src/components/windows/Settings.jsx:106
 msgid ""
 "Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
 "have some privacy feature blocking us?"
 msgstr ""
+"Shfletuesi juaj nuk na lejon të përdorim AudioContext për të luajtur tinguj. "
+"A keni ndonjë veçori të privatësisë që na bllokon?"
 
 #: src/components/windows/Settings.jsx:112
 msgid "Enable chat notifications"
-msgstr ""
+msgstr "Aktivizo njoftimet e bisedës"
 
 #: src/components/windows/Settings.jsx:116
 msgid "Play a sound when new chat messages arrive"
-msgstr ""
+msgstr "Luaj një tingull kur mbërrijnë mesazhet e reja të bisedës"
 
 #: src/components/windows/Settings.jsx:119
 msgid "Auto Zoom In"
-msgstr ""
+msgstr "Zmadhimi automatik"
 
 #: src/components/windows/Settings.jsx:124
 msgid ""
 "Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
 "small."
 msgstr ""
+"Zmadhoni në vend që të vendosni një piksel kur trokitni lehtë mbi kanavacën "
+"dhe zmadhimi juaj është i vogël."
 
 #: src/components/windows/Settings.jsx:127
 msgid "Compact Palette"
-msgstr ""
+msgstr "Paleta kompakte"
 
 #: src/components/windows/Settings.jsx:132
 msgid "Display Palette in a compact form that takes less screen space."
 msgstr ""
+"Paleta e ekranit në një formë kompakte që merr më pak hapësirë në ekran."
 
 #: src/components/windows/Settings.jsx:135
 msgid "Potato Mode"
-msgstr ""
+msgstr "Modaliteti i patates"
 
 #: src/components/windows/Settings.jsx:139
 msgid "For when you are playing on a potato."
-msgstr ""
+msgstr "Për kur jeni duke luajtur me një patate."
 
 #: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
 msgid "Light Grid"
-msgstr ""
+msgstr "Rrjeti i dritës"
 
 #: src/components/windows/Settings.jsx:146
 msgid "Show Grid in white instead of black."
-msgstr ""
+msgstr "Shfaq Grid në të bardhë në vend të zi."
 
 #: src/components/windows/Settings.jsx:149
 msgid "Custom Cursor"
-msgstr ""
+msgstr "Kursori i personalizuar"
 
 #: src/components/windows/Settings.jsx:153
 msgid "Use our custom cursor"
-msgstr ""
+msgstr "Përdorni kursorin tonë të personalizuar"
 
 #: src/components/windows/Settings.jsx:157
 msgid "Historical View"
-msgstr ""
+msgstr "Pamje historike"
 
 #: src/components/windows/Settings.jsx:162
 msgid "Check out past versions of the canvas."
-msgstr ""
+msgstr "Shikoni versionet e kaluara të kanavacës."
 
 #: src/components/windows/Settings.jsx:166
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "Pencil Mode for ${ canvasName } canvas"
-msgstr "Kaloi në ${ canvasName }"
+msgstr "Modaliteti i lapsit për kanavasin ${ canvasName }"
 
 #: src/components/windows/Settings.jsx:174
 msgid "What the pencil should draw on the current canvas."
-msgstr ""
+msgstr "Çfarë duhet të vizatojë lapsi në kanavacën aktuale."
 
 #: src/components/windows/Settings.jsx:178
 msgid "Themes"
-msgstr ""
+msgstr "Temat"
 
 #: src/components/windows/Settings.jsx:183
 msgid "How pixelplanet should look like."
-msgstr ""
+msgstr "Si duhet të duket pixelplanet."
 
 #: src/components/windows/Settings.jsx:190
 msgid "Select Language"
-msgstr ""
+msgstr "Zgjidh gjuhen"
 
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
-msgstr ""
+msgstr "Profili"
 
 #: src/components/windows/UserArea.jsx:59
 msgid "Statistics"
-msgstr ""
+msgstr "Statistikat"
 
 #: src/components/windows/UserArea.jsx:64
 msgid "Converter"
-msgstr ""
+msgstr "Konvertuesi"
 
 #: src/components/windows/UserArea.jsx:70
 msgid "Modtools"
-msgstr ""
+msgstr "Mjetet e moderatorit"
 
 #: src/components/windows/UserArea.jsx:71
 msgid "Loading..."
@@ -808,37 +845,37 @@ msgstr "Po shkarkohet…"
 
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
-msgstr ""
+msgstr "Konsideroni të bashkoheni me ne në Guilded:"
 
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
-msgstr ""
+msgstr "Regjistro një llogari të re këtu"
 
 #: src/components/windows/Register.jsx:92
 #: src/components/windows/Register.jsx:98
 msgid "Name"
-msgstr ""
+msgstr "Emri"
 
 #: src/components/windows/ForgotPassword.jsx:80
 #: src/components/windows/Register.jsx:100
 #: src/components/windows/Register.jsx:106
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: src/components/ChangeMail.jsx:80 src/components/DeleteAccount.jsx:62
 #: src/components/LogInForm.jsx:84 src/components/windows/Register.jsx:108
 #: src/components/windows/Register.jsx:114
 msgid "Password"
-msgstr ""
+msgstr "Fjalëkalimi"
 
 #: src/components/windows/Register.jsx:116
 #: src/components/windows/Register.jsx:122
 msgid "Confirm Password"
-msgstr ""
+msgstr "Konfirmo fjalëkalimin"
 
 #: src/components/windows/Register.jsx:124
 msgid "Captcha"
-msgstr ""
+msgstr "Captcha"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
 #: src/components/ModCanvastools.jsx:313 src/components/ModCanvastools.jsx:404
@@ -847,7 +884,7 @@ msgstr ""
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
-msgstr ""
+msgstr "Paraqisni"
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
@@ -856,14 +893,17 @@ msgid ""
 "requirements.\n"
 "Archived canvases can be accessed here:"
 msgstr ""
+"Zgjidhni kanavacën që dëshironi të përdorni.\n"
+"Çdo kanavacë është unike dhe ka paleta, ftohje dhe kërkesa të ndryshme.\n"
+"Kanavacat e arkivuara mund të aksesohen këtu:"
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
-msgstr ""
+msgstr "Arkivi"
 
 #: src/components/windows/CanvasSelect.jsx:70
 msgid "Retired Canvases (history only)"
-msgstr ""
+msgstr "Kanavacat në pension (vetëm historia)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -872,16 +912,23 @@ msgid ""
 "become dull and inactive after a while, at which point there is no reason to "
 "keep them and we may decide to remove them."
 msgstr ""
+"Ndërsa ne priremi të mos fshijmë kanavacat, disa piktura nisen për argëtim "
+"ose si kërkesë nga përdoruesit që pëlqejnë një meme aktualisht të njohur. "
+"Këto kanavacë mund të bëhen të shurdhër dhe joaktive pas një kohe, në këtë "
+"moment nuk ka asnjë arsye për t'i mbajtur ato dhe ne mund të vendosim t'i "
+"heqim ato."
 
 #: src/components/windows/Archive.jsx:10
 msgid ""
 "Here we collect removed canvases to archive them properly. Which is "
 "currently only one."
 msgstr ""
+"Këtu ne mbledhim kanavacat e hequra për t'i arkivuar siç duhet. Që "
+"aktualisht është vetëm një."
 
 #: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
-msgstr ""
+msgstr "Kanavacë e busullës politike"
 
 #: src/components/windows/Archive.jsx:21
 msgid ""
@@ -890,6 +937,10 @@ msgid ""
 "with a 5s cooldown and 60s stacking. It got launched on May 11th and "
 "remained active for months till it got shut down on November 30th."
 msgstr ""
+"Kjo kanavacë u kërkua gjatë një kohe konfliktesh politike në kanavacën "
+"kryesore të Tokës. Ishte një përfaqësim 1024x1024 i busullës politike me një "
+"ftohje 5s dhe grumbullim të viteve '60. Ai u lançua në 11 maj dhe qëndroi "
+"aktiv për muaj të tërë derisa u mbyll më 30 nëntor."
 
 #: src/components/windows/Archive.jsx:22
 msgid ""
@@ -897,66 +948,71 @@ msgid ""
 "screenshot from the timelapse results in a perfect 1:1 representation of how "
 "the canvas was at that time."
 msgstr ""
+"Ne vendosëm ta arkivojmë atë si një kalim kohe me ueb të koduar pa humbje. "
+"Marrja e një fotografie nga ekrani i kalimit të kohës rezulton në një "
+"paraqitje perfekte 1:1 se si ishte kanavacë në atë kohë."
 
 #: src/components/windows/Chat.jsx:180
 msgid "Start chatting here"
-msgstr ""
+msgstr "Filloni të bisedoni këtu"
 
 #: src/components/windows/Chat.jsx:217
 msgid "Chat here"
-msgstr ""
+msgstr "Bisedoni këtu"
 
 #: src/components/windows/Chat.jsx:243
 msgid "You must be logged in to chat"
-msgstr ""
+msgstr "Duhet të jeni të identifikuar për të biseduar"
 
 #: src/components/windows/Chat.jsx:273
 msgid "Channel settings"
-msgstr ""
+msgstr "Cilësimet e kanalit"
 
 #: src/components/windows/Player.jsx:17
 msgid "This URL is not supported by our Media Player"
-msgstr ""
+msgstr "Kjo URL nuk mbështetet nga Media Player-i ynë"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
-msgstr ""
+msgstr "Ju dërgoi një email me udhëzime për të rivendosur fjalëkalimin tuaj."
 
 #: src/components/windows/ForgotPassword.jsx:69
 msgid "Enter your mail address and we will send you a new password:"
 msgstr ""
+"Shkruani adresën tuaj të postës dhe ne do t'ju dërgojmë një fjalëkalim të ri:"
 
 #: src/components/Captcha.jsx:51 src/components/Captcha.jsx:107
 msgid "Could not load captcha"
-msgstr ""
+msgstr "Captcha nuk mund të ngarkohej"
 
 #: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
-msgstr ""
+msgstr "Shkruani karakteret nga imazhi i mëposhtëm:"
 
 #: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
 msgstr ""
+"Këshillë: Jo i ndjeshëm ndaj shkronjave të vogla; Unë dhe unë jemi njësoj"
 
 #: src/components/Captcha.jsx:116
 msgid "Load Captcha"
-msgstr ""
+msgstr "Ngarko Captcha"
 
 #: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
-msgstr ""
+msgstr "Klikoni për të ngarkuar Captcha"
 
 #: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
-msgstr ""
+msgstr "Nuk di të lexojë? Ringarkoj:"
 
 #: src/components/Captcha.jsx:130
 msgid "Reload"
-msgstr ""
+msgstr "Ringarkoj"
 
 #: src/components/Captcha.jsx:140
 msgid "Enter Characters"
-msgstr ""
+msgstr "Futni Personazhet"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
@@ -1004,25 +1060,25 @@ msgstr "Password duhet të jetë të paktën 6 shkronja i gjatë."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr ""
+msgstr "Fjalëkalimi duhet të jetë më i shkurtër se 60 karaktere."
 
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
-msgstr ""
+msgstr "Merrni ID-në"
 
 #: src/components/GetIID.jsx:53
 msgid "Copy"
-msgstr ""
+msgstr "Kopjo"
 
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
 msgid "Save"
-msgstr ""
+msgstr "Ruaj"
 
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
-msgstr ""
+msgstr "Modelet"
 
 #: src/components/TemplateSettings.jsx:56
 msgid ""
@@ -1031,312 +1087,320 @@ msgid ""
 "that! Templates can show as overlay and you can draw over them. One pixel on "
 "the template, should be one pixel on the canvas."
 msgstr ""
+"Jeni lodhur duke postuar gjithmonë një ngjyrë të vetme? Dëshironi të krijoni "
+"art në vend të kësaj, por duhet të numëroni pikselët nga ndonjë imazh "
+"tjetër? Modelet mund t'ju ndihmojnë me këtë! Modelet mund të shfaqen si "
+"mbivendosje dhe ju mund të"
 
 #: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"
-msgstr ""
+msgstr "Aktivizo mbivendosjen"
 
 #: src/components/TemplateSettings.jsx:65
 msgid "Show templates as overlays ingame."
-msgstr ""
+msgstr "Shfaq shabllonet si mbivendosje në lojë."
 
 #: src/components/TemplateSettings.jsx:68
 msgid "Small Pixels When Zoomed"
-msgstr ""
+msgstr "Piksele të vegjël kur zmadhohen"
 
 #: src/components/TemplateSettings.jsx:73
 msgid "Show overlay as small individual pixels on high zoomlevels."
 msgstr ""
+"Shfaq mbivendosjen si pikselë të vegjël individualë në nivele të larta "
+"zmadhimi."
 
 #: src/components/TemplateSettings.jsx:80
 msgid "Overlay Opacity"
-msgstr ""
+msgstr "Opaciteti i mbivendosjes"
 
 #: src/components/TemplateSettings.jsx:94
 msgid "Opacity of Overlay in percent."
-msgstr ""
+msgstr "Opaciteti i mbivendosjes në përqindje."
 
 #: src/components/TemplateSettings.jsx:132
 msgid "Cancel adding Template"
-msgstr ""
+msgstr "Anulo shtimin e shabllonit"
 
 #: src/components/TemplateSettings.jsx:139
 msgid "Add Template"
-msgstr ""
+msgstr "Shto shabllon"
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
-msgstr ""
+msgstr "Eksporto shabllone të aktivizuara"
 
 #: src/components/TemplateSettings.jsx:165
 msgid "Import templates"
-msgstr ""
+msgstr "Importoni shabllone"
 
 #: src/components/LogInArea.jsx:19
 msgid "Login to access more features and stats."
-msgstr ""
+msgstr "Identifikohu për të hyrë në më shumë veçori dhe statistika."
 
 #: src/components/LogInArea.jsx:21
 msgid "Login with Name or Mail:"
-msgstr ""
+msgstr "Identifikohu me emrin ose postën:"
 
 #: src/components/LogInArea.jsx:28
 msgid "I forgot my Password."
-msgstr ""
+msgstr "Kam harruar fjalëkalimin tim."
 
 #: src/components/LogInArea.jsx:29
 msgid "or login with:"
-msgstr ""
+msgstr "ose identifikohu me:"
 
 #: src/components/LogInArea.jsx:70
 msgid "or register here:"
-msgstr ""
+msgstr "ose regjistrohuni këtu:"
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
-msgstr ""
+msgstr "Regjistrohu"
 
 #: src/components/UserAreaContent.jsx:69
 msgid "Today Placed Pixels"
-msgstr ""
+msgstr "Piksele të vendosura sot"
 
 #: src/components/UserAreaContent.jsx:73
 msgid "Daily Rank"
-msgstr ""
+msgstr "Renditja ditore"
 
 #: src/components/UserAreaContent.jsx:83
 msgid "Total Rank"
-msgstr ""
+msgstr "Renditja totale"
 
 #: src/components/UserAreaContent.jsx:89
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr ""
+msgstr "Emri juaj është: ${ name }"
 
 #: src/components/UserAreaContent.jsx:95
 msgid "Log out"
-msgstr ""
+msgstr "Shkyç"
 
 #: src/components/UserAreaContent.jsx:102
 msgid "Change Username"
-msgstr ""
+msgstr "Ndrysho emrin e përdoruesit"
 
 #: src/components/UserAreaContent.jsx:112
 msgid "Change Mail"
-msgstr ""
+msgstr "Ndrysho Mail"
 
 #: src/components/UserAreaContent.jsx:121
 msgid "Change Password"
-msgstr ""
+msgstr "Ndrysho fjalekalimin"
 
 #: src/components/UserAreaContent.jsx:128
 msgid "Delete Account"
-msgstr ""
+msgstr "Fshij llogarine"
 
 #: src/components/UserAreaContent.jsx:135
 msgid "Social Settings"
-msgstr ""
+msgstr "Cilësimet sociale"
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:231
 msgid "Choose Canvas"
-msgstr ""
+msgstr "Zgjidhni Kanavacë"
 
 #: src/components/Converter.jsx:218
 msgid "Palette Download"
-msgstr ""
+msgstr "Shkarko paleta"
 
 #: src/components/Converter.jsx:220
 #, javascript-format
 msgid "Palette for ${ gimpLink }"
-msgstr ""
+msgstr "Paleta për ${ gimpLink }"
 
 #: src/components/Converter.jsx:241
 msgid "Image Converter"
-msgstr ""
+msgstr "Konvertuesi i imazhit"
 
 #: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
-msgstr ""
+msgstr "Konvertoni një imazh në ngjyrat e kanavacës"
 
 #: src/components/Converter.jsx:261
 msgid "Choose Strategy"
-msgstr ""
+msgstr "Zgjidhni Strategjinë"
 
 #: src/components/Converter.jsx:299
 msgid "Serpentine"
-msgstr ""
+msgstr "gjarpri"
 
 #: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
-msgstr ""
+msgstr "Distanca minimale e ngjyrave"
 
 #: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
-msgstr ""
+msgstr "Llogaritni si GIMP"
 
 #: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
-msgstr ""
+msgstr "Zgjidhni Modalitetin e Ngjyrave"
 
 #: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
-msgstr ""
+msgstr "Shto Grid (zgjidhni nëse keni nevojë për një shabllon 1:1)"
 
 #: src/components/Converter.jsx:383 src/components/Converter.jsx:399
 msgid "Offset"
-msgstr ""
+msgstr "Kompensimi"
 
 #: src/components/Converter.jsx:428
 msgid "Scale Image"
-msgstr ""
+msgstr "Shkallëzimi i imazhit"
 
 #: src/components/Converter.jsx:439
 msgid "Width"
-msgstr ""
+msgstr "Gjerësia"
 
 #: src/components/Converter.jsx:470
 msgid "Height"
-msgstr ""
+msgstr "Lartësia"
 
 #: src/components/Converter.jsx:509
 msgid "Keep Ratio"
-msgstr ""
+msgstr "Ruajtja e raportit"
 
 #: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
-msgstr ""
+msgstr "Kundër aliasing"
 
 #: src/components/Converter.jsx:536
 msgid "Reset"
-msgstr ""
+msgstr "Rivendos"
 
 #: src/components/Converter.jsx:554
 msgid "Download Template"
-msgstr ""
+msgstr "Shkarkoni shabllonin"
 
 #: src/components/Rankings.jsx:168
 msgid "Yesterday"
-msgstr ""
+msgstr "Dje"
 
 #: src/components/Rankings.jsx:177
 msgid "Countries Today"
-msgstr ""
+msgstr "Vendet Sot"
 
 #: src/components/Rankings.jsx:186 src/components/Rankings.jsx:203
 msgid "Charts"
-msgstr ""
+msgstr "Grafikët"
 
 #: src/components/Rankings.jsx:191
 msgid "Total Pixels per Player"
-msgstr ""
+msgstr "Totali i pikselëve për lojtar"
 
 #: src/components/Rankings.jsx:192
 msgid "Daily Pixels per Player"
-msgstr ""
+msgstr "Piksele ditore për lojtar"
 
 #: src/components/Rankings.jsx:193
 msgid "Top 10 Players from Yesterday"
-msgstr ""
+msgstr "10 lojtarët më të mirë nga dje"
 
 #: src/components/Rankings.jsx:197
 msgid "Daily Pixels per Country"
-msgstr ""
+msgstr "Piksele ditore për shtet"
 
 #: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
 #: src/components/Rankings.jsx:233
 msgid "User"
-msgstr ""
+msgstr "Përdoruesi"
 
 #: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
 msgid "Country"
-msgstr ""
+msgstr "Vendi"
 
 #: src/components/Rankings.jsx:243
 msgid "+last hour"
-msgstr ""
+msgstr "+ora e fundit"
 
 #: src/components/Rankings.jsx:314
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
+"Përditësimet e renditjes çdo 5 minuta. Renditjet ditore rivendosen në "
+"mesnatë UTC."
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
-msgstr ""
+msgstr "Përdoruesit në internet"
 
 #: src/components/CanvasItem.jsx:34
 msgid "Cooldown"
-msgstr ""
+msgstr "Ftohje"
 
 #: src/components/CanvasItem.jsx:40
 msgid "Stacking till"
-msgstr ""
+msgstr "Stacking deri"
 
 #: src/components/CanvasItem.jsx:42
 msgid "Ranked"
-msgstr ""
+msgstr "Renditur"
 
 #: src/components/CanvasItem.jsx:44
 msgid "Yes"
-msgstr ""
+msgstr "po"
 
 #: src/components/CanvasItem.jsx:44
 msgid "No"
-msgstr ""
+msgstr "Jo"
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
-msgstr ""
+msgstr "Kërkesat"
 
 #: src/components/CanvasItem.jsx:53
 msgid "User Account"
-msgstr ""
+msgstr "Llogaria e përdoruesit"
 
 #: src/components/CanvasItem.jsx:55
 #, javascript-format
 msgid "and ${ canvas.req } Pixels set"
-msgstr ""
+msgstr "dhe ${ canvas.req } Pixels vendosur"
 
 #: src/components/CanvasItem.jsx:58
 msgid "Top 10 Daily Ranking"
-msgstr ""
+msgstr "Top 10 Renditja ditore"
 
 #: src/components/CanvasItem.jsx:64 src/components/TemplateItem.jsx:60
 #: src/components/TemplateItemEdit.jsx:160
 msgid "Dimensions"
-msgstr ""
+msgstr "Dimensionet"
 
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
-msgstr ""
+msgstr "Zgjidhni Skedar"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Emri i shabllonit"
 
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
-msgstr ""
+msgstr "Kanavacë"
 
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
-msgstr ""
+msgstr "Koordinatat"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
-msgstr ""
+msgstr "Fshije"
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
-msgstr ""
+msgstr "Emri ose Email"
 
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
-msgstr ""
+msgstr "Identifikohu"
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
-msgstr ""
+msgstr "Fjalëkalimet nuk përputhen."
 
 #: src/components/ChangePassword.jsx:44
 msgid "Password successfully changed."
@@ -1344,93 +1408,99 @@ msgstr "Passwordi është ndryshuar me sukses."
 
 #: src/components/ChangePassword.jsx:88
 msgid "Old Password"
-msgstr ""
+msgstr "Fjalëkalimi i vjetër"
 
 #: src/components/ChangePassword.jsx:96
 msgid "New Password"
-msgstr ""
+msgstr "Fjalëkalim i ri"
 
 #: src/components/ChangePassword.jsx:103
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Konfirmo fjalëkalimin e ri"
 
 #: src/components/ChangeName.jsx:64
 msgid "New Username"
-msgstr ""
+msgstr "Emri i ri i përdoruesit"
 
 #: src/components/ChangeMail.jsx:59
 msgid ""
 "Changed Mail successfully. We sent you a verification mail,             "
 "please verify your new mail address."
 msgstr ""
+"Posta u ndryshua me sukses. Ne ju dërguam një email verifikimi, ju lutemi "
+"verifikoni adresën tuaj të re të postës."
 
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
-msgstr ""
+msgstr "Postë e re"
 
 #: src/components/UserMessages.jsx:28
 msgid ""
 "Please verify your mail address or your account could get deleted after a "
 "few days."
 msgstr ""
+"Ju lutemi verifikoni adresën tuaj të postës ose llogaria juaj mund të "
+"fshihet pas disa ditësh."
 
 #: src/components/UserMessages.jsx:49
 msgid "A new verification mail is getting sent to you."
-msgstr ""
+msgstr "Një email i ri verifikimi po ju dërgohet."
 
 #: src/components/UserMessages.jsx:53
 msgid "Click here to request a new verification mail."
-msgstr ""
+msgstr "Klikoni këtu për të kërkuar një postë të re verifikimi."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
-msgstr ""
+msgstr "Po, Fshi llogarinë time!"
 
 #: src/components/SocialSettings.jsx:35
 msgid "Block DMs"
-msgstr ""
+msgstr "Blloko DM"
 
 #: src/components/SocialSettings.jsx:42
 msgid "Block all Private Messages"
-msgstr ""
+msgstr "Blloko të gjitha mesazhet private"
 
 #: src/components/SocialSettings.jsx:44
 msgid "Private"
-msgstr ""
+msgstr "Privat"
 
 #: src/components/SocialSettings.jsx:51
 msgid "Don't show me in global stats"
-msgstr ""
+msgstr "Mos më shfaq në statistikat globale"
 
 #: src/components/SocialSettings.jsx:57
 msgid "Unblock Users"
-msgstr ""
+msgstr "Zhblloko përdoruesit"
 
 #: src/components/SocialSettings.jsx:82
 msgid "You have no users blocked"
-msgstr ""
+msgstr "Nuk ke asnjë përdorues të bllokuar"
 
 #: src/components/ModCanvastools.jsx:169
 msgid "Build image on canvas."
-msgstr ""
+msgstr "Ndërtoni imazhin në kanavacë."
 
 #: src/components/ModCanvastools.jsx:172
 msgid "Build image and set it to protected."
-msgstr ""
+msgstr "Ndërtoni imazhin dhe vendoseni në të mbrojtur."
 
 #: src/components/ModCanvastools.jsx:175
 msgid "Build image, but reset cooldown to unset-pixel cd."
-msgstr ""
+msgstr "Ndërtoni imazhin, por rivendosni ftohjen në cd me piksel të pacaktuar."
 
 #: src/components/ModCanvastools.jsx:185
 msgid "Clean spare pixels that are surrounded by unset pixels"
-msgstr ""
+msgstr "Pastroni pikselët rezervë që janë të rrethuar nga pikselë të pacaktuar"
 
 #: src/components/ModCanvastools.jsx:189
 msgid ""
 "Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
 "pixels"
 msgstr ""
+"Pastroni pikselët rezervë që janë të rrethuar nga pikselë të pacaktuar dhe "
+"deri në 1 piksel tjetër të caktuar"
 
 #: src/components/ModCanvastools.jsx:193
 msgid ""
@@ -1438,214 +1508,224 @@ msgid ""
 "pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
 "two cooldowns)!)"
 msgstr ""
+"Pastroni pikselët rezervë që rrethohen nga një ngjyrë tjetër e vetme ose "
+"pikselë të pavendosur (SHUMË AGRESIVE NË KANVAZA QË LEJOJNË PIKSELAT E "
+"PAKONSUAR (ku ka dy ftohje)!)"
 
 #: src/components/ModCanvastools.jsx:197
 msgid ""
 "Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
 "ISN'T ALREADY MOSTLY 0)"
 msgstr ""
+"Kthejeni çdo piksel në zonë në 0 (NUK DUHET TA BËNI TË VËRTETË KËTË NË ASNJË "
+"ZONË QË NUK ËSHTË TASHME KRYESORE 0)"
 
 #: src/components/ModCanvastools.jsx:208
 msgid "Status: Not running"
-msgstr ""
+msgstr "Statusi: Nuk funksionon"
 
 #: src/components/ModCanvastools.jsx:250
 msgid "Image Upload"
-msgstr ""
+msgstr "Ngarkimi i imazhit"
 
 #: src/components/ModCanvastools.jsx:251
 msgid "Upload images to canvas"
-msgstr ""
+msgstr "Ngarko imazhe në kanavacë"
 
 #: src/components/ModCanvastools.jsx:253
 msgid "File"
-msgstr ""
+msgstr "Skedari"
 
 #: src/components/ModCanvastools.jsx:274
 msgid "Coordinates:"
-msgstr ""
+msgstr "Koordinatat:"
 
 #: src/components/ModCanvastools.jsx:318
 msgid "Pixel Protection"
-msgstr ""
+msgstr "Mbrojtja Pixel"
 
 #: src/components/ModCanvastools.jsx:322
 msgid ""
 "Set protection of areas (if you need finer grained control, use protect with "
 "image upload and alpha layers)"
 msgstr ""
+"Vendosni mbrojtjen e zonave (nëse keni nevojë për kontroll më të imët, "
+"përdorni mbrojtjen me ngarkimin e imazhit dhe shtresat alfa)"
 
 #: src/components/ModCanvastools.jsx:342 src/components/ModCanvastools.jsx:419
 #: src/components/ModCanvastools.jsx:513 src/components/ModWatchtools.jsx:174
 msgid "Top-left corner"
-msgstr ""
+msgstr "Këndi i sipërm majtas"
 
 #: src/components/ModCanvastools.jsx:364 src/components/ModCanvastools.jsx:441
 #: src/components/ModCanvastools.jsx:535 src/components/ModWatchtools.jsx:196
 msgid "Bottom-right corner"
-msgstr ""
+msgstr "Këndi i poshtëm djathtas"
 
 #: src/components/ModCanvastools.jsx:410
 msgid "Rollback to Date"
-msgstr ""
+msgstr "Rikthim në datë"
 
 #: src/components/ModCanvastools.jsx:414
 msgid "Rollback an area of the canvas to a set date and time"
-msgstr ""
+msgstr "Rikthe një zonë të kanavacës në një datë dhe orë të caktuar"
 
 #: src/components/ModCanvastools.jsx:488
 msgid "Canvas Cleaner"
-msgstr ""
+msgstr "Pastrues kanavacë"
 
 #: src/components/ModCanvastools.jsx:490
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr ""
+"Aplikoni një filtër për të pastruar plehrat në zona të mëdha të kanavacës."
 
 #: src/components/ModCanvastools.jsx:601
 msgid "Stop Cleaner"
-msgstr ""
+msgstr "Stop Cleaner"
 
 #: src/components/Admintools.jsx:109
 msgid "IP Actions"
-msgstr ""
+msgstr "Veprimet IP"
 
 #: src/components/Admintools.jsx:111
 msgid "Do stuff with IPs (one IP per line)"
-msgstr ""
+msgstr "Bëni gjëra me IP (një IP për rresht)"
 
 #: src/components/Admintools.jsx:158
 msgid "Manage Moderators"
-msgstr ""
+msgstr "Menaxho Moderatorët"
 
 #: src/components/Admintools.jsx:160
 msgid "Remove Moderator"
-msgstr ""
+msgstr "Hiq moderatorin"
 
 #: src/components/Admintools.jsx:193
 msgid "There are no mods"
-msgstr ""
+msgstr "Nuk ka asnjë moderator"
 
 #: src/components/Admintools.jsx:198
 msgid "Assign new Mod"
-msgstr ""
+msgstr "Cakto mod të ri"
 
 #: src/components/Admintools.jsx:201
 msgid "Enter UserName of new Mod"
-msgstr ""
+msgstr "Futni emrin e përdoruesit të modës së re"
 
 #: src/components/Admintools.jsx:210
 msgid "User Name"
-msgstr ""
+msgstr "Emri i përdoruesit"
 
 #: src/components/ModWatchtools.jsx:49
 msgid "Interval is invalid"
-msgstr ""
+msgstr "Intervali është i pavlefshëm"
 
 #: src/components/ModWatchtools.jsx:122
 msgid "Check who placed in an area"
-msgstr ""
+msgstr "Kontrolloni se kush ka vendosur në një zonë"
 
 #: src/components/ModWatchtools.jsx:142
 msgid "Interval"
-msgstr ""
+msgstr "Intervali"
 
 #: src/components/ModWatchtools.jsx:157
 msgid "IID (optional)"
-msgstr ""
+msgstr "ID (opsionale)"
 
 #: src/components/ModWatchtools.jsx:247
 msgid "Get Pixels"
-msgstr ""
+msgstr "Merr Pixel"
 
 #: src/components/ModWatchtools.jsx:279
 msgid "Get Users"
-msgstr ""
+msgstr "Merrni përdoruesit"
 
 #: src/components/TemplateItem.jsx:71
 msgid "Edit"
-msgstr ""
+msgstr "Redakto"
 
 #: src/components/TemplateItem.jsx:81
 msgid "Go to"
-msgstr ""
+msgstr "Shkoni në"
 
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
-msgstr ""
+msgstr "Duhet të futni një kohëzgjatje"
 
 #: src/components/ModIIDtools.jsx:24
 msgid "You must enter an IID"
-msgstr ""
+msgstr "Duhet të futni një ID"
 
 #: src/components/ModIIDtools.jsx:53
 msgid "IID Actions"
-msgstr ""
+msgstr "Veprimet e ID-së"
 
 #: src/components/ModIIDtools.jsx:80
 msgid "Enter Reason"
-msgstr ""
+msgstr "Shkruani arsyen"
 
 #: src/components/ModIIDtools.jsx:97
 msgid "(0 = infinite)"
-msgstr ""
+msgstr "(0 = pafund)"
 
 #: src/core/chartSettings.js:30
 msgid "Top 10 Countries [pxls / day]"
-msgstr ""
+msgstr "10 vendet më të mira [pxls/ditë]"
 
 #: src/core/chartSettings.js:127
 msgid "Players and Pixels per hour"
-msgstr ""
+msgstr "Lojtarët dhe pikselët në orë"
 
 #: src/core/chartSettings.js:221
 msgid "Top 10 Players [pxls / day]"
-msgstr ""
+msgstr "10 lojtarët më të mirë [pxls / ditë]"
 
 #: src/core/chartSettings.js:347
 msgid "Total Pixels placed per day"
-msgstr ""
+msgstr "Totali i pikselëve të vendosur në ditë"
 
 #: src/components/CooldownChanges.jsx:20
 msgid "Current Cooldown Changes per Country"
-msgstr ""
+msgstr "Ndryshimet aktuale të ftohjes për shtet"
 
 #: src/components/CooldownChanges.jsx:25
 msgid "Factor"
-msgstr ""
+msgstr "Faktori"
 
 #: src/components/CooldownChanges.jsx:46
 msgid ""
 "Cooldown is usually automatically changed for a country that is dominating. "
 "In example in the case of a streamer raid."
 msgstr ""
+"Ftohja zakonisht ndryshohet automatikisht për një vend që po dominon. Për "
+"shembull në rastin e një bastisjeje transmetuesi."
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
-msgstr ""
+msgstr "Ping"
 
 #: src/components/contextmenus/UserContextMenu.jsx:75
 msgid "DM"
-msgstr ""
+msgstr "DM"
 
 #: src/components/contextmenus/UserContextMenu.jsx:86
 msgid "Block"
-msgstr ""
+msgstr "Blloko"
 
 #: src/components/contextmenus/ChannelContextMenu.jsx:46
 msgid "Mute"
-msgstr ""
+msgstr "Hesht"
 
 #: src/components/MdLink.jsx:93
 msgid "Open in PopUp"
-msgstr ""
+msgstr "Hapni në PopUp"
 
 #: src/components/MdLink.jsx:104
 msgid "Hide Embed"
-msgstr ""
+msgstr "Fshihe Embed"
 
 #: src/components/MdLink.jsx:110
 msgid "Show Embedded"
-msgstr ""
+msgstr "Shfaq Embedded"
 
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
@@ -1700,7 +1780,7 @@ msgstr "D"
 #: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
-msgstr "Shift"
+msgstr "Zhvendosja"
 
 #: src/components/windows/Settings.jsx:89
 msgctxt "keybinds"

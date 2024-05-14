@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-02 18:53+0000\n"
-"Last-Translator: Jamie Fitzgerald <jamiefitzgerald2010@gmail.com>\n"
+"PO-Revision-Date: 2024-05-14 19:42+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Irish <https://hosted.weblate.org/projects/pixelplanet/server/"
 "ga/>\n"
 "Language: ga\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
-"(n>6 && n<11) ? 3 : 4;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :("
+"n>6 && n<11) ? 3 : 4;\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -204,7 +204,7 @@ msgstr "Heileo ${ name }, Is féidir leat phasfhocal nua a cuir anseo:"
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
-msgstr "Phasfhocal nua"
+msgstr "Phasfhocal Nua"
 
 #: src/ssr/PasswordReset.jsx:60
 msgid "Confirm New Password"

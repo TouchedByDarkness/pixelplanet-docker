@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-21 10:07+0000\n"
-"Last-Translator: Jamie Fitzgerald <jamiefitzgerald2010@gmail.com>\n"
+"PO-Revision-Date: 2024-05-14 19:42+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Irish <https://hosted.weblate.org/projects/pixelplanet/client/"
 "ga/>\n"
 "Language: ga\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
-"(n>6 && n<11) ? 3 : 4;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :("
+"n>6 && n<11) ? 3 : 4;\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -844,19 +844,19 @@ msgstr ""
 #: src/components/windows/Register.jsx:92
 #: src/components/windows/Register.jsx:98
 msgid "Name"
-msgstr ""
+msgstr "Ainm"
 
 #: src/components/windows/ForgotPassword.jsx:80
 #: src/components/windows/Register.jsx:100
 #: src/components/windows/Register.jsx:106
 msgid "Email"
-msgstr ""
+msgstr "Ríomhphost"
 
 #: src/components/ChangeMail.jsx:80 src/components/DeleteAccount.jsx:62
 #: src/components/LogInForm.jsx:84 src/components/windows/Register.jsx:108
 #: src/components/windows/Register.jsx:114
 msgid "Password"
-msgstr ""
+msgstr "Pasfhocal"
 
 #: src/components/windows/Register.jsx:116
 #: src/components/windows/Register.jsx:122
@@ -1279,7 +1279,7 @@ msgstr ""
 #: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
 #: src/components/Rankings.jsx:233
 msgid "User"
-msgstr ""
+msgstr "Úsáideoir"
 
 #: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
 msgid "Country"
@@ -1311,11 +1311,11 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:44
 msgid "Yes"
-msgstr ""
+msgstr "Tá"
 
 #: src/components/CanvasItem.jsx:44
 msgid "No"
-msgstr ""
+msgstr "Níl"
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
@@ -1378,11 +1378,11 @@ msgstr "Phasfhocal athraithe go rathúil."
 
 #: src/components/ChangePassword.jsx:88
 msgid "Old Password"
-msgstr ""
+msgstr "Pasfhocal Sean"
 
 #: src/components/ChangePassword.jsx:96
 msgid "New Password"
-msgstr "Phasfhocal nua"
+msgstr "Phasfhocal Nua"
 
 #: src/components/ChangePassword.jsx:103
 msgid "Confirm New Password"

@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-04 20:02+0000\n"
-"Last-Translator: Lek Plepi <lekplepi350@gmail.com>\n"
+"PO-Revision-Date: 2024-05-14 19:42+0000\n"
+"Last-Translator: Sinan-alt <sinanppf2@gmail.com>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/sq/>\n"
 "Language: sq\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -171,271 +171,286 @@ msgstr "Password duhet të jetë të paktën 6 shkronja i gjatë."
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr ""
+msgstr "Fjalëkalimi duhet të jetë më i shkurtër se 60 karaktere."
 
 #: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
-msgstr ""
+msgstr "Rivendosja e fjalëkalimit të PixelPlanet.fun"
 
 #: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
-msgstr ""
+msgstr "Rivendosni fjalëkalimin tuaj këtu"
 
 #: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
-msgstr ""
+msgstr "Rivendosni fjalëkalimin"
 
 #: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
-msgstr ""
+msgstr "Kliko këtu"
 
 #: src/ssr/PasswordReset.jsx:30
 msgid "to go back to pixelplanet"
-msgstr ""
+msgstr "për t'u kthyer në pixelplanet"
 
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
 msgid "Hello ${ name }, you can set your new password here:"
-msgstr ""
+msgstr "Përshëndetje ${ name }, mund të vendosni fjalëkalimin tuaj të ri këtu:"
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
-msgstr ""
+msgstr "Fjalëkalim i ri"
 
 #: src/ssr/PasswordReset.jsx:60
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Konfirmo fjalëkalimin e ri"
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr ""
+msgstr "Paraqisni"
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
-msgstr ""
+msgstr "Ju nuk jeni të identifikuar"
 
 #: src/routes/api/modtools.js:65
 msgid "You are not allowed to access this page"
-msgstr ""
+msgstr "Nuk ju lejohet të hyni në këtë faqe"
 
 #: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
-msgstr ""
+msgstr "Vetëm administratorët mund ta bëjnë këtë"
 
 #: src/routes/api/baninfo.js:32
 msgid "You are not banned"
-msgstr ""
+msgstr "Ju nuk jeni të ndaluar"
 
 #: src/routes/api/auth/register.js:27
 msgid "No Captcha given"
-msgstr ""
+msgstr "Nuk është dhënë Captcha"
 
 #: src/routes/api/auth/register.js:30
 msgid "E-Mail already in use."
-msgstr ""
+msgstr "E-mail tashmë në përdorim."
 
 #: src/routes/api/auth/register.js:32
 msgid "Username already in use."
-msgstr ""
+msgstr "Emri i përdoruesit tashmë në përdorim."
 
 #: src/routes/api/auth/register.js:55
 msgid "You took too long, try again."
-msgstr ""
+msgstr "Ju mori shumë kohë, provoni përsëri."
 
 #: src/routes/api/auth/register.js:58
 msgid "You failed your captcha"
-msgstr ""
+msgstr "Dështove captcha-n tënde"
 
 #: src/routes/api/auth/register.js:61
 msgid "Unknown Captcha Error"
-msgstr ""
+msgstr "Gabim i panjohur Captcha"
 
 #: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
 msgid "This email provider is not allowed"
-msgstr ""
+msgstr "Ky ofrues emaili nuk lejohet"
 
 #: src/routes/api/auth/register.js:89
 msgid "Failed to create new user :("
-msgstr ""
+msgstr "Dështoi në krijimin e një përdoruesi të ri :("
 
 #: src/routes/api/auth/register.js:105
 msgid "Failed to establish session after register :("
-msgstr ""
+msgstr "Dështoi në krijimin e seancës pas regjistrimit :("
 
 #: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
 msgid "Mail verification"
-msgstr ""
+msgstr "Verifikimi i postës"
 
 #: src/routes/api/auth/verify.js:27
 msgid "You are now verified :)"
-msgstr ""
+msgstr "Tani jeni verifikuar :)"
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
 "Your mail verification code is invalid or already expired :(, please request "
 "a new one."
 msgstr ""
+"Kodi juaj i verifikimit të postës është i pavlefshëm ose tashmë i skaduar :("
+", ju lutemi kërkoni një të ri."
 
 #: src/routes/api/auth/logout.js:11
 msgid "You are not even logged in."
-msgstr ""
+msgstr "Ju as nuk jeni të identifikuar."
 
 #: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
-msgstr ""
+msgstr "Gabim serveri kur dilni."
 
 #: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
 #: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
-msgstr ""
+msgstr "Ju nuk jeni vërtetuar."
 
 #: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
 #: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
-msgstr ""
+msgstr "Fjalëkalim i pasaktë!"
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr ""
+msgstr "Përdoruesit e heshtur nuk mund të fshijnë llogarinë e tyre."
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr ""
+msgstr "Përdoruesit e heshtur nuk mund ta bëjnë këtë."
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
-msgstr ""
+msgstr "Llogaritë PixelPlanet.fun"
 
 #: src/ssr/RedirectionPage.jsx:29
 msgid "You will be automatically redirected after 15s"
-msgstr ""
+msgstr "Do të ridrejtoheni automatikisht pas 15 sekondash"
 
 #: src/ssr/RedirectionPage.jsx:30
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr ""
+msgstr "Ose ${ clickHere } për t'u kthyer te pixelplanet"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
-msgstr ""
+msgstr "Toka"
 
 #: src/canvasesDesc.js:21
 msgid "Moon"
-msgstr ""
+msgstr "Hëna"
 
 #: src/canvasesDesc.js:22
 msgid "3D Canvas"
-msgstr ""
+msgstr "3D Kanvas"
 
 #: src/canvasesDesc.js:23
 msgid "Coronavirus"
-msgstr ""
+msgstr "Koronavirus"
 
 #: src/canvasesDesc.js:24
 msgid "PixelZone"
-msgstr ""
+msgstr "PixelZone"
 
 #: src/canvasesDesc.js:25
 msgid "PixelCanvas"
-msgstr ""
+msgstr "PixelCanvas"
 
 #: src/canvasesDesc.js:26
 msgid "1bit"
-msgstr ""
+msgstr "1 bit"
 
 #: src/canvasesDesc.js:27
 msgid "Top10"
-msgstr ""
+msgstr "Top10"
 
 #: src/canvasesDesc.js:28
 msgid "2bit"
-msgstr ""
+msgstr "2bit"
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr ""
+msgstr "Minimharta"
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
 msgstr ""
+"Kanavacja jonë kryesore, një hartë e madhe e botës. Vendoseni kudo që ju "
+"pëlqen!"
 
 #: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of art) "
 "or art larger than 1.5k x 1.5k pixels."
 msgstr ""
+"Kanavacë e hënës. Hapësirë e sigurt për art. Nuk ka flamuj ose tekst të madh "
+"(përveç nëse është pjesë e artit) ose art më i madh se 1,5k x 1,5k pixel."
 
 #: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others."
-msgstr ""
+msgstr "Vendosni Voxels në një kanavacë 3D me të tjerët."
 
 #: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr ""
+"Kanavacë speciale për të përhapur ndërgjegjësimin për SARS-CoV2 (merrni "
+"vaksin)."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
-msgstr ""
+msgstr "Pasqyra e PixelZone"
 
 #: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
-msgstr ""
+msgstr "Pasqyra e PixelCanvas"
 
 #: src/canvasesDesc.js:38
 msgid "Black and White canvas"
-msgstr ""
+msgstr "Kanavacë Bardh e Zi"
 
 #: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
+"Një kanavacë për lojtarët më aktivë të një dite më parë. Përditësimet ditore "
+"të renditjes në orën 00:00 UTC."
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr ""
+msgstr "Vetëm katër ngjyra. Të njëjtat rregulla si hëna!"
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
+"Pushtoni tokën në një tokë më të vogël me oqean të mbrojtur. Ndan qetësimin "
+"me kanavacën e tokës!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr ""
+msgstr "Mirësevini ${ name } në PixelPlanet, ju lutemi verifikoni postën tuaj"
 
 #: src/core/MailProvider.js:67
 #, javascript-format
 msgid "Hello ${ name }"
-msgstr ""
+msgstr "Përshëndetje ${ name }"
 
 #: src/core/MailProvider.js:68
 msgid ""
 "welcome to our little community of pixelplacers, to use your account, you "
 "have to verify your mail. You can do that here: "
 msgstr ""
+"mirë se vini në komunitetin tonë të vogël të pixelplacers, për të përdorur "
+"llogarinë tuaj, duhet të verifikoni postën tuaj. Ju mund ta bëni këtë këtu: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
-msgstr ""
+msgstr "Klikoni për të verifikuar"
 
 #: src/core/MailProvider.js:68 src/core/MailProvider.js:105
 msgid "Or by copying following url:"
-msgstr ""
+msgstr "Ose duke kopjuar url-në e mëposhtme:"
 
 #: src/core/MailProvider.js:69
 msgid ""
 "Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
+"Argëtohuni dhe mos hezitoni të na kontaktoni nëse hasni ndonjë problem :)"
 
 #: src/core/MailProvider.js:70 src/core/MailProvider.js:107
 msgid "Thanks"
-msgstr ""
+msgstr "Faleminderit"
 
 #: src/core/MailProvider.js:87
 #, javascript-format
@@ -443,20 +458,24 @@ msgid ""
 "We already sent you a verification mail, you can request another one in "
 "${ minLeft } minutes."
 msgstr ""
+"Ne ju kemi dërguar tashmë një email verifikimi, mund të kërkoni një tjetër "
+"për ${ minLeft } minuta."
 
 #: src/core/MailProvider.js:103
 msgid "You forgot your password for PixelPlanet? Get a new one here"
-msgstr ""
+msgstr "Keni harruar fjalëkalimin tuaj për PixelPlanet? Merrni një të re këtu"
 
 #: src/core/MailProvider.js:104
 msgid "Hello"
-msgstr ""
+msgstr "Përshëndetje"
 
 #: src/core/MailProvider.js:105
 msgid ""
 "You requested to get a new password. You can change your password within the "
 "next 30min here: "
 msgstr ""
+"Keni kërkuar të merrni një fjalëkalim të ri. Ju mund ta ndryshoni "
+"fjalëkalimin tuaj brenda 30 minutave të ardhshme këtu: "
 
 #: src/core/MailProvider.js:106
 #, javascript-format
@@ -464,17 +483,21 @@ msgid ""
 "If you did not request this mail, please just ignore it (the ip that "
 "requested this mail was ${ ip })."
 msgstr ""
+"Q Nëse nuk e keni kërkuar këtë postë, ju lutemi thjesht shpërfilleni atë (ip-"
+"ja që kërkoi këtë postë ishte ${ ip })."
 
 #: src/core/MailProvider.js:114
 msgid "Mail is not configured on the server"
-msgstr ""
+msgstr "Posta nuk është konfiguruar në server"
 
 #: src/core/MailProvider.js:122
 msgid ""
 "We already sent you a mail with instructions. Please wait before requesting "
 "another mail."
 msgstr ""
+"Ne ju kemi dërguar tashmë një email me udhëzime. Ju lutemi prisni përpara se "
+"të kërkoni një postë tjetër."
 
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"
-msgstr ""
+msgstr "Nuk mund ta gjeja këtë postë në bazën tonë të të dhënave"
