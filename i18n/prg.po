@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-21 04:54+0000\n"
+"PO-Revision-Date: 2024-05-17 20:39+0000\n"
 "Last-Translator: Negru Berg <denisfagetan975@gmail.com>\n"
 "Language-Team: Prussian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/prg/>\n"
@@ -9,104 +9,106 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
 "19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
 msgid "Switched to ${ canvasName }"
-msgstr ""
+msgstr "perklaūwa prēi ${ canvasName }"
 
 #: src/controls/keypress.js:176
 msgid "Grid ON"
-msgstr ""
+msgstr "Grid enklaūtun"
 
 #: src/controls/keypress.js:177
 msgid "Grid OFF"
-msgstr ""
+msgstr "Grid izklaūtun"
 
 #: src/controls/keypress.js:187
 msgid "Pixel Notify ON"
-msgstr ""
+msgstr "Pikselan pawakīsenis enklaūtun"
 
 #: src/controls/keypress.js:188
 msgid "Pixel Notify OFF"
-msgstr ""
+msgstr "Pikselan pawakīsenis izklaūtun"
 
 #: src/controls/keypress.js:193
 msgid "Muted Sound"
-msgstr ""
+msgstr "Mussaws Kaīls"
 
 #: src/controls/keypress.js:194
 msgid "Unmuted Sound"
-msgstr ""
+msgstr "Ni Mussaws Kaīls"
 
 #: src/components/CoordinatesBox.jsx:39 src/components/GetIID.jsx:51
 #: src/controls/keypress.js:203
 msgid "Copied"
-msgstr ""
+msgstr "Kōpija"
 
 #: src/controls/keypress.js:209
 msgid "Overlay ON"
-msgstr ""
+msgstr "šablōni enklaūtun"
 
 #: src/controls/keypress.js:210
 msgid "Overlay OFF"
-msgstr ""
+msgstr "šablōni izklaūtun"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "Welidēinā Pāuts enklaūtun"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Welidēinā Pāuts izklaūtun"
 
 #: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
-msgstr ""
+msgstr "Kērdāiz"
 
 #: src/ui/PixelTransferController.js:72 src/ui/PixelTransferController.js:167
 msgid ""
 "Didn't get an answer from pixelplanet. Try to refresh if this problem "
 "persists."
 msgstr ""
+"Ni segēi etrāsenis ezze pixelplanet. Bānda etprēskina ik šis prōbleman "
+"ēmpersin sadīnuns."
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
-msgstr ""
+msgstr "Inwalīdi drābi"
 
 #: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
-msgstr ""
+msgstr "šis drābi segēi ni ekzistijja"
 
 #: src/ui/PixelTransferController.js:108 src/ui/PixelTransferController.js:112
 #: src/ui/PixelTransferController.js:116
 msgid "Invalid Coordinates"
-msgstr ""
+msgstr "Inwalīdi Koōrdinats"
 
 #: src/ui/PixelTransferController.js:109
 msgid "x out of bounds"
-msgstr ""
+msgstr "x iz kakīnt"
 
 #: src/ui/PixelTransferController.js:113
 msgid "y out of bounds"
-msgstr ""
+msgstr "y iz kakīnt"
 
 #: src/ui/PixelTransferController.js:117
 msgid "z out of bounds"
-msgstr ""
+msgstr "z iz kakīnt"
 
 #: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
-msgstr ""
+msgstr "Reddisks Bārwi"
 
 #: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
-msgstr ""
+msgstr "Inwalīdi bārwi etrīnkuns"
 
 #: src/ui/PixelTransferController.js:124
 msgid "Just for registered Users"
-msgstr ""
+msgstr "Ka tēr izbāndātwei Tērpautajs"
 
 #: src/ui/PixelTransferController.js:125
 msgid "You have to be logged in to place on this canvas"

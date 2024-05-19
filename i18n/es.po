@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-09 14:07+0000\n"
+"PO-Revision-Date: 2024-05-19 21:00+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/es/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.4-rc\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -412,7 +412,7 @@ msgstr "Archivo de Lienzos"
 
 #: src/components/windows/index.js:22
 msgid "Player"
-msgstr ""
+msgstr "Jugador"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -981,7 +981,7 @@ msgstr "Configuración del Canal"
 
 #: src/components/windows/Player.jsx:17
 msgid "This URL is not supported by our Media Player"
-msgstr ""
+msgstr "Esta URL no es compatible con nuestro Media Player"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -1727,15 +1727,15 @@ msgstr "Silenciar"
 
 #: src/components/MdLink.jsx:93
 msgid "Open in PopUp"
-msgstr ""
+msgstr "Abrir en una ventana emergente"
 
 #: src/components/MdLink.jsx:104
 msgid "Hide Embed"
-msgstr ""
+msgstr "Ocultar Incrustar"
 
 #: src/components/MdLink.jsx:110
 msgid "Show Embedded"
-msgstr ""
+msgstr "Mostrar integrado"
 
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-14 19:42+0000\n"
-"Last-Translator: Sinan-alt <sinanppf2@gmail.com>\n"
+"PO-Revision-Date: 2024-05-15 20:02+0000\n"
+"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
 "Language-Team: Albanian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/sq/>\n"
 "Language: sq\n"
@@ -1090,7 +1090,7 @@ msgstr ""
 "Jeni lodhur duke postuar gjithmonë një ngjyrë të vetme? Dëshironi të krijoni "
 "art në vend të kësaj, por duhet të numëroni pikselët nga ndonjë imazh "
 "tjetër? Modelet mund t'ju ndihmojnë me këtë! Modelet mund të shfaqen si "
-"mbivendosje dhe ju mund të"
+"mbivendosje dhe ju mund të."
 
 #: src/components/TemplateSettings.jsx:60
 msgid "Enable Overlay"

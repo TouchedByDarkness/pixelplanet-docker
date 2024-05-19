@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-12 15:21+0000\n"
+"PO-Revision-Date: 2024-05-16 20:01+0000\n"
 "Last-Translator: анит изгоев <oorrrpamperstars@gmail.com>\n"
 "Language-Team: Rusyn <https://hosted.weblate.org/projects/pixelplanet/client/"
 "rue/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.4\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -407,7 +407,7 @@ msgstr "Архів Верета"
 
 #: src/components/windows/index.js:22
 msgid "Player"
-msgstr ""
+msgstr "Играч"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -452,15 +452,15 @@ msgstr "Одослати"
 
 #: src/components/BanInfo.jsx:66
 msgid "You are banned. You think it is unjustified? Check out the "
-msgstr ""
+msgstr "Вы заблокованы. Вы важаєте, што се безосновно? Запознайтесь з "
 
 #: src/components/BanInfo.jsx:76
 msgid " on how to appeal."
-msgstr ""
+msgstr " о том, як завдати апелацію."
 
 #: src/components/BanInfo.jsx:85 src/components/ModIIDtools.jsx:73
 msgid "Reason"
-msgstr ""
+msgstr "Причина"
 
 #: src/components/BanInfo.jsx:91
 msgid "By Mod"
@@ -472,7 +472,7 @@ msgstr ""
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
-msgstr ""
+msgstr "Чам вашего бана дохожает у "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
@@ -484,11 +484,11 @@ msgstr ""
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."
-msgstr ""
+msgstr "Теперь, коли вы увидїли се сообщеня, вы булше не заблокованы."
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
-msgstr ""
+msgstr "Чому?"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -512,15 +512,15 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:68
 msgid "Have fun!"
-msgstr ""
+msgstr "Забавляйтесь!"
 
 #: src/components/windows/Help.jsx:70
 msgid "recommended"
-msgstr ""
+msgstr "рекомендованый"
 
 #: src/components/windows/Help.jsx:71
 msgid "Source on "
-msgstr ""
+msgstr "Извор на "
 
 #: src/components/windows/Help.jsx:72
 msgid "Map Data"
@@ -534,7 +534,7 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:74
 msgid "Banned? Detected as Proxy?"
-msgstr ""
+msgstr "Заблокован? Обявен як проксі-сервер?"
 
 #: src/components/windows/Help.jsx:76
 #, javascript-format
@@ -546,47 +546,50 @@ msgstr ""
 
 #: src/components/windows/Help.jsx:79 src/components/windows/Help.jsx:95
 msgid "Controls"
-msgstr ""
+msgstr "Веденя"
 
 #: src/components/windows/Help.jsx:81
 msgid "Click a color in palette to select it"
-msgstr ""
+msgstr "Троцкните по колору в палете, обы выбрати ёго"
 
 #: src/components/windows/Help.jsx:82
 #, javascript-format
 msgid "Press ${ bindG } to toggle grid"
-msgstr ""
+msgstr "Натискните ${ bindG }, обы переключити сїтку"
 
 #: src/components/windows/Help.jsx:83
 #, javascript-format
 msgid "Press ${ bindX } to toggle showing of pixel activity"
-msgstr ""
+msgstr "Натискните ${ bindX }, обы переключити одображеня активности цятки"
 
 #: src/components/windows/Help.jsx:84
 #, javascript-format
 msgid "Press ${ bindH } to toggle historical view"
-msgstr ""
+msgstr "Натискните ${ bindH }, обы переключити історичный пересмотр"
 
 #: src/components/windows/Help.jsx:85
 #, javascript-format
 msgid "Press ${ bindR } to copy coordinates"
-msgstr ""
+msgstr "Натискните ${ bindR }, обы копіровати коордінати"
 
 #: src/components/windows/Help.jsx:86
 #, javascript-format
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
-msgstr ""
+msgstr "Натискните ${ bindQ } ци ${ bindE } обы приблизити"
 
 #: src/components/windows/Help.jsx:87 src/components/windows/Help.jsx:97
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr ""
+"Натискните ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } обы переміщати ся"
 
 #: src/components/windows/Help.jsx:88 src/components/windows/Help.jsx:98
 #, javascript-format
 msgid ""
 "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
 msgstr ""
+"Натискните ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } обы "
+"переміщати ся"
 
 #: src/components/windows/Help.jsx:89
 #, javascript-format

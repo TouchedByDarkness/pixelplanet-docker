@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-24 14:49+0000\n"
+"PO-Revision-Date: 2024-05-16 20:01+0000\n"
 "Last-Translator: Negru Berg <denisfagetan975@gmail.com>\n"
 "Language-Team: Prussian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/prg/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
 "19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -459,16 +459,20 @@ msgstr ""
 #: src/core/MailProvider.js:103
 msgid "You forgot your password for PixelPlanet? Get a new one here"
 msgstr ""
+"Tū assei izmīrsuns twajs PixelPlanet kliptaswīrds? Gaūnja nāuns kliptaswīrds "
+"šāi"
 
 #: src/core/MailProvider.js:104
 msgid "Hello"
-msgstr ""
+msgstr "Kaīls"
 
 #: src/core/MailProvider.js:105
 msgid ""
 "You requested to get a new password. You can change your password within the "
 "next 30min here: "
 msgstr ""
+"Jūs izkīninsenju gaūtun nāuns kliptaswīrds. Jūs mazzi kitawīdina twajs "
+"kliptaswīrds ēntrai repīnts 30min šāi: "
 
 #: src/core/MailProvider.js:106
 #, javascript-format
@@ -476,17 +480,21 @@ msgid ""
 "If you did not request this mail, please just ignore it (the ip that "
 "requested this mail was ${ ip })."
 msgstr ""
+"Ik jūs ni segīwuns izkīninsenis šis pōsti, ka tēr ignōri di (izkīninsenis "
+"tengīnuns ezze ${ ip })."
 
 #: src/core/MailProvider.js:114
 msgid "Mail is not configured on the server"
-msgstr ""
+msgstr "Pōsti ni ast kōnfiguracijas nō sērweris"
 
 #: src/core/MailProvider.js:122
 msgid ""
 "We already sent you a mail with instructions. Please wait before requesting "
 "another mail."
 msgstr ""
+"Mes jāu tengīnusis jūs aīns pōsti sēn palaipīnsnas. Gēidja pirzdau "
+"izkīninsensis kits pōsti."
 
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"
-msgstr ""
+msgstr "Mazītwei ni aupaltun šis pōsti ēntran nūss dātanbazi"
