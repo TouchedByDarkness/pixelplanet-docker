@@ -49,7 +49,7 @@ All needed files to run it got created in `./dist`. You can copy it to wherever 
 ### Requirements
 
 - [nodejs environment](https://nodejs.org/en/) (>=18)
-- [redis](https://redis.io/) or [redis-for-windows](https://github.com/redis-windows/redis-windows) as database for storìng the canvas 
+- [redis](https://redis.io/) or [redis-for-windows](https://github.com/redis-windows/redis-windows) in version **6.2.0 or above** as database for storìng the canvas
 - mysql or mariadb ([setup own user](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql) and [create database](https://www.w3schools.com/SQl/sql_create_db.asp) for pixelplanet) for storing additional data like IP blacklist
 
 ### Configuration
