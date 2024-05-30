@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-12 19:57+0000\n"
-"Last-Translator: HF <hf@pixelplanet.fun>\n"
+"PO-Revision-Date: 2024-05-21 21:02+0000\n"
+"Last-Translator: vamtic <adamveres0316@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hu/>\n"
 "Language: hu\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -180,18 +180,16 @@ msgid "Pencil picks: "
 msgstr ""
 
 #: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:230
-#, fuzzy
 msgid "Selected Color"
-msgstr "Fájl kiválasztása"
+msgstr "Kiválasztott szín"
 
 #: src/components/windows/Settings.jsx:66 src/store/actions/thunks.js:233
-#, fuzzy
 msgid "From Template"
-msgstr "Sablonok"
+msgstr "Sablonból"
 
 #: src/components/windows/Settings.jsx:67 src/store/actions/thunks.js:236
 msgid "From History"
-msgstr ""
+msgstr "Történelemből"
 
 #: src/ui/rendererFactory.js:32
 msgid "Canvas Error"
@@ -409,8 +407,9 @@ msgid "Canvas Archive"
 msgstr "Vászonarchívum"
 
 #: src/components/windows/index.js:22
+#, fuzzy
 msgid "Player"
-msgstr ""
+msgstr "Lejátszó"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -789,11 +788,12 @@ msgstr "Rács megjelenítése fekete helyett fehéren."
 
 #: src/components/windows/Settings.jsx:149
 msgid "Custom Cursor"
-msgstr ""
+msgstr "Egyedi Kurzor"
 
 #: src/components/windows/Settings.jsx:153
+#, fuzzy
 msgid "Use our custom cursor"
-msgstr ""
+msgstr "Használja a saját kurzorainkat"
 
 #: src/components/windows/Settings.jsx:157
 msgid "Historical View"
@@ -809,8 +809,9 @@ msgid "Pencil Mode for ${ canvasName } canvas"
 msgstr "Átváltottál ${ canvasName } vászonra"
 
 #: src/components/windows/Settings.jsx:174
+#, fuzzy
 msgid "What the pencil should draw on the current canvas."
-msgstr ""
+msgstr "Mit rajzoljon a ceruza a jelenlegi vászonra"
 
 #: src/components/windows/Settings.jsx:178
 msgid "Themes"
@@ -972,8 +973,9 @@ msgid "Channel settings"
 msgstr "Csatorna beállítások"
 
 #: src/components/windows/Player.jsx:17
+#, fuzzy
 msgid "This URL is not supported by our Media Player"
-msgstr ""
+msgstr "A mi lejátszónk nem támogatja ezt az URL-t"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -1320,7 +1322,7 @@ msgstr "Ország"
 
 #: src/components/Rankings.jsx:243
 msgid "+last hour"
-msgstr ""
+msgstr "+utolsó óra"
 
 #: src/components/Rankings.jsx:314
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."

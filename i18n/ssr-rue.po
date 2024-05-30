@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-16 20:01+0000\n"
-"Last-Translator: анит изгоев <oorrrpamperstars@gmail.com>\n"
+"PO-Revision-Date: 2024-05-30 09:09+0000\n"
+"Last-Translator: Пробка Топ <topprobka@gmail.com>\n"
 "Language-Team: Rusyn <https://hosted.weblate.org/projects/pixelplanet/server/"
 "rue/>\n"
 "Language: rue\n"
@@ -21,6 +21,8 @@ msgstr "Доступ до того каналу чета з вашой краї 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
+"Вы єстє постійно замучаны, приєднайте ся до нашого Guilded, жебы подати "
+"апелацію на размучаня"
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
@@ -190,7 +192,7 @@ msgstr "Гойкнути сюды"
 
 #: src/ssr/PasswordReset.jsx:30
 msgid "to go back to pixelplanet"
-msgstr ""
+msgstr "жебы перейти назад в pixelplanet"
 
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
@@ -207,7 +209,7 @@ msgstr "Потвержуйте Новый Парол"
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr ""
+msgstr "Подати"
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"

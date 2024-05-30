@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-09 14:07+0000\n"
-"Last-Translator: Артем Юрченко <artemkaago@gmail.com>\n"
+"PO-Revision-Date: 2024-05-30 09:09+0000\n"
+"Last-Translator: Пробка Топ <topprobka@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/ru/>\n"
 "Language: ru\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5.4-rc\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -413,7 +413,7 @@ msgstr "Архив полотен"
 
 #: src/components/windows/index.js:22
 msgid "Player"
-msgstr ""
+msgstr "Игрок"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -980,7 +980,7 @@ msgstr "Настройки канала"
 
 #: src/components/windows/Player.jsx:17
 msgid "This URL is not supported by our Media Player"
-msgstr ""
+msgstr "Этот URL не поддерживается нашим проигрывателем"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -1729,15 +1729,15 @@ msgstr "Замьютить"
 
 #: src/components/MdLink.jsx:93
 msgid "Open in PopUp"
-msgstr ""
+msgstr "Открыть во всплывающем окне"
 
 #: src/components/MdLink.jsx:104
 msgid "Hide Embed"
-msgstr ""
+msgstr "Спрятать вставленное"
 
 #: src/components/MdLink.jsx:110
 msgid "Show Embedded"
-msgstr ""
+msgstr "Показать вставленное"
 
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"

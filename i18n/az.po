@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-10 18:23+0000\n"
+"PO-Revision-Date: 2024-05-21 21:02+0000\n"
 "Last-Translator: serdar <muradovsrdar@gmail.com>\n"
 "Language-Team: Azerbaijani <https://hosted.weblate.org/projects/pixelplanet/"
 "client/az/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.4\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -101,7 +101,7 @@ msgstr "z sərhədlərinin kənarında"
 
 #: src/ui/PixelTransferController.js:120
 msgid "Wrong Color"
-msgstr "Səhv rəng"
+msgstr "Yanlış rəng"
 
 #: src/ui/PixelTransferController.js:121
 msgid "Invalid color selected"
@@ -165,7 +165,7 @@ msgstr "Sənin internet provayderin oyundan banlandı"
 
 #: src/ui/PixelTransferController.js:170
 msgid "Weird"
-msgstr "Dəyişik"
+msgstr "Qəribə"
 
 #: src/ui/PixelTransferController.js:171
 msgid "Couldn't set Pixel"

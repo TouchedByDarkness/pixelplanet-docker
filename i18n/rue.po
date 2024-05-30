@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-16 20:01+0000\n"
-"Last-Translator: анит изгоев <oorrrpamperstars@gmail.com>\n"
+"PO-Revision-Date: 2024-05-30 09:09+0000\n"
+"Last-Translator: Пробка Топ <topprobka@gmail.com>\n"
 "Language-Team: Rusyn <https://hosted.weblate.org/projects/pixelplanet/client/"
 "rue/>\n"
 "Language: rue\n"
@@ -192,11 +192,11 @@ msgstr "історіи"
 
 #: src/ui/rendererFactory.js:32
 msgid "Canvas Error"
-msgstr "Хыба лiнтеолы"
+msgstr "Хыба полотна"
 
 #: src/ui/rendererFactory.js:33
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
-msgstr ""
+msgstr "Неможливо зарендерити 3D полотно, чи вимкнено WebGL2?"
 
 #: src/ui/templateLoader.js:230 src/ui/templateLoader.js:256
 msgid "Error :("
@@ -216,7 +216,7 @@ msgstr "ОК"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
-msgstr ""
+msgstr "Вы зробили пренадто много запросів"
 
 #: src/store/actions/fetch.js:59
 #, javascript-format
@@ -240,15 +240,15 @@ msgstr "Непознатна Хыба"
 
 #: src/store/actions/fetch.js:237
 msgid "Server answered with gibberish :("
-msgstr ""
+msgstr "Сервер відповів гудзаванєм :("
 
 #: src/store/middleware/notifications.js:33
 msgid "Your next pixels are ready"
-msgstr ""
+msgstr "Вашы наступны пікселі суть готовы"
 
 #: src/store/middleware/notifications.js:37
 msgid "You can now place more on pixelplanet.fun :)"
-msgstr ""
+msgstr "Вы теперь можете ставити більше на pixelplanet.fun :)"
 
 #: src/store/middleware/notifications.js:54
 msgid "mentioned you"
@@ -464,11 +464,11 @@ msgstr "Причина"
 
 #: src/components/BanInfo.jsx:91
 msgid "By Mod"
-msgstr ""
+msgstr "модератором"
 
 #: src/components/BanInfo.jsx:97 src/components/ModIIDtools.jsx:84
 msgid "Duration"
-msgstr ""
+msgstr "трівалість"
 
 #: src/components/BanInfo.jsx:99
 msgid "Your ban expires at "
@@ -476,11 +476,11 @@ msgstr "Чам вашего бана дохожает у "
 
 #: src/components/BanInfo.jsx:101
 msgid " which is in "
-msgstr ""
+msgstr " яке є у "
 
 #: src/components/BanInfo.jsx:112
 msgid "Unbanned"
-msgstr ""
+msgstr "Разблокован"
 
 #: src/components/BanInfo.jsx:113
 msgid "Now that you have seen this message, you are no longer banned."
@@ -493,6 +493,8 @@ msgstr "Чому?"
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
 msgstr ""
+"Розміщайте колоровые цятки на великом верете заєдно з другыми играчами "
+"онлайн!"
 
 #: src/components/windows/Help.jsx:66
 msgid ""
@@ -520,11 +522,11 @@ msgstr "рекомендованый"
 
 #: src/components/windows/Help.jsx:71
 msgid "Source on "
-msgstr "Извор на "
+msgstr "Джерело на "
 
 #: src/components/windows/Help.jsx:72
 msgid "Map Data"
-msgstr ""
+msgstr "Дані мапи"
 
 #: src/components/windows/Help.jsx:73
 msgid ""
@@ -846,7 +848,7 @@ msgstr ""
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
-msgstr ""
+msgstr "Подати"
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
@@ -1284,7 +1286,7 @@ msgstr ""
 
 #: src/components/CanvasItem.jsx:50
 msgid "Requirements"
-msgstr ""
+msgstr "вымогы"
 
 #: src/components/CanvasItem.jsx:53
 msgid "User Account"
@@ -1343,7 +1345,7 @@ msgstr "Парол успішно помінян."
 
 #: src/components/ChangePassword.jsx:88
 msgid "Old Password"
-msgstr ""
+msgstr "Старый парол"
 
 #: src/components/ChangePassword.jsx:96
 msgid "New Password"
@@ -1458,7 +1460,7 @@ msgstr ""
 
 #: src/components/ModCanvastools.jsx:253
 msgid "File"
-msgstr ""
+msgstr "Файл"
 
 #: src/components/ModCanvastools.jsx:274
 msgid "Coordinates:"
@@ -1522,7 +1524,7 @@ msgstr ""
 
 #: src/components/Admintools.jsx:193
 msgid "There are no mods"
-msgstr ""
+msgstr "Нема модераторів"
 
 #: src/components/Admintools.jsx:198
 msgid "Assign new Mod"

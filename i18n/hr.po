@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-18 01:03+0000\n"
+"PO-Revision-Date: 2024-05-30 13:58+0000\n"
 "Last-Translator: Antonio <srbomrz@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -409,7 +409,7 @@ msgstr "Arhiva platna"
 
 #: src/components/windows/index.js:22
 msgid "Player"
-msgstr ""
+msgstr "Igrač"
 
 #: src/components/GlobalCaptcha.jsx:47
 msgid "You took too long, try again."
@@ -963,7 +963,7 @@ msgstr "Postavke kanala"
 
 #: src/components/windows/Player.jsx:17
 msgid "This URL is not supported by our Media Player"
-msgstr ""
+msgstr "Ovaj link nije podržan od strane našeg Media Player-a"
 
 #: src/components/windows/ForgotPassword.jsx:58
 msgid "Sent you a mail with instructions to reset your password."
@@ -1179,7 +1179,7 @@ msgstr "Promjena pošte"
 
 #: src/components/UserAreaContent.jsx:121
 msgid "Change Password"
-msgstr "Promjena pošte"
+msgstr "Promjena lozinkе"
 
 #: src/components/UserAreaContent.jsx:128
 msgid "Delete Account"
@@ -1187,11 +1187,11 @@ msgstr "Izbriši račun"
 
 #: src/components/UserAreaContent.jsx:135
 msgid "Social Settings"
-msgstr "Promjena lozinke"
+msgstr "Društvene postavke"
 
 #: src/components/Converter.jsx:191 src/components/ModCanvastools.jsx:231
 msgid "Choose Canvas"
-msgstr "Izbriši račun"
+msgstr "Odaberi platno"
 
 #: src/components/Converter.jsx:218
 msgid "Palette Download"
@@ -1279,24 +1279,20 @@ msgid "Charts"
 msgstr "Dijagrami"
 
 #: src/components/Rankings.jsx:191
-#, fuzzy
 msgid "Total Pixels per Player"
-msgstr "Ukupno postavljenih piksela po danu"
+msgstr "Ukupni broj piksela po igraču"
 
 #: src/components/Rankings.jsx:192
-#, fuzzy
 msgid "Daily Pixels per Player"
-msgstr "Ukupno postavljenih piksela po danu"
+msgstr "Dnevni pikseli po igraču"
 
 #: src/components/Rankings.jsx:193
-#, fuzzy
 msgid "Top 10 Players from Yesterday"
-msgstr "10 najboljih igrača [pxls / dan]"
+msgstr "Top 10 igrača od jučer"
 
 #: src/components/Rankings.jsx:197
-#, fuzzy
 msgid "Daily Pixels per Country"
-msgstr "Igrači i pikseli po satu"
+msgstr "Dnevni pikseli po zemlji"
 
 #: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
 #: src/components/Rankings.jsx:233
@@ -1309,7 +1305,7 @@ msgstr "Država"
 
 #: src/components/Rankings.jsx:243
 msgid "+last hour"
-msgstr ""
+msgstr "+zadnji sat"
 
 #: src/components/Rankings.jsx:314
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
@@ -1560,7 +1556,6 @@ msgid "Rollback to Date"
 msgstr "Rollback na datum"
 
 #: src/components/ModCanvastools.jsx:414
-#, fuzzy
 msgid "Rollback an area of the canvas to a set date and time"
 msgstr "Rollback područje platna na postavljeni datum (00:00 UTC)"
 
@@ -1678,17 +1673,19 @@ msgstr "Ukupno postavljenih piksela po danu"
 
 #: src/components/CooldownChanges.jsx:20
 msgid "Current Cooldown Changes per Country"
-msgstr ""
+msgstr "Trenutačne promjene vremena cooldowna po zemlji"
 
 #: src/components/CooldownChanges.jsx:25
 msgid "Factor"
-msgstr ""
+msgstr "Faktor"
 
 #: src/components/CooldownChanges.jsx:46
 msgid ""
 "Cooldown is usually automatically changed for a country that is dominating. "
 "In example in the case of a streamer raid."
 msgstr ""
+"Cooldown se obično automatski mijenja za zemlju koja dominira. Na primjer, u "
+"slučaju napada streamera."
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
 msgid "Ping"
@@ -1708,15 +1705,15 @@ msgstr "Isključi zvuk"
 
 #: src/components/MdLink.jsx:93
 msgid "Open in PopUp"
-msgstr ""
+msgstr "Otvori u skočnom prozoru"
 
 #: src/components/MdLink.jsx:104
 msgid "Hide Embed"
-msgstr ""
+msgstr "Sakrij Embed"
 
 #: src/components/MdLink.jsx:110
 msgid "Show Embedded"
-msgstr ""
+msgstr "Pokaži Embedded"
 
 #: src/components/windows/Help.jsx:19 src/components/windows/Settings.jsx:73
 msgctxt "keybinds"
