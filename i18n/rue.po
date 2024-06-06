@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-30 09:09+0000\n"
+"PO-Revision-Date: 2024-06-06 07:44+0000\n"
 "Last-Translator: Пробка Топ <topprobka@gmail.com>\n"
 "Language-Team: Rusyn <https://hosted.weblate.org/projects/pixelplanet/client/"
 "rue/>\n"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: src/ui/PixelTransferController.js:104
 msgid "Invalid Canvas"
-msgstr "Невiрная лiнтеола"
+msgstr "Невiрне полотно"
 
 #: src/ui/PixelTransferController.js:105
 msgid "This canvas doesn't exist"
@@ -321,7 +321,7 @@ msgstr "Укрыти"
 
 #: src/components/Window.jsx:173
 msgid "PopUp"
-msgstr ""
+msgstr "Вискакуєче окно"
 
 #: src/components/Window.jsx:184
 msgid "Restore"
@@ -671,7 +671,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:72
 msgid "Show Grid"
-msgstr ""
+msgstr "Провказовати Сїтку"
 
 #: src/components/windows/Settings.jsx:77
 msgid "Turn on grid to highlight pixel borders."
@@ -679,7 +679,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:80
 msgid "Show Pixel Activity"
-msgstr ""
+msgstr "Провказовати Активность Цяток"
 
 #: src/components/windows/Settings.jsx:85
 msgid "Show circles where pixels are placed."
@@ -687,7 +687,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:88
 msgid "Always show Movement Controls"
-msgstr ""
+msgstr "Завши провказовати Веденя Двиганя"
 
 #: src/components/windows/Settings.jsx:93
 msgid "Always show movement control buttons"
@@ -695,7 +695,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:96
 msgid "Disable Game Sounds"
-msgstr ""
+msgstr "Дкапчованя Звукув Игры"
 
 #: src/components/windows/Settings.jsx:102
 msgid "All sound effects will be disabled."
@@ -709,7 +709,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:112
 msgid "Enable chat notifications"
-msgstr ""
+msgstr "Включити увідоменя чета"
 
 #: src/components/windows/Settings.jsx:116
 msgid "Play a sound when new chat messages arrive"
@@ -717,7 +717,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:119
 msgid "Auto Zoom In"
-msgstr ""
+msgstr "Автомаштабовання"
 
 #: src/components/windows/Settings.jsx:124
 msgid ""
@@ -727,7 +727,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:127
 msgid "Compact Palette"
-msgstr ""
+msgstr "Компактная Палета"
 
 #: src/components/windows/Settings.jsx:132
 msgid "Display Palette in a compact form that takes less screen space."
@@ -735,7 +735,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:135
 msgid "Potato Mode"
-msgstr ""
+msgstr "Картофель Мод"
 
 #: src/components/windows/Settings.jsx:139
 msgid "For when you are playing on a potato."
@@ -743,7 +743,7 @@ msgstr ""
 
 #: src/components/Converter.jsx:381 src/components/windows/Settings.jsx:142
 msgid "Light Grid"
-msgstr ""
+msgstr "Світлая Сїтка"
 
 #: src/components/windows/Settings.jsx:146
 msgid "Show Grid in white instead of black."
@@ -751,7 +751,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:149
 msgid "Custom Cursor"
-msgstr ""
+msgstr "Забудованый Курсур"
 
 #: src/components/windows/Settings.jsx:153
 msgid "Use our custom cursor"
@@ -759,7 +759,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:157
 msgid "Historical View"
-msgstr ""
+msgstr "Режім історіи"
 
 #: src/components/windows/Settings.jsx:162
 msgid "Check out past versions of the canvas."
@@ -776,7 +776,7 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:178
 msgid "Themes"
-msgstr ""
+msgstr "Темы"
 
 #: src/components/windows/Settings.jsx:183
 msgid "How pixelplanet should look like."
@@ -784,20 +784,20 @@ msgstr ""
 
 #: src/components/windows/Settings.jsx:190
 msgid "Select Language"
-msgstr ""
+msgstr "Выберете язык"
 
 #: src/components/windows/UserArea.jsx:36
 #: src/components/windows/UserArea.jsx:56
 msgid "Profile"
-msgstr ""
+msgstr "Профіл"
 
 #: src/components/windows/UserArea.jsx:59
 msgid "Statistics"
-msgstr ""
+msgstr "Статістика"
 
 #: src/components/windows/UserArea.jsx:64
 msgid "Converter"
-msgstr ""
+msgstr "Кувертер"
 
 #: src/components/windows/UserArea.jsx:70
 msgid "Modtools"
@@ -818,19 +818,19 @@ msgstr ""
 #: src/components/windows/Register.jsx:92
 #: src/components/windows/Register.jsx:98
 msgid "Name"
-msgstr ""
+msgstr "Имня"
 
 #: src/components/windows/ForgotPassword.jsx:80
 #: src/components/windows/Register.jsx:100
 #: src/components/windows/Register.jsx:106
 msgid "Email"
-msgstr ""
+msgstr "Мейл"
 
 #: src/components/ChangeMail.jsx:80 src/components/DeleteAccount.jsx:62
 #: src/components/LogInForm.jsx:84 src/components/windows/Register.jsx:108
 #: src/components/windows/Register.jsx:114
 msgid "Password"
-msgstr ""
+msgstr "Парол"
 
 #: src/components/windows/Register.jsx:116
 #: src/components/windows/Register.jsx:122
@@ -839,7 +839,7 @@ msgstr ""
 
 #: src/components/windows/Register.jsx:124
 msgid "Captcha"
-msgstr ""
+msgstr "Капча"
 
 #: src/components/Admintools.jsx:154 src/components/Admintools.jsx:238
 #: src/components/ModCanvastools.jsx:313 src/components/ModCanvastools.jsx:404
@@ -905,7 +905,7 @@ msgstr ""
 
 #: src/components/windows/Chat.jsx:217
 msgid "Chat here"
-msgstr ""
+msgstr "Общайтесь туй"
 
 #: src/components/windows/Chat.jsx:243
 msgid "You must be logged in to chat"
@@ -1013,17 +1013,17 @@ msgstr ""
 
 #: src/components/GetIID.jsx:53
 msgid "Copy"
-msgstr ""
+msgstr "Копіровати"
 
 #: src/components/ChangeMail.jsx:91 src/components/ChangeName.jsx:68
 #: src/components/ChangePassword.jsx:109 src/components/LanguageSelect.jsx:79
 #: src/components/TemplateItemEdit.jsx:209
 msgid "Save"
-msgstr ""
+msgstr "Сохранити"
 
 #: src/components/TemplateSettings.jsx:52
 msgid "Templates"
-msgstr ""
+msgstr "Шаблоны"
 
 #: src/components/TemplateSettings.jsx:56
 msgid ""
@@ -1063,7 +1063,7 @@ msgstr ""
 
 #: src/components/TemplateSettings.jsx:139
 msgid "Add Template"
-msgstr ""
+msgstr "Наддати Шаблон"
 
 #: src/components/TemplateSettings.jsx:156
 msgid "Export enabled templates"
@@ -1095,24 +1095,24 @@ msgstr ""
 
 #: src/components/LogInArea.jsx:75
 msgid "Register"
-msgstr ""
+msgstr "Зареґістровати ся"
 
 #: src/components/UserAreaContent.jsx:69
 msgid "Today Placed Pixels"
-msgstr ""
+msgstr "Розміщеные цятки днесь"
 
 #: src/components/UserAreaContent.jsx:73
 msgid "Daily Rank"
-msgstr ""
+msgstr "Лідер днесь"
 
 #: src/components/UserAreaContent.jsx:83
 msgid "Total Rank"
-msgstr ""
+msgstr "Табла лідерів"
 
 #: src/components/UserAreaContent.jsx:89
 #, javascript-format
 msgid "Your name is: ${ name }"
-msgstr ""
+msgstr "Ваше имня: ${ name }"
 
 #: src/components/UserAreaContent.jsx:95
 msgid "Log out"
@@ -1246,11 +1246,11 @@ msgstr ""
 #: src/components/Rankings.jsx:215 src/components/Rankings.jsx:224
 #: src/components/Rankings.jsx:233
 msgid "User"
-msgstr ""
+msgstr "Хоснователь"
 
 #: src/components/CooldownChanges.jsx:24 src/components/Rankings.jsx:240
 msgid "Country"
-msgstr ""
+msgstr "Краина"
 
 #: src/components/Rankings.jsx:243
 msgid "+last hour"
@@ -1259,6 +1259,8 @@ msgstr ""
 #: src/components/Rankings.jsx:314
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
+"Табла лідерів обновлює ся кожды 5 мінут. Денных рангы скидают ся о поночі "
+"UTC."
 
 #: src/components/CanvasItem.jsx:29
 msgid "Online Users"
@@ -1308,11 +1310,11 @@ msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:97
 msgid "Select File"
-msgstr ""
+msgstr "Выберете Файл"
 
 #: src/components/TemplateItemEdit.jsx:120
 msgid "Template Name"
-msgstr ""
+msgstr "Имня шаблону"
 
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
@@ -1329,7 +1331,7 @@ msgstr ""
 
 #: src/components/LogInForm.jsx:77
 msgid "Name or Email"
-msgstr ""
+msgstr "Имня ци Мейл"
 
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
@@ -1357,7 +1359,7 @@ msgstr "Потвержуйте Новый Парол"
 
 #: src/components/ChangeName.jsx:64
 msgid "New Username"
-msgstr ""
+msgstr "Нове имня"
 
 #: src/components/ChangeMail.jsx:59
 msgid ""
@@ -1367,7 +1369,7 @@ msgstr ""
 
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
-msgstr ""
+msgstr "Новый Мейл"
 
 #: src/components/UserMessages.jsx:28
 msgid ""
@@ -1536,7 +1538,7 @@ msgstr ""
 
 #: src/components/Admintools.jsx:210
 msgid "User Name"
-msgstr ""
+msgstr "Имня Хоснователя"
 
 #: src/components/ModWatchtools.jsx:49
 msgid "Interval is invalid"
@@ -1634,11 +1636,11 @@ msgstr ""
 
 #: src/components/contextmenus/ChannelContextMenu.jsx:46
 msgid "Mute"
-msgstr ""
+msgstr "Мьют"
 
 #: src/components/MdLink.jsx:93
 msgid "Open in PopUp"
-msgstr ""
+msgstr "Відкрыти в вискакуєчім окні"
 
 #: src/components/MdLink.jsx:104
 msgid "Hide Embed"

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-30 09:09+0000\n"
+"PO-Revision-Date: 2024-06-06 07:44+0000\n"
 "Last-Translator: Пробка Топ <topprobka@gmail.com>\n"
 "Language-Team: Rusyn <https://hosted.weblate.org/projects/pixelplanet/server/"
 "rue/>\n"
@@ -412,6 +412,8 @@ msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
+"Завоюй землю на меншій земли з охраненым океаном. Ділить одрахунок з "
+"землевым полотном!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format
