@@ -218,9 +218,18 @@ msgstr ""
 msgid "Can not import more than 20 or no template!"
 msgstr ""
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "Oké"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Gebruikersnaam wijzigen"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -356,11 +365,6 @@ msgstr "Schalen"
 msgid "Help"
 msgstr "Hulp"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Instellingen"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Gebruikersgebied"
@@ -380,6 +384,11 @@ msgstr "Palet sluiten"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Palet openen"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Instellingen"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -418,30 +427,30 @@ msgstr "Canvas archief"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Het duurde te lang, probeer het opnieuw."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Je captcha is mislukt"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Geen of ongeldige captcha-tekst"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Geen captcha-ID opgegeven"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Onbekende Captcha-fout"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -449,13 +458,14 @@ msgstr "Fout"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Annuleer"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Versturen"
 
@@ -499,6 +509,10 @@ msgstr "Nu je dit bericht hebt gezien, ben je niet langer gebanned."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Waarom?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -858,6 +872,26 @@ msgstr "Laden…"
 msgid "Consider joining us on Guilded:"
 msgstr "Overweeg om met ons mee te doen op Guilded:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Selecteer het canvas dat je wilt gebruiken. Elk canvas is uniek en heeft "
+"verschillende paletten, cooldowns en vereisten. Archief van gesloten doeken "
+"is hier toegankelijk:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Archief"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Registreer hier een nieuw account"
@@ -896,26 +930,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Indienen"
-
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Selecteer het canvas dat je wilt gebruiken. Elk canvas is uniek en heeft "
-"verschillende paletten, cooldowns en vereisten. Archief van gesloten doeken "
-"is hier toegankelijk:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Archief"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr ""
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -1386,15 +1400,6 @@ msgstr "Top 10 Daily Ranking"
 msgid "Dimensions"
 msgstr "Dimensies"
 
-#: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
-msgid "Select File"
-msgstr "Selecteer Taal"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr ""
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1404,6 +1409,23 @@ msgstr "Canvas"
 #, fuzzy
 msgid "Coordinates"
 msgstr "Ongeldige coördinaten"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "Selecteer Taal"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:174
 #, fuzzy
@@ -1417,6 +1439,22 @@ msgstr "Naam of e-mail"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Log in"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Controleer uw e-mailadres, anders kan uw account na een paar dagen worden "
+"verwijderd."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Er wordt een nieuwe verificatiemail naar u verzonden."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Klik hier om een nieuwe verificatiemail aan te vragen."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1454,22 +1492,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Nieuwe post"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Controleer uw e-mailadres, anders kan uw account na een paar dagen worden "
-"verwijderd."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Er wordt een nieuwe verificatiemail naar u verzonden."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Klik hier om een nieuwe verificatiemail aan te vragen."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1661,14 +1683,6 @@ msgstr "Krijg Pixels"
 msgid "Get Users"
 msgstr "Krijg gebruikers"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "U moet een duur invoeren"
@@ -1735,15 +1749,15 @@ msgstr "Blokkeren"
 msgid "Mute"
 msgstr "Dempen"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

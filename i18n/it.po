@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-16 21:26+0000\n"
-"Last-Translator: PotRapid <pvprealminecraft@gmail.com>\n"
+"PO-Revision-Date: 2024-06-12 10:12+0000\n"
+"Last-Translator: Aurter Ozturk <aurterozturk@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/it/>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -58,11 +58,11 @@ msgstr "Overlay Spento"
 
 #: src/components/windows/Help.jsx:50 src/controls/keypress.js:216
 msgid "Easter Egg ON"
-msgstr ""
+msgstr "Easter Egg ATTIVE"
 
 #: src/components/windows/Help.jsx:49 src/controls/keypress.js:217
 msgid "Easter Egg OFF"
-msgstr ""
+msgstr "Easter Egg DISATTIVE"
 
 #: src/ui/PixelTransferController.js:70 src/ui/PixelTransferController.js:165
 msgid "Timeout"
@@ -128,9 +128,8 @@ msgid "You can not access this canvas yet, because your pixel score is too low"
 msgstr "Non puoi ancora accedere a questo canvas. Ti servono più pixel"
 
 #: src/ui/PixelTransferController.js:133
-#, fuzzy
 msgid "Pixel protected"
-msgstr "Pixel protetto!"
+msgstr "Pixel protetto"
 
 #: src/ui/PixelTransferController.js:140
 msgid "Please prove that you are human"
@@ -155,7 +154,7 @@ msgstr "I tuoi pixel hanno confuso il server. Stai piazzando su più device?"
 
 #: src/ui/PixelTransferController.js:157
 msgid "Banned"
-msgstr "Sei stato bannato, non fare il napoletano per favore"
+msgstr "Sei stato bannato"
 
 #: src/ui/PixelTransferController.js:161
 msgid "Range Banned"
@@ -217,9 +216,18 @@ msgstr ""
 msgid "Can not import more than 20 or no template!"
 msgstr ""
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "OK"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Cambia Username"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr "Aggiorna il sito web"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -355,11 +363,6 @@ msgstr "Ridimenziona"
 msgid "Help"
 msgstr "Aiuto"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Impostazioni"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Area Utente"
@@ -379,6 +382,11 @@ msgstr "Chiudi la Palette"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Apri la Palette"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Impostazioni"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -416,30 +424,30 @@ msgstr "Archivio Canvas"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Ci hai messo troppo, prova di nuovo"
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Hai sbagliato il captcha"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Nessun captcha text o invalido"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Nessun captcha id dato"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Errore captcha sconosciuto"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -447,13 +455,14 @@ msgstr "Errore"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Cancella"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Manda"
 
@@ -496,6 +505,10 @@ msgstr "Ora che hai visto questo messaggio, non sei più bannato"
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Perché?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -849,6 +862,26 @@ msgstr "Caricamento"
 msgid "Consider joining us on Guilded:"
 msgstr "Considera unirti a noi su Guilded:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Seleziona il Canvas che vuoi usare. Ogni canvas è unico e ha palette, "
+"cooldown e requisiti differenti. Un archivio di canvas chiusi piìuò essere "
+"visto qua:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Archivio"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Canvas Archiviato (solo per la storia)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Registra un nuovo accanto qui:"
@@ -887,26 +920,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Manda"
-
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Seleziona il Canvas che vuoi usare. Ogni canvas è unico e ha palette, "
-"cooldown e requisiti differenti. Un archivio di canvas chiusi piìuò essere "
-"visto qua:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Archivio"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Canvas Archiviato (solo per la storia)"
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -1375,15 +1388,6 @@ msgstr "Top 10 Daily Ranking"
 msgid "Dimensions"
 msgstr "Dimensioni"
 
-#: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
-msgid "Select File"
-msgstr "Seleziona la lingua "
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr ""
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1393,6 +1397,23 @@ msgstr "Canvas"
 #, fuzzy
 msgid "Coordinates"
 msgstr "Coordinate invalide"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "Seleziona la lingua "
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:174
 #, fuzzy
@@ -1406,6 +1427,22 @@ msgstr "Nome o Email"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "LogIn"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Per favore verifica il tuo indirizzo email o il tuo account farà la fine di "
+"Basil (scomparirà dall'esistenza)"
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Una nuova email di verifica ti è stata mandata."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Clicca qui per ricevere una nuova mail di verifica"
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1443,22 +1480,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Nuova mail"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Per favore verifica il tuo indirizzo email o il tuo account farà la fine di "
-"Basil (scomparirà dall'esistenza)"
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Una nuova email di verifica ti è stata mandata."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Clicca qui per ricevere una nuova mail di verifica"
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1649,14 +1670,6 @@ msgstr "Prendi pixel"
 msgid "Get Users"
 msgstr "Prendi Utenti"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Devi inserire una durata"
@@ -1723,15 +1736,15 @@ msgstr "Blocca"
 msgid "Mute"
 msgstr "Muta"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

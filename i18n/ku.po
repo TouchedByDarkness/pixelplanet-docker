@@ -214,9 +214,18 @@ msgstr "Zêdetirî 20 şablon an yek nayê derxistin!"
 msgid "Can not import more than 20 or no template!"
 msgstr "Zêdetirî 20 şablon an yek nayê derxistin!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "Belê"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Navê bikarhêner biguherînin"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -353,11 +362,6 @@ msgstr "Biguherîne"
 msgid "Help"
 msgstr "Alîkarî"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Mîhengên"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Herêma Bikarhêner"
@@ -377,6 +381,11 @@ msgstr "Depkê Rengan Bigire"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Depkê Rengan Veke"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Mîhengên"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -414,30 +423,30 @@ msgstr "Arşîva Kanvasê"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Te pir dirêj kir, careke din biceribîne."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Te captcha xwe bi ser neket"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Nivîsara captcha tune an nederbasdar e"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Captcha id na dayîn"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Çewtiya Captcha nenas"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -445,13 +454,14 @@ msgstr "Şaşî"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Bişûndekirin"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Şandin"
 
@@ -494,6 +504,10 @@ msgstr "Niha ku we ev peyam dît, êdî hûn qedexe ne."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Çima?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -851,6 +865,25 @@ msgstr "Bar dike..."
 msgid "Consider joining us on Guilded:"
 msgstr "Li ser Guilded bifikirin ku hûn beşdarî me bibin:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Tuvalên ku hûn dixwazin bi kar bînin hilbijêrin\n"
+"Her tuval bêhempa ye û palet, sarbûn û pêdiviyên wan ên cuda hene\n"
+"Tuvalên arşîvkirî dikarin bigihîjin vir:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arşîv"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Tuxleyên teqawîtbûyî (dîrok tenê)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Hesabeke nû li vir tomar bike"
@@ -889,25 +922,6 @@ msgstr "kaptcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Pêşkêş kirin"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Tuvalên ku hûn dixwazin bi kar bînin hilbijêrin\n"
-"Her tuval bêhempa ye û palet, sarbûn û pêdiviyên wan ên cuda hene\n"
-"Tuvalên arşîvkirî dikarin bigihîjin vir:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arşîv"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Tuxleyên teqawîtbûyî (dîrok tenê)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1372,14 +1386,6 @@ msgstr "10 lîstikvanên herî baş ên rojê"
 msgid "Dimensions"
 msgstr "Rehend"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Pelî Hilbijêre"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Navê Şablonê"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1388,6 +1394,22 @@ msgstr "Kanvasên"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "Koordînatên"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Weşandin"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Biçe"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Pelî Hilbijêre"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Navê Şablonê"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1400,6 +1422,22 @@ msgstr "Nav an E-mail"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Têketin"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Ji kerema xwe navnîşana e-nameya xwe verast bikin an jî dibe ku hesabê we "
+"piştî çend rojan were jêbirin."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Nameyek verastkirinê ya nû ji we re tê şandin."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Li vir bikirtînin ku hûn e-nameyek verastkirinê ya nû bixwazin."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1436,22 +1474,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Nameya Nû"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Ji kerema xwe navnîşana e-nameya xwe verast bikin an jî dibe ku hesabê we "
-"piştî çend rojan were jêbirin."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Nameyek verastkirinê ya nû ji we re tê şandin."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Li vir bikirtînin ku hûn e-nameyek verastkirinê ya nû bixwazin."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1643,14 +1665,6 @@ msgstr "pikselên bistînin"
 msgid "Get Users"
 msgstr "Bikarhêneran bistînin"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Weşandin"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Biçe"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Divê hûn demek binivîsin"
@@ -1719,15 +1733,15 @@ msgstr "Blok"
 msgid "Mute"
 msgstr "Bêdeng"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

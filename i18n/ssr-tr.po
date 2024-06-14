@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-11 20:59+0000\n"
-"Last-Translator: TCr3 <tcreeper.earth@gmail.com>\n"
+"PO-Revision-Date: 2024-06-12 10:12+0000\n"
+"Last-Translator: Aurter Ozturk <aurterozturk@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "server/tr/>\n"
 "Language: tr\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -117,11 +117,11 @@ msgstr "ppfun"
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:68
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:69
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Diğer oyuncularla beraber harita tarzı tuvallerde renkli pikseller atın"
@@ -250,18 +250,22 @@ msgid "You failed your captcha"
 msgstr "Doğrulamayı yanlış çözdünüz"
 
 #: src/routes/api/auth/register.js:61
+msgid "Please refresh the website"
+msgstr "Lütfen sayfayı yenileyin. Sorun düzelecektir."
+
+#: src/routes/api/auth/register.js:64
 msgid "Unknown Captcha Error"
 msgstr "Bilinmeyen Captcha Hatası"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:70
 msgid "This email provider is not allowed"
 msgstr "Bu e-posta sağlayıcısına izin verilmiyor"
 
-#: src/routes/api/auth/register.js:89
+#: src/routes/api/auth/register.js:92
 msgid "Failed to create new user :("
 msgstr "Yeni kullanıcı oluşturulamadı :("
 
-#: src/routes/api/auth/register.js:105
+#: src/routes/api/auth/register.js:108
 msgid "Failed to establish session after register :("
 msgstr "Kayıttan sonra oturum oluşturulamadı :("
 

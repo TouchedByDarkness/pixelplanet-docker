@@ -209,9 +209,18 @@ msgstr "ناتوانرێت لە ٢٠ زیاتر هەناردە بکرێت یان
 msgid "Can not import more than 20 or no template!"
 msgstr "ناتوانرێت لە ٢٠ زیاتر هاوردە بکرێت یان هیچ قاڵبێک نییە!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "باشە"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "ناوی بەکارهێنەر بگۆڕە"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -347,11 +356,6 @@ msgstr "گۆڕینی قەبارە"
 msgid "Help"
 msgstr "یارمەتیدان"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "ڕێکخستنەکان"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "ناوچەی بەکارهێنەر"
@@ -371,6 +375,11 @@ msgstr "داخستنی پالێت"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "پالێت بکەرەوە"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "ڕێکخستنەکان"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -408,30 +417,30 @@ msgstr "ئەرشیفی کانڤاس"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "زۆر کاتت برد، دووبارە هەوڵبدەرەوە."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "تۆ شکستت هێنا لە کاپچاکەت"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "نەخێر یان دەقی کاپچا نادروست"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "هیچ کاپچا ئایدێک نەدراوە"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "هەڵەی کاپچای نەناسراو"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -439,13 +448,14 @@ msgstr "هەڵەیە"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "ڕەتکردنەوە"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "ناردن"
 
@@ -488,6 +498,10 @@ msgstr "ئێستا کە ئەم پەیامەت بینی ئیتر قەدەغە ن�
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "بۆچی؟"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -839,6 +853,25 @@ msgstr "بارکردن..."
 msgid "Consider joining us on Guilded:"
 msgstr "بیرلەوە بکەرەوە کە بەشداریمان بکەیت لە Guilded:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"ئەو کانڤاسە هەڵبژێرە کە دەتەوێت بەکاری بهێنیت.\n"
+"هەموو کانڤاسێک ناوازەیە و پالێت و کوڵداون و پێداویستی جیاوازی هەیە.\n"
+"دەتوانرێت لێرەدا دەستت بگات بە کانڤاسەکانی ئەرشیفکراو:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "ئەرشیف"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "کانڤاس خانەنشینەکان (تەنها مێژوو)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "لێرە هەژماری نوێ تۆمار بکە"
@@ -877,25 +910,6 @@ msgstr "کاپچا"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "پێشکەشکردن"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"ئەو کانڤاسە هەڵبژێرە کە دەتەوێت بەکاری بهێنیت.\n"
-"هەموو کانڤاسێک ناوازەیە و پالێت و کوڵداون و پێداویستی جیاوازی هەیە.\n"
-"دەتوانرێت لێرەدا دەستت بگات بە کانڤاسەکانی ئەرشیفکراو:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "ئەرشیف"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "کانڤاس خانەنشینەکان (تەنها مێژوو)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1359,14 +1373,6 @@ msgstr "١٠ باشترین ڕیزبەندی ڕۆژانە"
 msgid "Dimensions"
 msgstr "ڕەهەندەکان"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "فایل هەڵبژێرە"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "ناوی قاڵب"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1375,6 +1381,22 @@ msgstr "کانڤاس"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "کۆئۆردینیات دەکات"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "دەستکاری"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "بڕۆ بۆ"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "فایل هەڵبژێرە"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "ناوی قاڵب"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1387,6 +1409,22 @@ msgstr "ناو یان ئیمەیڵ"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "چونه‌ ژووره‌وه‌"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"تکایە ناونیشانی پۆستەکەت پشتڕاست بکەرەوە یان ئەکاونتەکەت دوای چەند ڕۆژێک "
+"بسڕدرێتەوە."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "پۆستێکی نوێی پشتڕاستکردنەوەت بۆ دەنێردرێت."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "بۆ داوای پۆستێکی نوێی پشتڕاستکردنەوە کلیک لێرە بکە."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1423,22 +1461,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "پۆستی نوێ"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"تکایە ناونیشانی پۆستەکەت پشتڕاست بکەرەوە یان ئەکاونتەکەت دوای چەند ڕۆژێک "
-"بسڕدرێتەوە."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "پۆستێکی نوێی پشتڕاستکردنەوەت بۆ دەنێردرێت."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "بۆ داوای پۆستێکی نوێی پشتڕاستکردنەوە کلیک لێرە بکە."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1630,14 +1652,6 @@ msgstr "پێکسڵەکان بەدەست بهێنە"
 msgid "Get Users"
 msgstr "بەکارهێنەران بەدەست بهێنە"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "دەستکاری"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "بڕۆ بۆ"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "پێویستە ماوەیەک دابنێیت"
@@ -1706,15 +1720,15 @@ msgstr "بلۆک"
 msgid "Mute"
 msgstr "بێدەنگ"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

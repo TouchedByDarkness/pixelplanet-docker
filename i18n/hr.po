@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-30 13:58+0000\n"
-"Last-Translator: Antonio <srbomrz@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-06-10 20:09+0000\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/pixelplanet/"
 "client/hr/>\n"
 "Language: hr\n"
@@ -210,11 +210,19 @@ msgstr "Ne možete uvest više od 20 ili nijedan predložak!"
 
 #: src/ui/templateLoader.js:257
 msgid "Can not import more than 20 or no template!"
-msgstr "Ne možete uvesti više od 20 ili nijedan predložak!!"
+msgstr "Ne možete uvesti više od 20 ili nijedan predložak!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
-msgstr "OK"
+msgstr "U redu"
+
+#: src/store/actions/index.js:19
+msgid "Change Happened"
+msgstr "Dogodila se promjena"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr "Osvježi web stranicu"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -350,11 +358,6 @@ msgstr "Promjena veličine"
 msgid "Help"
 msgstr "Pomoć"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Postavke"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Korisničko područje"
@@ -374,6 +377,11 @@ msgstr "Zatvori paletu"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Otvorite paletu"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Postavke"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -411,30 +419,30 @@ msgstr "Arhiva platna"
 msgid "Player"
 msgstr "Igrač"
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Predugo vam je trebalo, pokušajte ponovno."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Pogrešio si s captcha"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Nema ili nije valjan captcha tekst"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Nije naveden captcha ID"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Nepoznata Captcha pogreška"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -442,13 +450,14 @@ msgstr "Greška"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Otkaži"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Pošalji"
 
@@ -491,6 +500,10 @@ msgstr "Sada kada ste vidjeli ovu poruku, više niste banani."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Zašto?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr "Osvježi"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -840,6 +853,26 @@ msgstr "Učitavam..."
 msgid "Consider joining us on Guilded:"
 msgstr "Razmislite o tome da nam se pridružite na Discordu:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Odaberite platno koje želite koristiti. \n"
+"Svako je platno jedinstveno i ima različite palete, vrijeme hlađenja i "
+"zahtjeve. \n"
+" Arhivi zatvorenih platna možete pristupiti ovdje:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arhiva"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Povučena platna (samo povijest)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Registrirajte novi račun ovdje"
@@ -878,26 +911,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Podnesi"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Odaberite platno koje želite koristiti. \n"
-"Svako je platno jedinstveno i ima različite palete, vrijeme hlađenja i "
-"zahtjeve. \n"
-" Arhivi zatvorenih platna možete pristupiti ovdje:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arhiva"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Povučena platna (samo povijest)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1358,14 +1371,6 @@ msgstr "Top 10 dnevni poredak"
 msgid "Dimensions"
 msgstr "Dimenzije"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Odaberi datoteku"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Ime šablona"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1374,6 +1379,22 @@ msgstr "Platno"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "Koordinate"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Uredi"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Idi do"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Odaberi datoteku"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Ime šablona"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1386,6 +1407,22 @@ msgstr "Ime ili email"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Prijava"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Potvrdite svoju adresu e-pošte ili bi vaš račun mogao biti izbrisan nakon "
+"nekoliko dana."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Dobivate novu e-poruku za potvrdu."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Kliknite ovdje da zatražite novu e-poštu za potvrdu."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1422,22 +1459,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Nova pošta"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Potvrdite svoju adresu e-pošte ili bi vaš račun mogao biti izbrisan nakon "
-"nekoliko dana."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Dobivate novu e-poruku za potvrdu."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Kliknite ovdje da zatražite novu e-poštu za potvrdu."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1627,14 +1648,6 @@ msgstr "Nabavite piksele"
 msgid "Get Users"
 msgstr "Dobiti korisnike"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Uredi"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Idi do"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Morate unijeti trajanje"
@@ -1703,15 +1716,15 @@ msgstr "Blokiraj"
 msgid "Mute"
 msgstr "Isključi zvuk"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr "Otvori u skočnom prozoru"
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr "Sakrij Embed"
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr "Pokaži Embedded"
 

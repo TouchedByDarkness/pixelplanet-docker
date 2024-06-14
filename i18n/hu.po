@@ -211,9 +211,18 @@ msgstr "Nem lehet 20-nál többet exportálni, vagy nincsen sablon!"
 msgid "Can not import more than 20 or no template!"
 msgstr "Nem lehet 20-nál többet importálni, vagy nincsen sablon!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "Rendben"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Felhasználónév megváltoztatása"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -349,11 +358,6 @@ msgstr "Átméretezés"
 msgid "Help"
 msgstr "Segítség"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Beállítások"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Felhasználói terület"
@@ -373,6 +377,11 @@ msgstr "Paletta bezárása"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Paletta kinyitása"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Beállítások"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -411,30 +420,30 @@ msgstr "Vászonarchívum"
 msgid "Player"
 msgstr "Lejátszó"
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Túl sokáig próbáltad, próbáld újra."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Nem sikerült a captcha"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Nincs vagy érvénytelen captcha szöveg"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Nincs megadva captcha-azonosító"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Ismeretlen Captcha hiba"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -442,13 +451,14 @@ msgstr "Hiba"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Mégse"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Küldés"
 
@@ -491,6 +501,10 @@ msgstr "Most, hogy láttad ezt az üzenetet, már nem vagy kitiltva."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Miért?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -850,6 +864,26 @@ msgstr "Betöltés..."
 msgid "Consider joining us on Guilded:"
 msgstr "Csatlakozz hozzánk Discordon:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Válaszd ki a használni kívánt vásznat.\n"
+"Minden vászon egyedi, és sajátos színpalettával, töltési idővel illetve "
+"követelményekkel rendelkezik.\n"
+"Az eltávolított vásznak archívuma itt érhető el:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Archívum"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Nyugdíjazott vásznak (csak történelmi nézet)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Új fiók regisztrálása itt"
@@ -888,26 +922,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Küldés"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Válaszd ki a használni kívánt vásznat.\n"
-"Minden vászon egyedi, és sajátos színpalettával, töltési idővel illetve "
-"követelményekkel rendelkezik.\n"
-"Az eltávolított vásznak archívuma itt érhető el:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Archívum"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Nyugdíjazott vásznak (csak történelmi nézet)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1376,14 +1390,6 @@ msgstr "Top 10 napi rangsor"
 msgid "Dimensions"
 msgstr "Méretek"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Fájl kiválasztása"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Sablon neve"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1392,6 +1398,22 @@ msgstr "Vásznak"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "Koordináták"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Menj oda"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Fájl kiválasztása"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Sablon neve"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1404,6 +1426,22 @@ msgstr "Név vagy e-mail cím"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Bejelentkezés"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Kérlek erősítsd meg az e-mail címedet, különben a fiókod néhány napon belül "
+"törlésre kerülhet."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Új ellenőrző e-mailt küldünk neked."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Kattints ide, ha új ellenőrző levelet szeretnél kérni."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1440,22 +1478,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Új e-mail cím"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Kérlek erősítsd meg az e-mail címedet, különben a fiókod néhány napon belül "
-"törlésre kerülhet."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Új ellenőrző e-mailt küldünk neked."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Kattints ide, ha új ellenőrző levelet szeretnél kérni."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1649,14 +1671,6 @@ msgstr "Pixelek lekérése"
 msgid "Get Users"
 msgstr "Felhasználók lekérése"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Szerkesztés"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Menj oda"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Meg kell adnod egy időtartamot"
@@ -1723,15 +1737,15 @@ msgstr "Blokkolás"
 msgid "Mute"
 msgstr "Némít"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

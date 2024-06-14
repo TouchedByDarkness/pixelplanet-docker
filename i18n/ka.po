@@ -212,9 +212,18 @@ msgstr "არ შეგიძლიათ დააექსპორტოთ 
 msgid "Can not import more than 20 or no template!"
 msgstr "არ შეგიძლიათ დააექსპორტოთ 20-ზე მეტი თემფლეითი!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "კარგი"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "მომხმარებლის სახელის შეცვლა"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -350,11 +359,6 @@ msgstr "ზომის შეცვლა"
 msgid "Help"
 msgstr "დახმარება"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "სეთინგები"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "მომხმარებლის ზონა"
@@ -374,6 +378,11 @@ msgstr "დახურეთ პალიტრა"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "გააღეთ პალიტრა"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "სეთინგები"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -411,30 +420,30 @@ msgstr "კანვასის არქივი"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "ძალიან დიდი დრო დაგჭირდათ, ისევ სცადეთ."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "თქვენ ვერ მოახერხეთ თქვენი კაპტჩა"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "კაპჩას ტექსტი არ არის ან არასწორია"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "კაპტჩას ნომერი არ არის მოცემული"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "უცნობი კაპჩტას შეცდომა"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -442,13 +451,14 @@ msgstr "შეცდომა"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "გაუქმება"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "გაგზავნა"
 
@@ -491,6 +501,10 @@ msgstr "ახლა, როცა ეს შეტყობინება ნ�
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "რატო?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -847,6 +861,26 @@ msgstr "Ჩატვირთვა..."
 msgid "Consider joining us on Guilded:"
 msgstr "იფიქრეთ შემოგვიერთდით Guilded-ზე:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"აირჩიეთ კანვასი, რომლის გამოყენებაც გსურთ. \n"
+"ყველა კანვასი უნიკალურია და აქვს სხვადასხვა პალიტრა, დროს მოცდა და "
+"მოთხოვნები. \n"
+"დახურული კანვასის არქივი შეგიძლიათ ნახოთ აქ:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "არქივი"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "პენსიონერი ჩარჩო (მხოლოდ ისტორია)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "დაარეგისტრირე ახალი აქაუნთი აქ"
@@ -885,26 +919,6 @@ msgstr "კაპჩა"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "გაგზავნა"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"აირჩიეთ კანვასი, რომლის გამოყენებაც გსურთ. \n"
-"ყველა კანვასი უნიკალურია და აქვს სხვადასხვა პალიტრა, დროს მოცდა და "
-"მოთხოვნები. \n"
-"დახურული კანვასის არქივი შეგიძლიათ ნახოთ აქ:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "არქივი"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "პენსიონერი ჩარჩო (მხოლოდ ისტორია)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1370,14 +1384,6 @@ msgstr "ტოპ 10 ყოველდღიური რეიტინგი"
 msgid "Dimensions"
 msgstr "ზომები"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "აირჩიეთ ფაილი"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "თემფლეითის სახელი"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1386,6 +1392,22 @@ msgstr "კანვასი"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "კორდინატები"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "დაედითება"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "წასვლა"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "აირჩიეთ ფაილი"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "თემფლეითის სახელი"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1398,6 +1420,22 @@ msgstr "სახელი ან ელფოსტა"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Შესვლა"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"გთხოვთ, დაადასტუროთ თქვენი ფოსტის მისამართი, წინააღმდეგ შემთხვევაში თქვენი "
+"ანგარიში შეიძლება წაიშალოს რამდენიმე დღის შემდეგ."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "ახალი დამადასტურებელი ფოსტა იგზავნება თქვენთან."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "დააწკაპუნეთ აქ, რათა მოითხოვოთ ახალი დამადასტურებელი ფოსტა."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1434,22 +1472,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "ახალი ფოსტა"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"გთხოვთ, დაადასტუროთ თქვენი ფოსტის მისამართი, წინააღმდეგ შემთხვევაში თქვენი "
-"ანგარიში შეიძლება წაიშალოს რამდენიმე დღის შემდეგ."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "ახალი დამადასტურებელი ფოსტა იგზავნება თქვენთან."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "დააწკაპუნეთ აქ, რათა მოითხოვოთ ახალი დამადასტურებელი ფოსტა."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1642,14 +1664,6 @@ msgstr "მიიღეთ პიქსელები"
 msgid "Get Users"
 msgstr "მიიღეთ მომხმარებლები"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "დაედითება"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "წასვლა"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "თქვენ უნდა შეიყვანოთ ხანგრძლივობა"
@@ -1716,15 +1730,15 @@ msgstr "დაბლოკვა"
 msgid "Mute"
 msgstr "დადუმება"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

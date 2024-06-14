@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-19 21:00+0000\n"
+"PO-Revision-Date: 2024-06-07 09:09+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/es/>\n"
@@ -214,9 +214,17 @@ msgstr "¡No se pueden exportar más de 20 o ninguna plantilla!"
 msgid "Can not import more than 20 or no template!"
 msgstr "No se pueden importar más de 20 o ninguna plantilla!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "OK"
+
+#: src/store/actions/index.js:19
+msgid "Change Happened"
+msgstr "El cambio se produjo"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr "Por favor, actualiza la página web"
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -353,11 +361,6 @@ msgstr "Cambiar tamaño"
 msgid "Help"
 msgstr "Ayuda"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Configuración"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Área del Usuario"
@@ -377,6 +380,11 @@ msgstr "Cerrar Paleta"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Abrir Paleta"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Configuración"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -414,30 +422,30 @@ msgstr "Archivo de Lienzos"
 msgid "Player"
 msgstr "Jugador"
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Tardaste demasiado, inténtalo de nuevo."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Fallaste el captcha"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Texto captcha inexistente o no válido"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "No se proporciona ninguna id de captcha"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Error de captcha desconocido"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -445,13 +453,14 @@ msgstr "Error"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Enviar"
 
@@ -494,6 +503,10 @@ msgstr "Ahora que has visto este mensaje, ya no estás baneado."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "¿Por qué?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr "Actualizar"
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -855,6 +868,26 @@ msgstr "Cargando..."
 msgid "Consider joining us on Guilded:"
 msgstr "Considera unirte a nuestro Guilded:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Selecciona el lienzo que deseas utilizar.\n"
+"Cada lienzo es único y tiene distintas paletas, tiempos de enfriamiento y "
+"requisitos.\n"
+"Puedes acceder a un archivo de los lienzos cerrados aquí:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Archivo"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Lienzos retirados (solo historial)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Registrar una cuenta nueva aquí"
@@ -893,26 +926,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Confirmar"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Selecciona el lienzo que deseas utilizar.\n"
-"Cada lienzo es único y tiene distintas paletas, tiempos de enfriamiento y "
-"requisitos.\n"
-"Puedes acceder a un archivo de los lienzos cerrados aquí:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Archivo"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Lienzos retirados (solo historial)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1379,14 +1392,6 @@ msgstr "Ranking Diario Top 10"
 msgid "Dimensions"
 msgstr "Dimensiones"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Seleccionar Archivo"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Nombre de la plantilla"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1395,6 +1400,22 @@ msgstr "Lienzo"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "Coordenadas"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Editar"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Ir"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Seleccionar Archivo"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Nombre de la plantilla"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1407,6 +1428,22 @@ msgstr "Nombre o Email"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Iniciar Sesión"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Por favor verifica tu dirección de correo\n"
+"o Tu cuenta podría ser eliminada en unos pocos días."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Un nuevo correo de verificación está siendo enviado."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Haz clic aquí para solicitar un nuevo correo de verificación."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1443,22 +1480,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Correo Nuevo"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Por favor verifica tu dirección de correo\n"
-"o Tu cuenta podría ser eliminada en unos pocos días."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Un nuevo correo de verificación está siendo enviado."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Haz clic aquí para solicitar un nuevo correo de verificación."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1649,14 +1670,6 @@ msgstr "Obtener píxeles"
 msgid "Get Users"
 msgstr "Obtener usuarios"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Editar"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Ir"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Debes ingresar una duración"
@@ -1725,15 +1738,15 @@ msgstr "Bloquear"
 msgid "Mute"
 msgstr "Silenciar"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr "Abrir en una ventana emergente"
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr "Ocultar Incrustar"
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr "Mostrar integrado"
 

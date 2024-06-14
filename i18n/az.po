@@ -214,9 +214,18 @@ msgstr "20-dən çox və ya heç olmayan şablon xaric edilə bilməz!"
 msgid "Can not import more than 20 or no template!"
 msgstr "20-dən çox və ya heç olmayan şablon daxil edilə bilməz!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "Yaxşı"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Adı dəyişdirin"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -352,11 +361,6 @@ msgstr "Ölçünü dəyişdir"
 msgid "Help"
 msgstr "Yardım"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Ayarlar"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "İstifadəçi Sahəsi"
@@ -376,6 +380,11 @@ msgstr "Palitranı aç"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Palitranı bağla"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Ayarlar"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -413,30 +422,30 @@ msgstr "Löhvə Arxivi"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Bu çox vaxt aldı,yenidən yoxla."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Captchanızı düzgün yerinə yetirmədiniz"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "captcha mətni yoxdur və ya etibarsızdır"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Heçbir captcha idsi verilmədi"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Naməlum captcha xətası"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -444,13 +453,14 @@ msgstr "Xəta"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Ləğv et"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Göndər"
 
@@ -493,6 +503,10 @@ msgstr "Siz bu mesajı gördüyünüzə görə,artıq banlı deyilsiniz."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Niyə?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -849,6 +863,26 @@ msgstr "Yüklənir..."
 msgid "Consider joining us on Guilded:"
 msgstr "Bizə guildeddə qoşulmağı düşünün:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"İstifadə etmək istədiyiniz lövhəni seçin.\n"
+"Hər bir lövhə yeganədir və cürbəcür palitraları, gözləmə müddəti və "
+"tələbləri var.\n"
+"Qapalı lövhələrin arxivinə buradan daxil olmaq olar:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arxiv"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Ayrı Lövhələr (tək tarix)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Burda yeni hesab ilə qeydiyyatdan keçin"
@@ -887,26 +921,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Təqdim edin"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"İstifadə etmək istədiyiniz lövhəni seçin.\n"
-"Hər bir lövhə yeganədir və cürbəcür palitraları, gözləmə müddəti və "
-"tələbləri var.\n"
-"Qapalı lövhələrin arxivinə buradan daxil olmaq olar:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arxiv"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Ayrı Lövhələr (tək tarix)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1371,14 +1385,6 @@ msgstr "Top 10 Günlük Reytinq"
 msgid "Dimensions"
 msgstr "Ölçülər"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Faylı seçin"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Şablon Adı"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1387,6 +1393,22 @@ msgstr "Löhvə"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "Koordinatlar"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Redaktə et"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Get"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Faylı seçin"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Şablon Adı"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1399,6 +1421,22 @@ msgstr "Ad vəya Email"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Daxil olun"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Zəhmət olmasa email adresinizi doğrulayın,yoxsa hesabınız bir neçə gün sonra "
+"silinəbilər."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Yeni bir doğrulama maili sizə göndərilir."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Yeni doğrulama maili tələb etmək üçün bura basın."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1435,22 +1473,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Yeni Email"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Zəhmət olmasa email adresinizi doğrulayın,yoxsa hesabınız bir neçə gün sonra "
-"silinəbilər."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Yeni bir doğrulama maili sizə göndərilir."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Yeni doğrulama maili tələb etmək üçün bura basın."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1643,14 +1665,6 @@ msgstr "Pixelləri əldə edin"
 msgid "Get Users"
 msgstr "İstifadəçiləri əldə edin"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Redaktə et"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Get"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Bir müddət daxil etməlisiniz"
@@ -1717,15 +1731,15 @@ msgstr "Blokla"
 msgid "Mute"
 msgstr "Sustur"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

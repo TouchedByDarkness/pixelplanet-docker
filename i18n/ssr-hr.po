@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-15 20:29+0000\n"
-"Last-Translator: Antonio <srbomrz@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-06-10 20:09+0000\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/hr/>\n"
 "Language: hr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -119,11 +119,11 @@ msgstr "ppfun"
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:68
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:69
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Postavite piksele u boji na platno u stilu karte s drugim igračima na mreži"
@@ -251,18 +251,22 @@ msgid "You failed your captcha"
 msgstr "Pogrešio si s captcha"
 
 #: src/routes/api/auth/register.js:61
+msgid "Please refresh the website"
+msgstr "Osvježi web stranicu"
+
+#: src/routes/api/auth/register.js:64
 msgid "Unknown Captcha Error"
 msgstr "Nepoznata Captcha pogreška"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:70
 msgid "This email provider is not allowed"
 msgstr "Ovaj pružatelj usluge e-pošte nije dopušten"
 
-#: src/routes/api/auth/register.js:89
+#: src/routes/api/auth/register.js:92
 msgid "Failed to create new user :("
 msgstr "Nije uspjelo stvaranje novog korisnika :("
 
-#: src/routes/api/auth/register.js:105
+#: src/routes/api/auth/register.js:108
 msgid "Failed to establish session after register :("
 msgstr "Nije uspjelo uspostavljanje sesije nakon registracije :("
 

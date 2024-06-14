@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-15 08:17+0000\n"
-"Last-Translator: Pollofrito <pollofrito050@gmail.com>\n"
+"PO-Revision-Date: 2024-06-07 09:09+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/pixelplanet/"
 "server/es/>\n"
 "Language: es\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
@@ -118,11 +118,11 @@ msgstr "ppfun"
 msgid "PixelPlanet.Fun PopUp"
 msgstr "Ventana emergente de PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:68
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:69
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr "Coloca píxeles de colores en un lienzo con otros jugadores en línea"
 
@@ -249,18 +249,22 @@ msgid "You failed your captcha"
 msgstr "Fallaste el captcha"
 
 #: src/routes/api/auth/register.js:61
+msgid "Please refresh the website"
+msgstr "Por favor, actualiza la página web"
+
+#: src/routes/api/auth/register.js:64
 msgid "Unknown Captcha Error"
 msgstr "Error de captcha desconocido"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:70
 msgid "This email provider is not allowed"
 msgstr "Este provedore de email no está permitido"
 
-#: src/routes/api/auth/register.js:89
+#: src/routes/api/auth/register.js:92
 msgid "Failed to create new user :("
 msgstr "No se pudo crear el nuevo usuario :("
 
-#: src/routes/api/auth/register.js:105
+#: src/routes/api/auth/register.js:108
 msgid "Failed to establish session after register :("
 msgstr "No se pudo establecer sesión después de registrar :("
 

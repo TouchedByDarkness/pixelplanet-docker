@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-16 21:26+0000\n"
-"Last-Translator: PotRapid <pvprealminecraft@gmail.com>\n"
+"PO-Revision-Date: 2024-06-12 10:12+0000\n"
+"Last-Translator: Aurter Ozturk <aurterozturk@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/it/>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/core/ChatProvider.js:434
 #, fuzzy
@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
-msgstr "Sei bannato, vai a parlare con donne vere"
+msgstr "Sei bannato"
 
 #: src/core/ChatProvider.js:443
 msgid "Your Internet Provider is banned"
@@ -70,7 +70,7 @@ msgstr "Per favore usa il canale \"int\". Letteralmente 1984"
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
-msgstr "Manda messaggi più lentamente, sarai mica un turco"
+msgstr "Manda messaggi più lentamente."
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
@@ -120,11 +120,11 @@ msgstr "ppfun"
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:68
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:69
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr "Piazza pixel colorati in un canvas con altri player online"
 
@@ -251,18 +251,22 @@ msgid "You failed your captcha"
 msgstr "Hai sbagliato il captcha"
 
 #: src/routes/api/auth/register.js:61
+msgid "Please refresh the website"
+msgstr "Aggiorna il sito web"
+
+#: src/routes/api/auth/register.js:64
 msgid "Unknown Captcha Error"
 msgstr "Errore del captcha sconosciuto"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:70
 msgid "This email provider is not allowed"
 msgstr "Il tuo email provider non è permesso, 1984"
 
-#: src/routes/api/auth/register.js:89
+#: src/routes/api/auth/register.js:92
 msgid "Failed to create new user :("
 msgstr "Fallimento nel creare un nuovo user"
 
-#: src/routes/api/auth/register.js:105
+#: src/routes/api/auth/register.js:108
 msgid "Failed to establish session after register :("
 msgstr "Fallimento nel ristabilire una sessione dopo la registraione"
 

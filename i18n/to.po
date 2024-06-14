@@ -223,9 +223,18 @@ msgstr ""
 msgid "Can not import more than 20 or no template!"
 msgstr ""
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "SAI"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Liliu e Hingoa Ngāue ki he Polokala"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -363,11 +372,6 @@ msgstr "ʻAi ke siʻisiʻi"
 msgid "Help"
 msgstr "Tokoni"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Ngaahi Feituʻú"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "ʻĒlia ʻo e Tokotaha Ngā"
@@ -387,6 +391,11 @@ msgstr "Tapuni Palette"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Fakaava Palette"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Ngaahi Feituʻú"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -425,30 +434,30 @@ msgstr "ʻAkaivi ʻo e fakatataa"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Naʻe fuʻu fuoloa hoʻo feinga."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Naʻe ʻikai ke ke lava hoʻo captcha"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "ʻIkai pe ʻikai tonu captcha text"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "ʻIkai foaki ha captcha ID"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Fehalaaki Captcha ʻikai ʻiloʻi"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -456,13 +465,14 @@ msgstr "Fehalaaki"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Kaniseli"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "ʻAve"
 
@@ -507,6 +517,10 @@ msgstr ""
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Ko e ha hono ʻuhinga?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -871,6 +885,26 @@ msgstr "Load..."
 msgid "Consider joining us on Guilded:"
 msgstr "Fakakaukau ke ke kau fakataha mo kimautolu ʻi he Guilded:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Fili ʻa e fakatataa ʻoku ke fie fakaʻaongaʻi. ʻOku makehe ʻa e fakatataa "
+"kotoa pe pea ʻoku kehekehe ʻa e palettes, cooldown mo e ngaahi fie maʻu. ʻE "
+"lava ke maʻu heni ʻa e ʻakaivi ʻo e canvases kuo tapuni:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "ʻAkaivi"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Lesisita heni ha ʻakauni foʻou"
@@ -909,26 +943,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Fakahū"
-
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Fili ʻa e fakatataa ʻoku ke fie fakaʻaongaʻi. ʻOku makehe ʻa e fakatataa "
-"kotoa pe pea ʻoku kehekehe ʻa e palettes, cooldown mo e ngaahi fie maʻu. ʻE "
-"lava ke maʻu heni ʻa e ʻakaivi ʻo e canvases kuo tapuni:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "ʻAkaivi"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr ""
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -1402,15 +1416,6 @@ msgstr "Tuʻunga fakaʻaho ʻe 10"
 msgid "Dimensions"
 msgstr "Fua"
 
-#: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
-msgid "Select File"
-msgstr "Fili ʻa e Lea Fakafonuá"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr ""
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1420,6 +1425,23 @@ msgstr "Fakatataa"
 #, fuzzy
 msgid "Coordinates"
 msgstr "Ngaahi Fakafekauʻaki Hala"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "Fili ʻa e Lea Fakafonuá"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:174
 #, fuzzy
@@ -1433,6 +1455,22 @@ msgstr "Hingoa pe ʻĪmeilí"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "LogIn"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Kātaki ʻo fakapapauʻi ho tuʻasila meilí pe ʻe lava ke tāmateʻi hoʻo ʻakauní "
+"hili ha ngaahi ʻaho siʻi."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "ʻOku ʻoatu ha meili fakapapauʻi foʻou kiate koe."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Lomiʻi heni ke kole ha meili fakapapauʻi foʻou."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1470,22 +1508,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Meili Foʻoú"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Kātaki ʻo fakapapauʻi ho tuʻasila meilí pe ʻe lava ke tāmateʻi hoʻo ʻakauní "
-"hili ha ngaahi ʻaho siʻi."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "ʻOku ʻoatu ha meili fakapapauʻi foʻou kiate koe."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Lomiʻi heni ke kole ha meili fakapapauʻi foʻou."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1679,14 +1701,6 @@ msgstr "Maʻu ʻa e pixel"
 msgid "Get Users"
 msgstr "Maʻu e kau fakaʻaongaʻi"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Kuo pau ke ke fakahū ha taimi"
@@ -1753,15 +1767,15 @@ msgstr "Poloka"
 msgid "Mute"
 msgstr "Fakalongo"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

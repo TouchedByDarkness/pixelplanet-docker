@@ -214,9 +214,18 @@ msgstr ""
 "Sa ei saa korraga importida rohkem kui 20 šablooni või sul pole ühtegi "
 "šablooni!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "OK"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Muuda Kasutajanime"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -352,11 +361,6 @@ msgstr "Muuda Suurust"
 msgid "Help"
 msgstr "Abi"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Seaded"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Kasutaja Ala"
@@ -376,6 +380,11 @@ msgstr "Sule Palett"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Ava Palett"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Seaded"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -413,30 +422,30 @@ msgstr "Lõuendi Arhiiv"
 msgid "Player"
 msgstr "Mängija"
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Sul läks liiga kaua, proovi uuesti."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Sa lahendasid captcha valesti"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Puudulik või sobimatu captcha tekst"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Captcha ID-d ei antud"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Tundmatu Captcha Viga"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -444,13 +453,14 @@ msgstr "Viga"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Tühista"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Saada"
 
@@ -493,6 +503,10 @@ msgstr "Nüüd, mil sa näed seda sõnumit, su ligipääs ei ole enam piiratud."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Miks?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -839,6 +853,25 @@ msgstr "Laadimine..."
 msgid "Consider joining us on Guilded:"
 msgstr "Ühine meie Guilded'iga:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Vali lõuend, mida sa soovid kasutada. \n"
+"Igal lõuendil on eripärane palett, jahtumisaeg ja ligipääsu tingimused. \n"
+"Arhiveeritud lõuendid on saadaval siin:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arhiiv"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Kunagised Lõuendid (ainult ajalugu)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Registreeri uus kasutaja siin"
@@ -877,25 +910,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Kinnita"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Vali lõuend, mida sa soovid kasutada. \n"
-"Igal lõuendil on eripärane palett, jahtumisaeg ja ligipääsu tingimused. \n"
-"Arhiveeritud lõuendid on saadaval siin:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arhiiv"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Kunagised Lõuendid (ainult ajalugu)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1360,14 +1374,6 @@ msgstr "Top 10 Igapäevane Edetabel"
 msgid "Dimensions"
 msgstr "Mõõtmed"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Vali Fail"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Šablooni Nimi"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1376,6 +1382,22 @@ msgstr "Lõuend"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "Koordinaadid"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Muuda"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Mine"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Vali Fail"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Šablooni Nimi"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1388,6 +1410,22 @@ msgstr "Nimi või E-meil"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Logi Sisse"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Palun veriitseeri oma meiliaadress või su kasutaja võidakse kustutada paari "
+"päeva jooksul."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Sulle saadetakse uus verifikatsioonimeil."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Kliki siia, et taotleda uus verifikatsioonimeil."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1424,22 +1462,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Uus Meil"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Palun veriitseeri oma meiliaadress või su kasutaja võidakse kustutada paari "
-"päeva jooksul."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Sulle saadetakse uus verifikatsioonimeil."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Kliki siia, et taotleda uus verifikatsioonimeil."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1630,14 +1652,6 @@ msgstr "Hangi Pikslid"
 msgid "Get Users"
 msgstr "Hangi Kasutajad"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Muuda"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Mine"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Sa pead sisestama kestvuse"
@@ -1704,15 +1718,15 @@ msgstr "Blokeeri"
 msgid "Mute"
 msgstr "Vaigista"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr "Ava PopUpina"
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr "Peida Fail"
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr "Näita Faili"
 

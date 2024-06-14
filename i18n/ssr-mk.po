@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-24 07:09+0000\n"
-"Last-Translator: Sinan-alt <sinanppf2@gmail.com>\n"
+"PO-Revision-Date: 2024-06-10 20:09+0000\n"
+"Last-Translator: David <stojanovskidavid74@gmail.com>\n"
 "Language-Team: Macedonian <https://hosted.weblate.org/projects/pixelplanet/"
 "server/mk/>\n"
 "Language: mk\n"
@@ -115,11 +115,11 @@ msgstr "ппфун"
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun скокачки прозорец"
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:68
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:69
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Ставете пиксели во боја на платно со стил на мапа со други играчи на интернет"
@@ -247,18 +247,22 @@ msgid "You failed your captcha"
 msgstr "Не успеавте со вашата captcha"
 
 #: src/routes/api/auth/register.js:61
+msgid "Please refresh the website"
+msgstr "ве молиме освежете ја страницата"
+
+#: src/routes/api/auth/register.js:64
 msgid "Unknown Captcha Error"
 msgstr "Непозната Каптча грешка"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:70
 msgid "This email provider is not allowed"
 msgstr "Овој давател на е-пошта не е дозволен"
 
-#: src/routes/api/auth/register.js:89
+#: src/routes/api/auth/register.js:92
 msgid "Failed to create new user :("
 msgstr "Не успеа да се создаде нов корисник :("
 
-#: src/routes/api/auth/register.js:105
+#: src/routes/api/auth/register.js:108
 msgid "Failed to establish session after register :("
 msgstr "Не успеа да се воспостави сесија по регистрацијата :("
 

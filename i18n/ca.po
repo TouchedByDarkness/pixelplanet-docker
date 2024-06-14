@@ -219,9 +219,18 @@ msgstr ""
 msgid "Can not import more than 20 or no template!"
 msgstr ""
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "D'acord"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Canviar nom d'usuari"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -359,11 +368,6 @@ msgstr "Canviar mida"
 msgid "Help"
 msgstr "Ajuda"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Configuració"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Àrea d'usuari"
@@ -383,6 +387,11 @@ msgstr "Tancar la paleta"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Obrir la paleta"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Configuració"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -421,25 +430,25 @@ msgstr "Arxiu de llenços"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 #, fuzzy
 msgid "You failed your captcha"
 msgstr "No s'ha pogut carregar el captcha"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 #, fuzzy
 msgid "No captcha id given"
 msgstr "No s'ha escrit una contrasenya."
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 #, fuzzy
 msgid "Unknown Captcha Error"
 msgstr "Error desconegut"
@@ -447,7 +456,7 @@ msgstr "Error desconegut"
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -455,13 +464,14 @@ msgstr "Error"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Envia"
 
@@ -504,6 +514,10 @@ msgstr ""
 
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
+msgstr ""
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
 msgstr ""
 
 #: src/components/windows/Help.jsx:65
@@ -862,6 +876,26 @@ msgstr "Carregant..."
 msgid "Consider joining us on Guilded:"
 msgstr "Considera unir-te al nostre Guilded:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Selecciona el llenç que vols fer servir.  Cada llenç és únic i té diferents "
+"paletes de colors, temps de refredament i requisits.  L'arxiu dels llenços "
+"tancats es troba aquí:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arxiu"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Registra un nou compte aquí"
@@ -900,26 +934,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Enviar"
-
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Selecciona el llenç que vols fer servir.  Cada llenç és únic i té diferents "
-"paletes de colors, temps de refredament i requisits.  L'arxiu dels llenços "
-"tancats es troba aquí:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arxiu"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr ""
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -1391,15 +1405,6 @@ msgstr "Classificació diària top 10"
 msgid "Dimensions"
 msgstr "Dimensions"
 
-#: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
-msgid "Select File"
-msgstr "Selecciona l'idioma"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr ""
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 #, fuzzy
@@ -1410,6 +1415,23 @@ msgstr "Error de llenç"
 #, fuzzy
 msgid "Coordinates"
 msgstr "Coordenades invàlides"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "Selecciona l'idioma"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:174
 #, fuzzy
@@ -1423,6 +1445,23 @@ msgstr "Nom o correu electrònic"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Inicia sessió"
+
+#: src/components/UserMessages.jsx:28
+#, fuzzy
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Si us plau verifica la teva adreça de correu electrònic)&nbps;\n"
+"o el teu compte podria ser esborrat després d'uns quants dies."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "T'estem enviant un nou correu electrònic de verificació."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Clica aquí per solicitar un nou correu electrònic de verificació."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1459,23 +1498,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Nou correu"
-
-#: src/components/UserMessages.jsx:28
-#, fuzzy
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Si us plau verifica la teva adreça de correu electrònic)&nbps;\n"
-"o el teu compte podria ser esborrat després d'uns quants dies."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "T'estem enviant un nou correu electrònic de verificació."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Clica aquí per solicitar un nou correu electrònic de verificació."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1667,14 +1689,6 @@ msgstr "Píxels col·locats"
 msgid "Get Users"
 msgstr "Usuaris en línia"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr ""
@@ -1744,15 +1758,15 @@ msgstr "Bloquejar"
 msgid "Mute"
 msgstr "Silenciar"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

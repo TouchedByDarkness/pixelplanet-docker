@@ -116,11 +116,11 @@ msgstr "ppfun"
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:68
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:69
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Vendosni piksela në një canvas si stil harte me lojtarë të tjerë online"
@@ -248,18 +248,22 @@ msgid "You failed your captcha"
 msgstr "Dështove captcha-n tënde"
 
 #: src/routes/api/auth/register.js:61
+msgid "Please refresh the website"
+msgstr ""
+
+#: src/routes/api/auth/register.js:64
 msgid "Unknown Captcha Error"
 msgstr "Gabim i panjohur Captcha"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:70
 msgid "This email provider is not allowed"
 msgstr "Ky ofrues emaili nuk lejohet"
 
-#: src/routes/api/auth/register.js:89
+#: src/routes/api/auth/register.js:92
 msgid "Failed to create new user :("
 msgstr "Dështoi në krijimin e një përdoruesi të ri :("
 
-#: src/routes/api/auth/register.js:105
+#: src/routes/api/auth/register.js:108
 msgid "Failed to establish session after register :("
 msgstr "Dështoi në krijimin e seancës pas regjistrimit :("
 
@@ -276,8 +280,8 @@ msgid ""
 "Your mail verification code is invalid or already expired :(, please request "
 "a new one."
 msgstr ""
-"Kodi juaj i verifikimit të postës është i pavlefshëm ose tashmë i skaduar :("
-", ju lutemi kërkoni një të ri."
+"Kodi juaj i verifikimit të postës është i pavlefshëm ose tashmë i skaduar :"
+"(, ju lutemi kërkoni një të ri."
 
 #: src/routes/api/auth/logout.js:11
 msgid "You are not even logged in."

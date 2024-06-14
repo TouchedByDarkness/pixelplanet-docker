@@ -1,252 +1,246 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-03-12 19:57+0000\n"
-"Last-Translator: FOXHELL <foxhell768@gmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/pixelplanet/"
-"server/pl/>\n"
-"Language: pl\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Language: otk\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/core/ChatProvider.js:434
 msgid "You can not send chat messages while using a proxy"
-msgstr "Nie możesz wysyłać wiadomości na chat z proxy"
+msgstr ""
 
 #: src/core/ChatProvider.js:436
 msgid "Your country is temporary muted from this chat channel"
-msgstr "Twój kraj został tymczasowo wyciszony z tego kanału"
+msgstr ""
 
 #: src/core/ChatProvider.js:439
 msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
-"Zostałeś pernamentnie wyciszony dołącz do naszego guilded aby odwołać się od "
-"wyciszenia"
 
 #: src/core/ChatProvider.js:441
 msgid "You are banned"
-msgstr "Jesteś zbanowany"
+msgstr ""
 
 #: src/core/ChatProvider.js:443
 msgid "Your Internet Provider is banned"
-msgstr "Twój dostawca jest zbanowany"
+msgstr ""
 
 #: src/core/ChatProvider.js:448
 #, javascript-format
 msgid "You are muted for another ${ timeMin } minutes"
-msgstr "Jesteś wyciszony na kolejne ${ timeMin } minut"
+msgstr ""
 
 #: src/core/ChatProvider.js:450
 #, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
-msgstr "Jesteś wyciszony przez kolejne ${ ttl } sekundy"
+msgstr ""
 
 #: src/core/ChatProvider.js:467
 #, javascript-format
 msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
-msgstr "Wysyłasz wiadomości za szybko, musisz poczekać ${waitTime } s :("
+msgstr ""
 
 #: src/core/ChatProvider.js:471
 msgid "You don't have access to this channel"
-msgstr "Nie masz dostępu do tego kanału"
+msgstr ""
 
 #: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
-msgstr "Twój mail musi zostać zweryfikowany aby móc korzystać z czatu"
+msgstr ""
 
 #: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
-msgstr "Nie możesz wysłać tak długiej wiadomości :("
+msgstr ""
 
 #: src/core/ChatProvider.js:504
 msgid "Please use int channel"
-msgstr "Proszę użyj kanału int"
+msgstr ""
 
 #: src/core/ChatProvider.js:512
 msgid "Stop flooding."
-msgstr "Przestań Spamować."
+msgstr ""
 
 #: src/routes/reset_password.js:39
 msgid "You sent an empty password or invalid data :("
-msgstr "Wysłałeś puste hasło lub nieprawidłowe dane :("
+msgstr ""
 
 #: src/routes/reset_password.js:51
 msgid "This password-reset link isn't valid anymore :("
-msgstr "Ten link do resetowania hasła jest już nieważny :("
+msgstr ""
 
 #: src/routes/reset_password.js:62
 msgid "Your passwords do not match :("
-msgstr "Twoje hasła nie pasują do siebie :("
+msgstr ""
 
 #: src/routes/reset_password.js:77
 msgid "User doesn't exist in our database :("
-msgstr "Użytkownik nie istnieje w naszej bazie danych :("
+msgstr ""
 
 #: src/routes/reset_password.js:89
 msgid "Password successfully changed."
-msgstr "Pomyślnie zmieniono hasło."
+msgstr ""
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
-msgstr "Nieprawidłowy adres URL :( Sprawdź maila ponownie."
+msgstr ""
 
 #: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
-msgstr "PixelPlanet.Fun Globus3D"
+msgstr ""
 
 #: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
-msgstr "Globus 3D całej naszej mapy"
+msgstr ""
 
 #: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
-msgstr "Kliknij dwukrotnie w globus aby wrócić do normalnego widoku."
+msgstr ""
 
 #: src/ssr/Globe.jsx:52
 msgid "Loading..."
-msgstr "Ładowanie..."
+msgstr ""
 
 #: src/ssr/PopUp.jsx:47
 msgid "ppfun"
-msgstr "ppfun"
+msgstr ""
 
 #: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
-msgstr "PixelPlanet.Fun PopUp"
+msgstr ""
 
 #: src/ssr/Main.jsx:68
 msgid "PixelPlanet.Fun"
-msgstr "Pixelplanet.Fun"
+msgstr ""
 
 #: src/ssr/Main.jsx:69
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
-"Stawiaj kolorowe piksele na płótnie w stylu mapy wraz z innymi graczami "
-"online"
 
 #: src/utils/validation.js:17
 msgid "Email can't be empty."
-msgstr "Okienko z mailem nie może być puste."
+msgstr ""
 
 #: src/utils/validation.js:18
 msgid "Email should be at least 5 characters long."
-msgstr "Mail powinien mieć przynajmniej 5 znaków."
+msgstr ""
 
 #: src/utils/validation.js:19
 msgid "Email can't be longer than 40 characters."
-msgstr "mail nie może być dłuższy niż 40 znaków."
+msgstr ""
 
 #: src/utils/validation.js:20
 msgid "Email should at least contain a dot"
-msgstr "mail powinien zawierać przynajmniej kropkę"
+msgstr ""
 
 #: src/utils/validation.js:22
 msgid "Email should contain a @"
-msgstr "mail powinien zawierać @"
+msgstr ""
 
 #: src/utils/validation.js:29
 msgid "Name can't be empty."
-msgstr "Nazwa nie może być pusta."
+msgstr ""
 
 #: src/utils/validation.js:30
 msgid "Name must be at least 2 characters long"
-msgstr "Nazwa musi mieć co najmniej 2 znaki"
+msgstr ""
 
 #: src/utils/validation.js:31
 msgid "Name must be shorter than 26 characters"
-msgstr "Nazwa musi być krótsza niż 26 znaków"
+msgstr ""
 
 #: src/utils/validation.js:38
 msgid "Name contains invalid character like @, /, \\ or #"
-msgstr "Nazwa zawiera nieprawidłowy znak, taki jak @, /, \\ lub #"
+msgstr ""
 
 #: src/utils/validation.js:53
 msgid "No password given."
-msgstr "Nie podano hasła."
+msgstr ""
 
 #: src/utils/validation.js:56
 msgid "Password must be at least 6 characters long."
-msgstr "Hasło musi mieć co najmniej 6 znaków."
+msgstr ""
 
 #: src/utils/validation.js:59
 msgid "Password must be shorter than 60 characters."
-msgstr "Hasło musi być krótsze niż 60 znaków."
+msgstr ""
 
-#: src/ssr/PasswordReset.jsx:20 src/ssr/PasswordReset.jsx:40
+#: src/ssr/PasswordReset.jsx:20
+#: src/ssr/PasswordReset.jsx:40
 msgid "PixelPlanet.fun Password Reset"
-msgstr "Resetowanie hasła PixelPlanet.fun"
+msgstr ""
 
-#: src/ssr/PasswordReset.jsx:21 src/ssr/PasswordReset.jsx:41
+#: src/ssr/PasswordReset.jsx:21
+#: src/ssr/PasswordReset.jsx:41
 msgid "Reset your password here"
-msgstr "Zresetuj swoje hasło tutaj"
+msgstr ""
 
-#: src/core/MailProvider.js:105 src/ssr/PasswordReset.jsx:28
+#: src/core/MailProvider.js:105
+#: src/ssr/PasswordReset.jsx:28
 #: src/ssr/PasswordReset.jsx:49
 msgid "Reset Password"
-msgstr "Zresetuj Hasło"
+msgstr ""
 
-#: src/ssr/PasswordReset.jsx:30 src/ssr/RedirectionPage.jsx:12
+#: src/ssr/PasswordReset.jsx:30
+#: src/ssr/RedirectionPage.jsx:12
 msgid "Click here"
-msgstr "Kliknij tutaj"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:30
 msgid "to go back to pixelplanet"
-msgstr "by wrócić na pixelplanet"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:50
 #, javascript-format
 msgid "Hello ${ name }, you can set your new password here:"
-msgstr "Witaj ${ name } możesz ustawić swoje nowe hasło tutaj:"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:54
 msgid "New Password"
-msgstr "Nowe hasło"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:60
 msgid "Confirm New Password"
-msgstr "Potwierdź nowe hasło"
+msgstr ""
 
 #: src/ssr/PasswordReset.jsx:65
 msgid "Submit"
-msgstr "Podaj"
+msgstr ""
 
 #: src/routes/api/modtools.js:53
 msgid "You are not logged in"
-msgstr "Nie jesteś zalogowany"
+msgstr ""
 
 #: src/routes/api/modtools.js:65
 msgid "You are not allowed to access this page"
-msgstr "Nie masz dostępu do tej strony"
+msgstr ""
 
 #: src/routes/api/modtools.js:209
 msgid "Just admins can do that"
-msgstr "Tylko administracja może to zrobić"
+msgstr ""
 
 #: src/routes/api/baninfo.js:32
 msgid "You are not banned"
-msgstr "Nie jesteś zbanowany"
+msgstr ""
 
 #: src/routes/api/auth/register.js:27
 msgid "No Captcha given"
-msgstr "Nie podano Captcha"
+msgstr ""
 
 #: src/routes/api/auth/register.js:30
 msgid "E-Mail already in use."
-msgstr "ten mail jest już używany."
+msgstr ""
 
 #: src/routes/api/auth/register.js:32
 msgid "Username already in use."
-msgstr "Nazwa użytkownika jest już przez kogoś używana."
+msgstr ""
 
 #: src/routes/api/auth/register.js:55
 msgid "You took too long, try again."
-msgstr "Trwało to zbyt długo. Spróbuj ponownie."
+msgstr ""
 
 #: src/routes/api/auth/register.js:58
 msgid "You failed your captcha"
-msgstr "Nie udało Ci się wykonać captcha"
+msgstr ""
 
 #: src/routes/api/auth/register.js:61
 msgid "Please refresh the website"
@@ -254,232 +248,218 @@ msgstr ""
 
 #: src/routes/api/auth/register.js:64
 msgid "Unknown Captcha Error"
-msgstr "Nieznany błąd Captcha"
+msgstr ""
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:70
+#: src/routes/api/auth/change_mail.js:22
+#: src/routes/api/auth/register.js:70
 msgid "This email provider is not allowed"
-msgstr "Ten dostawca maila jest niedozwolony"
+msgstr ""
 
 #: src/routes/api/auth/register.js:92
 msgid "Failed to create new user :("
-msgstr "Nie udało się stworzyć nowego konta :("
+msgstr ""
 
 #: src/routes/api/auth/register.js:108
 msgid "Failed to establish session after register :("
-msgstr "Nie udało się ustanowić sesji po zarejestrowaniu :("
+msgstr ""
 
-#: src/routes/api/auth/verify.js:26 src/routes/api/auth/verify.js:35
+#: src/routes/api/auth/verify.js:26
+#: src/routes/api/auth/verify.js:35
 msgid "Mail verification"
-msgstr "weryfikacja maila"
+msgstr ""
 
 #: src/routes/api/auth/verify.js:27
 msgid "You are now verified :)"
-msgstr "Jesteś teraz zweryfikowany :)"
+msgstr ""
 
 #: src/routes/api/auth/verify.js:35
 msgid ""
-"Your mail verification code is invalid or already expired :(, please request "
-"a new one."
+"Your mail verification code is invalid or already expired :(, please "
+"request a new one."
 msgstr ""
-"Twój kod weryfikacyjny maila jest nieprawidłowy lub już wygasł :(, poproś o "
-"nowy."
 
 #: src/routes/api/auth/logout.js:11
 msgid "You are not even logged in."
-msgstr "Nie jesteś nawet zalogowany."
+msgstr ""
 
-#: src/routes/api/auth/delete_account.js:65 src/routes/api/auth/logout.js:20
+#: src/routes/api/auth/delete_account.js:65
+#: src/routes/api/auth/logout.js:20
 msgid "Server error when logging out."
-msgstr "Błąd serwera podczas wylogowywania."
+msgstr ""
 
 #: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
 #: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
-msgstr "Nie jesteś uwierzytelniony."
+msgstr ""
 
 #: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
 #: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
-msgstr "Niepoprawne hasło!"
+msgstr ""
 
 #: src/routes/api/auth/delete_account.js:46
 msgid "Muted Users can not delete their account."
-msgstr "Wyciszeni Użytkownicy nie mogą usunąć swoich kont."
+msgstr ""
 
 #: src/routes/api/auth/change_mail.js:62
 msgid "Muted Users can not do this."
-msgstr "Wyciszeni Użytkownicy nie mogą tego zrobić."
+msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
 msgid "PixelPlanet.fun Accounts"
-msgstr "Konta Pixelplanet.fun"
+msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:29
 msgid "You will be automatically redirected after 15s"
-msgstr "Po 15 sekundach nastąpi automatyczne przekierowanie"
+msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:30
 #, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Lub ${clickHere }, aby wrócić do pixelplanet"
+msgstr ""
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
-msgstr "Ziemia"
+msgstr ""
 
 #: src/canvasesDesc.js:21
 msgid "Moon"
-msgstr "Księżyc"
+msgstr ""
 
 #: src/canvasesDesc.js:22
 msgid "3D Canvas"
-msgstr "Płótno 3D"
+msgstr ""
 
 #: src/canvasesDesc.js:23
 msgid "Coronavirus"
-msgstr "Koronawirus"
+msgstr ""
 
 #: src/canvasesDesc.js:24
 msgid "PixelZone"
-msgstr "PixelZone"
+msgstr ""
 
 #: src/canvasesDesc.js:25
 msgid "PixelCanvas"
-msgstr "PixelCanvas"
+msgstr ""
 
 #: src/canvasesDesc.js:26
 msgid "1bit"
-msgstr "1bit"
+msgstr ""
 
 #: src/canvasesDesc.js:27
 msgid "Top10"
-msgstr "Top10"
+msgstr ""
 
 #: src/canvasesDesc.js:28
 msgid "2bit"
-msgstr "2bit"
+msgstr ""
 
 #: src/canvasesDesc.js:29
 msgid "Minimap"
-msgstr "Minimapa"
+msgstr ""
 
 #: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
-msgstr "Nasze główne płótno, wielka mapa świata, Postaw gdziekolwiek chcesz!"
+msgstr ""
 
 #: src/canvasesDesc.js:33
 msgid ""
-"Moon canvas. Safe space for art. No flags or large text (unless part of art) "
-"or art larger than 1.5k x 1.5k pixels."
+"Moon canvas. Safe space for art. No flags or large text (unless part of "
+"art) or art larger than 1.5k x 1.5k pixels."
 msgstr ""
-"Płótno księżycowe. Bezpieczna przestrzeń dla sztuki. Żadnych flag ani dużego "
-"tekstu (chyba, że jest to część rysunku) ani rysunku o wymiarach większych "
-"niż 1,5 tys. x 1,5 tys. pikseli."
 
 #: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others."
-msgstr "Postaw Voxele na płótnie 3D wraz z innymi."
+msgstr ""
 
 #: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
 msgstr ""
-"Specjalne płótno mające na celu szerzenie świadomości na temat SARS-CoV2."
 
 #: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
-msgstr "Lustro PixelZone"
+msgstr ""
 
 #: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
-msgstr "Lustro PixelCanvas"
+msgstr ""
 
 #: src/canvasesDesc.js:38
 msgid "Black and White canvas"
-msgstr "Czarno-białe płótno"
+msgstr ""
 
 #: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
-"Canvas dla najaktywniejszych graczy z poprzedniego dnia. Codzienne "
-"aktualizacje rankingów o godzinie 00:00 UTC."
 
 #: src/canvasesDesc.js:40
 msgid "Only four colors. Same rules as moon!"
-msgstr "Tylko cztery kolory. Takie same zasady jak dla płótna księżycowego!"
+msgstr ""
 
 #: src/canvasesDesc.js:41
 msgid ""
 "Conquer land on a smaller earth with protected ocean. Shares cooldown with "
 "earth canvas!"
 msgstr ""
-"Podbij tereny na mniejszej ziemi z chronionym oceanem. dzieli cooldown z "
-"płótnem ziemi!"
 
 #: src/core/MailProvider.js:66
 #, javascript-format
 msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
-msgstr "Witamy ${ name } w PixelPlanet. Zweryfikuj swojego maila"
+msgstr ""
 
 #: src/core/MailProvider.js:67
 #, javascript-format
 msgid "Hello ${ name }"
-msgstr "Witaj ${ name }"
+msgstr ""
 
 #: src/core/MailProvider.js:68
 msgid ""
 "welcome to our little community of pixelplacers, to use your account, you "
 "have to verify your mail. You can do that here: "
 msgstr ""
-"witamy w naszej małej społeczności pixelplacerów, aby móc korzystać ze "
-"swojego konta, musisz zweryfikować swojego maila, Możesz to zrobić tutaj: "
 
 #: src/core/MailProvider.js:68
 msgid "Click to Verify"
-msgstr "Kliknij aby Zweryfikować"
+msgstr ""
 
-#: src/core/MailProvider.js:68 src/core/MailProvider.js:105
+#: src/core/MailProvider.js:68
+#: src/core/MailProvider.js:105
 msgid "Or by copying following url:"
-msgstr "Lub kopiując następujący adres URL:"
+msgstr ""
 
 #: src/core/MailProvider.js:69
-msgid ""
-"Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgid "Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
-"Miłej zabawy i nie wahaj się z nami skontaktować, jeśli napotkasz "
-"jakiekolwiek problemy :)"
 
-#: src/core/MailProvider.js:70 src/core/MailProvider.js:107
+#: src/core/MailProvider.js:70
+#: src/core/MailProvider.js:107
 msgid "Thanks"
-msgstr "Dzięki"
+msgstr ""
 
 #: src/core/MailProvider.js:87
 #, javascript-format
 msgid ""
-"We already sent you a verification mail, you can request another one in "
-"${ minLeft } minutes."
+"We already sent you a verification mail, you can request another one in ${ "
+"minLeft } minutes."
 msgstr ""
-"Wysłaliśmy już do Ciebie wiadomość weryfikacyjną. Możesz poprosić o kolejną "
-"za ${ minLeft } minut."
 
 #: src/core/MailProvider.js:103
 msgid "You forgot your password for PixelPlanet? Get a new one here"
-msgstr "Zapomniałeś hasła do PixelPlanet? Zrób nowe tutaj"
+msgstr ""
 
 #: src/core/MailProvider.js:104
 msgid "Hello"
-msgstr "Witaj"
+msgstr ""
 
 #: src/core/MailProvider.js:105
 msgid ""
-"You requested to get a new password. You can change your password within the "
-"next 30min here: "
+"You requested to get a new password. You can change your password within "
+"the next 30min here: "
 msgstr ""
-"Prosiłeś o otrzymanie nowego hasła. Możesz zmienić swoje hasło w ciągu "
-"najbliższych 30 minut tutaj: "
 
 #: src/core/MailProvider.js:106
 #, javascript-format
@@ -487,21 +467,17 @@ msgid ""
 "If you did not request this mail, please just ignore it (the ip that "
 "requested this mail was ${ ip })."
 msgstr ""
-"Jeśli to nie Ty prosiłeś o tę pocztę, zignoruj ją (adres IP, który zażądał "
-"tej poczty, to ${ ip })."
 
 #: src/core/MailProvider.js:114
 msgid "Mail is not configured on the server"
-msgstr "mail nie jest skonfigurowany na serwerze"
+msgstr ""
 
 #: src/core/MailProvider.js:122
 msgid ""
 "We already sent you a mail with instructions. Please wait before requesting "
 "another mail."
 msgstr ""
-"Wysłaliśmy już do Ciebie maila z instrukcjami. Poczekaj, zanim poprosisz o "
-"kolejną wiadomość."
 
 #: src/core/MailProvider.js:130
 msgid "Couldn't find this mail in our database"
-msgstr "Nie udało się znaleźć tego maila w naszej bazie danych"
+msgstr ""

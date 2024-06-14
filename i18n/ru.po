@@ -215,9 +215,18 @@ msgstr "Нельзя экспортировать более 20 шаблонов
 msgid "Can not import more than 20 or no template!"
 msgstr "Нельзя импортировать более 20 шаблонов или ни одного!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "Ок"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Изменить имя пользователя"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -354,11 +363,6 @@ msgstr "Изменить размер"
 msgid "Help"
 msgstr "Помощь"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Настройки"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Зона пользователя"
@@ -378,6 +382,11 @@ msgstr "Закрыть палитру"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Открыть палитру"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Настройки"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -415,30 +424,30 @@ msgstr "Архив полотен"
 msgid "Player"
 msgstr "Игрок"
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Слишком долго, попробуйте еще раз."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Вы неправильно решили капчу"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Текст капчи отсутствует или неверный"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Не указан идентификатор капчи"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Неизвестная ошибка капчи"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -446,13 +455,14 @@ msgstr "Ошибка"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Отправить"
 
@@ -495,6 +505,10 @@ msgstr "Теперь, после того как вы увидели это со
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Почему?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -855,6 +869,26 @@ msgstr "Загрузка..."
 msgid "Consider joining us on Guilded:"
 msgstr "Присоединяйтесь к нам в Guilded:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Выберите полотно, которое хотите использовать.\n"
+"Каждое полотно уникально и имеет разные палитры, время восстановления и "
+"требования.\n"
+"Архив закрытых полотен доступен здесь:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Архив"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Списанные полотна (только история)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Зарегистрируйте новый аккаунт здесь"
@@ -893,26 +927,6 @@ msgstr "Капча"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Отправить"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Выберите полотно, которое хотите использовать.\n"
-"Каждое полотно уникально и имеет разные палитры, время восстановления и "
-"требования.\n"
-"Архив закрытых полотен доступен здесь:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Архив"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Списанные полотна (только история)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1379,14 +1393,6 @@ msgstr "Быть в Топ-10 дневного рейтинга"
 msgid "Dimensions"
 msgstr "Размеры"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Выбрать файл"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Имя шаблона"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1395,6 +1401,22 @@ msgstr "Полотно"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "Координаты"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Изменить"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Перейти"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Выбрать файл"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Имя шаблона"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1407,6 +1429,22 @@ msgstr "Имя или адрес электронной почты"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Войти в аккаунт"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Подтвердите свой адрес электронной почты, иначе через несколько дней ваша "
+"учетная запись может быть удалена."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Вам будет отправлено новое письмо с подтверждением."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Нажмите здесь, чтобы запросить новое письмо с подтверждением."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1444,22 +1482,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Новая почта"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Подтвердите свой адрес электронной почты, иначе через несколько дней ваша "
-"учетная запись может быть удалена."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Вам будет отправлено новое письмо с подтверждением."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Нажмите здесь, чтобы запросить новое письмо с подтверждением."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1651,14 +1673,6 @@ msgstr "Получить пиксели"
 msgid "Get Users"
 msgstr "Получить пользователей"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Изменить"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Перейти"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Необходимо ввести продолжительность"
@@ -1727,15 +1741,15 @@ msgstr "Заблокировать"
 msgid "Mute"
 msgstr "Замьютить"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr "Открыть во всплывающем окне"
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr "Спрятать вставленное"
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr "Показать вставленное"
 

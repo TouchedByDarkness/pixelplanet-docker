@@ -222,9 +222,18 @@ msgstr "نمی توان بیش از 20 یا بدون قالب صادر کرد!"
 msgid "Can not import more than 20 or no template!"
 msgstr ""
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "باشه"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "اسم کاربریت رو عوض کن"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -360,11 +369,6 @@ msgstr "تغییر اندازه"
 msgid "Help"
 msgstr "کمک"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "تنظیمات"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "منطقه یوزر"
@@ -384,6 +388,11 @@ msgstr "جعبه رنگ ها رو ببند"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "جعبه رنگ ها رو باز کن"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "تنظیمات"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -422,30 +431,30 @@ msgstr "آرشیو بوم"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "خیلی کارت طول کشید. دوباره امتحان کن."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "کَپچا رو نتونستی جواب بدی"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "یا هیچ کلمه ای توی کپچا نیست یا اصن اونی که باید رو ننوشتی"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "هیچ آیدی کپچایی داده نشده"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "یه ارور نامعلومی این کپچای لامصب داده"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -453,13 +462,14 @@ msgstr "ارور"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "لغو"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "ارسال"
 
@@ -503,6 +513,10 @@ msgstr "خب الان که داری این پیامو میبینی، دیگه ب
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "چرا؟"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -852,6 +866,26 @@ msgstr "در حال بارگزاری..."
 msgid "Consider joining us on Guilded:"
 msgstr "حتی خوب میشه اگر به گیلدد ما هم عضو بشین:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"بوم مورد نظر برای استفاده را انتخاب کنید. هر بوم منحصر به فرد است و دارای "
+"جعبه رنگ ها،کولداون و الزامات متفاوتی است. آرشیو بوم های بسته را می توانید "
+"در اینجا مشاهده کنید:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "آرشیو"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "اکانت جدید بساز"
@@ -890,26 +924,6 @@ msgstr "کَپچا"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "ارسال"
-
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"بوم مورد نظر برای استفاده را انتخاب کنید. هر بوم منحصر به فرد است و دارای "
-"جعبه رنگ ها،کولداون و الزامات متفاوتی است. آرشیو بوم های بسته را می توانید "
-"در اینجا مشاهده کنید:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "آرشیو"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr ""
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -1376,15 +1390,6 @@ msgstr "10 رتبه برتر روزانه"
 msgid "Dimensions"
 msgstr "ابعاد"
 
-#: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
-msgid "Select File"
-msgstr "زبانت رو انتخاب کن"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr ""
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1394,6 +1399,23 @@ msgstr "بوم"
 #, fuzzy
 msgid "Coordinates"
 msgstr "مختصات اشتباه است"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "زبانت رو انتخاب کن"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:174
 #, fuzzy
@@ -1407,6 +1429,22 @@ msgstr "اسم یا ایمیل"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "وارد شدن"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"لطفاً آدرس ایمیل خود را تأیید کنید، در غیر این صورت حساب شما ممکن است پس از "
+"چند روز حذف شود."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "یک ایمیل تأیید جدید برای شما ارسال می شود."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "برای درخواست یک ایمیل تأیید جدید اینجا را کلیک کنید."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1444,22 +1482,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "ایمیل جدید"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"لطفاً آدرس ایمیل خود را تأیید کنید، در غیر این صورت حساب شما ممکن است پس از "
-"چند روز حذف شود."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "یک ایمیل تأیید جدید برای شما ارسال می شود."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "برای درخواست یک ایمیل تأیید جدید اینجا را کلیک کنید."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1651,14 +1673,6 @@ msgstr "پیکسل بگیر"
 msgid "Get Users"
 msgstr "کاربر بگیر"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "باید مدت زمان را وارد کنید"
@@ -1725,15 +1739,15 @@ msgstr "بلاک"
 msgid "Mute"
 msgstr "سکوت"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

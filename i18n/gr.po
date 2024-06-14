@@ -223,9 +223,18 @@ msgstr ""
 msgid "Can not import more than 20 or no template!"
 msgstr ""
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "OK"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Νέο όνομα χρήστη"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr ""
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -362,11 +371,6 @@ msgstr "Αλλαγή μεγέθους"
 msgid "Help"
 msgstr "Βοήθεια"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Ρυθμίσεις"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Περιοχή χρήστη"
@@ -386,6 +390,11 @@ msgstr "Κλείσιμο παλέτας"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Άνοιγμα Παλέτας"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Ρυθμίσεις"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -424,30 +433,30 @@ msgstr "Αρχείο καμβά"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Χρειάστηκε πολύς χρόνος, δοκιμάστε ξανά."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Απέτυχες το captcha σου"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Χωρίς ή μη έγκυρο κείμενο captch"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Δεν δόθηκε αναγνωριστικό captcha"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Άγνωστο σφάλμα Captcha"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -455,13 +464,14 @@ msgstr "Λάθος"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Ματαίωση"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Αποστολή"
 
@@ -505,6 +515,10 @@ msgstr "Τώρα που είδατε αυτό το μήνυμα, δεν είστ
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Γιατί;"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -868,6 +882,26 @@ msgstr "Φόρτωση.."
 msgid "Consider joining us on Guilded:"
 msgstr "Σκεφτείτε να συμμετάσχετε μαζί μας στο Guilded:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+#, fuzzy
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Επιλέξτε τον καμβά που θέλετε να χρησιμοποιήσετε. Κάθε καμβάς είναι "
+"μοναδικός και έχει διαφορετικές παλέτες, cooldown και απαιτήσεις. Το αρχείο "
+"των κλειστών καμβάδων μπορείτε να το προσπελάσετε εδώ:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Αρχείο"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr ""
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Εγγραφή νέου λογαριασμού εδώ"
@@ -906,26 +940,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Yπέβαλλε"
-
-#: src/components/windows/CanvasSelect.jsx:29
-#, fuzzy
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Επιλέξτε τον καμβά που θέλετε να χρησιμοποιήσετε. Κάθε καμβάς είναι "
-"μοναδικός και έχει διαφορετικές παλέτες, cooldown και απαιτήσεις. Το αρχείο "
-"των κλειστών καμβάδων μπορείτε να το προσπελάσετε εδώ:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Αρχείο"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr ""
 
 #: src/components/windows/Archive.jsx:9
 #, fuzzy
@@ -1400,15 +1414,6 @@ msgstr "Top 10 Ημερήσια Κατάταξη"
 msgid "Dimensions"
 msgstr "Διαστάσεις"
 
-#: src/components/TemplateItemEdit.jsx:97
-#, fuzzy
-msgid "Select File"
-msgstr "Επιλογή γλώσσας"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr ""
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1418,6 +1423,23 @@ msgstr "Κανβας"
 #, fuzzy
 msgid "Coordinates"
 msgstr "Μη έγκυρες συντεταγμένες"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+#, fuzzy
+msgid "Select File"
+msgstr "Επιλογή γλώσσας"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:174
 #, fuzzy
@@ -1431,6 +1453,22 @@ msgstr "Όνομα ή Mail"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Σύνδεση"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Επαληθεύστε τη διεύθυνση αλληλογραφίας σας, διαφορετικά ο λογαριασμός σας "
+"μπορεί να διαγραφεί μετά από μερικές ημέρες."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Σας αποστέλλεται ένα νέο μήνυμα επαλήθευσης."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Κάντε κλικ εδώ για να ζητήσετε νέο μήνυμα επαλήθευσης."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1468,22 +1506,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Νέo Mail"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Επαληθεύστε τη διεύθυνση αλληλογραφίας σας, διαφορετικά ο λογαριασμός σας "
-"μπορεί να διαγραφεί μετά από μερικές ημέρες."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Σας αποστέλλεται ένα νέο μήνυμα επαλήθευσης."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Κάντε κλικ εδώ για να ζητήσετε νέο μήνυμα επαλήθευσης."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1677,14 +1699,6 @@ msgstr "Pixels τοποθετήθηκαν"
 msgid "Get Users"
 msgstr "Λήψη χρηστών"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr ""
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr ""
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Πρέπει να εισαγάγετε μια διάρκεια"
@@ -1751,15 +1765,15 @@ msgstr "Μπλοκάρισμα"
 msgid "Mute"
 msgstr "Σίγαση"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

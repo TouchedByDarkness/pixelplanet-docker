@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-28 10:07+0000\n"
-"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"PO-Revision-Date: 2024-06-12 10:12+0000\n"
+"Last-Translator: Aurter Ozturk <aurterozturk@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/pixelplanet/"
 "client/tr/>\n"
 "Language: tr\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.1\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: src/controls/keypress.js:102
 #, javascript-format
@@ -213,9 +213,18 @@ msgstr "20'den fazla dışa aktarılamaz veya şablon yok!"
 msgid "Can not import more than 20 or no template!"
 msgstr "20'den fazla içe aktarılamaz veya şablon yok!"
 
-#: src/components/BanInfo.jsx:136 src/store/actions/index.js:7
+#: src/components/BanInfo.jsx:132 src/store/actions/index.js:7
 msgid "OK"
 msgstr "Tamam"
+
+#: src/store/actions/index.js:19
+#, fuzzy
+msgid "Change Happened"
+msgstr "Kullanıcı Adı Değiştir"
+
+#: src/store/actions/index.js:19
+msgid "Please refresh the website"
+msgstr "Lütfen sayfayı yenileyin. Sorun düzelecektir."
 
 #: src/store/actions/fetch.js:55
 msgid "You made too many requests"
@@ -351,11 +360,6 @@ msgstr "Yeniden Boyutlandır"
 msgid "Help"
 msgstr "Yardım"
 
-#: src/components/buttons/SettingsButton.jsx:21
-#: src/components/windows/index.js:15
-msgid "Settings"
-msgstr "Ayarlar"
-
 #: src/components/buttons/LogInButton.jsx:20 src/components/windows/index.js:16
 msgid "User Area"
 msgstr "Kullanıcı Alanı"
@@ -375,6 +379,11 @@ msgstr "Paleti Kapat"
 #: src/components/buttons/PalselButton.jsx:30
 msgid "Open Palette"
 msgstr "Paleti Aç"
+
+#: src/components/buttons/SettingsButton.jsx:21
+#: src/components/windows/index.js:15
+msgid "Settings"
+msgstr "Ayarlar"
 
 #: src/components/buttons/PencilButton.jsx:41
 msgid "Enable Pencil"
@@ -412,30 +421,30 @@ msgstr "Tuval Arşivi"
 msgid "Player"
 msgstr ""
 
-#: src/components/GlobalCaptcha.jsx:47
+#: src/components/GlobalCaptcha.jsx:48
 msgid "You took too long, try again."
 msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
 
-#: src/components/GlobalCaptcha.jsx:50
+#: src/components/GlobalCaptcha.jsx:51
 msgid "You failed your captcha"
 msgstr "Doğrulamayı yanlış çözdünüz"
 
-#: src/components/GlobalCaptcha.jsx:53
+#: src/components/GlobalCaptcha.jsx:54
 msgid "No or invalid captcha text"
 msgstr "Olmayan veya yanlış captcha metni"
 
-#: src/components/GlobalCaptcha.jsx:56
+#: src/components/GlobalCaptcha.jsx:57
 msgid "No captcha id given"
 msgstr "Captcha kimliği verilmedi"
 
-#: src/components/GlobalCaptcha.jsx:59
+#: src/components/GlobalCaptcha.jsx:63
 msgid "Unknown Captcha Error"
 msgstr "Bilinmeyen Captcha Hatası"
 
 #: src/components/BanInfo.jsx:80 src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72 src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79 src/components/DeleteAccount.jsx:55
-#: src/components/GlobalCaptcha.jsx:71 src/components/LogInForm.jsx:70
+#: src/components/GlobalCaptcha.jsx:75 src/components/LogInForm.jsx:70
 #: src/components/windows/ForgotPassword.jsx:73
 #: src/components/windows/Register.jsx:89
 msgid "Error"
@@ -443,13 +452,14 @@ msgstr "Hata"
 
 #: src/components/ChangeMail.jsx:93 src/components/ChangeName.jsx:70
 #: src/components/ChangePassword.jsx:115 src/components/DeleteAccount.jsx:68
-#: src/components/GlobalCaptcha.jsx:80 src/components/TemplateItemEdit.jsx:181
+#: src/components/GlobalCaptcha.jsx:84 src/components/RefreshPrompt.jsx:16
+#: src/components/TemplateItemEdit.jsx:181
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
 msgstr "Geri Dön"
 
-#: src/components/GlobalCaptcha.jsx:86
+#: src/components/GlobalCaptcha.jsx:90
 msgid "Send"
 msgstr "Gönder"
 
@@ -492,6 +502,10 @@ msgstr "Bu iletiyi gördüğünüze göre artık yasaklı değilsiniz."
 #: src/components/BanInfo.jsx:127
 msgid "Why?"
 msgstr "Neden?"
+
+#: src/components/RefreshPrompt.jsx:14
+msgid "Refresh"
+msgstr ""
 
 #: src/components/windows/Help.jsx:65
 msgid "Place color pixels on a large canvas with other players online!"
@@ -853,6 +867,26 @@ msgstr "Yükleniyor..."
 msgid "Consider joining us on Guilded:"
 msgstr "Eğer Guilded üzerinden bize katılmak isterseniz:"
 
+#: src/components/windows/CanvasSelect.jsx:29
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Kullanmak istediğiniz tuvali buradan seçiniz.\n"
+"Her tuval özgün olup farklı renk paletleri, bekleme süreleri ve "
+"gereksinimleri vardır.\n"
+"Arşivlenmiş tuvallere buradan ulaşabilirsiniz:"
+
+#: src/components/windows/CanvasSelect.jsx:37
+msgid "Archive"
+msgstr "Arşiv"
+
+#: src/components/windows/CanvasSelect.jsx:70
+msgid "Retired Canvases (history only)"
+msgstr "Eski Tuvaller (yalnız geçmiş)"
+
 #: src/components/windows/Register.jsx:87
 msgid "Register new account here"
 msgstr "Yeni Hesap Oluşturun"
@@ -891,26 +925,6 @@ msgstr "Captcha"
 #: src/components/windows/Register.jsx:127
 msgid "Submit"
 msgstr "Onayla"
-
-#: src/components/windows/CanvasSelect.jsx:29
-msgid ""
-"Select the canvas you want to use.\n"
-"Every canvas is unique and has different palettes, cooldown and "
-"requirements.\n"
-"Archived canvases can be accessed here:"
-msgstr ""
-"Kullanmak istediğiniz tuvali buradan seçiniz.\n"
-"Her tuval özgün olup farklı renk paletleri, bekleme süreleri ve "
-"gereksinimleri vardır.\n"
-"Arşivlenmiş tuvallere buradan ulaşabilirsiniz:"
-
-#: src/components/windows/CanvasSelect.jsx:37
-msgid "Archive"
-msgstr "Arşiv"
-
-#: src/components/windows/CanvasSelect.jsx:70
-msgid "Retired Canvases (history only)"
-msgstr "Eski Tuvaller (yalnız geçmiş)"
 
 #: src/components/windows/Archive.jsx:9
 msgid ""
@@ -1377,14 +1391,6 @@ msgstr "Günlük Top10 Sıralaması"
 msgid "Dimensions"
 msgstr "Boyutlar"
 
-#: src/components/TemplateItemEdit.jsx:97
-msgid "Select File"
-msgstr "Dosya Seç"
-
-#: src/components/TemplateItemEdit.jsx:120
-msgid "Template Name"
-msgstr "Şablon Adı"
-
 #: src/components/ModWatchtools.jsx:123 src/components/TemplateItem.jsx:54
 #: src/components/TemplateItemEdit.jsx:122
 msgid "Canvas"
@@ -1393,6 +1399,22 @@ msgstr "Tuval"
 #: src/components/TemplateItem.jsx:57 src/components/TemplateItemEdit.jsx:141
 msgid "Coordinates"
 msgstr "Kordinatlar"
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr "Düzenle"
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr "Git"
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr "Dosya Seç"
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr "Şablon Adı"
 
 #: src/components/TemplateItemEdit.jsx:174
 msgid "Delete"
@@ -1405,6 +1427,22 @@ msgstr "Kullanıcı Adı veya E-Posta"
 #: src/components/LogInForm.jsx:88
 msgid "LogIn"
 msgstr "Giriş Yap"
+
+#: src/components/UserMessages.jsx:28
+msgid ""
+"Please verify your mail address or your account could get deleted after a "
+"few days."
+msgstr ""
+"Lütfen E-posta adresini doğrula yoksa hesabın birkaç gün içerisinde "
+"silinebilir."
+
+#: src/components/UserMessages.jsx:49
+msgid "A new verification mail is getting sent to you."
+msgstr "Sana yeni bir doğrulama postası gönderdik."
+
+#: src/components/UserMessages.jsx:53
+msgid "Click here to request a new verification mail."
+msgstr "Yeni bir doğrulama postası için buraya tıkla."
 
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
@@ -1441,22 +1479,6 @@ msgstr ""
 #: src/components/ChangeMail.jsx:87
 msgid "New Mail"
 msgstr "Yeni E-posta"
-
-#: src/components/UserMessages.jsx:28
-msgid ""
-"Please verify your mail address or your account could get deleted after a "
-"few days."
-msgstr ""
-"Lütfen E-posta adresini doğrula yoksa hesabın birkaç gün içerisinde "
-"silinebilir."
-
-#: src/components/UserMessages.jsx:49
-msgid "A new verification mail is getting sent to you."
-msgstr "Sana yeni bir doğrulama postası gönderdik."
-
-#: src/components/UserMessages.jsx:53
-msgid "Click here to request a new verification mail."
-msgstr "Yeni bir doğrulama postası için buraya tıkla."
 
 #: src/components/DeleteAccount.jsx:66
 msgid "Yes, Delete My Account!"
@@ -1648,14 +1670,6 @@ msgstr "Pikselleri Al"
 msgid "Get Users"
 msgstr "Kullanıcıları Al"
 
-#: src/components/TemplateItem.jsx:71
-msgid "Edit"
-msgstr "Düzenle"
-
-#: src/components/TemplateItem.jsx:81
-msgid "Go to"
-msgstr "Git"
-
 #: src/components/ModIIDtools.jsx:20
 msgid "You must enter a duration"
 msgstr "Bir zaman girmelisin"
@@ -1724,15 +1738,15 @@ msgstr "Engelle"
 msgid "Mute"
 msgstr "Sustur"
 
-#: src/components/MdLink.jsx:93
+#: src/components/MdLink.jsx:98
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/MdLink.jsx:104
+#: src/components/MdLink.jsx:109
 msgid "Hide Embed"
 msgstr ""
 
-#: src/components/MdLink.jsx:110
+#: src/components/MdLink.jsx:115
 msgid "Show Embedded"
 msgstr ""
 

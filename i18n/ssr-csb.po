@@ -119,11 +119,11 @@ msgstr "ppfun"
 msgid "PixelPlanet.Fun PopUp"
 msgstr "PixelPlanet.Fun PopUp"
 
-#: src/ssr/Main.jsx:65
+#: src/ssr/Main.jsx:68
 msgid "PixelPlanet.Fun"
 msgstr "PixelPlanet.Fun"
 
-#: src/ssr/Main.jsx:66
+#: src/ssr/Main.jsx:69
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 "Stawiôj farwné piksele na kôrtowatëch płótnach z jinszima graczama online"
@@ -251,18 +251,22 @@ msgid "You failed your captcha"
 msgstr "Nie przeszedł jes testu captcha"
 
 #: src/routes/api/auth/register.js:61
+msgid "Please refresh the website"
+msgstr ""
+
+#: src/routes/api/auth/register.js:64
 msgid "Unknown Captcha Error"
 msgstr "Nieznónô fela Captchë"
 
-#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:67
+#: src/routes/api/auth/change_mail.js:22 src/routes/api/auth/register.js:70
 msgid "This email provider is not allowed"
 msgstr "Ten dotëgòwôcz adrésë e-mail nie je dozwòlony"
 
-#: src/routes/api/auth/register.js:89
+#: src/routes/api/auth/register.js:92
 msgid "Failed to create new user :("
 msgstr "Nie ùdało sã stwòrzëc nowégò brëkòwnika :("
 
-#: src/routes/api/auth/register.js:105
+#: src/routes/api/auth/register.js:108
 msgid "Failed to establish session after register :("
 msgstr "Nie ùdało sã ùsadzëc sesje pò registracje :("
 
