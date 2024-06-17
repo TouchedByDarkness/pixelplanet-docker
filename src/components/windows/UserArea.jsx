@@ -76,7 +76,7 @@ const UserArea = () => {
       </Tabs>
       <br />
       {t`Consider joining us on Guilded:`}&nbsp;
-      <a href="./guilded" target="_blank">pixelplanet.fun/guilded</a>
+      <a href="./guilded" target="_blank">{t`Invited to Chat`}</a>
       <br />
     </div>
   );

@@ -6,14 +6,26 @@
 import { createHash } from 'crypto';
 import etag from 'etag';
 
+import canvases from '../core/canvases';
 import { getTTag, availableLangs as langs } from '../core/ttag';
 import { getJsAssets, getCssAssets } from '../core/assets';
 import socketEvents from '../socket/socketEvents';
-import { BACKUP_URL } from '../core/config';
+import { BACKUP_URL, CONTACT_ADDRESS } from '../core/config';
 import { getHostFromRequest } from '../utils/ip';
 
-const bodyScript = '(function(){const sr=(e)=>{if(e.shadowRoot)e.remove();else if(e.children){for(let i=0;i<e.children.length;i+=1)sr(e.children[i]);}};const a=new MutationObserver(e=>e.forEach(e=>e.addedNodes.forEach((l)=>{if(l.querySelectorAll)l.querySelectorAll("option").forEach((o)=>{if(o.value==="random")window.location="https://discord.io/pixeltraaa";});sr(l);})));a.observe(document.body,{childList:!0});})()';
+const bodyScript = '/* @license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt AGPL-3.0-or-later */\n(function(){const sr=(e)=>{if(e.shadowRoot)e.remove();else if(e.children){for(let i=0;i<e.children.length;i+=1)sr(e.children[i]);}};const a=new MutationObserver(e=>e.forEach(e=>e.addedNodes.forEach((l)=>{if(l.querySelectorAll)l.querySelectorAll("option").forEach((o)=>{if(o.value==="random")window.location="https://discord.io/pixeltraaa";});sr(l);})));a.observe(document.body,{childList:!0});})();\n/* @license-end */';
 const bodyScriptHash = createHash('sha256').update(bodyScript).digest('base64');
+
+const defaultCanvasForCountry = {};
+(function populateDefaultCanvases() {
+  for (const [canvasId, canvas] of Object.entries(canvases)) {
+    canvas.dcc?.forEach(
+      (country) => {
+        defaultCanvasForCountry[country.toUpperCase()] = canvasId;
+      },
+    );
+  }
+}());
 
 /*
  * Generates string with html of main page
@@ -30,19 +42,19 @@ function generateMainPage(req) {
     availableStyles: getCssAssets(),
     langs,
     backupurl: BACKUP_URL,
+    contactAddress: CONTACT_ADDRESS,
     shard,
     lang,
   };
-  // HARDCODE canasId 11 as default for turkey
-  if (req.headers['cf-ipcountry'] === 'TR'
-    || req.headers['cf-ipcountry'] === 'PL'
-  ) {
-    ssv.dc = '11';
-  }
+
+  // country specific default canvas
+  const dc = defaultCanvasForCountry[req.headers['cf-ipcountry'] || 'XX'];
+  if (dc) ssv.dc = dc;
+
   const ssvR = JSON.stringify(ssv);
   const scripts = getJsAssets('client', lang);
 
-  const headScript = `(function(){window.ssv=JSON.parse('${ssvR}');let hostPart = window.location.host.split('.'); if (hostPart.length > 2) hostPart.shift(); hostPart = hostPart.join('.'); if (window.ssv.shard && window.location.host !== 'fuckyouarkeros.fun') hostPart = window.location.protocol + '//' + window.ssv.shard + '.' + hostPart; else hostPart = ''; window.me=fetch(hostPart + '/api/me',{credentials:'include'})})();`;
+  const headScript = `/* @license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt AGPL-3.0-or-later */\n(function(){window.ssv=JSON.parse('${ssvR}');let hostPart = window.location.host.split('.'); if (hostPart.length > 2) hostPart.shift(); hostPart = hostPart.join('.'); if (window.ssv.shard && window.location.host !== 'fuckyouarkeros.fun') hostPart = window.location.protocol + '//' + window.ssv.shard + '.' + hostPart; else hostPart = ''; window.me=fetch(hostPart + '/api/me',{credentials:'include'})})();\n/* @license-end */`;
   const scriptHash = createHash('sha256').update(headScript).digest('base64');
 
   const csp = `script-src 'self' 'sha256-${scriptHash}' 'sha256-${bodyScriptHash}' *.tiktok.com *.ttwstatic.com; worker-src 'self' blob:;`;
@@ -59,7 +71,7 @@ function generateMainPage(req) {
     <html lang="${lang}">
       <head>
         <meta charset="UTF-8" />
-        <title>${t`PixelPlanet.Fun`}</title>
+        <title>${t`PixelPlanet`}</title>
         <meta name="description" content="${t`Place color pixels on an map styled canvas with other players online`}" />
         <meta name="google" content="nopagereadaloud" />
         <meta name="theme-color" content="#cae3ff" />
@@ -75,6 +87,7 @@ function generateMainPage(req) {
         <div id="app"></div>
         <script>${bodyScript}</script>
         ${scripts.map((script) => `<script src="${script}"></script>`).join('')}
+        <a data-jslicense="1" style="display: none;" href="/legal">JavaScript license information</a>
       </body>
     </html>
   `;

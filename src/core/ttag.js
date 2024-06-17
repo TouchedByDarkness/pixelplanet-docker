@@ -32,12 +32,12 @@ function loadTtags() {
   for (let i = 0; i < langs.length; i += 1) {
     const file = langs[i];
     // ./ssr-de.po
-    let lang = file.replace('./ssr-', '').replace('.po', '').toLowerCase();
+    const lang = file.replace('./ssr-', '').replace('.po', '').toLowerCase();
     /*
      * In cases where the language code and country code differ,
      * it can be mapped in i18n/lccc.json
      */
-    let flag = lccc[lang] || lang;
+    const flag = lccc[lang] || lang;
     if (jsLangs.includes(lang)) {
       if (!ttags[lang]) {
         const ttag = new TTag();

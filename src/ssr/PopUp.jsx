@@ -60,6 +60,7 @@ function generatePopUpPage(req) {
         <div id="app" class="popup">
         </div>
         ${scripts.map((script) => `<script src="${script}"></script>`).join('')}
+        <a data-jslicense="1" style="display: none;" href="/legal">JavaScript license information</a>
       </body>
     </html>
   `;

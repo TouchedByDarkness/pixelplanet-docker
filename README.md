@@ -3,16 +3,12 @@
 
 [![Guilded](https://img.shields.io/badge/Discord-Support-blue.svg)](https://pixelplanet.fun/guilded)
 
-Official  repository of [pixelplanet.fun](http://www.pixelplanet.fun).
-
 ![videothumb](promotion/videothumb.gif)
 
-> Our translations are hosted [on Weblate](https://hosted.weblate.org/projects/pixelplanet), information on how to contribute is available under [i18n](./i18n). We very much appreciate any help. 
+> Informations on how to contribute to translations is available under [i18n](./i18n). We very much appreciate any help. 
 
-[![Translation status](https://hosted.weblate.org/widget/pixelplanet/svg-badge.svg)](https://hosted.weblate.org/engage/pixelplanet/)
-
-To the 2nd anniversary of r/space, pixelplanet takes pixelgames to a new level. Place pixels, create pixelart and fight faction wars on pixelplanet.fun.
-Pixelplanet is a 65k x 65k large canvas that is a map of the world and can also be seen as 3d globe, you can place pixels where ever you want, build an island, take over another country with a flag or just create pixelart.
+To the 2nd anniversary of r/space, pixelplanet takes pixelgames to a new level. Place pixels, create pixelart and fight faction wars.
+Pixelplanet presents a 65k x 65k large canvas that is a map of the world and can also be seen as 3d globe, you can place pixels where ever you want, build an island, take over another country with a flag or just create pixelart.
 30 well chosen colors (decided by polls within the community) are available and you can place a pixel every 3s on an empty space, and 5s on an already set pixel. But pixels can be stacked up to a minute, so you don't have to wait every time.
 
 Pixelplanet receives regular updates and launches events, like a zero second cooldown day on r/place anniversary. We are driven by our community, because placing pixels is more fun together.
@@ -21,45 +17,30 @@ Controls:
 W, A, S, D, click and drag or pan: Move
 Q, E or scroll or pinch: Zoom
 Click or tab: Place Pixel
+
 ![screenshot](promotion/screenshot.png)
 
+## Install and Run
 
-## Build
-### Requirements
-- [nodejs environment](https://nodejs.org/en/) (>=18)
-
-### Building
-Checkout repository
-
-```
-git clone https://git.pixelplanet.fun/ppfun/pixelplanet.git
-cd pixelplanet
-```
-
-Install packages and build
-
-```
-npm install
-npm run build
-```
-
-All needed files to run it got created in `./dist`. You can copy it to wherever you want to run pixelplanet.
-
-## Run
 ### Requirements
 
 - [nodejs environment](https://nodejs.org/en/) (>=18)
 - [redis](https://redis.io/) or [redis-for-windows](https://github.com/redis-windows/redis-windows) in version **6.2.0 or above** as database for storìng the canvas
 - mysql or mariadb ([setup own user](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql) and [create database](https://www.w3schools.com/SQl/sql_create_db.asp) for pixelplanet) for storing additional data like IP blacklist
 
+### Download
+
+Download the current version of pixelplanet from the [Release page](https://git.pixelplanet.fun/ppfun/pixelplanet/releases) (the **pixelplanet-x.x.x.zip** not the Source Code) and unpack the zip file.
+
 ### Configuration
+
 Configuration takes place in the environment variables that are defined in ecosystem.yml.
 
 #### Neccessary Configuration
 
 | Variable       | Description              |  Example                |
 |----------------|:-------------------------|------------------------:|
-| PORT           | Own Port                 | 8080                    |
+| PORT           | Own Port                 | 5000                    |
 | HOST           | Own Host                 | "localhost"             |
 | REDIS_URL      | URL:PORT of redis server | "redis://localhost:6379"|
 | MYSQL_HOST     | MySql Host               | "localhost"             |
@@ -84,9 +65,10 @@ Configuration takes place in the environment variables that are defined in ecosy
 | BACKUP_DIR        | mounted directory of backup server    | "/mnt/backup/"            |
 | HOURLY_EVENT      | run hourly void event on main canvas  | 1                         |
 | USE_MAILER        | enable to use mail sevicse            | 0                         |
-| MAIL_ADDRESS      | email address for sending mails       | "noreply@pixelplanet.fun" |
+| MAIL_ADDRESS      | email address for sending mails       | "noreply@example.com"     |
+| CONTACT_ADDRESS   | email for users to contact            | "admin@example.com"       |
 
-#### Social Media Configuration
+#### Optional Social Media Configuration
 
 | Variable              | Description              |
 |-----------------------|:-------------------------|
@@ -112,10 +94,12 @@ Notes:
 - default configuartion values can be seen in `src/core/config.js`
 - The HTML for SocialMedia logins is in src/componets/UserAreaModal.js , delete stuff from there if you don't need it. The HTML for the Help Screen is in src/components/HelpModal.js
 
+#### Canvas Configuration
+
 Canvas specific configuartion like colors and cooldown is in `canvases.json` for all canvases. The titles and descriptions of the canvases are in `src/canvasesDesc.js` for translation reasons. Changing them requires a rebuild.
 Meaning of some values:
 
-#### Neccessary canvases Configuration
+##### Neccessary configuration per canvas
 
 | Key    | Description                                                     |
 |--------|:----------------------------------------------------------------|
@@ -124,7 +108,7 @@ Meaning of some values:
 | bcd    | Base cooldown for unset pixels                                  |
 | cds    | Stack time of Cooldown                                          |
 
-#### Optional canvases Configuration
+##### Optional configuration per canvas
 
 | Key    | Description                                                     |
 |--------|:----------------------------------------------------------------|
@@ -136,6 +120,7 @@ Meaning of some values:
 | hid    | Hidden canvases, can be just seen by pressing P (default: false)|
 | sd     | Start-date of the canvas (for historical view)                  |
 | ed     | end date for historical view (canvas retired)                   |
+| dcc    | Array of country codes that default to this canvas              |
 | linkcd | id of another canvas to take the cooldown from                  |
 
 Notes:
@@ -173,6 +158,8 @@ pm2 start ecosystem.yml
 ```
 
 > NOTE: On Windows you might have to prepend `npx`, like: `npx pm2 start ecosystem.yml`
+
+Now you can access pixelplanet on `http://localhost:5000` or whatever oder *HOST* and *PORT* you chose.
 
 ### Logging
 
@@ -218,6 +205,49 @@ Wants=network-online.target
 After=network.target mysql.service redis.service
 ```
 
+## Build
+
+### Requirements
+- [nodejs environment](https://nodejs.org/en/) (>=18)
+
+### Building
+Checkout repository
+
+```
+git clone https://git.pixelplanet.fun/ppfun/pixelplanet.git
+cd pixelplanet
+```
+
+Install packages and build
+
+```
+npm install
+npm run build
+```
+
+All needed files to run it got created in `./dist`. You can copy it to wherever you want to run pixelplanet.
+
+## Development
+
+Run `npm run lint:src` to check for code errors and warnings or `npm run lint -- ./your/file.js` to check a single file.
+
+Compile with source-maps and debug options (but only english language) with
+
+```
+npm run build:dev
+```
+
+[ttag](https://github.com/ttag-org/ttag/) is used for handling translations. For server-side rendering the `Accept-Language` header gets checked and the first locale used and on-the-fly translated (`src/core/ttag.js` provides the functions for it). On the client-side a seperate bundle for every language gets provided.
+The language definitions in `i18n/template.pot` and `i18n/template-ssr.pot` get updated when doing a full production build with all languages (`npm run build`)-
+
+To build only specific languages, you can define them with the `--langs` flag:
+
+```
+npm run build -- --langs de,gr
+```
+
+You can use `npm run babel-node ./utils/script.js` to execute a script with local babel (path always relative to the root directory).
+
 ## Hourly Event
 
 Hourly event is an MMORPG style event that launches once in two hours where users have to fight against a growing void that starts at a random position at the main canvas. If they complete it successfully, the whole canvas will have half cooldown for a few minutes.
@@ -256,24 +286,3 @@ If v is set and true for a canvas in the canvas.json, it will be a 3D voxel canv
 3D Canvases can not be seen in Historical View.
 
 ![threecanvas](promotion/threecanvas.png)
-
-## Development
-
-Run `npm run lint:src` to check for code errors and warnings or `npm run lint -- ./your/file.js` to check a single file.
-
-Compile with source-maps and debug options (but only english language) with
-
-```
-npm run build:dev
-```
-
-[ttag](https://github.com/ttag-org/ttag/) is used for handling translations. For server-side rendering the `Accept-Language` header gets checked and the first locale used and on-the-fly translated (`src/core/ttag.js` provides the functions for it). On the client-side a seperate bundle for every language gets provided.
-The language definitions in `i18n/template.pot` and `i18n/template-ssr.pot` get updated when doing a full production build with all languages (`npm run build`)-
-
-To build only specific languages, you can define them with the `--langs` flag:
-
-```
-npm run build -- --langs de,gr
-```
-
-You can use `npm run babel-node ./utils/script.js` to execute a script with local babel (path always relative to the root directory).

@@ -37,8 +37,8 @@ const Help = () => {
   const starhouseLink = <a href="https://twitter.com/starhousedev">starhouse </a>;
   const vinikLink = <a href="https://twitter.com/Vinikdev">Vinikdev</a>;
   const donendoLink = <a href="https://lospec.com/palette-list/lava-gb">Do-Nendo</a>;
-  const guildedLink = <a href="https://pixelplanet.fun/guilded">guilded</a>;
-  const mailLink = <a href="mailto:admin@pixelplanet.fun">admin@pixelplanet.fun</a>;
+  const guildedLink = <a href="/guilded">guilded</a>;
+  const mailLink = <a href={`mailto:${window.ssv.contactAddress}`}>{window.ssv.contactAddress}</a>;
 
   const dispatch = useDispatch();
   const easterEgg = useSelector((state) => state.gui.easterEgg);
@@ -67,8 +67,9 @@ const Help = () => {
         {t`Higher zoomlevels take some time to update, the 3D globe gets updated at least once per day.`}<br />
         {t`Have fun!`}
       </p>
-      <p className="modalinfo">Guilded ({t`recommended`}): <a href="./guilded" target="_blank" rel="noopener noreferrer">pixelplanet.fun/guilded</a></p>
-      <p className="modalinfo">{t`Source on `}<a href="https://git.pixelplanet.fun" target="_blank" rel="noopener noreferrer">git.pixelplanet.fun</a></p>
+      <p className="modalinfo">Guilded ({t`recommended`}): <a href="./guilded" target="_blank" rel="noopener noreferrer">{t`Invited to Chat`}</a></p>
+      <p className="modalinfo">{t`Source for pixelplanet on `}<a href="https://git.pixelplanet.fun" target="_blank" rel="noopener noreferrer">git.pixelplanet.fun</a></p>
+      <p className="modalinfo">{t`We are Libre Software, `}<a href="/legal" target="_blank" rel="noopener noreferrer">{t`check compliance here`}</a></p>
       <h3>{t`Map Data`}</h3>
       <p>{t`The bare map data that we use, together with converted OpenStreetMap tiles for orientation, can be downloaded from mega.nz here: `}<a href="https://mega.nz/#!JpkBwAbJ!EnSLlZmKv3kEBE0HDhakTgAZZycD3ELjduajJxPGaXo">pixelplanetmap.zip</a> (422MB)</p>
       <h3>{t`Banned? Detected as Proxy?`}</h3>

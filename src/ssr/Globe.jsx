@@ -51,6 +51,7 @@ function generateGlobePage(req) {
         <div id="info">${t`Double click on globe to go back.`}</div>
         <div id="loading">${t`Loading...`}</div>
         ${scripts.map((script) => `<script src="${script}"></script>`).join('')}
+        <a data-jslicense="1" style="display: none;" href="/legal">JavaScript license information</a>
       </body>
     </html>
   `;

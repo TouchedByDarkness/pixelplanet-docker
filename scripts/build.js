@@ -11,6 +11,8 @@ const webpack = require('webpack');
 const validate = require("ttag-cli/dist/src/commands/validate").default;
 
 const minifyCss = require('./minifyCss');
+const createImages = require('./createImages');
+const zipDir = require('./zipDirectory');
 const serverConfig = require('../webpack.config.server.js');
 const clientConfig = require('../webpack.config.client.js');
 
@@ -146,7 +148,7 @@ function validateLangs(langs) {
       process.stdout.clearLine(0);
       process.stdout.cursorTo(0);
       process.stdout.write(`i18n/${langFile} `);
-      filePath = path.join(langDir, langFile);
+      const filePath = path.join(langDir, langFile);
       if (!fs.existsSync(filePath)) {
         continue;
       }
@@ -160,6 +162,32 @@ function validateLangs(langs) {
   process.stdout.clearLine(0);
   process.stdout.cursorTo(0);
   return brokenLangs;
+}
+
+/*
+ * clean up before build
+ */
+function cleanUpBeforeBuild(doBuildServer, doBuildClient) {
+  const webpackCachePath = path.resolve(__dirname, '..', 'node_modules', '.cache', 'webpack');
+  fs.rmSync(webpackCachePath, { recursive: true, force: true });
+  if (doBuildClient && doBuildServer) {
+    const assetPath = path.resolve(__dirname, '..', 'dist', 'public', 'assets');
+    fs.rmSync(assetPath, { recursive: true, force: true });
+    const legalPath = path.resolve(__dirname, '..', 'dist', 'public', 'legal');
+    fs.rmSync(legalPath, { recursive: true, force: true });
+  }
+}
+
+/*
+ * clean up after build
+ */
+function cleanUpAfterBuild(builtServer, builtClient) {
+  if (builtServer && builtClient) {
+    const assetPath = path.resolve(__dirname, '..', 'dist', 'public', 'assets');
+    fs.readdirSync(assetPath)
+      .filter((e) => e.endsWith('.LICENSE.txt'))
+      .forEach((l) => fs.rmSync(path.join(assetPath, l)));
+  }
 }
 
 
@@ -238,7 +266,6 @@ async function buildClientsSync(avlangs) {
       analyze: false,
       extract: false,
       locale: lang,
-      clean: false,
       readonly: recursion,
     }));
   }
@@ -265,7 +292,7 @@ async function build() {
   const st = Date.now();
   // cleanup old files
   if (!recursion) {
-    fs.rmSync(path.resolve(__dirname, '..', 'node_modules', '.cache', 'webpack'), { recursive: true, force: true });
+    cleanUpBeforeBuild(doBuildServer, doBuildClient);
   }
 
   // decide which languages to build
@@ -318,7 +345,6 @@ async function build() {
         analyze: false,
         extract: (langs === 'all'),
         locale: avlangs.shift(),
-        clean: true,
         readonly: false,
       }));
 
@@ -326,6 +352,17 @@ async function build() {
       console.log(`Minify CSS assets...`);
       console.log('-----------------------------');
       await minifyCss();
+      
+      if (doBuildServer) {
+        /*
+         * server copies files into ./dist/public, it
+         * is needed for creating images
+         */
+        console.log('-----------------------------');
+        console.log(`Creating Images...`);
+        console.log('-----------------------------');
+        await createImages();
+      }
     }
 
     if (parallel) {
@@ -337,6 +374,17 @@ async function build() {
   await Promise.all(promises);
 
   if (!recursion) {
+    cleanUpAfterBuild(doBuildServer, doBuildClient);
+    if (doBuildServer && doBuildClient) {
+      console.log('-----------------------------');
+      console.log(`Archiving Source...`);
+      console.log('-----------------------------');
+      await zipDir(
+        path.resolve(__dirname, '..'),
+        path.resolve(__dirname, '..', 'dist', 'public', 'legal', 'source.zip'),
+      );
+      console.log('-----------------------------');
+    }
     console.log(`Finished building in ${(Date.now() - st) / 1000}s`);
   } else {
     console.log(`Worker done in ${(Date.now() - st) / 1000}s`);

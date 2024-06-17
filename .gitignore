@@ -1,4 +1,7 @@
-dist/*
+dist/
+node_modules/
+overrides
+
 timelapse
 output.webm
 utils/ocean-tiles/ocean
@@ -19,8 +22,6 @@ pids
 *.pid.lock
 *.kate-swp
 
-node_modules/
-
 .npm
 .eslintcache
 .env
@@ -28,6 +29,5 @@ node_modules/
 osm.tar.gz
 clean.png
 backup
-backup/*
 ips
 pixelplanetmap.zip

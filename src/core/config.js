@@ -17,7 +17,9 @@ export const HOST = process.env.HOST || 'localhost';
 
 export const USE_MAILER = parseInt(process.env.USE_MAILER, 10) || false;
 export const MAIL_ADDRESS = process.env.MAIL_ADDRESS
-  || 'donotreply@pixelplanet.fun';
+  || 'donotreply@example.com';
+export const CONTACT_ADDRESS = process.env.CONTACT_ADDRESS
+  || 'admin@example.com';
 
 const TILE_FOLDER_REL = process.env.TILE_FOLDER || 'tiles';
 export const TILE_FOLDER = path.resolve(TILE_FOLDER_REL);

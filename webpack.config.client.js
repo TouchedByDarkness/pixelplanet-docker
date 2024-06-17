@@ -7,6 +7,8 @@ const path = require('path');
 const process = require('process');
 const webpack = require('webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const sourceMapping = require('./scripts/sourceMapping');
+const LicenseListWebpackPlugin = require('./scripts/LicenseListWebpackPlugin');
 
 /*
  * make sure we build in root dir
@@ -18,7 +20,6 @@ module.exports = ({
   analyze,
   locale = 'en',
   extract,
-  clean = true,
   readonly,
 }) => {
   const ttag = {
@@ -63,7 +64,6 @@ module.exports = ({
         ? '[name].[chunkhash:8].js'
         : `[name].${locale}.[chunkhash:8].js`,
       chunkFilename: `[name].${locale}.[chunkhash:8].js`,
-      clean,
     },
 
     resolve: {
@@ -114,7 +114,7 @@ module.exports = ({
                 plugins: babelPlugins,
               },
             },
-            path.resolve('scripts/TtagNonCacheableLoader.js'),
+            path.resolve('scripts', 'TtagNonCacheableLoader.js'),
           ],
           include: [
             path.resolve('src'),
@@ -133,7 +133,15 @@ module.exports = ({
         'process.env.NODE_ENV': development ? '"development"' : '"production"',
         'process.env.BROWSER': true,
       }),
-
+      // Output license informations
+      new LicenseListWebpackPlugin({
+        name: 'Client Scripts',
+        htmlFilename: 'index.html',
+        outputDir: path.join('..', 'legal'),
+        includeLicenseFiles: true,
+        // includeSourceFiles: true,
+        override: sourceMapping,
+      }),
       // Webpack Bundle Analyzer
       // https://github.com/th0r/webpack-bundle-analyzer
       ...analyze ? [new BundleAnalyzerPlugin({ analyzerPort: 8889 })] : [],

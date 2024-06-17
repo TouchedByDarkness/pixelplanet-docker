@@ -327,7 +327,7 @@ msgstr "Сиз 15 секунддан кийин автоматтык түрдө 
 #: src/ssr/RedirectionPage.jsx:30
 #, fuzzy, javascript-format
 msgid "Or ${ clickHere } to go back to pixelplanet"
-msgstr "Же pixelplanetке кайтуу үчүн ${ Click Here }"
+msgstr "Же pixelplanetке кайтуу үчүн ${ clickHere }"
 
 #: src/canvasesDesc.js:20
 msgid "Earth"
