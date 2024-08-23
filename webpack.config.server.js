@@ -8,7 +8,6 @@ const process = require('process');
 const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
 const GeneratePackageJsonPlugin = require('generate-package-json-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 const sourceMapping = require('./scripts/sourceMapping');
 const LicenseListWebpackPlugin = require('./scripts/LicenseListWebpackPlugin');
 
@@ -36,51 +35,6 @@ const basePackageValues = {
     bufferutil: '',
   },
 };
-
-const copyPluginPatterns = [
-  {
-    from: path.resolve('public'),
-    to: path.resolve('dist', 'public'),
-  },
-  path.resolve('LICENSE'),
-  path.resolve('COPYING'),
-  path.resolve('CODE_OF_CONDUCT.md'),
-  path.resolve('AUTHORS'),
-  {
-    from: path.resolve('deployment', 'example-ecosystem.yml'),
-    to: path.resolve('dist', 'ecosystem.yml'),
-  },
-  {
-    from: path.resolve('deployment', 'example-ecosystem-backup.yml'),
-    to: path.resolve('dist', 'ecosystem-backup.yml'),
-  },
-  {
-    from: path.resolve('deployment', 'captchaFonts'),
-    to: path.resolve('dist', 'captchaFonts'),
-  },
-  {
-    from: path.resolve('src', 'data', 'redis', 'lua'),
-    to: path.resolve('dist', 'workers', 'lua'),
-  },
-  /*
-   * i have no idea why this doesn't get overwritten by the ./overrides
-   * copy below
-   */
-  path.resolve(
-    (fs.existsSync(path.join('overrides', 'canvases.json'))) ? 'overrides' : 'src',
-    'canvases.json',
-  ),
-]
-/*
- * overrides exist to deploy our own files,
- * that are not part of the repository, like a logo.svg
- */
-if (fs.existsSync('overrides')) {
-  copyPluginPatterns.push({
-    from: path.resolve('overrides'),
-    to: path.resolve('dist'),
-  });
-}
 
 const ttag = {};
 const babelPlugins = [
@@ -201,9 +155,6 @@ module.exports = ({
         includeLicenseFiles: true,
         // includeSourceFiles: true,
         override: sourceMapping,
-      }),
-      new CopyPlugin({
-        patterns: copyPluginPatterns,
       }),
     ],
 

@@ -165,16 +165,72 @@ function validateLangs(langs) {
 }
 
 /*
- * clean up before build
+ * clean up before build and copy files
  */
 function cleanUpBeforeBuild(doBuildServer, doBuildClient) {
-  const webpackCachePath = path.resolve(__dirname, '..', 'node_modules', '.cache', 'webpack');
+  const parentDir = path.resolve(__dirname, '..');
+  const distDir = path.resolve(__dirname, '..', 'dist');
+  // remove files we need to regenerate
+  const webpackCachePath = path.join(parentDir, 'node_modules', '.cache', 'webpack');
   fs.rmSync(webpackCachePath, { recursive: true, force: true });
   if (doBuildClient && doBuildServer) {
-    const assetPath = path.resolve(__dirname, '..', 'dist', 'public', 'assets');
+    const assetPath = path.join(distDir, 'public', 'assets');
     fs.rmSync(assetPath, { recursive: true, force: true });
-    const legalPath = path.resolve(__dirname, '..', 'dist', 'public', 'legal');
+    const legalPath = path.join(distDir, 'public', 'legal');
     fs.rmSync(legalPath, { recursive: true, force: true });
+  }
+  // copy necessary files
+  if (doBuildServer) {
+    // copy files to dist directory
+    [
+      'LICENSE',
+      'COPYING',
+      'CODE_OF_CONDUCT.md',
+      'AUTHORS',
+      path.join('src', 'canvases.json'),
+    ].forEach((f) => {
+      fs.copyFileSync(
+        path.join(parentDir, f),
+        path.join(distDir, path.basename(f)),
+      );
+    });
+    // copy folder to dist directory
+    [
+      'public',
+      path.join('deployment', 'captchaFonts'),
+    ].forEach((d) => {
+      fs.cpSync(
+        path.join(parentDir, d),
+        path.join(distDir, path.basename(d)),
+        { recursive: true },
+      );
+    });
+    // copy stuff we have to rename
+    fs.cpSync(
+      path.join(parentDir, 'src', 'data', 'redis', 'lua'),
+      path.join(distDir, 'workers', 'lua'),
+      { recursive: true },
+    );
+    fs.copyFileSync(
+      path.join(parentDir, 'deployment', 'example-ecosystem.yml'),
+      path.join(distDir, 'ecosystem.yml'),
+    );
+    fs.copyFileSync(
+      path.join(parentDir, 'deployment', 'example-ecosystem-backup.yml'),
+      path.join(distDir, 'ecosystem-backup.yml'),
+    );
+    /*
+     * overrides exist to deploy our own files
+     * that are not part of the repository, like logo.svg
+     */
+    const overrideDir = path.join(parentDir, 'overrides');
+    if (fs.existsSync(overrideDir)) {
+      fs.cpSync(
+        overrideDir,
+        path.join(distDir),
+        { dereference: true, recursive: true },
+      );
+    }
   }
 }
 

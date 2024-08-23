@@ -9,17 +9,11 @@ const sharp = require("sharp");
 const ico= require("sharp-ico");
 
 const svgLogo = path.resolve(__dirname, '..', 'dist', 'public', 'logo.svg');
-// const svgLogoOverride = path.resolve(__dirname, '..', 'overrides', 'logo.svg');
 const targetIco = path.resolve(__dirname, '..', 'dist', 'public', 'favicon.ico');
 const tilePng = path.resolve(__dirname, '..', 'dist', 'public', 'tile.png');
 const touchIconPng = path.resolve(__dirname, '..', 'dist', 'public', 'apple-touch-icon.png');
 
 async function createImages() {
-  /*
-  if (fs.existsSync(svgLogoOverride)) {
-    fs.copyFileSync(svgLogoOverride, svgLogo);
-  }
-  */
   await ico.sharpsToIco(
     [ sharp(svgLogo) ],
     targetIco,
