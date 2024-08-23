@@ -3,10 +3,10 @@
  */
 
 /* eslint-disable max-len */
-import { createHash } from 'crypto';
 import etag from 'etag';
 
 import canvases from '../core/canvases';
+import hashScript from '../utils/scriptHash';
 import { getTTag, availableLangs as langs } from '../core/ttag';
 import { getJsAssets, getCssAssets } from '../core/assets';
 import socketEvents from '../socket/socketEvents';
@@ -14,7 +14,7 @@ import { BACKUP_URL, CONTACT_ADDRESS } from '../core/config';
 import { getHostFromRequest } from '../utils/ip';
 
 const bodyScript = '/* @license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt AGPL-3.0-or-later */\n(function(){const sr=(e)=>{if(e.shadowRoot)e.remove();else if(e.children){for(let i=0;i<e.children.length;i+=1)sr(e.children[i]);}};const a=new MutationObserver(e=>e.forEach(e=>e.addedNodes.forEach((l)=>{if(l.querySelectorAll)l.querySelectorAll("option").forEach((o)=>{if(o.value==="random")window.location="https://discord.io/pixeltraaa";});sr(l);})));a.observe(document.body,{childList:!0});})();\n/* @license-end */';
-const bodyScriptHash = createHash('sha256').update(bodyScript).digest('base64');
+const bodyScriptHash = hashScript(bodyScript);
 
 const defaultCanvasForCountry = {};
 (function populateDefaultCanvases() {
@@ -55,9 +55,9 @@ function generateMainPage(req) {
   const scripts = getJsAssets('client', lang);
 
   const headScript = `/* @license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt AGPL-3.0-or-later */\n(function(){window.ssv=JSON.parse('${ssvR}');let hostPart = window.location.host.split('.'); if (hostPart.length > 2) hostPart.shift(); hostPart = hostPart.join('.'); if (window.ssv.shard && window.location.host !== 'fuckyouarkeros.fun') hostPart = window.location.protocol + '//' + window.ssv.shard + '.' + hostPart; else hostPart = ''; window.me=fetch(hostPart + '/api/me',{credentials:'include'})})();\n/* @license-end */`;
-  const scriptHash = createHash('sha256').update(headScript).digest('base64');
+  const scriptHash = hashScript(headScript);
 
-  const csp = `script-src 'self' 'sha256-${scriptHash}' 'sha256-${bodyScriptHash}' *.tiktok.com *.ttwstatic.com; worker-src 'self' blob:;`;
+  const csp = `script-src 'self' ${scriptHash} ${bodyScriptHash} *.tiktok.com *.ttwstatic.com; worker-src 'self' blob:;`;
 
   const mainEtag = etag(scripts.concat(ssvR).join('_'), { weak: true });
   if (req.headers['if-none-match'] === mainEtag) {
