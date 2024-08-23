@@ -79,6 +79,9 @@ module.exports = {
   'tiny-invariant': {
     sources: 'tag',
   },
+  'react-chartjs-2': {
+    sources: 'tag',
+  },
   'css-loader': {
     sources: 'tag',
   },
