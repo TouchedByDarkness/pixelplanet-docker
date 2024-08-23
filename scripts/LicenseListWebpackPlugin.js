@@ -7,8 +7,6 @@
  * 
  */
 
-// TODO serve.js only 1 module is not correct
-
 const path = require('path');
 const fs = require('fs');
 const spdxCorrect = require('spdx-correct');
@@ -924,8 +922,8 @@ class LicenseListWebpackPlugin {
         const chunks = mod.chunks;
         const names = (mod.modules?.length)
           ? mod.modules.map((m) => m.name) : [mod.name];
-        
-        for (let srcFilePath of names) {
+
+        names.forEach((srcFilePath) => {
           // do not process non js related modules
           if (!LicenseListWebpackPlugin.srcExtsRegexp.test(srcFilePath)) {
             return;
@@ -976,7 +974,7 @@ class LicenseListWebpackPlugin {
             }
             this.addModuleToOutput(srcFilePath, assetOutput, packageInformation);
           });
-        }
+        });
       });
 
       const weblabelsJsonFile = path.join(this.outputPath, this.outputFilename);
