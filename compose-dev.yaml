@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:6.2
+    container_name: pixelplanet_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:latest
+    container_name: pixelplanet_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: pixelplanet
+      MYSQL_USER: pixelplanet
+      MYSQL_PASSWORD: sqlpassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+  mysql_data:
