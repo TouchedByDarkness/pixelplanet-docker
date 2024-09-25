@@ -3,6 +3,8 @@
  * src/core/constants.js
  */
 import path from 'path';
+import { configDotenv } from 'dotenv';
+configDotenv();
 
 if (process.env.BROWSER) {
   throw new Error(
@@ -44,7 +46,7 @@ export const SHARD_NAME = process.env.SHARD_NAME || null;
 export const MYSQL_HOST = process.env.MYSQL_HOST || 'localhost';
 export const MYSQL_DATABASE = process.env.MYSQL_DATABASE || 'pixelplanet';
 export const MYSQL_USER = process.env.MYSQL_USER || 'pixelplanet';
-export const MYSQL_PW = process.env.MYSQL_PW || 'password';
+export const MYSQL_PASSWORD = process.env.MYSQL_PASSWORD || 'password';
 
 // Social
 export const GUILDED_INVITE = process.env.GUILDED_INVITE

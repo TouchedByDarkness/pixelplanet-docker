@@ -39,6 +39,7 @@
     "compression": "^1.7.3",
     "cookie": "^0.5.0",
     "core-js": "^3.34.0",
+    "dotenv": "^16.4.5",
     "etag": "^1.8.1",
     "express": "^4.17.2",
     "express-session": "^1.17.2",
