@@ -145,8 +145,8 @@ function validateLangs(langs) {
   for (const lang of langs) {
     const langFiles = [`${lang}.po`, `ssr-${lang}.po`];
     for (const langFile of langFiles) {
-      process.stdout.clearLine(0);
-      process.stdout.cursorTo(0);
+      // process.stdout.clearLine(0);
+      // process.stdout.cursorTo(0);
       process.stdout.write(`i18n/${langFile} `);
       const filePath = path.join(langDir, langFile);
       if (!fs.existsSync(filePath)) {
@@ -159,8 +159,8 @@ function validateLangs(langs) {
       }
     }
   }
-  process.stdout.clearLine(0);
-  process.stdout.cursorTo(0);
+  // process.stdout.clearLine(0);
+  // process.stdout.cursorTo(0);
   return brokenLangs;
 }
 
@@ -170,6 +170,9 @@ function validateLangs(langs) {
 function cleanUpBeforeBuild(doBuildServer, doBuildClient) {
   const parentDir = path.resolve(__dirname, '..');
   const distDir = path.resolve(__dirname, '..', 'dist');
+  if(!fs.existsSync(distDir)) {
+    fs.mkdirSync(distDir);
+  }
   // remove files we need to regenerate
   const webpackCachePath = path.join(parentDir, 'node_modules', '.cache', 'webpack');
   fs.rmSync(webpackCachePath, { recursive: true, force: true });
