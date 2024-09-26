@@ -85,12 +85,12 @@ export function getIPFromRequest(req) {
   const { socket, connection } = req;
   let conip = (connection ? connection.remoteAddress : socket.remoteAddress);
   conip = conip || '0.0.0.1';
-  if (!USE_XREALIP) {
-    // eslint-disable-next-line no-console
-    console.warn(
-      `Connection not going through reverse proxy! IP: ${conip}`, req.headers,
-    );
-  }
+  // if (!USE_XREALIP) {
+  //   // eslint-disable-next-line no-console
+  //   console.warn(
+  //     `Connection not going through reverse proxy! IP: ${conip}`, req.headers,
+  //   );
+  // }
   return conip;
 }
 
