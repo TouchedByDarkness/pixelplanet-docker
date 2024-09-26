@@ -21,19 +21,26 @@ services:
       - mysql_data:/var/lib/mysql
     restart: always
 
-  pixelplanet:
-    image: node:18
-    working_dir: /app
-    volumes:
-      - ./pixelplanet:/app
-    command: bash -c "npm install && pm2 start ecosystem.yml"
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - MYSQL_HOST=mysql
+      - HOST=0.0.0.0
+      - REDIS_URL=redis://redis:6379
     ports:
-      - "5000:5000"
+      - ${PORT}:${PORT}
     depends_on:
       - redis
       - mysql
     restart: always
+    volumes:
+      - tiles:/usr/src/app/dist/tiles
 
 volumes:
   redis_data:
   mysql_data:
+  tiles:
