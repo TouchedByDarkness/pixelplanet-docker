@@ -1,5 +1,27 @@
 # PixelPlanet.fun
 
+# Docker Setup Instructions
+
+The original site code has been modified for use with Docker.
+
+1. **Install Docker**:
+   - This step is specific to your operating system, so please follow the instructions provided by Docker for your OS.
+
+2. **Configure Environment Variables**:
+   - Copy `.env.example` to `.env`.
+   - Modify the values in `.env` if you intend to make the site public. This step is crucial for security.
+
+3. **Build and Run the Docker Containers**:
+   - Run the following command to build the Docker containers:
+     ```sh
+     docker compose -f compose.yaml build
+     ```
+   - Then, start the containers in detached mode:
+     ```sh
+     docker compose -f compose.yml up -d
+     ```
+
+# Original Instructions
 
 [![Guilded](https://img.shields.io/badge/Discord-Support-blue.svg)](https://pixelplanet.fun/guilded)
 
