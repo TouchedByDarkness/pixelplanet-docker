@@ -10,6 +10,7 @@ The original site code has been modified for use with Docker.
 2. **Configure Environment Variables**:
    - Copy `.env.example` to `.env`.
    - Modify the values in `.env` if you intend to make the site public. This step is crucial for security.
+   - Also, to shorten the build time, I added a new ENGLISH_ONLY variable to the .env file. Therefore, change it if you need all available languages.
 
 3. **Build and Run the Docker Containers**:
    - Run the following command to build the Docker containers:

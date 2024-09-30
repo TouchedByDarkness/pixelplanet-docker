@@ -355,8 +355,10 @@ async function build() {
   }
 
   // decide which languages to build
-  // let avlangs = getAllAvailableLocals();
-  let avlangs = ['en'];
+  let avlangs = (
+    process.env.ENGLISH_ONLY === 'true' ?
+    ['en'] :
+    getAllAvailableLocals());
   if (langs !== 'all') {
     avlangs = langs.split(',').map((l) => l.trim())
       .filter((l) => avlangs.includes(l));
