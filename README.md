@@ -14,11 +14,11 @@ The original site code has been modified for use with Docker.
 3. **Build and Run the Docker Containers**:
    - Run the following command to build the Docker containers:
      ```sh
-     docker compose -f compose.yaml build
+     docker compose build
      ```
    - Then, start the containers in detached mode:
      ```sh
-     docker compose -f compose.yml up -d
+     docker compose up -d
      ```
 
 # Original Instructions
