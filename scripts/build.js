@@ -9,6 +9,7 @@ const readline = require('readline');
 const { spawn } = require('child_process');
 const webpack = require('webpack');
 const validate = require("ttag-cli/dist/src/commands/validate").default;
+require('dotenv').config();
 
 const minifyCss = require('./minifyCss');
 const createImages = require('./createImages');
