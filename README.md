@@ -13,13 +13,9 @@ The original site code has been modified for use with Docker.
    - Also, to shorten the build time, I added a new ENGLISH_ONLY variable to the .env file. Therefore, change it if you need all available languages.
 
 3. **Build and Run the Docker Containers**:
-   - Run the following command to build the Docker containers:
+   - Run the following command to build and start the Docker containers in detached mode:
      ```sh
-     docker compose build
-     ```
-   - Then, start the containers in detached mode:
-     ```sh
-     docker compose up -d
+     docker compose up --build -d
      ```
 
 # Original Instructions
