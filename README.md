@@ -18,6 +18,12 @@ The original site code has been modified for use with Docker.
      docker compose up --build -d
      ```
 
+# Notes
+   - Keep in mind that the launch of docker containers can take several minutes.
+   - Also, it takes a lot of time to compile languages if you decide to choose not only English.
+   - My container doesn't use pm2, so some of the original documentation doesn't make sense.
+   - If you want to add your own code to my project, then feel free to make pull requests. I will consider and accept them when I have the time and desire.
+
 # Original Instructions
 
 [![Guilded](https://img.shields.io/badge/Discord-Support-blue.svg)](https://pixelplanet.fun/guilded)
